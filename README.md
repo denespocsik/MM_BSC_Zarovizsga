@@ -9,7 +9,7 @@
 
 ## A repó célja
 
-Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgozásokat tartalmazza. Minden tétel tárgyanként csoportosítva önálló `.md` fájlban van kidolgozva, a két tételsor (Komplex gazdasági és Vállalatirányítási szakirány) összesen 40 tételt fed le.
+Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgozásokat tartalmazza. Minden tétel tárgyanként csoportosítva önálló `.md` fájlban van kidolgozva, a két tételsor (komplex gazdasági + vállalatirányítási szakirány) teljes anyagával.
 
 ---
 
@@ -89,11 +89,33 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 ```
 /
-├── README.md                  # Ez a fájl
-├── Tétel-Tárgy Mátrix.md      # Teljes tétel-tárgy leképezés és állapotkövetés
+├── README.md                                           # Ez a fájl
+├── Tétel-Tárgy Mátrix.md                              # Teljes tétel-tárgy leképezés és állapotkövetés
+├── MM-Komplex-Záróvizsgatételsor-F-tanterv_2026.pdf  # Komplex tételsor hivatalos dokumentuma
+├── MM-Vállalatirányítás-Záróvizsgatételsor-F-tanterv_2026.pdf # Szakirány tételsor hivatalos dokumentuma
+├── MM_F_Magyar_Levelezo_2023_spec-1.xlsx             # Tanterv specifikáció
 │
-├── K01_*.md – K20_*.md       # Komplex gazdasági tételek
-└── V01_*.md – V20_*.md       # Vállalatirányítási szakirány tételek
+├── Menedzsment alapjai (GMXMD1MBLF)/
+│   ├── K1–K7 tételek markdown fájljai
+│
+├── HR menedzsment és vezetési technikák (GMXHR1MBLF)/
+│   ├── K8–K13 tételek markdown fájljai
+│   ├── HR menedzsment és vezetési technikák (GMXHR1MBLF).tétel.md
+│   └── HR menedzsment és vezetési technikák (GMXHR1MBLF).kontextus.md
+│
+├── Vezetői számvitel és controlling (GIXVS2MBLF)/
+│   ├── K14–K20 tételek markdown fájljai
+│   ├── Vezetői számvitel és controlling (GIXVS2MBLF).tétel.md
+│   └── Vezetői számvitel és controlling (GIXVS2MBLF).kontextus.md
+│
+├── Számítógépes folyamatmenedzsment (GMXSF2MBLF)/
+│   ├── V1–V5 tételek markdown fájljai
+│
+├── Integrált vállalatirányítási rendszerek (GMXIV2MBLF)/
+│   ├── V11–V15 tételek markdown fájljai
+│
+└── Vállalati és üzleti hálózatmenedzsment (GMXVU2MBLF)/
+    └── V16–V20 tételek markdown fájljai
 ```
 
 ---
