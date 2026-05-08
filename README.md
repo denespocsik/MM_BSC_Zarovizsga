@@ -10,7 +10,7 @@
 
 ## A repó célja
 
-Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgozásokat tartalmazza. Minden tétel tárgyanként csoportosítva önálló `.md` fájlban van kidolgozva, a két tételsor (Komplex gazdasági + Vállalatirányítási szakirány) teljességét célzó felkészülés támogatására.
+Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgozásokat tartalmazza. Minden tétel tárgyanként csoportosítva önálló `.md` fájlban van kidolgozva, a két tételsor (komplex + szakirány) teljes 40 tételéhez.
 
 ---
 
@@ -92,41 +92,46 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 /
 ├── README.md                                           # Ez a fájl
 ├── Tétel-Tárgy Mátrix.md                              # Teljes tétel-tárgy leképezés és állapotkövetés
-├── MM-Komplex-Záróvizsgatételsor-F-tanterv_2026.pdf  # Komplex tételsor hivatalos dokumentuma
-├── MM-Vállalatirányítás-Záróvizsgatételsor-F-tanterv_2026.pdf # Szakirány tételsor hivatalos dokumentuma
-├── MM_F_Magyar_Levelezo_2023_spec-1.xlsx             # Tanterv specifikáció
+├── Források/                                           # Segédleteke és referencias dokumentumok
+│   └── (forrásanyagok)
 │
-├── Menedzsment alapjai (GMXMD1MBLF)/
-│   ├── K1–K7 tételek markdown fájljai
+├── Kontextus fájlok/                                   # Tantárgy-szintű kontextusanyagok
+│   └── (kontextus markdown fájlok)
 │
-├── HR menedzsment és vezetési technikák (GMXHR1MBLF)/
-│   ├── K8–K13 tételek markdown fájljai
-│   ├── HR menedzsment és vezetési technikák (GMXHR1MBLF).tétel.md
-│   └── HR menedzsment és vezetési technikák (GMXHR1MBLF).kontextus.md
-│
-├── Vezetői számvitel és controlling (GVXVS2MBLF)/
-│   ├── K14–K20 tételek markdown fájljai
-│   ├── Vezetői számvitel és controlling (GVXVS2MBLF).tétel.md
-│   └── Vezetői számvitel és controlling (GVXVS2MBLF).kontextus.md
-│
-├── Számítógépes folyamatmenedzsment (GMXSF2MBLF)/
-│   ├── V1–V5 tételek markdown fájljai
-│
-├── Menedzsment információs rendszerek (GMXIR1MBLF)/
-│   ├── V6–V10 tételek markdown fájljai (készülőben)
-│
-├── Integrált vállalatirányítási rendszerek (GMXIV2MBLF)/
-│   ├── V11–V15 tételek markdown fájljai
-│
-└── Vállalati és üzleti hálózatmenedzsment (GMXVU2MBLF)/
-    └── V16–V20 tételek markdown fájljai
+└── Tételek/                                            # Az összes 40 tétel markdown fájljai
+    ├── K01-GMXMD1MBLF-Menedzsment fogalma, funkciói.md
+    ├── K02-GMXMD1MBLF-Menedzsment irányzatok.md
+    ├── K03-GMXMD1MBLF-Tervezés.md
+    ├── K04-GMXMD1MBLF-Szervezetek, szervezeti formák.md
+    ├── K05-GMXMD1MBLF-Vezetői stílusok.md
+    ├── K06-GMXMD1MBLF-Motivációs elméletek.md
+    ├── K07-GMXMD1MBLF-Döntés mint vezetői feladat.md
+    ├── K08-GMXHR1MBLF-HRM fogalma, céljai, fő funkciói, HR stratégia.md
+    ├── K09-GMXHR1MBLF-Munkaerő-tervezés és toborzás.md
+    ├── K10-GMXHR1MBLF-Kiválasztási folyamat és módszerek.md
+    ├── K11-GMXHR1MBLF-Vezetés fogalma és vezetői szerepek.md
+    ├── K12-GMXHR1MBLF-Szervezeti kultúra.md
+    ├── K13-GMXHR1MBLF-Teljesítménymenedzsment és értékelés.md
+    ├── K14-GIXVS2MBLF-Controlling szemléletmód és rendszer.md
+    ├── K15-GIXVS2MBLF-Controlling információs rendszere.md
+    ├── K16-GIXVS2MBLF-Költségszámítás a controllingban.md
+    ├── K17-GIXVS2MBLF-Kalkulációs módszerek és fedezetszámítás.md
+    ├── K18-GIXVS2MBLF-Stratégiai és operatív controlling.md
+    ├── K19-GIXVS2MBLF-Beruházási döntések controlling szemléletben.md
+    ├── K20-GIXVS2MBLF-Balanced Scorecard.md
+    ├── V01-GMXSF2MBLF-BPM életciklusa és BPMS rendszerek.md
+    ├── V02-GMXSF2MBLF-Üzleti folyamatok modellezése BPMN 2.0.md
+    ├── V03-GMXSF2MBLF-Üzleti folyamatok mérése és optimalizálása.md
+    ├── V04-GMXSF2MBLF-Kockázatkezelés és FMEA.md
+    ├── V05-GMXSF2MBLF-Folyamatszemléletű irányítási rendszerek.md
+    └── (V6-V10 és V11-V20 tételek további fájljai)
 ```
 
 ---
 
 ## Jelenlegi állapot (2026-05-08)
 
-### Befejezett tantárgyak (5/7):
+### Befejezett tantárgyak (6/7):
 - ✅ **Menedzsment alapjai** — 7 tétel teljes
 - ✅ **HR menedzsment és vezetési technikák** — 6 tétel teljes
 - ✅ **Vezetői számvitel és controlling** — 7 tétel teljes
@@ -141,11 +146,11 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 ## Megjegyzések
 
-- A **K5 (Vezetői stílusok)** és **K11 (Vezetés fogalma és vezetői szerepek)** tételek között tematikai átfedés van; az előbbi a Menedzsment alapjai, az utóbbi a HR menedzsment tárgyhoz kapcsolódik.
+- A **K5 (Vezetői stílusok)** és **K11 (Vezetés fogalma és vezetői szerepek)** tételek között tematikai átfedés van; az előbbi a Menedzsment alapjai, az utóbbi a HR menedzsment tárgyban tanult.
 - A **K20 (BSC)** és **V7 (BSC + VIR/BI)** mindkét tételsorban szerepel, de eltérő mélységgel és kontextussal.
 - A **GMXVU2MBLF** tantárgy előadásanyaga angol nyelvű (*Organizational networks*), a kötelező irodalom Barabási Albert-László: *Behálózva* (Open Books, 2022).
 - A **V6–V10** tételek kidolgozása (Menedzsment inf. rendszerek) a GMXIR1MBLF forrásanyagok bekerüléséig szünetel.
-- **Repo jellemzők:** HTML alapú struktúra, 40 tételből 35 teljes, felkészülési anyag záróvizsgához.
+- **Repo jellemzők:** Markdown alapú struktúra, 40 tételből 35 teljes, felkészülési anyag záróvizsgához, HTML alapú renderelés GitHub-on.
 
 ---
 
