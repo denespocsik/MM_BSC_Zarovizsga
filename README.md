@@ -124,6 +124,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
     ├── V03-GMXSF2MBLF-Üzleti folyamatok mérése és optimalizálása.md
     ├── V04-GMXSF2MBLF-Kockázatkezelés és FMEA.md
     ├── V05-GMXSF2MBLF-Folyamatszemléletű irányítási rendszerek.md
+    ---
     └── (V6-V10 és V11-V20 tételek további fájljai)
 ```
 
