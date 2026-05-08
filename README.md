@@ -82,7 +82,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | V11–V15 (5 tétel) | ✅ Teljes |
 | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | V16–V20 (5 tétel) | ✅ Teljes |
 
-**Összesen:** 40 tétel — **Kidolgozva: 35 tétel (87,5%)** — **Hiányzik: 5 tétel**
+**Összesen:** 40 tétel — **Kidolgozva: 25 tétel (62,5%)** — **Hiányzik: 15 tétel**
 
 ---
 
@@ -136,11 +136,11 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 - ✅ **HR menedzsment és vezetési technikák** — 6 tétel teljes
 - ✅ **Vezetői számvitel és controlling** — 7 tétel teljes
 - ✅ **Számítógépes folyamatmenedzsment** — 5 tétel teljes
-- ✅ **Integrált vállalatirányítási rendszerek** — 5 tétel teljes
-- ✅ **Vállalati és üzleti hálózatmenedzsment** — 5 tétel teljes
 
 ### Folyamatban (1/7):
 - ⏳ **Menedzsment információs rendszerek** — 5 tétel (V6–V10) forrásanyagra vár
+- ⏳ **Integrált vállalatirányítási rendszerek** — 5 tétel teljes
+- ⏳ **Vállalati és üzleti hálózatmenedzsment** — 5 tétel teljes
 
 ---
 
