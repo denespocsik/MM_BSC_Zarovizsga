@@ -131,13 +131,13 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 ## Jelenlegi állapot (2026-05-08)
 
-### Befejezett tantárgyak (6/7):
+### Befejezett tantárgyak (4/7):
 - ✅ **Menedzsment alapjai** — 7 tétel teljes
 - ✅ **HR menedzsment és vezetési technikák** — 6 tétel teljes
 - ✅ **Vezetői számvitel és controlling** — 7 tétel teljes
 - ✅ **Számítógépes folyamatmenedzsment** — 5 tétel teljes
 
-### Folyamatban (1/7):
+### Folyamatban (3/7):
 - ⏳ **Menedzsment információs rendszerek** — 5 tétel (V6–V10) forrásanyagra vár
 - ⏳ **Integrált vállalatirányítási rendszerek** — 5 tétel teljes
 - ⏳ **Vállalati és üzleti hálózatmenedzsment** — 5 tétel teljes
