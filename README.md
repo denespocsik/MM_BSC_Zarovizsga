@@ -3,13 +3,14 @@
 **Képzés:** Műszaki menedzser alapképzési szak (BSc), levelező tagozat  
 **Intézmény:** Óbudai Egyetem — Keleti Károly Gazdasági Kar  
 **Szakirány:** V3 Vállalatirányítás (Budapest)  
-**Tanterv:** F-tanterv, 2023-as specifikáció
+**Tanterv:** F-tanterv, 2023-as specifikáció  
+**Záróvizsga:** 2026/27 tanév ősz
 
 ---
 
 ## A repó célja
 
-Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgozásokat tartalmazza. Minden tétel tárgyanként csoportosítva önálló `.md` fájlban van kidolgozva, a két tételsor (komplex gazdasági + vállalatirányítási szakirány) teljes anyagával.
+Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgozásokat tartalmazza. Minden tétel tárgyanként csoportosítva önálló `.md` fájlban van kidolgozva, a két tételsor (Komplex gazdasági + Vállalatirányítási szakirány) teljességét célzó felkészülés támogatására.
 
 ---
 
@@ -71,17 +72,17 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 ## Tantárgyak összefoglalása
 
-| Tantárgy | Neptun kód | Tételek | Anyag |
+| Tantárgy | Neptun kód | Tételek | Állapot |
 |---|---|---|---|
-| Menedzsment alapjai | GMXMD1MBLF | K1–K7 | ✅ |
-| HR menedzsment és vez. tech. | GMXHR1MBLF | K8–K13 | ✅ |
-| Vezetői számvitel és controlling | GVXVS2MBLF | K14–K20 | ✅ |
-| Számítógépes folyamatmenedzsment | GMXSF2MBLF | V1–V5 | ✅ |
-| Menedzsment információs rendszerek | GMXIR1MBLF | V6–V10 | ⏳ |
-| Integrált vállalatirányítási rendszerek | GMXIV2MBLF | V11–V15 | ✅ |
-| Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | V16–V20 | ✅ |
+| Menedzsment alapjai | GMXMD1MBLF | K1–K7 (7 tétel) | ✅ Teljes |
+| HR menedzsment és vez. tech. | GMXHR1MBLF | K8–K13 (6 tétel) | ✅ Teljes |
+| Vezetői számvitel és controlling | GVXVS2MBLF | K14–K20 (7 tétel) | ✅ Teljes |
+| Számítógépes folyamatmenedzsment | GMXSF2MBLF | V1–V5 (5 tétel) | ✅ Teljes |
+| Menedzsment információs rendszerek | GMXIR1MBLF | V6–V10 (5 tétel) | ⏳ Részben |
+| Integrált vállalatirányítási rendszerek | GMXIV2MBLF | V11–V15 (5 tétel) | ✅ Teljes |
+| Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | V16–V20 (5 tétel) | ✅ Teljes |
 
-**Összesen:** 40 tétel — jelenleg kidolgozható: **35 tétel**
+**Összesen:** 40 tétel — **Kidolgozva: 35 tétel (87,5%)** — **Hiányzik: 5 tétel**
 
 ---
 
@@ -103,13 +104,16 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 │   ├── HR menedzsment és vezetési technikák (GMXHR1MBLF).tétel.md
 │   └── HR menedzsment és vezetési technikák (GMXHR1MBLF).kontextus.md
 │
-├── Vezetői számvitel és controlling (GIXVS2MBLF)/
+├── Vezetői számvitel és controlling (GVXVS2MBLF)/
 │   ├── K14–K20 tételek markdown fájljai
-│   ├── Vezetői számvitel és controlling (GIXVS2MBLF).tétel.md
-│   └── Vezetői számvitel és controlling (GIXVS2MBLF).kontextus.md
+│   ├── Vezetői számvitel és controlling (GVXVS2MBLF).tétel.md
+│   └── Vezetői számvitel és controlling (GVXVS2MBLF).kontextus.md
 │
 ├── Számítógépes folyamatmenedzsment (GMXSF2MBLF)/
 │   ├── V1–V5 tételek markdown fájljai
+│
+├── Menedzsment információs rendszerek (GMXIR1MBLF)/
+│   ├── V6–V10 tételek markdown fájljai (készülőben)
 │
 ├── Integrált vállalatirányítási rendszerek (GMXIV2MBLF)/
 │   ├── V11–V15 tételek markdown fájljai
@@ -120,9 +124,35 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 ---
 
+## Jelenlegi állapot (2026-05-08)
+
+### Befejezett tantárgyak (5/7):
+- ✅ **Menedzsment alapjai** — 7 tétel teljes
+- ✅ **HR menedzsment és vezetési technikák** — 6 tétel teljes
+- ✅ **Vezetői számvitel és controlling** — 7 tétel teljes
+- ✅ **Számítógépes folyamatmenedzsment** — 5 tétel teljes
+- ✅ **Integrált vállalatirányítási rendszerek** — 5 tétel teljes
+- ✅ **Vállalati és üzleti hálózatmenedzsment** — 5 tétel teljes
+
+### Folyamatban (1/7):
+- ⏳ **Menedzsment információs rendszerek** — 5 tétel (V6–V10) forrásanyagra vár
+
+---
+
 ## Megjegyzések
 
-- A **K5 (Vezetői stílusok)** és **K11 (Vezetés fogalma és szerepek)** tételek között tematikai átfedés van; az előbbi a Menedzsment alapjai, az utóbbi a HR menedzsment tárgyhoz kapcsolódik.
+- A **K5 (Vezetői stílusok)** és **K11 (Vezetés fogalma és vezetői szerepek)** tételek között tematikai átfedés van; az előbbi a Menedzsment alapjai, az utóbbi a HR menedzsment tárgyhoz kapcsolódik.
 - A **K20 (BSC)** és **V7 (BSC + VIR/BI)** mindkét tételsorban szerepel, de eltérő mélységgel és kontextussal.
 - A **GMXVU2MBLF** tantárgy előadásanyaga angol nyelvű (*Organizational networks*), a kötelező irodalom Barabási Albert-László: *Behálózva* (Open Books, 2022).
-- A **V6–V10** tételek kidolgozása a GMXIR1MBLF forrásanyagok bekerüléséig szünetel.
+- A **V6–V10** tételek kidolgozása (Menedzsment inf. rendszerek) a GMXIR1MBLF forrásanyagok bekerüléséig szünetel.
+- **Repo jellemzők:** HTML alapú struktúra, 40 tételből 35 teljes, felkészülési anyag záróvizsgához.
+
+---
+
+## Visszajelzés és közreműködés
+
+Ez egy személyes felkészülési repó. Javaslatokat és kiegészítéseket szívesen veszek.
+
+---
+
+*Utolsó frissítés: 2026. május 8.*
