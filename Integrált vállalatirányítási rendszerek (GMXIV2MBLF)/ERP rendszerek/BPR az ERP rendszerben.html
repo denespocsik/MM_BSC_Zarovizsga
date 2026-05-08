@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+    <title>BPR az ERP rendszerben</title>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+<p dir="ltr" style="text-align: left;"></p><p><b>BPR az ERP rendszerben</b></p>
+
+<p>Az üzleti folyamatok
+újratervezése (Business Process Reengineering – BPR) a munkafolyamatok alapvető
+újragondolását és radikális áttervezését jelenti a teljesítmény drasztikus
+javítása érdekében. Az SAP S/4HANA bevezetése lehetőséget ad a vállalatoknak, hogy
+elhagyják a régi, nem hatékony folyamataikat és a „Best Practice” megoldásokra
+építsenek. </p>
+
+<p><b>Optimalizációs emelők az
+S/4HANA rendszerben</b></p>
+
+<p>A rendszer három fő területen
+támogatja a folyamatok megújítását: </p>
+
+<ul type="disc">
+ <li><b>Hatékonyság (Efficiency):</b> A végrehajtás gyorsítása, a
+     folyamatlépések automatizálása és a digitális feladatkiosztás révén. </li>
+ <li><b>Eredményesség (Effectiveness):</b> A folyamatok intelligenciájának
+     növelése, a válaszidő lerövidítése és a hierarchikus szintek csökkentése
+     által. </li>
+ <li><b>Agilitás (Agility):</b> A szervezeti és folyamatbeli
+     rugalmasság növelése, amely lehetővé teszi az innovációk gyors
+     befogadását. </li>
+</ul>
+
+<p>Az új implementációk
+(úgynevezett „greenfield” megközelítés) során a vállalatok a nulláról építik
+fel folyamataikat a rendszerben rendelkezésre álló kész üzleti modellek
+alapján, ami jelentős egyszerűsítést tesz lehetővé. </p>
+
+<p>&nbsp;</p>
+
+<p><b>MRP és PP esettanulmányok</b></p>
+
+<p>A termelésirányítás (PP)
+modul az SAP S/4HANA egyik legkomplexebb területe, amely integrálja az
+értékesítést, a beszerzést és a pénzügyet. </p>
+
+<p><b>Az anyagszükséglet-tervezés
+(MRP) evolúciója</b></p>
+
+<p>Az SAP S/4HANA-ban az MRP
+folyamat jelentősen felgyorsult az in-memory technológiának köszönhetően. </p>
+
+<ul type="disc">
+ <li><b>Valós idejű adatok:</b> Az MRP futtatása már nem csak
+     éjszakai kötegelt (batch) feldolgozásként lehetséges, hanem bármikor,
+     igény szerint („MRP run on request”). </li>
+ <li><b>Döntéstámogatás:</b> A rendszer automatikus javaslatokat
+     tesz a beszerzésre vagy gyártásra a készlethiányok elkerülése érdekében. </li>
+ <li><b>Egyszerűsítés:</b> Az OLAP (analitikai) és OLTP
+     (tranzakciós) funkciók egyesítése lehetővé teszi a tervezés és a
+     végrehajtás közötti válaszidő minimalizálását. </li>
+</ul>
+
+<p><b>Globális Bike (GB) PP
+esettanulmány</b></p>
+
+<p>A hallgatók a Global Bike
+esettanulmányán keresztül egy teljes gyártási ciklust hajtanak végre:</p>
+
+<ul type="disc">
+ <li><b>Forgatókönyv:</b> Fogyasztási adatok generálása egy
+     késztermékhez (pl. Deluxe Touring Bike), majd a teljes gyártási folyamat
+     megtervezése és végrehajtása. </li>
+ <li><b>Kihívás:</b> Értékesítési és műveleti terv (SOP)
+     készítése a hegyi kerékpárok termékcsoportjára, figyelembe véve a jövőbeli
+     keresleti előrejelzéseket.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><b>Gyártási folyamat és PP
+tranzakciók</b></p>
+
+<p>A gyártási folyamat a
+kereslet tervezésétől a költségek elszámolásáig tart.</p>
+
+<p><b>A termelési ciklus lépései</b></p>
+
+<ol start="1" type="1">
+ <li><b>SOP (Sales and Operations Planning):</b> Hosszú távú értékesítési és termelési
+     tervek készítése.</li>
+ <li><b>Keresletmenedzsment:</b> A tervezett mennyiségek lebontása
+     konkrét időszakokra.</li>
+ <li><b>MRP futtatás:</b> A rendszer kiszámítja a szükséges
+     alapanyagokat és félkész termékeket. </li>
+ <li><b>Tervezett rendelés átalakítása:</b> A tervezett rendelésekből gyártási
+     rendelések (Production Order) jönnek létre.</li>
+ <li><b>Anyagkiadás (Goods Issue):</b> Az alapanyagok kivétele a raktárból a
+     gyártósorra.</li>
+ <li><b>Visszaigazolás (Confirmation):</b> A munka elvégzésének és az
+     időráfordításnak a rögzítése a rendszerben.</li>
+ <li><b>Beérkezés (Goods Receipt):</b> Az elkészült késztermék raktárba
+     vétele.</li>
+ <li><b>Elszámolás (Settlement):</b> A gyártás során felmerült tényleges
+     költségek könyvelése és összevetése a tervadatokkal.</li>
+</ol>
+
+<p><b>Fontosabb PP tranzakciók
+(Fiori Appok)</b></p>
+
+<ul type="disc">
+ <li><b>Monitor Stock / Requirements List:</b> A készlet és a szükségletek aktuális
+     állapotának ellenőrzése.</li>
+ <li><b>Create Production Order:</b> Gyártási rendelés létrehozása
+     manuálisan vagy MRP javaslat alapján.</li>
+ <li><b>Post Goods Movement:</b> Anyagmozgások (kiadás, bevételezés)
+     rögzítése.</li>
+ <li><b>Enter Production Order Confirmation:</b> A gyártási fázisok lejelentése.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><b>Termelési törzsadatok</b></p>
+
+<p>A gyártás alapját két
+kritikus törzsadat-típus képezi, amelyek meghatározzák, miből és hogyan készül
+a termék.</p>
+
+<p><b>1. Darabjegyzék (Bill of
+Materials - BOM)</b></p>
+
+<p>A BOM egy strukturált lista,
+amely tartalmazza az összes komponenst (alapanyagok, félkész termékek), amelyek
+a végtermék előállításához szükségesek . </p>
+
+<ul type="disc">
+ <li><b>Példa (Global Bike):</b> Egy kerékpár darabjegyzéke
+     tartalmazza a vázat, a kerekeket, a váltórendszert, a fékeket és a
+     csomagolóanyagokat is . </li>
+ <li><b>Típusok:</b> Az SAP-ban megkülönböztetünk
+     alapanyagokat (RM), félkész termékeket (SF) és késztermékeket (FERT) . </li>
+</ul>
+
+<p><b>2. Szerelési folyamat és
+Műveletterv (Routing)</b></p>
+
+<p>A műveletterv határozza meg a
+gyártási lépések sorrendjét és azt, hogy melyik munkaközpontban (Work Center)
+kell azokat elvégezni . </p>
+
+<ul type="disc">
+ <li><b>Munkaközpontok:</b> Olyan helyek a gyárban, ahol az
+     értéknövelő tevékenység folyik (pl. összeszerelő sor, festőműhely). </li>
+ <li><b>Kapacitások:</b> A rendszer figyelembe veszi a gépek
+     és az emberek elérhetőségét a tervezés során. </li>
+ <li><b>Műveleti idők:</b> Meghatározza a beállítási időt
+     (setup), a gépidőt és az élőmunka-igényt minden egyes lépéshez.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><b>Összefoglalás</b></p>
+
+<p>A BPR és az S/4HANA PP
+modulja együttesen teszi lehetővé, hogy a vállalatok ne csak digitalizálják a
+káoszt, hanem valóban hatékonyabb, átláthatóbb és gyorsabb gyártási
+folyamatokat hozzanak létre a modern piaci igények kiszolgálására.</p>
+
+<p>&nbsp;</p><br><p></p>
+</body>
+</html>

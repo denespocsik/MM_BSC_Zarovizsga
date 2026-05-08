@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+    <title>Minőségügy-menedzsment integrációja a vállalati rendszerekben</title>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+<p dir="ltr" style="text-align: left;"></p><p><b>Minőségügy-menedzsment
+integrációja a vállalati rendszerekben</b></p>
+
+<p>A modern vállalatirányítási
+rendszerekben a minőségügy már nem egy elszigetelt osztály feladata, hanem a
+teljes ellátási láncot átszövő, integrált funkció. A <b>minőségügy-menedzsment
+(QM)</b> modul feladata biztosítani, hogy a termékek és folyamatok
+megfeleljenek az előre meghatározott specifikációknak és vevői elvárásoknak.</p>
+
+<p><b>A QM modul stratégiai szerepe</b></p>
+
+<p>A QM modul egyfajta
+„digitális házőrzőként” funkcionál az ERP rendszerben, amely képes megállítani
+a hibás folyamatokat:</p>
+
+<ul type="disc">
+ <li><b>Beszerzési integráció:</b> Megakadályozza, hogy a minőségileg
+     nem megfelelő alapanyagok bekerüljenek a raktárba vagy a termelésbe.</li>
+ <li><b>Gyártási integráció:</b> Ellenőrzési pontokat (In-process
+     inspection) épít be a gyártási folyamatba, így a hibák azonnal
+     detektálhatók.</li>
+ <li><b>Értékesítési integráció:</b> Csak a minőségileg ellenőrzött és
+     jóváhagyott késztermékek kiszállítását engedélyezi a vevők felé.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><b>A minőségügyi folyamat
+alapkövei</b></p>
+
+<p>A minőségellenőrzés nem
+csupán a mérésről szól, hanem egy jól definiált, háromlépcsős folyamatról az
+SAP rendszerben:</p>
+
+<ol start="1" type="1">
+ <li><b>Minőségtervezés (Quality Planning):</b> Itt határozzuk meg a törzsadatokat:
+     mit, hogyan és milyen gyakorisággal kell ellenőrizni.</li>
+ <li><b>Minőségellenőrzés (Quality
+     Inspection):</b> A tényleges mérési
+     folyamat, ahol a rendszer rögzíti a kapott eredményeket.</li>
+ <li><b>Minőségirányítás (Quality Control):</b> A mérési adatok alapján hozott döntés
+     (például az áru elfogadása vagy selejtezése).</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><b>Minőségügyi törzsadatok az
+SAP-ban</b></p>
+
+<p>A QM modul működéséhez
+specifikus adatokra van szükség a rendszerben:</p>
+
+<ul type="disc">
+ <li><b>Ellenőrzési jellemzők (Inspection
+     Characteristics):</b>
+     Meghatározzák, hogy mit mérünk (például a kerékpárváz szilárdságát vagy a
+     festés vastagságát).</li>
+ <li><b>Mintavételi eljárás (Sampling
+     Procedure):</b> Megadja, hogy egy adott
+     tételből hány darabot kell mintavételezni a statisztikai megbízhatósághoz.</li>
+ <li><b>Anyagtörzs (Material Master) - QM
+     nézet:</b> Itt aktiváljuk az
+     anyagra vonatkozó ellenőrzési típusokat (például áruátvételi ellenőrzés).</li>
+ <li><b>Üzleti partner (Business Partner):</b> Az ügyfelek és szállítók adatai,
+     akikkel szemben minőségi elvárásokat fogalmazunk meg (például a <i>Quality
+     Bikes</i> nevű vevő a GB esettanulmányban).</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><b>QM folyamat a gyakorlatban: A
+vizsgálati tétel (Inspection Lot)</b></p>
+
+<p>A minőségellenőrzés központi
+objektuma az <b>SAP</b>-ban a <b>Vizsgálati tétel (Inspection Lot)</b>. Ez a
+virtuális „konténer” gyűjti össze az adott ellenőrzéssel kapcsolatos összes
+információt.</p>
+
+<p><b>A vizsgálati tétel
+életciklusa</b></p>
+
+<ul type="disc">
+ <li><b>Létrehozás:</b> Automatikusan generálódik egy esemény
+     hatására (például egy szállító áruátvételét követően vagy gyártási
+     rendelés zárásakor).</li>
+ <li><b>Eredményrögzítés (Result Recording):</b> A laboráns vagy a raktári dolgozó
+     beírja a mért értékeket (például: „A váz súlya 1.2 kg – Megfelel”).</li>
+ <li><b>Használati döntés (Usage Decision -
+     UD):</b> Ez a folyamat
+     legfontosabb lépése. A döntéshozó kijelenti, hogy a tétel elfogadható-e.</li>
+ <ul type="circle">
+  <li><b>Elfogadás:</b> Az áru átkerül a szabadon
+      felhasználható készletbe (Unrestricted stock).</li>
+  <li><b>Elutasítás:</b> Az áru zárolt készletbe kerül,
+      visszaküldésre kerül a szállítóhoz, vagy selejtezik.</li>
+ </ul>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><b>Esettanulmány:
+Minőségellenőrzés a Global Bike beszerzési folyamatában</b></p>
+
+<p>A <b>Global Bike</b> (GB)
+esettanulmányban a hallgatók egy komplett integrált folyamaton mennek
+keresztül, ahol a minőségügy kulcsszerepet játszik az elégedett vevők
+megtartásában.</p>
+
+<p><b>A szcenárió leírása</b></p>
+
+<p>A GB San Diego-i
+elosztóközpontjába (Plant SD00) női terepkerékpárok (<b>OWRN1###</b>) érkeznek.
+A vállalat célja, hogy csak hibátlan árut értékesítsen a kiemelt vevőinek.</p>
+
+<p><b>Gyakorlati lépések:</b></p>
+
+<ol start="1" type="1">
+ <li><b>Beszerzési rendelés és áruátvétel:</b> Amikor az áru megérkezik, a rendszer
+     automatikusan <b>Vizsgálati tételt</b> hoz létre. A készlet státusza ekkor
+     „Quality Inspection”, ami azt jelenti, hogy az áru fizikailag ott van, de
+     még nem eladható.</li>
+ <li><b>Minőségvizsgálat elvégzése:</b> A raktári felügyelő (például <i>Sunil
+     Gupta</i>) rögzíti az eredményeket.</li>
+ <li><b>Használati döntés:</b> A minőségellenőrzés pozitív zárása
+     után az áru felszabadul.</li>
+ <li><b>Értékesítés:</b> Csak a sikeres vizsgálat után lehet
+     létrehozni a vevői rendelést és a kiszállítást a <i>Quality Bikes</i>
+     részére.</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><b>Összefoglalás</b></p>
+
+<p>A minőségügy-menedzsment
+integrálása az <b>SAP S/4HANA</b> rendszerben garantálja a vállalati folyamatok
+átláthatóságát és a hibás termékek kiszűrését. A modul szoros kapcsolata a
+logisztikai és pénzügyi területekkel biztosítja, hogy a minőségi döntéseknek
+azonnali hatása legyen a készletértékre és a vevői elégedettségre.</p><br><p></p>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    <title>Projektmenedzsment az ERP rendszerben</title>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+<p dir="ltr" style="text-align: left;"></p><p><b>Projektmenedzsment az ERP
+rendszerben</b></p>
+
+<p>A vállalatirányítási
+rendszerekben a projektmenedzsment célja a komplex, időben behatárolt és egyedi
+célú üzleti folyamatok tervezése, irányítása és ellenőrzése. Az <b>SAP PS</b>
+modulja biztosítja, hogy a projektek minden fázisa – az ötlettől a lezárásig –
+átlátható és pénzügyileg is nyomon követhető legyen.</p>
+
+<p><b>A projektmenedzsment
+stratégiai szerepe</b></p>
+
+<ul type="disc">
+ <li><b>Integrált megközelítés:</b> A projektadatok közvetlenül
+     kapcsolódnak a pénzügyhöz (FI), kontrollinghoz (CO), anyag- és
+     készletgazdálkodáshoz (MM), valamint a termeléshez (PP).</li>
+ <li><b>Erőforrás-optimalizálás:</b> Lehetővé teszi az emberi erőforrások
+     és gépi kapacitások pontos ütemezését a projektek között.</li>
+ <li><b>Költségkontroll:</b> Valós idejű rálátást biztosít a
+     tervezett és a tényleges költségekre, segítve a jövedelmezőségi célok
+     elérését.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><b>Projektstruktúrák és
+törzsadatok</b></p>
+
+<p>A hatékony menedzsment alapja
+a projekt hierarchikus lebontása jól kezelhető egységekre. Az <b>SAP</b> két fő
+strukturális elemet használ erre:</p>
+
+<p><b>1. WBS-struktúra (Work
+Breakdown Structure)</b></p>
+
+<p>A <b>WBS</b> a projekt
+hierarchikus modellje, amely a projekt során elvégzendő feladatokat
+strukturálja.</p>
+
+<ul type="disc">
+ <li><b>WBS-elemek:</b> A hierarchia egyes szintjeit
+     képviselik, amelyekhez költségkeretek, határidők és felelősök rendelhetők.</li>
+ <li><b>Szerepük:</b> Ezek szolgálnak a költségek és
+     bevételek gyűjtőhelyéül a pénzügyi elszámolások során.</li>
+</ul>
+
+<p><b>2. Hálózati tervek és
+tevékenységek (Network Activities)</b></p>
+
+<p>Míg a <b>WBS</b> a feladatok
+hierarchiáját mutatja, a hálózati terv a tevékenységek időbeli lefolyását és
+logikai kapcsolatait ábrázolja.</p>
+
+<ul type="disc">
+ <li><b>Tevékenységek:</b> Konkrét munkafázisok, amelyekhez
+     időtartam és erőforrás-szükséglet rendelhető.</li>
+ <li><b>Mérföldkövek (Milestones):</b> Jelentős események vagy döntési
+     pontok a projekt életében, amelyekhez gyakran számlázási események is
+     kapcsolódnak.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><b>A projekt életciklusa az SAP
+rendszerben</b></p>
+
+<p>A projektek kezelése három fő
+szakaszra osztható a rendszerben:</p>
+
+<ol start="1" type="1">
+ <li><b>Tervezési fázis:</b> A projektstruktúra kialakítása,
+     határidők ütemezése és a költségvetés (Budget) allokálása a <b>WBS</b>-elemekhez.</li>
+ <li><b>Végrehajtási fázis:</b> Ebben a szakaszban történik a
+     tényleges adatok rögzítése. A rendszer státuszokat kezel (pl. <b>REL</b> –
+     Released / Felszabadítva), amelyek engedélyezik a könyveléseket.</li>
+ <ul type="circle">
+  <li><b>Tényleges költségek:</b> Szállítói számlák, anyagkivétek vagy
+      munkaidő-visszaigazolások alapján keletkeznek.</li>
+ </ul>
+ <li><b>Lezárási fázis:</b> A projekt pénzügyi elszámolása
+     (Settlement), ahol a felmerült költségeket a végső vevőre vagy belső
+     költséghelyre vezetik át.</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><b>PS modul esettanulmány:
+Ultralight racing bike fejlesztése</b></p>
+
+<p>A <b>Global Bike</b> (GB)
+esettanulmányban a hallgatók egy új, ultrakönnyű versenymotor fejlesztési
+projektjén keresztül ismerik meg a modul működését.</p>
+
+<p><b>A projekt felépítése (P/2###)</b></p>
+
+<p>A projektet hat fő <b>WBS</b>-elemre
+bontják le a <b>Global Bike</b> stratégiájának megfelelően:</p>
+
+<ol start="1" type="1">
+ <li><b>Development of Ultralight Bike:</b> A projekt gyökéreleme.</li>
+ <li><b>Engineering:</b> Mérnöki tervezési fázis.</li>
+ <li><b>Prototype:</b> Prototípus építése.</li>
+ <li><b>Testing:</b> Tesztelési folyamatok.</li>
+ <li><b>Small series production:</b> Kis sorozatú gyártás.</li>
+ <li><b>Release to mass production:</b> Átadás a tömegtermelésnek.</li>
+</ol>
+
+<p><b>Gyakorlati lépések és
+tranzakciók</b></p>
+
+<ul type="disc">
+ <li><b>Struktúra áttekintése:</b> A <b>Structure Overview</b>
+     applikáció segítségével ellenőrizhető a projekt aktuális állapota és a
+     tevékenységek státusza.</li>
+ <li><b>Költségriportolás:</b> A <b>Project Costs -
+     Actual/Commitment/Total/Plan</b> riport lehetővé teszi a tervezett és
+     tényleges költségek összehasonlítását, például a tevékenységek
+     visszaigazolása vagy külső számlák beérkezése után.</li>
+ <li><b>Integrációs teszt:</b> A hallgatók megtapasztalják, hogyan
+     válik láthatóvá egy pénzügyi (FI) bizonylat rögzítése a projekt
+     költségvetési riportjában.</li>
+</ul>
+
+<p><b>&nbsp;</b></p>
+
+<p><b>Összefoglalás </b></p>
+
+<p>A projektmenedzsment
+integrálása az <b>ERP</b> rendszerbe kulcsfontosságú a modern, adatalapú
+vállalatok számára. Az <b>SAP PS</b> biztosítja, hogy a technikai megvalósítás
+és a pénzügyi kontroll kéz a kézben járjon, csökkentve a túlköltekezés
+kockázatát és növelve a hatékonyságot.</p>
+
+<p><b>Felhasznált források</b></p>
+
+<ul type="disc">
+ <li><i>SAP – Introduction to SAP S/4HANA
+     Slide Deck (2023)</i>.</li>
+ <li><i>Intro to S/4HANA using Global Bike
+     Story v4.2 (2023)</i>.</li>
+ <li><i>Project Management (PS) Case Study –
+     SAP UCC Magdeburg</i>.</li>
+ <li><i>Project Management (PS) Exercises –
+     SAP UCC Magdeburg</i>.</li>
+ <li><i>Project Management (PS) Lecturer Notes
+     – SAP UCC Magdeburg</i>.</li>
+ <li><i>Project System Data Sheet – SAP UCC
+     Magdeburg</i>.</li>
+</ul>
+
+<p>&nbsp;</p><br><p></p>
+</body>
+</html>
