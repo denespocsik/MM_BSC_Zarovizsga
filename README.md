@@ -9,7 +9,7 @@
 
 ## A repó célja
 
-Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgozásokat tartalmazza. Minden tétel önálló `.md` fájlban van kidolgozva, a két tételsor (Komplex gazdasági és Vállalatirányítási szakirány) összesen 40 tételt fed le.
+Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgozásokat tartalmazza. Minden tétel tárgyanként csoportosítva önálló `.md` fájlban van kidolgozva, a két tételsor (Komplex gazdasági és Vállalatirányítási szakirány) összesen 40 tételt fed le.
 
 ---
 
