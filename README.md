@@ -174,4 +174,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 ---
 
+Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
+[Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
+
 *Utolsó frissítés: 2026. május 9. — V16–V20 (GMXVU2MBLF) kidolgozva, összesen 35/40 tétel kész.*
