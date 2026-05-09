@@ -51,7 +51,7 @@ A legegyszerűbb forma. Minden szintnek egy felettese van; az utasítások egyé
         |                 |
   [Üzemvezető A]    [Üzemvezető B]
         |                 |
-   [Munkások]        [Munkások]
+    [Munkások]        [Munkások]
 ```
 
 **Előnyök:** Egyértelmű felelősség, gyors döntéshozatal, átlátható.
@@ -67,7 +67,7 @@ A munkamegosztás szaktevékenységek (funkciók) szerint történik. A beosztot
                   |
      +-----+------+------+-----+
      |     |      |      |     |
-  [HR]  [Pénz] [Mkt] [Term] [Log]
+  [HR]  [Pénz]  [Mkt] [Term]  Log]
      |     |      |      |     |
   [Dolgozók — funkció szerint megosztva]
 ```
@@ -88,9 +88,9 @@ Nagy, diverzifikált szervezetekben alkalmazzák. Az egységeket (*divíziókat*
 ```
          [Holding/Anyavállalat]
                   |
-       +----------+----------+
-       |          |          |
-  [A divízió] [B divízió] [C divízió]
+    +-------------+-------------+
+    |             |             |
+[A divízió]  [B divízió]   [C divízió]
   (önálló P&L, saját funkciókkal)
 ```
 
@@ -104,12 +104,12 @@ A funkcionális és a projektalapú/divizionális szervezet keresztezése. Kett�
 ```
              [Vezérigazgató]
                     |
-         +----------+----------+
-         |          |          |
-      [Mkt vez.] [Mért. vez.] [Pénz vez.]  ← funkcionális vonal
-         |          |          |
-[A proj.vez.] —  [■] — [■] — [■]           ← projektkoordináció
-[B proj.vez.] —  [■] — [■] — [■]
+       +------------+------------+
+       |            |            |
+   [Mkt vez.]  [Mért. vez.]  [Pénz vez.]     ← funkcionális vonal
+       |            |            |
+     [A proj.vez.] —  [■] — [■] — [■]        ← projektkoordináció
+     [B proj.vez.] —  [■] — [■] — [■]
 ```
 
 **Előnyök:** Rugalmas erőforrás-allokáció, szakmai és projektszemlélet egyszerre érvényesül.
