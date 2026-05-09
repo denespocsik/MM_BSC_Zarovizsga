@@ -163,13 +163,6 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 - ⏳ **Menedzsment információs rendszerek** — 5 tétel (V6–V10) GMXIR1MBLF anyag bekerüléséig szünetel
 
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'pie1': '#13C70D', 'pie2': '#FF6512', 'pieStrokeWidth': 0, 'pieOuterStrokeWidth': 0}}}%%
-    pie title Tételek feldolgozottsága
-    "Kidolgozva" : 35
-    "Forrásanyagra vár" : 5
-```
-
 ---
 
 ## Megjegyzések
