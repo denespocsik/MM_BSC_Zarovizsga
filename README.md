@@ -60,11 +60,11 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | V13 | ERP bevezetése: célok, előnyök, hátrányok, BPR | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
 | V14 | SAP rendszer struktúrája, S/4HANA, modulok (FI,CO,MM…) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
 | V15 | ERP és projektmenedzsment, BSP, ITIL | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
-| V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
-| V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
-| V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
-| V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
-| V20 | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
+| V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
+| V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
+| V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
+| V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
+| V20 | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
 
 *Jelmagyarázat: ✅ = kidolgozva | 📋 = forrásanyag elérhető, kidolgozás szükséges | ⏳ = forrásanyag hiányzik*
 
@@ -80,9 +80,9 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | Számítógépes folyamatmenedzsment | GMXSF2MBLF | V1–V5 (5 tétel) | ✅ Teljes |
 | Menedzsment információs rendszerek | GMXIR1MBLF | V6–V10 (5 tétel) | ⏳ Hiányzik |
 | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | V11–V15 (5 tétel) | ✅ Teljes |
-| Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | V16–V20 (5 tétel) | 📋 Kidolgozandó |
+| Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | V16–V20 (5 tétel) | ✅ Teljes |
 
-**Összesen:** 40 tétel — **Kidolgozva: 30 tétel (75%)** — **Kidolgozandó (forrásanyag kész): 5 tétel (V16–V20)** — **Forrásanyagra vár: 5 tétel (V6–V10)**
+**Összesen:** 40 tétel — **Kidolgozva: 35 tétel (87,5%)** — **Forrásanyagra vár: 5 tétel (V6–V10)**
 
 ---
 
@@ -106,7 +106,8 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 │   ├── HR menedzsment és vezetési technikák (GMXHR1MBLF).kontextus.md
 │   ├── Vezetői számvitel és controlling (GIXVS2MBLF).kontextus.md
 │   ├── Számítógépes folyamatmenedzsment (GMXSF2MBLF).kontextus.md
-│   └── Integrált vállalatirányítási rendszerek (GMXIV2MBLF).kontextus.md
+│   ├── Integrált vállalatirányítási rendszerek (GMXIV2MBLF).kontextus.md
+│   └── Vállalati és üzleti hálózatmenedzsment (GMXVU2MBLF).kontextus.md
 │
 └── Tételek/                                            # Az összes kidolgozott tétel — egyenként .md fájlban
     ├── K01-GMXMD1MBLF-Menedzsment fogalma, funkciói.md
@@ -139,7 +140,12 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
     ├── V13-GMXIV2MBLF-ERP bevezetése és BPR.md
     ├── V14-GMXIV2MBLF-SAP S4HANA struktúra és modulok.md
     ├── V15-GMXIV2MBLF-ERP projektmenedzsment és üzemeltetés.md
-    └── (V06–V10 és V16–V20 tételek kidolgozás alatt)
+    ├── V16-GMXVU2MBLF-Vállalat komplex hálózati modellje.md
+    ├── V17-GMXVU2MBLF-Üzleti hálózatok kölcsönhatásait befolyásoló tényezők.md
+    ├── V18-GMXVU2MBLF-Hálózati működés és szempontjai.md
+    ├── V19-GMXVU2MBLF-Üzleti kölcsönhatások hálózatalapú megközelítése.md
+    ├── V20-GMXVU2MBLF-Hálózati üzleti stratégia.md
+    └── (V06–V10 tételek kidolgozás alatt — GMXIR1MBLF forrásanyag szükséges)
 ```
 
 ---
@@ -153,10 +159,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 - ✅ **Vezetői számvitel és controlling** — 7 tétel teljes (K14–K20)
 - ✅ **Számítógépes folyamatmenedzsment** — 5 tétel teljes (V1–V5)
 - ✅ **Integrált vállalatirányítási rendszerek** — 5 tétel teljes (V11–V15)
-
-### Kidolgozandó — forrásanyag elérhető (1/7):
-
-- 📋 **Vállalati és üzleti hálózatmenedzsment** — 5 tétel kidolgozandó (V16–V20)
+- ✅ **Vállalati és üzleti hálózatmenedzsment** — 5 tétel teljes (V16–V20)
 
 ### Forrásanyagra vár (1/7):
 
@@ -173,4 +176,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 ---
 
-*Utolsó frissítés: 2026. május 9. — V11–V15 (GMXIV2MBLF) kidolgozva, összesen 30/40 tétel kész.*
+*Utolsó frissítés: 2026. május 9. — V16–V20 (GMXVU2MBLF) kidolgozva, összesen 35/40 tétel kész.*

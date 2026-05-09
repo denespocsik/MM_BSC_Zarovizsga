@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-05-09 — V11–V15 (GMXIV2MBLF) kidolgozva; összesen 30/40 tétel kész
+**Utolsó frissítés:** 2026-05-09 — V16–V20 (GMXVU2MBLF) kidolgozva; összesen 35/40 tétel kész
 
 ---
 
@@ -51,11 +51,11 @@
 | V13 | ERP bevezetése: célok, előnyök, hátrányok, BPR | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
 | V14 | SAP rendszer struktúrája, S/4HANA, modulok (FI,CO,MM…) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
 | V15 | ERP és projektmenedzsment, BSP, ITIL | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
-| V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
-| V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
-| V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
-| V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
-| V20 | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
+| V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
+| V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
+| V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
+| V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
+| V20 | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
 
 ---
 
@@ -69,9 +69,9 @@
 | Számítógépes folyamatmenedzsment | GMXSF2MBLF | — | V1–V5 (5 db) | ✅ Teljes |
 | Menedzsment információs rendszerek | GMXIR1MBLF | — | V6–V10 (5 db) | ⏳ Forrásanyag hiányzik |
 | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | — | V11–V15 (5 db) | ✅ Teljes |
-| Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | — | V16–V20 (5 db) | 📋 Kidolgozandó |
+| Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | — | V16–V20 (5 db) | ✅ Teljes |
 
-**Összesen:** 40 tétel — **Kidolgozva: 30 tétel (75%)** — **Kidolgozandó (forrásanyag kész): 5 tétel (V16–V20)** — **Forrásanyagra vár: 5 tétel (V6–V10)**
+**Összesen:** 40 tétel — **Kidolgozva: 35 tétel (87,5%)** — **Forrásanyagra vár: 5 tétel (V6–V10)**
 
 ---
 
