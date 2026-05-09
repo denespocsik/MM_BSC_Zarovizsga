@@ -42,9 +42,9 @@ Likert mérései szerint a 4-es rendszer adja a legjobb hosszú távú eredmény
 **Robert Tannenbaum és Warren Schmidt** (1958) a vezető és a csoport döntési részvételét egy 7 fokozatú kontinuumon ábrázolta:
 
 ```
-AUTOKRATIKUS ←————————————————————————→ DEMOKRATIKUS
-     |    |    |    |    |    |    |
-     1    2    3    4    5    6    7
+AUTOKRATIKUS ←————————————————————→ DEMOKRATIKUS
+     |     |     |     |     |     |     |
+     1     2     3     4     5     6     7
 
 1: Vezető dönt és bejelenti
 2: Vezető dönt és megmagyarázza
