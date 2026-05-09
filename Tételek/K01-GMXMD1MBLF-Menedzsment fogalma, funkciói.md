@@ -32,8 +32,8 @@ A menedzsment funkcióit klasszikusan négy csoportba szokás sorolni. Ezek egym
 
 ```
 TERVEZÉS → SZERVEZÉS → VEZETÉS → ELLENŐRZÉS
-    ↑_______________________________________↓
-              (visszacsatolás)
+   ↑_________________________________↓
+             (visszacsatolás)
 ```
 
 ### A menedzsment főbb szakterületei
