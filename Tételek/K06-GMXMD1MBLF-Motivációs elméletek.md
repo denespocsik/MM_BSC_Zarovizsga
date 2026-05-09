@@ -17,16 +17,16 @@ Ebből következik, hogy a kiváló képességű, de demotivált munkás nem tel
 **Abraham Maslow** pszichológus szerint az emberi szükségletek egy piramisba rendezhetők, ahol az alacsonyabb szintek kielégítése előfeltétele a magasabbak megjelenésének:
 
 ```
-        /\
-       /  \
-      / 5. \ Önmegvalósítás (kreativitás, növekedés)
-     /------\
-    /   4.   \ Megbecsülés (státusz, elismerés, önbizalom)
-   /----------\
-  /    3.      \ Szeretet, hovatartozás (csoporttagság, barátság)
- /--------------\
-/      2.        \ Biztonság (munkabiztonság, stabilitás, rend)
-/------------------\
+          /\
+         /  \
+        / 5. \ Önmegvalósítás (kreativitás, növekedés)
+       /------\
+      /   4.   \ Megbecsülés (státusz, elismerés, önbizalom)
+     /----------\
+    /    3.      \ Szeretet, hovatartozás (csoporttagság, barátság)
+   /--------------\
+  /      2.        \ Biztonság (munkabiztonság, stabilitás, rend)
+ /------------------\
 /        1.          \ Fiziológiai (éhség, szomjúság, alvás, bérek)
 ```
 
@@ -83,14 +83,14 @@ E ──────→ T ──────→ K
 **Csíkszentmihályi Mihály flow-elmélete:** Az optimális élmény (*flow*) akkor keletkezik, amikor a feladat kihívásszintje és a személy jártassága egyensúlyban van. Ha a kihívás túl nagy, szorongás; ha túl kis, unalom. A vezető feladata megtalálni azt a tartományt, ahol a munka önmagában jutalmazó.
 
 ```
-       Magas kihívás
+     Magas kihívás
            ↑
  SZORONGÁS |  FLOW
            |
-    -------+-------→ Magas jártasság
+-----------+----------→ Magas jártasság
     APÁTIA |  UNALOM
            |
-       Alacsony kihívás
+    Alacsony kihívás
 ```
 
 ---
