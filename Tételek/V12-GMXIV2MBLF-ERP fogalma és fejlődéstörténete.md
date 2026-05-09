@@ -49,9 +49,9 @@ Az ERP nem egyedüli réteg – a vállalati IT-architektúrában több szinttel
   ├─────────────────────────────────────────────────────┤
   │          TAKTIKAI SZINT – Controlling, DSS          │
   ├─────────────────────────────────────────────────────┤
-  │    OPERATÍV SZINT – ERP (FI, CO, MM, SD, PP, HR)   │  ← Digitális mag
+  │    OPERATÍV SZINT – ERP (FI, CO, MM, SD, PP, HR)    │  ← Digitális mag
   ├─────────────────────────────────────────────────────┤
-  │     KÜLSŐ RENDSZEREK – CRM, SCM, WMS, IoT, EDI     │
+  │     KÜLSŐ RENDSZEREK – CRM, SCM, WMS, IoT, EDI      │
   └─────────────────────────────────────────────────────┘
 ```
 
