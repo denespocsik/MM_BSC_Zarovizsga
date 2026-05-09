@@ -15,14 +15,11 @@ A modern szervezetekben a BPM szorosan összekapcsolódik az informatikával: a 
 A BPM életciklusa nem egyszeri projektet, hanem ismétlődő fejlesztési kört jelent. Az alábbi öt szakasz épül egymásra:
 
 ```
-  ┌─────────────────────────────────────────┐
-  │                                         │
-  ▼                                         │
-TERVEZÉS ──► MODELLEZÉS ──► VÉGREHAJTÁS     │
-                                │           │
-                          MONITOROZÁS       │
-                                │           │
-                          OPTIMALIZÁLÁS ────┘
+  ┌──────────────────────────────────────────────────────────────┐
+  │                                                              │
+  ▼                                                              │
+TERVEZÉS ──► MODELLEZÉS ──► VÉGREHAJTÁS ──► MONITOROZÁS ──► OPTIMALIZÁLÁS
+                               
 ```
 
 | Szakasz | Fő feladatok |
@@ -40,20 +37,20 @@ A ciklus alapelve: az optimalizálás befejezése után a folyamat visszakerülh
 A Business Process Management Suite (BPMS) olyan integrált szoftverkörnyezet, amely az összes életciklus-szakaszt támogatja. Négy fő komponensből áll:
 
 ```
-┌──────────────────────────────────────────────────┐
-│                    BPMS                          │
-│  ┌─────────────┐  ┌─────────────┐               │
-│  │Folyamat-    │  │ Végrehajtó  │               │
-│  │modellező    │  │   motor     │               │
-│  │ eszköz      │  │(process     │               │
-│  │(BPMN 2.0)  │  │ engine)     │               │
-│  └─────────────┘  └─────────────┘               │
-│  ┌─────────────┐  ┌─────────────┐               │
-│  │  Üzleti     │  │ Szabály-    │               │
-│  │  analitika  │  │ kezelő      │               │
-│  │(dashboards) │  │  modul      │               │
-│  └─────────────┘  └─────────────┘               │
-└──────────────────────────────────────────────────┘
+┌──────────────────────────────────────┐
+│                    BPMS              │
+│  ┌─────────────┐  ┌─────────────┐    │
+│  │  Folyamat-  │  │ Végrehajtó  │    │
+│  │  modellező  │  │   motor     │    │
+│  │   eszköz    │  │  (process   │    │
+│  │ (BPMN 2.0)  │  │  engine)    │    │
+│  └─────────────┘  └─────────────┘    │
+│  ┌─────────────┐  ┌─────────────┐    │
+│  │   Üzleti    │  │   Szabály-  │    │
+│  │  analitika  │  │   kezelő    │    │
+│  │(dashboards) │  │    modul    │    │
+│  └─────────────┘  └─────────────┘    │
+└──────────────────────────────────────┘
 ```
 
 **Folyamatmodellező eszköz:** Grafikus felületen teszi lehetővé a BPMN 2.0-alapú modellek létrehozását. Az üzleti szakemberek programozói tudás nélkül is részt vehetnek a folyamatok tervezésében.
