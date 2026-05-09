@@ -43,7 +43,7 @@ A **folyamatszimuláció** lehetővé teszi a folyamat előzetes modellezését 
 ```
 AS-IS elemzés          Problémaelemzés        TO-BE tervezés
 (jelenlegi állapot) ──► (gyökérokok)      ──► (jövőbeli modell)
-        │                                            │
+        │                                           │
         └──────────────────────────────────────────►┘
                     Visszamérés (KPI-összehasonlítás)
 ```
