@@ -144,3 +144,18 @@ A K8 (HR stratégia) az egész rendszer bázisa: meghatározza, milyen embereket
 | Szituációs elmélet | Contingency / Situational Theory | Hersey–Blanchard, 1969 |
 | Rácsmodell | Managerial Grid | Blake–Mouton |
 | LKM teszt | LPC (Least Preferred Coworker) | Fiedler, 1967 |
+
+---
+
+## 7. Kidolgozott tételek
+
+A K8–K13 tételek egyenként külön fájlban találhatók a `Tételek/` mappában:
+
+| Tétel | Fájl |
+|-------|------|
+| K8 | [K08-GMXHR1MBLF-HRM fogalma, céljai, fő funkciói, HR stratégia.md](../Tételek/K08-GMXHR1MBLF-HRM%20fogalma%2C%20céljai%2C%20fő%20funkciói%2C%20HR%20stratégia.md) |
+| K9 | [K09-GMXHR1MBLF-Munkaerő-tervezés és toborzás.md](../Tételek/K09-GMXHR1MBLF-Munkaerő-tervezés%20és%20toborzás.md) |
+| K10 | [K10-GMXHR1MBLF-Kiválasztási folyamat és módszerek.md](../Tételek/K10-GMXHR1MBLF-Kiválasztási%20folyamat%20és%20módszerek.md) |
+| K11 | [K11-GMXHR1MBLF-Vezetés fogalma és vezetői szerepek.md](../Tételek/K11-GMXHR1MBLF-Vezetés%20fogalma%20és%20vezetői%20szerepek.md) |
+| K12 | [K12-GMXHR1MBLF-Szervezeti kultúra.md](../Tételek/K12-GMXHR1MBLF-Szervezeti%20kultúra.md) |
+| K13 | [K13-GMXHR1MBLF-Teljesítménymenedzsment és értékelés.md](../Tételek/K13-GMXHR1MBLF-Teljesítménymenedzsment%20és%20értékelés.md) |

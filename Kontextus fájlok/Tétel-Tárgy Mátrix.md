@@ -84,4 +84,4 @@
 
 ---
 
-*Jelmagyarázat: ✅ = mappa és anyag elér
+*Jelmagyarázat: ✅ = forrásanyag mappa elérhető, tétel kidolgozható | ⏳ = forrásanyag még hiányzik*
