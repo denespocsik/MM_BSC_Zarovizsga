@@ -12,7 +12,7 @@ A hálózattudomány szemléletében a vállalat **multiplex hálózat**: ugyana
 
 ```
         ┌─────────────────────────────────────────────┐
-        │         A VÁLLALAT MINT MULTIPLEX HÁLÓZAT    │
+        │         A VÁLLALAT MINT MULTIPLEX HÁLÓZAT   │
         │                                             │
         │   Réteg 1: Hierarchia (hatalom/függőség)    │
         │   ───────────────────────────────────       │
@@ -74,15 +74,15 @@ A szervezet belső piacát képezi. Az egyének és csoportok erőforrásokért 
         Instrumentális          Szocio-emocionális
            hálózat                  hálózat
               │                        │
-              └────────┬───────────────┘
-                       │
-              ┌────────▼────────┐
-              │   HATALMI ÉS    │  ← Mastenbroek szerint ez
-              │  FÜGGŐSÉGI HÁL. │     a legfontosabb réteg;
-              └────────┬────────┘     a többi ebből vezethető le
-                       │
-              Tárgyalási relációk
-                  hálózata
+              └───────────┬────────────┘
+                          │
+                 ┌────────▼────────┐
+                 │   HATALMI ÉS    │  ← Mastenbroek szerint ez
+                 │  FÜGGŐSÉGI HÁL. │     a legfontosabb réteg;
+                 └────────┬────────┘     a többi ebből vezethető le
+                          │
+                 Tárgyalási relációk
+                      hálózata
 ```
 
 **A hatalmi/függőségi viszony három meghatározó tényezője:**
