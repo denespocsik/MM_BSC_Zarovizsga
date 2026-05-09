@@ -59,15 +59,15 @@ A **PESTEL-elemzés** a makrokörnyezet hat dimenzióját térképezi fel:
 **Michael E. Porter** (1979) szerint egy iparág vonzerejét öt erő határozza meg:
 
 ```
-             [Potenciális belépők]
-                      |
-                   Belépési korlátok
-                      |
-[Szállítók] ------ [Iparági verseny] ------ [Vevők]
- alkuereje     (meglévő versenytársak)       alkuereje
-                      |
-              [Helyettesítő termékek
-               fenyegetése]
+                  [Potenciális belépők]
+                            |
+                    Belépési korlátok
+                            |
+[Szállítók] ─────── [Iparági verseny] ─────── [Vevők]
+ alkuereje       (meglévő versenytársak)     alkuereje
+                            |
+                  [Helyettesítő termékek
+                      fenyegetése]
 ```
 
 Minél erősebbek ezek az erők, annál kisebb az iparág jövedelmezősége. Porter elemzése segít megérteni, miért nyereséges az egyik iparág és miért nem a másik.
@@ -89,13 +89,13 @@ A **BCG mátrix** (Boston Consulting Group) a termék/üzletágportfoliót két 
 
 ```
               Magas piaci részesedés | Alacsony piaci részesedés
-              ----------------------|------------------------
-Gyorsan       |    SZTÁR             |    KÉRDŐJEL           |
+              -----------------------|------------------------
+Gyorsan       |    SZTÁR             |    KÉRDŐJEL            |
 növő piac     |  (cash-semleges)     |  (befektetést igényel) |
               |----------------------|------------------------|
 Lassan        |  FEJŐSTEHÉN          |    KUTYA               |
 növő piac     |  (cash-termelő)      |  (kivonulás?)          |
-              +-----------------------+------------------------+
+              +----------------------+------------------------+
 ```
 
 - **Sztár:** nagy piaci részesedés, gyorsan növő piacon — jövő nyertesei
