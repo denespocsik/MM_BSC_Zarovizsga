@@ -20,15 +20,15 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 | #   | Tétel rövid címe                               | Tantárgy                         | Neptun kód | Állapot |
 | --- | ---------------------------------------------- | -------------------------------- | ---------- | ------- |
-| K1  | Menedzsment fogalma, funkciói                  | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
-| K2  | Menedzsment irányzatok (Taylor, Fayol, Ford)   | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
-| K3  | Tervezés (környezet, jövőkép, SWOT, PESTEL)    | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
-| K4  | Szervezetek, szervezeti formák                 | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
-| K5  | Vezetői stílusok                               | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
-| K6  | Motivációs elméletek                           | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
-| K7  | Döntés mint vezetői feladat, döntési modellek  | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
-| K8  | HRM fogalma, céljai, fő funkciói, HR stratégia | HR menedzsment és vez. tech.     | GMXHR1MBLF | ✅       |
-| K9  | Munkaerő tervezés és toborzás                  | HR menedzsment és vez. tech.     | GMXHR1MBLF | ✅       |
+| K01  | Menedzsment fogalma, funkciói                  | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
+| K02  | Menedzsment irányzatok (Taylor, Fayol, Ford)   | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
+| K03  | Tervezés (környezet, jövőkép, SWOT, PESTEL)    | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
+| K04  | Szervezetek, szervezeti formák                 | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
+| K05  | Vezetői stílusok                               | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
+| K06  | Motivációs elméletek                           | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
+| K07  | Döntés mint vezetői feladat, döntési modellek  | Menedzsment alapjai              | GMXMD1MBLF | ✅       |
+| K08  | HRM fogalma, céljai, fő funkciói, HR stratégia | HR menedzsment és vez. tech.     | GMXHR1MBLF | ✅       |
+| K09  | Munkaerő tervezés és toborzás                  | HR menedzsment és vez. tech.     | GMXHR1MBLF | ✅       |
 | K10 | Kiválasztási folyamat és módszerek             | HR menedzsment és vez. tech.     | GMXHR1MBLF | ✅       |
 | K11 | Vezetés fogalma és vezetői szerepek            | HR menedzsment és vez. tech.     | GMXHR1MBLF | ✅       |
 | K12 | Szervezeti kultúra                             | HR menedzsment és vez. tech.     | GMXHR1MBLF | ✅       |
@@ -45,15 +45,15 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 | #   | Tétel rövid címe                                            | Tantárgy                                | Neptun kód | Állapot |
 | --- | ----------------------------------------------------------- | --------------------------------------- | ---------- | ------- |
-| V1  | BPM életciklusa és BPMS rendszerek felépítése               | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       |
-| V2  | Üzleti folyamatok modellezése BPMN 2.0 szerint              | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       |
-| V3  | Üzleti folyamatok mérése és optimalizálása (KPI)            | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       |
-| V4  | Kockázatkezelés és hibamód-elemzés (FMEA)                   | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       |
-| V5  | Folyamatszemléletű irányítási rendszerek és dok.            | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       |
-| V6  | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score)       | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       |
-| V7  | BSC + VIR/BI programcsomagok összehasonlítása               | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       |
-| V8  | Business Intelligence (BI) és BICC                          | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       |
-| V9  | Dashboard, KPI-alapú jelentések, DAX, Power BI              | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       |
+| V01  | BPM életciklusa és BPMS rendszerek felépítése               | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       |
+| V02  | Üzleti folyamatok modellezése BPMN 2.0 szerint              | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       |
+| V03  | Üzleti folyamatok mérése és optimalizálása (KPI)            | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       |
+| V04  | Kockázatkezelés és hibamód-elemzés (FMEA)                   | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       |
+| V05  | Folyamatszemléletű irányítási rendszerek és dok.            | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       |
+| V06  | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score)       | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       |
+| V07  | BSC + VIR/BI programcsomagok összehasonlítása               | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       |
+| V08  | Business Intelligence (BI) és BICC                          | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       |
+| V09  | Dashboard, KPI-alapú jelentések, DAX, Power BI              | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       |
 | V10 | OLTP/OLAP, adattárház, adatbányászat, Big Data              | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       |
 | V11 | IT fejlődés (70-es évektől), szigetrendszerek vs. integrált | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅       |
 | V12 | ERP fogalma, fejlődéstörténete (MRP→MRP II→ERP→cloud)       | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅       |
