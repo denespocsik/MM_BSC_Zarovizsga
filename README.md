@@ -82,15 +82,6 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | V11–V15 (5 tétel) | ✅ Teljes   |
 | Vállalati és üzleti hálózatmenedzsment  | GMXVU2MBLF | V16–V20 (5 tétel) | ✅ Teljes   |
 
-**Összesen:** 40 tétel — **Kidolgozva: 35 tétel** — **Forrásanyagra vár: 5 tétel (V6–V10)**
-
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'pie1': '#22B14C', 'pie2': '#FA5710', 'pieStrokeWidth': 0}}}%%
-    pie title Tételek feldolgozottsága
-    "Kidolgozva" : 35
-    "Forrásanyagra vár" : 5
-```
-
 ---
 
 ## A repó szerkezete
@@ -171,6 +162,14 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 ### Forrásanyagra vár (1/7):
 
 - ⏳ **Menedzsment információs rendszerek** — 5 tétel (V6–V10) GMXIR1MBLF anyag bekerüléséig szünetel
+
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'pie1': '#58d58d', 'pie2': '#e0aa57', 'pieStrokeWidth': 0, 'pieOuterStrokeWidth': 0}}}%%
+    pie title Tételek feldolgozottsága
+    "Kidolgozva" : 35
+    "Forrásanyagra vár" : 5
+```
 
 ---
 
