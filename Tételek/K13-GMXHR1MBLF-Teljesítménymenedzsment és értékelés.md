@@ -9,32 +9,32 @@ A Vázlat (kurzusanyag) alapján a teljesítményösztönzés kulcselemei: kihí
 ### A teljesítménymenedzsment ciklusa
 
 ```
-        ┌─────────────────────────────┐
-        │     CÉLKITŰZÉS              │
-        │  (egyéni + szervezeti       │
-        │   célok összehangolása)     │
-        └──────────────┬──────────────┘
+        ┌──────────────────────────────┐
+        │          CÉLKITŰZÉS          │
+        │    (egyéni + szervezeti      │
+        │     célok összehangolása)    │
+        └──────────────┬───────────────┘
                        │
                        ▼
-        ┌─────────────────────────────┐
-        │  FOLYAMATOS VISSZAJELZÉS    │
-        │  (coaching, 1:1 megbeszélés,│
-        │   fejlesztő párbeszéd)      │
-        └──────────────┬──────────────┘
+        ┌──────────────────────────────┐
+        │   FOLYAMATOS VISSZAJELZÉS    │
+        │  (coaching, 1:1 megbeszélés, │
+        │    fejlesztő párbeszéd)      │
+        └──────────────┬───────────────┘
                        │
                        ▼
-        ┌─────────────────────────────┐
-        │  TELJESÍTMÉNYÉRTÉKELÉS      │
-        │  (formális időszaki értékelés│
-        │   módszerekkel)             │
-        └──────────────┬──────────────┘
+        ┌──────────────────────────────┐
+        │    TELJESÍTMÉNYÉRTÉKELÉS     │
+        │ (formális időszaki értékelés │
+        │        módszerekkel)         │
+        └──────────────┬───────────────┘
                        │
                        ▼
-        ┌─────────────────────────────┐
-        │  FEJLESZTÉS / JUTTATÁS      │
-        │  (képzés, előléptetés,      │
-        │   kompenzáció-döntés)       │
-        └─────────────────────────────┘
+        ┌──────────────────────────────┐
+        │    FEJLESZTÉS / JUTTATÁS     │
+        │     (képzés, előléptetés,    │
+        │     kompenzáció-döntés)      │
+        └──────────────────────────────┘
                        │
                        └──→ vissza a CÉLKITŰZÉSHEZ
 ```
