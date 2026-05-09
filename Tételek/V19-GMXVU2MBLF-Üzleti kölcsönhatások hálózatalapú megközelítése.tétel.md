@@ -10,18 +10,18 @@ Az üzleti kapcsolatok és a piac elemzésére két domináns elméleti hagyomá
 
 ```
   ┌─────────────────────────────────────────────────────────┐
-  │  KÉT KLASSZIKUS MEGKÖZELÍTÉS                           │
+  │  KÉT KLASSZIKUS MEGKÖZELÍTÉS                            │
   │                                                         │
-  │  1. STRUKTÚRA-ALAPÚ megközelítés                       │
+  │  1. STRUKTÚRA-ALAPÚ megközelítés                        │
   │     (neoklasszikus közgazdaságtan, Porter)              │
-  │     → A piac statikus adott, a verseny a struktúrában  │
+  │     → A piac statikus adott, a verseny a struktúrában   │
   │                                                         │
-  │  2. FOLYAMAT-ALAPÚ megközelítés                        │
+  │  2. FOLYAMAT-ALAPÚ megközelítés                         │
   │     (szervezetelméletek, folyamatmenedzsment)           │
   │     → A vállalat belső folyamataiban van az érték       │
   │                                                         │
-  │  IMP KRITIKA: mindkettő hiányos                        │
-  │  → HÁLÓZATALAPÚ megközelítés szükséges                 │
+  │  IMP KRITIKA: mindkettő hiányos                         │
+  │  → HÁLÓZATALAPÚ megközelítés szükséges                  │
   └─────────────────────────────────────────────────────────┘
 ```
 
@@ -105,13 +105,13 @@ Az IMP csoport az üzleti piacokat (B2B markets) nem homogén, anonim versenyté
   A PIAC HÁLÓZATALAPÚ KÉPE
 
   ┌───────────────────────────────────────────────┐
-  │  SZ1 ────── SZ2                              │
+  │  SZ1 ────── SZ2                               │
   │    ╲           ╲                              │
-  │     V1 ─────── V2 ─────── V3                 │
+  │     V1 ─────── V2 ─────── V3                  │
   │      ╲           ╲         ╱                  │
-  │       K1 ───────── K2                        │
+  │       K1 ───────── K2                         │
   │                                               │
-  │  SZ = Szállító, V = Vállalat, K = Vevő       │
+  │  SZ = Szállító, V = Vállalat, K = Vevő        │
   │                                               │
   │  Minden kapcsolat egyedi, tartós, és          │
   │  befolyásolja a többi kapcsolatot             │
@@ -144,8 +144,8 @@ A hálózatalapú megközelítés operatív magja az IMP interakció-modell, ame
 ```
   IMP INTERAKCIÓ-MODELL (vázlat):
 
-  SZÁLLÍTÓ                                    VEVŐ
-  (szervezet + egyén)                         (szervezet + egyén)
+    SZÁLLÍTÓ                                      VEVŐ
+(szervezet + egyén)                      (szervezet + egyén)
        │                                           │
        └────────── INTERAKCIÓS FOLYAMAT ───────────┘
                    (epizódok, légkör)
