@@ -7,18 +7,18 @@ A munkaerő-tervezés (HR planning / workforce planning) előrevetíti, hogy a s
 ```
 MUNKAERŐ-TERVEZÉSI FOLYAMAT
 
-Szervezeti célok
-       ↓
-Munkaerő-kereslet előrejelzése
+        Szervezeti célok
+                ↓
+ Munkaerő-kereslet előrejelzése
        ↓                  ↓
 Belső kínálat       Külső munkaerőpiac
-elemzése            elemzése
+    elemzése           elemzése
        ↓                  ↓
-       └──────┬───────────┘
-              ↓
-        Munkaerőhiány / -felesleg azonosítása
-              ↓
-        Toborzási / leépítési terv
+       └────────┬─────────┘
+                ↓
+Munkaerőhiány / -felesleg azonosítása
+                ↓
+      Toborzási / leépítési terv
 ```
 
 A tervezés alapja a **munkakörelemzés (job analysis)**: minden munkakör feladatainak, felelősségeinek, szükséges kompetenciáinak és munkafeltételeinek szisztematikus feltárása. Eredménye a **munkaköri leírás** (job description) és a **munkaköri specifikáció** (job specification), amely meghatározza az alkalmazottal szemben támasztott követelményeket.
