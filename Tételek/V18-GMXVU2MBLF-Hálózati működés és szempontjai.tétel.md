@@ -13,14 +13,14 @@ A hálózatelvű megközelítés – Håkansson és az IMP csoport nyomán – n
 ```
   HAGYOMÁNYOS SZEMLÉLET            HÁLÓZATELVŰ SZEMLÉLET
 
-  ┌──────────────────┐             ┌──────────────────────────────┐
-  │     VÁLLALAT     │             │   Szállítók ─── VÁLLALAT ─── Vevők
-  │  (zárt rendszer) │    →        │              ╲       ╱        │
-  │                  │             │               Partnerek        │
-  └──────────────────┘             │         (kutatóintézetek,      │
-  Input → Folyamat → Output         │          versenyzők,          │
-                                   │          szabályozók...)       │
-                                   └──────────────────────────────┘
+  ┌──────────────────┐             ┌────────────────────────────────────┐
+  │     VÁLLALAT     │             │   Szállítók ─── VÁLLALAT ─── Vevők │
+  │  (zárt rendszer) │    →        │              ╲       ╱             │
+  │                  │             │               Partnerek            │
+  └──────────────────┘             │         (kutatóintézetek,          │
+  Input → Folyamat → Output        │          versenyzők,               │
+                                   │          szabályozók...)           │
+                                   └────────────────────────────────────┘
 ```
 
 ---
@@ -39,11 +39,11 @@ Håkansson elmélete szerint a hálózatban való működés három szempontból
 
 ```
   ╔══════════════════════════════════════════╗
-  ║  NINCS EGYETLEN IRÁNYÍTÓ A HÁLÓZATBAN   ║
+  ║  NINCS EGYETLEN IRÁNYÍTÓ A HÁLÓZATBAN    ║
   ║                                          ║
-  ║  A ────── B ────── C                    ║
-  ║   ╲       │       ╱                     ║
-  ║    D ─────E──────F                      ║
+  ║          A ────── B ────── C             ║
+  ║           ╲       │       ╱              ║
+  ║            D ─────E──────F               ║
   ║                                          ║
   ║  Senki sem látja a teljes képet.         ║
   ║  Mindenki csak a saját lokális           ║
@@ -112,7 +112,7 @@ Håkansson és az IMP csoport az ARA modellel (Activities–Resources–Actors) 
         │  ERŐFORRÁSOK (Resources)               │
         │  ● Technológia, tudás, kapcsolatok     │
         │  ● Értéküket a hálózatban való         │
-        │    felhasználás határozza meg           │
+        │    felhasználás határozza meg          │
         └────────────────────────────────────────┘
 ```
 
