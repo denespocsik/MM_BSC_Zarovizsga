@@ -55,11 +55,11 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | V8 | Business Intelligence (BI) és BICC | Menedzsment inf. rendszerek | GMXIR1MBLF | ⏳ |
 | V9 | Dashboard, KPI-alapú jelentések, DAX, Power BI | Menedzsment inf. rendszerek | GMXIR1MBLF | ⏳ |
 | V10 | OLTP/OLAP, adattárház, adatbányászat, Big Data | Menedzsment inf. rendszerek | GMXIR1MBLF | ⏳ |
-| V11 | IT fejlődés (70-es évektől), szigetrendszerek vs. integrált | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | 📋 |
-| V12 | ERP fogalma, fejlődéstörténete (MRP→MRP II→ERP→cloud) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | 📋 |
-| V13 | ERP bevezetése: célok, előnyök, hátrányok, BPR | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | 📋 |
-| V14 | SAP rendszer struktúrája, S/4HANA, modulok (FI,CO,MM…) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | 📋 |
-| V15 | ERP és projektmenedzsment, BSP, ITIL | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | 📋 |
+| V11 | IT fejlődés (70-es évektől), szigetrendszerek vs. integrált | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
+| V12 | ERP fogalma, fejlődéstörténete (MRP→MRP II→ERP→cloud) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
+| V13 | ERP bevezetése: célok, előnyök, hátrányok, BPR | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
+| V14 | SAP rendszer struktúrája, S/4HANA, modulok (FI,CO,MM…) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
+| V15 | ERP és projektmenedzsment, BSP, ITIL | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
 | V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
 | V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
 | V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
@@ -79,10 +79,10 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | Vezetői számvitel és controlling | GIXVS2MBLF | K14–K20 (7 tétel) | ✅ Teljes |
 | Számítógépes folyamatmenedzsment | GMXSF2MBLF | V1–V5 (5 tétel) | ✅ Teljes |
 | Menedzsment információs rendszerek | GMXIR1MBLF | V6–V10 (5 tétel) | ⏳ Hiányzik |
-| Integrált vállalatirányítási rendszerek | GMXIV2MBLF | V11–V15 (5 tétel) | 📋 Kidolgozandó |
+| Integrált vállalatirányítási rendszerek | GMXIV2MBLF | V11–V15 (5 tétel) | ✅ Teljes |
 | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | V16–V20 (5 tétel) | 📋 Kidolgozandó |
 
-**Összesen:** 40 tétel — **Kidolgozva: 25 tétel (62,5%)** — **Kidolgozandó (forrásanyag kész): 10 tétel (V11–V20)** — **Forrásanyagra vár: 5 tétel (V6–V10)**
+**Összesen:** 40 tétel — **Kidolgozva: 30 tétel (75%)** — **Kidolgozandó (forrásanyag kész): 5 tétel (V16–V20)** — **Forrásanyagra vár: 5 tétel (V6–V10)**
 
 ---
 
@@ -105,7 +105,8 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 │   ├── Menedzsment alapjai (GMXMD1MBLF).kontextus.md
 │   ├── HR menedzsment és vezetési technikák (GMXHR1MBLF).kontextus.md
 │   ├── Vezetői számvitel és controlling (GIXVS2MBLF).kontextus.md
-│   └── Számítógépes folyamatmenedzsment (GMXSF2MBLF).kontextus.md
+│   ├── Számítógépes folyamatmenedzsment (GMXSF2MBLF).kontextus.md
+│   └── Integrált vállalatirányítási rendszerek (GMXIV2MBLF).kontextus.md
 │
 └── Tételek/                                            # Az összes kidolgozott tétel — egyenként .md fájlban
     ├── K01-GMXMD1MBLF-Menedzsment fogalma, funkciói.md
@@ -133,23 +134,28 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
     ├── V03-GMXSF2MBLF-Üzleti folyamatok mérése és optimalizálása.md
     ├── V04-GMXSF2MBLF-Kockázatkezelés és FMEA.md
     ├── V05-GMXSF2MBLF-Folyamatszemléletű irányítási rendszerek.md
-    └── (V06–V20 tételek kidolgozás alatt)
+    ├── V11-GMXIV2MBLF-Informatikai fejlődés és szigetrendszerek.md
+    ├── V12-GMXIV2MBLF-ERP fogalma és fejlődéstörténete.md
+    ├── V13-GMXIV2MBLF-ERP bevezetése és BPR.md
+    ├── V14-GMXIV2MBLF-SAP S4HANA struktúra és modulok.md
+    ├── V15-GMXIV2MBLF-ERP projektmenedzsment és üzemeltetés.md
+    └── (V06–V10 és V16–V20 tételek kidolgozás alatt)
 ```
 
 ---
 
 ## Jelenlegi állapot (2026-05-09)
 
-### Befejezett tantárgyak (4/7):
+### Befejezett tantárgyak (5/7):
 
 - ✅ **Menedzsment alapjai** — 7 tétel teljes (K1–K7)
 - ✅ **HR menedzsment és vezetési technikák** — 6 tétel teljes (K8–K13)
 - ✅ **Vezetői számvitel és controlling** — 7 tétel teljes (K14–K20)
 - ✅ **Számítógépes folyamatmenedzsment** — 5 tétel teljes (V1–V5)
+- ✅ **Integrált vállalatirányítási rendszerek** — 5 tétel teljes (V11–V15)
 
-### Kidolgozandó — forrásanyag elérhető (2/7):
+### Kidolgozandó — forrásanyag elérhető (1/7):
 
-- 📋 **Integrált vállalatirányítási rendszerek** — 5 tétel kidolgozandó (V11–V15)
 - 📋 **Vállalati és üzleti hálózatmenedzsment** — 5 tétel kidolgozandó (V16–V20)
 
 ### Forrásanyagra vár (1/7):
@@ -167,4 +173,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 ---
 
-*Utolsó frissítés: 2026. május 9.*
+*Utolsó frissítés: 2026. május 9. — V11–V15 (GMXIV2MBLF) kidolgozva, összesen 30/40 tétel kész.*

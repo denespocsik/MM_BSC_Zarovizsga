@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-05-09 (projektkönyvtár átstrukturálva: Források/, Kontextus fájlok/, Tételek/ mapparendszer)
+**Utolsó frissítés:** 2026-05-09 — V11–V15 (GMXIV2MBLF) kidolgozva; összesen 30/40 tétel kész
 
 ---
 
@@ -51,11 +51,11 @@
 | V13 | ERP bevezetése: célok, előnyök, hátrányok, BPR | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
 | V14 | SAP rendszer struktúrája, S/4HANA, modulok (FI,CO,MM…) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
 | V15 | ERP és projektmenedzsment, BSP, ITIL | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ |
-| V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
-| V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
-| V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
-| V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
-| V20 | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ |
+| V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
+| V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
+| V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
+| V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
+| V20 | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 📋 |
 
 ---
 
@@ -66,12 +66,12 @@
 | Menedzsment alapjai | GMXMD1MBLF | K1–K7 (7 db) | — | ✅ igen |
 | HR menedzsment és vez. tech. | GMXHR1MBLF | K8–K13 (6 db) | — | ✅ igen |
 | Vezetői számvitel és controlling | GIXVS2MBLF | K14–K20 (7 db) | — | ✅ igen |
-| Számítógépes folyamatmenedzsment | GMXSF2MBLF | — | V1–V5 (5 db) | ✅ igen |
-| Menedzsment információs rendszerek | GMXIR1MBLF | — | V6–V10 (5 db) | ⏳ később |
-| Integrált vállalatirányítási rendszerek | GMXIV2MBLF | — | V11–V15 (5 db) | ✅ igen |
-| Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | — | V16–V20 (5 db) | ✅ igen |
+| Számítógépes folyamatmenedzsment | GMXSF2MBLF | — | V1–V5 (5 db) | ✅ Teljes |
+| Menedzsment információs rendszerek | GMXIR1MBLF | — | V6–V10 (5 db) | ⏳ Forrásanyag hiányzik |
+| Integrált vállalatirányítási rendszerek | GMXIV2MBLF | — | V11–V15 (5 db) | ✅ Teljes |
+| Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | — | V16–V20 (5 db) | 📋 Kidolgozandó |
 
-**Összesen:** 40 tétel, ebből jelenleg kidolgozható: **35 tétel** (5 tétel vár a hiányzó anyagokra — V6–V10, GMXIR1MBLF)
+**Összesen:** 40 tétel — **Kidolgozva: 30 tétel (75%)** — **Kidolgozandó (forrásanyag kész): 5 tétel (V16–V20)** — **Forrásanyagra vár: 5 tétel (V6–V10)**
 
 ---
 
@@ -84,4 +84,4 @@
 
 ---
 
-*Jelmagyarázat: ✅ = forrásanyag mappa elérhető, tétel kidolgozható | ⏳ = forrásanyag még hiányzik*
+*Jelmagyarázat: ✅ = tétel kidolgozva (.md fájl létezik) | 📋 = forrásanyag elérhető, kidolgozás szükséges | ⏳ = forrásanyag hiányzik*
