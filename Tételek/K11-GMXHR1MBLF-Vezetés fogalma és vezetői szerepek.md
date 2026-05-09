@@ -14,20 +14,20 @@ Mintzberg (1973) a menedzseri munkát tíz szerepbe rendezte, három csoportban:
 MINTZBERG MANAGERIAL ROLES
 
 ┌─────────────────────────────────────────────────┐
-│ SZEMÉLYKÖZI SZEREPEK (Interpersonal)             │
-│  • Nyilvános megjelenés (Figurehead)             │
-│  • Főnöki / vezető szerep (Leader)               │
-│  • Kapcsolattartó (Liaison)                      │
+│ SZEMÉLYKÖZI SZEREPEK (Interpersonal)            │
+│  • Nyilvános megjelenés (Figurehead)            │
+│  • Főnöki / vezető szerep (Leader)              │
+│  • Kapcsolattartó (Liaison)                     │
 ├─────────────────────────────────────────────────┤
-│ INFORMÁCIÓS SZEREPEK (Informational)             │
-│  • Figyelő / információgyűjtő (Monitor)          │
-│  • Információ-elosztó (Disseminator)             │
-│  • Szóvivő (Spokesperson)                        │
+│ INFORMÁCIÓS SZEREPEK (Informational)            │
+│  • Figyelő / információgyűjtő (Monitor)         │
+│  • Információ-elosztó (Disseminator)            │
+│  • Szóvivő (Spokesperson)                       │
 ├─────────────────────────────────────────────────┤
-│ DÖNTÉSI SZEREPEK (Decisional)                    │
-│  • Vállalkozó / zavarelhárító (Entrepreneur)     │
-│  • Erőforrás-elosztó (Resource Allocator)        │
-│  • Tárgyaló (Negotiator)                         │
+│ DÖNTÉSI SZEREPEK (Decisional)                   │
+│  • Vállalkozó / zavarelhárító (Entrepreneur)    │
+│  • Erőforrás-elosztó (Resource Allocator)       │
+│  • Tárgyaló (Negotiator)                        │
 └─────────────────────────────────────────────────┘
 ```
 
