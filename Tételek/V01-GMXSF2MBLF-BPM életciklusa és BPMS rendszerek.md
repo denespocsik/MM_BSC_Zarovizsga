@@ -38,7 +38,7 @@ A Business Process Management Suite (BPMS) olyan integrált szoftverkörnyezet, 
 
 ```
 ┌──────────────────────────────────────┐
-│                    BPMS              │
+│                BPMS                  │
 │  ┌─────────────┐  ┌─────────────┐    │
 │  │  Folyamat-  │  │ Végrehajtó  │    │
 │  │  modellező  │  │   motor     │    │
