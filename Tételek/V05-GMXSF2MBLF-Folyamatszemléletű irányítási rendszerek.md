@@ -37,7 +37,7 @@ A teknős-elemzés a folyamatok átfogó szabályozási és elemzési eszköze. 
 ```
                     ┌─────────────┐
                     │  BEMENETEK  │
-                    │ (Mi indítja?)│
+                    │(Mi indítja?)│
                     └──────┬──────┘
                            │
   ┌──────────────┐         ▼         ┌──────────────┐
