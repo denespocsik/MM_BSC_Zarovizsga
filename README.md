@@ -152,7 +152,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 ## Jelenlegi állapot (2026-05-09)
 
-### Befejezett tantárgyak (5/7):
+### Befejezett tantárgyak (6/7):
 
 - ✅ **Menedzsment alapjai** — 7 tétel teljes (K1–K7)
 - ✅ **HR menedzsment és vezetési technikák** — 6 tétel teljes (K8–K13)
