@@ -100,28 +100,28 @@ Az alábbi művek nem szerepelnek a kötelező irodalomban, de a tételek mélye
 ## 5. Fogalomtérkép: a K8–K13 összefüggései
 
 ```
-         SZERVEZETI STRATÉGIA
-                  │
-          ┌───────▼────────┐
-          │  HR STRATÉGIA  │ ← K8
-          └───────┬────────┘
-                  │
-    ┌─────────────┼─────────────┐
-    │             │             │
-┌───▼───┐   ┌────▼────┐  ┌─────▼─────┐
-│Munkaerő│  │Kiválasz-│  │Teljesítmény│
-│tervezés│  │  tás    │  │menedzsment │
-│toborzás│  │         │  │            │
-│  K9   │  │   K10   │  │    K13     │
-└───────┘   └─────────┘  └─────┬─────┘
-                               │
-                    ┌──────────┴──────────┐
-                    │                     │
-             ┌──────▼──────┐      ┌───────▼──────┐
-             │   Vezetés   │      │   Szervezeti │
-             │   K11       │◄────►│   kultúra    │
-             │             │      │   K12        │
-             └─────────────┘      └──────────────┘
+          SZERVEZETI STRATÉGIA
+                   │
+           ┌───────▼────────┐
+           │  HR STRATÉGIA  │ ← K8
+           └───────┬────────┘
+                   │
+     ┌─────────────┼─────────────┐
+     │             │             │
+┌────▼────┐   ┌────▼────┐  ┌─────▼──────┐
+│Munkaerő │   │Kiválasz-│  │Teljesítmény│
+│tervezés │   │  tás    │  │menedzsment │
+│toborzás │   │         │  │            │
+│  K9     │   │   K10   │  │    K13     │
+└─────────┘   └─────────┘  └─────┬──────┘
+                                 │
+                    ┌────────────┴──────────┐
+                    │                       │
+             ┌──────▼──────┐        ┌───────▼──────┐
+             │   Vezetés   │        │   Szervezeti │
+             │   K11       │◄──────►│   kultúra    │
+             │             │        │   K12        │
+             └─────────────┘        └──────────────┘
 ```
 
 A K8 (HR stratégia) az egész rendszer bázisa: meghatározza, milyen embereket keres a szervezet (K9–K10), hogyan méri és fejleszti őket (K13), és milyen vezetési kultúrában dolgoznak (K11–K12).
