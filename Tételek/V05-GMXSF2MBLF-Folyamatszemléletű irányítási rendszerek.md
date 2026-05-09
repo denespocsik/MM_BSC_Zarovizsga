@@ -42,8 +42,8 @@ A teknős-elemzés a folyamatok átfogó szabályozási és elemzési eszköze. 
                            │
   ┌──────────────┐         ▼         ┌──────────────┐
   │  KIKKEL?     │  ┌────────────┐   │   MIVEL?     │
-  │ (Szereplők,  ├─►│ FOLYAMAT  │◄──┤ (Erőforrások,│
-  │ felelősök)  │  │  NEVE      │   │  rendszerek) │
+  │ (Szereplők,  ├─►│  FOLYAMAT  │◄──┤ (Erőforrások,│
+  │ felelősök)   │  │   NEVE     │   │  rendszerek) │
   └──────────────┘  └─────┬──────┘   └──────────────┘
                            │
   ┌──────────────┐         ▼         ┌──────────────┐
@@ -72,10 +72,10 @@ A teknős-elemzés nem helyettesíti a BPMN-modellt, de kiváló kiegészítője
 A **PDCA (Plan–Do–Check–Act)** Deming ciklusa a folyamatos fejlesztés alapmodellje a MIR-ben:
 
 ```
-         ┌────────────────────────────────────────┐
-         │                                        │
-    PLAN ──► DO ──► CHECK ──► ACT ─────────────────┘
-    (Tervez)  (Végrehajt)  (Ellenőriz)  (Beavatkozik)
+         ┌───────────────────────────────────────┐
+         ▼                                       │
+       PLAN ───────► DO ───────► CHECK ───────► ACT
+    (Tervez)    (Végrehajt)   (Ellenőriz)   (Beavatkozik)
 ```
 
 | PDCA szakasz | KPI-k szerepe |
