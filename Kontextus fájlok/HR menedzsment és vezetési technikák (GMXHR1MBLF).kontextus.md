@@ -2,7 +2,7 @@
 
 **Oktató:** Prof. Dr. habil. Karácsony Péter, PhD. (Óbudai Egyetem, Keleti Károly Gazdasági Kar)  
 **Tételek:** K8–K13 (komplex gazdasági tételsor)  
-**Utolsó frissítés:** 2026-05-08
+**Utolsó frissítés:** 2026-05-09
 
 ---
 
