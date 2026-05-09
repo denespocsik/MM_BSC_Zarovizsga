@@ -41,11 +41,11 @@ Míg a WBS a feladatok hierarchiáját mutatja, a hálózati terv az időbeli so
 
 ```
   TERVEZÉS              VÉGREHAJTÁS           LEZÁRÁS
-  ┌────────────┐        ┌────────────┐        ┌────────────┐
+  ┌─────────────┐       ┌────────────┐        ┌────────────┐
   │ WBS, hálózat│       │ Státusz:   │        │ Settlement │
-  │ Budget     │→→→→→→→│ REL (kiadva│→→→→→→→│ (költségek │
-  │ allokálása │        │ Tényleges  │        │ átvezetése)│
-  └────────────┘        │ könyvelések│        └────────────┘
+  │ Budget      │──────→│ REL (kiadva│───────→│ (költségek │
+  │ allokálása  │       │ Tényleges  │        │ átvezetése)│
+  └─────────────┘       │ könyvelések│        └────────────┘
                         └────────────┘
 ```
 
