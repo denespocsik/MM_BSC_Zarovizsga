@@ -57,15 +57,15 @@ Barabási Albert-László skálafüggetlen hálózat-elmélete szerint a hálóz
   ┌──────────────────────────────────────────────────────┐
   │              HÁLÓZATI STRATÉGIA SZINTJEI             │
   │                                                      │
-  │  1. KAPCSOLATPORTFÓLIÓ-MENEDZSMENT                  │
-  │     Milyen kapcsolatokat tartsunk, bővítsünk,       │
-  │     zárjunk le? Erős vs. gyenge kötések aránya.     │
+  │  1. KAPCSOLATPORTFÓLIÓ-MENEDZSMENT                   │
+  │     Milyen kapcsolatokat tartsunk, bővítsünk,        │
+  │     zárjunk le? Erős vs. gyenge kötések aránya.      │
   │                                                      │
-  │  2. HÁLÓZATI POZICIONÁLÁS                           │
+  │  2. HÁLÓZATI POZICIONÁLÁS                            │
   │     Hub, híd (broker) vagy periférikus pozíció?      │
   │     Melyik klaszterben legyünk centrálisak?          │
   │                                                      │
-  │  3. HÁLÓZATALAKÍTÁS (co-evolution)                  │
+  │  3. HÁLÓZATALAKÍTÁS (co-evolution)                   │
   │     Aktív hálózatalakítás: új kapcsolatok            │
   │     ösztönzése, szabványok, platformok,              │
   │     konzorciumok létrehozása.                        │
@@ -113,18 +113,18 @@ A hagyományos vállalatelmélet a szervezeti határt jogi és tulajdonosi alapo
   SZERVEZETI HATÁROK HÁLÓZATBAN:
 
   ┌─────────────────────────────────────────┐
-  │  VÁLLALAT JOGI HATÁRA                  │
-  │  ┌──────────────────┐                  │
+  │  VÁLLALAT JOGI HATÁRA                   │
+  │  ┌──────────────────┐                   │
   │  │   Mag-kompetencia│────── Szállító A  │
-  │  │   (saját)        │                  │
-  │  └──────────────────┘                  │
-  │  ┌──────────────────┐                  │
+  │  │   (saját)        │                   │
+  │  └──────────────────┘                   │
+  │  ┌──────────────────┐                   │
   │  │  Kiszervezett    │────── Partner B   │
-  │  │  funkciók        │                  │
-  │  └──────────────────┘                  │
-  │  ┌──────────────────┐                  │
+  │  │  funkciók        │                   │
+  │  └──────────────────┘                   │
+  │  ┌──────────────────┐                   │
   │  │  Co-development  │────── Kutató C    │
-  │  └──────────────────┘                  │
+  │  └──────────────────┘                   │
   └─────────────────────────────────────────┘
 
   A vállalat határa elmosódik: a stratégiailag
@@ -148,19 +148,19 @@ A hagyományos hatékonyság-fogalom (efficiency) belső folyamatok optimalizál
   SZERVEZETI EREDMÉNYESSÉG MUTATÓI HÁLÓZATBAN:
 
   ┌───────────────────────────────────────────────────┐
-  │  HÁLÓZATI POZÍCIÓ MUTATÓI                        │
-  │  ● Betweenness centralitás (hány út megy át)     │
+  │  HÁLÓZATI POZÍCIÓ MUTATÓI                         │
+  │  ● Betweenness centralitás (hány út megy át)      │
   │  ● Closeness centralitás (átlagos távolság)       │
   │  ● Degree centralitás (közvetlen kapcsolatok)     │
   │                                                   │
-  │  KAPCSOLATI PORTFÓLIÓ MINŐSÉGI MUTATÓI           │
+  │  KAPCSOLATI PORTFÓLIÓ MINŐSÉGI MUTATÓI            │
   │  ● Kulcskapcsolatok stabilitása                   │
-  │  ● Erős/gyenge kötések aránya                    │
+  │  ● Erős/gyenge kötések aránya                     │
   │  ● Hídkapcsolatok száma (más klaszterekbe)        │
   │                                                   │
-  │  HÁLÓZATI ROBOSZTUSSÁG                           │
-  │  ● Hány kulcspartner kiesése után omlik össze    │
-  │    az értékteremtési hálózat?                    │
+  │  HÁLÓZATI ROBOSZTUSSÁG                            │
+  │  ● Hány kulcspartner kiesése után omlik össze     │
+  │    az értékteremtési hálózat?                     │
   └───────────────────────────────────────────────────┘
 ```
 
