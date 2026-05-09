@@ -11,9 +11,9 @@ Az üzleti informatika az 1960-as évektől napjainkig több markáns korszakon 
 ```
   1960–70-es évek    1980-as évek     1990-es évek     2000-es évek      2010–2020-as évek
   ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌──────────────┐  ┌───────────────┐
-  │  Mainframe  │→ │  Mini-PC    │→ │Kliens-szerver│→ │ Internet /   │→ │ Felhő / AI /  │
-  │  Kötegelt   │  │  Részleges  │  │ SAP R/3 ERP │  │ ERP II/SCM  │  │ In-memory    │
-  │  feldolgozás│  │  szigetek   │  │             │  │ CRM, e-biz  │  │ S/4HANA      │
+  │  Mainframe  │→ │  Mini-PC    │→ │    Kliens   │→ │ Internet /   │→ │ Felhő / AI /  │
+  │  Kötegelt   │  │  Részleges  │  │   szerver   │  │ ERP II/SCM   │  │ In-memory     │
+  │  feldolgozás│  │  szigetek   │  │ SAP R/3 ERP │  │ CRM, e-biz   │  │ S/4HANA       │
   └─────────────┘  └─────────────┘  └─────────────┘  └──────────────┘  └───────────────┘
 ```
 
@@ -38,13 +38,13 @@ Az 1970–80-as évek vállalataiban minden szervezeti egység a saját igényei
 
 ```
   Értékesítés      Raktár         Pénzügy        HR
-  ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐
-  │Rendelés- │   │Készlet-  │   │Könyvelő- │   │Személyzeti│
-  │kezelő    │   │nyilvántartó│  │szoftver  │   │rendszer  │
-  │(saját DB)│   │(saját DB)│   │(saját DB)│   │(saját DB)│
-  └────┬─────┘   └────┬─────┘   └────┬─────┘   └────┬─────┘
-       │              │              │              │
-       └──────────────┴──────────────┴──────────────┘
+  ┌──────────┐   ┌────────────┐   ┌──────────┐   ┌───────────┐
+  │Rendelés- │   │Készlet-    │   │Könyvelő- │   │Személyzeti│
+  │kezelő    │   │nyilvántartó│   │szoftver  │   │rendszer   │
+  │(saját DB)│   │(saját DB)  │   │(saját DB)│   │(saját DB) │
+  └────┬─────┘   └────┬───────┘   └────┬─────┘   └────┬──────┘
+       │              │                │              │
+       └──────────────┴────────────────┴──────────────┘
                    ↕ manuális adatcsere, e-mail, Excel
 ```
 
