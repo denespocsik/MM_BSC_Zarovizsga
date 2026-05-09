@@ -70,18 +70,18 @@ Az SAP egyik legfontosabb jellemzője, hogy az egyes modulok nem egymás után, 
 **Példa: Gyártási rendelés teljes adatáramlása**
 
 ```
-  Értékesítés (SD)         Termelésirányítás (PP)        Anyaggazdálkodás (MM)
-  ┌──────────────┐         ┌───────────────────┐         ┌──────────────────┐
-  │ Vevői rend.  │──MRP──→ │ Gyártási rendelés │──Anyag──│ Készletcsökkentés│
-  │ létrehozása  │         │ létrehozása       │  kiadás │ (Goods Issue)    │
-  └──────────────┘         └──────────┬────────┘         └──────────────────┘
-                                      │ Könyvelés                  │
-                                      ▼                            ▼
-                             Controlling (CO)             Pénzügyi számvitel (FI)
-                             ┌────────────────┐         ┌──────────────────────┐
-                             │ Önköltség      │         │ Automatikus főkönyvi │
-                             │ elszámolás     │         │ könyvelés (anyagkölt)│
-                             └────────────────┘         └──────────────────────┘
+  Értékesítés (SD)        Termelésirányítás (PP)        Anyaggazdálkodás (MM)
+  ┌──────────────┐        ┌───────────────────┐         ┌──────────────────┐
+  │ Vevői rend.  │──MRP──→│ Gyártási rendelés │──Anyag─→│ Készletcsökkentés│
+  │ létrehozása  │        │ létrehozása       │  kiadás │ (Goods Issue)    │
+  └──────────────┘        └──────────┬────────┘         └─────────┬────────┘
+                                     │ Könyvelés                  │
+                                     ▼                            ▼
+                            Controlling (CO)             Pénzügyi számvitel (FI)
+                            ┌────────────────┐         ┌──────────────────────┐
+                            │ Önköltség      │         │ Automatikus főkönyvi │
+                            │ elszámolás     │         │ könyvelés (anyagkölt)│
+                            └────────────────┘         └──────────────────────┘
 ```
 
 **A Procure-to-Pay (P2P) folyamat – az MM és FI integráció klasszikus példája:**
