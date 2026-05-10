@@ -100,7 +100,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 │
 ├── Kontextus fájlok/                                   # Tantárgy-szintű kontextusanyagok + Tétel-Tárgy Mátrix
 │   ├── Tétel-Tárgy Mátrix.md
-│   ├── Menedzsment alapjai (GMXMD1MBLF).kontextus.md
+│   ├── Komplex I. - Menedzsment alapjai (GMXMD1MBLF).kontextus.md
 │   ├── HR menedzsment és vezetési technikák (GMXHR1MBLF).kontextus.md
 │   ├── Vezetői számvitel és controlling (GIXVS2MBLF).kontextus.md
 │   ├── Számítógépes folyamatmenedzsment (GMXSF2MBLF).kontextus.md
@@ -177,4 +177,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
 [Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
 
-*Utolsó frissítés: 2026. május 10. — GMXMD1MBLF kontextus fájl bővítve: K1–K7 tartalmi összefoglaló hozzáadva.*
+*Utolsó frissítés: 2026. május 10. — Menedzsment alapjai kontextus fájl átnevezve: „Komplex I. - Menedzsment alapjai (GMXMD1MBLF).kontextus.md"*
