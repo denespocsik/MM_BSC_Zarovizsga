@@ -18,6 +18,16 @@ Az SAP Project System (PS) modul az ERP-be integrált projektmenedzsment-eszköz
 | Kontroll | Valós idejű költség-rálátás, budget vs. tényleges adatok, elszámolás (settlement) |
 | Integráció | Automatikus könyvelés a FI-ban szállítói számla vagy anyagkivét esetén |
 
+**A PS modul sajátossága:** A PS nem rendelkezik önálló szervezeti struktúrával – az FI, CO és MM modulokból örökli azt (Company Code, Controlling Area, Plant). Ezzel biztosítja a teljes pénzügyi és logisztikai integráltságot. A PS modul értékét elsősorban a más modulokkal való integráció teremti meg.
+
+**Projekttípusok az SAP PS-ben:**
+
+| Projekttípus | Jellemző | Példa |
+|---|---|---|
+| **Vevői projekt (Customer project)** | Vevői rendeléshez kapcsolódik; a bevétel és kiadás a projekten keresztül folyik | Egyedi termék legyártása és leszállítása |
+| **Általános költségprojekt (Overhead cost project)** | Nem értékesítési célú belső projekt | Irodafelújítás, belső fejlesztés |
+| **Beruházási projekt (Investment project)** | Tőkésítendő befektetés; a költségek eszközként jelennek meg | Gyárbővítés, gépbeszerzés |
+
 ### 15.2. A projekt strukturálása: WBS és hálózati tervek
 
 **WBS (Work Breakdown Structure – Munkalebontási struktúra):**  
@@ -34,8 +44,29 @@ A projekt hierarchikus modellje, amely a feladatokat kezelhető egységekre bont
   └── Release to Mass Production
 ```
 
+**WBS-elem (PSP-elem) lehetséges státuszai:**
+
+| Státusz | Jelentés |
+|---|---|
+| **Released** | Tényleges költségek rögzíthetők a WBS-elemre |
+| **Unlocked** | Feloldott, feldolgozható állapot |
+| **Technically Complete** | Műszaki zárás: a logisztikai folyamatok lezárulnak |
+| **Closed** | Logisztika és pénzügy egyaránt lezárva |
+| **Deletion Flag** | Törlésre jelölve |
+| **Fully Invoiced** | Teljes számlázás megtörtént; további számlák gátoltak |
+
+**Tevékenységtípusok (Activity Types) a hálózati tervben:**
+
+| Típus | Leírás |
+|---|---|
+| **Belsőleg feldolgozott (Internally processed)** | Saját erőforrással elvégzett tevékenység; aktivitástípushoz és munkaközponthoz kötött |
+| **Külső megrendelés (Externally processed)** | Alvállalkozóval elvégezhető; automatikus megrendelési igényt generál az MM-ben |
+| **Általános költségtevékenység (General costs)** | Tételes költségtervezés, amelyet nem emberi/gépi erőforrás, hanem költségnem alapján terveznek |
+
+A DIN 69 900 szabvány szerint a tevékenységeknek meghatározott kezdete és vége, megszakítás nélküli végrehajtásuk és erőforrásigényük van.
+
 **Hálózati tervek (Network Activities):**  
-Míg a WBS a feladatok hierarchiáját mutatja, a hálózati terv az időbeli sorrendet és logikai függőségeket ábrázolja (hasonló a Gantt-diagramhoz, de integrálva van a PS modul kapacitástervezésével).
+Míg a WBS a feladatok hierarchiáját mutatja, a hálózati terv az időbeli sorrendet és logikai függőségeket ábrázolja. A kapcsolatok típusai: normál sorozat (vég→kezdet), start-sorozat (kezdet→kezdet), vég-sorozat (vég→vég), kötési sorozat (kezdet→vég).
 
 ### 15.3. A projekt életciklusa az SAP-ban
 
@@ -49,7 +80,14 @@ Míg a WBS a feladatok hierarchiáját mutatja, a hálózati terv az időbeli so
                         └────────────┘
 ```
 
-A lezárási fázisban a felmerült projektköltségeket **settlement**-tel (elszámolással) vezetik át a végső vevőre (belső vagy külső), biztosítva a teljes pénzügyi transzparenciát.
+A lezárási fázisban a felmerült projektköltségeket **settlement**-tel (elszámolással) vezetik át a végső fogadó cost object-re. Az SAP PS két settlement-típust különböztet meg:
+
+| Settlement típus | Leírás |
+|---|---|
+| **Közvetlen elszámolás (Direct settlement)** | Minden WBS-elem közvetlenül a végső külső fogadóra (pl. költséghelyre, jövedelmezőségi szegmensre) számolja el a kötelezettségét |
+| **Többszintű elszámolás (Multi-level settlement)** | Az alacsonyabb szintű WBS-elemek először a magasabb szintű WBS-elemre számolnak el, majd az összesített összeg kerül a végső fogadóra |
+
+A settlement biztosítja a teljes pénzügyi transzparenciát és az FI modulba való automatikus könyvelést.
 
 ### 15.4. BSP – Business Systems Planning módszertan
 
@@ -126,4 +164,4 @@ Az SAP S/4HANA beépített (natív) eszközei különböző részletességű és
 
 ---
 
-*Forrás: GMXIV2MBLF oktatási segédanyag (2026); PMI: PMBOK Guide, 7th ed. (2021); Axelos: ITIL 4 Foundation (2019); IBM: Business Systems Planning – BSP (1984); Rockart, J.F.: „Chief Executives Define Their Own Data Needs" (HBR, 1979)*
+*Forrás: GMXIV2MBLF oktatási segédanyag (2026); SAP UCC Magdeburg: Intro to SAP S/4HANA Using Global Bike v4.3 – PS modul (2025); PMI: PMBOK Guide, 7th ed. (2021); Axelos: ITIL 4 Foundation (2019); IBM: Business Systems Planning – BSP (1984); Rockart, J.F.: „Chief Executives Define Their Own Data Needs" (HBR, 1979)*

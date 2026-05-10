@@ -28,9 +28,20 @@ Az SAP S/4HANA (2015–) a vállalatirányítási rendszerek negyedik generáci�
 | Adattárolás | Merevlemez (disk-based) | Memóriában (in-memory, RAM) |
 | Adatmodell | Aggregált táblák, indexek | Egyszerűsített modell, oszlopcentrikus tárolás |
 | OLTP + OLAP | Különálló rendszerek | Egyetlen rendszerben, valós időben |
-| Adattömörítés | Alap | ~593 GB → ~42 GB (példa) |
+| Adattömörítés | Alap | 593 GB → 118,6 GB (HANA) → 42,4 GB (S/4HANA) |
 | Felhasználói felület | SAP GUI (tranzakciók) | SAP Fiori (csempék, szerepköralapú, mobil) |
 | Analitika | Éjszakai adatáttöltés | Azonnali, beágyazott analitika |
+
+**Az S/4HANA bizonylati elve (Document Principle):**  
+Minden üzleti esemény egyedi sorszámú, nem törölhető elektronikus bizonylatot hoz létre az SAP adatbázisban. A bizonylat tartalmazza a felelős személyt, az időbélyeget és a tranzakció kereskedelmi tartalmát. Ez az erős belső kontrollrendszer és az audit-trail alapja. A **bizonylatfolyam** (Document Flow) e bizonylatok egymáshoz láncolódását jelenti – például: Megrendelő → Árubevételezés → Szállítói számla → Kifizetés.
+
+**Az SAP adattípusai:**
+
+| Adattípus | Jellemző | Példák |
+|---|---|---|
+| **Szervezeti adat** | Tartósan rögzített, ritkán változó struktúra | Kliens, Vállalati kód (Company Code), Gyár (Plant), Raktárhely |
+| **Törzadat (Master Data)** | Hosszú életciklusú, alapvető üzleti objektum | Anyag (Material), Vevő (Customer), Szállító (Vendor), Főkönyvi számla |
+| **Tranzakciós adat** | Üzleti esemény rögzítése; hivatkozik a törzadatra és szervezeti adatra | Értékesítési rendelés, Megrendelő, Számla, Szállítási bizonylat |
 
 ### 14.2. Az SAP szervezeti egységei (Organizational Units)
 
@@ -45,6 +56,9 @@ Az SAP a vállalat fizikai és jogi struktúráját szervezeti egységekkel mode
        └── Értékesítési csatorna (Distribution Channel)
             └── Divízió (Division)
 ```
+
+**A Global Bike vállalati struktúra az SAP-ban:**  
+A GBI-példa jól illusztrálja a szervezeti egységek hierarchiáját: Kliens (GBI) → Vállalati kód (US00, DE00) → Gyár (Dallas DL00, Miami MI00, Heidelberg HD00) → Raktárhely (FG00: késztermék, RM00: alapanyag) → Értékesítési szervezet (US West UW00, DE North DN00).
 
 ### 14.3. Az SAP főbb moduljai
 
@@ -94,6 +108,26 @@ Az SAP egyik legfontosabb jellemzője, hogy az egyes modulok nem egymás után, 
 | Szállítói számla | MM–FI | Invoice Verification → szállítói kötelezettség keletkezik FI-ban |
 | Kifizetés | FI | Outgoing Payment → bankszámla csökken |
 
+**A SAP Fiori felhasználói felület három alkalmazástípusa:**
+
+| Típus | Tartalom | Példa |
+|---|---|---|
+| **Tranzakciós App** | Adatlétrehozás, módosítás, megtekintés irányított navigációval | Értékesítési rendelés létrehozása |
+| **Analitikai App** | Üzleti adatok vizuális áttekintése, KPI-megjelenítés | Bevétel régiónkénti eloszlása |
+| **Factsheet** | Objektum kulcsinformációi + kontextuális navigáció a kapcsolódó objektumokhoz | Anyagkártya, Vevőkártya |
+
+**S/4HANA telepítési lehetőségek (Cloud vs. On-Premise):**
+
+| Jellemző | Cloud (SaaS, előfizetéses) | On-Premise (hagyományos) |
+|---|---|---|
+| Üzemeltetés | SAP felügyeli | Vállalat maga üzemelteti |
+| Frissítés | Negyedéves automatikus | Kevésbé sűrű, egyedi döntés |
+| Testreszabhatóság | Korlátozott (in-app extensibility) | Teljes ABAP-fejlesztés lehetséges |
+| Adatfelügyelet | SAP adatközpontban | Vállalat helyszínén |
+| Átállási forgatókönyv | **Greenfield (New Implementation)** – nulláról, data migration szükséges | **Brownfield (System Conversion)** – meglévő ECC átkonvertálása |
+
+A harmadik átállási forgatókönyv a **Landscape Transformation**: több régiós ERP-rendszer összevonása egyetlen S/4HANA-installanciába.
+
 ### 14.5. Az in-memory technológia üzleti értéke
 
 Az SAP HANA adatbázis három szinten hozza az üzleti értéket:
@@ -108,4 +142,4 @@ Az SAP HANA adatbázis három szinten hozza az üzleti értéket:
 
 ---
 
-*Forrás: GMXIV2MBLF oktatási segédanyag (2026); Russel, D., Hartley, N.: SAP S/4HANA: An Introduction (SAP Press, 2019); Plattner, H., Zeier, A.: In-Memory Data Management (Springer, 2012); help.sap.com*
+*Forrás: GMXIV2MBLF oktatási segédanyag (2026); SAP UCC Magdeburg: Intro to SAP S/4HANA Using Global Bike v4.3 (2025) – Introduction, FI, CO, MM, SD, PS modulok; Russel, D., Hartley, N.: SAP S/4HANA: An Introduction (SAP Press, 2019); Plattner, H., Zeier, A.: In-Memory Data Management (Springer, 2012); help.sap.com*
