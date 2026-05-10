@@ -107,37 +107,37 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 │   ├── Váll.Irány III. - Integrált vállalatirányítási rendszerek (GMXIV2MBLF).kontextus.md
 │   └── Váll.Irány IV. - Vállalati és üzleti hálózatmenedzsment (GMXVU2MBLF).kontextus.md
 │
-└── Tételek/                                            # Az összes kidolgozott tétel — egyenként .md fájlban
-    ├── K01-GMXMD1MBLF-Menedzsment fogalma, funkciói.md
-    ├── K02-GMXMD1MBLF-Menedzsment irányzatok.md
-    ├── K03-GMXMD1MBLF-Tervezés.md
-    ├── K04-GMXMD1MBLF-Szervezetek, szervezeti formák.md
-    ├── K05-GMXMD1MBLF-Vezetői stílusok.md
-    ├── K06-GMXMD1MBLF-Motivációs elméletek.md
-    ├── K07-GMXMD1MBLF-Döntés mint vezetői feladat.md
-    ├── K08-GMXHR1MBLF-HRM fogalma, céljai, fő funkciói, HR stratégia.md
-    ├── K09-GMXHR1MBLF-Munkaerő-tervezés és toborzás.md
-    ├── K10-GMXHR1MBLF-Kiválasztási folyamat és módszerek.md
-    ├── K11-GMXHR1MBLF-Vezetés fogalma és vezetői szerepek.md
-    ├── K12-GMXHR1MBLF-Szervezeti kultúra.md
-    ├── K13-GMXHR1MBLF-Teljesítménymenedzsment és értékelés.md
-    ├── K14-GIXVS2MBLF-Controlling szemléletmód és rendszer.md
-    ├── K15-GIXVS2MBLF-Controlling információs rendszere.md
-    ├── K16-GIXVS2MBLF-Költségszámítás a controllingban.md
-    ├── K17-GIXVS2MBLF-Kalkulációs módszerek és fedezetszámítás.md
-    ├── K18-GIXVS2MBLF-Stratégiai és operatív controlling.md
-    ├── K19-GIXVS2MBLF-Beruházási döntések controlling szemléletben.md
-    ├── K20-GIXVS2MBLF-Balanced Scorecard.md
-    ├── V01-GMXSF2MBLF-BPM életciklusa és BPMS rendszerek.md
-    ├── V02-GMXSF2MBLF-Üzleti folyamatok modellezése BPMN 2.0.md
-    ├── V03-GMXSF2MBLF-Üzleti folyamatok mérése és optimalizálása.md
-    ├── V04-GMXSF2MBLF-Kockázatkezelés és FMEA.md
-    ├── V05-GMXSF2MBLF-Folyamatszemléletű irányítási rendszerek.md
-    ├── V11-GMXIV2MBLF-Informatikai fejlődés és szigetrendszerek.md
-    ├── V12-GMXIV2MBLF-ERP fogalma és fejlődéstörténete.md
-    ├── V13-GMXIV2MBLF-ERP bevezetése és BPR.md
-    ├── V14-GMXIV2MBLF-SAP S4HANA struktúra és modulok.md
-    ├── V15-GMXIV2MBLF-ERP projektmenedzsment és üzemeltetés.md
+└── Tételek/                                            # Az összes kidolgozott tétel — egyenként *.tétel.md fájlban
+    ├── K01-GMXMD1MBLF-Menedzsment fogalma, funkciói.tétel.md
+    ├── K02-GMXMD1MBLF-Menedzsment irányzatok.tétel.md
+    ├── K03-GMXMD1MBLF-Tervezés.tétel.md
+    ├── K04-GMXMD1MBLF-Szervezetek, szervezeti formák.tétel.md
+    ├── K05-GMXMD1MBLF-Vezetői stílusok.tétel.md
+    ├── K06-GMXMD1MBLF-Motivációs elméletek.tétel.md
+    ├── K07-GMXMD1MBLF-Döntés mint vezetői feladat.tétel.md
+    ├── K08-GMXHR1MBLF-HRM fogalma, céljai, fő funkciói, HR stratégia.tétel.md
+    ├── K09-GMXHR1MBLF-Munkaerő-tervezés és toborzás.tétel.md
+    ├── K10-GMXHR1MBLF-Kiválasztási folyamat és módszerek.tétel.md
+    ├── K11-GMXHR1MBLF-Vezetés fogalma és vezetői szerepek.tétel.md
+    ├── K12-GMXHR1MBLF-Szervezeti kultúra.tétel.md
+    ├── K13-GMXHR1MBLF-Teljesítménymenedzsment és értékelés.tétel.md
+    ├── K14-GIXVS2MBLF-Controlling szemléletmód és rendszer.tétel.md
+    ├── K15-GIXVS2MBLF-Controlling információs rendszere.tétel.md
+    ├── K16-GIXVS2MBLF-Költségszámítás a controllingban.tétel.md
+    ├── K17-GIXVS2MBLF-Kalkulációs módszerek és fedezetszámítás.tétel.md
+    ├── K18-GIXVS2MBLF-Stratégiai és operatív controlling.tétel.md
+    ├── K19-GIXVS2MBLF-Beruházási döntések controlling szemléletben.tétel.md
+    ├── K20-GIXVS2MBLF-Balanced Scorecard.tétel.md
+    ├── V01-GMXSF2MBLF-BPM életciklusa és BPMS rendszerek.tétel.md
+    ├── V02-GMXSF2MBLF-Üzleti folyamatok modellezése BPMN 2.0.tétel.md
+    ├── V03-GMXSF2MBLF-Üzleti folyamatok mérése és optimalizálása.tétel.md
+    ├── V04-GMXSF2MBLF-Kockázatkezelés és FMEA.tétel.md
+    ├── V05-GMXSF2MBLF-Folyamatszemléletű irányítási rendszerek.tétel.md
+    ├── V11-GMXIV2MBLF-Informatikai fejlődés és szigetrendszerek.tétel.md
+    ├── V12-GMXIV2MBLF-ERP fogalma és fejlődéstörténete.tétel.md
+    ├── V13-GMXIV2MBLF-ERP bevezetése és BPR.tétel.md
+    ├── V14-GMXIV2MBLF-SAP S4HANA struktúra és modulok.tétel.md
+    ├── V15-GMXIV2MBLF-ERP projektmenedzsment és üzemeltetés.tétel.md
     ├── V16-GMXVU2MBLF-Vállalat komplex hálózati modellje.tétel.md
     ├── V17-GMXVU2MBLF-Üzleti hálózatok kölcsönhatásait befolyásoló tényezők.tétel.md
     ├── V18-GMXVU2MBLF-Hálózati működés és szempontjai.tétel.md
@@ -177,4 +177,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
 [Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
 
-*Utolsó frissítés: 2026. május 10. — V11–V15 (GMXIV2MBLF) kidolgozva, kontextus fájl létrehozva és átnevezve („Váll.Irány III."); V16–V20 (GMXVU2MBLF) szintén kész. Összesen 35/40 tétel kidolgozva.*
+*Utolsó frissítés: 2026. május 10. — Tételek/*.tétel.md elnevezési konvenció egységesítve (35 fájl átnevezve).*
