@@ -101,11 +101,11 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 ├── Kontextus fájlok/                                   # Tantárgy-szintű kontextusanyagok + Tétel-Tárgy Mátrix
 │   ├── Tétel-Tárgy Mátrix.md
 │   ├── Komplex I. - Menedzsment alapjai (GMXMD1MBLF).kontextus.md
-│   ├── HR menedzsment és vezetési technikák (GMXHR1MBLF).kontextus.md
-│   ├── Vezetői számvitel és controlling (GIXVS2MBLF).kontextus.md
-│   ├── Számítógépes folyamatmenedzsment (GMXSF2MBLF).kontextus.md
-│   ├── Integrált vállalatirányítási rendszerek (GMXIV2MBLF).kontextus.md
-│   └── Vállalati és üzleti hálózatmenedzsment (GMXVU2MBLF).kontextus.md
+│   ├── Komplex II. - HR menedzsment és vezetési technikák (GMXHR1MBLF).kontextus.md
+│   ├── Komplex III. - Vezetői számvitel és controlling (GIXVS2MBLF).kontextus.md
+│   ├── Váll.Irány I. - Számítógépes folyamatmenedzsment (GMXSF2MBLF).kontextus.md
+│   ├── Váll.Irány III. - Integrált vállalatirányítási rendszerek (GMXIV2MBLF).kontextus.md
+│   └── Váll.Irány IV. - Vállalati és üzleti hálózatmenedzsment (GMXVU2MBLF).kontextus.md
 │
 └── Tételek/                                            # Az összes kidolgozott tétel — egyenként .md fájlban
     ├── K01-GMXMD1MBLF-Menedzsment fogalma, funkciói.md
@@ -138,17 +138,17 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
     ├── V13-GMXIV2MBLF-ERP bevezetése és BPR.md
     ├── V14-GMXIV2MBLF-SAP S4HANA struktúra és modulok.md
     ├── V15-GMXIV2MBLF-ERP projektmenedzsment és üzemeltetés.md
-    ├── V16-GMXVU2MBLF-Vállalat komplex hálózati modellje.md
-    ├── V17-GMXVU2MBLF-Üzleti hálózatok kölcsönhatásait befolyásoló tényezők.md
-    ├── V18-GMXVU2MBLF-Hálózati működés és szempontjai.md
-    ├── V19-GMXVU2MBLF-Üzleti kölcsönhatások hálózatalapú megközelítése.md
-    ├── V20-GMXVU2MBLF-Hálózati üzleti stratégia.md
+    ├── V16-GMXVU2MBLF-Vállalat komplex hálózati modellje.tétel.md
+    ├── V17-GMXVU2MBLF-Üzleti hálózatok kölcsönhatásait befolyásoló tényezők.tétel.md
+    ├── V18-GMXVU2MBLF-Hálózati működés és szempontjai.tétel.md
+    ├── V19-GMXVU2MBLF-Üzleti kölcsönhatások hálózatalapú megközelítése.tétel.md
+    ├── V20-GMXVU2MBLF-Hálózati üzleti stratégia.tétel.md
     └── (V06–V10 tételek kidolgozás alatt — GMXIR1MBLF forrásanyag szükséges)
 ```
 
 ---
 
-## Jelenlegi állapot (2026-05-09)
+## Jelenlegi állapot (2026-05-10)
 
 ### Befejezett tantárgyak (6/7):
 
@@ -177,4 +177,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
 [Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
 
-*Utolsó frissítés: 2026. május 10. — Menedzsment alapjai kontextus fájl átnevezve: „Komplex I. - Menedzsment alapjai (GMXMD1MBLF).kontextus.md"*
+*Utolsó frissítés: 2026. május 10. — V11–V15 (GMXIV2MBLF) kidolgozva, kontextus fájl létrehozva és átnevezve („Váll.Irány III."); V16–V20 (GMXVU2MBLF) szintén kész. Összesen 35/40 tétel kidolgozva.*

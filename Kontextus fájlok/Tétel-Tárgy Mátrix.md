@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-05-09 — V16–V20 (GMXVU2MBLF) kidolgozva; összesen 35/40 tétel kész
+**Utolsó frissítés:** 2026-05-10 — V16–V20 (GMXVU2MBLF) kidolgozva; összesen 35/40 tétel kész
 
 ---
 
