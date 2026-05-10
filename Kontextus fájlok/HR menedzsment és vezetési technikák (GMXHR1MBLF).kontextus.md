@@ -57,7 +57,85 @@ Alkalmazott elméletek: McClelland, McGregor X/Y, Maccoby, Tannenbaum–Schmidt,
 
 ---
 
-## 3. Kötelező irodalom (kurzus)
+## 3. Tantárgy tartalmi összefoglalója (K8–K13)
+
+### K8 — HRM fogalma, céljai, fő funkciói, HR stratégia
+
+Az emberi erőforrás menedzsment (EEM, angolul Human Resource Management, HRM) az a szervezeti funkció, amely az embereket — mint a szervezet legértékesebb erőforrásait — tervezi, szervezi, irányítja és fejleszti a szervezeti célok elérése érdekében. Armstrong és Taylor (2016) meghatározása szerint a HRM stratégiai és koherens megközelítés a szervezet legtöbbet érő vagyonának kezelésére: azoknak az embereknek a kezelésére, akik egyénileg és közösen hozzájárulnak a szervezeti célok eléréséhez.
+
+A HRM elméleti alapja az *emberi tőke* (human capital) fogalma: a munkavállalók tudásának, készségeinek, tapasztalatainak és motivációjának együttes értéke. Az emberi tőkére az *intellektuális tőke* tágabb kategóriájaként tekintünk, amely magában foglalja a gondolkodást, tudást, kreativitást és döntéshozatalt (LEV_2). Erre épít a kompetenciaalapú HRM szemlélet, amely a munkakör betöltéséhez szükséges tudást, képességeket és attitűdöket rendszerezi.
+
+A HRM funkciói két blokkra tagolódnak. Az első blokk az emberi erőforrás biztosításával foglalkozik: munkaerő-tervezés, munkakörelemzés, toborzás és kiválasztás, képzés és fejlesztés, valamint kompenzációmenedzsment (bér, ösztönzők, juttatások). A második blokk az emberi erőforrás megtartásával és irányításával foglalkozik: teljesítménymenedzsment, munkaegészség és -biztonság, kollektív alku, valamint a munkaügyi kapcsolatok kezelése.
+
+A HRM céljai Armstrong alapján: a szervezeti hatékonyság és képesség növelése; a HRM-politikák kommunikálása az összes dolgozó felé; az etikus és társadalmilag felelős magatartás fenntartása; a munka minőségének fejlesztése; a változás kezelése az egyén, a csoport, a szervezet és a társadalom kölcsönös előnyére.
+
+A *HR stratégia* a szervezeti stratégiából levezetett, hosszú távú terv arra, hogyan kezeli a szervezet az emberi erőforrásait. Két megközelítés áll szemben egymással: a *best practice* elmélet szerint léteznek univerzálisan hatékony HR-megoldások (pl. Pfeffer 7 HR-gyakorlata), míg a *best fit* (kontingenciaelméleti) megközelítés szerint a legjobb HR-megoldás mindig a szervezet adott stratégiai helyzetétől függ. Az e-HRM és a teljesítmény-jutalmazás menedzsment a modern HRM kiemelt fejlődési területei (LEV_2).
+
+---
+
+### K9 — Munkaerő-tervezés és toborzás
+
+A munkaerő-tervezés (workforce planning) célja annak biztosítása, hogy a szervezetnek a megfelelő időben, a megfelelő helyen, a megfelelő számú és kompetenciájú munkavállaló álljon rendelkezésre. A folyamat négy lépésből áll: (1) a jelenlegi munkaerő-állomány felmérése, (2) a jövőbeli igények előrejelzése (a szervezeti stratégia alapján), (3) a kereslet-kínálat különbségének azonosítása, (4) cselekvési terv kidolgozása a hiány vagy felesleg kezelésére.
+
+A munkakörelemzés (job analysis) a toborzás és kiválasztás alapdokumentuma: meghatározza az adott munkakör tartalmát (feladatok, felelősségek, hatáskörök) és az elvégzéséhez szükséges követelményeket (kompetenciák, képesítések, tapasztalat). Eredménye a munkaköri leírás (job description) és a munkakör-specifikáció (job specification).
+
+A toborzás (recruitment) célja megfelelő jelöltek vonzása a betöltendő pozícióra. Belső toborzás esetén a szervezet saját állományából keres jelöltet (előléptetés, áthelyezés, belső álláshirdetés); előnye az alacsonyabb költség, a gyorsabb beilleszkedés és a karrierlehetőség jelzése, hátránya a belső versengés és az esetleges klikkesedés erősítése. Külső toborzás esetén a munkaerőpiacra nyit ki a szervezet (álláshirdetés, fejvadász, munkaerő-kölcsönzés, egyetemi kapcsolatok, online platformok); előnye a friss tudás és nézőpontok behozatala, hátránya a magasabb költség és a hosszabb beilleszkedési idő. Dessler (2020) keretrendszere szerint a toborzási csatorna megválasztása az adott munkakör jellegétől és a rendelkezésre álló időtől függ.
+
+---
+
+### K10 — Kiválasztási folyamat és módszerek
+
+A kiválasztás (selection) a toborzás által összegyűjtött jelöltállományból a legalkalmasabb személy azonosításának folyamata. A folyamat logikája a *kiválasztási tölcsér*: minden lépés szűkíti a jelölteket, miközben az információk pontossága és a módszer prediktív validitása növekszik.
+
+Az első szűrési fázis a CV-ek és jelentkezési anyagok értékelése, amelynek során a formális követelmények teljesülését ellenőrzik. Az interjú a legelterjedtebb kiválasztási eszköz; fajtái között megkülönböztetünk strukturált (előre meghatározott kérdéssor), félig strukturált és nem strukturált interjút, továbbá kompetenciaalapú (behaviourális) interjút, ahol a múltbeli viselkedésre kérdeznek rá konkrét szituációkon keresztül. A pszichológiai és képességtesztek (intelligencia-, személyiség- és szakmai tudástesztek) a jelölt egyéni jellemzőit mérik standardizált módon.
+
+Az Assessment Center (AC) a legmagasabb prediktív validitású kiválasztási módszer: több értékelő, több szimulációs feladat (szerepjáték, in-basket, csoportos gyakorlat, prezentáció) és több jelölt egyidejű értékelését jelenti. Magas validitása miatt vezető és menedzseri pozíciók betöltésére különösen alkalmas, bár a legköltségesebb módszerek közé tartozik.
+
+A kiválasztási módszerek megítélésének két fő szempontja a validitás (valóban méri-e, amit mér) és a megbízhatóság (azonos körülmények között azonos eredményt ad-e). Anderson et al. (2001) metaanalízise szerint az AC és a strukturált interjú a legjobb prediktív validitású eszközök.
+
+---
+
+### K11 — Vezetés fogalma és vezetői szerepek
+
+A *menedzsment* és a *vezetés* fogalmát a szakirodalom gyakran megkülönbözteti: a menedzsment az erőforrások tervezésére, szervezésére és ellenőrzésére összpontosít, míg a vezetés (leadership) elsősorban az emberek motiválására és befolyásolására irányul. Katz (1974) három készségtípust különböztet meg: a *technikai készség* a szakterületi szaktudást jelenti (tanulható); a *humán készség* az emberekkel való együttműködés képessége (fejleszthető); a *konceptuális készség* a szervezet egészének átlátása, az összefüggések felismerése (részben adottság). A hierarchiában feljebb haladva a technikai készség szerepe csökken, a konceptuálisé nő.
+
+Mintzberg (1973) empirikus megfigyelések alapján tíz menedzseri szerepet azonosított, amelyeket három csoportba rendezett. A *személyközi szerepek* közé tartozik a nyilvános megjelenés (figurehead), a főnöki (leader) és a kapcsolatteremtő (liaison) szerep. Az *információs szerepek* a figyelő (monitor), az elosztó (disseminator) és a szóvivő (spokesman) szerepek. A *döntési szerepek* a vállalkozói (entrepreneur), a zavarelhárítói (disturbance handler), az erőforrás-elosztói (resource allocator) és a tárgyalói (negotiator) szerepek.
+
+A *tulajdonságelméletek* (Ghiselli) azt feltételezik, hogy a sikeres vezető meghatározott személyiségjegyekkel rendelkezik: szakmai felkészültség, intelligencia, önbizalom, határozottság (nagyon fontos kategória), valamint kockázatvállalás és kezdeményezőkészség (mérsékelten fontos). A *döntésközpontú elméletek* a vezető és beosztottak közötti hatalommegosztásra fókuszálnak. Lewin három stílust különített el: az autokratikus (egyedüli döntéshozó, fegyelmező), a demokratikus (beosztottakat bevonja, objektívan értékel) és a laissez-faire (passzív, tanácsadó jellegű) vezető modelljét. Likert négyfokú modellje a keménykezű parancsolótól (bizalmatlan, centralizált) a részvételi csoportig (teljes bizalom, kölcsönös célmeghatározás) terjed. Tannenbaum és Schmidt folytonossági modelljén a vezető- és beosztottközpontú vezetés két szélső pólus között helyezkedik el.
+
+A *személyiség-viselkedés elméletek* a vezető belső motiváltságát és attitűdjét vizsgálják. McGregor X/Y elmélete szerint az X beállítottságú vezető feltételezi, hogy az alkalmazottak kerülik a munkát és a felelősséget, ezért autokratikusan irányít; az Y beállítottságú vezető ezzel szemben bízik az emberek önirányítási képességében és a kreativitásban. McClelland teljesítménymotivációs elmélete három alapvető szükségletet azonosít: teljesítményigény, kapcsolatigény és hatalomigény — ezek aránya határozza meg a vezető preferált munkastílusát. Maccoby négy típusa (mesterember, dzsungelharcos, szervezeti ember, játékos) a vezető személyiségének domináns jegyei szerint kategorizál. Blake és Mouton rácsmodellje két dimenzión (feladatközpontúság és emberközpontúság, egyenként 1–9 skálán) öt stílust különít el: a (9,9) csoportközpontú a leghatékonyabb ideáltípus.
+
+A *szituációs elméletek* szerint a hatékony vezetési stílus a körülményektől függ. Hersey és Blanchard modelljében a beosztott érettségi szintjéhez (munkaképesség + munkaakarás) kell igazítani a stílust: alacsony érettségnél diktáló (magas feladat, alacsony kapcsolat), növekvő érettségnél eladó (magas-magas), majd résztvevő (alacsony feladat, magas kapcsolat), végül delegáló (alacsony-alacsony) stílus az optimális. Fiedler kontingenciamodellje az LKM (legkevésbé kedvelt munkatárs) teszt segítségével azonosítja, hogy a vezető feladatorientált vagy kapcsolatorientált-e, és ehhez párosítja a szituáció kedvezőségét (vezető-beosztott viszony, feladatstruktúra, pozicionális hatalom). Vroom és Yetton döntési modellje öt stílust (A1, A2, K1, K2, Cs) határoz meg a szituáció jellemzői (döntési minőség, elfogadottság, idő) alapján.
+
+---
+
+### K12 — Szervezeti kultúra
+
+A szervezeti kultúra a szervezet tagjai által osztott alapfeltevések, értékek, normák és magatartásformák összessége (Schein, 1985). A kultúra nem csupán a látható felszíni elemekből (épület, öltözet, rituálék, szimbólumok) áll, hanem mélyen gyökerező, kevéssé tudatos rétegekből is. Ezt a kétszintű struktúrát írja le Daft *jéghegy-modellje*: a vízszint feletti, látható jellemzők (irodaelrendezés, öltözet, szóhasználat, ünnepek) csupán a kultúra felső rétegét alkotják, míg a vízszint alatti, rejtett rétegben találhatók a normák, értékrendszer és a munkavállalók érzelmi viszonyulása a szervezethez.
+
+Handy (1986) négy kultúratípust különböztet meg szervezeti metaforák segítségével. A *hatalom-kultúra* (pókháló) centralizált, erős vezető köré épül, gyors döntéshozatallal és alacsony szabályozottsággal. A *szerep-kultúra* (görög oszlopcsarnok) szabályokon, eljárásokon és formalizált szerepeken alapul; stabil, kiszámítható, de változásra lassú. A *feladat-kultúra* (háló) projekt- és feladatorientált, a csapat a kulcsegység, magas rugalmassággal de koordinációs nehézségekkel. A *személyiség-kultúra* (csillag) az egyéni specialistákat helyezi a középpontba, a szervezet csupán keretrendszer.
+
+Schein (1985) kultúraformáló mechanizmusai szerint a vezető hat elsődleges eszközzel hat a kultúrára: a figyelem tárgyának és mérési pontjainak meghatározása; reakciók kritikus helyzetekben; erőforrások allokálása; szerepmodellezés; jutalmazási és büntetési rendszer; szervezeti tagok kiválasztása és eltávolítása. A hat másodlagos mechanizmus (szervezeti felépítés, rendszerek, rítusok, történetek, fizikai tér, küldetésnyilatkozat) inkább megerősíti, mint alakítja a kultúrát.
+
+Cameron és Quinn OCAI-modellje (Organizational Culture Assessment Instrument) négy kultúratípust definiál két dimenzió mentén: *klán* (belső, rugalmas — bizalom, csapatmunka), *adhokrácia* (külső, rugalmas — innováció, kockázatvállalás), *piac* (külső, kontrollorientált — eredmény, verseny), *hierarchia* (belső, kontrollorientált — stabilitás, szabályok). Szabó–Molnár (2022) kutatásában (N=70, állami szervezetek) a klán típus bizonyult dominánsnak, de a kívánatos kultúra a feladatvégzés hatékonysága szempontjából az adhokráciához közelebb állt.
+
+A *Leadership Shadow* modell (Champions of Change Coalition, 2023) négy dimenzión vizsgálja, hogyan „árnyékolja be" a vezető viselkedése a szervezeti kultúrát: *What I say* (mit mondok — értékek és elvárások kommunikálása), *How I act* (hogyan viselkedek — kongruencia a kijelentések és a cselekedetek között), *What I prioritise* (mire fordítok erőforrásokat és figyelmet), *How I measure* (mit mér és jutalmaz a rendszer).
+
+---
+
+### K13 — Teljesítménymenedzsment és értékelés
+
+A teljesítménymenedzsment (performance management) nem egyetlen éves értékelési esemény, hanem folyamatos ciklus: célkitűzés → tevékenység és fejlesztés → monitorozás → értékelés → visszacsatolás → új célok. A célkitűzés alapja Drucker MBO-elve (Management by Objectives, 1954): a vezető és a beosztott együttesen határoznak meg mérhetőo, időhöz kötött és kihívást jelentő célokat (SMART elvek szerint), amelyek a szervezeti stratégiával összhangban állnak. A beosztott bevonása növeli az elköteleződést és a célmegfelelést.
+
+A teljesítményértékelési módszerek három nagy csoportra oszthatók. Az *összehasonlító módszerek* (rangsorolás, páros összehasonlítás, kényszerelosztás) a munkavállalók egymáshoz viszonyított rangjának megállapítására alkalmasak, de gyenge fejlesztési visszacsatolást nyújtanak. A *viselkedés-alapú skálák* (BARS — Behaviourally Anchored Rating Scales, BOS — Behavioural Observation Scales) az egyes teljesítménydimenziókat konkrét viselkedési példákhoz kötik; objektivitásuk magasabb, mint a grafikus skáláké. A *kompetenciaalapú értékelés* előre definiált kompetenciákon (tudás, képesség, attitűd) méri a teljesítményt, és fejlesztési célok azonosítására különösen alkalmas.
+
+A *360 fokos visszacsatolás* több forrásból — közvetlen vezető, beosztottak, kollégák, esetleg ügyfelek — gyűjt értékelést a munkavállalóról, csökkentve az egyoldalú értékelés torzításait. Főként fejlesztési célra hatékony; minősítési (bérezési) döntésekhez való alkalmazása vitatott a szakirodalomban, mert befolyásolhatja a visszajelzések őszinteségét.
+
+A motiváció és a teljesítmény kapcsolatát Pink *Motiváció 3.0* elmélete (2010) a belső motiváció három pillérével magyarázza: *autonómia* (a munka tartalmának és módjának meghatározása), *mesterség* (a képességek folyamatos fejlesztése), *cél* (a munkavégzés tágabb értelme, a szervezeti misszióval való azonosulás). Ezek a tényezők a tudásalapú munka esetén hatékonyabb ösztönzők, mint a hagyományos „ha–akkor" típusú jutalmazási rendszerek.
+
+---
+
+## 4. Kötelező irodalom (kurzus)
 
 1. Borgulya Istvánné – Dobay Péter – Farkas Ferenc – Karoliny Mártonné – László Gyula – Mohácsi Gabriella – Poór József (2006): *Emberi erőforrás menedzsment kézikönyv.* CompLex Kiadó, Budapest.
 2. Bakacsi Gyula – Bokor Attila – Császár Csaba – Gelei András – Kováts Klaudia – Takács Sándor (2000): *Stratégiai emberi erőforrás menedzsment.* KJK KERSZÖV, Budapest.
@@ -67,7 +145,7 @@ Alkalmazott elméletek: McClelland, McGregor X/Y, Maccoby, Tannenbaum–Schmidt,
 
 ---
 
-## 4. Ajánlott kiegészítő szakirodalom (nem kötelező, de releváns)
+## 5. Ajánlott kiegészítő szakirodalom (nem kötelező, de releváns)
 
 Az alábbi művek nem szerepelnek a kötelező irodalomban, de a tételek mélyebb megértéséhez és a záróvizsgán elvárható tudásszinthez szükséges kontextust nyújtják:
 
@@ -97,7 +175,7 @@ Az alábbi művek nem szerepelnek a kötelező irodalomban, de a tételek mélye
 
 ---
 
-## 5. Fogalomtérkép: a K8–K13 összefüggései
+## 6. Fogalomtérkép: a K8–K13 összefüggései
 
 ```
           SZERVEZETI STRATÉGIA
@@ -128,7 +206,7 @@ A K8 (HR stratégia) az egész rendszer bázisa: meghatározza, milyen embereket
 
 ---
 
-## 6. Kulcsfogalmak gyűjteménye
+## 7. Kulcsfogalmak gyűjteménye
 
 | Magyar | Angol | Forrás |
 |--------|-------|--------|
@@ -147,7 +225,7 @@ A K8 (HR stratégia) az egész rendszer bázisa: meghatározza, milyen embereket
 
 ---
 
-## 7. Kidolgozott tételek
+## 8. Kidolgozott tételek
 
 A K8–K13 tételek egyenként külön fájlban találhatók a `Tételek/` mappában:
 
