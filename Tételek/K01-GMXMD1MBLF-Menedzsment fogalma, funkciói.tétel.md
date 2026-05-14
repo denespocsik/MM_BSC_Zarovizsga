@@ -30,10 +30,12 @@ A menedzsment funkcióit klasszikusan négy csoportba szokás sorolni. Ezek egym
 
 **4. Ellenőrzés** (*controlling*): A tényleges teljesítmény összevetése a tervekkel, eltérések azonosítása, korrekció. Az ellenőrzés nem büntetés — visszacsatolási mechanizmus, amely lehetővé teszi a tanulást és az alkalmazkodást.
 
-```
-TERVEZÉS → SZERVEZÉS → VEZETÉS → ELLENŐRZÉS
-   ↑_________________________________↓
-             (visszacsatolás)
+```mermaid
+graph LR
+    T[Tervezés] --> S[Szervezés]
+    S --> V[Vezetés]
+    V --> E[Ellenőrzés]
+    E -->|visszacsatolás| T
 ```
 
 ### A menedzsment főbb szakterületei

@@ -41,18 +41,22 @@ Likert mérései szerint a 4-es rendszer adja a legjobb hosszú távú eredmény
 
 **Robert Tannenbaum és Warren Schmidt** (1958) a vezető és a csoport döntési részvételét egy 7 fokozatú kontinuumon ábrázolta:
 
-```
-AUTOKRATIKUS ←————————————————————→ DEMOKRATIKUS
-     |     |     |     |     |     |     |
-     1     2     3     4     5     6     7
+```mermaid
+graph LR
+    A1["1\nVezető dönt\nés bejelenti"] --> A2["2\nVezető dönt\nés megmagyarázza"]
+    A2 --> A3["3\nVezető dönt,\nkérdések engedélyezve"]
+    A3 --> A4["4\nVezető javasol,\ncsoport módosíthat"]
+    A4 --> A5["5\nCsoport javasol,\nvezető dönt"]
+    A5 --> A6["6\nCsoport dönt,\nvezető határt szab"]
+    A6 --> A7["7\nCsoport dönt\nteljes autonómiával"]
 
-1: Vezető dönt és bejelenti
-2: Vezető dönt és megmagyarázza
-3: Vezető dönt, de kérdéseket enged
-4: Vezető javasol, csoport módosíthat
-5: Csoport javasol, vezető dönt
-6: Csoport dönt, vezető határokat szab
-7: Csoport dönt teljes autonómiával
+    style A1 fill:#c0392b,color:#fff
+    style A2 fill:#e74c3c,color:#fff
+    style A3 fill:#e67e22,color:#fff
+    style A4 fill:#f39c12,color:#fff
+    style A5 fill:#27ae60,color:#fff
+    style A6 fill:#2980b9,color:#fff
+    style A7 fill:#1a5276,color:#fff
 ```
 
 Ez az ábrázolás jól mutatja, hogy a „demokratikus" és „autokratikus" nem bináris — egy spektrumon helyezkednek el.

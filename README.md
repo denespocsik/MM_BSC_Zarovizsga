@@ -177,4 +177,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
 [Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
 
-*Utolsó frissítés: 2026. május 10. — Tételek/*.tétel.md elnevezési konvenció egységesítve (35 fájl átnevezve). Gyakorlati_anyag (SAP University Alliance v4.3) feldolgozva: GMXIV2MBLF kontextus fájl bővítve, V14–V15 tételek mélyítve (bizonylati elv, adattípusok, Fiori app-típusok, PS projekttípusok, WBS-elem státuszok, settlement típusok, tevékenységtípusok).*
+*Utolsó frissítés: 2026. május 14. — K1–K7 tételek ASCII diagramjainak cseréje Mermaid diagramokra (K01: funkciókörfolyamat; K03: Porter 5 erő, BCG mátrix, célhierarchia táblázat; K04: lineáris, funkcionális, divizionális, mátrix szervezet; K05: Tannenbaum–Schmidt skála; K06: Maslow-piramis, Vroom, Flow-elmélet).*

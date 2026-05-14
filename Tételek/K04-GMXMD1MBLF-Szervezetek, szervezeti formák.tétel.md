@@ -44,14 +44,13 @@ A munkaszervezet három alapvető strukturális jellemző mentén írható le:
 
 A legegyszerűbb forma. Minden szintnek egy felettese van; az utasítások egyértelműen fentről lefelé haladnak.
 
-```
-           [Vezérigazgató]
-                 |
-        +--------+--------+
-        |                 |
-  [Üzemvezető A]    [Üzemvezető B]
-        |                 |
-    [Munkások]        [Munkások]
+```mermaid
+graph TD
+    VIG[Vezérigazgató]
+    VIG --> UVA[Üzemvezető A]
+    VIG --> UVB[Üzemvezető B]
+    UVA --> MA[Munkások]
+    UVB --> MB[Munkások]
 ```
 
 **Előnyök:** Egyértelmű felelősség, gyors döntéshozatal, átlátható.
@@ -62,14 +61,15 @@ A legegyszerűbb forma. Minden szintnek egy felettese van; az utasítások egyé
 
 A munkamegosztás szaktevékenységek (funkciók) szerint történik. A beosztottak több, szaktudás szerint illetékes felettestől is kaphatnak utasítást.
 
-```
-            [Vezérigazgató]
-                  |
-     +-----+------+------+-----+
-     |     |      |      |     |
-  [HR]  [Pénz]  [Mkt] [Term]  Log]
-     |     |      |      |     |
-  [Dolgozók — funkció szerint megosztva]
+```mermaid
+graph TD
+    VIG[Vezérigazgató]
+    VIG --> HR[HR]
+    VIG --> PE[Pénzügy]
+    VIG --> MK[Marketing]
+    VIG --> TE[Termelés]
+    VIG --> LO[Logisztika]
+    HR & PE & MK & TE & LO --> D[Dolgozók – funkció szerint megosztva]
 ```
 
 Sok szervezetben a funkcionális struktúrát **törzskarral** egészítik ki: a vezető mellé szakértő tanácsadói csoportot rendelnek (pl. jogi osztály, controlling), amely nem utasíthat, csak tanácsol.
@@ -85,13 +85,12 @@ Nagy, diverzifikált szervezetekben alkalmazzák. Az egységeket (*divíziókat*
 - **Vevő/piac szerint:** különböző vásárlói szegmensek (pl. B2B vs. B2C divízió)
 - **Földrajzi régió szerint:** területi önállóság (pl. európai, ázsiai, amerikai divízió)
 
-```
-         [Holding/Anyavállalat]
-                  |
-    +-------------+-------------+
-    |             |             |
-[A divízió]  [B divízió]   [C divízió]
-  (önálló P&L, saját funkciókkal)
+```mermaid
+graph TD
+    H[Holding / Anyavállalat]
+    H --> A["A divízió\n(önálló P&L)"]
+    H --> B["B divízió\n(önálló P&L)"]
+    H --> C["C divízió\n(önálló P&L)"]
 ```
 
 **Előnyök:** Rugalmasság, piachoz közeli döntéshozatal, az egységek teljesítménye jól mérhető.
@@ -101,15 +100,20 @@ Nagy, diverzifikált szervezetekben alkalmazzák. Az egységeket (*divíziókat*
 
 A funkcionális és a projektalapú/divizionális szervezet keresztezése. Kettős alárendeltség: minden dolgozónak van egy funkcionális főnöke (pl. mérnöki osztályvezető) és egy projekt- vagy termékfelelőse.
 
-```
-             [Vezérigazgató]
-                    |
-       +------------+------------+
-       |            |            |
-   [Mkt vez.]  [Mért. vez.]  [Pénz vez.]     ← funkcionális vonal
-       |            |            |
-     [A proj.vez.] —  [■] — [■] — [■]        ← projektkoordináció
-     [B proj.vez.] —  [■] — [■] — [■]
+```mermaid
+graph TD
+    VIG[Vezérigazgató]
+    VIG --> MKT[Mkt vez.]
+    VIG --> MER[Mérnöki vez.]
+    VIG --> PEN[Pénz vez.]
+    VIG --> AP[A projekt vez.]
+    VIG --> BP[B projekt vez.]
+    AP -.->|erőforrás| MKT
+    AP -.->|erőforrás| MER
+    AP -.->|erőforrás| PEN
+    BP -.->|erőforrás| MKT
+    BP -.->|erőforrás| MER
+    BP -.->|erőforrás| PEN
 ```
 
 **Előnyök:** Rugalmas erőforrás-allokáció, szakmai és projektszemlélet egyszerre érvényesül.

@@ -16,18 +16,14 @@ Ebből következik, hogy a kiváló képességű, de demotivált munkás nem tel
 
 **Abraham Maslow** pszichológus szerint az emberi szükségletek egy piramisba rendezhetők, ahol az alacsonyabb szintek kielégítése előfeltétele a magasabbak megjelenésének:
 
-```
-          /\
-         /  \
-        / 5. \ Önmegvalósítás (kreativitás, növekedés)
-       /------\
-      /   4.   \ Megbecsülés (státusz, elismerés, önbizalom)
-     /----------\
-    /    3.      \ Szeretet, hovatartozás (csoporttagság, barátság)
-   /--------------\
-  /      2.        \ Biztonság (munkabiztonság, stabilitás, rend)
- /------------------\
-/        1.          \ Fiziológiai (éhség, szomjúság, alvás, bérek)
+```mermaid
+graph BT
+    F["1. Fiziológiai\néhség, szomjúság, alvás, bérek"]
+    B["2. Biztonság\nmunkabiztonság, stabilitás, rend"]
+    S["3. Szeretet, hovatartozás\ncsoporttagság, barátság"]
+    M["4. Megbecsülés\nstátusz, elismerés, önbizalom"]
+    O["5. Önmegvalósítás\nkreativitás, növekedés"]
+    F --> B --> S --> M --> O
 ```
 
 **Munkáltatói következmények:**
@@ -64,10 +60,11 @@ Ebből következik, hogy a kiváló képességű, de demotivált munkás nem tel
 
 Ha bármelyik tényező nulla (nem hiszi el, hogy az erőfeszítés teljesítményhez vezet, vagy a jutalmat nem tartja értékesnek), a motiváció nulla lesz — függetlenül a többi tényezőtől.
 
-```
-E ──────→ T ──────→ K
-(erőfeszítés) (teljesítmény) (kimenet/jutalom)
-   Elvárás    Instrumentalitás  Valencia
+```mermaid
+graph LR
+    E["Erőfeszítés (E)"] -->|"Elvárás\nE → T"| T["Teljesítmény (T)"]
+    T -->|"Instrumentalitás\nT → K"| K["Kimenet / Jutalom (K)"]
+    V["Valencia\njutalom szubjektív értéke"] -.-> K
 ```
 
 **Következmény a vezető számára:** Érdemes megkérdezni, hogy a dolgozó mit értékel — a vezető által felkínált jutalom csak akkor motivál, ha a beosztott számára is értékes.
@@ -82,15 +79,15 @@ E ──────→ T ──────→ K
 
 **Csíkszentmihályi Mihály flow-elmélete:** Az optimális élmény (*flow*) akkor keletkezik, amikor a feladat kihívásszintje és a személy jártassága egyensúlyban van. Ha a kihívás túl nagy, szorongás; ha túl kis, unalom. A vezető feladata megtalálni azt a tartományt, ahol a munka önmagában jutalmazó.
 
-```
-     Magas kihívás
-           ↑
- SZORONGÁS |  FLOW
-           |
------------+----------→ Magas jártasság
-    APÁTIA |  UNALOM
-           |
-    Alacsony kihívás
+```mermaid
+quadrantChart
+    title Flow-elmélet (Csíkszentmihályi)
+    x-axis Alacsony jártasság --> Magas jártasság
+    y-axis Alacsony kihívás --> Magas kihívás
+    quadrant-1 FLOW
+    quadrant-2 SZORONGÁS
+    quadrant-3 APÁTIA
+    quadrant-4 UNALOM
 ```
 
 ---
