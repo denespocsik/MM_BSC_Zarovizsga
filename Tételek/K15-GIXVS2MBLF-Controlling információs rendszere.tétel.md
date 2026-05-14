@@ -4,19 +4,17 @@
 
 A controlling egy **zárt szabályozási körként** működő információs rendszer. Három alrendszer kapcsolódik össze benne:
 
-```
-IRÁNYÍTÁS
-    │
-    ├─► Célmeghatározás / Tervezési rendszerek
-    │       (Éves terv, stratégiai terv, projekttervek)
-    │
-    ├─► Végrehajtás / Megvalósítás
-    │       (Tényadatok gyűjtése a vezetői számvitelből)
-    │
-    └─► Elemzés és Beszámolás
-            (Eltéréselemzés, riportok, intézkedési javaslatok)
-            │
-            └──────────────────────────► visszacsatolás ↑
+```mermaid
+flowchart TD
+    IR["🏛️ IRÁNYÍTÁS"]
+    T["📋 Célmeghatározás / Tervezési rendszerek<br/>(Éves terv, stratégiai terv, projekttervek)"]
+    V["⚙️ Végrehajtás / Megvalósítás<br/>(Tényadatok gyűjtése a vezetői számvitelből)"]
+    E["📈 Elemzés és Beszámolás<br/>(Eltéréselemzés, riportok, intézkedési javaslatok)"]
+
+    IR --> T
+    IR --> V
+    IR --> E
+    E -->|visszacsatolás| IR
 ```
 
 A controller feladata: **nem maga tervez**, hanem összefoglalja, konszolidálja és értelmezi a terveket, majd a tényadatokkal szembesíti azokat.
@@ -25,18 +23,16 @@ A controller feladata: **nem maga tervez**, hanem összefoglalja, konszolidálja
 
 Az operatív tervezés menete (7. ea., Katona):
 
-```
-Értékesítési terv
-        ↓
-Termelési terv (kapacitástervezés)
-        ↓
-Anyag- és munkabér-terv (közvetlen ktg.)
-        ↓
-Általános költségterv (közvetett ktg., overhead)
-        ↓
-Eredményterv (fedezetszámítás alapján)
-        ↓
-Pénzügyi terv / Likviditási terv
+```mermaid
+flowchart TD
+    A["🛒 Értékesítési terv<br/><i>szűk keresztmetszet — innen indul a tervezés</i>"]
+    B["🏭 Termelési terv<br/>(kapacitástervezés)"]
+    C["🔩 Anyag- és munkabér-terv<br/>(közvetlen ktg.)"]
+    D["🏢 Általános költségterv<br/>(közvetett ktg., overhead)"]
+    E["📊 Eredményterv<br/>(fedezetszámítás alapján)"]
+    F["💰 Pénzügyi terv / Likviditási terv"]
+
+    A --> B --> C --> D --> E --> F
 ```
 
 A tervezés **szűk keresztmetszettől indul**: az esetek nagy részében a piac (értékesíthetőség) a korlát, ezért az értékesítési terv az egész tervezési ciklus alapja.

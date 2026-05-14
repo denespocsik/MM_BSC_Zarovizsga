@@ -4,28 +4,34 @@
 
 A beruházási controlling **nem ér véget a vásárlási döntéssel**. Három szakaszt fed le:
 
-```
-Tervezési szakasz → Megvalósítási szakasz → Használati szakasz
-(döntési előkészítés)   (projekt-controlling)   (utókalkuláció,
-                                                  terv–tény ktg.)
+```mermaid
+flowchart LR
+    A["📐 Tervezési szakasz<br/><i>döntési előkészítés</i><br/>Gazdaságossági számítások"]
+    B["🔨 Megvalósítási szakasz<br/><i>projekt-controlling</i><br/>Költség- és időkontroll"]
+    C["📊 Használati szakasz<br/><i>utókalkuláció</i><br/>Terv–tény összehasonlítás"]
+
+    A -->|"döntés: megvalósítás"| B -->|"üzembe helyezés"| C
+    C -->|"tapasztalatok → jövőbeli döntések"| A
 ```
 
 ### Gazdaságossági számítások módszerei
 
-```
-Beruházás-kalkuláció
-│
-├── Statikus módszerek (időtényezőt figyelmen kívül hagyják)
-│   ├── Költség-összehasonlító számítás
-│   ├── Nyereség-összehasonlító számítás
-│   ├── Jövedelmezőségi számítás (ROI)
-│   └── Statikus megtérülési idő (PBPS)
-│
-└── Dinamikus módszerek (időértéket figyelembe veszik)
-    ├── Nettó jelenérték (NPV)
-    ├── Belső megtérülési ráta (IRR)
-    ├── Jövedelmezőségi index (PI)
-    └── Diszkontált megtérülési idő (PBPD)
+```mermaid
+flowchart TD
+    BK["💼 Beruházás-kalkuláció"]
+
+    BK --> S["🕐 Statikus módszerek<br/><i>időtényezőt figyelmen kívül hagyják</i>"]
+    BK --> D["⏳ Dinamikus módszerek<br/><i>pénz időértékét figyelembe veszik</i>"]
+
+    S --> S1["Költség-összehasonlító számítás"]
+    S --> S2["Nyereség-összehasonlító számítás"]
+    S --> S3["Jövedelmezőségi számítás (ROI)"]
+    S --> S4["Statikus megtérülési idő (PBPS)"]
+
+    D --> D1["Nettó jelenérték (NPV)"]
+    D --> D2["Belső megtérülési ráta (IRR)"]
+    D --> D3["Jövedelmezőségi index (PI)"]
+    D --> D4["Diszkontált megtérülési idő (PBPD)"]
 ```
 
 ### Statikus módszerek

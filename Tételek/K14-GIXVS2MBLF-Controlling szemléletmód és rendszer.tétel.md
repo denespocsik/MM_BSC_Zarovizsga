@@ -16,22 +16,13 @@ A controlling szemlélet három alapelvben foglalható össze:
 
 ### A controlling szabályozóköre
 
-```
-┌────────────────────────────────────────────────┐
-│  Teljesítménymércék meghatározása (TERVEZÉS)   │
-└──────────────────────┬─────────────────────────┘
-                       │
-                       ▼
-┌────────────────────────────────────────────────┐
-│         Terv–tény összehasonlítás              │
-└──────────────────────┬─────────────────────────┘
-                       │
-                       ▼
-┌────────────────────────────────────────────────┐
-│  Eltérések elemzése → Ellenintézkedések        │
-└────────────────────────────────────────────────┘
-         ↑_____________________________|
-                  visszacsatolás
+```mermaid
+flowchart TD
+    A["🎯 Teljesítménymércék meghatározása<br/>(TERVEZÉS)"]
+    B["📊 Terv–tény összehasonlítás"]
+    C["⚡ Eltérések elemzése → Ellenintézkedések"]
+
+    A --> B --> C -->|visszacsatolás| A
 ```
 
 ### A controller öt fő feladata (IGC, 2002)

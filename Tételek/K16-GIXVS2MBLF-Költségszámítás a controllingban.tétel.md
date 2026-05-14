@@ -11,16 +11,20 @@ A controlling a **gazdasági tartalmat**, nem a pénzmozgást figyeli. Ezért a 
 
 **1. Volumenhez való viszony szerint:**
 
-```
-Összes költség
-│
-├── Fix költség – nem függ a termelési volumentől
-│       Pl.: bérleti díj, amortizáció, havidíjas bérek
-│
-└── Változó költség – a volumennel változik
-        ├── Proporcionális (arányos) – pl. anyagköltség
-        ├── Degresszív (a növekedésnél lassabban nő) – pl. energiaköltség
-        └── Progresszív (a növekedésnél gyorsabban nő) – pl. túlórabér
+```mermaid
+flowchart TD
+    K["💼 Összes költség"]
+    F["🔒 Fix költség<br/>nem függ a termelési volumentől<br/><i>Pl.: bérleti díj, amortizáció, havidíjas bérek</i>"]
+    V["📈 Változó költség<br/>a volumennel változik"]
+    P["➡️ Proporcionális (arányos)<br/><i>Pl.: anyagköltség</i>"]
+    D["↘️ Degresszív (lassabban nő)<br/><i>Pl.: energiaköltség</i>"]
+    G["↗️ Progresszív (gyorsabban nő)<br/><i>Pl.: túlórabér</i>"]
+
+    K --> F
+    K --> V
+    V --> P
+    V --> D
+    V --> G
 ```
 
 **2. Elszámolhatóság szerint:**
@@ -32,9 +36,14 @@ A controlling a **gazdasági tartalmat**, nem a pénzmozgást figyeli. Ezért a 
 
 **3. A háromszintű elszámolási rendszer:**
 
-```
-Költségnemszámítás → Költséghelyszámítás → Költségviselő-számítás
-(Mit költöttünk?)     (Hol merült fel?)      (Mire fordítottuk?)
+```mermaid
+flowchart LR
+    A["📦 Költségnemszámítás<br/><b>Mit</b> költöttünk?"]
+    B["📍 Költséghelyszámítás<br/><b>Hol</b> merült fel?"]
+    C["🎯 Költségviselő-számítás<br/><b>Mire</b> fordítottuk?"]
+
+    A -->|"erőforrás → felelősségi terület"| B
+    B -->|"felelősségi terület → termék/szolgáltatás"| C
 ```
 
 ### A modern költség- és teljesítményelszámolás céljai

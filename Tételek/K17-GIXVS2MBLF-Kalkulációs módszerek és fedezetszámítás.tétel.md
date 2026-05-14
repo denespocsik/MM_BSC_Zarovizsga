@@ -47,14 +47,18 @@ Pl.: Közvetett ktg. = 3 500 000 Ft, Közvetlen bér = 1 000 000 Ft
 
 Az **Ár–Költség–Fedezet–Nyereség** struktúra a controlling egyik leghasznosabb döntési kerete:
 
-```
-Árbevétel (TR)
-- Változó költségek (VC)
-─────────────────────────
-= Fedezet (F)
-- Fix költségek (FC)
-─────────────────────────
-= Nyereség (EBIT)
+```mermaid
+flowchart TD
+    TR["💵 Árbevétel (TR)"]
+    VC["➖ Változó költségek (VC)"]
+    F["🟡 Fedezet (F)<br/><i>a fix ktg.-et fedezi + nyereséget termel</i>"]
+    FC["➖ Fix költségek (FC)"]
+    EBIT["🟢 Nyereség / EBIT"]
+
+    TR -->|"− VC"| VC
+    VC --> F
+    F -->|"− FC"| FC
+    FC --> EBIT
 ```
 
 **Fedezet = az az összeg, amely a fix költségeket fedezi és nyereséget termel.**
@@ -85,16 +89,13 @@ Pl.: FC = 300 000 Ft, Ár = 500 Ft/db, VC/db = 300 Ft
 
 **Grafikusan:**
 
-```
-Ft
- │         / Árbevétel
- │        /
- │   ----/---- ← Fedezeti pont (Q_BEP)
- │  /   /
- │ / Összes ktg.
- │/_______________
- 0        Q (db)
-   Fix ktg. = vízszintes indulás
+```mermaid
+xychart-beta
+    title "Break-even elemzés (FC=300 eFt, Ár=500 Ft/db, VC=300 Ft/db → Q_BEP=1500 db)"
+    x-axis "Mennyiség (db)" [0, 500, 1000, 1500, 2000, 2500, 3000]
+    y-axis "Ft" 0 --> 1600000
+    line "Árbevétel" [0, 250000, 500000, 750000, 1000000, 1250000, 1500000]
+    line "Összes ktg. (FC+VC)" [300000, 450000, 600000, 750000, 900000, 1050000, 1200000]
 ```
 
 > **Irodalom:** Katona F.: CONTROLLING 3., 4., 5. ea.; Francsovics A.: Controlling, 2.2–2.3. alfejezet; Kaplan–Cooper: Költség & Hatás (2001)

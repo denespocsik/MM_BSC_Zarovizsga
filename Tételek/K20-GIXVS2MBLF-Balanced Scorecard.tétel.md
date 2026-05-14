@@ -10,22 +10,18 @@ A BSC két alapvetésben tér el a hagyományos kontrolling-rendszerektől:
 
 ### A BSC négy nézőpontja
 
-```
-                    KÜLDETÉS és STRATÉGIA
-                            │
-          ┌─────────────────┼─────────────────┐
-          ▼                 ▼                 ▼
-   PÉNZÜGYI           VEVŐI/PIACI       BELSŐ FOLYAMATOK
-   nézőpont           nézőpont          nézőpont
-   „Hogyan látnak     „Hogyan látnak    „Miben kell
-   minket a           minket vevőink?"  kiválónak lennünk?"
-   befektetők?"
-          └─────────────────┬─────────────────┘
-                            ▼
-                   TANULÁS ÉS FEJLŐDÉS
-                   nézőpont
-                   „Hogyan tudunk fejlődni
-                    és innoválni?"
+```mermaid
+flowchart TD
+    S["🎯 KÜLDETÉS és STRATÉGIA"]
+
+    S --> P["💰 PÉNZÜGYI nézőpont<br/><i>Hogyan látnak minket a befektetők?</i>"]
+    S --> V["👥 VEVŐI / PIACI nézőpont<br/><i>Hogyan látnak minket vevőink?</i>"]
+    S --> B["⚙️ BELSŐ FOLYAMATOK nézőpont<br/><i>Miben kell kiválónak lennünk?</i>"]
+    S --> T["📚 TANULÁS ÉS FEJLŐDÉS nézőpont<br/><i>Hogyan tudunk fejlődni és innoválni?</i>"]
+
+    T -->|"alapozza meg"| B
+    B -->|"értéket teremt"| V
+    V -->|"bevételt generál"| P
 ```
 
 ### A négy nézőpont részletesen
@@ -70,18 +66,16 @@ A BSC két alapvetésben tér el a hagyományos kontrolling-rendszerektől:
 
 A BSC kulcseleme, hogy a négy nézőpont **nem független egymástól**, hanem ok-okozati összefüggésben áll:
 
-```
-[Tanulás & Fejlődés]
- Jobb képzés
-        ↓
-[Belső folyamatok]
- Jobb gyártási minőség
-        ↓
-[Vevői nézőpont]
- Elégedettebb vevők, több megrendelés
-        ↓
-[Pénzügyi nézőpont]
- Magasabb árbevétel, jobb ROI
+```mermaid
+flowchart TD
+    T["📚 Tanulás & Fejlődés<br/>Jobb képzés, magasabb kompetencia"]
+    B["⚙️ Belső folyamatok<br/>Jobb gyártási minőség, rövidebb átfutás"]
+    V["👥 Vevői nézőpont<br/>Elégedettebb vevők, több megrendelés"]
+    P["💰 Pénzügyi nézőpont<br/>Magasabb árbevétel, jobb ROI"]
+
+    T -->|"képzett munkaerő javítja a folyamatokat"| B
+    B -->|"jobb minőség növeli az elégedettséget"| V
+    V -->|"hűséges vevők növelik a bevételt"| P
 ```
 
 Ez a logika teszi a BSC-t **stratégiai irányítási rendszerré** – nem csupán mutatószám-listává.

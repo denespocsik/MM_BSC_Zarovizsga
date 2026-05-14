@@ -4,21 +4,15 @@
 
 A stratégiai menedzsment a vállalat **hosszú távú versenyképességét** alapozza meg. Lépései (Katona, EA 9.):
 
-```
-1. Stratégiai elemzés
-   (PESTEL, Porter 5 erő, értéklánc, SWOT)
-        ↓
-2. Stratégiai lehetőségek kidolgozása
-   (BCG-mátrix, Ansoff-mátrix, Porter alapstratégiák)
-        ↓
-3. Stratégia kiválasztása és kommunikálása
-   (Küldetés, jövőkép, elérendő pozíció)
-        ↓
-4. Stratégia beágyazása a szervezetbe
-   (Stratégiai controlling eszközei: BSC, stratégiai térkép)
-        ↓
-5. Stratégiai felülvizsgálat
-   (Eltéréselemzés, a ciklus újraindítása)
+```mermaid
+flowchart TD
+    A["🔍 1. Stratégiai elemzés<br/><i>PESTEL, Porter 5 erő, értéklánc, SWOT</i>"]
+    B["💡 2. Stratégiai lehetőségek kidolgozása<br/><i>BCG-mátrix, Ansoff-mátrix, Porter alapstratégiák</i>"]
+    C["📣 3. Stratégia kiválasztása és kommunikálása<br/><i>Küldetés, jövőkép, elérendő pozíció</i>"]
+    D["🏗️ 4. Stratégia beágyazása a szervezetbe<br/><i>BSC, stratégiai térkép</i>"]
+    E["🔄 5. Stratégiai felülvizsgálat<br/><i>Eltéréselemzés, a ciklus újraindítása</i>"]
+
+    A --> B --> C --> D --> E -->|"új ciklus"| A
 ```
 
 ### Stratégiai controlling
@@ -42,18 +36,18 @@ Az operatív controlling az **éves tervezési ciklus** és a **folyamatos terv�
 
 Az operatív controlling folyamata:
 
-```
-Éves terv elkészítése (szept.–dec.)
-         ↓
-Havi tényadatok gyűjtése (vezetői számvitel)
-         ↓
-Terv–tény összehasonlítás (riport)
-         ↓
-Eltérések elemzése (ok feltárása)
-         ↓
-Intézkedések meghozatala
-         ↓
-(Szükség esetén terv felülvizsgálata)
+```mermaid
+flowchart TD
+    A["📅 Éves terv elkészítése<br/>(szept.–dec.)"]
+    B["📥 Havi tényadatok gyűjtése<br/>(vezetői számvitel)"]
+    C["⚖️ Terv–tény összehasonlítás<br/>(riport)"]
+    D["🔎 Eltérések elemzése<br/>(ok feltárása)"]
+    E["✅ Intézkedések meghozatala"]
+    F["📝 Terv felülvizsgálata<br/>(szükség esetén)"]
+
+    A --> B --> C --> D --> E
+    E -->|"visszacsatolás"| B
+    E -->|"jelentős eltérés"| F --> B
 ```
 
 ### Stratégiai és operatív controlling összehasonlítása
