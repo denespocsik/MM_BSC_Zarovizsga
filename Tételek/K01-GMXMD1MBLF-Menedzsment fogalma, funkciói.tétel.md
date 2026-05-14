@@ -32,39 +32,57 @@ A menedzsment funkcióit klasszikusan négy csoportba szokás sorolni. Ezek egym
 
 ```mermaid
 graph LR
-    T[Tervezés] --> S[Szervezés]
-    S --> V[Vezetés]
-    V --> E[Ellenőrzés]
-    E -->|visszacsatolás| T
+    T("<b>Tervezés</b><br/>(planning)")
+    S("<b>Szervezés</b><br/>(organizing)")
+    V("<b>Vezetés</b><br/>(leading)")
+    E("<b>Ellenőrzés</b><br/>(controlling)")
+
+    T --> S
+    S --> V
+    V --> E
+    E -.->|visszacsatolás| T
+
+    classDef tNode fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef sNode fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef vNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef eNode fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+
+    class T tNode;
+    class S sNode;
+    class V vNode;
+    class E eNode;
+
+    linkStyle 0,1,2 stroke:#546e7a,stroke-width:2px;
+    linkStyle 3 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 ### A menedzsment főbb szakterületei
 
 A szervezetek összetettségével párhuzamosan a menedzsment is szakosodott. A legfontosabb területek:
 
-| Szakterület | Fókusz |
-|---|---|
-| **HR-menedzsment** | Toborzás, kiválasztás, képzés, teljesítményértékelés |
-| **Marketingmenedzsment** | Piac, vevők, termékpozicionálás, értékesítés |
-| **Pénzügyi menedzsment** | Tőkebevonás, likviditás, befektetések, controlling |
-| **Termelés-/operációmenedzsment** | Gyártási folyamatok, kapacitás, minőség |
-| **Logisztika** | Anyagáramlás, ellátási lánc, raktározás, szállítás |
-| **Controlling** | Tervezés-ellenőrzés-eltéréselemzés rendszere |
-| **Minőségmenedzsment** | ISO-rendszerek, TQM, folyamatos fejlesztés |
-| **Projektmenedzsment** | Egyszeri, komplex feladatok tervezése és végrehajtása |
-| **Változásmenedzsment** | Szervezeti átalakulások irányítása |
-| **Stratégiai menedzsment** | Hosszú távú célok, versenystratégia |
+| Szakterület                       | Fókusz                                                |
+| --------------------------------- | ----------------------------------------------------- |
+| **HR-menedzsment**                | Toborzás, kiválasztás, képzés, teljesítményértékelés  |
+| **Marketingmenedzsment**          | Piac, vevők, termékpozicionálás, értékesítés          |
+| **Pénzügyi menedzsment**          | Tőkebevonás, likviditás, befektetések, controlling    |
+| **Termelés-/operációmenedzsment** | Gyártási folyamatok, kapacitás, minőség               |
+| **Logisztika**                    | Anyagáramlás, ellátási lánc, raktározás, szállítás    |
+| **Controlling**                   | Tervezés-ellenőrzés-eltéréselemzés rendszere          |
+| **Minőségmenedzsment**            | ISO-rendszerek, TQM, folyamatos fejlesztés            |
+| **Projektmenedzsment**            | Egyszeri, komplex feladatok tervezése és végrehajtása |
+| **Változásmenedzsment**           | Szervezeti átalakulások irányítása                    |
+| **Stratégiai menedzsment**        | Hosszú távú célok, versenystratégia                   |
 
 ### Menedzser és vezető — nem ugyanaz
 
 **John P. Kotter** (Harvard Business School) tette meg azt a különbségtételt, amelyet ma már tankönyvi evidenciaként kezelünk: a menedzser és a vezető (*leader*) funkciója eltér.
 
-| | Menedzser | Vezető |
-|---|---|---|
-| Fókusz | Komplexitás kezelése | Változás kezelése |
-| Tervezés | Részletes tervek, ütemtervek | Jövőkép, irány meghatározása |
+|           | Menedzser                      | Vezető                            |
+| --------- | ------------------------------ | --------------------------------- |
+| Fókusz    | Komplexitás kezelése           | Változás kezelése                 |
+| Tervezés  | Részletes tervek, ütemtervek   | Jövőkép, irány meghatározása      |
 | Szervezés | Struktúra, szerepek, delegálás | Emberek összefogása, kommunikáció |
-| Eredmény | Kiszámíthatóság, rend | Motiváció, inspiráció |
+| Eredmény  | Kiszámíthatóság, rend          | Motiváció, inspiráció             |
 
 A mai szervezetekben mindkettőre szükség van. A kizárólag menedzserként működő szervzet elveszti az irányt; a kizárólag vízionárius vezető irányította szervezet elveszti a kontrollt.
 
