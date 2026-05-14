@@ -8,17 +8,23 @@
 
 Az SAP S/4HANA (2015–) a vállalatirányítási rendszerek negyedik generációja. Legfőbb újítása az **SAP HANA in-memory adatbázis**, amely az adatokat a merevlemez helyett a RAM-ban tárolja.
 
-```
-  SAP R/3 / ECC (korábbi)                SAP S/4HANA (jelenlegi)
-  ┌───────────────────────────┐          ┌─────────────────────────────────┐
-  │  Alkalmazás               │          │  Alkalmazás + Fiori UI          │
-  ├───────────────────────────┤          ├─────────────────────────────────┤
-  │  ABAP futtatókörnyezet    │          │  ABAP futtatókörnyezet          │
-  ├───────────────────────────┤          ├─────────────────────────────────┤
-  │  Hagyományos RDBMS        │          │  SAP HANA (in-memory adatbázis) │
-  │  (Oracle, MSSQL, DB2)     │          │  OLTP + OLAP egyben             │
-  └───────────────────────────┘          └─────────────────────────────────┘
-  Aggregált táblák, éjszakai batch       Nincs aggregáció, valós idejű elemzés
+```mermaid
+flowchart TB
+    subgraph ECC["SAP R/3 / ECC — Korábbi generáció"]
+        direction TB
+        A1["Alkalmazás (ABAP)"]
+        A2["ABAP futtatókörnyezet"]
+        A3["Hagyományos RDBMS\nOracle · MSSQL · DB2\nAggregált táblák · Éjszakai batch"]
+        A1 --- A2 --- A3
+    end
+    subgraph S4["SAP S/4HANA — Jelenlegi generáció"]
+        direction TB
+        B1["Alkalmazás + SAP Fiori UI\nTranszakciós · Analitikai · Factsheet"]
+        B2["ABAP futtatókörnyezet"]
+        B3["SAP HANA — In-memory adatbázis\nOLTP + OLAP egyben\nValós idejű elemzés · Nincs aggregáció"]
+        B1 --- B2 --- B3
+    end
+    ECC -->|"Evolúció / System Conversion"| S4
 ```
 
 **Az S/4HANA előnyei a korábbi generációkhoz képest:**
@@ -47,14 +53,17 @@ Minden üzleti esemény egyedi sorszámú, nem törölhető elektronikus bizonyl
 
 Az SAP a vállalat fizikai és jogi struktúráját szervezeti egységekkel modellezi. Ezek hierarchikusan épülnek egymásra:
 
-```
-  Kliens (Client)
-  └── Vállalati kód (Company Code) – önálló számviteli egység, ahol a mérleg készül
-       └── Gyár / Telephely (Plant) – termelési vagy raktározási egység
-            └── Raktárhely (Storage Location) – fizikai tárolóterület a gyáron belül
-  └── Értékesítési szervezet (Sales Organization) – termékek értékesítési egysége
-       └── Értékesítési csatorna (Distribution Channel)
-            └── Divízió (Division)
+```mermaid
+flowchart TD
+    CL["Kliens — Client\npl. Global Bike GBI"]
+    CC["Vállalati kód — Company Code\nUS00 · DE00\nÖnálló jogi számviteli egység, mérleg készül"]
+    PL["Gyár — Plant\nDL00 Dallas · HD00 Heidelberg · MI00 Miami\nTermelési vagy raktározási egység"]
+    SL["Raktárhely — Storage Location\nFG00 Késztermék · RM00 Alapanyag\nFizikai tárolóterület a gyáron belül"]
+    SO["Értékesítési szervezet — Sales Org.\nUW00 US West · DN00 DE North\nTermékek értékesítési egysége"]
+    DC["Értékesítési csatorna — Distribution Channel\nNagykereskedelem · Internet"]
+    DV["Divízió — Division\nTermék- és szolgáltatáscsoportok"]
+    CL --> CC --> PL --> SL
+    CL --> SO --> DC --> DV
 ```
 
 **A Global Bike vállalati struktúra az SAP-ban:**  
@@ -83,19 +92,18 @@ Az SAP egyik legfontosabb jellemzője, hogy az egyes modulok nem egymás után, 
 
 **Példa: Gyártási rendelés teljes adatáramlása**
 
-```
-  Értékesítés (SD)        Termelésirányítás (PP)        Anyaggazdálkodás (MM)
-  ┌──────────────┐        ┌───────────────────┐         ┌──────────────────┐
-  │ Vevői rend.  │──MRP──→│ Gyártási rendelés │──Anyag─→│ Készletcsökkentés│
-  │ létrehozása  │        │ létrehozása       │  kiadás │ (Goods Issue)    │
-  └──────────────┘        └──────────┬────────┘         └─────────┬────────┘
-                                     │ Könyvelés                  │
-                                     ▼                            ▼
-                            Controlling (CO)             Pénzügyi számvitel (FI)
-                            ┌────────────────┐         ┌──────────────────────┐
-                            │ Önköltség      │         │ Automatikus főkönyvi │
-                            │ elszámolás     │         │ könyvelés (anyagkölt)│
-                            └────────────────┘         └──────────────────────┘
+```mermaid
+flowchart LR
+    SD["SD — Értékesítés\nVevői rendelés\nlétrehozása"]
+    PP["PP — Termelésirányítás\nGyártási rendelés\nlétrehozása"]
+    MM["MM — Anyaggazdálkodás\nKészletcsökkentés\nGoods Issue"]
+    CO["CO — Controlling\nÖnköltség-elszámolás\nKöltséghely terhelés"]
+    FI["FI — Pénzügyi számvitel\nAutomatikus főkönyvi\nkönyvelés"]
+
+    SD -->|"MRP igény\nszükséglet-átadás"| PP
+    PP -->|"Anyagkivét\nkérés"| MM
+    PP -->|"Automatikus\nkönyvelés"| CO
+    MM -->|"Anyagköltség\nkönyvelés"| FI
 ```
 
 **A Procure-to-Pay (P2P) folyamat – az MM és FI integráció klasszikus példája:**

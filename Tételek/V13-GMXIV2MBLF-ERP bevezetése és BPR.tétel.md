@@ -27,14 +27,18 @@ A vállalatok ERP-bevezetés mellett jellemzően akkor döntenek, amikor a megl�
 
 Az ERP bevezetés lényege szerint **szervezeti átalakulás, amelyet technológia támogat** – nem fordítva. A tipikus szervezeti hatások:
 
-```
-  ELŐTTE (funkcionális silók)         UTÁNA (folyamatközpontú szervezet)
-  ┌──────┐ ┌──────┐ ┌──────┐         ┌─────────────────────────────────┐
-  │ Pénz-│ │Raktár│ │Érték-│  →→→    │  Order-to-Cash folyamat         │
-  │  ügy │ │      │ │esítés│         │  (Értékesítés→Raktár→Számlázás) │
-  └──────┘ └──────┘ └──────┘         └─────────────────────────────────┘
-   Minden osztálynak saját           Közös platform, osztályokon átívelő
-   rendszere és adatbázisa           folyamat, egységes adat
+```mermaid
+flowchart LR
+    subgraph ELOTTE["ELŐTTE – Funkcionális silók"]
+        direction TB
+        P["Pénzügy\nSaját adatbázis"]
+        R["Raktár\nSaját adatbázis"]
+        E["Értékesítés\nSaját adatbázis"]
+    end
+    subgraph UTANA["UTÁNA – Folyamatközpontú szervezet"]
+        OC["Order-to-Cash folyamat\nÉrtékesítés → Raktár → Számlázás\nKözös ERP platform · Egységes adat"]
+    end
+    ELOTTE -->|"BPR + ERP bevezetés"| UTANA
 ```
 
 A bevezetéssel járó változások: szerepkörök átrendeződése, folyamatgazda szemlélet bevezetése, munkatársak átképzése, és változásmenedzsment (change management) szükségessége.
@@ -70,9 +74,16 @@ A **BPR (Business Process Reengineering)** Hammer és Champy (1993) által kidol
 
 A BPR nem egyszerű folyamatjavítás (continuous improvement), hanem nulláról való újraépítés:
 
-```
-  Folyamatjavítás (Kaizen):   Meglévő folyamat → Kisebb javítás → Jobb folyamat
-  BPR:                        Meglévő folyamat → Teljes lebontás → Gyökeresen új folyamat
+```mermaid
+flowchart LR
+    subgraph Kaizen["Folyamatjavítás — Kaizen"]
+        direction LR
+        K1["Meglévő\nfolyamat"] -->|"Kisebb\njavítás"| K2["Jobb\nfolyamat"]
+    end
+    subgraph BPR_["BPR — Üzleti folyamatok újratervezése"]
+        direction LR
+        B1["Meglévő\nfolyamat"] -->|"Teljes\nlebontás"| B2["Gyökeresen\núj folyamat"]
+    end
 ```
 
 **Az ERP és a BPR kapcsolata:**

@@ -18,14 +18,28 @@ Az integráltság három alapelven nyugszik:
 
 ### 12.2. Az ERP fejlődéstörténete
 
-```
-  MRP          Zárt láncú    MRP II       ERP          ERP II        Felhő / AI
-  (1960-as)    MRP (1970-es) (1980-as)    (1990-es)    (2000-es)     (2010–)
-     │               │           │            │             │            │
-  Készlet-      Kapacitás-   Pénzügyi     Teljes       Vállalaton    In-memory,
-  tervezés      tervezés +   riportok +   belső        átnyúló       IoT, ML,
-  (anyag)       (CRP)        gyártás      integráció   integráció    SaaS ERP
-                                                        (CRM, SCM)
+```mermaid
+timeline
+    title Az ERP rendszerek fejlődéstörténete
+    section 1960-as évek
+        MRP : Anyagszükséglet-tervezés
+            : SAP R/1 alapjai (1973)
+    section 1970-es évek
+        Zárt láncú MRP : + Kapacitástervezés (CRP)
+                       : SAP R/2 (1981)
+    section 1980-as évek
+        MRP II : + Pénzügyi riportok
+               : + Gyártásirányítás
+    section 1990-es évek
+        ERP : Teljes belső integráció
+            : Kliens-szerver architektúra
+            : SAP R/3 (1992)
+    section 2000-es évek
+        ERP II : + Internet, SCM, CRM, BI
+               : SAP ERP 6.0 (2004)
+    section 2010-es évektől
+        Intelligens ERP : In-memory, IoT, AI, Felhő
+                        : SAP S/4HANA (2015)
 ```
 
 | Generáció | Időszak | Fókusz | SAP megfelelő |
@@ -43,16 +57,15 @@ Az integráltság három alapelven nyugszik:
 
 Az ERP nem egyedüli réteg – a vállalati IT-architektúrában több szinttel együttműködik:
 
-```
-  ┌─────────────────────────────────────────────────────┐
-  │          STRATÉGIAI SZINT – BI / BSC / MIS          │
-  ├─────────────────────────────────────────────────────┤
-  │          TAKTIKAI SZINT – Controlling, DSS          │
-  ├─────────────────────────────────────────────────────┤
-  │    OPERATÍV SZINT – ERP (FI, CO, MM, SD, PP, HR)    │  ← Digitális mag
-  ├─────────────────────────────────────────────────────┤
-  │     KÜLSŐ RENDSZEREK – CRM, SCM, WMS, IoT, EDI      │
-  └─────────────────────────────────────────────────────┘
+```mermaid
+flowchart BT
+    K["KÜLSŐ RENDSZEREK\nCRM · SCM · WMS · IoT · EDI"]
+    O["OPERATÍV SZINT — Digitális mag\nERP: FI · CO · MM · SD · PP · HR"]
+    T["TAKTIKAI SZINT\nControlling · DSS"]
+    S["STRATÉGIAI SZINT\nBI · BSC · MIS"]
+    K -->|"Adatforrás"| O
+    O -->|"Tranzakciós adatok"| T
+    T -->|"Aggregált riportok"| S
 ```
 
 Az ERP az „operatív mag" (digital core): minden üzleti tranzakció itt keletkezik és kerül rögzítésre. A felsőbb szintek (BI, controlling) ebből az adatbázisból táplálkoznak. A VIR-en belül az ERP biztosítja az egységes törzsadatokat, a bizonylati elvet és a bizonylatfolyamot.

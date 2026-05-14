@@ -8,13 +8,29 @@
 
 Az üzleti informatika az 1960-as évektől napjainkig több markáns korszakon ment át. Mindegyik korszakot a hardver, az adatkezelés és a kommunikáció együttes változása jellemzett.
 
-```
-  1960–70-es évek    1980-as évek     1990-es évek     2000-es évek      2010–2020-as évek
-  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌──────────────┐  ┌───────────────┐
-  │  Mainframe  │→ │  Mini-PC    │→ │    Kliens   │→ │ Internet /   │→ │ Felhő / AI /  │
-  │  Kötegelt   │  │  Részleges  │  │   szerver   │  │ ERP II/SCM   │  │ In-memory     │
-  │  feldolgozás│  │  szigetek   │  │ SAP R/3 ERP │  │ CRM, e-biz   │  │ S/4HANA       │
-  └─────────────┘  └─────────────┘  └─────────────┘  └──────────────┘  └───────────────┘
+```mermaid
+timeline
+    title Az üzleti informatika fejlődése
+    section 1960–70-es évek
+        Mainframe : Kötegelt feldolgozás (batch)
+                  : Lyukkártya, szalag, lemez
+                  : Helyi, hálózat nélküli
+    section 1980-as évek
+        Mini-PC és asztali gép : LAN, korai hálózatok
+                               : Korai részleges szigetrendszerek
+                               : Mágneses lemez
+    section 1990-es évek
+        Kliens-szerver : Relációs adatbázis
+                      : WAN, internet kezdetek
+                      : SAP R/3 ERP (1992)
+    section 2000-es évek
+        Internet és web : ERP II, SCM, CRM
+                        : Adattárházak
+                        : EDI, webszolgáltatások
+    section 2010–2020-as évek
+        Felhő és AI : In-memory (RAM), SSD
+                    : Cloud, API, 5G
+                    : SAP S/4HANA (2015)
 ```
 
 | Korszak | Hardver | Adatbevitel | Tárolás | Kommunikáció |
@@ -36,16 +52,23 @@ Az 1970–80-as évek vállalataiban minden szervezeti egység a saját igényei
 
 **A szigetrendszerek jellemző problémái:**
 
-```
-  Értékesítés      Raktár         Pénzügy        HR
-  ┌──────────┐   ┌────────────┐   ┌──────────┐   ┌───────────┐
-  │Rendelés- │   │Készlet-    │   │Könyvelő- │   │Személyzeti│
-  │kezelő    │   │nyilvántartó│   │szoftver  │   │rendszer   │
-  │(saját DB)│   │(saját DB)  │   │(saját DB)│   │(saját DB) │
-  └────┬─────┘   └────┬───────┘   └────┬─────┘   └────┬──────┘
-       │              │                │              │
-       └──────────────┴────────────────┴──────────────┘
-                   ↕ manuális adatcsere, e-mail, Excel
+```mermaid
+flowchart TB
+    subgraph Értékesítés
+        ES["Rendelés-kezelő\nSaját adatbázis"]
+    end
+    subgraph Raktár
+        RA["Készlet-nyilvántartó\nSaját adatbázis"]
+    end
+    subgraph Pénzügy
+        PE["Könyvelőszoftver\nSaját adatbázis"]
+    end
+    subgraph HR
+        HR["Személyzeti rendszer\nSaját adatbázis"]
+    end
+    ES <-->|"Manuális adatcsere\n(Excel, e-mail)"| RA
+    RA <-->|"Manuális adatcsere\n(Excel, e-mail)"| PE
+    PE <-->|"Manuális adatcsere\n(Excel, e-mail)"| HR
 ```
 
 | Probléma | Következmény |

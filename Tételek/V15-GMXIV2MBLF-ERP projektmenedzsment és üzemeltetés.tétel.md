@@ -33,15 +33,24 @@ Az SAP Project System (PS) modul az ERP-be integrált projektmenedzsment-eszköz
 **WBS (Work Breakdown Structure – Munkalebontási struktúra):**  
 A projekt hierarchikus modellje, amely a feladatokat kezelhető egységekre bontja. Minden WBS-elemhez rendelhető: költségkeret, felelős, határidő és mérföldkő.
 
-```
-  P/2025 – Ultralight Racing Bike fejlesztés  ← Gyökérelem (WBS 1. szint)
-  ├── Engineering (Mérnöki tervezés)           ← WBS 2. szint
-  │    ├── Design review
-  │    └── Specifikáció véglegesítés
-  ├── Prototype (Prototípus gyártás)
-  ├── Testing (Tesztelés)
-  ├── Small Series Production (Kis széria)
-  └── Release to Mass Production
+```mermaid
+flowchart TD
+    ROOT["P/2025 — Ultralight Racing Bike fejlesztés\nWBS 1. szint — Gyökérelem"]
+    ENG["Engineering\nMérnöki tervezés"]
+    PROTO["Prototype\nPrototípus gyártás"]
+    TEST["Testing\nTesztelés és minőség-ellenőrzés"]
+    SMALL["Small Series Production\nKis szériagyártás"]
+    RELEASE["Release to Mass Production\nTömeggyártásba adás"]
+    DR["Design Review\nKonceptuális tervfelülvizsgálat"]
+    SPEC["Specifikáció véglegesítés\nMűszaki dokumentáció"]
+
+    ROOT --> ENG
+    ROOT --> PROTO
+    ROOT --> TEST
+    ROOT --> SMALL
+    ROOT --> RELEASE
+    ENG --> DR
+    ENG --> SPEC
 ```
 
 **WBS-elem (PSP-elem) lehetséges státuszai:**
@@ -70,14 +79,14 @@ Míg a WBS a feladatok hierarchiáját mutatja, a hálózati terv az időbeli so
 
 ### 15.3. A projekt életciklusa az SAP-ban
 
-```
-  TERVEZÉS              VÉGREHAJTÁS           LEZÁRÁS
-  ┌─────────────┐       ┌────────────┐        ┌────────────┐
-  │ WBS, hálózat│       │ Státusz:   │        │ Settlement │
-  │ Budget      │──────→│ REL (kiadva│───────→│ (költségek │
-  │ allokálása  │       │ Tényleges  │        │ átvezetése)│
-  └─────────────┘       │ könyvelések│        └────────────┘
-                        └────────────┘
+```mermaid
+flowchart LR
+    T["TERVEZÉS\nWBS felépítése\nHálózati terv\nBudget allokálása\nMérföldkövek rögzítése"]
+    V["VÉGREHAJTÁS\nStátusz: REL — Kiadva\nTényleges könyvelések\nKöltség vs. budget\nKapacitás-nyomonkövetés"]
+    L["LEZÁRÁS\nTechnical Complete\nSettlement\nKöltségek átvezetése\na végső fogadóra"]
+
+    T -->|"Kiadás\n(Release)"| V
+    V -->|"Technikai és\npénzügyi zárás"| L
 ```
 
 A lezárási fázisban a felmerült projektköltségeket **settlement**-tel (elszámolással) vezetik át a végső fogadó cost object-re. Az SAP PS két settlement-típust különböztet meg:
@@ -95,23 +104,16 @@ A **BSP** (Business Systems Planning) az IBM által az 1970-es években kidolgoz
 
 **A BSP alaplogikája:**
 
-```
-  Üzleti stratégia
-        │
-        ▼
-  Üzleti folyamatok azonosítása
-        │
-        ▼
-  Adatosztályok meghatározása (milyen adatra van szükség?)
-        │
-        ▼
-  Folyamat–Adat mátrix (Process–Data Matrix)
-        │
-        ▼
-  Informatikai architektúra tervezése (milyen rendszer kell?)
-        │
-        ▼
-  Implementációs prioritások meghatározása
+```mermaid
+flowchart TD
+    A["1. Üzleti stratégia\nVállalati célok és jövőkép"]
+    B["2. Üzleti folyamatok azonosítása\nKulcsfolyamatok feltérképezése (AS-IS)"]
+    C["3. Adatosztályok meghatározása\nMilyen adatra van szükség?"]
+    D["4. Folyamat–Adat mátrix\nMelyik folyamat melyik adatosztályt\nhozza létre vagy használja?"]
+    E["5. Informatikai architektúra tervezése\nMilyen rendszer, integráció kell?"]
+    F["6. Implementációs prioritások\nMit vezessünk be először?"]
+
+    A --> B --> C --> D --> E --> F
 ```
 
 **A BSP kapcsolódó módszerei:**
@@ -147,15 +149,16 @@ Az **ITIL** (IT Infrastructure Library) az IT-szolgáltatásmenedzsment globáli
 
 Az SAP S/4HANA beépített (natív) eszközei különböző részletességű és célú információt nyújtanak a három klasszikus vezetési szint számára:
 
-```
-  STRATÉGIAI SZINT     │ SAP S/4HANA Fiori analitikus műszerfalak
-  (Felsővezetés)       │ BSC-integrált KPI-k, profit-center elemzések
-  ─────────────────────┼──────────────────────────────────────────────
-  TAKTIKAI SZINT       │ CO modul: költséghelyi riportok, varianciaelemzés
-  (Középvezetés)       │ PS modul: projekt-előrehaladás és cost-vs-budget
-  ─────────────────────┼──────────────────────────────────────────────
-  OPERATÍV SZINT       │ Fiori tranzakciós applikációk: rendelések,
-  (Munkatársak)        │ készletlekérdezések, jóváhagyási munkafolyamatok
+```mermaid
+flowchart TD
+    S["STRATÉGIAI SZINT — Felsővezetés\nFiori analitikus műszerfalak\nBSC-integrált KPI-k\nProfit-center elemzések\nSAP Analytics Cloud"]
+    T["TAKTIKAI SZINT — Középvezetés\nCO modul: Költséghelyi riportok · Varianciaelemzés\nPS modul: Projekt-előrehaladás · Cost-vs-Budget\nEmbedded Analytics CDS-nézetek"]
+    O["OPERATÍV SZINT — Munkatársak\nFiori tranzakciós applikációk\nRendelések · Készletlekérdezések\nJóváhagyási munkafolyamatok"]
+
+    S -->|"Aggregált KPI-k\nstratégiai iránymutatáshoz"| T
+    T -->|"Operatív utasítások\nés célok lebontása"| O
+    O -->|"Tranzakciós adatok\nvalós időben"| T
+    T -->|"Riportok és elemzések\nfelsővezetés felé"| S
 ```
 
 **SAP Embedded Analytics:** Az S/4HANA-ban nincs szükség külön adattárházba exportálni az adatokat az elemzéshez. A CDS (Core Data Services) nézetek és az SAP Analytics Cloud közvetlen kapcsolatban állnak az éles adatbázissal – az elemzés az aktuális, pillanatszintű adatokon alapul.
