@@ -27,6 +27,7 @@ graph BT
 ```
 
 **Munkáltatói következmények:**
+
 - Az 1–2. szint: megfelelő bér, stabil munkaviszony, biztonságos munkahely
 - A 3. szint: csapatszellem, kollegialitás, munkahelyi közösség
 - A 4. szint: dicséret, előléptetés, felelős feladatok
@@ -38,13 +39,13 @@ graph BT
 
 **Frederick Herzberg** munkavállalókat kérdezett arról, mikor érezték magukat a legjobban, illetve a legrosszabbul a munkahelyükön. Az eredmény meglepő volt: a jó és a rossz érzések *különböző* tényezőkre vezethetnők vissza.
 
-| **Higiéniás tényezők** | **Motiváló tényezők** |
-|---|---|
-| Hiányuk elégedetlenséget okoz | Jelenlétük motivál |
+| **Higiéniás tényezők**                                             | **Motiváló tényezők**                                            |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Hiányuk elégedetlenséget okoz                                      | Jelenlétük motivál                                               |
 | Jelenlétük *nem motivál*, csak a semleges állapotot állítja helyre | Hiányuk nem okoz elégedetlenséget, csak „nem motivált" állapotot |
-| Fizetés, munkakörülmények, biztonság | Elért eredmények, elismerés |
-| Felettesi bánásmód, vállalati politika | Felelősség, előrelépés |
-| Státusz, munkaviszony biztonsága | Maga a munka tartalma |
+| Fizetés, munkakörülmények, biztonság                               | Elért eredmények, elismerés                                      |
+| Felettesi bánásmód, vállalati politika                             | Felelősség, előrelépés                                           |
+| Státusz, munkaviszony biztonsága                                   | Maga a munka tartalma                                            |
 
 **Üzenet a vezetőnek:** Ha a higiéniás tényezők hiányosak, az demotiválja a dolgozót. De ha csak ezeket javítja (béremel, kényelmes irodát biztosít), nem számíthat tartós motivációra. A valódi elköteleződéshez a motiváló tényezőket kell erősíteni: tartalmas munkát, felelősséget, elismerést adni.
 
@@ -81,13 +82,13 @@ graph LR
 
 ```mermaid
 quadrantChart
-    title Flow-elmélet (Csíkszentmihályi)
-    x-axis Alacsony jártasság --> Magas jártasság
-    y-axis Alacsony kihívás --> Magas kihívás
-    quadrant-1 FLOW
-    quadrant-2 SZORONGÁS
-    quadrant-3 APÁTIA
-    quadrant-4 UNALOM
+    title "Flow-elmélet (Csíkszentmihályi)"
+    x-axis "Alacsony jártasság" --> "Magas jártasság"
+    y-axis "Alacsony kihívás" --> "Magas kihívás"
+    quadrant-1 "FLOW"
+    quadrant-2 "SZORONGÁS"
+    quadrant-3 "APÁTIA"
+    quadrant-4 "UNALOM"
 ```
 
 ---
