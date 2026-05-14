@@ -8,35 +8,17 @@ A Vázlat (kurzusanyag) alapján a teljesítményösztönzés kulcselemei: kihí
 
 ### A teljesítménymenedzsment ciklusa
 
-```
-        ┌──────────────────────────────┐
-        │          CÉLKITŰZÉS          │
-        │    (egyéni + szervezeti      │
-        │     célok összehangolása)    │
-        └──────────────┬───────────────┘
-                       │
-                       ▼
-        ┌──────────────────────────────┐
-        │   FOLYAMATOS VISSZAJELZÉS    │
-        │  (coaching, 1:1 megbeszélés, │
-        │    fejlesztő párbeszéd)      │
-        └──────────────┬───────────────┘
-                       │
-                       ▼
-        ┌──────────────────────────────┐
-        │    TELJESÍTMÉNYÉRTÉKELÉS     │
-        │ (formális időszaki értékelés │
-        │        módszerekkel)         │
-        └──────────────┬───────────────┘
-                       │
-                       ▼
-        ┌──────────────────────────────┐
-        │    FEJLESZTÉS / JUTTATÁS     │
-        │     (képzés, előléptetés,    │
-        │     kompenzáció-döntés)      │
-        └──────────────────────────────┘
-                       │
-                       └──→ vissza a CÉLKITŰZÉSHEZ
+```mermaid
+flowchart LR
+    A["🎯 CÉLKITŰZÉS\nEgyéni + szervezeti\ncélok összehangolása"] --> B
+    B["💬 FOLYAMATOS VISSZAJELZÉS\nCoaching, 1:1 megbeszélés\nFejlesztő párbeszéd"] --> C
+    C["📊 TELJESÍTMÉNY-\nÉRTÉKELÉS\nFormális időszaki értékelés\nmódszerekkel"] --> D
+    D["🚀 FEJLESZTÉS /\nJUTTATÁS\nKépzés, előléptetés\nKompenzáció-döntés"] --> A
+
+    style A fill:#dce8f5,stroke:#2a6496
+    style B fill:#d9f0d9,stroke:#2d6a2d
+    style C fill:#fef9e7,stroke:#9a7d0a
+    style D fill:#f5e6d3,stroke:#a04000
 ```
 
 ### Teljesítményértékelési módszerek
@@ -64,17 +46,21 @@ A teljesítménymenedzsment hatékonysága szorosan összefügg a motivációs r
 
 ## Összefoglalás: K8–K13 kapcsolódási pontjai
 
-```
-  HR STRATÉGIA (K8)
-        │
-        ├── Munkaerő-tervezés → Toborzás (K9)
-        │         └── Kiválasztás (K10)
-        │
-        ├── Teljesítménymenedzsment (K13)
-        │         └── Motiváció, fejlesztés
-        │
-        └── Szervezeti kultúra (K12) ←→ Vezetés (K11)
-                  └── Leadership Shadow, Handy, Schein
+```mermaid
+graph TD
+    K8["🏛️ K8 — HR Stratégia\nBest practice · Best fit"] --> K9
+    K8 --> K13
+    K8 --> K12
+    K9["👥 K9 — Munkaerő-tervezés\nés toborzás"] --> K10["🔎 K10 — Kiválasztás\nAC · interjú · tesztek"]
+    K13["📊 K13 — Teljesítmény-\nmenedzsment\nMBO · 360° · Pink 3.0"]
+    K12["🌐 K12 — Szervezeti kultúra\nHandy · Schein · OCAI"] <--> K11["🧭 K11 — Vezetés\nMintzberg · Hersey-Blanchard\nMcGregor X/Y"]
+
+    style K8 fill:#d6eaf8,stroke:#1a5276
+    style K9 fill:#d5f5e3,stroke:#1e8449
+    style K10 fill:#d5f5e3,stroke:#1e8449
+    style K11 fill:#fdebd0,stroke:#a04000
+    style K12 fill:#fdebd0,stroke:#a04000
+    style K13 fill:#f9ebea,stroke:#922b21
 ```
 
 A hat tétel egyetlen logikai ívet alkot: a szervezet emberigényének meghatározásától (K8–K9) a megfelelő személyek kiválasztásán (K10) és irányításán (K11) át a kultúra tudatos formálásáig (K12) és a teljesítmény értékeléséig (K13).

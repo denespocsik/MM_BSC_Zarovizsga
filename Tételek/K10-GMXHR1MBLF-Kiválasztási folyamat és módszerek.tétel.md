@@ -4,24 +4,19 @@
 
 A kiválasztás (selection) a toborzás során összegyűlt jelöltek közül a legalkalmasabb kiválasztását jelenti. Az alapelv az illeszkedés (fit): a jelölt kompetenciái, értékrendje és személyisége illeszkedjen a munkakör követelményeihez és a szervezeti kultúrához (Milkovich–Glueck, 1995).
 
-```
-KIVÁLASZTÁSI FOLYAMAT
+```mermaid
+flowchart TD
+    A([📥 Álláspályázatok\nbeérkezése]) --> B["📄 CV-szűrés / előszűrés\n— formai megfelelés"]
+    B --> C["📞 Előzetes interjú\n(telefonos / online)"]
+    C --> D["🧪 Tesztelés\n(képesség, személyiség)"]
+    D --> E["🗣️ Mélyinterjú\n(strukturált / BEI)"]
+    E --> F["🏢 Assessment Center\n(komplex értékelés)"]
+    F --> G["🔍 Referencia-\nellenőrzés"]
+    G --> H([✅ Döntés és\najánlattétel])
 
-Álláspályázatok beérkezése
-         ↓
-   CV-szűrés / előszűrés
-         ↓
-  Előzetes interjú (telefonos/online)
-         ↓
-    Tesztelés (képesség, személyiség)
-         ↓
-    Mélyinterjú (strukturált)
-         ↓
-  Assessment center (komplex értékelés)
-         ↓
-  Referencia-ellenőrzés
-         ↓
-    Döntés és ajánlattétel
+    style A fill:#e8f4f8
+    style H fill:#d4edda
+    style F fill:#fff3cd
 ```
 
 ### Kiválasztási módszerek

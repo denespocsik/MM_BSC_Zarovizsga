@@ -4,21 +4,17 @@
 
 A munkaerő-tervezés (HR planning / workforce planning) előrevetíti, hogy a szervezetnek milyen emberekre lesz szüksége, mikor és milyen számban, hogy stratégiai céljait elérje. Milkovich és Glueck (1995) szerint a folyamat két lépésből áll: a kereslet előrejelzéséből (hány és milyen kompetenciájú munkavállalóra van szükség) és a kínálat elemzéséből (kik állnak rendelkezésre belülről és kívülről).
 
-```
-MUNKAERŐ-TERVEZÉSI FOLYAMAT
-
-        Szervezeti célok
-                ↓
- Munkaerő-kereslet előrejelzése
-       ↓                  ↓
-Belső kínálat       Külső munkaerőpiac
-    elemzése           elemzése
-       ↓                  ↓
-       └────────┬─────────┘
-                ↓
-Munkaerőhiány / -felesleg azonosítása
-                ↓
-      Toborzási / leépítési terv
+```mermaid
+flowchart TD
+    A([Szervezeti célok]) --> B[Munkaerő-kereslet\nelőrejelzése]
+    B --> C[Belső kínálat\nelemzése]
+    B --> D[Külső munkaerőpiac\nelemzése]
+    C --> E{Munkaerőhiány\nvs. felesleg?}
+    D --> E
+    E -->|Hiány| F[Toborzási terv]
+    E -->|Felesleg| G[Leépítési / átcsoportosítási terv]
+    F --> H([Munkakörelemzés alapja:\nleírás + specifikáció])
+    G --> H
 ```
 
 A tervezés alapja a **munkakörelemzés (job analysis)**: minden munkakör feladatainak, felelősségeinek, szükséges kompetenciáinak és munkafeltételeinek szisztematikus feltárása. Eredménye a **munkaköri leírás** (job description) és a **munkaköri specifikáció** (job specification), amely meghatározza az alkalmazottal szemben támasztott követelményeket.

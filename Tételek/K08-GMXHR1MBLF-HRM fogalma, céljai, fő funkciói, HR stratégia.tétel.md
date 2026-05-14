@@ -12,23 +12,15 @@ Armstrong és Taylor (2016) alapján a HRM négy célkör körül szerveződik. 
 
 ### A HRM rendszer funkciói
 
-```
-┌─────────────────────────────────────────────────┐
-│               HRM RENDSZER                      │
-│                                                 │
-│  ┌──────────┐  ┌──────────┐  ┌──────────────┐   │
-│  │Munkaerő- │  │Toborzás  │  │  Képzés és   │   │
-│  │tervezés  │→ │és ki-    │→ │  fejlesztés  │   │
-│  │          │  │választás │  │              │   │
-│  └──────────┘  └──────────┘  └──────────────┘   │
-│       ↓              ↓              ↓           │
-│  ┌──────────┐  ┌──────────┐  ┌──────────────┐   │
-│  │Kompenzá- │  │Teljesít- │  │Munkaügyi     │   │
-│  │ció-      │  │mény-     │  │kapcsolatok   │   │
-│  │menedzs-  │  │menedzs-  │  │(egészség,    │   │
-│  │ment      │  │ment      │  │biztonság)    │   │
-│  └──────────┘  └──────────┘  └──────────────┘   │
-└─────────────────────────────────────────────────┘
+```mermaid
+graph LR
+    subgraph B1["🔵 Emberi erőforrás biztosítása"]
+        A1[Munkaerő-\ntervezés] --> A2[Toborzás és\nkiválasztás] --> A3[Képzés és\nfejlesztés]
+    end
+    subgraph B2["🟢 Emberi erőforrás megtartása"]
+        A4[Kompenzáció-\nmenedzsment] --- A5[Teljesítmény-\nmenedzsment] --- A6[Munkaügyi\nkapcsolatok]
+    end
+    B1 --> B2
 ```
 
 A kurzusanyag (LEV_2) két csoportba sorolja a funkciókat. Az első az emberek megszerzésével és fejlesztésével foglalkozik: munkaerő-tervezés, munkakörelemzés, toborzás-kiválasztás-előléptetés, képzés-fejlesztés, kompenzációmenedzsment. A második csoport az alkalmazottakkal való folyamatos foglalkozást fedi le: teljesítménymenedzsment, egészség és munkabiztonság, kollektív tárgyalás, munkaügyi kapcsolatok.

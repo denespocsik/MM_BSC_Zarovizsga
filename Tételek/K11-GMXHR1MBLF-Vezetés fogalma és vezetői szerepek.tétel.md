@@ -10,25 +10,21 @@ A LEV_4 meghatározása szerint: a *menedzser* olyan személy, akinek megadott i
 
 Mintzberg (1973) a menedzseri munkát tíz szerepbe rendezte, három csoportban:
 
-```
-MINTZBERG MANAGERIAL ROLES
-
-┌─────────────────────────────────────────────────┐
-│ SZEMÉLYKÖZI SZEREPEK (Interpersonal)            │
-│  • Nyilvános megjelenés (Figurehead)            │
-│  • Főnöki / vezető szerep (Leader)              │
-│  • Kapcsolattartó (Liaison)                     │
-├─────────────────────────────────────────────────┤
-│ INFORMÁCIÓS SZEREPEK (Informational)            │
-│  • Figyelő / információgyűjtő (Monitor)         │
-│  • Információ-elosztó (Disseminator)            │
-│  • Szóvivő (Spokesperson)                       │
-├─────────────────────────────────────────────────┤
-│ DÖNTÉSI SZEREPEK (Decisional)                   │
-│  • Vállalkozó / zavarelhárító (Entrepreneur)    │
-│  • Erőforrás-elosztó (Resource Allocator)       │
-│  • Tárgyaló (Negotiator)                        │
-└─────────────────────────────────────────────────┘
+```mermaid
+mindmap
+  root((Mintzberg\nvezetői szerepek))
+    Személyközi szerepek
+      Nyilvános megjelenés\nFigurehead
+      Főnöki / vezető szerep\nLeader
+      Kapcsolattartó\nLiaison
+    Információs szerepek
+      Figyelő / információgyűjtő\nMonitor
+      Információ-elosztó\nDisseminator
+      Szóvivő\nSpokesperson
+    Döntési szerepek
+      Vállalkozó / zavarelhárító\nEntrepreneur
+      Erőforrás-elosztó\nResource Allocator
+      Tárgyaló\nNegotiator
 ```
 
 ### Vezetői készségek
