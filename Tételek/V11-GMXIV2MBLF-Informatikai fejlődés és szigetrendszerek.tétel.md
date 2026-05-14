@@ -54,22 +54,23 @@ Az 1970–80-as évek vállalataiban minden szervezeti egység a saját igényei
 **A szigetrendszerek jellemző problémái:**
 
 ```mermaid
-flowchart TB
-    subgraph "Értékesítés"
-        ES["Rendelés-kezelő\nSaját adatbázis"]
+flowchart LR
+    subgraph Ert["Értékesítés — saját DB"]
+        SO["Vevői rendelés\nrögzítve"]
     end
-    subgraph "Raktár"
-        RA["Készlet-nyilvántartó\nSaját adatbázis"]
+    subgraph Rak["Raktár — saját DB"]
+        GI["Készlet\nfrissítve"]
     end
-    subgraph "Pénzügy"
-        PE["Könyvelőszoftver\nSaját adatbázis"]
+    subgraph Pen["Pénzügy — saját DB"]
+        INV["Számla\nkiállítva"]
     end
-    subgraph "HR"
-        HR["Személyzeti rendszer\nSaját adatbázis"]
+    subgraph HR_["HR — saját DB"]
+        PAY["Jutalék\nszámítva"]
     end
-    "ES" <-->|"Manuális adatcsere\n(Excel, e-mail)"| RA
-    "RA" <-->|"Manuális adatcsere\n(Excel, e-mail)"| PE
-    "PE" <-->|"Manuális adatcsere\n(Excel, e-mail)"| HR
+
+    Ert -->|"e-mail / Excel\n⚠ Késés · Újrarögzítési hiba"| Rak
+    Rak -->|"Excel export\n⚠ Eltérő készletadat"| Pen
+    Pen -->|"Papíros kimutatás\n⚠ Nincs valós idejű kép"| HR_
 ```
 
 | Probléma              | Következmény                                                |
