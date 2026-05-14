@@ -103,17 +103,26 @@ A funkcionális és a projektalapú/divizionális szervezet keresztezése. Kett�
 ```mermaid
 graph TD
     VIG[Vezérigazgató]
-    VIG --> MKT[Mkt vez.]
+
+    VIG --> MKT[Marketing vez.]
     VIG --> MER[Mérnöki vez.]
-    VIG --> PEN[Pénz vez.]
-    VIG --> AP[A projekt vez.]
-    VIG --> BP[B projekt vez.]
-    AP -.->|erőforrás| MKT
-    AP -.->|erőforrás| MER
-    AP -.->|erőforrás| PEN
-    BP -.->|erőforrás| MKT
-    BP -.->|erőforrás| MER
-    BP -.->|erőforrás| PEN
+    VIG --> PEN[Pénzügyi vez.]
+    VIG --> APV[A projekt vez.]
+    VIG --> BPV[B projekt vez.]
+
+    MKT -->|"szakmai utasítás ─"| MA[MKT munkatárs\nA projektben]
+    MKT -->|"szakmai utasítás ─"| MB[MKT munkatárs\nB projektben]
+    MER -->|"szakmai utasítás ─"| MEA[Mérnök\nA projektben]
+    MER -->|"szakmai utasítás ─"| MEB[Mérnök\nB projektben]
+    PEN -->|"szakmai utasítás ─"| PA[Pénzügyes\nA projektben]
+    PEN -->|"szakmai utasítás ─"| PB[Pénzügyes\nB projektben]
+
+    APV -.->|"─ ─ projektkoordináció"| MA
+    APV -.->|"─ ─ projektkoordináció"| MEA
+    APV -.->|"─ ─ projektkoordináció"| PA
+    BPV -.->|"─ ─ projektkoordináció"| MB
+    BPV -.->|"─ ─ projektkoordináció"| MEB
+    BPV -.->|"─ ─ projektkoordináció"| PB
 ```
 
 **Előnyök:** Rugalmas erőforrás-allokáció, szakmai és projektszemlélet egyszerre érvényesül.
