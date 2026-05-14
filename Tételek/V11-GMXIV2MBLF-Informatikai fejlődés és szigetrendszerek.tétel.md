@@ -33,19 +33,20 @@ timeline
                     : SAP S/4HANA (2015)
 ```
 
-| Korszak | Hardver | Adatbevitel | Tárolás | Kommunikáció |
-|---|---|---|---|---|
-| 1960–70-es évek | Mainframe, lyukkártya | Kötegelt (batch) | Szalag, lemez | Helyi, nincs hálózat |
-| 1980-as évek | Mini-PC, asztali gép | Korai terminálok | Mágneses lemez | LAN, korai hálózatok |
-| 1990-es évek | Kliens-szerver | GUI, billentyűzet | Relációs adatbázis | WAN, internet kezdetek |
-| 2000-es évek | Webszerverek, laptop | Böngésző, mobil | Adattárházak, RAID | Internet, EDI, webszolgáltatások |
-| 2010–2020-as évek | Felhő, IoT eszközök | Mobil, API, szenzor | In-memory (RAM), SSD | Cloud, API, 5G |
+| Korszak           | Hardver               | Adatbevitel         | Tárolás              | Kommunikáció                     |
+| ----------------- | --------------------- | ------------------- | -------------------- | -------------------------------- |
+| 1960–70-es évek   | Mainframe, lyukkártya | Kötegelt (batch)    | Szalag, lemez        | Helyi, nincs hálózat             |
+| 1980-as évek      | Mini-PC, asztali gép  | Korai terminálok    | Mágneses lemez       | LAN, korai hálózatok             |
+| 1990-es évek      | Kliens-szerver        | GUI, billentyűzet   | Relációs adatbázis   | WAN, internet kezdetek           |
+| 2000-es évek      | Webszerverek, laptop  | Böngésző, mobil     | Adattárházak, RAID   | Internet, EDI, webszolgáltatások |
+| 2010–2020-as évek | Felhő, IoT eszközök   | Mobil, API, szenzor | In-memory (RAM), SSD | Cloud, API, 5G                   |
 
 ### 11.2. A szigetrendszerek kialakulása és problémái
 
 Az 1970–80-as évek vállalataiban minden szervezeti egység a saját igényeire fejlesztett vagy vásárolt szoftvert. A könyvelési osztálynak volt pénzügyi rendszere, a raktárnak készletnyilvántartója, az értékesítésnek rendelésrögzítője – de ezek egymástól teljesen elkülönülten működtek. Ezeket hívjuk **szigetrendszereknek** (siloed systems).
 
 **A szigetrendszerek kialakulásának okai:**
+
 - A szoftverpiacon az 1980-as évekig nem volt egységes, integrált megoldás.
 - Az osztályvezetők önállóan döntöttek a saját IT-eszközeikről.
 - A rendszerek különböző technológiákon (platformokon, adatbázisokon) futottak.
@@ -54,30 +55,30 @@ Az 1970–80-as évek vállalataiban minden szervezeti egység a saját igényei
 
 ```mermaid
 flowchart TB
-    subgraph Értékesítés
+    subgraph "Értékesítés"
         ES["Rendelés-kezelő\nSaját adatbázis"]
     end
-    subgraph Raktár
+    subgraph "Raktár"
         RA["Készlet-nyilvántartó\nSaját adatbázis"]
     end
-    subgraph Pénzügy
+    subgraph "Pénzügy"
         PE["Könyvelőszoftver\nSaját adatbázis"]
     end
-    subgraph HR
+    subgraph "HR"
         HR["Személyzeti rendszer\nSaját adatbázis"]
     end
-    ES <-->|"Manuális adatcsere\n(Excel, e-mail)"| RA
-    RA <-->|"Manuális adatcsere\n(Excel, e-mail)"| PE
-    PE <-->|"Manuális adatcsere\n(Excel, e-mail)"| HR
+    "ES" <-->|"Manuális adatcsere\n(Excel, e-mail)"| RA
+    "RA" <-->|"Manuális adatcsere\n(Excel, e-mail)"| PE
+    "PE" <-->|"Manuális adatcsere\n(Excel, e-mail)"| HR
 ```
 
-| Probléma | Következmény |
-|---|---|
-| Adatredundancia | Ugyanaz az adat több helyen van tárolva, eltérő értékekkel |
-| Manuális újrarögzítés | Hibalehetőség, időpazarlás |
-| Inkonzisztens adatok | Raktárkészlet ≠ Pénzügyi könyvelés ≠ Értékesítési adat |
+| Probléma              | Következmény                                                |
+| --------------------- | ----------------------------------------------------------- |
+| Adatredundancia       | Ugyanaz az adat több helyen van tárolva, eltérő értékekkel  |
+| Manuális újrarögzítés | Hibalehetőség, időpazarlás                                  |
+| Inkonzisztens adatok  | Raktárkészlet ≠ Pénzügyi könyvelés ≠ Értékesítési adat      |
 | Nincs valós idejű kép | A vezető csak utólag, papíros jelentésekből kap információt |
-| Nehéz auditálhatóság | Az adatok útja nem követhető vissza |
+| Nehéz auditálhatóság  | Az adatok útja nem követhető vissza                         |
 
 ### 11.3. Az integrált rendszerek megjelenésének igénye
 
@@ -89,28 +90,28 @@ Az 1990-es évekre a vállalatok mérete és komplexitása meghaladta, amit a sz
 
 ### 11.4. Szigetrendszerek vs. integrált ERP rendszerek
 
-| Jellemző | Szigetrendszer | Integrált ERP |
-|---|---|---|
-| Adatrögzítés | Minden rendszerbe külön | Egyszeri rögzítés, automatikus frissítés |
-| Adatkonzisztencia | Rendszerenként eltérő | Egységes, központi adatbázis |
-| Valós idejűség | Nincs, csak kötegelt | Valós idejű tranzakciók és riportok |
-| Folyamat-lefedettség | Részleges, osztályszintű | Teljes vállalat, end-to-end folyamatok |
-| Karbantartás | Több rendszer, több szállító | Egy szállító, egységes platform |
-| Bevezetési kockázat | Alacsony (kis rendszer) | Magas (komplex projekt) |
-| Testreszabhatóság | Korlátlan (saját fejlesztés) | Korlátozott (best practice alapú) |
+| Jellemző             | Szigetrendszer               | Integrált ERP                            |
+| -------------------- | ---------------------------- | ---------------------------------------- |
+| Adatrögzítés         | Minden rendszerbe külön      | Egyszeri rögzítés, automatikus frissítés |
+| Adatkonzisztencia    | Rendszerenként eltérő        | Egységes, központi adatbázis             |
+| Valós idejűség       | Nincs, csak kötegelt         | Valós idejű tranzakciók és riportok      |
+| Folyamat-lefedettség | Részleges, osztályszintű     | Teljes vállalat, end-to-end folyamatok   |
+| Karbantartás         | Több rendszer, több szállító | Egy szállító, egységes platform          |
+| Bevezetési kockázat  | Alacsony (kis rendszer)      | Magas (komplex projekt)                  |
+| Testreszabhatóság    | Korlátlan (saját fejlesztés) | Korlátozott (best practice alapú)        |
 
 ### 11.5. Rendszerek összekapcsolásának módszerei
 
 Ahol a teljes csere nem lehetséges, az összekapcsolás (integráció) különböző szinten valósítható meg:
 
-| Módszer | Leírás | Jellemző alkalmazás |
-|---|---|---|
-| **Fájlcsere / Batch** | Időszakos adatexport-import (CSV, XML) | Régi rendszerek, éjszakai futások |
-| **EDI** (Electronic Data Interchange) | Strukturált elektronikus üzenetcsere szabvány szerint | Ellátási lánc, számlák, rendelések |
-| **Middleware / EAI** | Enterprise Application Integration – közbenső réteg, amely fordítja és irányítja az adatokat | Vegyes IT-környezetek |
-| **ESB** (Enterprise Service Bus) | Üzenetalapú integrációs busz, lazán csatolt architektúra | Komplex vállalati ökoszisztémák |
-| **API / Webszolgáltatás** | REST/SOAP alapú valós idejű adatcsere | Modern felhőalapú integrációk |
-| **iPaaS** | Integration Platform as a Service – felhőalapú integrációs platform | SaaS-rendszerek összekapcsolása |
+| Módszer                               | Leírás                                                                                       | Jellemző alkalmazás                |
+| ------------------------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------- |
+| **Fájlcsere / Batch**                 | Időszakos adatexport-import (CSV, XML)                                                       | Régi rendszerek, éjszakai futások  |
+| **EDI** (Electronic Data Interchange) | Strukturált elektronikus üzenetcsere szabvány szerint                                        | Ellátási lánc, számlák, rendelések |
+| **Middleware / EAI**                  | Enterprise Application Integration – közbenső réteg, amely fordítja és irányítja az adatokat | Vegyes IT-környezetek              |
+| **ESB** (Enterprise Service Bus)      | Üzenetalapú integrációs busz, lazán csatolt architektúra                                     | Komplex vállalati ökoszisztémák    |
+| **API / Webszolgáltatás**             | REST/SOAP alapú valós idejű adatcsere                                                        | Modern felhőalapú integrációk      |
+| **iPaaS**                             | Integration Platform as a Service – felhőalapú integrációs platform                          | SaaS-rendszerek összekapcsolása    |
 
 **Összegzés:** A vállalati informatika az izolált, osztályszintű szigetrendszerektől az egységes, valós idejű ERP platformok felé fejlődött. Ezt a folyamatot a szervezetek komplexitásának növekedése, a globalizáció és a technológiai lehetőségek bővülése együttesen hajtotta. A teljes integráció megvalósíthatatlansága esetén különböző middleware- és API-megoldások kínálnak átmeneti vagy kiegészítő kapcsolatot a rendszerek között.
 
