@@ -46,11 +46,38 @@ A legegyszerűbb forma. Minden szintnek egy felettese van; az utasítások egyé
 
 ```mermaid
 graph TD
-    VIG[Vezérigazgató]
-    VIG --> UVA[Üzemvezető A]
-    VIG --> UVB[Üzemvezető B]
-    UVA --> MA[Munkások]
-    UVB --> MB[Munkások]
+    %% Csomópontok definiálása formázott szöveggel
+    VIG("Vezérigazgató")
+    UVA("Üzemvezető A")
+    UVB("Üzemvezető B")
+    MA("Munkások")
+    MB("Munkások")
+
+    %% Kapcsolatok
+    VIG --> UVA
+    VIG --> UVB
+    UVA --> MA
+    UVB --> MB
+
+    %% Stílusok definiálása (classDef)
+    %% Központi elem (Iparági verseny) - Lila
+    classDef VezerigazgatoNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    %% Új belépők - Kék
+    classDef UzemvezetoNode fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    %% Szállítók - Zöld
+    classDef MunkasNode fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    
+    
+    %% Stílusok hozzárendelése
+    class VIG VezerigazgatoNode;
+    class UVA UzemvezetoNode;
+    class UVB UzemvezetoNode;
+    class MA MunkasNode;
+    class MB MunkasNode;
+
+    %% Nyilak formázása (Vastagabb, szürkéskék)
+    linkStyle 0,1,2,3 stroke:#546e7a,stroke-width:2px;
+
 ```
 
 **Előnyök:** Egyértelmű felelősség, gyors döntéshozatal, átlátható.
