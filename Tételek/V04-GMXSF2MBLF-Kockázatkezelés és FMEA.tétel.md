@@ -18,17 +18,16 @@ Az FMEA (Failure Mode and Effects Analysis – hibamód- és hatáselemzés) szi
 
 ### 4.3. Az FMEA módszertani lépései
 
-```
-Folyamat    Hibamódok    Hibahatások    Hibaokok
-kijelölése ──► azonosítása ──► meghatározása ──► azonosítása
-                                                     │
-                                             Kontrollok feltárása
-                                                     │
-                                              RPN számítás
-                                                     │
-                                       Intézkedések kidolgozása
-                                                     │
-                                            Visszamérés (új RPN)
+```mermaid
+flowchart TD
+    A[Folyamat kijelölése] --> B[Hibamódok azonosítása]
+    B --> C[Hibahatások meghatározása]
+    C --> D[Hibaokok azonosítása]
+    D --> E[Kontrollok feltárása]
+    E --> F["RPN számítás<br/>RPN = S × O × D"]
+    F --> G[Intézkedések kidolgozása]
+    G --> H["Visszamérés<br/>új RPN kiszámítása"]
+    H -- "magas RPN esetén" --> B
 ```
 
 ### 4.4. A kockázati prioritási szám (RPN)

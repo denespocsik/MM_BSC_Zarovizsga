@@ -14,12 +14,13 @@ A modern szervezetekben a BPM szorosan összekapcsolódik az informatikával: a 
 
 A BPM életciklusa nem egyszeri projektet, hanem ismétlődő fejlesztési kört jelent. Az alábbi öt szakasz épül egymásra:
 
-```
-  ┌──────────────────────────────────────────────────────────────┐
-  │                                                              │
-  ▼                                                              │
-TERVEZÉS ──► MODELLEZÉS ──► VÉGREHAJTÁS ──► MONITOROZÁS ──► OPTIMALIZÁLÁS
-                               
+```mermaid
+flowchart LR
+    T[Tervezés] --> M[Modellezés]
+    M --> V[Végrehajtás]
+    V --> Mo[Monitorozás]
+    Mo --> O[Optimalizálás]
+    O --> T
 ```
 
 | Szakasz | Fő feladatok |
@@ -36,21 +37,17 @@ A ciklus alapelve: az optimalizálás befejezése után a folyamat visszakerülh
 
 A Business Process Management Suite (BPMS) olyan integrált szoftverkörnyezet, amely az összes életciklus-szakaszt támogatja. Négy fő komponensből áll:
 
-```
-┌──────────────────────────────────────┐
-│                BPMS                  │
-│  ┌─────────────┐  ┌─────────────┐    │
-│  │  Folyamat-  │  │ Végrehajtó  │    │
-│  │  modellező  │  │   motor     │    │
-│  │   eszköz    │  │  (process   │    │
-│  │ (BPMN 2.0)  │  │  engine)    │    │
-│  └─────────────┘  └─────────────┘    │
-│  ┌─────────────┐  ┌─────────────┐    │
-│  │   Üzleti    │  │   Szabály-  │    │
-│  │  analitika  │  │   kezelő    │    │
-│  │(dashboards) │  │    modul    │    │
-│  └─────────────┘  └─────────────┘    │
-└──────────────────────────────────────┘
+```mermaid
+graph TB
+    subgraph BPMS["BPMS — Business Process Management Suite"]
+        A["Folyamatmodellező eszköz (BPMN 2.0)"]
+        B["Végrehajtó motor (Process Engine)"]
+        C["Üzleti analitika (Dashboards, KPI)"]
+        D["Szabálykezelő modul (BRM)"]
+        A -->|modell| B
+        B -->|futásadatok| C
+        D -->|üzleti szabályok| B
+    end
 ```
 
 **Folyamatmodellező eszköz:** Grafikus felületen teszi lehetővé a BPMN 2.0-alapú modellek létrehozását. Az üzleti szakemberek programozói tudás nélkül is részt vehetnek a folyamatok tervezésében.

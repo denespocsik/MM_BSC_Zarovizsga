@@ -34,23 +34,15 @@ A folyamatleltár a szervezet folyamatainak rendszerezett felsorolása – az eg
 
 A teknős-elemzés a folyamatok átfogó szabályozási és elemzési eszköze. A diagram középen a vizsgált folyamatot tartalmazza, körülötte hat dimenzió helyezkedik el:
 
-```
-                    ┌─────────────┐
-                    │  BEMENETEK  │
-                    │(Mi indítja?)│
-                    └──────┬──────┘
-                           │
-  ┌──────────────┐         ▼         ┌──────────────┐
-  │  KIKKEL?     │  ┌────────────┐   │   MIVEL?     │
-  │ (Szereplők,  ├─►│  FOLYAMAT  │◄──┤ (Erőforrások,│
-  │ felelősök)   │  │   NEVE     │   │  rendszerek) │
-  └──────────────┘  └─────┬──────┘   └──────────────┘
-                           │
-  ┌──────────────┐         ▼         ┌──────────────┐
-  │  HOGYAN?     │         │         │  MÉRÉSEK?    │
-  │ (Módszerek,  │    ┌────┴─────┐   │  (KPI-k)     │
-  │ szabályzatok)│    │ KIMENETEK│   └──────────────┘
-  └──────────────┘    └──────────┘
+```mermaid
+flowchart TB
+    BE["BEMENETEK<br/>(Mi indítja?)"] --> FO
+    KI["KIKKEL?<br/>(Szereplők, felelősök)"] --> FO
+    MI["MIVEL?<br/>(Erőforrások, rendszerek)"] --> FO
+    HO["HOGYAN?<br/>(Módszerek, szabályzatok)"] --> FO
+    ME["MÉRÉSEK<br/>(KPI-k)"] --> FO
+    FO(["FOLYAMAT neve"])
+    FO --> KIM["KIMENETEK<br/>(Mit hoz létre?)"]
 ```
 
 **Panaszkezelési folyamat teknős-elemzése:**
@@ -71,11 +63,12 @@ A teknős-elemzés nem helyettesíti a BPMN-modellt, de kiváló kiegészítője
 
 A **PDCA (Plan–Do–Check–Act)** Deming ciklusa a folyamatos fejlesztés alapmodellje a MIR-ben:
 
-```
-         ┌───────────────────────────────────────┐
-         ▼                                       │
-       PLAN ───────► DO ───────► CHECK ───────► ACT
-    (Tervez)    (Végrehajt)   (Ellenőriz)   (Beavatkozik)
+```mermaid
+flowchart LR
+    P["PLAN<br/>Tervez"] --> D["DO<br/>Végrehajt"]
+    D --> C["CHECK<br/>Ellenőriz"]
+    C --> A["ACT<br/>Beavatkozik"]
+    A --> P
 ```
 
 | PDCA szakasz | KPI-k szerepe |

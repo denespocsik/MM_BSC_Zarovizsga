@@ -40,12 +40,12 @@ A **folyamatszimuláció** lehetővé teszi a folyamat előzetes modellezését 
 
 ### 3.4. Az optimalizálás lépései
 
-```
-AS-IS elemzés          Problémaelemzés        TO-BE tervezés
-(jelenlegi állapot) ──► (gyökérokok)      ──► (jövőbeli modell)
-        │                                           │
-        └──────────────────────────────────────────►┘
-                    Visszamérés (KPI-összehasonlítás)
+```mermaid
+flowchart LR
+    A["AS-IS elemzés<br/>jelenlegi állapot"] --> B["Problémaelemzés<br/>gyökérokok — 5 Miért"]
+    B --> C["TO-BE tervezés<br/>javított modell"]
+    C --> D["Visszamérés<br/>KPI-összehasonlítás"]
+    D --> A
 ```
 
 **1. AS-IS elemzés:** A jelenlegi folyamat feltárása: lépések, felelősök, döntési pontok, dokumentumok, időadatok, problémák. Fontos a munkatársak bevonása.

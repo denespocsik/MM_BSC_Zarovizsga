@@ -42,15 +42,14 @@ Az átjárók rombusz alakú döntési, elágazási vagy összesítési pontok:
 | Inkluzív (OR) | Rombusz (O jel) | Egy vagy több ág futhat le |
 
 **Példa – rendelés feldolgozása:**
-```
-[Rendelés beérkezett] ──► [Rendelés ellenőrzése] ──► <Készleten van?>
-                                                        │           │
-                                                      IGEN         NEM
-                                                        │           │
-                                              [Kiszállítás]  [Beszerzés]
-                                                        │           │
-                                                        └─────┬─────┘
-                                                       [Rendelés lezárva]
+```mermaid
+flowchart LR
+    S([Rendelés beérkezett]) --> E[Rendelés ellenőrzése]
+    E --> G{Készleten van?}
+    G -- Igen --> K[Kiszállítás]
+    G -- Nem --> B[Beszerzés]
+    K --> End([Rendelés lezárva])
+    B --> End
 ```
 
 ### 2.3. Szervezési elemek: medencék és sávok
@@ -59,17 +58,20 @@ Az átjárók rombusz alakú döntési, elágazási vagy összesítési pontok:
 
 **Sáv (Lane):** A medencén belüli felelősségi köröket jelöli. Pl. Értékesítés | Pénzügy | Raktár | Logisztika. Megmutatja, hogy melyik szervezeti egység felel az egyes tevékenységekért.
 
-```
-┌─────────────────────────────────────────────────┐
-│ VÁLLALAT                                        │
-│  ┌───────────────────────────────────────────┐  │
-│  │ Értékesítés  │ [Rendelés rögzítése]       │  │
-│  ├──────────────┼────────────────────────────┤  │
-│  │ Raktár       │ [Készlet ellenőrzése]      │  │
-│  ├──────────────┼────────────────────────────┤  │
-│  │ Pénzügy      │ [Számla kiállítása]        │  │
-│  └───────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph VALLALAT["VÁLLALAT — Pool"]
+        subgraph Ert["Értékesítés — Lane"]
+            A[Rendelés rögzítése]
+        end
+        subgraph Rakt["Raktár — Lane"]
+            B[Készlet ellenőrzése]
+        end
+        subgraph Pen["Pénzügy — Lane"]
+            C[Számla kiállítása]
+        end
+    end
+    A --> B --> C
 ```
 
 ### 2.4. Összekötő elemek és használati szabályaik
