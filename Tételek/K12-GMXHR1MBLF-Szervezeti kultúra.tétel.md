@@ -12,17 +12,17 @@ Handy (1986) négy alaptípust különböztet meg, amelyek különböző szervez
 
 ```mermaid
 quadrantChart
-    title Handy kultúratipológia — Handy (1986)
-    x-axis Alacsony szabályozottság --> Magas szabályozottság
-    y-axis Egyén-fókusz --> Feladat-fókusz
-    quadrant-1 Feladatkultúra 🕸️ háló
-    quadrant-2 Szerepkultúra 🏛️ görög oszlop
-    quadrant-3 Személyiségkultúra ⭐ csillag
-    quadrant-4 Hatalomkultúra 🕷️ pókháló
-    Feladatkultúra: [0.25, 0.75]
-    Szerepkultúra: [0.75, 0.75]
-    Személyiségkultúra: [0.25, 0.25]
-    Hatalomkultúra: [0.75, 0.25]
+    title "Handy kultúratipológia — Handy (1986)"
+    x-axis "Alacsony szabályozottság" --> "Magas szabályozottság"
+    y-axis "Egyén-fókusz" --> "Feladat-fókusz"
+    quadrant-1 "Feladatkultúra 🕸️ háló"
+    quadrant-2 "Szerepkultúra 🏛️ görög oszlop"
+    quadrant-3 "Személyiségkultúra ⭐ csillag"
+    quadrant-4 "Hatalomkultúra 🕷️ pókháló"
+    "Feladatkultúra": [0.25, 0.75]
+    "Szerepkultúra": [0.75, 0.75]
+    "Személyiségkultúra": [0.25, 0.25]
+    "Hatalomkultúra": [0.75, 0.25]
 ```
 
 ### Jéghegy-modell
@@ -53,12 +53,12 @@ Schein (1985) szerint a vezető a kultúra elsődleges formálója. Hat elsődle
 
 A Leadership Shadow modell (Champions of Change, 2023) négy dimenzióban foglalja össze a vezető kultúraformáló hatását:
 
-| Dimenzió | Mit jelent |
-|----------|-----------|
-| What I say | Amit a vezető kommunikál — szavai, üzenetei |
-| How I act | Ahogy viselkedik — példamutatás |
-| What I prioritise | Amire időt és erőforrást fordít |
-| How I measure | Mit mér és mit jutalmaz |
+| Dimenzió          | Mit jelent                                  |
+| ----------------- | ------------------------------------------- |
+| What I say        | Amit a vezető kommunikál — szavai, üzenetei |
+| How I act         | Ahogy viselkedik — példamutatás             |
+| What I prioritise | Amire időt és erőforrást fordít             |
+| How I measure     | Mit mér és mit jutalmaz                     |
 
 Cameron és Quinn (2006) OCAI modellje négy kultúratípust különít el: klán, adhokrácia, piac és hierarchia. Szabó és Molnár (2022) hazai állami szervezeteken végzett kutatása alapján a munkavállalók jelenlegi kultúráját hierarchia típusúnak (32%), ideálisát klán típusúnak (36%) érzékelik.
 
