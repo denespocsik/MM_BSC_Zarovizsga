@@ -15,11 +15,11 @@ Armstrong és Taylor (2016) alapján a HRM négy célkör körül szerveződik. 
 ```mermaid
 flowchart LR
     subgraph B1["🔵 EMBERI ERŐFORRÁS BIZTOSÍTÁSA"]
-        direction LR
+        direction TD
         A1["📋 Munkaerő-\ntervezés"] --> A2["🎯 Toborzás és\nkiválasztás"] --> A3["🎓 Képzés és\nfejlesztés"]
     end
     subgraph B2["🟢 EMBERI ERŐFORRÁS MEGTARTÁSA"]
-        direction LR
+        direction TD
         A4["💰 Kompenzáció-\nmenedzsment"] --- A5["📊 Teljesítmény-\nmenedzsment"] --- A6["🤝 Munkaügyi\nkapcsolatok"]
     end
     B1 --> B2
