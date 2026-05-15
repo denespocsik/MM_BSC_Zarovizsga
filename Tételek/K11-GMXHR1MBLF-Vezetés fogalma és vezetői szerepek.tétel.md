@@ -12,19 +12,29 @@ Mintzberg (1973) a menedzseri munkát tíz szerepbe rendezte, három csoportban:
 
 ```mermaid
 mindmap
-  root((Mintzberg\nvezetői szerepek))
-    Személyközi szerepek
-      Nyilvános megjelenés\nFigurehead
-      Főnöki / vezető szerep\nLeader
-      Kapcsolattartó\nLiaison
-    Információs szerepek
-      Figyelő / információgyűjtő\nMonitor
-      Információ-elosztó\nDisseminator
-      Szóvivő\nSpokesperson
-    Döntési szerepek
-      Vállalkozó / zavarelhárító\nEntrepreneur
-      Erőforrás-elosztó\nResource Allocator
-      Tárgyaló\nNegotiator
+  root((🎯 Mintzberg
+    Vezetői szerepek))
+    ))👥 Személyközi szerepek((
+      🎭 Nyilvános megjelenés
+        Figurehead
+      👔 Főnöki / vezető szerep
+        Leader
+      🔗 Kapcsolattartó
+        Liaison
+    ))📡 Információs szerepek((
+      👁️ Figyelő / inf.gyűjtő
+        Monitor
+      📢 Információ-elosztó
+        Disseminator
+      📣 Szóvivő
+        Spokesperson
+    ))⚡ Döntési szerepek((
+      💡 Vállalkozó / zavarelhárító
+        Entrepreneur
+      📦 Erőforrás-elosztó
+        Resource Allocator
+      🤝 Tárgyaló
+        Negotiator
 ```
 
 ### Vezetői készségek
