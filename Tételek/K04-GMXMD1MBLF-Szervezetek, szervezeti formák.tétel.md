@@ -46,38 +46,27 @@ A legegyszerűbb forma. Minden szintnek egy felettese van; az utasítások egyé
 
 ```mermaid
 graph TD
-    %% Csomópontok definiálása formázott szöveggel
-    VIG("Vezérigazgató")
-    UVA("Üzemvezető A")
-    UVB("Üzemvezető B")
+    VIG("<b>Vezérigazgató</b>")
+    UVA("<b>Üzemvezető A</b>")
+    UVB("<b>Üzemvezető B</b>")
     MA("Munkások")
     MB("Munkások")
 
-    %% Kapcsolatok
     VIG --> UVA
     VIG --> UVB
     UVA --> MA
     UVB --> MB
 
-    %% Stílusok definiálása (classDef)
-    %% Központi elem (Iparági verseny) - Lila
-    classDef VezerigazgatoNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
-    %% Új belépők - Kék
-    classDef UzemvezetoNode fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
-    %% Szállítók - Zöld
-    classDef MunkasNode fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
-    
-    
-    %% Stílusok hozzárendelése
-    class VIG VezerigazgatoNode;
-    class UVA UzemvezetoNode;
-    class UVB UzemvezetoNode;
-    class MA MunkasNode;
-    class MB MunkasNode;
+    classDef vigNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c;
+    classDef uvNode  fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1;
+    classDef mNode   fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20;
 
-    %% Nyilak formázása (Vastagabb, szürkéskék)
-    linkStyle 0,1,2,3 stroke:#546e7a,stroke-width:2px;
+    class VIG vigNode;
+    class UVA,UVB uvNode;
+    class MA,MB mNode;
 
+    linkStyle 0,1 stroke:#7b1fa2,stroke-width:2px;
+    linkStyle 2,3 stroke:#1565c0,stroke-width:2px;
 ```
 
 **Előnyök:** Egyértelmű felelősség, gyors döntéshozatal, átlátható.
@@ -90,13 +79,35 @@ A munkamegosztás szaktevékenységek (funkciók) szerint történik. A beosztot
 
 ```mermaid
 graph TD
-    VIG[Vezérigazgató]
-    VIG --> HR[HR]
-    VIG --> PE[Pénzügy]
-    VIG --> MK[Marketing]
-    VIG --> TE[Termelés]
-    VIG --> LO[Logisztika]
-    HR & PE & MK & TE & LO --> D[Dolgozók – funkció szerint megosztva]
+    VIG("<b>Vezérigazgató</b>")
+    HR("<b>HR</b>")
+    PE("<b>Pénzügy</b>")
+    MK("<b>Marketing</b>")
+    TE("<b>Termelés</b>")
+    LO("<b>Logisztika</b>")
+    D("Dolgozók<br/>funkció szerint megosztva")
+
+    VIG --> HR
+    VIG --> PE
+    VIG --> MK
+    VIG --> TE
+    VIG --> LO
+    HR  --> D
+    PE  --> D
+    MK  --> D
+    TE  --> D
+    LO  --> D
+
+    classDef vigNode  fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c;
+    classDef funcNode fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1;
+    classDef dNode    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20;
+
+    class VIG vigNode;
+    class HR,PE,MK,TE,LO funcNode;
+    class D dNode;
+
+    linkStyle 0,1,2,3,4 stroke:#7b1fa2,stroke-width:2px;
+    linkStyle 5,6,7,8,9 stroke:#1565c0,stroke-width:2px;
 ```
 
 Sok szervezetben a funkcionális struktúrát **törzskarral** egészítik ki: a vezető mellé szakértő tanácsadói csoportot rendelnek (pl. jogi osztály, controlling), amely nem utasíthat, csak tanácsol.
@@ -114,10 +125,26 @@ Nagy, diverzifikált szervezetekben alkalmazzák. Az egységeket (*divíziókat*
 
 ```mermaid
 graph TD
-    H[Holding / Anyavállalat]
-    H --> A["A divízió\n(önálló P&L)"]
-    H --> B["B divízió\n(önálló P&L)"]
-    H --> C["C divízió\n(önálló P&L)"]
+    H("<b>Holding / Anyavállalat</b>")
+    A("<b>A divízió</b><br/>önálló P&L, saját funkciókkal")
+    B("<b>B divízió</b><br/>önálló P&L, saját funkciókkal")
+    C("<b>C divízió</b><br/>önálló P&L, saját funkciókkal")
+
+    H --> A
+    H --> B
+    H --> C
+
+    classDef holdingNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c;
+    classDef divANode    fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1;
+    classDef divBNode    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20;
+    classDef divCNode    fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100;
+
+    class H holdingNode;
+    class A divANode;
+    class B divBNode;
+    class C divCNode;
+
+    linkStyle 0,1,2 stroke:#7b1fa2,stroke-width:2px;
 ```
 
 **Előnyök:** Rugalmasság, piachoz közeli döntéshozatal, az egységek teljesítménye jól mérhető.
@@ -129,27 +156,54 @@ A funkcionális és a projektalapú/divizionális szervezet keresztezése. Kett�
 
 ```mermaid
 graph TD
-    VIG[Vezérigazgató]
+    VIG("<b>Vezérigazgató</b>")
 
-    VIG --> MKT[Marketing vez.]
-    VIG --> MER[Mérnöki vez.]
-    VIG --> PEN[Pénzügyi vez.]
-    VIG --> APV[A projekt vez.]
-    VIG --> BPV[B projekt vez.]
+    MKT("<b>Marketing vez.</b><br/>funkcionális fej")
+    MER("<b>Mérnöki vez.</b><br/>funkcionális fej")
+    PEN("<b>Pénzügyi vez.</b><br/>funkcionális fej")
+    APV("<b>A projekt vez.</b><br/>koordinátor")
+    BPV("<b>B projekt vez.</b><br/>koordinátor")
 
-    MKT -->|"szakmai utasítás ─"| MA[MKT munkatárs\nA projektben]
-    MKT -->|"szakmai utasítás ─"| MB[MKT munkatárs\nB projektben]
-    MER -->|"szakmai utasítás ─"| MEA[Mérnök\nA projektben]
-    MER -->|"szakmai utasítás ─"| MEB[Mérnök\nB projektben]
-    PEN -->|"szakmai utasítás ─"| PA[Pénzügyes\nA projektben]
-    PEN -->|"szakmai utasítás ─"| PB[Pénzügyes\nB projektben]
+    MA("MKT munkatárs<br/>A projektben")
+    MB("MKT munkatárs<br/>B projektben")
+    MEA("Mérnök<br/>A projektben")
+    MEB("Mérnök<br/>B projektben")
+    PA("Pénzügyes<br/>A projektben")
+    PB("Pénzügyes<br/>B projektben")
 
-    APV -.->|"─ ─ projektkoordináció"| MA
-    APV -.->|"─ ─ projektkoordináció"| MEA
-    APV -.->|"─ ─ projektkoordináció"| PA
-    BPV -.->|"─ ─ projektkoordináció"| MB
-    BPV -.->|"─ ─ projektkoordináció"| MEB
-    BPV -.->|"─ ─ projektkoordináció"| PB
+    VIG --> MKT
+    VIG --> MER
+    VIG --> PEN
+    VIG --> APV
+    VIG --> BPV
+
+    MKT -->|"szakmai utasítás"| MA
+    MKT -->|"szakmai utasítás"| MB
+    MER -->|"szakmai utasítás"| MEA
+    MER -->|"szakmai utasítás"| MEB
+    PEN -->|"szakmai utasítás"| PA
+    PEN -->|"szakmai utasítás"| PB
+
+    APV -.->|"projektkoordináció"| MA
+    APV -.->|"projektkoordináció"| MEA
+    APV -.->|"projektkoordináció"| PA
+    BPV -.->|"projektkoordináció"| MB
+    BPV -.->|"projektkoordináció"| MEB
+    BPV -.->|"projektkoordináció"| PB
+
+    classDef vigNode  fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c;
+    classDef funcNode fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1;
+    classDef projNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100;
+    classDef empNode  fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20;
+
+    class VIG vigNode;
+    class MKT,MER,PEN funcNode;
+    class APV,BPV projNode;
+    class MA,MB,MEA,MEB,PA,PB empNode;
+
+    linkStyle 0,1,2,3,4 stroke:#7b1fa2,stroke-width:2px;
+    linkStyle 5,6,7,8,9,10 stroke:#1565c0,stroke-width:2px;
+    linkStyle 11,12,13,14,15,16 stroke:#ef6c00,stroke-width:2px,stroke-dasharray:5 5;
 ```
 
 **Előnyök:** Rugalmas erőforrás-allokáció, szakmai és projektszemlélet egyszerre érvényesül.
