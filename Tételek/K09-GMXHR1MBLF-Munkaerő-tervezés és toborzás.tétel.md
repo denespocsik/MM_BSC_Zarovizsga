@@ -6,15 +6,22 @@ A munkaerő-tervezés (HR planning / workforce planning) előrevetíti, hogy a s
 
 ```mermaid
 flowchart TD
-    A([Szervezeti célok]) --> B[Munkaerő-kereslet\nelőrejelzése]
-    B --> C[Belső kínálat\nelemzése]
-    B --> D[Külső munkaerőpiac\nelemzése]
-    C --> E{Munkaerőhiány\nvs. felesleg?}
+    A(["🏢 Szervezeti célok"]):::start --> B["📈 Munkaerő-kereslet\nelőrejelzése"]:::process
+    B --> C["🏠 Belső kínálat\nelemzése"]:::process
+    B --> D["🌍 Külső munkaerőpiac\nelemzése"]:::process
+    C --> E{"⚖️ Munkaerőhiány\nvs. felesleg?"}:::decision
     D --> E
-    E -->|Hiány| F[Toborzási terv]
-    E -->|Felesleg| G[Leépítési / átcsoportosítási terv]
-    F --> H([Munkakörelemzés alapja:\nleírás + specifikáció])
+    E -->|"🔴 Hiány"| F["📣 Toborzási terv"]:::shortage
+    E -->|"🟡 Felesleg"| G["📉 Leépítési /\nátcsoportosítási terv"]:::surplus
+    F --> H(["📄 Munkakörelemzés\nleírás + specifikáció"]):::end_node
     G --> H
+
+    classDef start    fill:#dbeafe,stroke:#2563eb,color:#1e3a5f,font-weight:bold
+    classDef process  fill:#f0f9ff,stroke:#0ea5e9,color:#0c4a6e
+    classDef decision fill:#fef9c3,stroke:#ca8a04,color:#713f12,font-weight:bold
+    classDef shortage fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef surplus  fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef end_node fill:#dcfce7,stroke:#16a34a,color:#14532d,font-weight:bold
 ```
 
 A tervezés alapja a **munkakörelemzés (job analysis)**: minden munkakör feladatainak, felelősségeinek, szükséges kompetenciáinak és munkafeltételeinek szisztematikus feltárása. Eredménye a **munkaköri leírás** (job description) és a **munkaköri specifikáció** (job specification), amely meghatározza az alkalmazottal szemben támasztott követelményeket.
