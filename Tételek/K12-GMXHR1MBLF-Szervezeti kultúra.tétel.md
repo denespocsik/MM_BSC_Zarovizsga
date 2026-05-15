@@ -11,14 +11,26 @@ Buchowicz (1990) a munkavállalói perspektívát emeli ki: a kultúra az alkalm
 Handy (1986) négy alaptípust különböztet meg, amelyek különböző szervezeti formákhoz kapcsolódnak:
 
 ```mermaid
+%%{init: {
+  "quadrantChart": {"chartWidth": 420, "chartHeight": 420, "pointRadius": 7, "pointLabelFontSize": 14},
+  "themeVariables": {
+    "quadrant1Fill": "#dbeafe", "quadrant1TextFill": "#1e40af",
+    "quadrant2Fill": "#dcfce7", "quadrant2TextFill": "#166534",
+    "quadrant3Fill": "#fef9c3", "quadrant3TextFill": "#854d0e",
+    "quadrant4Fill": "#fce7f3", "quadrant4TextFill": "#831843",
+    "quadrantPointFill": "#6366f1", "quadrantPointTextFill": "#1e1b4b",
+    "quadrantXAxisTextFill": "#374151", "quadrantYAxisTextFill": "#374151",
+    "quadrantTitleFill": "#111827"
+  }
+}}%%
 quadrantChart
     title "Handy kultúratipológia — Handy (1986)"
     x-axis "Alacsony szabályozottság" --> "Magas szabályozottság"
     y-axis "Egyén-fókusz" --> "Feladat-fókusz"
-    quadrant-1 "Feladatkultúra 🕸️ háló"
-    quadrant-2 "Szerepkultúra 🏛️ görög oszlop"
-    quadrant-3 "Személyiségkultúra ⭐ csillag"
-    quadrant-4 "Hatalomkultúra 🕷️ pókháló"
+    quadrant-1 "🕸️ Feladatkultúra"
+    quadrant-2 "🏛️ Szerepkultúra"
+    quadrant-3 "⭐ Személyiségkultúra"
+    quadrant-4 "🕷️ Hatalomkultúra"
     "Feladatkultúra": [0.25, 0.75]
     "Szerepkultúra": [0.75, 0.75]
     "Személyiségkultúra": [0.25, 0.25]
@@ -31,20 +43,23 @@ Daft (1992) jéghegy-modellje szemlélteti, hogy a szervezeti kultúrának csak 
 
 ```mermaid
 graph TB
-    subgraph LATHATO["🌊 FELSZÍN FELETT — látható elemek"]
-        V1["🏢 Épület, berendezés, öltözet"]
-        V2["🎉 Ceremóniák, sztorik, rituálék"]
-        V3["📐 Iroda elrendezése, szimbólumok"]
+    subgraph LATHATO["☀️ FELSZÍN FELETT — látható elemek"]
+        V1["🏢 Épület, berendezés, öltözet"]:::visible
+        V2["🎉 Ceremóniák, sztorik, rituálék"]:::visible
+        V3["📐 Iroda elrendezése, szimbólumok"]:::visible
     end
     subgraph REJTETT["🌊 FELSZÍN ALATT — rejtett elemek"]
-        R1["💡 Értékek és normák"]
-        R2["🧠 Hiedelmek, feltevések"]
-        R3["❤️ Érzések a szervezet iránt"]
+        R1["💡 Értékek és normák"]:::hidden
+        R2["🧠 Hiedelmek, feltevések"]:::hidden
+        R3["❤️ Érzések a szervezet iránt"]:::hidden
     end
-    LATHATO -->|"a látható csak\na felső réteg"| REJTETT
+    LATHATO -->|"⬇️ csak a felső réteg\nválik láthatóvá"| REJTETT
 
-    style LATHATO fill:#cce5ff,stroke:#004085
-    style REJTETT fill:#d4edda,stroke:#155724
+    classDef visible fill:#bfdbfe,stroke:#2563eb,color:#1e3a5f,font-weight:bold
+    classDef hidden  fill:#a7f3d0,stroke:#059669,color:#064e3b,font-weight:bold
+
+    style LATHATO fill:#dbeafe,stroke:#1d4ed8,color:#1e3a5f,font-weight:bold
+    style REJTETT fill:#d1fae5,stroke:#059669,color:#064e3b,font-weight:bold
 ```
 
 ### Kultúra és leadership kapcsolata
