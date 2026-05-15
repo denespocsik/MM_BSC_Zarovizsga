@@ -112,6 +112,7 @@ Az erősségek és gyengeségek belső tényezők (amit a szervezet kontrollál)
 A **BCG mátrix** (Boston Consulting Group) a termék/üzletágportfoliót két dimenzió mentén értékeli: piaci részesedés és piacnövekedési ütem.
 
 ```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'quadrant1Fill': '#e1f5fe', 'quadrant2Fill': '#fff9c4', 'quadrant3Fill': '#f5f5f5', 'quadrant4Fill': '#e8f5e9', 'quadrant1TextFill': '#01579b', 'quadrant2TextFill': '#f57f17', 'quadrant3TextFill': '#616161', 'quadrant4TextFill': '#1b5e20', 'titleColor': '#263238' } } }%%
 quadrantChart
     title BCG Mátrix
     x-axis "Alacsony piaci részesedés" --> "Magas piaci részesedés"
