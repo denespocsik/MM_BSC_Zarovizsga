@@ -18,12 +18,27 @@ Ebből következik, hogy a kiváló képességű, de demotivált munkás nem tel
 
 ```mermaid
 graph BT
-    F["1. Fiziológiai\néhség, szomjúság, alvás, bérek"]
-    B["2. Biztonság\nmunkabiztonság, stabilitás, rend"]
-    S["3. Szeretet, hovatartozás\ncsoporttagság, barátság"]
-    M["4. Megbecsülés\nstátusz, elismerés, önbizalom"]
-    O["5. Önmegvalósítás\nkreativitás, növekedés"]
+    F("<b>1. Fiziológiai</b><br/>éhség, szomjúság, alvás, bérek")
+    B("<b>2. Biztonság</b><br/>munkabiztonság, stabilitás, rend")
+    S("<b>3. Szeretet, hovatartozás</b><br/>csoporttagság, barátság")
+    M("<b>4. Megbecsülés</b><br/>státusz, elismerés, önbizalom")
+    O("<b>5. Önmegvalósítás</b><br/>kreativitás, növekedés")
+
     F --> B --> S --> M --> O
+
+    classDef fNode fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c;
+    classDef bNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100;
+    classDef sNode fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17;
+    classDef mNode fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1;
+    classDef oNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c;
+
+    class F fNode;
+    class B bNode;
+    class S sNode;
+    class M mNode;
+    class O oNode;
+
+    linkStyle 0,1,2,3 stroke:#546e7a,stroke-width:2px;
 ```
 
 **Munkáltatói következmények:**
@@ -63,9 +78,27 @@ Ha bármelyik tényező nulla (nem hiszi el, hogy az erőfeszítés teljesítmé
 
 ```mermaid
 graph LR
-    E["Erőfeszítés (E)"] -->|"Elvárás\nE → T"| T["Teljesítmény (T)"]
-    T -->|"Instrumentalitás\nT → K"| K["Kimenet / Jutalom (K)"]
-    V["Valencia\njutalom szubjektív értéke"] -.-> K
+    E("<b>Erőfeszítés</b><br/>(E)")
+    T("<b>Teljesítmény</b><br/>(T)")
+    K("<b>Kimenet / Jutalom</b><br/>(K)")
+    V("<b>Valencia</b><br/>jutalom szubjektív értéke")
+
+    E -->|"Elvárás · E → T"| T
+    T -->|"Instrumentalitás · T → K"| K
+    V -.->|"értékeli?"| K
+
+    classDef eNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100;
+    classDef tNode fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1;
+    classDef kNode fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20;
+    classDef vNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c;
+
+    class E eNode;
+    class T tNode;
+    class K kNode;
+    class V vNode;
+
+    linkStyle 0,1 stroke:#546e7a,stroke-width:2px;
+    linkStyle 2 stroke:#7b1fa2,stroke-width:2px,stroke-dasharray:5 5;
 ```
 
 **Következmény a vezető számára:** Érdemes megkérdezni, hogy a dolgozó mit értékel — a vezető által felkínált jutalom csak akkor motivál, ha a beosztott számára is értékes.
@@ -82,13 +115,13 @@ graph LR
 
 ```mermaid
 quadrantChart
-    title "Flow-elmélet (Csíkszentmihályi)"
-    x-axis "Alacsony jártasság" --> "Magas jártasság"
-    y-axis "Alacsony kihívás" --> "Magas kihívás"
-    quadrant-1 "FLOW"
-    quadrant-2 "SZORONGÁS"
-    quadrant-3 "APÁTIA"
-    quadrant-4 "UNALOM"
+    title Flow-elmélet (Csíkszentmihályi)
+    x-axis Alacsony jártasság --> Magas jártasság
+    y-axis Alacsony kihívás --> Magas kihívás
+    quadrant-1 🎯 FLOW
+    quadrant-2 😰 SZORONGÁS
+    quadrant-3 😶 APÁTIA
+    quadrant-4 😴 UNALOM
 ```
 
 ---
