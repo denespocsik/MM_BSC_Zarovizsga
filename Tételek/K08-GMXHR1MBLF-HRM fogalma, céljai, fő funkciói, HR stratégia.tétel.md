@@ -13,14 +13,25 @@ Armstrong és Taylor (2016) alapján a HRM négy célkör körül szerveződik. 
 ### A HRM rendszer funkciói
 
 ```mermaid
-graph LR
-    subgraph B1["🔵 Emberi erőforrás biztosítása"]
-        A1[Munkaerő-\ntervezés] --> A2[Toborzás és\nkiválasztás] --> A3[Képzés és\nfejlesztés]
+flowchart LR
+    subgraph B1["🔵 EMBERI ERŐFORRÁS BIZTOSÍTÁSA"]
+        direction LR
+        A1["📋 Munkaerő-\ntervezés"] --> A2["🎯 Toborzás és\nkiválasztás"] --> A3["🎓 Képzés és\nfejlesztés"]
     end
-    subgraph B2["🟢 Emberi erőforrás megtartása"]
-        A4[Kompenzáció-\nmenedzsment] --- A5[Teljesítmény-\nmenedzsment] --- A6[Munkaügyi\nkapcsolatok]
+    subgraph B2["🟢 EMBERI ERŐFORRÁS MEGTARTÁSA"]
+        direction LR
+        A4["💰 Kompenzáció-\nmenedzsment"] --- A5["📊 Teljesítmény-\nmenedzsment"] --- A6["🤝 Munkaügyi\nkapcsolatok"]
     end
     B1 --> B2
+
+    style A1 fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    style A2 fill:#bfdbfe,stroke:#3b82f6,color:#1e3a5f
+    style A3 fill:#93c5fd,stroke:#2563eb,color:#1e3a5f
+    style A4 fill:#bbf7d0,stroke:#16a34a,color:#14532d
+    style A5 fill:#86efac,stroke:#16a34a,color:#14532d
+    style A6 fill:#4ade80,stroke:#15803d,color:#14532d
+    style B1 fill:#eff6ff,stroke:#2563eb,color:#1e40af
+    style B2 fill:#f0fdf4,stroke:#16a34a,color:#166534
 ```
 
 A kurzusanyag (LEV_2) két csoportba sorolja a funkciókat. Az első az emberek megszerzésével és fejlesztésével foglalkozik: munkaerő-tervezés, munkakörelemzés, toborzás-kiválasztás-előléptetés, képzés-fejlesztés, kompenzációmenedzsment. A második csoport az alkalmazottakkal való folyamatos foglalkozást fedi le: teljesítménymenedzsment, egészség és munkabiztonság, kollektív tárgyalás, munkaügyi kapcsolatok.
