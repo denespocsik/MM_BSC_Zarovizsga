@@ -8,14 +8,14 @@
 
 A klasszikus stratégiai menedzsment – Porter versenyerő-modellje, az erőforrás-alapú elmélet (RBV) – az egyes vállalatot mint önálló stratégiaalakítót kezeli, amely a versenyképességét belülről, saját erőforrásaiból és képességeiből fakadóan építi fel.
 
-```
-  KLASSZIKUS STRATÉGIAI LOGIKA:
-
-  Vállalat → belső erőforrások/képességek → versenyelőny → piaci pozíció
-
-  HÁLÓZATI STRATÉGIAI LOGIKA:
-
-  Kapcsolathálózat → hálózati pozíció → stratégiai mozgástér → versenyelőny
+```mermaid
+flowchart TD
+    subgraph KLASS["Klasszikus stratégiai logika"]
+        K1["Vállalat"] --> K2["Belső erőforrások\n/ képességek"] --> K3["Verseny-\nelőny"] --> K4["Piaci\npozíció"]
+    end
+    subgraph HAL["Hálózati stratégiai logika"]
+        H1["Kapcsolat-\nhálózat"] --> H2["Hálózati\npozíció"] --> H3["Stratégiai\nmozgástér"] --> H4["Verseny-\nelőny"]
+    end
 ```
 
 A hálózati megközelítés szerint a stratégia nem csupán a vállalaton belülről fakad, hanem **a hálózatban elfoglalt pozícióból és a kapcsolatokból** is. A kapcsolatok nem csak erőforrások szerzésének eszközei – ők maguk is stratégiai erőforrások.
@@ -26,23 +26,12 @@ A hálózati megközelítés szerint a stratégia nem csupán a vállalaton bel�
 
 Barabási Albert-László skálafüggetlen hálózat-elmélete szerint a hálózatokban a kapcsolatok nem egyenlően oszlanak el: néhány csomópont (hub) rendkívül sok kapcsolattal rendelkezik, a legtöbb csomópontnak viszont csak kevés van. Ez a **power-law (hatványfüggvény) fokszámeloszlás**.
 
-```
-  SKÁLAFÜGGETLEN HÁLÓZAT – FOKSZÁMELOSZLÁS
-
-  p(k) ~ k^(-γ)  ahol γ általában 2–3
-
-  Csomópontok száma
-     ▲
-     │  *
-     │   *
-     │    *
-     │     **
-     │       ***
-     │          *****
-     │               ********
-     └────────────────────────→ Fokszám (k)
-
-  Kevés HUB (sok kapcsolat)  +  Sok periférikus csomópont
+```mermaid
+xychart-beta
+    title "Skálafüggetlen hálózat — fokszámeloszlás (power-law)"
+    x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10+"]
+    y-axis "Csomópontok száma" 0 --> 100
+    bar [100, 55, 30, 18, 11, 7, 4, 3, 2, 1]
 ```
 
 **Preferential attachment (preferenciális kapcsolódás):** Az új szereplők nem véletlenszerűen kötődnek a hálózatba, hanem inkább a már jól kapcsolt csomópontokat keresik. „A gazdag gazdagodik" elv hálózati megfelelője.
@@ -53,23 +42,13 @@ Barabási Albert-László skálafüggetlen hálózat-elmélete szerint a hálóz
 
 ### 20.3. A hálózati stratégia három szintje
 
-```
-  ┌──────────────────────────────────────────────────────┐
-  │              HÁLÓZATI STRATÉGIA SZINTJEI             │
-  │                                                      │
-  │  1. KAPCSOLATPORTFÓLIÓ-MENEDZSMENT                   │
-  │     Milyen kapcsolatokat tartsunk, bővítsünk,        │
-  │     zárjunk le? Erős vs. gyenge kötések aránya.      │
-  │                                                      │
-  │  2. HÁLÓZATI POZICIONÁLÁS                            │
-  │     Hub, híd (broker) vagy periférikus pozíció?      │
-  │     Melyik klaszterben legyünk centrálisak?          │
-  │                                                      │
-  │  3. HÁLÓZATALAKÍTÁS (co-evolution)                   │
-  │     Aktív hálózatalakítás: új kapcsolatok            │
-  │     ösztönzése, szabványok, platformok,              │
-  │     konzorciumok létrehozása.                        │
-  └──────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    S1["1. KAPCSOLATPORTFÓLIÓ-MENEDZSMENT\nMilyen kapcsolatokat tartsunk, bővítsünk, zárjunk le?\nErős vs. gyenge kötések aránya."]
+    S2["2. HÁLÓZATI POZICIONÁLÁS\nHub, híd (broker) vagy periférikus pozíció?\nMelyik klaszterben legyünk centrálisak?"]
+    S3["3. HÁLÓZATALAKÍTÁS — co-evolution\nAktív hálózatalakítás: új kapcsolatok ösztönzése,\nszabványok, platformok, konzorciumok létrehozása."]
+
+    S1 --> S2 --> S3
 ```
 
 #### Hub-stratégia
@@ -80,17 +59,23 @@ Célja a centrális pozíció megszerzése és megtartása. A hub magas betweenn
 #### Híd (broker) stratégia
 Célja a strukturális lyukak (structural holes – Burt, 1992) kitöltése: olyan pozíció kiépítése, ahol a vállalat két egyébként nem összekötött hálózati klasztert kapcsol össze.
 
-```
-  STRUKTURÁLIS LYUK (Burt):
+```mermaid
+graph LR
+    subgraph KA["Klaszter A"]
+        A1["●"] --- A2["●"] --- A3["●"]
+        A2 --- A4["●"]
+    end
+    subgraph KB["Klaszter B"]
+        B1["●"] --- B2["●"] --- B3["●"]
+        B2 --- B4["●"]
+    end
 
-  Klaszter A        Klaszter B
-  ●─●─●             ●─●─●
-   ╲ │ ╱             ╲ │ ╱
-    \│/               \│/
-     ●                 ●
-      ╲               ╱
-       ●─── HÍD ────●        ← A híd pozíciója: információs előny,
-       (bróker)               koordinációs hatalom
+    BR(["BRÓKER\nhíd-pozíció"])
+    A4 --- BR
+    BR --- B4
+
+    NOTE(["A bróker látja mindkét klasztert,\nde a klaszterek nem látnak egymásba\n→ információs és koordinációs hatalom"])
+    BR ~~~ NOTE
 ```
 
 **Következmény:** A bróker látja mindkét klasztert, de a klaszterek nem látnak egymásba – ez információs és koordinációs hatalmat jelent.
@@ -109,26 +94,19 @@ A hagyományos vállalatelmélet a szervezeti határt jogi és tulajdonosi alapo
 | Kompetencia határ | Amit a vállalat tud elvégezni | Kiterjed a partnerek kompetenciáira is (kiszervezés, co-development) |
 | Kapcsolati határ | Nem értelmezhető | A vállalat hálózati identitása: kit tekint partnernek, kivel nem akar kapcsolatot |
 
-```
-  SZERVEZETI HATÁROK HÁLÓZATBAN:
+```mermaid
+flowchart LR
+    subgraph JOG["Vállalat jogi határa"]
+        MAG["Mag-kompetencia\n(saját)"]
+        KI["Kiszervezett\nfunkciók"]
+        CO["Co-development"]
+    end
+    MAG --> SA["Szállító A"]
+    KI --> PB["Partner B"]
+    CO --> KC["Kutató C"]
 
-  ┌─────────────────────────────────────────┐
-  │  VÁLLALAT JOGI HATÁRA                   │
-  │  ┌──────────────────┐                   │
-  │  │   Mag-kompetencia│────── Szállító A  │
-  │  │   (saját)        │                   │
-  │  └──────────────────┘                   │
-  │  ┌──────────────────┐                   │
-  │  │  Kiszervezett    │────── Partner B   │
-  │  │  funkciók        │                   │
-  │  └──────────────────┘                   │
-  │  ┌──────────────────┐                   │
-  │  │  Co-development  │────── Kutató C    │
-  │  └──────────────────┘                   │
-  └─────────────────────────────────────────┘
-
-  A vállalat határa elmosódik: a stratégiailag
-  releváns "egység" a teljes kapcsolathálózat.
+    NOTE(["A vállalat határa elmosódik:\na stratégiailag releváns egység\na teljes kapcsolathálózat."])
+    JOG ~~~ NOTE
 ```
 
 **Következmény:** A kiszervezés, a stratégiai szövetség, a joint venture és a platform-ökoszisztéma mind a hálózati szemlélet produktuma: a vállalat nem próbál mindent belül csinálni, hanem tudatosan alakítja a kapcsolatait.
@@ -144,24 +122,21 @@ A hagyományos hatékonyság-fogalom (efficiency) belső folyamatok optimalizál
 - A hálózati pozíció értéke: közbeesettségi centralitás, elérhetőség (más csomópontokhoz való közelség), híd-funkció.
 - A kapcsolati tőke (relational capital) megőrzése: a hosszú távú kapcsolatok értékének fenntartása.
 
-```
-  SZERVEZETI EREDMÉNYESSÉG MUTATÓI HÁLÓZATBAN:
-
-  ┌───────────────────────────────────────────────────┐
-  │  HÁLÓZATI POZÍCIÓ MUTATÓI                         │
-  │  ● Betweenness centralitás (hány út megy át)      │
-  │  ● Closeness centralitás (átlagos távolság)       │
-  │  ● Degree centralitás (közvetlen kapcsolatok)     │
-  │                                                   │
-  │  KAPCSOLATI PORTFÓLIÓ MINŐSÉGI MUTATÓI            │
-  │  ● Kulcskapcsolatok stabilitása                   │
-  │  ● Erős/gyenge kötések aránya                     │
-  │  ● Hídkapcsolatok száma (más klaszterekbe)        │
-  │                                                   │
-  │  HÁLÓZATI ROBOSZTUSSÁG                            │
-  │  ● Hány kulcspartner kiesése után omlik össze     │
-  │    az értékteremtési hálózat?                     │
-  └───────────────────────────────────────────────────┘
+```mermaid
+mindmap
+  root((Szervezeti\neredményesség\nhálózatban))
+    Hálózati pozíció mutatói
+      Betweenness centralitás
+      Closeness centralitás
+      Degree centralitás
+    Kapcsolati portfólió
+      Kulcskapcsolatok stabilitása
+      Erős/gyenge kötések aránya
+      Hídkapcsolatok száma
+    Hálózati robosztusság
+      Perkolációs küszöb
+      Hub-függőség kezelése
+      B-terv hub-kiesésre
 ```
 
 **Robosztusság és reziliencia:** Az előadás perkolációs elmélete alapján a skálafüggetlen hálózatok véletlenszerű meghibásodásokkal szemben robosztusak (sok kis csomópont kiesése nem szakítja szét a hálózatot), de célzott hubeltávolítással szemben sérülékenyek. A stratégiai tervezésnek figyelembe kell vennie: ha a vállalat hub-függő, akkor hub-kiesés esetén mi a B-terv?

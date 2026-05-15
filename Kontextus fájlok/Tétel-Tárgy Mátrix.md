@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-05-10 — Tételek/*.tétel.md elnevezési konvenció egységesítve
+**Utolsó frissítés:** 2026-05-15 — V16–V20 ASCII diagramok cseréje Mermaid diagramokra
 
 ---
 

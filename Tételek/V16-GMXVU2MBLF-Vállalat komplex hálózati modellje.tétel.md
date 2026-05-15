@@ -10,27 +10,18 @@ A szervezetek hagyományos ábrázolása az organigram: formális hierarchia, po
 
 A hálózattudomány szemléletében a vállalat **multiplex hálózat**: ugyanazon csomópontok (dolgozók, szervezeti egységek) között több, egymástól elkülönülő, de egymással kölcsönható hálózati réteg húzódik.
 
-```
-        ┌─────────────────────────────────────────────┐
-        │         A VÁLLALAT MINT MULTIPLEX HÁLÓZAT   │
-        │                                             │
-        │   Réteg 1: Hierarchia (hatalom/függőség)    │
-        │   ───────────────────────────────────       │
-        │   Réteg 2: Szakmai rendelés                 │
-        │   ───────────────────────────────────       │
-        │   Réteg 3: Tudásmegosztás (formális)        │
-        │   ───────────────────────────────────       │
-        │   Réteg 4: Tudásmegosztás (önkéntes)        │
-        │   ───────────────────────────────────       │
-        │   Réteg 5: Helyettesítési hálózat           │
-        │   ───────────────────────────────────       │
-        │   Réteg 6: Folyamat- és térbeli hálózat     │
-        │   ───────────────────────────────────       │
-        │   Réteg 7: Személyes preferencia / pletyka  │
-        │                                             │
-        │   Csomópontok (dolgozók) mindegyikben       │
-        │   AZONOSAK, de a kapcsolatok különbözőek    │
-        └─────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    L1["Réteg 1 — Hierarchia (hatalom / függőség)"]
+    L2["Réteg 2 — Szakmai rendelés"]
+    L3["Réteg 3 — Tudásmegosztás (formális)"]
+    L4["Réteg 4 — Tudásmegosztás (önkéntes)"]
+    L5["Réteg 5 — Helyettesítési hálózat"]
+    L6["Réteg 6 — Folyamat- és térbeli hálózat"]
+    L7["Réteg 7 — Személyes preferencia / pletyka"]
+    KEY(["Csomópontok (dolgozók) minden rétegben azonosak —\na kapcsolatok típusa rétegről rétegre különbözik"])
+
+    L1 ~~~ L2 ~~~ L3 ~~~ L4 ~~~ L5 ~~~ L6 ~~~ L7 ~~~ KEY
 ```
 
 Ez a Kivela-terminológia szerinti **multiplex hálózat** (szemben a multilayer hálózattal, amelynek rétegei más-más csomópontokat is tartalmazhatnak).
@@ -70,19 +61,19 @@ A politikai játék terepe. Erőforrásokért, pozíciókért folyó verseny és
 **4. Tárgyalási relációk hálózata**
 A szervezet belső piacát képezi. Az egyének és csoportok erőforrásokért alkudoznak egymással, igyekeznek bővíteni saját befolyási szférájukat.
 
-```
-        Instrumentális          Szocio-emocionális
-           hálózat                  hálózat
-              │                        │
-              └───────────┬────────────┘
-                          │
-                 ┌────────▼────────┐
-                 │   HATALMI ÉS    │  ← Mastenbroek szerint ez
-                 │  FÜGGŐSÉGI HÁL. │     a legfontosabb réteg;
-                 └────────┬────────┘     a többi ebből vezethető le
-                          │
-                 Tárgyalási relációk
-                      hálózata
+```mermaid
+flowchart TD
+    I["Instrumentális hálózat\n(feladatok, info, döntések)"]
+    S["Szocio-emocionális hálózat\n(szimpátia, csoportnormák)"]
+    P["HATALMI ÉS FÜGGŐSÉGI HÁLÓZAT\n— a legmeghatározóbb réteg —\n(erőforrás-verseny, pozícióharc)"]
+    T["Tárgyalási relációk hálózata\n(belső piac, alkuk)"]
+
+    I --> P
+    S --> P
+    P --> T
+
+    NOTE(["A hatalmi/függőségi hálózat\na többi három alapja —\ninnen vezethető le mind"])
+    P --- NOTE
 ```
 
 **A hatalmi/függőségi viszony három meghatározó tényezője:**
@@ -96,21 +87,31 @@ A szervezet belső piacát képezi. Az egyének és csoportok erőforrásokért 
 
 A szociometria atyja, Jacob Levy Moreno (1933) felismerte, hogy a szervezetekben spontán barátságok, belső csoportok és csoportközi kapcsolatok alakulnak ki – és ezek **különböznek a hivatalos organigram-tól.**
 
+```mermaid
+flowchart LR
+    subgraph FORM["Formális struktúra (organigram)"]
+        direction TB
+        IG1["Igazgató"]
+        FA["A"] & FB["B"]
+        FC["C"]
+        FD["D"]
+        IG1 --> FA & FB
+        FA --> FC
+        FB --> FD
+    end
+    subgraph VAL["Valódi struktúra (szociogram — önkéntes tudásmegosztás)"]
+        direction TB
+        IG2["Igazgató"]
+        VA["A"] & VB["B"]
+        VC["C"]
+        VD["D"]
+        IG2 --> VA & VB
+        VB --- VC
+        VD --- VC
+    end
 ```
-  FORMÁLIS STRUKTÚRA             VALÓDI STRUKTÚRA (szociogram)
-  (organigram)                   (pl. önkéntes tudásmegosztás)
 
-  Igazgató                        Igazgató
-     │                              │    ╲
-  ┌──┴──┐                        ┌──┴──┐  ╲
-  A     B                        A     B────C
-  │     │            →           │         │
-  C     D                        D─────────┘
-                                 (D és C közvetlenül kommunikálnak,
-                                  az organigram ezt nem mutatja)
-```
-
-Ez az eltérés teszi a hálózatelemzést értékes vezetői eszközzé: feltárhatók az informális hatalmi centrumok, kommunikációs szűk keresztmetszetek és rejtett tudáscsomópontok.
+D és C az organigram szerint nem kapcsolódnak egymáshoz — a valódi hálózatban azonban közvetlen kommunikáció zajlik közöttük. Ez az eltérés teszi a hálózatelemzést értékes vezetői eszközzé: feltárhatók az informális hatalmi centrumok, kommunikációs szűk keresztmetszetek és rejtett tudáscsomópontok.
 
 ---
 

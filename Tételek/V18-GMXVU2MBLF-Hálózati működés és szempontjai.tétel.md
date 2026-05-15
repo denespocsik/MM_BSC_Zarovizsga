@@ -10,17 +10,17 @@ A hagyományos vállalatelmélet a szervezetet zárt rendszerként kezeli: a vá
 
 A hálózatelvű megközelítés – Håkansson és az IMP csoport nyomán – nem a vállalat belső folyamataira, hanem a vállalat **hálózati pozíciójára** és **kapcsolataira** fókuszál.
 
-```
-  HAGYOMÁNYOS SZEMLÉLET            HÁLÓZATELVŰ SZEMLÉLET
-
-  ┌──────────────────┐             ┌────────────────────────────────────┐
-  │     VÁLLALAT     │             │   Szállítók ─── VÁLLALAT ─── Vevők │
-  │  (zárt rendszer) │    →        │              ╲       ╱             │
-  │                  │             │               Partnerek            │
-  └──────────────────┘             │         (kutatóintézetek,          │
-  Input → Folyamat → Output        │          versenyzők,               │
-                                   │          szabályozók...)           │
-                                   └────────────────────────────────────┘
+```mermaid
+flowchart LR
+    subgraph HAG["Hagyományos szemlélet"]
+        H_I["Input"] --> H_F["Folyamat"] --> H_O["Output"]
+        H_NOTE(["Vállalat — zárt rendszer"])
+    end
+    subgraph HAL["Hálózatelvű szemlélet"]
+        SZ["Szállítók"] --- HV["VÁLLALAT"] --- VEV["Vevők"]
+        HV --- P["Partnerek\n(kutatóintézetek,\nversenyzők,\nszabályozók...)"]
+    end
+    HAG --> HAL
 ```
 
 ---
@@ -37,18 +37,17 @@ Håkansson elmélete szerint a hálózatban való működés három szempontból
 
 **Következmény:** A menedzser feladata nem a kontroll maximalizálása, hanem a **hálózati pozíció tudatos alakítása** és a befolyás körének értelmes menedzsmentje.
 
-```
-  ╔══════════════════════════════════════════╗
-  ║  NINCS EGYETLEN IRÁNYÍTÓ A HÁLÓZATBAN    ║
-  ║                                          ║
-  ║          A ────── B ────── C             ║
-  ║           ╲       │       ╱              ║
-  ║            D ─────E──────F               ║
-  ║                                          ║
-  ║  Senki sem látja a teljes képet.         ║
-  ║  Mindenki csak a saját lokális           ║
-  ║  hálózatát ismeri és befolyásolja.       ║
-  ╚══════════════════════════════════════════╝
+```mermaid
+graph TD
+    A["A"] --- B["B"] --- C["C"]
+    A --- D["D"]
+    B --- E["E"]
+    C --- F["F"]
+    D --- E
+    E --- F
+
+    NOTE(["Senki sem látja a teljes képet.\nMindenki csak a saját lokális\nhálózatát ismeri és befolyásolja."])
+    E ~~~ NOTE
 ```
 
 #### 2. szempont: Tudás (Knowledge)
@@ -64,7 +63,7 @@ Mark Granovetter (1973) **gyenge kötések elmélete** ehhez szorosan kapcsolód
 | Erős kötés | Sürű, sok közös kontakt, sok interakció | Redundáns tudás; visszaigazolás, de kevés újdonság |
 | Gyenge kötés | Ritka, kevés közös kontakt | Híd különböző információs világok közt; innováció forrása |
 
-**Következmény:** A vállalat kapcsolatai **tudásforrások** – nem csak erőforrás-cseré eszközei. A tudás-hálózat menedzselése stratégiai feladat.
+**Következmény:** A vállalat kapcsolatai **tudásforrások** – nem csak erőforrás-csere eszközei. A tudás-hálózat menedzselése stratégiai feladat.
 
 #### 3. szempont: Változás (Change)
 
@@ -72,20 +71,16 @@ Mark Granovetter (1973) **gyenge kötések elmélete** ehhez szorosan kapcsolód
 
 **Hálózati realitás:** A hálózatban a változás folyamatos és részben spontán. Bármely szereplő változása hullámokat indít a hálózatban, amelyek nem mindig kiszámíthatók. A hálózat dinamikus egyensúlyi állapotban van, nem statikus struktúra.
 
-```
-  VÁLTOZÁS A HÁLÓZATBAN – KASZKÁD HATÁS
+```mermaid
+flowchart TD
+    E1["Vállalat új technológiát vezet be"]
+    E2["Szállítójának adaptálnia kell a csomagolást"]
+    E3["A szállító altermékgyártója is módosít"]
+    E4["Versenyző reagál — benchmark"]
+    E5["Iparági sztenderd változik"]
 
-  Kezdeti esemény: A vállalat new technológiát vezet be
-  ↓
-  Szállítójának adaptálnia kell a csomagolást
-  ↓
-  A szállító altermékgyártója szintén módosít
-  ↓
-  Versenyző is reagál (benchmark)
-  ↓
-  Iparági sztenderd változik
-  ↓
-  Visszahat az eredeti vállalat folyamataira
+    E1 --> E2 --> E3 --> E4 --> E5
+    E5 -.->|"visszahat"| E1
 ```
 
 **Következmény:** A hálózatban való változáskezelés nem top-down tervezés, hanem **folyamatos alkalmazkodás** és a hálózati visszacsatolások figyelemmel kísérése.
@@ -96,24 +91,15 @@ Mark Granovetter (1973) **gyenge kötések elmélete** ehhez szorosan kapcsolód
 
 Håkansson és az IMP csoport az ARA modellel (Activities–Resources–Actors) írja le az üzleti hálózat három alapvető dimenzióját:
 
-```
-        ┌────────────────────────────────────────┐
-        │              ARA MODELL                │
-        │                                        │
-        │  SZEREPLŐK (Actors)                    │
-        │  ● Vállalatok, divíziók, személyek     │
-        │  ● Tevékenységeket végeznek            │
-        │  ● Erőforrások felett rendelkeznek     │
-        │          ↕                             │
-        │  TEVÉKENYSÉGEK (Activities)            │
-        │  ● Termelés, fejlesztés, logisztika    │
-        │  ● Összekapcsolódó tevékenység-láncok  │
-        │          ↕                             │
-        │  ERŐFORRÁSOK (Resources)               │
-        │  ● Technológia, tudás, kapcsolatok     │
-        │  ● Értéküket a hálózatban való         │
-        │    felhasználás határozza meg          │
-        └────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    SZ["SZEREPLŐK — Actors\n● Vállalatok, divíziók, személyek\n● Erőforrások felett rendelkeznek"]
+    T["TEVÉKENYSÉGEK — Activities\n● Termelés, fejlesztés, logisztika\n● Összekapcsolódó tevékenység-láncok"]
+    E["ERŐFORRÁSOK — Resources\n● Technológia, tudás, kapcsolatok\n● Értéküket a hálózati felhasználás határozza meg"]
+
+    SZ <-->|"végzi"| T
+    T <-->|"alakítja / felhasználja"| E
+    E <-->|"irányítja"| SZ
 ```
 
 A három elem egymással szorosan összekapcsolt: a szereplők tevékenységeket végeznek erőforrásokkal, a tevékenységek erőforrásokat alakítanak, az erőforrások a szereplők kontrollja alatt állnak – de nem egyetlen szereplőén, hanem a kapcsolatok hálójában megoszlva.

@@ -10,20 +10,23 @@ Az üzleti kapcsolatok nem egyszerű adásvételi tranzakciók. Hakan Håkansson
 
 Az IMP megközelítés szerint az üzleti kölcsönhatásokat öt alapvető tényező határozza meg. Ezek nem független változók – egymást erősítik és szövik át.
 
-```
-        ┌──────────────────────────────────────────┐
-        │     5 TÉNYEZŐ, AMELY ALAKÍTJA AZ ÜZLETI  │
-        │           KÖLCSÖNHATÁSOKAT               │
-        │                                          │
-        │   1. IDŐBELISÉG        ←──────────┐      │
-        │   2. SZUBJEKTÍV ÉRTELMEZÉS        │      │
-        │   3. KAPCSOLTSÁG       ←──────┐   │      │
-        │   4. KÖLCSÖNÖS FÜGGŐSÉG       │   │      │
-        │   5. VISZONYLAGOSSÁG ──────→  │   │      │
-        │                           (ezek egymást  │
-        │                           kölcsönösen    │
-        │                           feltételezik)  │
-        └──────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    CENTER(["5 tényező, amely alakítja\naz üzleti kölcsönhatásokat"])
+    T["1. IDŐBELISÉG"]
+    SZ["2. SZUBJEKTÍV\nÉRTELMEZÉS"]
+    K["3. KAPCSOLTSÁG"]
+    KF["4. KÖLCSÖNÖS\nFÜGGŐSÉG"]
+    V["5. VISZONYLAGOSSÁG"]
+
+    CENTER <--> T
+    CENTER <--> SZ
+    CENTER <--> K
+    CENTER <--> KF
+    CENTER <--> V
+    T <-.-> SZ
+    K <-.-> KF
+    KF <-.-> V
 ```
 
 ---
@@ -39,15 +42,14 @@ Az üzleti kapcsolatok időben fejlődnek. Nem pillanatfelvételek, hanem folyam
 - Egy hosszú távú kapcsolat megszakítása nem csak a jövőbeli tranzakciók elvesztését jelenti, hanem az addig befektetett kapcsolat-specifikus eszközök (tudás, adaptáció, koordinációs rutinok) elvesztését is.
 - Az idő múlásával a felek egymáshoz igazítják folyamataikat és rendszereiket – ezt **kapcsolatspecifikus adaptációnak** (relationship-specific adaptation) nevezzük.
 
-```
-  KAPCSOLAT FEJLŐDÉSE IDŐBEN
+```mermaid
+flowchart LR
+    E1["Első\ntranzakció"] --> E2["Bizalom\népül"] --> E3["Adaptáció"] --> E4["Rutinizáció"] --> E5["Elkötelezettség"]
 
-  Múlt                      Jelen                      Jövő
-  ────────────────────────────────────────────────────────→
-  [Első tranzakció]──[Bizalom épül]──[Adaptáció]──[Rutinizáció]──[Elkötelezettség]
-       ↓                  ↓               ↓              ↓
-  Ismerkedés         Kipróbálás       Kölcsönös       Nehéz
-  kockázata          szakasza         igazítás        megszakítani
+    I1(["Ismerkedés\nkockázata"]) -.-> E1
+    I2(["Kipróbálás\nszakasza"]) -.-> E2
+    I3(["Kölcsönös\nigazítás"]) -.-> E3
+    I4(["Nehéz\nmegszakítani"]) -.-> E4
 ```
 
 #### 2. Szubjektív értelmezés (Subjective/Mutually defined interpretation)
@@ -69,15 +71,14 @@ Ugyanazt az üzleti kapcsolatot a két fél eltérően értelmezi. Nincs egyetle
 
 Egyetlen üzleti kapcsolat sem létezik önmagában. Minden A–B kapcsolatot befolyásol az A és B más kapcsolataik összessége. A hálózatban minden összefügg mindennel.
 
-```
-           Szállító C ─────── Szállító B
-                               │
-               Vevő A ─────────┤
-                               │
-                          Versenyző D
+```mermaid
+graph LR
+    SC["Szállító C"] --- SB["Szállító B"]
+    SB --- VA["Vevő A"]
+    SB -. "stratégiai szövetség" .-> VD["Versenyző D"]
 
-  Ha A kapcsolatban van B-vel, de B-nek stratégiai szövetsége van D-vel (A versenyzőjével),
-  ez az A–B kapcsolat jellegét alapvetően befolyásolja – még ha A erről nem is tud.
+    NOTE(["Ha A kapcsolatban van B-vel,\nde B szövetsége van D-vel —\nez A–B kapcsolatát alapvetően befolyásolja"])
+    VA ~~~ NOTE
 ```
 
 **Következmény a menedzsment számára:**
@@ -113,20 +114,18 @@ Egy kapcsolat jellegét és értékét mindig más kapcsolatokhoz viszonyítva k
 
 ### 17.3. Az öt tényező összefüggése
 
-```
-  ┌─────────────────────────────────────────────────────────┐
-  │                                                         │
-  │  IDŐBELISÉG: a múlt formálja a jelent                   │
-  │       ↓                                                 │
-  │  SZUBJEKTÍV ÉRTELMEZÉS: eltérő perspektívák             │
-  │       ↓                                                 │
-  │  KÖLCSÖNÖS FÜGGŐSÉG: kölcsönös beágyazódás              │
-  │       ↓          ↑                                      │
-  │  KAPCSOLTSÁG: más kapcsolatok hatása         ←──────    │
-  │       ↓          ↑                                 │    │
-  │  VISZONYLAGOSSÁG: csak más kapcsolatokhoz viszonyítva   │
-  │                   értelmezhető                          │
-  └─────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    T["IDŐBELISÉG\na múlt formálja a jelent"]
+    SZ["SZUBJEKTÍV ÉRTELMEZÉS\neltérő perspektívák"]
+    KF["KÖLCSÖNÖS FÜGGŐSÉG\nkölcsönös beágyazódás"]
+    K["KAPCSOLTSÁG\nmás kapcsolatok hatása"]
+    V["VISZONYLAGOSSÁG\ncsak más kapcsolatokhoz viszonyítva értelmezhető"]
+
+    T --> SZ --> KF --> K --> V
+    K <-.-> KF
+    SZ <-.-> T
+    V <-.-> K
 ```
 
 Az öt tényező együttesen magyarázza, miért **nem egyszerűsíthető le** az üzleti hálózat sem pusztán erőforrás-tranzakciókra (neoklasszikus közgazdaságtan), sem tisztán strukturális viszonyokra (szociológiai hálózatelemzés). A vállalatok közötti kölcsönhatás **dinamikus, szubjektíven értelmezett, hálózatba ágyazott folyamat**.

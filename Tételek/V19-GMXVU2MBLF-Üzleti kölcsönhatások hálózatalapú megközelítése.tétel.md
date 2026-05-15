@@ -8,21 +8,14 @@
 
 Az üzleti kapcsolatok és a piac elemzésére két domináns elméleti hagyomány alakult ki, amelyeket Håkansson és az IMP csoport szisztematikusan kritizált:
 
-```
-  ┌─────────────────────────────────────────────────────────┐
-  │  KÉT KLASSZIKUS MEGKÖZELÍTÉS                            │
-  │                                                         │
-  │  1. STRUKTÚRA-ALAPÚ megközelítés                        │
-  │     (neoklasszikus közgazdaságtan, Porter)              │
-  │     → A piac statikus adott, a verseny a struktúrában   │
-  │                                                         │
-  │  2. FOLYAMAT-ALAPÚ megközelítés                         │
-  │     (szervezetelméletek, folyamatmenedzsment)           │
-  │     → A vállalat belső folyamataiban van az érték       │
-  │                                                         │
-  │  IMP KRITIKA: mindkettő hiányos                         │
-  │  → HÁLÓZATALAPÚ megközelítés szükséges                  │
-  └─────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    SA["1. STRUKTÚRA-ALAPÚ megközelítés\nneoklasszikus közgazdaságtan, Porter\nA piac statikus adott — a verseny a struktúrában"]
+    FA["2. FOLYAMAT-ALAPÚ megközelítés\nszervezetelméletek, folyamatmenedzsment\nA vállalat belső folyamataiban van az érték"]
+    IMP(["IMP KRITIKA: mindkettő hiányos\n→ Hálózatalapú megközelítés szükséges"])
+
+    SA --> IMP
+    FA --> IMP
 ```
 
 ---
@@ -38,16 +31,13 @@ A struktúra-alapú (structural) megközelítés – amelyet leginkább a neokla
 - A kapcsolatok távolságtartók, tranzakció-orientáltak.
 - A versenyhelyzet az iparági struktúra (5 erő) által meghatározott.
 
-```
-  PORTER VERSENYERŐ-MODELLJE (struktúra-alap):
-
-  Új belépők fenyegetése
-         ↓
-  Szállítók ──→ VÁLLALAT ──→ Vevők
-  alkuereje              alkuereje
-         ↑
-  Helyettesítők fenyegetése
-  (+ Meglévő versenyzők)
+```mermaid
+flowchart TD
+    NB["Új belépők\nfenyegetése"] --> V["VÁLLALAT"]
+    SZ["Szállítók\nalkuereje"] --> V
+    VEV["Vevők\nalkuereje"] --> V
+    HEL["Helyettesítők\nfenyegetése"] --> V
+    MEG["Meglévő versenyzők\nrivalizálása"] --> V
 ```
 
 #### Az IMP kritika
@@ -72,14 +62,14 @@ A struktúra-alapú (structural) megközelítés – amelyet leginkább a neokla
 
 A folyamat-alapú (process-based) megközelítés a szervezet belső folyamatait helyezi a középpontba. Az értékteremtés a vállalat belső értéklánca mentén zajlik (Porter értéklánc-modellje), a menedzsment feladata az optimális belső folyamatok kialakítása.
 
-```
-  PORTER ÉRTÉKLÁNC (folyamat-alap):
-
-  Elsődleges tevékenységek:
-  Belogisztika → Termelés → Kilogisztika → Marketing → Értékesítés → Szerviz
-
-  Támogató tevékenységek:
-  Infrastruktúra, HR, Technológia, Beszerzés
+```mermaid
+flowchart LR
+    subgraph ELS["Elsődleges tevékenységek"]
+        BL["Belogisztika"] --> TER["Termelés"] --> KL["Kilogisztika"] --> MK["Marketing"] --> SZ["Szerviz"]
+    end
+    subgraph TAM["Támogató tevékenységek"]
+        INF["Infrastruktúra"] ~~~ HR["HR"] ~~~ TECH["Technológia"] ~~~ BES["Beszerzés"]
+    end
 ```
 
 #### Az IMP kritika
@@ -101,21 +91,21 @@ A folyamat-alapú (process-based) megközelítés a szervezet belső folyamatait
 
 Az IMP csoport az üzleti piacokat (B2B markets) nem homogén, anonim versenytérként, hanem **egyedi kapcsolatok hálózataként** értelmezi.
 
-```
-  A PIAC HÁLÓZATALAPÚ KÉPE
+```mermaid
+graph LR
+    SZ1["Szállító 1"] --- SZ2["Szállító 2"]
+    SZ1 --- V1["Vállalat 1"]
+    SZ2 --- V1
+    SZ2 --- V2["Vállalat 2"]
+    V1 --- V2
+    V2 --- V3["Vállalat 3"]
+    V1 --- K1["Vevő 1"]
+    V2 --- K1
+    V2 --- K2["Vevő 2"]
+    V3 --- K2
 
-  ┌───────────────────────────────────────────────┐
-  │  SZ1 ────── SZ2                               │
-  │    ╲           ╲                              │
-  │     V1 ─────── V2 ─────── V3                  │
-  │      ╲           ╲         ╱                  │
-  │       K1 ───────── K2                         │
-  │                                               │
-  │  SZ = Szállító, V = Vállalat, K = Vevő        │
-  │                                               │
-  │  Minden kapcsolat egyedi, tartós, és          │
-  │  befolyásolja a többi kapcsolatot             │
-  └───────────────────────────────────────────────┘
+    NOTE(["Minden kapcsolat egyedi, tartós,\nés befolyásolja a többi kapcsolatot"])
+    K2 ~~~ NOTE
 ```
 
 **A piac mint hálózat legfontosabb következményei:**
@@ -141,17 +131,15 @@ A hálózatalapú megközelítés operatív magja az IMP interakció-modell, ame
 | Szervezetek és egyének | Az interakció egyszerre szervezeti és személyes szinten zajlik |
 | Környezet | Iparági struktúra; dinamizmus; internacionalizáció; szociális rendszer |
 
-```
-  IMP INTERAKCIÓ-MODELL (vázlat):
+```mermaid
+flowchart LR
+    SZ["SZÁLLÍTÓ\nszervezet + egyén"]
+    INTER["INTERAKCIÓS FOLYAMAT\nepizódok · légkör"]
+    VEV["VEVŐ\nszervezet + egyén"]
+    KON["HÁLÓZATI KONTEXTUS\nmás kapcsolatok hatása"]
 
-    SZÁLLÍTÓ                                      VEVŐ
-(szervezet + egyén)                      (szervezet + egyén)
-       │                                           │
-       └────────── INTERAKCIÓS FOLYAMAT ───────────┘
-                   (epizódok, légkör)
-                         │
-               HÁLÓZATI KONTEXTUS
-             (más kapcsolatok hatása)
+    SZ <--> INTER <--> VEV
+    KON --> INTER
 ```
 
 ---
