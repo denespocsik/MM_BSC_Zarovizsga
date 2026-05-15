@@ -115,13 +115,13 @@ graph LR
 
 ```mermaid
 quadrantChart
-    title Flow-elmélet (Csíkszentmihályi)
-    x-axis Alacsony jártasság --> Magas jártasság
-    y-axis Alacsony kihívás --> Magas kihívás
-    quadrant-1 🎯 FLOW
-    quadrant-2 😰 SZORONGÁS
-    quadrant-3 😶 APÁTIA
-    quadrant-4 😴 UNALOM
+    title "Flow-elmélet (Csíkszentmihályi)"
+    x-axis "Alacsony jártasság --> Magas jártasság"
+    y-axis "Alacsony kihívás --> Magas kihívás"
+    quadrant-1 "🎯 FLOW"
+    quadrant-2 "😰 SZORONGÁS"
+    quadrant-3 "😶 APÁTIA"
+    quadrant-4 "😴 UNALOM"
 ```
 
 ---
