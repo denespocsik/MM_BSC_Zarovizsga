@@ -10,15 +10,16 @@ A Vázlat (kurzusanyag) alapján a teljesítményösztönzés kulcselemei: kihí
 
 ```mermaid
 flowchart LR
-    A["🎯 CÉLKITŰZÉS\nEgyéni + szervezeti\ncélok összehangolása"] --> B
-    B["💬 FOLYAMATOS VISSZAJELZÉS\nCoaching, 1:1 megbeszélés\nFejlesztő párbeszéd"] --> C
-    C["📊 TELJESÍTMÉNY-\nÉRTÉKELÉS\nFormális időszaki értékelés\nmódszerekkel"] --> D
-    D["🚀 FEJLESZTÉS /\nJUTTATÁS\nKépzés, előléptetés\nKompenzáció-döntés"] --> A
+    A["🎯 CÉLKITŰZÉS\nEgyéni + szervezeti\ncélok összehangolása"]:::cel
+    --> B["💬 FOLYAMATOS\nVISSZAJELZÉS\nCoaching · 1:1 megbeszélés\nFejlesztő párbeszéd"]:::visszajelzes
+    --> C["📊 TELJESÍTMÉNY-\nÉRTÉKELÉS\nFormális időszaki értékelés\nmódszerekkel"]:::ertekeles
+    --> D["🚀 FEJLESZTÉS /\nJUTTATÁS\nKépzés · előléptetés\nKompenzáció-döntés"]:::fejlesztes
+    --> A
 
-    style A fill:#dce8f5,stroke:#2a6496
-    style B fill:#d9f0d9,stroke:#2d6a2d
-    style C fill:#fef9e7,stroke:#9a7d0a
-    style D fill:#f5e6d3,stroke:#a04000
+    classDef cel          fill:#1d4ed8,stroke:#1e3a8a,color:#ffffff,font-weight:bold
+    classDef visszajelzes fill:#059669,stroke:#064e3b,color:#ffffff,font-weight:bold
+    classDef ertekeles    fill:#d97706,stroke:#92400e,color:#ffffff,font-weight:bold
+    classDef fejlesztes   fill:#dc2626,stroke:#7f1d1d,color:#ffffff,font-weight:bold
 ```
 
 ### Teljesítményértékelési módszerek
@@ -48,19 +49,24 @@ A teljesítménymenedzsment hatékonysága szorosan összefügg a motivációs r
 
 ```mermaid
 graph TD
-    K8["🏛️ K8 — HR Stratégia\nBest practice · Best fit"] --> K9
+    K8["🏛️ K8 — HR Stratégia\nBest practice · Best fit"]:::hrstrategia
+    K9["👥 K9 — Munkaerő-tervezés\nés toborzás"]:::toborzas
+    K10["🔎 K10 — Kiválasztás\nAC · interjú · tesztek"]:::toborzas
+    K11["🧭 K11 — Vezetés\nMintzberg · Hersey-Blanchard\nMcGregor X/Y"]:::vezetes
+    K12["🌐 K12 — Szervezeti kultúra\nHandy · Schein · OCAI"]:::kultura
+    K13["📊 K13 — Teljesítmény-\nmenedzsment\nMBO · 360° · Pink 3.0"]:::teljesitmeny
+
+    K8 --> K9
     K8 --> K13
     K8 --> K12
-    K9["👥 K9 — Munkaerő-tervezés\nés toborzás"] --> K10["🔎 K10 — Kiválasztás\nAC · interjú · tesztek"]
-    K13["📊 K13 — Teljesítmény-\nmenedzsment\nMBO · 360° · Pink 3.0"]
-    K12["🌐 K12 — Szervezeti kultúra\nHandy · Schein · OCAI"] <--> K11["🧭 K11 — Vezetés\nMintzberg · Hersey-Blanchard\nMcGregor X/Y"]
+    K9 --> K10
+    K12 <--> K11
 
-    style K8 fill:#d6eaf8,stroke:#1a5276
-    style K9 fill:#d5f5e3,stroke:#1e8449
-    style K10 fill:#d5f5e3,stroke:#1e8449
-    style K11 fill:#fdebd0,stroke:#a04000
-    style K12 fill:#fdebd0,stroke:#a04000
-    style K13 fill:#f9ebea,stroke:#922b21
+    classDef hrstrategia  fill:#1e40af,stroke:#1e3a8a,color:#ffffff,font-weight:bold
+    classDef toborzas     fill:#059669,stroke:#064e3b,color:#ffffff,font-weight:bold
+    classDef vezetes      fill:#d97706,stroke:#92400e,color:#ffffff,font-weight:bold
+    classDef kultura      fill:#7c3aed,stroke:#6d28d9,color:#ffffff,font-weight:bold
+    classDef teljesitmeny fill:#dc2626,stroke:#b91c1c,color:#ffffff,font-weight:bold
 ```
 
 A hat tétel egyetlen logikai ívet alkot: a szervezet emberigényének meghatározásától (K8–K9) a megfelelő személyek kiválasztásán (K10) és irányításán (K11) át a kultúra tudatos formálásáig (K12) és a teljesítmény értékeléséig (K13).
