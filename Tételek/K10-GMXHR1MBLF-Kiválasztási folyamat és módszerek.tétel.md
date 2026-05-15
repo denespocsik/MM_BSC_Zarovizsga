@@ -6,17 +6,23 @@ A kiválasztás (selection) a toborzás során összegyűlt jelöltek közül a 
 
 ```mermaid
 flowchart TD
-    A([📥 Álláspályázatok\nbeérkezése]) --> B["📄 CV-szűrés / előszűrés\n— formai megfelelés"]
-    B --> C["📞 Előzetes interjú\n(telefonos / online)"]
-    C --> D["🧪 Tesztelés\n(képesség, személyiség)"]
-    D --> E["🗣️ Mélyinterjú\n(strukturált / BEI)"]
-    E --> F["🏢 Assessment Center\n(komplex értékelés)"]
-    F --> G["🔍 Referencia-\nellenőrzés"]
-    G --> H([✅ Döntés és\najánlattétel])
+    A(["📥 Álláspályázatok\nbeérkezése"]):::start
+    --> B["📄 CV-szűrés / előszűrés\n— formai megfelelés"]:::s1
+    --> C["📞 Előzetes interjú\n(telefonos / online)"]:::s2
+    --> D["🧪 Tesztelés\n(képesség · személyiség · Big Five)"]:::s3
+    --> E["🗣️ Mélyinterjú\n(strukturált / BEI)"]:::s4
+    --> F["🏢 Assessment Center\n(komplex értékelés · szerepjáték)"]:::s5
+    --> G["🔍 Referencia-\nellenőrzés"]:::s6
+    --> H(["✅ Döntés és\najánlattétel"]):::finish
 
-    style A fill:#e8f4f8
-    style H fill:#d4edda
-    style F fill:#fff3cd
+    classDef start  fill:#dbeafe,stroke:#2563eb,color:#1e3a5f,font-weight:bold
+    classDef s1     fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+    classDef s2     fill:#d1fae5,stroke:#059669,color:#064e3b
+    classDef s3     fill:#fef9c3,stroke:#ca8a04,color:#713f12
+    classDef s4     fill:#ffedd5,stroke:#ea580c,color:#7c2d12
+    classDef s5     fill:#fce7f3,stroke:#db2777,color:#831843,font-weight:bold
+    classDef s6     fill:#ede9fe,stroke:#7c3aed,color:#3b0764
+    classDef finish fill:#dcfce7,stroke:#16a34a,color:#14532d,font-weight:bold
 ```
 
 ### Kiválasztási módszerek
