@@ -19,28 +19,29 @@ Az integráltság három alapelven nyugszik:
 ### 12.2. Az ERP fejlődéstörténete
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'cScale0': '#455A64', 'cScale1': '#546E7A', 'cScale2': '#1565C0', 'cScale3': '#1976D2', 'cScale4': '#0277BD', 'cScale5': '#00796B'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': {'cScale0': '#1565C0', 'cScale1': '#1976D2', 'cScale2': '#0288D1', 'cScale3': '#00897B', 'cScale4': '#2E7D32'}}}%%
 timeline
-    title Az ERP rendszerek fejlődéstörténete
-    section 1960-as évek
-        MRP : Anyagszükséglet-tervezés
-            : SAP R/1 alapjai (1973)
-    section 1970-es évek
-        Zárt láncú MRP : + Kapacitástervezés (CRP)
-                       : SAP R/2 (1981)
+    title Az üzleti informatika fejlődése
+    section 1960–70-es évek
+        Mainframe : Kötegelt feldolgozás (batch)
+                  : Lyukkártya, szalag, lemez
+                  : Helyi, hálózat nélküli
     section 1980-as évek
-        MRP II : + Pénzügyi riportok
-               : + Gyártásirányítás
+        Mini-PC és asztali gép : LAN, korai hálózatok
+                               : Korai részleges szigetrendszerek
+                               : Mágneses lemez
     section 1990-es évek
-        ERP : Teljes belső integráció
-            : Kliens-szerver architektúra
-            : SAP R/3 (1992)
+        Kliens-szerver : Relációs adatbázis
+                      : WAN, internet kezdetek
+                      : SAP R/3 ERP (1992)
     section 2000-es évek
-        ERP II : + Internet, SCM, CRM, BI
-               : SAP ERP 6.0 (2004)
-    section 2010-es évektől
-        Intelligens ERP : In-memory, IoT, AI, Felhő
-                        : SAP S/4HANA (2015)
+        Internet és web : ERP II, SCM, CRM
+                        : Adattárházak
+                        : EDI, webszolgáltatások
+    section 2010–2020-as évek
+        Felhő és AI : In-memory (RAM), SSD
+                    : Cloud, API, 5G
+                    : SAP S/4HANA (2015)
 ```
 
 | Generáció | Időszak | Fókusz | SAP megfelelő |
