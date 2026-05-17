@@ -28,15 +28,19 @@ A vállalatok ERP-bevezetés mellett jellemzően akkor döntenek, amikor a megl�
 Az ERP bevezetés lényege szerint **szervezeti átalakulás, amelyet technológia támogat** – nem fordítva. A tipikus szervezeti hatások:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFF', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart LR
-    subgraph ELOTTE["ELŐTTE – Funkcionális silók"]
+    classDef silo    fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
+    classDef process fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
+
+    subgraph ELOTTE["⚠️  ELŐTTE — Funkcionális silók"]
         direction TB
-        P["Pénzügy\nSaját adatbázis"]
-        R["Raktár\nSaját adatbázis"]
-        E["Értékesítés\nSaját adatbázis"]
+        P(["Pénzügy\nSaját adatbázis"]):::silo
+        R(["Raktár\nSaját adatbázis"]):::silo
+        E(["Értékesítés\nSaját adatbázis"]):::silo
     end
-    subgraph UTANA["UTÁNA – Folyamatközpontú szervezet"]
-        OC["Order-to-Cash folyamat\nÉrtékesítés → Raktár → Számlázás\nKözös ERP platform · Egységes adat"]
+    subgraph UTANA["✅  UTÁNA — Folyamatközpontú szervezet"]
+        OC(["Order-to-Cash folyamat\nÉrtékesítés → Raktár → Számlázás\nKözös ERP platform · Egységes adat"]):::process
     end
     ELOTTE -->|"BPR + ERP bevezetés"| UTANA
 ```
@@ -75,14 +79,19 @@ A **BPR (Business Process Reengineering)** Hammer és Champy (1993) által kidol
 A BPR nem egyszerű folyamatjavítás (continuous improvement), hanem nulláról való újraépítés:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFF', 'lineColor': '#546E7A'}}}%%
 flowchart LR
-    subgraph Kaizen["Folyamatjavítás — Kaizen"]
+    classDef neutral fill:#ECEFF1,stroke:#546E7A,stroke-width:2px,color:#263238,font-weight:bold
+    classDef kaizen  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
+    classDef bpr     fill:#FCE4EC,stroke:#C62828,stroke-width:2px,color:#880E4F,font-weight:bold
+
+    subgraph KAI["🔄  Folyamatjavítás — Kaizen (fokozatos, folyamatos)"]
         direction LR
-        K1["Meglévő\nfolyamat"] -->|"Kisebb\njavítás"| K2["Jobb\nfolyamat"]
+        K1(["Meglévő\nfolyamat"]):::neutral -->|"Kisebb javítás"| K2(["Jobb\nfolyamat"]):::kaizen
     end
-    subgraph BPR_["BPR — Üzleti folyamatok újratervezése"]
+    subgraph BPR_["🔥  BPR — Üzleti folyamatok újratervezése (radikális)"]
         direction LR
-        B1["Meglévő\nfolyamat"] -->|"Teljes\nlebontás"| B2["Gyökeresen\núj folyamat"]
+        B1(["Meglévő\nfolyamat"]):::neutral -->|"Teljes lebontás"| B2(["Gyökeresen\núj folyamat"]):::bpr
     end
 ```
 

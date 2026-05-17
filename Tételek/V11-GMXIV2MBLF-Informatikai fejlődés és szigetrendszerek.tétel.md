@@ -9,6 +9,7 @@
 Az üzleti informatika az 1960-as évektől napjainkig több markáns korszakon ment át. Mindegyik korszakot a hardver, az adatkezelés és a kommunikáció együttes változása jellemzett.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'cScale0': '#1565C0', 'cScale1': '#1976D2', 'cScale2': '#0288D1', 'cScale3': '#00897B', 'cScale4': '#2E7D32'}}}%%
 timeline
     title Az üzleti informatika fejlődése
     section 1960–70-es évek
@@ -54,23 +55,26 @@ Az 1970–80-as évek vállalataiban minden szervezeti egység a saját igényei
 **A szigetrendszerek jellemző problémái:**
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFF8E1', 'primaryBorderColor': '#E65100', 'lineColor': '#78909C', 'edgeLabelBackground': '#FFFDE7'}}}%%
 flowchart LR
-    subgraph Ert["Értékesítés — saját DB"]
-        SO["Vevői rendelés\nrögzítve"]
+    classDef proc fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#212121,font-weight:bold
+
+    subgraph Ert["📦 Értékesítés — saját DB"]
+        SO(["Vevői rendelés\nrögzítve"]):::proc
     end
-    subgraph Rak["Raktár — saját DB"]
-        GI["Készlet\nfrissítve"]
+    subgraph Rak["🏭 Raktár — saját DB"]
+        GI(["Készlet\nfrissítve"]):::proc
     end
-    subgraph Pen["Pénzügy — saját DB"]
-        INV["Számla\nkiállítva"]
+    subgraph Pen["💰 Pénzügy — saját DB"]
+        INV(["Számla\nkiállítva"]):::proc
     end
-    subgraph HR_["HR — saját DB"]
-        PAY["Jutalék\nszámítva"]
+    subgraph HR_["👥 HR — saját DB"]
+        PAY(["Jutalék\nszámítva"]):::proc
     end
 
-    Ert -->|"e-mail / Excel\n⚠ Késés · Újrarögzítési hiba"| Rak
-    Rak -->|"Excel export\n⚠ Eltérő készletadat"| Pen
-    Pen -->|"Papíros kimutatás\n⚠ Nincs valós idejű kép"| HR_
+    Ert -->|"📧 e-mail / Excel\n⚠ Késés · Újrarögzítési hiba"| Rak
+    Rak -->|"📊 Excel export\n⚠ Eltérő készletadat"| Pen
+    Pen -->|"🗒️ Papíros kimutatás\n⚠ Nincs valós idejű kép"| HR_
 ```
 
 | Probléma              | Következmény                                                |

@@ -34,15 +34,20 @@ Az SAP Project System (PS) modul az ERP-be integrált projektmenedzsment-eszköz
 A projekt hierarchikus modellje, amely a feladatokat kezelhető egységekre bontja. Minden WBS-elemhez rendelhető: költségkeret, felelős, határidő és mérföldkő.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#1976D2'}}}%%
 flowchart TD
-    ROOT["P/2025 — Ultralight Racing Bike fejlesztés\nWBS 1. szint — Gyökérelem"]
-    ENG["Engineering\nMérnöki tervezés"]
-    PROTO["Prototype\nPrototípus gyártás"]
-    TEST["Testing\nTesztelés és minőség-ellenőrzés"]
-    SMALL["Small Series Production\nKis szériagyártás"]
-    RELEASE["Release to Mass Production\nTömeggyártásba adás"]
-    DR["Design Review\nKonceptuális tervfelülvizsgálat"]
-    SPEC["Specifikáció véglegesítés\nMűszaki dokumentáció"]
+    classDef root  fill:#1565C0,stroke:#0D47A1,stroke-width:3px,color:#fff,font-weight:bold
+    classDef phase fill:#E3F2FD,stroke:#1976D2,stroke-width:2px,color:#0D47A1,font-weight:bold
+    classDef task  fill:#EDE7F6,stroke:#7B1FA2,stroke-width:1.5px,color:#4A148C
+
+    ROOT(["🚲 P/2025 — Ultralight Racing Bike fejlesztés\nWBS 1. szint — Gyökérelem"]):::root
+    ENG(["🔧 Engineering\nMérnöki tervezés"]):::phase
+    PROTO(["🏗️ Prototype\nPrototípus gyártás"]):::phase
+    TEST(["🔬 Testing\nTesztelés és minőség-ellenőrzés"]):::phase
+    SMALL(["🔩 Small Series Production\nKis szériagyártás"]):::phase
+    RELEASE(["🚀 Release to Mass Production\nTömeggyártásba adás"]):::phase
+    DR(["📋 Design Review\nKonceptuális tervfelülvizsgálat"]):::task
+    SPEC(["📄 Specifikáció véglegesítés\nMűszaki dokumentáció"]):::task
 
     ROOT --> ENG
     ROOT --> PROTO
@@ -80,13 +85,18 @@ Míg a WBS a feladatok hierarchiáját mutatja, a hálózati terv az időbeli so
 ### 15.3. A projekt életciklusa az SAP-ban
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFF', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart LR
-    T["TERVEZÉS\nWBS felépítése\nHálózati terv\nBudget allokálása\nMérföldkövek rögzítése"]
-    V["VÉGREHAJTÁS\nStátusz: REL — Kiadva\nTényleges könyvelések\nKöltség vs. budget\nKapacitás-nyomonkövetés"]
-    L["LEZÁRÁS\nTechnical Complete\nSettlement\nKöltségek átvezetése\na végső fogadóra"]
+    classDef plan  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
+    classDef exec  fill:#FFF8E1,stroke:#F9A825,stroke-width:2px,color:#E65100,font-weight:bold
+    classDef close fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
 
-    T -->|"Kiadás\n(Release)"| V
-    V -->|"Technikai és\npénzügyi zárás"| L
+    T(["📋 TERVEZÉS\nWBS felépítése · Hálózati terv\nBudget allokálása · Mérföldkövek"]):::plan
+    V(["⚙️ VÉGREHAJTÁS\nStátusz: REL — Kiadva\nTényleges könyvelések\nKöltség vs. budget"]):::exec
+    L(["✅ LEZÁRÁS\nTechnical Complete\nSettlement — Költségek átvezetése\na végső fogadóra"]):::close
+
+    T -->|"Kiadás (Release)"| V
+    V -->|"Technikai és pénzügyi zárás"| L
 ```
 
 A lezárási fázisban a felmerült projektköltségeket **settlement**-tel (elszámolással) vezetik át a végső fogadó cost object-re. Az SAP PS két settlement-típust különböztet meg:
@@ -105,13 +115,21 @@ A **BSP** (Business Systems Planning) az IBM által az 1970-es években kidolgoz
 **A BSP alaplogikája:**
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#EDE7F6', 'primaryBorderColor': '#4527A0', 'lineColor': '#5E35B1'}}}%%
 flowchart TD
-    A["1. Üzleti stratégia\nVállalati célok és jövőkép"]
-    B["2. Üzleti folyamatok azonosítása\nKulcsfolyamatok feltérképezése (AS-IS)"]
-    C["3. Adatosztályok meghatározása\nMilyen adatra van szükség?"]
-    D["4. Folyamat–Adat mátrix\nMelyik folyamat melyik adatosztályt\nhozza létre vagy használja?"]
-    E["5. Informatikai architektúra tervezése\nMilyen rendszer, integráció kell?"]
-    F["6. Implementációs prioritások\nMit vezessünk be először?"]
+    classDef s1 fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
+    classDef s2 fill:#E8EAF6,stroke:#3949AB,stroke-width:2px,color:#1A237E
+    classDef s3 fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1
+    classDef s4 fill:#E0F7FA,stroke:#00695C,stroke-width:2px,color:#004D40
+    classDef s5 fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20
+    classDef s6 fill:#F1F8E9,stroke:#558B2F,stroke-width:2px,color:#33691E,font-weight:bold
+
+    A(["🎯 1. Üzleti stratégia\nVállalati célok és jövőkép"]):::s1
+    B(["🔍 2. Üzleti folyamatok azonosítása\nKulcsfolyamatok feltérképezése — AS-IS"]):::s2
+    C(["📂 3. Adatosztályok meghatározása\nMilyen adatra van szükség?"]):::s3
+    D(["📊 4. Folyamat–Adat mátrix\nMelyik folyamat melyik adatosztályt\nhozza létre vagy használja?"]):::s4
+    E(["🏗️ 5. Informatikai architektúra tervezése\nMilyen rendszer és integráció kell?"]):::s5
+    F(["✅ 6. Implementációs prioritások\nMit vezessünk be először?"]):::s6
 
     A --> B --> C --> D --> E --> F
 ```
@@ -150,13 +168,18 @@ Az **ITIL** (IT Infrastructure Library) az IT-szolgáltatásmenedzsment globáli
 Az SAP S/4HANA beépített (natív) eszközei különböző részletességű és célú információt nyújtanak a három klasszikus vezetési szint számára:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFF', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart TD
-    S["STRATÉGIAI SZINT — Felsővezetés\nFiori analitikus műszerfalak\nBSC-integrált KPI-k\nProfit-center elemzések\nSAP Analytics Cloud"]
-    T["TAKTIKAI SZINT — Középvezetés\nCO modul: Költséghelyi riportok · Varianciaelemzés\nPS modul: Projekt-előrehaladás · Cost-vs-Budget\nEmbedded Analytics CDS-nézetek"]
-    O["OPERATÍV SZINT — Munkatársak\nFiori tranzakciós applikációk\nRendelések · Készletlekérdezések\nJóváhagyási munkafolyamatok"]
+    classDef strategic fill:#EDE7F6,stroke:#4527A0,stroke-width:3px,color:#311B92,font-weight:bold
+    classDef tactical  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
+    classDef operative fill:#E0F7FA,stroke:#00695C,stroke-width:2px,color:#004D40,font-weight:bold
 
-    S -->|"Aggregált KPI-k\nstratégiai iránymutatáshoz"| T
-    T -->|"Operatív utasítások\nés célok lebontása"| O
+    S(["🎯 STRATÉGIAI SZINT — Felsővezetés\nFiori analitikus műszerfalak · BSC-integrált KPI-k\nProfit-center elemzések · SAP Analytics Cloud"]):::strategic
+    T(["📊 TAKTIKAI SZINT — Középvezetés\nCO: Költséghelyi riportok · Varianciaelemzés\nPS: Projekt-előrehaladás · Cost-vs-Budget"]):::tactical
+    O(["⚙️ OPERATÍV SZINT — Munkatársak\nFiori tranzakciós applikációk\nRendelések · Készletlekérdezések · Jóváhagyások"]):::operative
+
+    S -->|"Célok és iránymutatás\nlebontása"| T
+    T -->|"Operatív feladatok\nkiosztása"| O
     O -->|"Tranzakciós adatok\nvalós időben"| T
     T -->|"Riportok és elemzések\nfelsővezetés felé"| S
 ```

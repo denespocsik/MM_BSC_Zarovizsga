@@ -19,6 +19,7 @@ Az integráltság három alapelven nyugszik:
 ### 12.2. Az ERP fejlődéstörténete
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'cScale0': '#455A64', 'cScale1': '#546E7A', 'cScale2': '#1565C0', 'cScale3': '#1976D2', 'cScale4': '#0277BD', 'cScale5': '#00796B'}}}%%
 timeline
     title Az ERP rendszerek fejlődéstörténete
     section 1960-as évek
@@ -58,11 +59,18 @@ timeline
 Az ERP nem egyedüli réteg – a vállalati IT-architektúrában több szinttel együttműködik:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart BT
-    K["KÜLSŐ RENDSZEREK\nCRM · SCM · WMS · IoT · EDI"]
-    O["OPERATÍV SZINT — Digitális mag\nERP: FI · CO · MM · SD · PP · HR"]
-    T["TAKTIKAI SZINT\nControlling · DSS"]
-    S["STRATÉGIAI SZINT\nBI · BSC · MIS"]
+    classDef external  fill:#ECEFF1,stroke:#546E7A,stroke-width:2px,color:#263238,font-weight:bold
+    classDef operative fill:#E8F5E9,stroke:#2E7D32,stroke-width:3px,color:#1B5E20,font-weight:bold
+    classDef tactical  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
+    classDef strategic fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
+
+    K(["🌐 KÜLSŐ RENDSZEREK\nCRM · SCM · WMS · IoT · EDI"]):::external
+    O(["⚙️ OPERATÍV SZINT — Digitális mag\nERP: FI · CO · MM · SD · PP · HR"]):::operative
+    T(["📊 TAKTIKAI SZINT\nControlling · DSS"]):::tactical
+    S(["🎯 STRATÉGIAI SZINT\nBI · BSC · MIS"]):::strategic
+
     K -->|"Adatforrás"| O
     O -->|"Tranzakciós adatok"| T
     T -->|"Aggregált riportok"| S
