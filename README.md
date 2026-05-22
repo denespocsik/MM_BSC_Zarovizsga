@@ -177,4 +177,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
 [Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
 
-*Utolsó frissítés: 2026. május 15. — V16–V20 tételek ASCII diagramjainak cseréje Mermaid diagramokra (V16: rétegháló, Mastenbroek 4 hálózat, formális vs. valódi struktúra; V17: 5 tényező hub, kapcsolat fejlődése, kapcsoltság, összefüggések; V18: zárt vs. nyitott szemlélet, hálózattopológia, kaszkád hatás, ARA modell; V19: két klasszikus megközelítés, Porter 5 erő, értéklánc, piac mint hálózat, IMP interakció-modell; V20: klasszikus vs. hálózati logika, fokszámeloszlás, 3 stratégiai szint, strukturális lyuk, szervezeti határok, eredményességi mutatók).*
+*Utolsó frissítés: 2026. május 22. — V01–V05 (GMXSF2MBLF) Mermaid diagramok stílusfrissítése: egységes V11–V12 stílus alkalmazva (theme: base, classDef színkódolás, emoji-jelölések) mind a 8 diagramon.*

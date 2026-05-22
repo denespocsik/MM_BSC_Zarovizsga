@@ -19,14 +19,19 @@ Az FMEA (Failure Mode and Effects Analysis – hibamód- és hatáselemzés) szi
 ### 4.3. Az FMEA módszertani lépései
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart TD
-    A[Folyamat kijelölése] --> B[Hibamódok azonosítása]
-    B --> C[Hibahatások meghatározása]
-    C --> D[Hibaokok azonosítása]
-    D --> E[Kontrollok feltárása]
-    E --> F["RPN számítás<br/>RPN = S × O × D"]
-    F --> G[Intézkedések kidolgozása]
-    G --> H["Visszamérés<br/>új RPN kiszámítása"]
+    classDef analysis fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
+    classDef risk     fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
+    classDef action   fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
+
+    A["📋 Folyamat kijelölése"]:::analysis --> B["⚠️ Hibamódok azonosítása"]:::analysis
+    B --> C["💥 Hibahatások meghatározása"]:::risk
+    C --> D["🔎 Hibaokok azonosítása"]:::risk
+    D --> E["🛡️ Kontrollok feltárása"]:::analysis
+    E --> F["🔢 RPN számítás<br/>RPN = S × O × D"]:::risk
+    F --> G["🔧 Intézkedések kidolgozása"]:::action
+    G --> H["📊 Visszamérés<br/>új RPN kiszámítása"]:::action
     H -- "magas RPN esetén" --> B
 ```
 

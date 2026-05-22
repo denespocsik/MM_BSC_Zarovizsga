@@ -41,10 +41,16 @@ A **folyamatszimuláció** lehetővé teszi a folyamat előzetes modellezését 
 ### 3.4. Az optimalizálás lépései
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart LR
-    A["AS-IS elemzés<br/>jelenlegi állapot"] --> B["Problémaelemzés<br/>gyökérokok — 5 Miért"]
-    B --> C["TO-BE tervezés<br/>javított modell"]
-    C --> D["Visszamérés<br/>KPI-összehasonlítás"]
+    classDef asis    fill:#ECEFF1,stroke:#546E7A,stroke-width:2px,color:#263238,font-weight:bold
+    classDef problem fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
+    classDef tobe    fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
+    classDef measure fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
+
+    A["🔍 AS-IS elemzés<br/>jelenlegi állapot"]:::asis --> B["⚠️ Problémaelemzés<br/>gyökérokok — 5 Miért"]:::problem
+    B --> C["✅ TO-BE tervezés<br/>javított modell"]:::tobe
+    C --> D["📊 Visszamérés<br/>KPI-összehasonlítás"]:::measure
     D --> A
 ```
 

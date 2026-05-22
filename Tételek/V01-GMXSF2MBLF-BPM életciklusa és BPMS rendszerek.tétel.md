@@ -15,11 +15,16 @@ A modern szervezetekben a BPM szorosan összekapcsolódik az informatikával: a 
 A BPM életciklusa nem egyszeri projektet, hanem ismétlődő fejlesztési kört jelent. Az alábbi öt szakasz épül egymásra:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart LR
-    T[Tervezés] --> M[Modellezés]
-    M --> V[Végrehajtás]
-    V --> Mo[Monitorozás]
-    Mo --> O[Optimalizálás]
+    classDef plan  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
+    classDef exec  fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
+    classDef optim fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
+
+    T["🎯 Tervezés"]:::plan --> M["✏️ Modellezés"]:::plan
+    M --> V["▶️ Végrehajtás"]:::exec
+    V --> Mo["📊 Monitorozás"]:::plan
+    Mo --> O["⚡ Optimalizálás"]:::optim
     O --> T
 ```
 
@@ -38,12 +43,18 @@ A ciklus alapelve: az optimalizálás befejezése után a folyamat visszakerülh
 A Business Process Management Suite (BPMS) olyan integrált szoftverkörnyezet, amely az összes életciklus-szakaszt támogatja. Négy fő komponensből áll:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 graph TB
+    classDef model  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
+    classDef engine fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
+    classDef analyt fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
+    classDef rules  fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
+
     subgraph BPMS["BPMS — Business Process Management Suite"]
-        A["Folyamatmodellező eszköz (BPMN 2.0)"]
-        B["Végrehajtó motor (Process Engine)"]
-        C["Üzleti analitika (Dashboards, KPI)"]
-        D["Szabálykezelő modul (BRM)"]
+        A["✏️ Folyamatmodellező eszköz (BPMN 2.0)"]:::model
+        B["⚙️ Végrehajtó motor (Process Engine)"]:::engine
+        C["📊 Üzleti analitika (Dashboards, KPI)"]:::analyt
+        D["📋 Szabálykezelő modul (BRM)"]:::rules
         A -->|modell| B
         B -->|futásadatok| C
         D -->|üzleti szabályok| B

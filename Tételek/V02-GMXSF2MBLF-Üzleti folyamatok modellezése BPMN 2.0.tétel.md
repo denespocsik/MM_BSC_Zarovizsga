@@ -43,12 +43,17 @@ Az átjárók rombusz alakú döntési, elágazási vagy összesítési pontok:
 
 **Példa – rendelés feldolgozása:**
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart LR
-    S([Rendelés beérkezett]) --> E[Rendelés ellenőrzése]
-    E --> G{Készleten van?}
-    G -- Igen --> K[Kiszállítás]
-    G -- Nem --> B[Beszerzés]
-    K --> End([Rendelés lezárva])
+    classDef event   fill:#E8F5E9,stroke:#2E7D32,stroke-width:3px,color:#1B5E20,font-weight:bold
+    classDef task    fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
+    classDef gateway fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
+
+    S(["🟢 Rendelés beérkezett"]):::event --> E["📋 Rendelés ellenőrzése"]:::task
+    E --> G{"❓ Készleten van?"}:::gateway
+    G -- Igen --> K["🚚 Kiszállítás"]:::task
+    G -- Nem --> B["🛒 Beszerzés"]:::task
+    K --> End(["🏁 Rendelés lezárva"]):::event
     B --> End
 ```
 
@@ -59,16 +64,19 @@ flowchart LR
 **Sáv (Lane):** A medencén belüli felelősségi köröket jelöli. Pl. Értékesítés | Pénzügy | Raktár | Logisztika. Megmutatja, hogy melyik szervezeti egység felel az egyes tevékenységekért.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart TD
-    subgraph VALLALAT["VÁLLALAT — Pool"]
-        subgraph Ert["Értékesítés — Lane"]
-            A[Rendelés rögzítése]
+    classDef task fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
+
+    subgraph VALLALAT["🏢 VÁLLALAT — Pool"]
+        subgraph Ert["💼 Értékesítés — Lane"]
+            A["📝 Rendelés rögzítése"]:::task
         end
-        subgraph Rakt["Raktár — Lane"]
-            B[Készlet ellenőrzése]
+        subgraph Rakt["📦 Raktár — Lane"]
+            B["🔍 Készlet ellenőrzése"]:::task
         end
-        subgraph Pen["Pénzügy — Lane"]
-            C[Számla kiállítása]
+        subgraph Pen["💰 Pénzügy — Lane"]
+            C["🧾 Számla kiállítása"]:::task
         end
     end
     A --> B --> C

@@ -35,14 +35,20 @@ A folyamatleltár a szervezet folyamatainak rendszerezett felsorolása – az eg
 A teknős-elemzés a folyamatok átfogó szabályozási és elemzési eszköze. A diagram középen a vizsgált folyamatot tartalmazza, körülötte hat dimenzió helyezkedik el:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart TB
-    BE["BEMENETEK<br/>(Mi indítja?)"] --> FO
-    KI["KIKKEL?<br/>(Szereplők, felelősök)"] --> FO
-    MI["MIVEL?<br/>(Erőforrások, rendszerek)"] --> FO
-    HO["HOGYAN?<br/>(Módszerek, szabályzatok)"] --> FO
-    ME["MÉRÉSEK<br/>(KPI-k)"] --> FO
-    FO(["FOLYAMAT neve"])
-    FO --> KIM["KIMENETEK<br/>(Mit hoz létre?)"]
+    classDef input   fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
+    classDef support fill:#ECEFF1,stroke:#546E7A,stroke-width:2px,color:#263238,font-weight:bold
+    classDef process fill:#E8F5E9,stroke:#2E7D32,stroke-width:3px,color:#1B5E20,font-weight:bold
+    classDef output  fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
+
+    BE["📥 BEMENETEK<br/>(Mi indítja?)"]:::input --> FO
+    KI["👥 KIKKEL?<br/>(Szereplők, felelősök)"]:::support --> FO
+    MI["🔧 MIVEL?<br/>(Erőforrások, rendszerek)"]:::support --> FO
+    HO["📋 HOGYAN?<br/>(Módszerek, szabályzatok)"]:::support --> FO
+    ME["📊 MÉRÉSEK<br/>(KPI-k)"]:::support --> FO
+    FO(["⚙️ FOLYAMAT neve"]):::process
+    FO --> KIM["📤 KIMENETEK<br/>(Mit hoz létre?)"]:::output
 ```
 
 **Panaszkezelési folyamat teknős-elemzése:**
@@ -64,10 +70,16 @@ A teknős-elemzés nem helyettesíti a BPMN-modellt, de kiváló kiegészítője
 A **PDCA (Plan–Do–Check–Act)** Deming ciklusa a folyamatos fejlesztés alapmodellje a MIR-ben:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart LR
-    P["PLAN<br/>Tervez"] --> D["DO<br/>Végrehajt"]
-    D --> C["CHECK<br/>Ellenőriz"]
-    C --> A["ACT<br/>Beavatkozik"]
+    classDef plan  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
+    classDef do    fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
+    classDef check fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
+    classDef act   fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
+
+    P["📋 PLAN<br/>Tervez"]:::plan --> D["▶️ DO<br/>Végrehajt"]:::do
+    D --> C["🔍 CHECK<br/>Ellenőriz"]:::check
+    C --> A["⚡ ACT<br/>Beavatkozik"]:::act
     A --> P
 ```
 
