@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-05-15 — V16–V20 ASCII diagramok cseréje Mermaid diagramokra
+**Utolsó frissítés:** 2026-06-03 — A GMXHR1MBLF (HR menedzsment és vez. tech.) kontextusfájl teljes körű, tankönyvi mélységű bővítése (a tétel-állapotok változatlanok: K8–K13 ✅)
 
 ---
 
