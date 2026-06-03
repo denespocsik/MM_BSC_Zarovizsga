@@ -177,4 +177,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
 [Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
 
-*Utolsó frissítés: 2026. május 22. — V01–V05 (GMXSF2MBLF) Mermaid diagramok stílusfrissítése: egységes V11–V12 stílus alkalmazva (theme: base, classDef színkódolás, emoji-jelölések) mind a 8 diagramon.*
+*Utolsó frissítés: 2026. június 3. — A „Menedzsment alapjai (GMXMD1MBLF)" kontextusfájl teljes körű bővítése: a K1–K7 összefoglalóból a tárgy 13 előadás / 5 konzultáció logikája szerint felépített, tankönyvi mélységű referenciaanyag készült (a 6 korábban hiányzó témakör — szervezeti képzésfejlesztés, kommunikáció és konfliktuskezelés, projekt-, válság- és változás-, kockázatmenedzsment, funkcionális területek — kibontva; APA 7 hivatkozások, kulcsmodellek Mermaid-diagramjai, megtartott K1–K7 kereszthivatkozásokkal).*
