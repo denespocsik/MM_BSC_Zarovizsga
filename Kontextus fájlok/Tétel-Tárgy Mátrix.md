@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-06-04 — A GMXSF2MBLF (Számítógépes folyamatmenedzsment) kontextusfájl teljes körű, tankönyvi mélységű bővítése: a BPM-tudásterület belső logikája szerinti (A–E) átstrukturálás, teljes BPMN 2.0 elemtáblák, FMEA (RPN + AIAG–VDA Action Priority), Process Mining, Lean/Six Sigma, BPMS/SOA/RPA, ISO 9001/PDCA/teknős-elemzés, 8 Mermaid-diagram, V1–V5 kereszthivatkozás és vizsgaösszefoglalók, APA 7 hivatkozások; a Syllabus OCR-éből pontosítva (tantárgyfelelős: Tick Andrea; kötelező irodalom beépítve). A tétel-állapotok változatlanok: V1–V5 ✅
+**Utolsó frissítés:** 2026-06-04 — A négy kidolgozott kontextusfájl (GMXMD1MBLF, GMXHR1MBLF, GIXVS2MBLF, GMXSF2MBLF) fejezetszámozásának egységesítése a Menedzsment alapjai mintája szerint: számozatlan fejléc-szekciók, a tananyag 1-től számozott fejezetei, számozatlan záró szekciók; a belső kereszthivatkozások frissítve. A tétel-állapotok változatlanok (K1–K20, V1–V5 ✅).
 
 ---
 

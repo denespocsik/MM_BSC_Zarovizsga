@@ -6,7 +6,7 @@
 
 ---
 
-## 0. Tantárgyi adatok
+## Tantárgy adatok
 
 | Megnevezés | Adat | Forrás / megjegyzés |
 |---|---|---|
@@ -24,65 +24,65 @@
 
 > ⚠️ **Forrásütközés jelzése (oktató személye):** a projekt korábbi feljegyzései szerint „az oktató Novák Géza". A Syllabus OCR-feldolgozása alapján azonban a **tantárgyfelelős oktató Prof. Dr. habil. Tick Andrea**, míg **Novák Géza a `SzgFM.pdf` oktatási segédanyag szerzője**. A két szerep nem azonos; a fenti táblázat ennek megfelelően különíti el őket. (A kreditszámot, az óraszámot és a konzultációszámot szándékosan nem találtuk ki — a szkennelt PDF megfelelő mezői nem voltak megbízhatóan kiolvashatók.)
 
-### A tárgy célja (Syllabus alapján)
+## Oktatási cél
 
 > *„Az üzleti folyamatok menedzselése azok meghatározásával, modellezésével kezdődik. A BPMN, azaz üzleti folyamatmodellezés biztos alapot ad a folyamatok azonosítására, a folyamatszabályozásra vagy akár a folyamatok változáskövetésére. […] A folyamatszemlélet kialakítása elsődleges cél az oktatás során."*
 
 A kurzus elvégzésével a hallgató képes: üzleti folyamat meghatározására és feltérképezésére; folyamatmenedzsment-életciklus modell és folyamattérkép készítésére; folyamatok osztályozására; az **5W+1H** és az **FMEA** módszer alkalmazására; folyamatok kockázatelemzésére.
 
-### Konzultációs (heti) tematika a Syllabusból
+## Témakörök konzultációnként
 
-| Hét | Témakör | Hova kapcsolódik (A–E) |
+| Hét | Témakör | Hova kapcsolódik (fejezet) |
 |---|---|---|
-| 1 | A folyamat fogalma; a szervezeti folyamatmenedzsment megközelítései | A |
-| 2 | A folyamatmenedzsment beépítése a szervezet működésébe | A / E |
-| 3 | A folyamatok azonosítása, strukturálása | A |
-| 4 | Folyamatkövetelmények meghatározása | A / E |
-| 5 | Folyamatmodellezési módszertanok; BPMN jelölésrendszer | B |
-| 6 | Folyamatszabályozás | E |
-| 7 | Folyamatok mérése | C |
-| 8 | Kockázatelemzési módszerek | C |
-| 9 | Folyamatmenedzsment életciklus-modell | A / E |
-| 10 | Folyamattérkép elkészítése | A |
-| 11 | Az 5W+1H módszer | C |
-| 12 | FMEA módszer | C |
+| 1 | A folyamat fogalma; a szervezeti folyamatmenedzsment megközelítései | 1. |
+| 2 | A folyamatmenedzsment beépítése a szervezet működésébe | 1. / 5. |
+| 3 | A folyamatok azonosítása, strukturálása | 1. |
+| 4 | Folyamatkövetelmények meghatározása | 1. / 5. |
+| 5 | Folyamatmodellezési módszertanok; BPMN jelölésrendszer | 2. |
+| 6 | Folyamatszabályozás | 5. |
+| 7 | Folyamatok mérése | 3. |
+| 8 | Kockázatelemzési módszerek | 3. |
+| 9 | Folyamatmenedzsment életciklus-modell | 1. / 5. |
+| 10 | Folyamattérkép elkészítése | 1. |
+| 11 | Az 5W+1H módszer | 3. |
+| 12 | FMEA módszer | 3. |
 | 13 | Esettanulmány | — |
 | 14 | Önálló feladat bemutatása | — |
 
 ---
 
-## 0.1. Eligazító: V-tétel → fejezet kereszttábla
+## A referencia felépítése és a V-tételek leképezése
 
-A tárgyhoz öt szakirányi tétel (V1–V5) tartozik. A referenciaanyag **nem** ezek mentén tagolódik, hanem a BPM-tudásterület belső logikája szerint (A–E). Az alábbi tábla mutatja, hol találhatók az egyes tételek tartalmai.
+A tárgyhoz öt szakirányi tétel (V1–V5) tartozik. A referenciaanyag **nem** ezek mentén tagolódik, hanem a BPM-tudásterület belső logikája szerint (1–5. fejezet). Az alábbi tábla mutatja, hol találhatók az egyes tételek tartalmai.
 
 | Tétel | Cím | Elsődleges fejezet(ek) | Vizsgaösszefoglaló |
 |---|---|---|---|
-| **V1** | BPM életciklusa és BPMS rendszerek felépítése | A6, D1 | § 8.1 |
-| **V2** | Üzleti folyamatok modellezése BPMN 2.0 szerint | B (teljes) | § 8.2 |
-| **V3** | Üzleti folyamatok mérése és optimalizálása (KPI) | C1–C6 | § 8.3 |
-| **V4** | Kockázatkezelés és hibamód-elemzés (FMEA) | C7–C8 | § 8.4 |
-| **V5** | Folyamatszemléletű irányítási rendszerek és dokumentáció | E (teljes), A3–A5 | § 8.5 |
+| **V1** | BPM életciklusa és BPMS rendszerek felépítése | 1.8, 4.1 | V1 |
+| **V2** | Üzleti folyamatok modellezése BPMN 2.0 szerint | 2. (teljes) | V2 |
+| **V3** | Üzleti folyamatok mérése és optimalizálása (KPI) | 3.1–3.6 | V3 |
+| **V4** | Kockázatkezelés és hibamód-elemzés (FMEA) | 3.7–3.8 | V4 |
+| **V5** | Folyamatszemléletű irányítási rendszerek és dokumentáció | 5. (teljes), 1.3–1.5 | V5 |
 
 ### Tartalomjegyzék
 
-1. **(A)** BPM fogalmi alapjai és szervezeti illesztés — § 1
-2. **(B)** Folyamatmodellezés és BPMN 2.0 — § 2
-3. **(C)** Folyamatmérés, -optimalizálás és kockázatkezelés — § 3
-4. **(D)** BPMS, SOA és digitális BPM — § 4
-5. **(E)** Folyamatszemléletű irányítás és minőségmenedzsment — § 5
-6. Jelzett forrásütközések és nyitott kérdések — § 6
-7. Kulcsfogalmak összesítő táblázata — § 7
-8. Vizsgafókusz: V1–V5 tételösszefoglalók — § 8
-9. Tantárgyi kapcsolatok — § 9
-10. Feldolgozott forrásanyagok és felhasznált irodalom — § 10
+1. BPM fogalmi alapjai és szervezeti illesztés
+2. Folyamatmodellezés és BPMN 2.0
+3. Folyamatmérés, -optimalizálás és kockázatkezelés
+4. BPMS, SOA és digitális BPM
+5. Folyamatszemléletű irányítás és minőségmenedzsment
+6. Jelzett forrásütközések és nyitott kérdések
+7. Kulcsfogalmak összesítő táblázata
+8. Vizsgafókusz: V1–V5 tételösszefoglalók
+9. Tantárgyi kapcsolatok
+10. Feldolgozott forrásanyagok és felhasznált irodalom
 
 ---
 
-# § 1. (A) A BPM fogalmi alapjai és szervezeti illesztés
+# 1. A BPM fogalmi alapjai és szervezeti illesztés
 
 > » **Kapcsolódó tételek: V1, V5** (és a V2–V4 fogalmi háttere)
 
-## 1.1. Az üzleti folyamat fogalma
+## 1.1 Az üzleti folyamat fogalma
 
 Az **üzleti folyamat** koordinált tevékenységek olyan sorozata vagy hálózata, amely meghatározott üzleti cél elérése érdekében **bemeneteket kimenetekké alakít**, miközben értéket teremt a szervezet vagy az ügyfél számára (Novák, 2026; Dumas et al., 2018). A folyamat nem pusztán tevékenységek listája: valódi folyamatnak van **meghatározott kezdő- és végpontja, bemenete, kimenete, célja, felelőse, erőforrásigénye, szabályozása és mérhető teljesítménye**.
 
@@ -92,7 +92,7 @@ Dumas és szerzőtársai (2018) formálisabb meghatározása szerint a folyamat 
 
 **Kritika / korlát.** A „folyamat" határai gyakran vitatottak: hol kezdődik és hol ér véget egy end-to-end folyamat. A túl tágan vagy túl szűken húzott folyamathatárok torzítják a mérést és a felelősség kijelölését (Dumas et al., 2018).
 
-## 1.2. Folyamattípusok és a Porter-féle értéklánc
+## 1.2 Folyamattípusok és a Porter-féle értéklánc
 
 A szervezet folyamatai három fő kategóriába sorolhatók (Novák, 2026):
 
@@ -106,7 +106,7 @@ Ez a hármas tagolás illeszkedik **Porter (1985) értéklánc-modelljéhez**: a
 
 **Modern relevancia.** A folyamathierarchia adja a **folyamattérkép** (process landscape / process architecture) gerincét, amely a felső vezetés számára átfogó, az operatív szint számára részletes nézetet ad ugyanarról a működésről (Dumas et al., 2018; Harmon, 2019).
 
-## 1.3. BPM-megközelítések: funkcionális vs. folyamatszemlélet; BPR vs. BPM
+## 1.3 BPM-megközelítések: funkcionális vs. folyamatszemlélet; BPR vs. BPM
 
 A **funkcionális (silószerű) szemlélet** a szervezetet osztályok hierarchiájaként kezeli, és minden egység a saját feladatára optimalizál. A probléma, hogy az ügyfélérték az osztályhatárokat átszelő **teljes folyamatból** származik, nem az egyes részlegek lokális teljesítményéből (Novák, 2026; Hammer, 1990).
 
@@ -126,7 +126,7 @@ A **BPR** Hammer és Champy nevéhez fűződik. Hammer (1990) *„Reengineering 
 
 **Kritika.** A BPR-hullám az 1990-es évek közepére jórészt kifulladt: a projektek nagy része nem hozta a várt eredményt, és sok esetben a „reengineering" eufemizmussá vált a létszámleépítésre. A modern BPM ezért a **fokozatos, mérésre alapozott, az életciklusba beépített** fejlesztést hangsúlyozza, miközben megőrzi a BPR alapgondolatát: a folyamatot, nem a funkciót kell optimalizálni (Harmon, 2019).
 
-## 1.4. A folyamatmenedzsment beépítése a szervezetbe
+## 1.4 A folyamatmenedzsment beépítése a szervezetbe
 
 A BPM bevezetése **szemléletváltás**, nem különálló projekt. Fő lépései (Novák, 2026):
 
@@ -140,17 +140,17 @@ A BPM bevezetése **szemléletváltás**, nem különálló projekt. Fő lépés
 
 A BPM akkor válik a mindennapi működés részévé, ha **beépül a vezetési, minőségirányítási és teljesítményértékelési rendszerbe** — nem külön projektként kezelik.
 
-## 1.5. A folyamatgazda szerepköre és a felelősségi rendszer
+## 1.5 A folyamatgazda szerepköre és a felelősségi rendszer
 
 A **folyamatgazda** (process owner) az a személy, aki felelős a folyamat **teljesítményéért, szabályozottságáért és fejlesztéséért** — nem feltétlenül ő hajtja végre a lépéseket, de ő látja át az **end-to-end** folyamatot (Novák, 2026). Feladatai: folyamatcél meghatározása, folyamatleírás karbantartása, KPI-k figyelése, kockázatkezelés, fejlesztési lehetőségek azonosítása, kapcsolattartás az érintett egységekkel, nemmegfelelőségek elemzése, helyesbítő/fejlesztő intézkedések kezdeményezése.
 
 A szerep azért kritikus, mert a folyamatok gyakran **átlépik a szervezeti határokat** (a rendeléskezelés érinti az értékesítést, pénzügyet, raktárt, logisztikát). Folyamatgazda nélkül senki nem felel a teljes eredményért. A felelősségek tisztázására **RACI-mátrix** használható: ki a végrehajtó (**R**esponsible), ki a felelős/elszámoltatható (**A**ccountable), kit kell bevonni (**C**onsulted) és tájékoztatni (**I**nformed).
 
-## 1.6. Folyamatkövetelmények és -azonosítás
+## 1.6 Folyamatkövetelmények és -azonosítás
 
 A folyamat meghatározásakor tisztázni kell a **követelményeket**: cél, bemenetek, kimenet, ügyfél/kedvezményezett, vonatkozó jogszabályok/szabványok (pl. ISO 9001), erőforrások, kockázatok, mérőszámok (Novák, 2026). A követelmények lehetnek **belsők** (szabályzat, vezetői elvárás, hatékonysági cél) és **külsők** (jogszabály, hatósági előírás, vevői/szerződéses elvárás, szabvány).
 
-## 1.7. Folyamatérettségi modellek (CMMI, OMG BPMM)
+## 1.7 Folyamatérettségi modellek (CMMI, OMG BPMM)
 
 A **folyamatérettség** azt méri, mennyire szabályozott, mért és tudatosan fejlesztett a szervezet folyamatkezelése. Két meghatározó modell:
 
@@ -168,7 +168,7 @@ A **CMMI** (Capability Maturity Model Integration, a Carnegie Mellon SEI gondoz�
 
 **Kritika.** Az érettségi modelleket gyakran éri az a vád, hogy az „5. szint" öncéllá válik, miközben a magasabb szint nem mindig jár jobb üzleti eredménnyel; a modell-alapú értékelés ráadásul költséges és bürokratikus lehet.
 
-## 1.8. A BPM-életciklus
+## 1.8 A BPM-életciklus
 
 > » **Kapcsolódó tétel: V1**
 
@@ -194,11 +194,11 @@ flowchart LR
 
 ---
 
-# § 2. (B) Folyamatmodellezés és BPMN 2.0
+# 2. Folyamatmodellezés és BPMN 2.0
 
 > » **Kapcsolódó tétel: V2**
 
-## 2.1. Modellezési módszertanok és a BPMN helye
+## 2.1 Modellezési módszertanok és a BPMN helye
 
 A folyamatmodellezés célja, hogy a valós működést **áttekinthető formában** ábrázolja: milyen lépésekből áll, kik vesznek részt, hol vannak a döntési pontok és az átadások (Novák, 2026).
 
@@ -213,11 +213,11 @@ A folyamatmodellezés célja, hogy a valós működést **áttekinthető formáb
 
 A **BPMN** (Business Process Model and Notation) ma a legelterjedtebb üzleti folyamatmodellezési szabvány. Fő előnye, hogy **közös nyelvet** ad az üzleti elemzők, folyamatgazdák, vezetők és informatikai megvalósítók között (OMG, 2011; Allweyer, 2016).
 
-## 2.2. A BPMN 2.0 jelölésrendszere
+## 2.2 A BPMN 2.0 jelölésrendszere
 
 A BPMN 2.0-t az **Object Management Group (OMG)** szabványosította (a 2.0 verzió 2011-ben, a 2.0.2 karbantartott kiadás 2013-ban jelent meg). Az elemek négy fő kategóriába sorolhatók: **folyamatobjektumok** (események, tevékenységek, átjárók), **összekötők**, **úszósávok** (medencék/sávok) és **tárgyi/adatelemek**.
 
-### 2.2.1. Események (events)
+### 2.2.1 Események (events)
 
 Az **esemény** a folyamat során bekövetkező történés (vékony körrel jelölve). Pozíció szerint **start / közbenső (intermediate) / vég (end)**, viselkedés szerint **elkapó (catching) / kiváltó (throwing)**.
 
@@ -236,7 +236,7 @@ Az **esemény** a folyamat során bekövetkező történés (vékony körrel jel
 
 A **határesemény** (boundary event) egy tevékenység szegélyén ül; lehet **megszakító** (interrupting) vagy **nem megszakító** (non-interrupting). Tipikus: időtúllépés (timer boundary), hibakezelés (error boundary).
 
-### 2.2.2. Tevékenységek (activities)
+### 2.2.2 Tevékenységek (activities)
 
 A **tevékenység** az elvégzendő munka (lekerekített téglalap).
 
@@ -248,7 +248,7 @@ A **tevékenység** az elvégzendő munka (lekerekített téglalap).
 | **Tranzakció** | Atomi, „mind vagy semmi" alfolyamat kompenzációval |
 | **Ismétlési jelölők** | *Loop*, *multi-instance* (párhuzamos/szekvenciális), *ad-hoc* |
 
-### 2.2.3. Átjárók (gateways)
+### 2.2.3 Átjárók (gateways)
 
 Az **átjáró** (rombusz) szabályozza a szekvenciafolyam szét- és összefutását.
 
@@ -260,11 +260,11 @@ Az **átjáró** (rombusz) szabályozza a szekvenciafolyam szét- és összefut�
 | **Eseményalapú** | ⬠ (ötszög körben) | A folyamat a **soron következő esemény** szerint dönt (pl. „válasz VAGY időtúllépés") |
 | **Komplex** | ✳ | Egyedi, kifejezéssel megadott szinkronizációs feltétel (ritka) |
 
-### 2.2.4. Úszósávok: medence és sáv
+### 2.2.4 Úszósávok: medence és sáv
 
 A **medence (pool)** egy önálló résztvevőt/szervezetet jelöl; a **sáv (lane)** a medencén belüli szervezeti egységet vagy szerepkört. Eltérő medencék között **csak üzenetfolyam** haladhat (nem szekvenciafolyam), mert külön résztvevőkről van szó (Novák, 2026; Silver, 2009).
 
-### 2.2.5. Összekötők és tárgyi elemek
+### 2.2.5 Összekötők és tárgyi elemek
 
 | Összekötő | Jelölés | Jelentés |
 |---|---|---|
@@ -274,7 +274,7 @@ A **medence (pool)** egy önálló résztvevőt/szervezetet jelöl; a **sáv (la
 
 **Tárgyi (artifact) és adatelemek:** adatobjektum (data object), adattár (data store), csoport (group), szöveges megjegyzés (text annotation).
 
-### 2.2.6. Példa — egyszerű panaszkezelés BPMN-logikával
+### 2.2.6 Példa — egyszerű panaszkezelés BPMN-logikával
 
 ```mermaid
 flowchart LR
@@ -295,7 +295,7 @@ flowchart LR
 
 *(A Mermaid-flowchart a BPMN logikáját szemlélteti; a tényleges BPMN-jelölés az események körét, a tevékenységek lekerekített téglalapját és a rombusz-átjárót használja.)*
 
-## 2.3. Modellezési szintek és hibás modellezési minták
+## 2.3 Modellezési szintek és hibás modellezési minták
 
 Silver (2009/2011) háromszintű modellt javasol:
 
@@ -315,22 +315,22 @@ Silver (2009/2011) háromszintű modellt javasol:
 
 Ezek a **Petri-háló token-szemantikájával** formálisan kimutathatók; a BPMS- és modellezőeszközök validátorai (és a process mining *conformance checking*) ezek egy részét automatikusan jelzik (van der Aalst, 2016).
 
-## 2.4. Choreography és Conversation diagramok
+## 2.4 Choreography és Conversation diagramok
 
 A BPMN 2.0 a sima folyamatdiagramon túl két további diagramtípust definiál:
 
 - **Choreography (koreográfia) diagram:** a résztvevők **közötti üzenetváltások sorrendjét** modellezi, központi vezérlő nélkül — akkor hasznos, ha több **független szervezet** együttműködését írjuk le (pl. vevő–webáruház–bank).
 - **Conversation diagram:** a résztvevők és a köztük zajló üzenetcsoportok **magas szintű áttekintése**.
 
-Ezek a B2B-/szervezetközi folyamatoknál relevánsak, ahol nincs egyetlen „karmester" (lásd a koreográfia fogalmát a § 4.2-ben).
+Ezek a B2B-/szervezetközi folyamatoknál relevánsak, ahol nincs egyetlen „karmester" (lásd a koreográfia fogalmát a 4.2-ben).
 
 ---
 
-# § 3. (C) Folyamatmérés, -optimalizálás és kockázatkezelés
+# 3. Folyamatmérés, -optimalizálás és kockázatkezelés
 
 > » **Kapcsolódó tételek: V3 (mérés/optimalizálás), V4 (FMEA)**
 
-## 3.1. A folyamatmérés alapjai és a KPI-k
+## 3.1 A folyamatmérés alapjai és a KPI-k
 
 „Amit nem mérünk, azt nehéz objektíven értékelni és fejleszteni" (Novák, 2026). A **KPI** (Key Performance Indicator, kulcsfontosságú teljesítménymutató) a folyamat kritikus teljesítményterületét mérő számszerű mutató.
 
@@ -350,7 +350,7 @@ Származtatott, fontos mutató az **értékteremtő arány** (*value-added ratio
 
 **A jó KPI jellemzői** (Novák, 2026): a folyamatcélhoz kapcsolódik, mérhető, egyértelmű, rendszeresen gyűjthető, **célértékkel** összevethető, felelőshöz rendelhető, döntéstámogatásra alkalmas. „Javuljon a minőség" nem KPI; „a határidőre lezárt panaszok aránya ≥ 95%" igen.
 
-## 3.2. Szűk keresztmetszetek és AS-IS / TO-BE elemzés
+## 3.2 Szűk keresztmetszetek és AS-IS / TO-BE elemzés
 
 A **szűk keresztmetszet (bottleneck)** a folyamat teljesítményét korlátozó pont, ahol a munka feltorlódik. Monitorozási adatokból (várakozási idők, sorhosszak, erőforrás-kihasználás) azonosítható.
 
@@ -364,7 +364,7 @@ Az **optimalizálás** menete (Novák, 2026; Dumas et al., 2018):
 6. **Megvalósítás és változáskezelés.**
 7. **Bevezetés utáni visszamérés** — valóban javult-e a KPI.
 
-## 3.3. Lean a BPM-ben
+## 3.3 Lean a BPM-ben
 
 A **Lean** szemlélet a Toyota Termelési Rendszerből ered (Ohno, 1988; Womack & Jones, 1996). Központi fogalma a **veszteség (muda)** kiküszöbölése. A hét (gyakran nyolc) klasszikus veszteségtípus: túltermelés, várakozás, felesleges szállítás, túlmunkálás/felesleges feldolgozás, készlet, felesleges mozgás, hibák/selejt (+ a kihasználatlan emberi tudás mint nyolcadik).
 
@@ -376,7 +376,7 @@ Fő eszközök:
 
 **BPM-kapcsolat:** a Lean a folyamatból a *várakozást és a felesleges lépéseket* célozza, így közvetlenül javítja az értékteremtő arányt és az átfutási időt.
 
-## 3.4. Six Sigma és a DMAIC
+## 3.4 Six Sigma és a DMAIC
 
 A **Six Sigma** (Motorola, 1980-as évek; Pyzdek & Keller, 2014; George, 2002) statisztikai alapú minőségfejlesztési módszertan, amely a **folyamatszórás (variabilitás) csökkentésére** összpontosít. Mércéje a **DPMO** (Defects Per Million Opportunities); a „hat szigma" szint ≈ **3,4 hiba/millió** lehetőség. A javítási projektek vázát a **DMAIC** ciklus adja:
 
@@ -390,9 +390,9 @@ flowchart LR
     class D,M,A,I,C s;
 ```
 
-A **Lean Six Sigma** (George, 2002) a Lean sebesség-/veszteségfókuszát ötvözi a Six Sigma szórásredukciójával. **BPM-kapcsolat:** a DMAIC az AS-IS/TO-BE optimalizálás strukturált, mérésre alapozott változata; a *Control* fázis a folyamatszabályozással és a PDCA-val (§ 5.2) cseng össze.
+A **Lean Six Sigma** (George, 2002) a Lean sebesség-/veszteségfókuszát ötvözi a Six Sigma szórásredukciójával. **BPM-kapcsolat:** a DMAIC az AS-IS/TO-BE optimalizálás strukturált, mérésre alapozott változata; a *Control* fázis a folyamatszabályozással és a PDCA-val (5.2) cseng össze.
 
-## 3.5. Folyamatszimuláció
+## 3.5 Folyamatszimuláció
 
 A **szimuláció** a TO-BE modellek „futtatás előtti" tesztelését teszi lehetővé (Dumas et al., 2018):
 
@@ -401,7 +401,7 @@ A **szimuláció** a TO-BE modellek „futtatás előtti" tesztelését teszi le
 
 **Korlát:** a szimuláció eredménye csak annyira jó, amennyire a bemeneti feltételezések; az emberi viselkedés és a ritka kivételek nehezen modellezhetők.
 
-## 3.6. Process Mining
+## 3.6 Process Mining
 
 > » **Kapcsolat: V3 (monitorozás/optimalizálás), V1 (életciklus)**
 
@@ -419,7 +419,7 @@ Három fő feladat:
 
 **Kritika / korlát.** Erősen **adatminőség-függő**: hiányos, pontatlan vagy rosszul időbélyegzett logok félrevezető modellt adnak. Adatvédelmi kérdéseket vet fel (ki mit, mennyi idő alatt végzett — munkavállalói megfigyelés). A „spagetti-modellek" (túl sok variáns) nehezen értelmezhetők.
 
-## 3.7. FMEA — hibamód- és hatáselemzés
+## 3.7 FMEA — hibamód- és hatáselemzés
 
 > » **Kapcsolódó tétel: V4**
 
@@ -500,7 +500,7 @@ Az intézkedések három irányban hathatnak: csökkentik az **előfordulást (O
 
 **Az FMEA korlátai:** az S, O, D értékelése **szubjektív**, csapatfüggő; az RPN ordinális skálák szorzata (matematikailag vitatható); időigényes; statikus pillanatkép, amelyet karban kell tartani.
 
-## 3.8. Gyökérok-elemzés: 5W+1H és az Ishikawa-diagram
+## 3.8 Gyökérok-elemzés: 5W+1H és az Ishikawa-diagram
 
 Az **5W+1H** strukturált kérdezéstechnika a folyamat feltárására és szabályozására (Novák, 2026): **Who? (Ki?), What? (Mit?), Why? (Miért?), When? (Mikor?), Where? (Hol?), How? (Hogyan?)**. A *Why?* különösen fontos: kiszűri az értéket nem teremtő lépéseket (rokon a Lean „5 Miért?" — 5 Whys — technikájával).
 
@@ -524,11 +524,11 @@ flowchart LR
 
 ---
 
-# § 4. (D) BPMS, SOA és digitális BPM
+# 4. BPMS, SOA és digitális BPM
 
 > » **Kapcsolódó tételek: V1 (BPMS), V5 (integráció)**
 
-## 4.1. A BPMS architektúrája
+## 4.1 A BPMS architektúrája
 
 A **BPMS** (Business Process Management Suite/System) integrált szoftverkörnyezet, amely a BPM-életciklus szakaszait támogatja, és **hidat képez az üzleti és az informatikai oldal között** (Novák, 2026; Weske, 2019). Fő komponensei:
 
@@ -563,7 +563,7 @@ flowchart TB
 
 **Eszközpéldák (tényszerűen, reklámjelleg nélkül):** nyílt forráskódú motorok (pl. *Camunda*, *Activiti*, *Flowable*), valamint nagy gyártói csomagok (pl. *SAP* folyamateszközei). Ezek mind BPMN 2.0-alapú modellezést és végrehajtást kínálnak.
 
-## 4.2. SOA — szolgáltatásorientált architektúra
+## 4.2 SOA — szolgáltatásorientált architektúra
 
 > » **Kapcsolat: V5, és a GMXIV2MBLF (ERP) tárgy**
 
@@ -584,7 +584,7 @@ A gyakorlatban a kettő **együtt** él: egy vállalat belső rendelésfeldolgoz
 
 Az **ESB** (Enterprise Service Bus) a SOA központi integrációs gerince: üzenetútválasztást, protokoll- és formátumtranszformációt, szolgáltatás-közvetítést végez a heterogén rendszerek között.
 
-## 4.3. Mikroszolgáltatások és eseményvezérelt architektúra
+## 4.3 Mikroszolgáltatások és eseményvezérelt architektúra
 
 A **mikroszolgáltatás-architektúra** (Newman, 2015/2021) a SOA „finomszemcsés" utódja: kicsi, **önállóan telepíthető**, egy-egy üzleti képességet lefedő szolgáltatások, saját adattárral.
 
@@ -597,7 +597,7 @@ A **mikroszolgáltatás-architektúra** (Newman, 2015/2021) a SOA „finomszemcs
 
 Az **eseményvezérelt architektúra (EDA)** a koreográfia rokona: a szolgáltatások eseményeket publikálnak és fogyasztanak. **Következmény a folyamatmodellezésre:** a klasszikus, központilag orkesztrált modell mellett egyre fontosabb az **esemény-alapú** gondolkodás (BPMN üzenet-/jelzéseseményei, choreography diagram).
 
-## 4.4. RPA és intelligens automatizálás
+## 4.4 RPA és intelligens automatizálás
 
 Az **RPA** (Robotic Process Automation; van der Aalst, Bichler & Heinzl, 2018) szoftverrobotokkal automatizálja az **ismétlődő, szabályalapú, strukturált** feladatokat azáltal, hogy a robot a **felhasználói felületen** (UI) utánozza az emberi műveleteket (bejelentkezés, adatmásolás rendszerek között, űrlapkitöltés).
 
@@ -609,11 +609,11 @@ Az **RPA** (Robotic Process Automation; van der Aalst, Bichler & Heinzl, 2018) s
 
 ---
 
-# § 5. (E) Folyamatszemléletű irányítás és minőségmenedzsment
+# 5. Folyamatszemléletű irányítás és minőségmenedzsment
 
 > » **Kapcsolódó tétel: V5**
 
-## 5.1. MIR és az ISO 9001:2015 folyamatszemlélete
+## 5.1 MIR és az ISO 9001:2015 folyamatszemlélete
 
 A **minőségirányítási rendszer (MIR)** a szervezet azon eszköz- és szabályrendszere, amely a minőségcélok elérését biztosítja. Nemzetközi szabványa az **ISO 9001:2015**, amelynek két alappillére a **folyamatszemléletű megközelítés** (process approach) és a **kockázatalapú gondolkodás** (risk-based thinking) (ISO, 2015).
 
@@ -622,7 +622,7 @@ A **minőségirányítási rendszer (MIR)** a szervezet azon eszköz- és szabá
 - **PDCA-keret:** a szabvány szerkezete a Plan–Do–Check–Act ciklusra épül.
 - **Dokumentálási követelmények:** „dokumentált információ" (a 2015-ös verzió rugalmasabb a korábbi merev „eljárás" előírásnál) — a szervezet maga dönti el a szükséges mélységet.
 
-## 5.2. A PDCA-ciklus
+## 5.2 A PDCA-ciklus
 
 A **PDCA** (Plan–Do–Check–Act) a folyamatos fejlesztés legismertebb modellje. A ciklust **Shewhart** dolgozta ki az 1930-as években (Shewhart-ciklus), és **Deming (1986)** tette világszerte ismertté — ezért „Deming-ciklusnak" is nevezik.
 
@@ -641,7 +641,7 @@ flowchart LR
 - **Check:** mérés és értékelés (KPI-k, auditok, vevői visszajelzések, hibajelentések).
 - **Act:** beavatkozás — helyesbítő intézkedés, fejlesztés, szabályozásmódosítás, új célok.
 
-## 5.3. Teknős-elemzés (turtle diagram)
+## 5.3 Teknős-elemzés (turtle diagram)
 
 A **teknős-elemzés** (turtle diagram) a folyamat **teljes működési környezetét** mutatja be egyetlen ábrán; az ISO 9001-es **auditfelkészülés** és folyamatleírás gyakori eszköze (Novák, 2026). A folyamat (a „teknős teste") körül helyezkednek el a kérdések (a „lábak"):
 
@@ -659,7 +659,7 @@ A **teknős-elemzés** (turtle diagram) a folyamat **teljes működési környez
 
 A teknős-elemzés **kiegészíti**, de nem helyettesíti a BPMN-modellt: a BPMN a **sorrendet**, a teknős a **működési feltételeket** mutatja.
 
-## 5.4. Folyamatszabályozás és a dokumentáció hierarchiája
+## 5.4 Folyamatszabályozás és a dokumentáció hierarchiája
 
 A **folyamatszabályozás** célja, hogy a folyamatok **stabilan, ismételhetően és ellenőrizhetően** működjenek; meghatározza, ki, mit, mikor, hol, miért és hogyan végez (5W+1H-kapcsolat) (Novák, 2026). Fő elemei: folyamatleírás, folyamatábra, munkautasítás, felelősségi mátrix, ellenőrzési pontok, dokumentumsablonok, elektronikus workflow, jogosultsági és döntési szabályok, teljesítménymutatók.
 
@@ -676,98 +676,97 @@ flowchart TB
 
 A szabályozás ott kritikus, ahol a hiba nagy kockázatot okoz (pénzügyi, egészségügyi, gyártási, adatvédelmi folyamatok). A **döntési pontok** azonosítása és szabályozása csökkenti a hibákat és növeli az átláthatóságot.
 
-## 5.5. A KPI–PDCA visszacsatolás
+## 5.5 A KPI–PDCA visszacsatolás
 
-A KPI-k a PDCA **Check** szakaszában kapnak kiemelt szerepet, de az egész ciklust támogatják (Novák, 2026): a **Plan**ben kitűzzük a célokat és KPI-ket (pl. „a panaszok ≥ 95%-át határidőn belül lezárjuk"), a **Do**ban adatot gyűjtünk, a **Check**ben összevetjük a tényt a céllal (ha csak 82% → eltérés), az **Act**ban fejlesztünk (új felelősségi rend, automatikus határidő-figyelés, képzés). Ezzel a KPI-rendszer a folyamatos fejlesztés gyakorlati motorja, és pontosan ez a **BPM-életciklus monitorozás → optimalizálás** visszacsatolása (§ 1.8).
+A KPI-k a PDCA **Check** szakaszában kapnak kiemelt szerepet, de az egész ciklust támogatják (Novák, 2026): a **Plan**ben kitűzzük a célokat és KPI-ket (pl. „a panaszok ≥ 95%-át határidőn belül lezárjuk"), a **Do**ban adatot gyűjtünk, a **Check**ben összevetjük a tényt a céllal (ha csak 82% → eltérés), az **Act**ban fejlesztünk (új felelősségi rend, automatikus határidő-figyelés, képzés). Ezzel a KPI-rendszer a folyamatos fejlesztés gyakorlati motorja, és pontosan ez a **BPM-életciklus monitorozás → optimalizálás** visszacsatolása (1.8).
 
 ---
 
-# § 6. Jelzett forrásütközések és nyitott kérdések
+# Jelzett forrásütközések és nyitott kérdések
 
 A projekt szabálya, hogy a helyi anyag és a szakirodalom **eltéréseit jelezni, nem elsimítani** kell. Összefoglalva:
 
-1. **Oktató személye:** korábbi feljegyzés „Novák Géza" — a Syllabus szerint a **tantárgyfelelős Prof. Dr. habil. Tick Andrea**, Novák Géza a **segédanyag szerzője**. (§ 0)
-2. **BPM-életciklus fázisszáma:** Novák **5 fázis**; a 9. HTML-lecke **6 szakasz** (+ stratégiai irány); Dumas et al. **6 fázis**. Tartalmi ellentmondás nincs, csak eltérő granularitás. (§ 1.8)
-3. **FMEA — RPN vs. AP:** Novák a klasszikus **RPN = S×O×D**-t tanítja (de óva int a mechanikus alkalmazástól); az **AIAG–VDA (2019)** az **Action Priority (H/M/L, súlyosság-elsőbbség)** módszerre váltott. (§ 3.7)
-4. **Teknős-elemzés dimenziószáma:** Novák 6 kérdés + mérés (+ kockázatok); a nemzetközi gyakorlat gyakran **7 dimenziót** említ. (§ 5.3)
-5. **Silver kiadása:** a Syllabus **Silver (2009)** 1. kiadását listázza; a 2. bővített kiadás **2011/2012**. Mindkettő érvényes hivatkozás. (§ 10)
-6. **Kreditérték / óraszám / konzultációszám:** a szkennelt Syllabusból **nem volt biztonságosan kiolvasható** — szándékosan nem becsültük. (§ 0)
+1. **Oktató személye:** korábbi feljegyzés „Novák Géza" — a Syllabus szerint a **tantárgyfelelős Prof. Dr. habil. Tick Andrea**, Novák Géza a **segédanyag szerzője**. (lásd: *Tantárgy adatok*)
+2. **BPM-életciklus fázisszáma:** Novák **5 fázis**; a 9. HTML-lecke **6 szakasz** (+ stratégiai irány); Dumas et al. **6 fázis**. Tartalmi ellentmondás nincs, csak eltérő granularitás. (1.8)
+3. **FMEA — RPN vs. AP:** Novák a klasszikus **RPN = S×O×D**-t tanítja (de óva int a mechanikus alkalmazástól); az **AIAG–VDA (2019)** az **Action Priority (H/M/L, súlyosság-elsőbbség)** módszerre váltott. (3.7)
+4. **Teknős-elemzés dimenziószáma:** Novák 6 kérdés + mérés (+ kockázatok); a nemzetközi gyakorlat gyakran **7 dimenziót** említ. (5.3)
+5. **Silver kiadása:** a Syllabus **Silver (2009)** 1. kiadását listázza; a 2. bővített kiadás **2011/2012**. Mindkettő érvényes hivatkozás. (lásd: *Felhasznált irodalom*)
+6. **Kreditérték / óraszám / konzultációszám:** a szkennelt Syllabusból **nem volt biztonságosan kiolvasható** — szándékosan nem becsültük. (lásd: *Tantárgy adatok*)
 
 ---
 
-# § 7. Kulcsfogalmak összesítő táblázata
+# Kulcsfogalmak összesítő táblázata
 
 | Fogalom | Definíció | Fejezet |
 |---|---|---|
-| **BPM** | Üzleti folyamatmenedzsment; a folyamatok tervezésének, modellezésének, végrehajtásának, mérésének és fejlesztésének irányítási megközelítése | A |
-| **BPR** | Business Process Reengineering; a folyamatok radikális újratervezése (Hammer–Champy, 1993) | A3 |
-| **Folyamatgazda** | A folyamat teljesítményéért és fejlesztéséért felelős személy (end-to-end) | A5 |
-| **RACI** | Felelősségi mátrix: Responsible, Accountable, Consulted, Informed | A5 |
-| **CMMI / OMG BPMM** | Ötszintű folyamatérettségi modellek | A7 |
-| **BPM-életciklus** | Tervezés → Modellezés → Végrehajtás → Monitorozás → Optimalizálás (5 fázis; Dumas: 6) | A8 |
-| **BPMN 2.0** | OMG-szabvány folyamatmodellezési jelölésrendszer | B |
-| **Esemény / Tevékenység / Átjáró** | BPMN folyamatobjektumok (kör / lekerekített téglalap / rombusz) | B2 |
-| **Medence / Sáv** | Résztvevő / szervezeti egység (úszósáv); köztük csak üzenetfolyam | B2.4 |
-| **Modellezési szintek** | Leíró / analitikus / végrehajtható (Silver) | B3 |
-| **Deadlock / livelock** | Holtpont / haladás nélküli körözés (hibás modellezési minták) | B3 |
-| **KPI** | Kulcsfontosságú teljesítménymutató | C1 |
-| **Cycle time / throughput time** | Feldolgozási idő / teljes átfutási idő (várakozással) | C1 |
-| **Értékteremtő arány** | Az értékteremtő idő aránya a teljes átfutási időhöz | C1 |
-| **Bottleneck** | Szűk keresztmetszet, a teljesítményt korlátozó pont | C2 |
-| **AS-IS / TO-BE** | Jelenlegi / fejlesztett jövőbeli folyamatmodell | C2 |
-| **Lean / MUDA / VSM / 5S** | Veszteségminimalizálás; veszteségtípusok; értékfolyam-térkép; munkahelyi rend | C3 |
-| **Six Sigma / DMAIC / DPMO** | Szóráscsökkentés; Define-Measure-Analyze-Improve-Control; hiba/millió | C4 |
-| **Szimuláció (DES / Monte Carlo)** | TO-BE-modellek futtatás előtti tesztelése | C5 |
-| **Process Mining** | Eseménynaplóból: discovery / conformance checking / enhancement (van der Aalst) | C6 |
-| **Event log** | Eseménynapló: case ID + activity + timestamp (+ resource) | C6 |
-| **FMEA / PFMEA / DFMEA / SFMEA** | Hibamód- és hatáselemzés és típusai | C7 |
-| **RPN** | Kockázati prioritási szám; RPN = S × O × D | C7 |
-| **Action Priority (AP)** | AIAG–VDA (2019) H/M/L döntési tábla az RPN helyett | C7 |
-| **5W+1H** | Who/What/Why/When/Where/How kérdezéstechnika | C8 |
-| **Ishikawa-diagram** | Halszálka; okok kategorizálása (6M) | C8 |
-| **BPMS** | Business Process Management Suite; a BPM-életciklust támogató integrált rendszer | D1 |
-| **Process engine** | A BPMS végrehajtó motorja (folyamatpéldányok futtatása) | D1 |
-| **BRMS** | Üzleti szabálykezelő (a döntési logika a kódtól elválasztva) | D1 |
-| **Process repository** | Folyamattár (modellek, verziók) | D1 |
-| **SOA** | Szolgáltatásorientált architektúra | D2 |
-| **Orkesztráció / koreográfia** | Központi vezérlés / elosztott, eseményvezérelt együttműködés | D2 |
-| **ESB** | Enterprise Service Bus; integrációs gerinc | D2 |
-| **Mikroszolgáltatás / EDA** | Finomszemcsés, önállóan telepíthető szolgáltatás / eseményvezérelt architektúra | D3 |
-| **RPA / IPA** | Robotic / Intelligent Process Automation | D4 |
-| **MIR / ISO 9001:2015** | Minőségirányítási rendszer; folyamatszemlélet + kockázatalapú gondolkodás | E1 |
-| **PDCA** | Plan-Do-Check-Act folyamatos fejlesztési ciklus (Shewhart/Deming) | E2 |
-| **Teknős-elemzés** | Turtle diagram; a folyamat működési környezetének átfogó elemzése | E3 |
-| **Dokumentációs hierarchia** | Politika/kézikönyv → eljárás → munkautasítás → feljegyzés | E4 |
-
+| **BPM** | Üzleti folyamatmenedzsment; a folyamatok tervezésének, modellezésének, végrehajtásának, mérésének és fejlesztésének irányítási megközelítése | 1. |
+| **BPR** | Business Process Reengineering; a folyamatok radikális újratervezése (Hammer–Champy, 1993) | 1.3 |
+| **Folyamatgazda** | A folyamat teljesítményéért és fejlesztéséért felelős személy (end-to-end) | 1.5 |
+| **RACI** | Felelősségi mátrix: Responsible, Accountable, Consulted, Informed | 1.5 |
+| **CMMI / OMG BPMM** | Ötszintű folyamatérettségi modellek | 1.7 |
+| **BPM-életciklus** | Tervezés → Modellezés → Végrehajtás → Monitorozás → Optimalizálás (5 fázis; Dumas: 6) | 1.8 |
+| **BPMN 2.0** | OMG-szabvány folyamatmodellezési jelölésrendszer | 2. |
+| **Esemény / Tevékenység / Átjáró** | BPMN folyamatobjektumok (kör / lekerekített téglalap / rombusz) | 2.2 |
+| **Medence / Sáv** | Résztvevő / szervezeti egység (úszósáv); köztük csak üzenetfolyam | 2.2.4 |
+| **Modellezési szintek** | Leíró / analitikus / végrehajtható (Silver) | 2.3 |
+| **Deadlock / livelock** | Holtpont / haladás nélküli körözés (hibás modellezési minták) | 2.3 |
+| **KPI** | Kulcsfontosságú teljesítménymutató | 3.1 |
+| **Cycle time / throughput time** | Feldolgozási idő / teljes átfutási idő (várakozással) | 3.1 |
+| **Értékteremtő arány** | Az értékteremtő idő aránya a teljes átfutási időhöz | 3.1 |
+| **Bottleneck** | Szűk keresztmetszet, a teljesítményt korlátozó pont | 3.2 |
+| **AS-IS / TO-BE** | Jelenlegi / fejlesztett jövőbeli folyamatmodell | 3.2 |
+| **Lean / MUDA / VSM / 5S** | Veszteségminimalizálás; veszteségtípusok; értékfolyam-térkép; munkahelyi rend | 3.3 |
+| **Six Sigma / DMAIC / DPMO** | Szóráscsökkentés; Define-Measure-Analyze-Improve-Control; hiba/millió | 3.4 |
+| **Szimuláció (DES / Monte Carlo)** | TO-BE-modellek futtatás előtti tesztelése | 3.5 |
+| **Process Mining** | Eseménynaplóból: discovery / conformance checking / enhancement (van der Aalst) | 3.6 |
+| **Event log** | Eseménynapló: case ID + activity + timestamp (+ resource) | 3.6 |
+| **FMEA / PFMEA / DFMEA / SFMEA** | Hibamód- és hatáselemzés és típusai | 3.7 |
+| **RPN** | Kockázati prioritási szám; RPN = S × O × D | 3.7 |
+| **Action Priority (AP)** | AIAG–VDA (2019) H/M/L döntési tábla az RPN helyett | 3.7 |
+| **5W+1H** | Who/What/Why/When/Where/How kérdezéstechnika | 3.8 |
+| **Ishikawa-diagram** | Halszálka; okok kategorizálása (6M) | 3.8 |
+| **BPMS** | Business Process Management Suite; a BPM-életciklust támogató integrált rendszer | 4.1 |
+| **Process engine** | A BPMS végrehajtó motorja (folyamatpéldányok futtatása) | 4.1 |
+| **BRMS** | Üzleti szabálykezelő (a döntési logika a kódtól elválasztva) | 4.1 |
+| **Process repository** | Folyamattár (modellek, verziók) | 4.1 |
+| **SOA** | Szolgáltatásorientált architektúra | 4.2 |
+| **Orkesztráció / koreográfia** | Központi vezérlés / elosztott, eseményvezérelt együttműködés | 4.2 |
+| **ESB** | Enterprise Service Bus; integrációs gerinc | 4.2 |
+| **Mikroszolgáltatás / EDA** | Finomszemcsés, önállóan telepíthető szolgáltatás / eseményvezérelt architektúra | 4.3 |
+| **RPA / IPA** | Robotic / Intelligent Process Automation | 4.4 |
+| **MIR / ISO 9001:2015** | Minőségirányítási rendszer; folyamatszemlélet + kockázatalapú gondolkodás | 5.1 |
+| **PDCA** | Plan-Do-Check-Act folyamatos fejlesztési ciklus (Shewhart/Deming) | 5.2 |
+| **Teknős-elemzés** | Turtle diagram; a folyamat működési környezetének átfogó elemzése | 5.3 |
+| **Dokumentációs hierarchia** | Politika/kézikönyv → eljárás → munkautasítás → feljegyzés | 5.4 |
 ---
 
-# § 8. Vizsgafókusz — V1–V5 tételösszefoglalók
+# Vizsgafókusz — V1–V5 tételösszefoglalók
 
 > Tömör „vizsgára" összefoglalók, hogy a szakirányi tételsor fókusza ne vesszen el. A részletek a hivatkozott fejezetekben.
 
-## 8.1. V1 — BPM életciklusa és BPMS rendszerek felépítése  *(→ § 1.8, § 4.1)*
+## V1 — BPM életciklusa és BPMS rendszerek felépítése  *(→ 1.8, 4.1)*
 
 A BPM az üzleti folyamatokat középpontba állító, **ciklikus** irányítási szemlélet. A **`SzgFM.pdf` öt fázisa:** Tervezés → Modellezés → Végrehajtás → Monitorozás → Optimalizálás, az optimalizálás után újraindul (a szakirodalom — Dumas et al. — 6 fázist nevesít). A **BPMS** a ciklus informatikai támogatója, amely **hidat képez az üzleti és IT-oldal között**. Fő komponensei: **folyamatmodellező** (BPMN), **végrehajtó motor** (process engine), **üzleti szabálykezelő** (BRMS), **üzleti analitika** (KPI/dashboard), **folyamattár** és **integrációs réteg** (ERP/CRM felé). Példa: a beszerzési igény elektronikus, értékhatár szerint jóváhagyott, ERP-vel integrált TO-BE folyamata.
 
-## 8.2. V2 — Üzleti folyamatok modellezése BPMN 2.0 szerint  *(→ § 2)*
+## V2 — Üzleti folyamatok modellezése BPMN 2.0 szerint  *(→ 2)*
 
 A **BPMN 2.0** OMG-szabvány, közös nyelv az üzlet és az IT között. Négy elemcsoport: **folyamatobjektumok** (esemény = kör, start/közbenső/vég, üzenet/idő/hiba/jelzés stb.; tevékenység = lekerekített téglalap, feladat/alfolyamat; átjáró = rombusz, **XOR/AND/OR/eseményalapú/komplex**), **összekötők** (szekvenciafolyam egy medencén belül, üzenetfolyam medencék között, asszociáció), **úszósávok** (medence = résztvevő, sáv = szerepkör) és **adat-/tárgyi elemek**. Három **modellezési szint** (leíró / analitikus / végrehajtható). Kerülendő **hibás minták:** deadlock, token-szaporodás, medencén átívelő szekvenciafolyam.
 
-## 8.3. V3 — Üzleti folyamatok mérése és optimalizálása (KPI)  *(→ § 3.1–3.6)*
+## V3 — Üzleti folyamatok mérése és optimalizálása (KPI)  *(→ 3.1–3.6)*
 
 „Amit nem mérünk, nem fejleszthető." A **KPI** célhoz kötött, célértékkel összevethető mutató; négy dimenzió: **idő** (ciklus-/átfutási idő, throughput, **értékteremtő arány**), **költség**, **minőség** (hibaarány, first-pass yield), **rugalmasság**. Az optimalizálás **AS-IS → gyökérok (bottleneck, redundancia) → TO-BE → értékelés (szimuláció) → bevezetés → visszamérés** menetű. Modern eszközök: **Lean** (MUDA, VSM, 5S), **Six Sigma/DMAIC**, **szimuláció** (DES, Monte Carlo) és **process mining** (event logból discovery/conformance/enhancement).
 
-## 8.4. V4 — Kockázatkezelés és hibamód-elemzés (FMEA)  *(→ § 3.7–3.8)*
+## V4 — Kockázatkezelés és hibamód-elemzés (FMEA)  *(→ 3.7–3.8)*
 
 Az **FMEA** proaktív kockázatkezelés: a hiba **előtt** azonosítja a hibamódot, -hatást, -okot. A BPM-ben a **PFMEA** a fő típus (DFMEA = tervezés, SFMEA = rendszer). Klasszikus mutató: **RPN = S × O × D** (mind 1–10; D-nél a magas érték rosszabb). Magas RPN → **kockázatcsökkentő intézkedés** (O csökkentése, D javítása, ritkán S), majd **újraértékelés** (visszamérés). Fontos: az RPN-t **nem** szabad mechanikusan használni (magas S kiemelt!), és az **AIAG–VDA (2019)** ma **Action Priority (H/M/L)** módszert használ helyette. Kiegészítő gyökérok-eszközök: **5W+1H** és **Ishikawa**-diagram.
 
-## 8.5. V5 — Folyamatszemléletű irányítási rendszerek és dokumentáció  *(→ § 5, § 1.5)*
+## V5 — Folyamatszemléletű irányítási rendszerek és dokumentáció  *(→ 5, 1.5)*
 
 A folyamatszemléletű irányítás a szervezetet **folyamatok rendszereként** kezeli; kulcsszereplő a **folyamatgazda** (RACI). A **MIR / ISO 9001:2015** két pillére a **folyamatszemlélet** és a **kockázatalapú gondolkodás**, kerete a **PDCA** (Shewhart/Deming). A **teknős-elemzés** a folyamat működési környezetét (bemenet, kimenet, ki, mivel, hogyan, mérés, kockázat) tárja fel — ISO-auditeszköz. A **folyamatszabályozás** dokumentációs hierarchiája: politika/kézikönyv → eljárás → munkautasítás → feljegyzés. A **KPI-k** a PDCA Check-jén keresztül táplálják a folyamatos fejlesztést.
 
 ---
 
-# § 9. Tantárgyi kapcsolatok
+# Tantárgyi kapcsolatok
 
 - **GMXIV2MBLF — Integrált vállalatirányítási rendszerek:** a BPM/BPMS szorosan kapcsolódik az **ERP**-hez (a BPMS integrációs rétege ERP-modulokat hív); a **BPR** közös téma (V13: ERP-bevezetés és BPR); a **SOA/mikroszolgáltatások** az integrált rendszerek architektúrái.
 - **GMXIR1MBLF — Menedzsment információs rendszerek:** a **KPI-k, dashboardok, BI** és az adatalapú döntéstámogatás átfed a folyamatméréssel és a process mininggal (V9: dashboard/Power BI; V10: adattárház/adatbányászat).
@@ -776,18 +775,18 @@ A folyamatszemléletű irányítás a szervezetet **folyamatok rendszereként** 
 
 ---
 
-# § 10. Feldolgozott forrásanyagok és felhasznált irodalom
+# Feldolgozott forrásanyagok és felhasznált irodalom
 
-## 10.1. Helyi (elsődleges) forrásanyagok
+## Helyi (elsődleges) forrásanyagok
 
 | Forrás | Leírás | Felhasználás |
 |---|---|---|
 | **Novák Géza (2026): Számítógépes folyamatmenedzsment** (`SzgFM.pdf`, 106 o.) | A tárgy elsődleges oktatási segédanyaga | A–E minden fejezet törzse |
-| **BPMN Quick Reference Guide** (`BPMN_Quick_Reference_Guide_ENG.pdf`, OMG) | A BPMN 2.0 jelölésrendszer grafikus referenciája | § 2.2 elemtáblák megerősítése |
+| **BPMN Quick Reference Guide** (`BPMN_Quick_Reference_Guide_ENG.pdf`, OMG) | A BPMN 2.0 jelölésrendszer grafikus referenciája | 2.2 elemtáblák megerősítése |
 | **HTML tananyagegységek (1–13. lecke + Ellenőrző kérdések + Összegzés)** | A konzultációs tematika digitális leckéi | A–E, fogalomtár |
-| **Syllabus** (`… - Syllabus.pdf`, szkennelt; OCR-rel feldolgozva) | Tantárgyi adatok, kötelező irodalom, tematika | § 0 |
+| **Syllabus** (`… - Syllabus.pdf`, szkennelt; OCR-rel feldolgozva) | Tantárgyi adatok, kötelező irodalom, tematika | lásd: *Tantárgy adatok* |
 
-## 10.2. A Syllabusban megadott kötelező irodalom
+## A Syllabusban megadott kötelező irodalom
 
 - White, S. A., & Miers, D. (2008). *BPMN Modeling and Reference Guide*. Future Strategies.
 - Silver, B. (2009). *BPMN Method and Style*. Cody-Cassidy Press. *(2. bővített kiadás: 2011/2012.)*
@@ -795,7 +794,7 @@ A folyamatszemléletű irányítás a szervezetet **folyamatok rendszereként** 
 - Allweyer, T. (2016). *BPMN 2.0: Introduction to the Standard for Business Process Modeling*. Books on Demand.
 - Molnár, B. (2013). *Szolgáltatás orientált architektúrák információs rendszerekben*.
 
-## 10.3. Felhasznált és ajánlott szakirodalom (APA 7)
+## Felhasznált és ajánlott szakirodalom (APA 7)
 
 *(A klasszikus, elsődleges modelleknél az eredeti megjelenés éve szerepel; minden tétel bibliográfiai adatát ellenőriztük, kitalált forrás nincs.)*
 
