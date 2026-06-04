@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-06-03 — A GMXHR1MBLF (HR menedzsment és vez. tech.) kontextusfájl teljes körű, tankönyvi mélységű bővítése (a tétel-állapotok változatlanok: K8–K13 ✅)
+**Utolsó frissítés:** 2026-06-04 — A GIXVS2MBLF (Vezetői számvitel és controlling) kontextusfájl teljes körű, tankönyvi mélységű bővítése: a két tematikai tömb (A: vezetői számvitel / B: controlling rendszer) szerinti átstrukturálás, numerikus számpéldák, Mermaid-diagramok, APA 7 hivatkozások (a tétel-állapotok változatlanok: K14–K20 ✅)
 
 ---
 
