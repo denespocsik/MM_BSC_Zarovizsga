@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-06-04 — A négy kidolgozott kontextusfájl (GMXMD1MBLF, GMXHR1MBLF, GIXVS2MBLF, GMXSF2MBLF) fejezetszámozásának egységesítése a Menedzsment alapjai mintája szerint: számozatlan fejléc-szekciók, a tananyag 1-től számozott fejezetei, számozatlan záró szekciók; a belső kereszthivatkozások frissítve. A tétel-állapotok változatlanok (K1–K20, V1–V5 ✅).
+**Utolsó frissítés:** 2026-06-05 — Az Integrált vállalatirányítási rendszerek (GMXIV2MBLF) kontextusfájl teljes körű átstrukturálása és tankönyvi mélységű bővítése az ERP-tudásterület belső logikája szerint (A–E blokk, 26 fejezet, Mermaid-diagramok, V11–V15 kereszthivatkozások és cheat-sheet, bővített kulcsfogalmak, APA 7 irodalom, Syllabus-OCR-ből ellenőrzött tantárgyadatok). A tétel-állapotok és a leképezés változatlanok (K1–K20, V1–V5, V11–V20 ✅; V6–V10 ⏳).
 
 ---
 
