@@ -2,6 +2,8 @@
 
 **Tétel:** Vezetői stílusok: Hogyan definiálja a vezetői stílust? Mitől függ, és mik befolyásolják a vezető stílusát? Milyen különbségek vannak a vezetői és a menedzseri szerepkörök között? Milyen helyzetben milyen vezetői stílus a megfelelő?
 
+---
+
 ### A vezetői stílus fogalma
 
 A **vezetői stílus** a vezető és beosztottak közötti viszony jellegzetes, visszatérő mintázata — az a mód, ahogyan a vezető döntéseket hoz, utasít, kommunikál és motivál. A stílus nem csupán személyiségfüggő: a helyzet, a feladat és a beosztottak érettségétől is nagymértékben függ, melyik stílus eredményes.
