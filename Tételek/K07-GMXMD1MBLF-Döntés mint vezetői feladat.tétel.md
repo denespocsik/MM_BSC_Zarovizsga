@@ -2,6 +2,8 @@
 
 **Tétel:** Döntés mint vezetői feladat: Ismertesse a vezetői döntés szerepét, a döntést, mint vezetői feladatot! Mutassa be a döntési modelleket és ismertesse a döntést hátráltató tényezőket!
 
+---
+
 ### A döntés fogalma
 
 **Kornai János** szerint a döntés „cselekvési változatok közötti szabad, tudatos választás." Három elemet tartalmaz ez a definíció: (1) legalább két alternatíva létezik, (2) a választás szabad — nem automatikus reakció, (3) tudatos — a döntéshozó átgondolja a lehetőségeket.
