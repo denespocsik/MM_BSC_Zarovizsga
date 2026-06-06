@@ -24,7 +24,9 @@ flowchart TD
     classDef end_node fill:#dcfce7,stroke:#16a34a,color:#14532d,font-weight:bold
 ```
 
-A tervezés alapja a **munkakörelemzés (job analysis)**: minden munkakör feladatainak, felelősségeinek, szükséges kompetenciáinak és munkafeltételeinek szisztematikus feltárása. Eredménye a **munkaköri leírás** (job description) és a **munkaköri specifikáció** (job specification), amely meghatározza az alkalmazottal szemben támasztott követelményeket.
+A tervezés alapja a **munkakörelemzés (job analysis)**: minden munkakör feladatainak, felelősségeinek, szükséges kompetenciáinak és munkafeltételeinek szisztematikus feltárása. Két fő kimenete a **munkaköri leírás** (*job description* — mit kell csinálni) és a **munkaköri specifikáció** (*job specification* — milyen ember kell hozzá), amely meghatározza az alkalmazottal szemben támasztott kompetencia-, képesítési és tapasztalati követelményeket (Milkovich & Glueck, 1995).
+
+A **munkakör-értékelés** (*job evaluation*) a munkakörök relatív szervezeti súlyának és értékének megállapítása — ez adja az igazságos bérrendszer alapját. Elkülönül a munkakörelemzéstől: míg az utóbbi leírja a munkakört, az értékelés annak szervezeti fontosságát rangsorolja.
 
 ### Toborzás
 
@@ -38,6 +40,15 @@ A toborzás (recruitment) a potenciális jelöltek megtalálásának és bevoná
 | Innováció | Kevesebb | Több |
 | Motivációs hatás | Ösztönzi a karriert | Belső feszültség |
 
-Az Armstrong–Taylor szerzőpáros (2016) hangsúlyozza, hogy a toborzás hatékonysága a munkáltatói márka (employer brand) erősségétől is függ: azok a szervezetek, amelyek vonzó munkahelynek számítanak, kisebb erőforrással is jobb jelölteket vonzanak.
+Dessler (2020) keretrendszere szerint a toborzási csatorna megválasztása a munkakör jellegétől, a munkaerőpiaci helyzettől és a rendelkezésre álló időtől függ.
+
+**Munkáltatói márka (employer branding).** Armstrong és Taylor (2014) hangsúlyozza, hogy a toborzás hatékonysága a munkáltatói márka erősségétől függ: a szervezet mint munkahely vonzerejét a tudatosan épített *munkavállalói értékajánlat* (*EVP — employee value proposition*) alapozza meg. Azok a szervezetek, amelyek vonzó munkahelynek számítanak, kisebb erőforrással is jobb jelölteket vonzanak.
 
 ---
+
+## Irodalom
+
+- Armstrong, M. & Taylor, S. (2014). *Armstrong's handbook of human resource management practice* (13th ed.). Kogan Page.
+- Borgulya I-né et al. (2006). *Emberi erőforrás menedzsment kézikönyv.* CompLex Kiadó, Budapest.
+- Dessler, G. (2020). *Human resource management* (16th ed.). Pearson.
+- Milkovich, G. T. & Glueck, F. W. (1995). *Personnel/Human Resource Management: A Diagnostic Approach.* Business Publications Inc., Texas.
