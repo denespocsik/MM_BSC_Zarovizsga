@@ -2,6 +2,8 @@
 
 **Tétel:** Költségszámítás a controllingban: A költségszámítás szerepe a controllingban. A költség fogalma és a költség–kiadás különbsége. A költségek csoportosítása. A modern költség- és teljesítményelszámolás céljai. A vezetésorientált számvitel (Management Accounting) szerepe. A költségelszámolás rendszerei.
 
+---
+
 ### A költség fogalma és különbsége a kiadástól
 
 **Kiadás**: pénzeszköz tényleges kiáramlása (pl. gépvásárlás teljes vételára egy összegben).  
