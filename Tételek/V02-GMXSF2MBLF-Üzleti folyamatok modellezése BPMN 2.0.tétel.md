@@ -1,6 +1,6 @@
 ## V2 – Üzleti folyamatok modellezése BPMN 2.0 szabvány szerint
 
-**Tételkérdés:** Mutassa be a BPMN 2.0 jelölésrendszer legfontosabb elemeit és a folyamatok strukturálásának lehetőségeit! Ismertesse az alapvető objektumtípusokat, a szervezési elemeket és az összekötő elemeket!
+**Tétel:** Üzleti folyamatok modellezése BPMN 2.0 szabvány szerint: Mutassa be a BPMN 2.0 jelölésrendszer legfontosabb elemeit és a folyamatok strukturálásának lehetőségeit! Alapvető objektumtípusok; Szervezési elemek szerepe a felelősségi körök kijelölésében; Az összekötő elemek és használati szabályaik.
 
 ---
 

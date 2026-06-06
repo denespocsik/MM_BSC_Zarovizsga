@@ -1,5 +1,7 @@
 ## K19 – Beruházási és befektetési döntések controlling szemléletben
 
+**Tétel:** Beruházási döntések controlling szemléletben: Beruházási és befektetési döntések controlling szemléletben. Gazdaságossági számítások szerepe a controllingban. Statikus beruházásértékelési módszerek. Dinamikus beruházásértékelési módszerek. Nettó jelenérték (NPV) koncepció. Cash-flow szerepe a beruházási döntésekben.
+
 ### A beruházási controlling logikája
 
 A beruházási controlling **nem ér véget a vásárlási döntéssel**. Három szakaszt fed le:

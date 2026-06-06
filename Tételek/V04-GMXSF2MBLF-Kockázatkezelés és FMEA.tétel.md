@@ -1,6 +1,6 @@
 ## V4 – Kockázatkezelés és hibamód-elemzés (FMEA) a folyamatokban
 
-**Tételkérdés:** Mutassa be a folyamatokhoz kapcsolódó kockázatok elemzésének módszertanát, különös tekintettel az FMEA alkalmazására! Ismertesse az RPN számítási módját és a kockázatcsökkentő intézkedések logikáját!
+**Tétel:** Kockázatkezelés és hibamód-elemzés (FMEA) a folyamatokban: Mutassa be a folyamatokhoz kapcsolódó kockázatok elemzésének módszertanát, különös tekintettel az FMEA alkalmazására! FMEA célja és alkalmazási területei; a kockázati prioritási szám (RPN); kockázatcsökkentő intézkedések.
 
 ---
 

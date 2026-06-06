@@ -1,6 +1,6 @@
 ## K5. Vezetői stílusok
 
-**Tétel:** „Hogyan definiálja a vezetői stílust? Mitől függ, és mik befolyásolják a vezető stílusát? Milyen különbségek vannak a vezetői és a menedzseri szerepkörök között? Milyen helyzetben milyen vezetői stílus a megfelelő?"
+**Tétel:** Vezetői stílusok: Hogyan definiálja a vezetői stílust? Mitől függ, és mik befolyásolják a vezető stílusát? Milyen különbségek vannak a vezetői és a menedzseri szerepkörök között? Milyen helyzetben milyen vezetői stílus a megfelelő?
 
 ### A vezetői stílus fogalma
 

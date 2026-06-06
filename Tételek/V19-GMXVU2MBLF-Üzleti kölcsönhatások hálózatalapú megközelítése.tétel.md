@@ -1,6 +1,6 @@
 ## V19 – Az üzleti kölcsönhatások hálózat alapú megközelítése
 
-**Tételkérdés:** Ismertesse a struktúra-alapú és a folyamat-alapú megközelítés kritikáját! Mutassa be a piac hálózatalapú értelmezését!
+**Tétel:** Üzleti kölcsönhatások hálózatalapú megközelítése: Az üzleti kölcsönhatások hálózat alapú megközelítése. Ismertesse a struktúra-alapú és a folyamat-alapú megközelítés kritikáját! Mutassa be a piac hálózatalapú értelmezését!
 
 ---
 

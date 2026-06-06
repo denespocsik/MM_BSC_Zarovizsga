@@ -1,5 +1,7 @@
 ## K11 — Vezetés fogalma és vezetői szerepek
 
+**Tétel:** Vezetés fogalma és vezetői szerepek: Ismertesse a vezetés fogalmát! Mutassa be a vezetői szerepek fő típusait! Ismertesse, hogy a vezetői stílus milyen hatással van a szervezeti teljesítményre!
+
 ### Leader és menedzser — fogalmi elhatárolás
 
 A szakirodalom következetesen különválasztja a *menedzsment* és a *leadership* fogalmát. Bennis és Nanus (1985) szerint: „A menedzserek jól csinálják a dolgokat; a leaderek a jó dolgokat csinálják." A menedzser a *komplexitást* kezeli (tervezés, szervezés, ellenőrzés); a vezető a *változást* (irányadás, inspiráció, emberek mozgósítása). A menedzsment négy funkciója: **tervezés, szervezés, irányítás, vezetés**. Bakacsi (2010) szerint a leadership azt a képességet jelenti, amellyel a vezető mozgósítani tudja a szervezet tagjait a közös célok érdekében.

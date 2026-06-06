@@ -1,6 +1,6 @@
 ## V16 – A vállalat komplex hálózati modellje
 
-**Tételkérdés:** Mutassa be milyen hálózati rétegekből áll egy komplex vállalati hálózat, és mi a jellemző a különböző réteghálózatokra!
+**Tétel:** Vállalat komplex hálózati modellje: A vállalat komplex hálózati modellje. Mutassa be milyen hálózati rétegekből áll egy komplex vállalati hálózat, és mi a jellemző a különböző réteghálózatokra!
 
 ---
 

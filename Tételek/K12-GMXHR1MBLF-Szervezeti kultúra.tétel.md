@@ -1,5 +1,7 @@
 ## K12 — Szervezeti kultúra
 
+**Tétel:** Szervezeti kultúra: Ismertesse a szervezeti kultúra fogalmát! Mutassa be a szervezeti kultúra fő elemeit! Ismertesse a vezető szerepét a szervezeti kultúra formálásában és működtetésében!
+
 ### Fogalom
 
 A szervezeti kultúra meghatározása nem egységes a szakirodalomban. Deal és Kennedy (1982) köznapi megfogalmazása: *„Ahogy mi itt a dolgunkat tesszük."* Schein (1985) átfogóbb definíciója szerint a szervezeti kultúra a szervezet tagjai által egyöntetűen elfogadott előfeltevések, értékek, meggyőződések és hiedelmek összessége.

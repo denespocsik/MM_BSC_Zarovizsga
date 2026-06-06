@@ -1,6 +1,6 @@
 ## V17 – Az üzleti hálózatok kölcsönhatásait befolyásoló tényezők
 
-**Tételkérdés:** Az üzleti hálózatok kölcsönhatásait befolyásoló tényezők: a kölcsönhatások időbelisége; szubjektív értelmezés; kapcsoltság; kölcsönös függőség; viszonylagosság.
+**Tétel:** Üzleti hálózatok kölcsönhatásait befolyásoló tényezők: Az üzleti hálózatok kölcsönhatásait befolyásoló tényezők: a kölcsönhatások időbelisége; szubjektív értelmezés; kapcsoltság; kölcsönös függőség; viszonylagosság.
 
 ---
 

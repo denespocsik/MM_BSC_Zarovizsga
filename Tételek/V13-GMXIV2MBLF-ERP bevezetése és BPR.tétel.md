@@ -1,6 +1,6 @@
 ## V13 – ERP rendszer bevezetése, kiválasztása és az üzleti folyamatok újratervezése (BPR)
 
-**Tételkérdés:** Mutassa meg, miért van szükség egy ERP rendszer bevezetésére egy vállalatnál – ismertesse a célokat, az előnyöket, a hátrányokat és a bevezetéssel járó szervezeti változásokat! Ismertesse az integrált vállalatirányítási rendszerek kiválasztásának szempontjait, módszereit, szabványait és leggyakoribb buktatóit! Mutassa be az üzleti folyamatok újratervezésének (BPR) szerepét és jelentőségét az ERP bevezetés kontextusában, és fejtse ki, hogyan valósítható meg a BPR a gyakorlatban egy ERP projekt keretein belül!
+**Tétel:** ERP bevezetése és BPR: Mutassa meg, miért van szükség egy ERP rendszer bevezetésére egy vállalatnál – ismertesse a célokat, az előnyöket, a hátrányokat és a bevezetéssel járó szervezeti változásokat! Ismertesse az integrált vállalatirányítási rendszerek kiválasztásának szempontjait, módszereit, szabványait és leggyakoribb buktatóit! Mutassa be az üzleti folyamatok újratervezésének (BPR) szerepét és jelentőségét az ERP bevezetés kontextusában, és fejtse ki, hogyan valósítható meg a BPR a gyakorlatban egy ERP projekt keretein belül!
 
 ---
 

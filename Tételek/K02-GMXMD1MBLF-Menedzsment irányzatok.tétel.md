@@ -1,6 +1,6 @@
 ## K2. Menedzsment irányzatok
 
-**Tétel:** „Ismertesse a menedzsment tudomány főbb időszakait! Mutassa be a klasszikus irányzat főbb alakjai közül Taylor, Fayol és Ford munkásságának főbb pontjait, valamint, hogy milyen hatással vannak a XXI. század menedzsmentjére?"
+**Tétel:** Menedzsment irányzatok: Ismertesse a menedzsment tudomány főbb időszakait! Mutassa be a klasszikus irányzat főbb alakjai közül Taylor, Fayol és Ford munkásságának főbb pontjait, valamint, hogy milyen hatással vannak a XXI. század menedzsmentjére?
 
 ### A fejlődés három nagy korszaka
 

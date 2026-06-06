@@ -1,6 +1,6 @@
 ## V18 – Hálózati működés
 
-**Tételkérdés:** Mutassa be a vállalati működés hálózatelvű megközelítését! A hálózati működés szempontjai.
+**Tétel:** Hálózati működés és szempontjai: Hálózati működés. Mutassa be a vállalati működés hálózatelvű megközelítését! A hálózati működés szempontjai.
 
 ---
 

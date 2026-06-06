@@ -1,6 +1,6 @@
 ## V3 – Üzleti folyamatok mérése és optimalizálása
 
-**Tételkérdés:** Elemezze a folyamatok hatékonyságának mérési lehetőségeit és az optimalizáláshoz vezető módszertani lépéseket! Értelmezze a KPI meghatározásának szerepét, a szimuláció jelentőségét és az AS-IS/TO-BE elemzés logikáját!
+**Tétel:** Üzleti folyamatok mérése és optimalizálása: Elemezze a folyamatok hatékonyságának mérési lehetőségeit és az optimalizáláshoz vezető módszertani lépéseket! KPI meghatározása és szerepe a folyamatkövetésben; monitorozási adatok és folyamatszimuláció jelentősége; a folyamatoptimalizálás szakaszai;
 
 ---
 

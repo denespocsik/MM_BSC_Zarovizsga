@@ -1,6 +1,6 @@
 ## V20 – Hálózati üzleti stratégia
 
-**Tételkérdés:** Mutassa be az üzleti stratégiaalkotás hálózati megközelítését! Hogyan értelmezi a hálózati stratégia: a szervezeti határokat és a szervezeti eredményességet.
+**Tétel:** Hálózati üzleti stratégia: Hálózati üzleti stratégia. Mutassa be az üzleti stratégiaalkotás hálózati megközelítését! Hogyan értelmezi a hálózati stratégiát: a szervezeti határokat és a szervezeti eredményességet.
 
 ---
 

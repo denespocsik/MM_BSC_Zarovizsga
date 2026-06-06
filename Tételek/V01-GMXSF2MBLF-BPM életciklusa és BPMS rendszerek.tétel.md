@@ -1,6 +1,6 @@
 ## V1 – Az üzleti folyamatmenedzsment (BPM) életciklusa és a BPMS rendszerek felépítése
 
-**Tételkérdés:** Ismertesse a folyamatmenedzsment életciklusának szakaszait és a támogató informatikai rendszerek (BPMS) alapvető összetevőit! Értelmezze a BPMS hídszerepét az üzleti és informatikai oldal között!
+**Tétel:** Az üzleti folyamatmenedzsment (BPM) életciklusa és a BPMS rendszerek felépítése: Ismertesse a folyamatmenedzsment életciklusának szakaszait és a támogató informatikai rendszerek (BPMS) alapvető összetevőit! A folyamatmenedzsment életciklusának lépései; BPMS (Business Process Management Suite) fő komponensei; Az informatika és az üzleti oldal közötti híd szerepének értelmezése a BPMS segítségével.
 
 ---
 

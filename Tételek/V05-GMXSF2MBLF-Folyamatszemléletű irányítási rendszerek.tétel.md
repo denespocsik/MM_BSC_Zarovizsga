@@ -1,6 +1,6 @@
 ## V5 – Folyamatszemléletű irányítási rendszerek és dokumentáció
 
-**Tételkérdés:** Értelmezze a folyamatközpontú megközelítést a minőségirányítási rendszerekben (MIR) és a kapcsolódó dokumentációs követelményeket! Mutassa be a teknős-elemzést, a folyamatleltárt, a KPI és PDCA ciklus összefüggését!
+**Tétel:** Folyamatszemléletű irányítási rendszerek és dokumentáció: Értelmezze a folyamatközpontú megközelítést a minőségirányítási rendszerekben (MIR) és a kapcsolódó dokumentációs követelményeket! A folyamatleltár és a folyamatleírások; a "teknős-elemzés" (turtle diagram); KPI és a PDCA ciklus kapcsolata a szabványosított rendszerekben.
 
 ---
 

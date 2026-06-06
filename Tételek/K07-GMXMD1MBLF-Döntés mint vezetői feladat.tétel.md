@@ -1,6 +1,6 @@
 ## K7. Döntés mint vezetői feladat
 
-**Tétel:** „Ismertesse a vezetői döntés szerepét, a döntést, mint vezetői feladatot! Mutassa be a döntési modelleket és ismertesse a döntést hátráltató tényezőket!"
+**Tétel:** Döntés mint vezetői feladat: Ismertesse a vezetői döntés szerepét, a döntést, mint vezetői feladatot! Mutassa be a döntési modelleket és ismertesse a döntést hátráltató tényezőket!
 
 ### A döntés fogalma
 

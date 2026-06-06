@@ -1,6 +1,6 @@
 ## K6. Motivációs elméletek
 
-**Tétel:** „Hogyan motiválhatják a vezetők/menedzserek az alkalmazottakat? Ismertessen legalább három motivációs elméletet!"
+**Tétel:** Motivációs elméletek: Hogyan motiválhatják a vezetők/menedzserek az alkalmazottakat? Ismertessen legalább három motivációs elméletet!
 
 ### A motiváció fogalma és szerepe
 

@@ -1,5 +1,7 @@
 ## K10 — Kiválasztási folyamat és módszerek
 
+**Tétel:** Kiválasztási folyamat és módszerei: Ismertesse a kiválasztás fogalmát és célját! Mutassa be a kiválasztási folyamat fő lépéseit! Ismertesse a leggyakrabban alkalmazott kiválasztási módszereket!
+
 ### A kiválasztás mint döntési folyamat
 
 A kiválasztás (selection) a toborzás során összegyűlt jelöltek közül a legalkalmasabb kiválasztását jelenti. Az alapelv az illeszkedés (fit): a jelölt kompetenciái, értékrendje és személyisége illeszkedjen a munkakör követelményeihez és a szervezeti kultúrához (Milkovich–Glueck, 1995).

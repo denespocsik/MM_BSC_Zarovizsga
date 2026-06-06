@@ -1,5 +1,7 @@
 ## K17 – Kalkulációs módszerek és fedezetszámítás a vezetői döntésekben
 
+**Tétel:** Kalkulációs módszerek és fedezetszámítás: Kalkulációs módszerek és fedezetszámítás a vezetői döntésekben. A kalkuláció fogalma és típusai (elő-, közbenső-, utókalkuláció). Kalkulációs módszerek: osztókalkuláció, egyenértékszámos kalkuláció, pótlékoló kalkuláció, normatív kalkuláció, ABC kalkuláció. Az ÁKFN struktúra és alkalmazása. Break-even elemzés és fedezeti pont szerepe.
+
 ### A kalkuláció fogalma és típusai
 
 A **kalkuláció** az egységnyi termékre (vagy szolgáltatásra) vetített önköltség meghatározása. Három időbeli típusa van:

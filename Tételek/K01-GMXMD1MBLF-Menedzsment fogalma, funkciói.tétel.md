@@ -1,6 +1,6 @@
 ## K1. Menedzsment fogalma, funkciói
 
-**Tétel:** „Ismertesse a menedzsment fogalmát, kulcskérdéseit! Mutassa be a főbb szakterületeket és a menedzsment négy fő funkcióját!"
+**Tétel:** Menedzsment fogalma, funkciói: Ismertesse a menedzsment fogalmát, kulcskérdéseit! Mutassa be a főbb szakterületeket és a menedzsment négy fő funkcióját!
 
 ### A szervezet mint kiindulópont
 

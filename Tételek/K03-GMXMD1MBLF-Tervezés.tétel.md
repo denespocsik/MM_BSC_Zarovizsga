@@ -1,6 +1,6 @@
 ## K3. Tervezés
 
-**Tétel:** „Mit jelent a cégek esetében a változó környezet, a szervezeti filozófia, a jövőkép, a küldetés, ezek milyen időtávra szólnak? Ismertesse a tervezés lépéseit és eszközeit! Ismertessen a környezet, továbbá a belső erőforrás elemzésére szolgáló módszereket!"
+**Tétel:** Tervezés: Mit jelent a cégek esetében a változó környezet, a szervezeti filozófia, a jövőkép, a küldetés, ezek milyen időtávra szólnak? Ismertesse a tervezés lépéseit és eszközeit! Ismertessen a környezet, továbbá a belső erőforrás elemzésére szolgáló módszereket!
 
 ### A változó környezet és a stratégiai tervezés szükségessége
 
