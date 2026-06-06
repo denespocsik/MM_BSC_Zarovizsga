@@ -2,6 +2,8 @@
 
 **Tétel:** Controlling szemléletmód és rendszer: A controlling szemléletmód és a controlling rendszer szerepe a vállalatirányításban. A controlling fogalma és szemléletmódja. A controlling feladatai és főbb területei. A controlling haszna a vállalati működésben.
 
+---
+
 ### A controlling fogalma
 
 A „to control" angol ige szabályozást, irányítást jelent – nem csupán ellenőrzést. A controlling a **tervezést, ellenőrzést és információellátást koordináló vezetési alrendszer** (Horváth–Dobák, 1990). Röviden: a controlling a vállalat nyereségmenedzsmentje, amely a vagyon, a likviditás és az eredmény kapcsolatát folyamatosan szem előtt tartja (Ladó, 1992).
