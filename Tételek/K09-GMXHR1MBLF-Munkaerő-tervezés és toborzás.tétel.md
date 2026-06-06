@@ -2,6 +2,8 @@
 
 **Tétel:** Munkaerő tervezés és toborzás: Ismertesse a munkaerő tervezés fogalmát és jelentőségét! Mutassa be a toborzás fő formáit és csatornáit! Ismertesse a belső és külső toborzás előnyeit és hátrányait!
 
+---
+
 ### Munkaerő-tervezés
 
 A munkaerő-tervezés (HR planning / workforce planning) előrevetíti, hogy a szervezetnek milyen emberekre lesz szüksége, mikor és milyen számban, hogy stratégiai céljait elérje. Milkovich és Glueck (1995) szerint a folyamat két lépésből áll: a kereslet előrejelzéséből (hány és milyen kompetenciájú munkavállalóra van szükség) és a kínálat elemzéséből (kik állnak rendelkezésre belülről és kívülről).
