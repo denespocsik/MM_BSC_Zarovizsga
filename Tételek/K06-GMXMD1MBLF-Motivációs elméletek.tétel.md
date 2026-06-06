@@ -2,6 +2,8 @@
 
 **Tétel:** Motivációs elméletek: Hogyan motiválhatják a vezetők/menedzserek az alkalmazottakat? Ismertessen legalább három motivációs elméletet!
 
+---
+
 ### A motiváció fogalma és szerepe
 
 **Motiváció** az a belső állapot, amely cselekvésre késztet, fenntartja és irányítja azt. A munkavégzés kontextusában a motiváció azt magyarázza meg, hogy valaki miért tesz erőfeszítést, miért tartja fenn azt, és miért éppen abba az irányba cselekszik, amerre.
