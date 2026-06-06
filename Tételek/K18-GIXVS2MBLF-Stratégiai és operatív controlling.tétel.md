@@ -2,6 +2,8 @@
 
 **Tétel:** Stratégiai és operatív controlling: Stratégiai és operatív controlling. A stratégiai tervezés fogalma és szakaszai. A stratégiai controlling fogalma, feladata, eszközei. Az operatív controlling fogalma, szerepe, feladatai. Stratégiai és operatív controlling összehasonlítása. A controlling szerepe a versenyképesség javításában.
 
+---
+
 ### A stratégiai tervezés fogalma és szakaszai
 
 A stratégiai menedzsment a vállalat **hosszú távú versenyképességét** alapozza meg. Lépései (Katona, EA 9.):
