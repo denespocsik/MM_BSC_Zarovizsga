@@ -2,6 +2,8 @@
 
 **Tétel:** Szervezetek, szervezeti formák: Mi a különbség a munkaszervezet és a tulajdonosi szervezet között? Ismertesse a szervezetek működését meghatározó strukturális jellemzők (munkamegosztás, hatáskör megosztás, koordináció) alapján a főbb szervezeti típusokat!
 
+---
+
 ### Munkaszervezet és tulajdonosi szervezet
 
 A szervezeten belül két párhuzamos struktúra létezik, amelyeket nem szabad összekeverni.
