@@ -2,6 +2,8 @@
 
 **Tétel:** Menedzsment irányzatok: Ismertesse a menedzsment tudomány főbb időszakait! Mutassa be a klasszikus irányzat főbb alakjai közül Taylor, Fayol és Ford munkásságának főbb pontjait, valamint, hogy milyen hatással vannak a XXI. század menedzsmentjére?
 
+---
+
 ### A fejlődés három nagy korszaka
 
 A menedzsmenttudomány nem egyik napról a másikra született — az ipari forradalommal párhuzamosan, a nagyüzemi termelés szervezési problémáira adott válaszként alakult ki. Három korszakot szokás elkülöníteni:
