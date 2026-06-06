@@ -89,6 +89,28 @@ NPV = **+92,22 MFt** → a beruházás gazdaságos (pozitív jelenértékű töb
 PI = 592,22 / 500 = **1,18** → minden befektetett forint 1,18 Ft jelenértéket termel.  
 Diszkontált megtérülési idő: PBPD ≈ 3,22 év.
 
+### Az IRR korlátai
+
+Az IRR praktikus mutató, de három kritikus korlátja van (Brealey, Myers & Allen, 2020):
+
+1. **Többszörös IRR.** Ha a pénzáram előjele többször vált (nem konvencionális cash-flow), a polinomegyenletnek több (vagy nulla) valós megoldása is lehet — az IRR nem egyértelmű.
+2. **Skálaérzéketlenség.** Két, egymást kizáró projekt közül a magasabb IRR-ű nem feltétlenül teremt több *abszolút* értéket. (Pl. 50% IRR egy 1 MFt-os projekten kevesebb értéket jelent, mint 20% IRR egy 100 MFt-os projekten.)
+3. **Újrabefektetési feltevés.** Az IRR implicit feltételezi, hogy a köztes pénzáramok IRR-en fektethetők újra — ez gyors IRR esetén irreális. A **módosított IRR (MIRR)** ezt korrigálja: a köztes cash-flow-kat WACC-on fekteti újra.
+
+**Általános szabály:** egymást kizáró projektek összehasonlításakor vagy nem konvencionális cash-flow esetén az **NPV az elsődleges döntési kritérium** — az IRR ütközés esetén félrevezethet.
+
+### Kockázatelemzés beruházásoknál
+
+A pontbecslés (egyetlen NPV) kockázati profillá egészíthető ki három módszerrel:
+
+| Módszer | Lényeg | Eredmény |
+|---|---|---|
+| **Érzékenységvizsgálat** | Egy-egy paraméter (ár, volumen, WACC) változtatása | Melyik paraméter a legkritikusabb? |
+| **Szcenárió-elemzés** | Összefüggő pesszimista / reális / optimista forgatókönyvek | NPV-eloszlás három ponton |
+| **Monte Carlo-szimuláció** | A bemenetek eloszlásából véletlen mintavételezés | Az NPV teljes valószínűségi eloszlása |
+
+A szcenárió-elemzés és Monte Carlo-szimuláció megmutatja, hogy a pozitív NPV mennyire robusztus — milyen valószínűséggel marad pozitív kedvezőtlen körülmények között.
+
 ### Cash-flow szerepe
 
 A controlling **cash-flow-t használ**, nem könyvviteli nyereséget, mert:
@@ -96,6 +118,6 @@ A controlling **cash-flow-t használ**, nem könyvviteli nyereséget, mert:
 - A likviditást tükrözi, nem csak az eredményt.
 - Beruházásoknál a pénzkiáramlás/befolyás tényleges időpontja számít.
 
-> **Irodalom:** Katona F.: CONTROLLING 6. ea.; gyak_Beruházás-contr.pdf; Francsovics A.: Controlling, 4. fejezet; Brealey–Myers–Allen: Principles of Corporate Finance
+> **Irodalom:** Brealey, R. A., Myers, S. C., & Allen, F. (2020). *Principles of corporate finance* (13th ed.). McGraw-Hill Education. — Francsovics, A. (é. n.). *Controlling* [elektronikus tankönyv]. — Katona F.: CONTROLLING 6. ea.; gyak_Beruházás-contr.pdf.
 
 ---

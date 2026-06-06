@@ -12,36 +12,23 @@ A **kalkuláció** az egységnyi termékre (vagy szolgáltatásra) vetített ön
 
 ### Kalkulációs módszerek
 
-**1. Osztókalkuláció** – homogén termék esetén:
+**1. Osztókalkuláció** – homogén termék esetén: `Önköltség = Összes ktg. / Mennyiség`. **Egyenértékszámos** változat rokon termékekre: minden terméket egy koefficiensekkel vezértermékre számítunk át.
 
-```
-Önköltség = Összes költség / Termékmennyiség
+*Számpélda (forrás: gyak2_Önköltségszámítás.xlsx):* Időszaki ktg. = 10 500 eFt; négy termék egyenértékmennyisége összesen 70 000 db vezértermékben → egységköltség = 10 500 000 / 70 000 = **150 Ft/db** vezértermékben. „A" termék koefficiense 0,5 → önköltség **75 Ft/db**.
 
-Pl.: 10 000 db termék, összes ktg. = 5 000 000 Ft
-    → Önköltség = 500 Ft/db
-```
+**2. Pótlékoló kalkuláció** – heterogén termékmixnél a közvetett (általános) költségeket pótlékkulcs szerint vetítjük a termékekre:
 
-**2. Egyenértékszámos kalkuláció** – rokon termékek, ahol egy „alapcikk" többi arányát koefficiensekkel fejezzük ki:
+$$\text{pótlékkulcs} = \frac{\text{általános költség}}{\text{vetítési alap (pl. közvetlen bér)}}$$
 
-```
-Pl.: A termék = 1,0 ; B termék = 0,8 ; C termék = 1,3
-    Egyenértékmennyiség = Σ(db × koefficiens)
-    Önköltség/egység = Összes ktg / Egyenértékmennyiség × koefficiens
-```
+*Számpélda (forrás: gyak3_pótlékoló kalk.xlsx):* Közvetett ktg. = 3 500 000 Ft, közvetlen bér = 1 000 000 Ft → pótlékkulcs = **350%**. A-termék közvetlen bére 200 000 Ft → felszámított rezsi: **700 000 Ft**.
 
-**3. Pótlékoló kalkuláció** – heterogén termékek esetén a közvetett költségeket vetítési alap arányában osztják szét:
+**Pótlékkulcs-torzítás:** egyetlen vetítési alap esetén a kis szériájú, bonyolult termék alultervezett, a nagy szériájú, egyszerű termék túltervezett önköltséget kap — ezt hívják „cost cross-subsidization"-nek. Ez vezet át az ABC-hez.
 
-```
-Pótlékkulcs = Közvetett ktg. / Vetítési alap (pl. közvetlen bér)
+**3. ABC-kalkuláció (Activity-Based Costing)** – Cooper és Kaplan (1988) vezette be. Az általános költségeket **tevékenységekhez**, majd tevékenység-driverek szerint termékekhez rendeli. Négyszintű költséghierarchia: darabszintű, tételszintű (sorozat), termékszintű, üzemi szintű. A tételszintű driverek (pl. gépátállítások, rendelések száma) különösen fontosak: a nagy szériájú termékek ezekből aránytalanul keveset fogyasztanak.
 
-Pl.: Közvetett ktg. = 3 500 000 Ft, Közvetlen bér = 1 000 000 Ft
-    → Pótlékkulcs = 350%
-    A-termék közvetlen bére: 200 000 Ft → Felszámított rezsi: 700 000 Ft
-```
+*Tanulság:* ABC-ben a nagy szériájú termék önköltsége általában **kisebb**, a kis szériájúé **nagyobb**, mint a hagyományos módszerben — ez a piaci ár- és termékstratégiai döntések kritikus inputja.
 
-**4. Normatív (standard cost) kalkuláció** – előre meghatározott normák alapján; az eltérés a hatékonysági különbséget mutatja.
-
-**5. ABC-kalkuláció (Activity-Based Costing)** – a közvetett költségeket **tevékenységekhez**, majd tevékenységekből termékekhez rendeli. Pontosabb, de adatigényesebb.
+**4. Normatív (standard cost) kalkuláció** – előre meghatározott normák alapján; az eltérés a hatékonysági különbséget mutatja (részletesen: K16).
 
 ### ÁKFN-struktúra és fedezetszámítás
 
@@ -98,6 +85,49 @@ xychart-beta
     line "Összes ktg. (FC+VC)" [300000, 450000, 600000, 750000, 900000, 1050000, 1200000]
 ```
 
-> **Irodalom:** Katona F.: CONTROLLING 3., 4., 5. ea.; Francsovics A.: Controlling, 2.2–2.3. alfejezet; Kaplan–Cooper: Költség & Hatás (2001)
+**Likviditási pont:** csak a *pénzkiadással járó* fix költséget kell fedezni; az amortizáció nem pénzkiadás:
+
+$$Q_{lik} = \frac{FC - \text{Amortizáció}}{\text{fajlagos fedezet}}$$
+
+*Példa (forrás: 19201gyak7.xlsx):* Ár = 32 eFt/db, fajlagos változó ktg. = 28 eFt/db, FC = 128 000 eFt, amortizáció = 36 000 eFt. Fedezeti pont: 128 000 / 4 = **32 000 db**. Likviditási pont: (128 000 − 36 000) / 4 = **23 000 db**. A likviditási pont mindig a fedezeti pont *alatt* van — e szint felett a vállalat pénzforgalmilag pozitív, még ha könyv szerint veszteséges is.
+
+### Többszintű fedezetszámítás (többlépcsős direct costing)
+
+A fix költséget aszerint bontjuk, hogy melyik szinten szüntethető meg:
+
+```
+Nettó árbevétel
+−  Változó költség
+=  Fedezet I.           (termékenként)
+−  Termékszintű fix ktg.
+=  Fedezet II.
+−  Termékcsoport fix ktg.
+=  Fedezet III.         (termékcsoportonként)
+−  Üzemi szintű fix ktg.
+=  Fedezet IV.          (üzemenként)
+−  Vállalati szintű fix ktg.
+=  Vállalati eredmény
+```
+
+Egy termék megszüntetésekor csak az adott szinten *elkerülhető* fix költség tűnik el; a magasabb szintű fix ktg. megmarad. Egy pozitív fedezetű, de „veszteséges" (allokált általános ktg. miatt) termék megszüntetése **rontja** az összeredményt.
+
+### Szűk keresztmetszet – relatív fedezet
+
+Ha egy erőforrás szűkös (pl. gépóra, normaóra), nem a fajlagos, hanem az **egységnyi szűkös erőforrásra jutó fedezet** (relatív fedezet) alapján kell rangsorolni:
+
+$$\text{relatív fedezet} = \frac{\text{fajlagos fedezet}}{\text{szűkös erőforrás fajlagos igénye}}$$
+
+*Számpélda (forrás: 19201gyak9.xlsx):*
+
+| Termék | Fajlagos fedezet (Ft/db) | Normaóra-igény (nó/db) | Relatív fedezet (Ft/nó) | Rangsor |
+|---|---|---|---|---|
+| 1. sz. | 20 000 | 8 | 2 500 | 3. |
+| 2. sz. | 14 000 | 10 | 1 400 | 4. |
+| 3. sz. | 13 000 | 5 | 2 600 | 2. |
+| 4. sz. | 14 000 | 4 | 3 500 | **1.** |
+
+A 4. sz. termék fajlagos fedezete nem a legnagyobb, mégis első a rangsorban, mert egységnyi szűkös erőforrásra a legtöbb fedezetet nyújtja. A szállítási kötelezettségek kielégítése után a maradék kapacitást a relatív fedezet rangsora szerint osztjuk fel.
+
+> **Irodalom:** Cooper, R., & Kaplan, R. S. (1988). Measure costs right. *Harvard Business Review, 66*(5), 96–103. — Kaplan, R. S., & Cooper, R. (2001). *Költség & hatás*. Panem. — Francsovics, A. (é. n.). *Controlling* [elektronikus tankönyv]. — Katona F.: CONTROLLING 3., 4., 5. ea.
 
 ---

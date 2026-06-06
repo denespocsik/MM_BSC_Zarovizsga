@@ -42,6 +42,24 @@ flowchart TD
 | Projekt-controlling | Projekt ideje | Mérföldkövek, költségkontroll |
 | Funkcionális controlling | Folyamatos | Logisztika-, marketing-, HR-controlling |
 
+### A controlling szervezeti elhelyezése
+
+A controller pozíciója a szervezeti hierarchiában meghatározza a függetlenségét és a befolyását (Horváth & Partners, 2008).
+
+**Törzskari (staff) vs. vonalbeli (line) controlling.** Törzskariként a controller tanácsadó, nincs utasítási joga – ez megőrzi a függetlenségét, de gyengíti a befolyását. Vonalbeliként beépül a hierarchiába – erősebb befolyás, de a függetlensége sérülhet.
+
+**Centralizált vs. decentralizált.** Centralizált controlling: egy központi szervezet egységes módszertant biztosít, de távolabb kerül a szakterületektől. Decentralizált controlling: helyi controllerek az egységeknél – nagyobb közelség, de módszertani szétszabdaltság kockázata. A gyakorlatban elterjedt a **dotted-line** (kettős alárendeltség): a helyi controller szakmailag a központi controllinghoz, szervezetileg az egységvezetőhöz tartozik.
+
+**A controller–vezető viszony fejlődési fokozatai:**
+
+| Fokozat | Szerep | Fókusz |
+|---|---|---|
+| Regisztráló | Adatszolgáltató | Visszatekintő riportok |
+| Navigációs | Terv–tény + előrejelzés | Eltérések és trendek |
+| Innovációs (business partner) | Döntéstámogató társszereplő | Üzleti modell, stratégia |
+
+A modern felfogásban a controller **business partner**: nem „rendőr", hanem a vezető belső gazdasági tanácsadója – a „szervezet közgazdasági lelkiismerete" (IGC, 2002).
+
 ### A controlling haszna – 8 ellenőrző kérdés
 
 A controlling bevezetésének szükségessége azzal tesztelhető, hogy a vezető tudja-e:
@@ -52,6 +70,6 @@ A controlling bevezetésének szükségessége azzal tesztelhető, hogy a vezet�
 
 Ha ezekre a kérdésekre nincs megbízható válasz, a vállalat **controlling nélkül navigál**.
 
-> **Irodalom:** Katona F.: CONTROLLING 1. ea. (2022); CONTROLLING 8. ea. (2021); Francsovics A.: Controlling (2011), 1. fejezet; Horváth–Dobák (1990); IGC Controller-Leitbild (2002)
+> **Irodalom:** Horváth & Partners. (2008). *Controlling: Út egy hatékony controllingrendszerhez*. Complex Kiadó. — IGC. (2002). *Controller-Leitbild*. — Francsovics, A. (é. n.). *Controlling* [elektronikus tankönyv]. — Katona F.: CONTROLLING 1. ea. (2022); CONTROLLING 8. ea. (2021).
 
 ---
