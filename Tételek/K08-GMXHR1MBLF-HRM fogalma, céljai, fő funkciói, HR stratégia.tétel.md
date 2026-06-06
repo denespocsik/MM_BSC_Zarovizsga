@@ -2,6 +2,8 @@
 
 **Tétel:** Humánerőforrás menedzsment fogalma és szerepe: Ismertesse a humánerőforrás menedzsment (HRM) fogalmát és célját! Mutassa be a HRM fő funkcióit! Ismertesse a HR stratégiai szerepét a szervezetek működésében, valamint a HR és a vállalati stratégia kapcsolatát!
 
+---
+
 ### Az emberi erőforrás menedzsment fogalma
 
 Az emberi erőforrás menedzsment (HRM / EEM) az a szervezeti funkció, amely az embereket — mint a szervezet legértékesebb erőforrásait — tervezi, szervezi, irányítja és fejleszti a szervezeti célok elérése érdekében. Armstrong és Taylor (2014) meghatározása szerint a HRM *„stratégiai, integrált és koherens megközelítés a szervezet legtöbbet érő vagyonának — az embereknek — a foglalkoztatására, fejlesztésére és jóllétének biztosítására"*.
