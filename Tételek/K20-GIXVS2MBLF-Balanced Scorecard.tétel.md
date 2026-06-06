@@ -2,6 +2,8 @@
 
 **Tétel:** Balanced Scorecard: Balanced Scorecard fogalma, szerepe, négy dimenziója (ezek fogalma), működése, alkalmazásnak folyamata. Mondjon példákat az alkalmazható mutatószámokra minden dimenziót tekintve, illetve mutassa be a rendszer működését és a mutatók kapcsolatát.
 
+---
+
 ### A BSC fogalma és eredete
 
 A **Balanced Scorecard (kiegyensúlyozott mutatószám-rendszer)** Kaplan és Norton nevéhez fűződik (Harvard Business Review, 1992). Alapgondolata: a vállalat működése **nem írható le csupán pénzügyi mutatókkal** – a teljesítmény csak több dimenzióból együttesen értelmezhető.
