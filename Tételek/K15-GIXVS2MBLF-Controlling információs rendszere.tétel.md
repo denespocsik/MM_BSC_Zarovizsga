@@ -2,6 +2,8 @@
 
 **Tétel:** Controlling információs rendszere: A controlling információs rendszere és a vezetői információmenedzsment. A controlling információs rendszer felépítése. Tervezési és beszámolási rendszer szerepe. Mutatószámok szerepe a controllingban. A controlling mint információmenedzsment rendszer.
 
+---
+
 ### A controlling információs rendszer felépítése
 
 A controlling egy **zárt szabályozási körként** működő információs rendszer. Három alrendszer kapcsolódik össze benne:
