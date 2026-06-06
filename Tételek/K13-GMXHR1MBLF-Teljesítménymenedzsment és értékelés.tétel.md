@@ -2,6 +2,8 @@
 
 **Tétel:** Teljesítménymenedzsment és értékelés: Ismertesse a teljesítmény menedzsment fogalmát és célját! Mutassa be a teljesítményértékelési rendszerek szerepét a szervezetek működésében! Ismertesse a teljesítményértékelés leggyakoribb módszereit!
 
+---
+
 ### A teljesítménymenedzsment fogalma és célja
 
 A teljesítménymenedzsment (performance management) folyamatos ciklus, amely összehangítja az egyéni teljesítményt a szervezeti célokkal. Armstrong és Taylor (2016) meghatározása szerint nem egyszeri értékelési esemény, hanem folyamatos párbeszéd a vezető és a beosztott között.
