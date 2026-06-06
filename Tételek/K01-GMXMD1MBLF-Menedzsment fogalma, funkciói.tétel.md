@@ -4,7 +4,7 @@
 
 ### A szervezet mint kiindulópont
 
-Mielőtt a menedzsmentről beszélünk, érdemes tisztázni, mit értünk szervezeten. **Chester Barnard** definíciója szerint a szervezet „két vagy több személy tudatosan koordinált tevékenységeinek rendszere." Ez a megfogalmazás három dolgot emel ki: az emberek részvételét, a tudatosságot és a koordinációt. Nem minden emberi együttlét szervezet — csak az, amelyben valamilyen közös cél érdekében összehangolt cselekvés zajlik.
+Mielőtt a menedzsmentről beszélünk, érdemes tisztázni, mit értünk szervezeten. **Chester Barnard** (1938) definíciója szerint a szervezet „két vagy több személy tudatosan koordinált tevékenységeinek rendszere." Ez a megfogalmazás három dolgot emel ki: az emberek részvételét, a tudatosságot és a koordinációt. Nem minden emberi együttlét szervezet — csak az, amelyben valamilyen közös cél érdekében összehangolt cselekvés zajlik.
 
 A szervezet rendszerként is értelmezhető. A **fekete doboz modell** szerint: bemenet (erőforrások: ember, anyag, pénz, információ) → transzformáció (szervezet belső folyamatai) → kimenet (termék, szolgáltatás). A környezet visszajelzést ad a kimenetre, ez a visszacsatolás. A modell haszna, hogy a szervezetet a környezetével együtt, dinamikus egységként kezeli.
 
@@ -75,7 +75,7 @@ A szervezetek összetettségével párhuzamosan a menedzsment is szakosodott. A 
 
 ### Menedzser és vezető — nem ugyanaz
 
-**John P. Kotter** (Harvard Business School) tette meg azt a különbségtételt, amelyet ma már tankönyvi evidenciaként kezelünk: a menedzser és a vezető (*leader*) funkciója eltér.
+**John P. Kotter** (1990) tette meg azt a különbségtételt, amelyet ma már tankönyvi evidenciaként kezelünk: a menedzser és a vezető (*leader*) funkciója eltér.
 
 |           | Menedzser                      | Vezető                            |
 | --------- | ------------------------------ | --------------------------------- |
@@ -84,11 +84,11 @@ A szervezetek összetettségével párhuzamosan a menedzsment is szakosodott. A 
 | Szervezés | Struktúra, szerepek, delegálás | Emberek összefogása, kommunikáció |
 | Eredmény  | Kiszámíthatóság, rend          | Motiváció, inspiráció             |
 
-A mai szervezetekben mindkettőre szükség van. A kizárólag menedzserként működő szervzet elveszti az irányt; a kizárólag vízionárius vezető irányította szervezet elveszti a kontrollt.
+A mai szervezetekben mindkettőre szükség van. A kizárólag menedzserként működő szervezet elveszti az irányt; a kizárólag vízionárius vezető irányította szervezet elveszti a kontrollt.
 
 ### Mintzberg szerepei
 
-**Henry Mintzberg** empirikus kutatásai alapján a menedzserek munkáját tíz szerepbe sorolta, amelyek három csoportba rendezhetők:
+**Henry Mintzberg** (1973) empirikus kutatásai alapján a menedzserek munkáját tíz szerepbe sorolta, amelyek három csoportba rendezhetők:
 
 - *Interperszonális szerepek*: nyilvános képviselő (figurehead), vezető (leader), kapcsolattartó (liaison)
 - *Információs szerepek*: megfigyelő (monitor), információterjesztő (disseminator), szóvivő (spokesperson)

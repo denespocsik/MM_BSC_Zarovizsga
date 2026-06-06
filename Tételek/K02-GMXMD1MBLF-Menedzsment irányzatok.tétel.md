@@ -68,9 +68,9 @@ Fayol szerint a menedzsment öt funkciója: tervezés (*prévoyance*), szervezé
 
 ### Weber és Mayo röviden
 
-**Max Weber** a bürokrácia elméletét dolgozta ki — 6 alapelve (szabályokhoz kötöttség, hierarchia, személytelenség, szakképzettség, írásos dokumentáció, állandó alkalmazotti státusz) a modern nagyszervezetek alapstruktúráját írja le.
+**Max Weber** (1922/1947) a bürokrácia elméletét dolgozta ki — 6 alapelve (szabályokhoz kötöttség, hierarchia, személytelenség, szakképzettség, írásos dokumentáció, állandó alkalmazotti státusz) a modern nagyszervezetek alapstruktúráját írja le.
 
-**George Elton Mayo** a Hawthorne-kísérletekkel (1924–1932) mutatta meg, hogy a munkások teljesítményét nemcsak a fizikai munkakörülmények, hanem a figyelem, a csoportkohézió és az informális normák is befolyásolják. Ez az emberi viszonyok irányzatának (*Human Relations*) alapköve.
+**George Elton Mayo** a Hawthorne-kísérletekkel (Mayo, 1924–1932) mutatta meg, hogy a munkások teljesítményét nemcsak a fizikai munkakörülmények, hanem a figyelem, a csoportkohézió és az informális normák is befolyásolják. Ez az emberi viszonyok irányzatának (*Human Relations*) alapköve.
 
 ### McGregor X és Y elmélete
 

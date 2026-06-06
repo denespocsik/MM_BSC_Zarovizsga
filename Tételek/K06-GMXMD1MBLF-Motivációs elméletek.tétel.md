@@ -12,9 +12,9 @@ Egy sokat idézett összefüggés:
 
 Ebből következik, hogy a kiváló képességű, de demotivált munkás nem teljesít — és fordítva: a motivált, de képzetlen alkalmazott sem ér el magas eredményt. A vezető feladata mindkét tényezőre odafigyelni.
 
-### 1. Maslow szükséglethierarchiája (1954)
+### 1. Maslow szükséglethierarchiája (1943/1954)
 
-**Abraham Maslow** pszichológus szerint az emberi szükségletek egy piramisba rendezhetők, ahol az alacsonyabb szintek kielégítése előfeltétele a magasabbak megjelenésének:
+**Abraham Maslow** (1943, 1954) pszichológus szerint az emberi szükségletek egy piramisba rendezhetők, ahol az alacsonyabb szintek kielégítése előfeltétele a magasabbak megjelenésének:
 
 ```mermaid
 graph BT
@@ -52,7 +52,7 @@ graph BT
 
 ### 2. Herzberg kéttényezős elmélete (1968)
 
-**Frederick Herzberg** munkavállalókat kérdezett arról, mikor érezték magukat a legjobban, illetve a legrosszabbul a munkahelyükön. Az eredmény meglepő volt: a jó és a rossz érzések *különböző* tényezőkre vezethetnők vissza.
+**Frederick Herzberg** (1959, 1968) munkavállalókat kérdezett arról, mikor érezték magukat a legjobban, illetve a legrosszabbul a munkahelyükön. Az eredmény meglepő volt: a jó és a rossz érzések *különböző* tényezőkre vezethetnők vissza.
 
 | **Higiéniás tényezők**                                             | **Motiváló tényezők**                                            |
 | ------------------------------------------------------------------ | ---------------------------------------------------------------- |
@@ -103,15 +103,27 @@ graph LR
 
 **Következmény a vezető számára:** Érdemes megkérdezni, hogy a dolgozó mit értékel — a vezető által felkínált jutalom csak akkor motivál, ha a beosztott számára is értékes.
 
+### 4. Alderfer ERG-modellje (1969)
+
+**Clayton Alderfer** (1969) Maslow piramisát háromszintű, rugalmasabb modellé alakította át. Az ERG-betűszó három szükségletcsoportot jelöl:
+
+- **E — Existence (Létezési szükségletek):** anyagi és fizikai biztonság — Maslow 1–2. szintjének felel meg
+- **R — Relatedness (Kapcsolati szükségletek):** interperszonális kapcsolatok, elismerés — Maslow 3–4. szintje
+- **G — Growth (Növekedési szükségletek):** önfejlődés, alkotás, önmegvalósítás — Maslow 5. szintje
+
+Az ERG-modell két fontos eltérést mutat Maslow-tól: (1) egyszerre több szint is aktív lehet, és (2) *frusztrációs regresszió* lép fel — ha a magasabb szintű szükséglet nem elégíthető ki, az egyén visszatér az alacsonyabb szintű igények erőteljesebb keresésére. Ez magyarázza, miért emelnek bérigényt olyan munkavállalók, akiknek fejlődési lehetőségük nincs.
+
 ### Röviden: további elméletek
 
-**McClelland (1965)** szerint három szerzett szükséglet motivál felnőtt korban: affiliációs igény (kapcsolatok, elfogadás), teljesítményigény (*need for achievement*) és hatalomigény. A különböző embereket különböző arányban hajtják ezek — a menedzsernek érdemes felismerni, melyik dominál egy adott beosztottnál.
+**McClelland (1961)** szerint három szerzett szükséglet motivál felnőtt korban: affiliációs igény (kapcsolatok, elfogadás), teljesítményigény (*need for achievement*) és hatalomigény. A különböző embereket különböző arányban hajtják ezek — a menedzsernek érdemes felismerni, melyik dominál egy adott beosztottnál.
 
 **Adams méltányosság-elmélete:** Az emberek összehasonlítják saját erőfeszítés-jutalom arányukat mások arányával. Ha igazságtalanságot észlelnek, csökkentik az erőfeszítést vagy kérnek emelést. Az egyenlőtlenség érzete erős demotivátor.
 
 **Locke célkitűzés-elmélete (1968):** A specifikus, kihívó, de elérhető célok magasabb teljesítményhez vezetnek, mint a homályos „dolgozzon jól" típusú utasítások. A részvétel a célkitűzésben növeli az elköteleződést.
 
-**Csíkszentmihályi Mihály flow-elmélete:** Az optimális élmény (*flow*) akkor keletkezik, amikor a feladat kihívásszintje és a személy jártassága egyensúlyban van. Ha a kihívás túl nagy, szorongás; ha túl kis, unalom. A vezető feladata megtalálni azt a tartományt, ahol a munka önmagában jutalmazó.
+**Skinner megerősítéselmélete (1953):** A viselkedés következményei alakítják a jövőbeni magatartást. Pozitív megerősítés (jutalom) növeli, negatív következmény (büntetés vagy jutalom elvonása) csökkenti a viselkedés ismétlődésének valószínűségét. Szervezeti alkalmazása: teljesítményarányos bér, azonnali visszajelzés, elismerési programok.
+
+**Csíkszentmihályi Mihály flow-elmélete (1990):** Az optimális élmény (*flow*) akkor keletkezik, amikor a feladat kihívásszintje és a személy jártassága egyensúlyban van. Ha a kihívás túl nagy, szorongás; ha túl kis, unalom. A vezető feladata megtalálni azt a tartományt, ahol a munka önmagában jutalmazó.
 
 ```mermaid
 quadrantChart

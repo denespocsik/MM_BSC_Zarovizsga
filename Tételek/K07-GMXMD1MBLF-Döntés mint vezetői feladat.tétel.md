@@ -84,15 +84,15 @@ Komplex, többlépéses döntések modellezésére használják. A fa elágazód
 
 A valóságban a döntéshozatal ritkán zajlik a modellek által feltételezett racionalitással. Számos kognitív és szervezeti akadály lép fel:
 
-**Korlátozott racionalitás (Herbert Simon, 1956):** Az emberek nem maximálnak, hanem *kielégítenek* (*satisficing*). Nem keresik az optimális megoldást, hanem az első megfelelőt fogadják el. Az információfeldolgozási kapacitásunk véges, az idő korlátozott, a rendelkezésre álló információ hiányos.
+**Korlátozott racionalitás (Herbert Simon, 1947/1955):** Az emberek nem maximálnak, hanem *kielégítenek* (*satisficing*). Nem keresik az optimális megoldást, hanem az első megfelelőt fogadják el. Az információfeldolgozási kapacitásunk véges, az idő korlátozott, a rendelkezésre álló információ hiányos.
 
-**Csoportgondolkodás (*groupthink*, Irving Janis):** Erősen kohézív csoportokban a konszenzus igénye felülírja a kritikus elemzést. Mindenki bólint, senki nem kérdőjelez meg — az eredmény rossz döntés, amelyet mindenki „jónak látott". Ellenszer: ördög ügyvédje (*devil's advocate*) kijelölése, névtelen szavazás.
+**Csoportgondolkodás (*groupthink*, Janis, 1972):** Erősen kohézív csoportokban a konszenzus igénye felülírja a kritikus elemzést. Mindenki bólint, senki nem kérdőjelez meg — az eredmény rossz döntés, amelyet mindenki „jónak látott". Ellenszer: ördög ügyvédje (*devil's advocate*) kijelölése, névtelen szavazás.
 
 **Megerősítési torzítás (*confirmation bias*):** Az ember hajlamos csak azokat az információkat észrevenni és értékelni, amelyek megerősítik már meglévő véleményét. Disconfirmáló adatokat figyelmen kívül hagyunk vagy bagatellizálunk.
 
 **Status quo torzítás:** Hajlunk a jelenlegi állapot fenntartására, még akkor is, ha a változtatás objektíve jobb lenne. Az ismerős biztonságos, az ismeretlen kockázatosnak tűnik.
 
-**Rendelkezésre állási heurisztika (*availability heuristic*, Tversky–Kahneman):** Az esemény bekövetkezési valószínűségét aszerint ítéljük meg, mennyire könnyen jut eszünkbe példa. A könnyen felidézhető (pl. médiában sokat tárgyalt) eseményeket túlbecsüljük; a ritkábbakat alulbecsüljük.
+**Rendelkezésre állási heurisztika (*availability heuristic*, Tversky–Kahneman, 1974):** Az esemény bekövetkezési valószínűségét aszerint ítéljük meg, mennyire könnyen jut eszünkbe példa. A könnyen felidézhető (pl. médiában sokat tárgyalt) eseményeket túlbecsüljük; a ritkábbakat alulbecsüljük.
 
 **Elsüllyedt költség tévedés (*sunk cost fallacy*):** Tovább fektetünk veszteséges projektekbe, mert már annyit öltünk bele — holott a múltbeli ráfordítás döntésteoretikailag irreleváns (a jövőbeni hasznosság számít, nem a múltbeli veszteség).
 

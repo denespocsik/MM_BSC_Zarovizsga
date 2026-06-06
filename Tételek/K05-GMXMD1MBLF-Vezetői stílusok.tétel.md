@@ -16,7 +16,7 @@ A **vezetői stílus** a vezető és beosztottak közötti viszony jellegzetes, 
 
 ### Lewin három stílusa
 
-**Kurt Lewin** (1939) szociálpszichológiai kísérletei alapján három alapstílust különített el, és mérte ezek hatékonyságát:
+**Kurt Lewin** (Lewin et al., 1939) szociálpszichológiai kísérletei alapján három alapstílust különített el, és mérte ezek hatékonyságát:
 
 | Stílus | Döntés | Kommunikáció | Légkör | Termelékenység |
 |---|---|---|---|---|
@@ -28,7 +28,7 @@ Az autokratikus stílus rövid távon magas termelékenységet ad, de a vezető 
 
 ### Likert négy típusa
 
-**Rensis Likert** (1961) finomabb skálát alakított ki:
+**Rensis Likert** (1961) finomabb, 4-fokozatú skálát alakított ki:
 
 1. **Kizsákmányoló-autokratikus:** félelem és kényszer alapú, büntetéscentrikus
 2. **Jóakaratú-autokratikus:** paternalisztikus, jutalmaz is, de a döntés fent marad
@@ -60,6 +60,33 @@ graph LR
 ```
 
 Ez az ábrázolás jól mutatja, hogy a „demokratikus" és „autokratikus" nem bináris — egy spektrumon helyezkednek el.
+
+### Blake–Mouton vezetői rács
+
+**Robert Blake és Jane Mouton** (1964) két dimenzió mentén ábrázolta a vezetési stílusokat: *feladatorientáció* (termelésre való figyelem) és *emberorientáció* (kapcsolatokra való figyelem), mindkettő 1–9-es skálán.
+
+| Stílus | Feladatorient. | Emberorient. | Jellemzők |
+|---|---|---|---|
+| **Szegény menedzsment** (1,1) | Alacsony | Alacsony | Minimális erőfeszítés, passzív |
+| **Tekintélyelvű** (9,1) | Magas | Alacsony | Termelésközpontú, merev |
+| **Falusi klub** (1,9) | Alacsony | Magas | Kellemes légkör, gyenge eredmény |
+| **Középút** (5,5) | Közepes | Közepes | Kompromisszumos, átlagos |
+| **Csapatmenedzsment** (9,9) | Magas | Magas | Optimális — elkötelezett csapat és magas teljesítmény |
+
+A modell normatív üzenete: a (9,9) stílus a kívánt cél, amelyhez fejlesztéssel lehet közelíteni.
+
+### Transzformatív és tranzakciós leadership
+
+**James MacGregor Burns** (1978) és **Bernard Bass** (1985) különbséget tett a vezetés két alapvető típusa között:
+
+| | Tranzakciós | Transzformatív |
+|---|---|---|
+| Alapelv | Csere — teljesítmény ↔ jutalom | Inspiráció, jövőkép, belső motiváció |
+| Kommunikáció | „Ha eléred a célt, megkapod a bónuszt" | „Változtathatjuk a szervezetet — te is részese vagy ennek" |
+| Hatás | Fenntartja a status quo-t | Átformálja az embereket és a szervezetet |
+| Eszközök | Feltételes jutalom, aktív/passzív kontroll | Karizmatikus inspiráció, intellektuális stimuláció, egyéni figyelem |
+
+A transzformatív leader nem helyettesíti a tranzakciós alapokat (a bér fontos marad), hanem azokra épít rá — a „plusz" az, ami tartós elköteleződést teremt.
 
 ### Menedzser és vezető — Kotter
 

@@ -128,6 +128,27 @@ quadrantChart
 - **Kérdőjel:** kis részesedés, gyorsan növő piacon — dönteni kell: befektetés vagy kilépés
 - **Kutya:** kis részesedés, stagnáló piacon — általában kivonulás a cél
 
+### Porter generikus versenystratégiái
+
+**Michael E. Porter** (1980) szerint egy vállalat három alapvető versenystratégia egyikét választhatja, amelyek egymást kizárják:
+
+| Stratégia | Lényeg | Versenyelőny forrása |
+|---|---|---|
+| **Költségvezető szerep** | Az iparág legalacsonyabb költségén termel | Méretgazdaságosság, folyamatoptimalizálás |
+| **Differenciálás** | Egyedi termék/szolgáltatás, amelyért prémiumot kérhet | Márka, minőség, innováció, vevőszolgálat |
+| **Fókusz (rés)** | Szűk piaci szegmenst szolgál ki kiemelkedően | Mélységi ismeret, specializáció |
+
+A „stuck in the middle" csapda: aki egyszerre akar alacsony áron és differenciáltan versenyezni, jellemzően egyikben sem lesz kiváló, és elveszíti versenyelőnyét.
+
+### Miles–Snow adaptációs stratégiái
+
+**Raymond Miles és Charles Snow** (1978) a vállalatok stratégiai magatartásának négy típusát azonosította:
+
+- **Prospector (felfedező):** aktívan keresi az új piacokat, innovatív, magas kockázatú — pl. startup
+- **Defender (védekező):** szűk, stabil piaci szegmenst tart meg hatékonyan, innovációt kerül
+- **Analyzer (elemző):** megfigyelő-utánzó; biztonságos maggal, de óvatos terjeszkedéssel — „második helyen" belépő
+- **Reactor (reagáló):** nem rendelkezik konzisztens stratégiával, csak a nyomásra reagál — hosszú távon hátrányos
+
 ### Ansoff-mátrix
 
 **Igor Ansoff** (1957) a növekedési stratégiákat termék és piac dimenzióiban rendszerezi:

@@ -14,7 +14,7 @@ A két struktúra elvben különválik: a tulajdonos nem feltétlenül menedzser
 
 ### Mechanikus és organikus szervezet
 
-**Burns és Stalker** (1961) különbséget tett mechanikus és organikus szervezetek között:
+**Tom Burns és G. M. Stalker** (1961) különbséget tett mechanikus és organikus szervezetek között:
 
 | | Mechanikus | Organikus |
 |---|---|---|
@@ -210,5 +210,19 @@ graph TD
 **Hátrányok:** A kettős alárendeltség konfliktushoz vezet; az egységes utasítás elve sérül; sok koordinációs energiát emészt fel.
 
 **Mikor jó:** Dinamikus, projektalapú iparágakban (szoftver, építőipar, tanácsadás, K+F).
+
+### Mintzberg szervezeti konfigurációi
+
+**Henry Mintzberg** (1979) empirikus alapon azonosította, hogy a szervezetek a valóságban öt alaptípus egyikéhez hasonlítanak, amelyeket az összetevők (csúcs, operatív mag, középvonal, technostruktúra, támogató stáb) eltérő súlya határoz meg:
+
+| Konfiguráció | Domináns összetevő | Koordinációs mechanizmus | Tipikus példa |
+|---|---|---|---|
+| **Egyszerű struktúra** | Csúcsvezetés | Közvetlen felügyelet | Kisvállalat, startup |
+| **Gépi bürokrácia** | Technostruktúra | Munkafolyamatok standardizálása | Tömeggyártó, bank |
+| **Szakmai bürokrácia** | Operatív mag | Készségek standardizálása | Kórház, egyetem |
+| **Diverzifikált forma** | Középvonal | Outputok standardizálása | Holding, konszern |
+| **Adhokrácia** | Támogató stáb | Kölcsönös alkalmazkodás | K+F labor, tanácsadó cég |
+
+A konfiguráció-elmélet üzenete: nincs univerzálisan legjobb szervezeti forma — az illeszkedés (*fit*) a környezettel és a stratégiával döntő.
 
 ---
