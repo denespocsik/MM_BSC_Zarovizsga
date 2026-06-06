@@ -2,6 +2,8 @@
 
 **Tétel:** Tervezés: Mit jelent a cégek esetében a változó környezet, a szervezeti filozófia, a jövőkép, a küldetés, ezek milyen időtávra szólnak? Ismertesse a tervezés lépéseit és eszközeit! Ismertessen a környezet, továbbá a belső erőforrás elemzésére szolgáló módszereket!
 
+---
+
 ### A változó környezet és a stratégiai tervezés szükségessége
 
 A vállalatok nem légüres térben működnek. A technológia felgyorsul, a fogyasztói szokások átalakulnak, a szabályozási környezet módosul, új versenytársak jelennek meg. Aki csak a napi operatív kérdésekkel foglalkozik, könnyen lejáratja magát. A stratégiai tervezés éppen arra való, hogy a szervezet ne sodródjon, hanem tudatosan alakítsa saját jövőjét.
