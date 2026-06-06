@@ -2,6 +2,8 @@
 
 **Tétel:** Menedzsment fogalma, funkciói: Ismertesse a menedzsment fogalmát, kulcskérdéseit! Mutassa be a főbb szakterületeket és a menedzsment négy fő funkcióját!
 
+---
+
 ### A szervezet mint kiindulópont
 
 Mielőtt a menedzsmentről beszélünk, érdemes tisztázni, mit értünk szervezeten. **Chester Barnard** (1938) definíciója szerint a szervezet „két vagy több személy tudatosan koordinált tevékenységeinek rendszere." Ez a megfogalmazás három dolgot emel ki: az emberek részvételét, a tudatosságot és a koordinációt. Nem minden emberi együttlét szervezet — csak az, amelyben valamilyen közös cél érdekében összehangolt cselekvés zajlik.
