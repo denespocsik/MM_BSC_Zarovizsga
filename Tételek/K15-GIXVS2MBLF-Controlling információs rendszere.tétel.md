@@ -10,15 +10,23 @@ A controlling egy **zárt szabályozási körként** működő információs ren
 
 ```mermaid
 flowchart TD
-    IR["🏛️ IRÁNYÍTÁS"]
-    T["📋 Célmeghatározás / Tervezési rendszerek<br/>(Éves terv, stratégiai terv, projekttervek)"]
-    V["⚙️ Végrehajtás / Megvalósítás<br/>(Tényadatok gyűjtése a vezetői számvitelből)"]
-    E["📈 Elemzés és Beszámolás<br/>(Eltéréselemzés, riportok, intézkedési javaslatok)"]
+    IR["🏛️ <b>IRÁNYÍTÁS</b>"]:::lilaH
+    T["📋 <b>Célmeghatározás / Tervezési rendszerek</b><br/>(Éves terv, stratégiai terv, projekttervek)"]:::kek
+    V["⚙️ <b>Végrehajtás / Megvalósítás</b><br/>(Tényadatok gyűjtése a vezetői számvitelből)"]:::zold
+    E["📈 <b>Elemzés és Beszámolás</b><br/>(Eltéréselemzés, riportok, intézkedési javaslatok)"]:::narancs
 
     IR --> T
     IR --> V
     IR --> E
     E -->|visszacsatolás| IR
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lilaH   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#4a148c,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 3 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 A controller feladata: **nem maga tervez**, hanem összefoglalja, konszolidálja és értelmezi a terveket, majd a tényadatokkal szembesíti azokat.
@@ -52,14 +60,23 @@ Az operatív tervezés menete (Katona F., 7. ea.):
 
 ```mermaid
 flowchart TD
-    A["🛒 Értékesítési terv<br/><i>szűk keresztmetszet — innen indul a tervezés</i>"]
-    B["🏭 Termelési terv<br/>(kapacitástervezés)"]
-    C["🔩 Anyag- és munkabér-terv<br/>(közvetlen ktg.)"]
-    D["🏢 Általános költségterv<br/>(közvetett ktg., overhead)"]
-    E["📊 Eredményterv<br/>(fedezetszámítás alapján)"]
-    F["💰 Pénzügyi terv / Likviditási terv"]
+    A["🛒 <b>Értékesítési terv</b><br/><i>szűk keresztmetszet — innen indul a tervezés</i>"]:::kekH
+    B["🏭 <b>Termelési terv</b><br/>(kapacitástervezés)"]:::kek
+    C["🔩 <b>Anyag- és munkabér-terv</b><br/>(közvetlen ktg.)"]:::turkiz
+    D["🏢 <b>Általános költségterv</b><br/>(közvetett ktg., overhead)"]:::narancs
+    E["📊 <b>Eredményterv</b><br/>(fedezetszámítás alapján)"]:::zold
+    F["💰 <b>Pénzügyi terv / Likviditási terv</b>"]:::lila
 
     A --> B --> C --> D --> E --> F
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef kekH    fill:#e3f2fd,stroke:#1565c0,stroke-width:3px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 A tervezés **szűk keresztmetszettől indul**: az esetek nagy részében a piac (értékesíthetőség) a korlát, ezért az értékesítési terv az egész tervezési ciklus alapja.

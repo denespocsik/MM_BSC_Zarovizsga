@@ -60,40 +60,24 @@ A **PESTEL-elemzés** a makrokörnyezet hat dimenzióját térképezi fel:
 
 ```mermaid
 graph TD
-    %% Csomópontok definiálása formázott szöveggel
-    B("<b>Potenciális belépők</b><br/>Belépési korlátok fenyegetése")
-    Sz("<b>Szállítók alkuereje</b>")
-    Ve("<b>Vevők alkuereje</b>")
-    H("<b>Helyettesítő termékek</b><br/>fenyegetése")
-    I("<b>Iparági verseny</b><br/>meglévő versenytársak")
+    B("<b>Potenciális belépők</b><br/>Belépési korlátok fenyegetése"):::kek
+    Sz("<b>Szállítók alkuereje</b>"):::zold
+    Ve("<b>Vevők alkuereje</b>"):::narancs
+    H("<b>Helyettesítő termékek</b><br/>fenyegetése"):::rozsa
+    I("<b>Iparági verseny</b><br/>meglévő versenytársak"):::lilaH
 
-    %% Kapcsolatok
     B --> I
     Sz --> I
     Ve --> I
     H --> I
 
-    %% Stílusok definiálása (classDef)
-    %% Központi elem (Iparági verseny) - Lila
-    classDef centerNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
-    %% Új belépők - Kék
-    classDef topNode fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
-    %% Szállítók - Zöld
-    classDef supplierNode fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
-    %% Vevők - Narancs
-    classDef buyerNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
-    %% Helyettesítők - Rózsaszín/Piros
-    classDef subNode fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef lilaH   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#4a148c,rx:10,ry:10;
 
-    %% Stílusok hozzárendelése
-    class I centerNode;
-    class B topNode;
-    class Sz supplierNode;
-    class Ve buyerNode;
-    class H subNode;
-
-    %% Nyilak formázása (Vastagabb, szürkéskék)
-    linkStyle 0,1,2,3 stroke:#546e7a,stroke-width:2px;
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 Minél erősebbek ezek az erők, annál kisebb az iparág jövedelmezősége. Porter elemzése segít megérteni, miért nyereséges az egyik iparág és miért nem a másik.
@@ -114,7 +98,7 @@ Az erősségek és gyengeségek belső tényezők (amit a szervezet kontrollál)
 A **BCG mátrix** (Boston Consulting Group) a termék/üzletágportfoliót két dimenzió mentén értékeli: piaci részesedés és piacnövekedési ütem.
 
 ```mermaid
-%%{init: { 'theme': 'base', 'themeVariables': { 'quadrant1Fill': '#e1f5fe', 'quadrant2Fill': '#fff9c4', 'quadrant3Fill': '#f5f5f5', 'quadrant4Fill': '#e8f5e9', 'quadrant1TextFill': '#01579b', 'quadrant2TextFill': '#f57f17', 'quadrant3TextFill': '#616161', 'quadrant4TextFill': '#1b5e20', 'titleColor': '#263238' } } }%%
+%%{init: {'theme':'base','themeVariables':{'quadrant1Fill':'#e3f2fd','quadrant2Fill':'#e8f5e9','quadrant3Fill':'#fff3e0','quadrant4Fill':'#f3e5f5','quadrant1TextFill':'#0d47a1','quadrant2TextFill':'#1b5e20','quadrant3TextFill':'#e65100','quadrant4TextFill':'#4a148c','quadrantPointFill':'#546e7a','quadrantPointTextFill':'#263238','quadrantXAxisTextFill':'#546e7a','quadrantYAxisTextFill':'#546e7a','quadrantTitleFill':'#263238','quadrantInternalBorderStrokeFill':'#90a4ae','quadrantExternalBorderStrokeFill':'#546e7a'}}}%%
 quadrantChart
     title BCG Mátrix
     x-axis "Alacsony piaci részesedés" --> "Magas piaci részesedés"

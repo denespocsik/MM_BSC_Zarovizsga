@@ -10,32 +10,50 @@ A beruházási controlling **nem ér véget a vásárlási döntéssel**. Három
 
 ```mermaid
 flowchart LR
-    A["📐 Tervezési szakasz<br/><i>döntési előkészítés</i><br/>Gazdaságossági számítások"]
-    B["🔨 Megvalósítási szakasz<br/><i>projekt-controlling</i><br/>Költség- és időkontroll"]
-    C["📊 Használati szakasz<br/><i>utókalkuláció</i><br/>Terv–tény összehasonlítás"]
+    A["📐 <b>Tervezési szakasz</b><br/><i>döntési előkészítés</i><br/>Gazdaságossági számítások"]:::kek
+    B["🔨 <b>Megvalósítási szakasz</b><br/><i>projekt-controlling</i><br/>Költség- és időkontroll"]:::narancs
+    C["📊 <b>Használati szakasz</b><br/><i>utókalkuláció</i><br/>Terv–tény összehasonlítás"]:::zold
 
     A -->|"döntés: megvalósítás"| B -->|"üzembe helyezés"| C
     C -->|"tapasztalatok → jövőbeli döntések"| A
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 2 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 ### Gazdaságossági számítások módszerei
 
 ```mermaid
 flowchart TD
-    BK["💼 Beruházás-kalkuláció"]
+    BK["💼 <b>Beruházás-kalkuláció</b>"]:::lilaH
 
-    BK --> S["🕐 Statikus módszerek<br/><i>időtényezőt figyelmen kívül hagyják</i>"]
-    BK --> D["⏳ Dinamikus módszerek<br/><i>pénz időértékét figyelembe veszik</i>"]
+    BK --> S["🕐 <b>Statikus módszerek</b><br/><i>időtényezőt figyelmen kívül hagyják</i>"]:::narancs
+    BK --> D["⏳ <b>Dinamikus módszerek</b><br/><i>pénz időértékét figyelembe veszik</i>"]:::kek
 
-    S --> S1["Költség-összehasonlító számítás"]
-    S --> S2["Nyereség-összehasonlító számítás"]
-    S --> S3["Jövedelmezőségi számítás (ROI)"]
-    S --> S4["Statikus megtérülési idő (PBPS)"]
+    S --> S1["Költség-összehasonlító számítás"]:::sarga
+    S --> S2["Nyereség-összehasonlító számítás"]:::sarga
+    S --> S3["Jövedelmezőségi számítás (ROI)"]:::sarga
+    S --> S4["Statikus megtérülési idő (PBPS)"]:::sarga
 
-    D --> D1["Nettó jelenérték (NPV)"]
-    D --> D2["Belső megtérülési ráta (IRR)"]
-    D --> D3["Jövedelmezőségi index (PI)"]
-    D --> D4["Diszkontált megtérülési idő (PBPD)"]
+    D --> D1["Nettó jelenérték (NPV)"]:::turkiz
+    D --> D2["Belső megtérülési ráta (IRR)"]:::turkiz
+    D --> D3["Jövedelmezőségi index (PI)"]:::turkiz
+    D --> D4["Diszkontált megtérülési idő (PBPD)"]:::turkiz
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lilaH   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+    classDef sarga   fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 0,1 stroke:#7b1fa2,stroke-width:2px;
+    linkStyle 2,3,4,5 stroke:#ef6c00,stroke-width:2px;
+    linkStyle 6,7,8,9 stroke:#1565c0,stroke-width:2px;
 ```
 
 ### Statikus módszerek

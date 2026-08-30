@@ -14,16 +14,19 @@ A Vázlat (kurzusanyag) alapján a teljesítményösztönzés kulcselemei: kihí
 
 ```mermaid
 flowchart LR
-    A["🎯 CÉLKITŰZÉS\nEgyéni + szervezeti\ncélok összehangolása"]:::cel
-    --> B["💬 FOLYAMATOS\nVISSZAJELZÉS\nCoaching · 1:1 megbeszélés\nFejlesztő párbeszéd"]:::visszajelzes
-    --> C["📊 TELJESÍTMÉNY-\nÉRTÉKELÉS\nFormális időszaki értékelés\nmódszerekkel"]:::ertekeles
-    --> D["🚀 FEJLESZTÉS /\nJUTTATÁS\nKépzés · előléptetés\nKompenzáció-döntés"]:::fejlesztes
+    A["🎯 <b>CÉLKITŰZÉS</b><br/>Egyéni + szervezeti<br/>célok összehangolása"]:::kek
+    --> B["💬 <b>FOLYAMATOS</b><br/><b>VISSZAJELZÉS</b><br/>Coaching · 1:1 megbeszélés<br/>Fejlesztő párbeszéd"]:::zold
+    --> C["📊 <b>TELJESÍTMÉNY-</b><br/><b>ÉRTÉKELÉS</b><br/>Formális időszaki értékelés<br/>módszerekkel"]:::narancs
+    --> D["🚀 <b>FEJLESZTÉS /</b><br/><b>JUTTATÁS</b><br/>Képzés · előléptetés<br/>Kompenzáció-döntés"]:::rozsa
     --> A
 
-    classDef cel          fill:#1d4ed8,stroke:#1e3a8a,color:#ffffff,font-weight:bold
-    classDef visszajelzes fill:#059669,stroke:#064e3b,color:#ffffff,font-weight:bold
-    classDef ertekeles    fill:#d97706,stroke:#92400e,color:#ffffff,font-weight:bold
-    classDef fejlesztes   fill:#dc2626,stroke:#7f1d1d,color:#ffffff,font-weight:bold
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 3 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 ### Teljesítményértékelési módszerek
@@ -61,12 +64,12 @@ Pink (2009/2010) *Motiváció 3.0* modellje szerint a belső motiváció három 
 
 ```mermaid
 graph TD
-    K8["🏛️ K8 — HR Stratégia\nBest practice · Best fit"]:::hrstrategia
-    K9["👥 K9 — Munkaerő-tervezés\nés toborzás"]:::toborzas
-    K10["🔎 K10 — Kiválasztás\nAC · interjú · tesztek"]:::toborzas
-    K11["🧭 K11 — Vezetés\nMintzberg · Hersey-Blanchard\nMcGregor X/Y"]:::vezetes
-    K12["🌐 K12 — Szervezeti kultúra\nHandy · Schein · OCAI"]:::kultura
-    K13["📊 K13 — Teljesítmény-\nmenedzsment\nMBO · 360° · Pink 3.0"]:::teljesitmeny
+    K8["🏛️ <b>K8 — HR Stratégia</b><br/>Best practice · Best fit"]:::kekH
+    K9["👥 <b>K9 — Munkaerő-tervezés</b><br/>és toborzás"]:::zold
+    K10["🔎 <b>K10 — Kiválasztás</b><br/>AC · interjú · tesztek"]:::zold
+    K11["🧭 <b>K11 — Vezetés</b><br/>Mintzberg · Hersey-Blanchard<br/>McGregor X/Y"]:::narancs
+    K12["🌐 <b>K12 — Szervezeti kultúra</b><br/>Handy · Schein · OCAI"]:::lila
+    K13["📊 <b>K13 — Teljesítmény-</b><br/><b>menedzsment</b><br/>MBO · 360° · Pink 3.0"]:::rozsa
 
     K8 --> K9
     K8 --> K13
@@ -74,11 +77,14 @@ graph TD
     K9 --> K10
     K12 <--> K11
 
-    classDef hrstrategia  fill:#1e40af,stroke:#1e3a8a,color:#ffffff,font-weight:bold
-    classDef toborzas     fill:#059669,stroke:#064e3b,color:#ffffff,font-weight:bold
-    classDef vezetes      fill:#d97706,stroke:#92400e,color:#ffffff,font-weight:bold
-    classDef kultura      fill:#7c3aed,stroke:#6d28d9,color:#ffffff,font-weight:bold
-    classDef teljesitmeny fill:#dc2626,stroke:#b91c1c,color:#ffffff,font-weight:bold
+    classDef kekH    fill:#e3f2fd,stroke:#1565c0,stroke-width:3px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 4 stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 A hat tétel egyetlen logikai ívet alkot: a szervezet emberigényének meghatározásától (K8–K9) a megfelelő személyek kiválasztásán (K10) és irányításán (K11) át a kultúra tudatos formálásáig (K12) és a teljesítmény értékeléséig (K13).

@@ -43,18 +43,20 @@ Az átjárók rombusz alakú döntési, elágazási vagy összesítési pontok:
 
 **Példa – rendelés feldolgozása:**
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart LR
-    classDef event   fill:#E8F5E9,stroke:#2E7D32,stroke-width:3px,color:#1B5E20,font-weight:bold
-    classDef task    fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
-    classDef gateway fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
-
-    S(["🟢 Rendelés beérkezett"]):::event --> E["📋 Rendelés ellenőrzése"]:::task
-    E --> G{"❓ Készleten van?"}:::gateway
-    G -- Igen --> K["🚚 Kiszállítás"]:::task
-    G -- Nem --> B["🛒 Beszerzés"]:::task
-    K --> End(["🏁 Rendelés lezárva"]):::event
+    S(["🟢 <b>Rendelés beérkezett</b>"]):::zoldH --> E["📋 <b>Rendelés ellenőrzése</b>"]:::kek
+    E --> G{"❓ <b>Készleten van?</b>"}:::sarga
+    G -- Igen --> K["🚚 <b>Kiszállítás</b>"]:::kek
+    G -- Nem --> B["🛒 <b>Beszerzés</b>"]:::narancs
+    K --> End(["🏁 <b>Rendelés lezárva</b>"]):::zoldH
     B --> End
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zoldH   fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef sarga   fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 ### 2.3. Szervezési elemek: medencék és sávok
@@ -64,22 +66,28 @@ flowchart LR
 **Sáv (Lane):** A medencén belüli felelősségi köröket jelöli. Pl. Értékesítés | Pénzügy | Raktár | Logisztika. Megmutatja, hogy melyik szervezeti egység felel az egyes tevékenységekért.
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart TD
-    classDef task fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
-
     subgraph VALLALAT["🏢 VÁLLALAT — Pool"]
         subgraph Ert["💼 Értékesítés — Lane"]
-            A["📝 Rendelés rögzítése"]:::task
+            A["📝 <b>Rendelés rögzítése</b>"]:::kek
         end
         subgraph Rakt["📦 Raktár — Lane"]
-            B["🔍 Készlet ellenőrzése"]:::task
+            B["🔍 <b>Készlet ellenőrzése</b>"]:::kek
         end
         subgraph Pen["💰 Pénzügy — Lane"]
-            C["🧾 Számla kiállítása"]:::task
+            C["🧾 <b>Számla kiállítása</b>"]:::kek
         end
     end
     A --> B --> C
+
+    classDef kek fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+
+    style VALLALAT fill:#f7f9fa,stroke:#b0bec5,stroke-width:1.5px,color:#546e7a;
+    style Ert  fill:#f5f9ff,stroke:#90caf9,stroke-width:1.5px,color:#1565c0;
+    style Rakt fill:#f5f9ff,stroke:#90caf9,stroke-width:1.5px,color:#1565c0;
+    style Pen  fill:#f5f9ff,stroke:#90caf9,stroke-width:1.5px,color:#1565c0;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 ### 2.4. Összekötő elemek és használati szabályaik

@@ -20,27 +20,21 @@ Ebből következik, hogy a kiváló képességű, de demotivált munkás nem tel
 
 ```mermaid
 graph BT
-    F("<b>1. Fiziológiai</b><br/>éhség, szomjúság, alvás, bérek")
-    B("<b>2. Biztonság</b><br/>munkabiztonság, stabilitás, rend")
-    S("<b>3. Szeretet, hovatartozás</b><br/>csoporttagság, barátság")
-    M("<b>4. Megbecsülés</b><br/>státusz, elismerés, önbizalom")
-    O("<b>5. Önmegvalósítás</b><br/>kreativitás, növekedés")
+    F("<b>1. Fiziológiai</b><br/>éhség, szomjúság, alvás, bérek"):::rozsa
+    B("<b>2. Biztonság</b><br/>munkabiztonság, stabilitás, rend"):::narancs
+    S("<b>3. Szeretet, hovatartozás</b><br/>csoporttagság, barátság"):::sarga
+    M("<b>4. Megbecsülés</b><br/>státusz, elismerés, önbizalom"):::kek
+    O("<b>5. Önmegvalósítás</b><br/>kreativitás, növekedés"):::lila
 
     F --> B --> S --> M --> O
 
-    classDef fNode fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c;
-    classDef bNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100;
-    classDef sNode fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17;
-    classDef mNode fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1;
-    classDef oNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c;
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef sarga   fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17,rx:10,ry:10;
 
-    class F fNode;
-    class B bNode;
-    class S sNode;
-    class M mNode;
-    class O oNode;
-
-    linkStyle 0,1,2,3 stroke:#546e7a,stroke-width:2px;
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 **Munkáltatói következmények:**
@@ -80,27 +74,22 @@ Ha bármelyik tényező nulla (nem hiszi el, hogy az erőfeszítés teljesítmé
 
 ```mermaid
 graph LR
-    E("<b>Erőfeszítés</b><br/>(E)")
-    T("<b>Teljesítmény</b><br/>(T)")
-    K("<b>Kimenet / Jutalom</b><br/>(K)")
-    V("<b>Valencia</b><br/>jutalom szubjektív értéke")
+    E("<b>Erőfeszítés</b><br/>(E)"):::narancs
+    T("<b>Teljesítmény</b><br/>(T)"):::kek
+    K("<b>Kimenet / Jutalom</b><br/>(K)"):::zold
+    V("<b>Valencia</b><br/>jutalom szubjektív értéke"):::lila
 
     E -->|"Elvárás · E → T"| T
     T -->|"Instrumentalitás · T → K"| K
     V -.->|"értékeli?"| K
 
-    classDef eNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100;
-    classDef tNode fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1;
-    classDef kNode fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20;
-    classDef vNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c;
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
 
-    class E eNode;
-    class T tNode;
-    class K kNode;
-    class V vNode;
-
-    linkStyle 0,1 stroke:#546e7a,stroke-width:2px;
-    linkStyle 2 stroke:#7b1fa2,stroke-width:2px,stroke-dasharray:5 5;
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 2 stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 **Következmény a vezető számára:** Érdemes megkérdezni, hogy a dolgozó mit értékel — a vezető által felkínált jutalom csak akkor motivál, ha a beosztott számára is értékes.
@@ -128,10 +117,11 @@ Az ERG-modell két fontos eltérést mutat Maslow-tól: (1) egyszerre több szin
 **Csíkszentmihályi Mihály flow-elmélete (1990):** Az optimális élmény (*flow*) akkor keletkezik, amikor a feladat kihívásszintje és a személy jártassága egyensúlyban van. Ha a kihívás túl nagy, szorongás; ha túl kis, unalom. A vezető feladata megtalálni azt a tartományt, ahol a munka önmagában jutalmazó.
 
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'quadrant1Fill':'#e3f2fd','quadrant2Fill':'#e8f5e9','quadrant3Fill':'#fff3e0','quadrant4Fill':'#f3e5f5','quadrant1TextFill':'#0d47a1','quadrant2TextFill':'#1b5e20','quadrant3TextFill':'#e65100','quadrant4TextFill':'#4a148c','quadrantPointFill':'#546e7a','quadrantPointTextFill':'#263238','quadrantXAxisTextFill':'#546e7a','quadrantYAxisTextFill':'#546e7a','quadrantTitleFill':'#263238','quadrantInternalBorderStrokeFill':'#90a4ae','quadrantExternalBorderStrokeFill':'#546e7a'}}}%%
 quadrantChart
     title "Flow-elmélet (Csíkszentmihályi)"
-    x-axis "Alacsony jártasság --> Magas jártasság"
-    y-axis "Alacsony kihívás --> Magas kihívás"
+    x-axis "Alacsony jártasság" --> "Magas jártasság"
+    y-axis "Alacsony kihívás" --> "Magas kihívás"
     quadrant-1 "🎯 FLOW"
     quadrant-2 "😰 SZORONGÁS"
     quadrant-3 "😶 APÁTIA"

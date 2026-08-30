@@ -13,14 +13,25 @@ A hálózatelvű megközelítés – Håkansson és az IMP csoport nyomán – n
 ```mermaid
 flowchart LR
     subgraph HAG["Hagyományos szemlélet"]
-        H_I["Input"] --> H_F["Folyamat"] --> H_O["Output"]
-        H_NOTE(["Vállalat — zárt rendszer"])
+        H_I["<b>Input</b>"]:::szurke --> H_F["<b>Folyamat</b>"]:::szurke --> H_O["<b>Output</b>"]:::szurke
+        H_NOTE(["Vállalat — zárt rendszer"]):::szurke
     end
     subgraph HAL["Hálózatelvű szemlélet"]
-        SZ["Szállítók"] --- HV["VÁLLALAT"] --- VEV["Vevők"]
-        HV --- P["Partnerek\n(kutatóintézetek,\nversenyzők,\nszabályozók...)"]
+        SZ["<b>Szállítók</b>"]:::zold --- HV["<b>VÁLLALAT</b>"]:::kekH --- VEV["<b>Vevők</b>"]:::narancs
+        HV --- P["<b>Partnerek</b><br/>(kutatóintézetek,<br/>versenyzők,<br/>szabályozók...)"]:::lila
     end
     HAG --> HAL
+
+    classDef kekH    fill:#e3f2fd,stroke:#1565c0,stroke-width:3px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef szurke  fill:#eceff1,stroke:#546e7a,stroke-width:2px,color:#263238,rx:10,ry:10;
+
+    style HAG fill:#f7f9fa,stroke:#b0bec5,stroke-width:1.5px,color:#546e7a;
+    style HAL fill:#f5f9ff,stroke:#90caf9,stroke-width:1.5px,color:#1565c0;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 ---
@@ -39,15 +50,21 @@ Håkansson elmélete szerint a hálózatban való működés három szempontból
 
 ```mermaid
 graph TD
-    A["A"] --- B["B"] --- C["C"]
-    A --- D["D"]
-    B --- E["E"]
-    C --- F["F"]
+    A["<b>A</b>"]:::kek --- B["<b>B</b>"]:::kek --- C["<b>C</b>"]:::kek
+    A --- D["<b>D</b>"]:::kek
+    B --- E["<b>E</b>"]:::kekH
+    C --- F["<b>F</b>"]:::kek
     D --- E
     E --- F
 
-    NOTE(["Senki sem látja a teljes képet.\nMindenki csak a saját lokális\nhálózatát ismeri és befolyásolja."])
+    NOTE(["Senki sem látja a teljes képet.<br/>Mindenki csak a saját lokális<br/>hálózatát ismeri és befolyásolja."]):::szurke
     E ~~~ NOTE
+
+    classDef kek    fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef kekH   fill:#e3f2fd,stroke:#1565c0,stroke-width:3px,color:#0d47a1,rx:10,ry:10;
+    classDef szurke fill:#eceff1,stroke:#546e7a,stroke-width:2px,color:#263238,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 #### 2. szempont: Tudás (Knowledge)
@@ -73,14 +90,23 @@ Mark Granovetter (1973) **gyenge kötések elmélete** ehhez szorosan kapcsolód
 
 ```mermaid
 flowchart TD
-    E1["Vállalat új technológiát vezet be"]
-    E2["Szállítójának adaptálnia kell a csomagolást"]
-    E3["A szállító altermékgyártója is módosít"]
-    E4["Versenyző reagál — benchmark"]
-    E5["Iparági sztenderd változik"]
+    E1["<b>Vállalat új technológiát vezet be</b>"]:::kek
+    E2["<b>Szállítójának adaptálnia kell a csomagolást</b>"]:::zold
+    E3["<b>A szállító altermékgyártója is módosít</b>"]:::turkiz
+    E4["<b>Versenyző reagál — benchmark</b>"]:::narancs
+    E5["<b>Iparági sztenderd változik</b>"]:::lila
 
     E1 --> E2 --> E3 --> E4 --> E5
     E5 -.->|"visszahat"| E1
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 4 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 **Következmény:** A hálózatban való változáskezelés nem top-down tervezés, hanem **folyamatos alkalmazkodás** és a hálózati visszacsatolások figyelemmel kísérése.
@@ -93,13 +119,19 @@ Håkansson és az IMP csoport az ARA modellel (Activities–Resources–Actors) 
 
 ```mermaid
 flowchart TD
-    SZ["SZEREPLŐK — Actors\n● Vállalatok, divíziók, személyek\n● Erőforrások felett rendelkeznek"]
-    T["TEVÉKENYSÉGEK — Activities\n● Termelés, fejlesztés, logisztika\n● Összekapcsolódó tevékenység-láncok"]
-    E["ERŐFORRÁSOK — Resources\n● Technológia, tudás, kapcsolatok\n● Értéküket a hálózati felhasználás határozza meg"]
+    SZ["<b>SZEREPLŐK — Actors</b><br/>● Vállalatok, divíziók, személyek<br/>● Erőforrások felett rendelkeznek"]:::kek
+    T["<b>TEVÉKENYSÉGEK — Activities</b><br/>● Termelés, fejlesztés, logisztika<br/>● Összekapcsolódó tevékenység-láncok"]:::zold
+    E["<b>ERŐFORRÁSOK — Resources</b><br/>● Technológia, tudás, kapcsolatok<br/>● Értéküket a hálózati felhasználás határozza meg"]:::narancs
 
     SZ <-->|"végzi"| T
     T <-->|"alakítja / felhasználja"| E
     E <-->|"irányítja"| SZ
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 A három elem egymással szorosan összekapcsolt: a szereplők tevékenységeket végeznek erőforrásokkal, a tevékenységek erőforrásokat alakítanak, az erőforrások a szereplők kontrollja alatt állnak – de nem egyetlen szereplőén, hanem a kapcsolatok hálójában megoszlva.

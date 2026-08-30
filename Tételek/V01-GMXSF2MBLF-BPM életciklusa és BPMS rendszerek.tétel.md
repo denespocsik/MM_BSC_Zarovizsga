@@ -15,17 +15,20 @@ A modern szervezetekben a BPM szorosan összekapcsolódik az informatikával: a 
 A BPM életciklusa nem egyszeri projektet, hanem ismétlődő fejlesztési kört jelent. Az alábbi öt szakasz épül egymásra:
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart LR
-    classDef plan  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
-    classDef exec  fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
-    classDef optim fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
-
-    T["🎯 Tervezés"]:::plan --> M["✏️ Modellezés"]:::plan
-    M --> V["▶️ Végrehajtás"]:::exec
-    V --> Mo["📊 Monitorozás"]:::plan
-    Mo --> O["⚡ Optimalizálás"]:::optim
+    T["🎯 <b>Tervezés</b>"]:::kek --> M["✏️ <b>Modellezés</b>"]:::kek
+    M --> V["▶️ <b>Végrehajtás</b>"]:::zold
+    V --> Mo["📊 <b>Monitorozás</b>"]:::narancs
+    Mo --> O["⚡ <b>Optimalizálás</b>"]:::lila
     O --> T
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 4 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 | Szakasz | Fő feladatok |
@@ -43,22 +46,25 @@ A ciklus alapelve: az optimalizálás befejezése után a folyamat visszakerülh
 A Business Process Management Suite (BPMS) olyan integrált szoftverkörnyezet, amely az összes életciklus-szakaszt támogatja. Négy fő komponensből áll:
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 graph TB
-    classDef model  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
-    classDef engine fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
-    classDef analyt fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
-    classDef rules  fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
-
     subgraph BPMS["BPMS — Business Process Management Suite"]
-        A["✏️ Folyamatmodellező eszköz (BPMN 2.0)"]:::model
-        B["⚙️ Végrehajtó motor (Process Engine)"]:::engine
-        C["📊 Üzleti analitika (Dashboards, KPI)"]:::analyt
-        D["📋 Szabálykezelő modul (BRM)"]:::rules
+        A["✏️ <b>Folyamatmodellező eszköz (BPMN 2.0)</b>"]:::kek
+        B["⚙️ <b>Végrehajtó motor (Process Engine)</b>"]:::zold
+        C["📊 <b>Üzleti analitika (Dashboards, KPI)</b>"]:::lila
+        D["📋 <b>Szabálykezelő modul (BRM)</b>"]:::narancs
         A -->|modell| B
         B -->|futásadatok| C
         D -->|üzleti szabályok| B
     end
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+
+    style BPMS fill:#f7f9fa,stroke:#b0bec5,stroke-width:1.5px,color:#546e7a;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 **Folyamatmodellező eszköz:** Grafikus felületen teszi lehetővé a BPMN 2.0-alapú modellek létrehozását. Az üzleti szakemberek programozói tudás nélkül is részt vehetnek a folyamatok tervezésében.

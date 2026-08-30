@@ -22,11 +22,18 @@ A controlling szemlélet három alapelvben foglalható össze:
 
 ```mermaid
 flowchart TD
-    A["🎯 Teljesítménymércék meghatározása<br/>(TERVEZÉS)"]
-    B["📊 Terv–tény összehasonlítás"]
-    C["⚡ Eltérések elemzése → Ellenintézkedések"]
+    A["🎯 <b>Teljesítménymércék meghatározása</b><br/>(TERVEZÉS)"]:::kek
+    B["📊 <b>Terv–tény összehasonlítás</b>"]:::zold
+    C["⚡ <b>Eltérések elemzése → Ellenintézkedések</b>"]:::narancs
 
     A --> B --> C -->|visszacsatolás| A
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 2 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 ### A controller öt fő feladata (IGC, 2002)

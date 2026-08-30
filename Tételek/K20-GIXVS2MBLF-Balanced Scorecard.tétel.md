@@ -16,16 +16,25 @@ A BSC két alapvetésben tér el a hagyományos kontrolling-rendszerektől:
 
 ```mermaid
 flowchart TD
-    S["🎯 KÜLDETÉS és STRATÉGIA"]
+    S["🎯 <b>KÜLDETÉS és STRATÉGIA</b>"]:::lilaH
 
-    S --> P["💰 PÉNZÜGYI nézőpont<br/><i>Hogyan látnak minket a befektetők?</i>"]
-    S --> V["👥 VEVŐI / PIACI nézőpont<br/><i>Hogyan látnak minket vevőink?</i>"]
-    S --> B["⚙️ BELSŐ FOLYAMATOK nézőpont<br/><i>Miben kell kiválónak lennünk?</i>"]
-    S --> T["📚 TANULÁS ÉS FEJLŐDÉS nézőpont<br/><i>Hogyan tudunk fejlődni és innoválni?</i>"]
+    S --> P["💰 <b>PÉNZÜGYI nézőpont</b><br/><i>Hogyan látnak minket a befektetők?</i>"]:::zold
+    S --> V["👥 <b>VEVŐI / PIACI nézőpont</b><br/><i>Hogyan látnak minket vevőink?</i>"]:::narancs
+    S --> B["⚙️ <b>BELSŐ FOLYAMATOK nézőpont</b><br/><i>Miben kell kiválónak lennünk?</i>"]:::kek
+    S --> T["📚 <b>TANULÁS ÉS FEJLŐDÉS nézőpont</b><br/><i>Hogyan tudunk fejlődni és innoválni?</i>"]:::turkiz
 
     T -->|"alapozza meg"| B
     B -->|"értéket teremt"| V
     V -->|"bevételt generál"| P
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lilaH   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 0,1,2,3 stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 ### A négy nézőpont részletesen
@@ -72,14 +81,21 @@ A BSC kulcseleme, hogy a négy nézőpont **nem független egymástól**, hanem 
 
 ```mermaid
 flowchart TD
-    T["📚 Tanulás & Fejlődés<br/>Jobb képzés, magasabb kompetencia"]
-    B["⚙️ Belső folyamatok<br/>Jobb gyártási minőség, rövidebb átfutás"]
-    V["👥 Vevői nézőpont<br/>Elégedettebb vevők, több megrendelés"]
-    P["💰 Pénzügyi nézőpont<br/>Magasabb árbevétel, jobb ROI"]
+    T["📚 <b>Tanulás & Fejlődés</b><br/>Jobb képzés, magasabb kompetencia"]:::turkiz
+    B["⚙️ <b>Belső folyamatok</b><br/>Jobb gyártási minőség, rövidebb átfutás"]:::kek
+    V["👥 <b>Vevői nézőpont</b><br/>Elégedettebb vevők, több megrendelés"]:::narancs
+    P["💰 <b>Pénzügyi nézőpont</b><br/>Magasabb árbevétel, jobb ROI"]:::zold
 
     T -->|"képzett munkaerő javítja a folyamatokat"| B
     B -->|"jobb minőség növeli az elégedettséget"| V
     V -->|"hűséges vevők növelik a bevételt"| P
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 Ez a logika teszi a BSC-t **stratégiai irányítási rendszerré** – nem csupán mutatószám-listává.

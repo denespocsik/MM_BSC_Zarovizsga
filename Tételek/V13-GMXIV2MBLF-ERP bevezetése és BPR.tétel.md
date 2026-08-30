@@ -28,21 +28,25 @@ A vállalatok ERP-bevezetés mellett jellemzően akkor döntenek, amikor a megl�
 Az ERP bevezetés lényege szerint **szervezeti átalakulás, amelyet technológia támogat** – nem fordítva. A tipikus szervezeti hatások:
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFF', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart LR
-    classDef silo    fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
-    classDef process fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
-
     subgraph ELOTTE["⚠️  ELŐTTE — Funkcionális silók"]
         direction TB
-        P(["Pénzügy\nSaját adatbázis"]):::silo
-        R(["Raktár\nSaját adatbázis"]):::silo
-        E(["Értékesítés\nSaját adatbázis"]):::silo
+        P(["<b>Pénzügy</b><br/>Saját adatbázis"]):::narancs
+        R(["<b>Raktár</b><br/>Saját adatbázis"]):::narancs
+        E(["<b>Értékesítés</b><br/>Saját adatbázis"]):::narancs
     end
     subgraph UTANA["✅  UTÁNA — Folyamatközpontú szervezet"]
-        OC(["Order-to-Cash folyamat\nÉrtékesítés → Raktár → Számlázás\nKözös ERP platform · Egységes adat"]):::process
+        OC(["<b>Order-to-Cash folyamat</b><br/>Értékesítés → Raktár → Számlázás<br/>Közös ERP platform · Egységes adat"]):::zold
     end
     ELOTTE -->|"BPR + ERP bevezetés"| UTANA
+
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+
+    style ELOTTE fill:#fffaf3,stroke:#ffcc80,stroke-width:1.5px,color:#ef6c00;
+    style UTANA  fill:#f4fbf5,stroke:#a5d6a7,stroke-width:1.5px,color:#2e7d32;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 A bevezetéssel járó változások: szerepkörök átrendeződése, folyamatgazda szemlélet bevezetése, munkatársak átképzése, és változásmenedzsment (change management) szükségessége.
@@ -79,20 +83,25 @@ A **BPR (Business Process Reengineering)** Hammer és Champy (1993) által kidol
 A BPR nem egyszerű folyamatjavítás (continuous improvement), hanem nulláról való újraépítés:
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFF', 'lineColor': '#546E7A'}}}%%
 flowchart LR
-    classDef neutral fill:#ECEFF1,stroke:#546E7A,stroke-width:2px,color:#263238,font-weight:bold
-    classDef kaizen  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
-    classDef bpr     fill:#FCE4EC,stroke:#C62828,stroke-width:2px,color:#880E4F,font-weight:bold
-
     subgraph KAI["🔄  Folyamatjavítás — Kaizen (fokozatos, folyamatos)"]
         direction LR
-        K1(["Meglévő\nfolyamat"]):::neutral -->|"Kisebb javítás"| K2(["Jobb\nfolyamat"]):::kaizen
+        K1(["<b>Meglévő</b><br/>folyamat"]):::szurke -->|"Kisebb javítás"| K2(["<b>Jobb</b><br/>folyamat"]):::kek
     end
     subgraph BPR_["🔥  BPR — Üzleti folyamatok újratervezése (radikális)"]
         direction LR
-        B1(["Meglévő\nfolyamat"]):::neutral -->|"Teljes lebontás"| B2(["Gyökeresen\núj folyamat"]):::bpr
+        B1(["<b>Meglévő</b><br/>folyamat"]):::szurke -->|"Teljes lebontás"| B2(["<b>Gyökeresen</b><br/>új folyamat"]):::rozsa
     end
+
+    classDef kek    fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef rozsa  fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef szurke fill:#eceff1,stroke:#546e7a,stroke-width:2px,color:#263238,rx:10,ry:10;
+
+    style KAI  fill:#f5f9ff,stroke:#90caf9,stroke-width:1.5px,color:#1565c0;
+    style BPR_ fill:#fdf5f8,stroke:#f48fb1,stroke-width:1.5px,color:#c2185b;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 1 stroke:#c2185b,stroke-width:2px;
 ```
 
 **Az ERP és a BPR kapcsolata:**

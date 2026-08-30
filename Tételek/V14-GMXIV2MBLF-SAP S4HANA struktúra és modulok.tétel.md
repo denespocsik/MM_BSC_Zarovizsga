@@ -9,28 +9,32 @@
 Az SAP S/4HANA (2015–) a vállalatirányítási rendszerek negyedik generációja. Legfőbb újítása az **SAP HANA in-memory adatbázis**, amely az adatokat a merevlemez helyett a RAM-ban tárolja.
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFF', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart TB
-    classDef legacy    fill:#ECEFF1,stroke:#607D8B,stroke-width:2px,color:#263238,font-weight:bold
-    classDef legacy_db fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C
-    classDef modern    fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
-    classDef modern_db fill:#E8F5E9,stroke:#1B5E20,stroke-width:3px,color:#1B5E20,font-weight:bold
-
     subgraph ECC["🏛️  SAP R/3 / ECC — Korábbi generáció"]
         direction TB
-        A1(["Alkalmazás (ABAP)"]):::legacy
-        A2(["ABAP futtatókörnyezet"]):::legacy
-        A3(["Hagyományos RDBMS\nOracle · MSSQL · DB2\nAggregált táblák · Éjszakai batch"]):::legacy_db
+        A1(["<b>Alkalmazás (ABAP)</b>"]):::szurke
+        A2(["<b>ABAP futtatókörnyezet</b>"]):::szurke
+        A3(["<b>Hagyományos RDBMS</b><br/>Oracle · MSSQL · DB2<br/>Aggregált táblák · Éjszakai batch"]):::narancs
         A1 --- A2 --- A3
     end
     subgraph S4["🚀  SAP S/4HANA — Jelenlegi generáció"]
         direction TB
-        B1(["Alkalmazás + SAP Fiori UI\nTranszakciós · Analitikai · Factsheet"]):::modern
-        B2(["ABAP futtatókörnyezet"]):::modern
-        B3(["SAP HANA — In-memory adatbázis\nOLTP + OLAP egyben · Valós idejű elemzés"]):::modern_db
+        B1(["<b>Alkalmazás + SAP Fiori UI</b><br/>Transzakciós · Analitikai · Factsheet"]):::zold
+        B2(["<b>ABAP futtatókörnyezet</b>"]):::zold
+        B3(["<b>SAP HANA — In-memory adatbázis</b><br/>OLTP + OLAP egyben · Valós idejű elemzés"]):::zoldH
         B1 --- B2 --- B3
     end
     ECC -->|"Evolúció / System Conversion"| S4
+
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef zoldH   fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef szurke  fill:#eceff1,stroke:#546e7a,stroke-width:2px,color:#263238,rx:10,ry:10;
+
+    style ECC fill:#f7f9fa,stroke:#b0bec5,stroke-width:1.5px,color:#546e7a;
+    style S4  fill:#f4fbf5,stroke:#a5d6a7,stroke-width:1.5px,color:#2e7d32;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 **Az S/4HANA előnyei a korábbi generációkhoz képest:**
@@ -60,26 +64,26 @@ Minden üzleti esemény egyedi sorszámú, nem törölhető elektronikus bizonyl
 Az SAP a vállalat fizikai és jogi struktúráját szervezeti egységekkel modellezi. Ezek hierarchikusan épülnek egymásra:
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#1976D2'}}}%%
 flowchart TD
-    classDef client  fill:#1565C0,stroke:#0D47A1,stroke-width:3px,color:#fff,font-weight:bold
-    classDef company fill:#1976D2,stroke:#1565C0,stroke-width:2px,color:#fff,font-weight:bold
-    classDef plant   fill:#42A5F5,stroke:#1976D2,stroke-width:2px,color:#fff
-    classDef storage fill:#BBDEFB,stroke:#42A5F5,stroke-width:1px,color:#0D47A1
-    classDef sales   fill:#0277BD,stroke:#01579B,stroke-width:2px,color:#fff,font-weight:bold
-    classDef channel fill:#4FC3F7,stroke:#0277BD,stroke-width:1.5px,color:#01579B
-    classDef div     fill:#B3E5FC,stroke:#4FC3F7,stroke-width:1px,color:#01579B
-
-    CL(["🌍 Kliens — Client\nGlobal Bike GBI"]):::client
-    CC(["🏢 Vállalati kód — Company Code\nUS00 · DE00\nÖnálló jogi számviteli egység, mérleg készül"]):::company
-    PL(["🏭 Gyár — Plant\nDL00 Dallas · HD00 Heidelberg · MI00 Miami\nTermelési vagy raktározási egység"]):::plant
-    SL(["📦 Raktárhely — Storage Location\nFG00 Késztermék · RM00 Alapanyag"]):::storage
-    SO(["🛒 Értékesítési szervezet — Sales Org.\nUW00 US West · DN00 DE North"]):::sales
-    DC(["🚚 Értékesítési csatorna\nNagykereskedelem · Internet"]):::channel
-    DV(["📂 Divízió\nTermék- és szolgáltatáscsoportok"]):::div
+    CL(["🌍 <b>Kliens — Client</b><br/>Global Bike GBI"]):::lilaH
+    CC(["🏢 <b>Vállalati kód — Company Code</b><br/>US00 · DE00<br/>Önálló jogi számviteli egység, mérleg készül"]):::kek
+    PL(["🏭 <b>Gyár — Plant</b><br/>DL00 Dallas · HD00 Heidelberg · MI00 Miami<br/>Termelési vagy raktározási egység"]):::kek
+    SL(["📦 <b>Raktárhely — Storage Location</b><br/>FG00 Késztermék · RM00 Alapanyag"]):::turkiz
+    SO(["🛒 <b>Értékesítési szervezet — Sales Org.</b><br/>UW00 US West · DN00 DE North"]):::zold
+    DC(["🚚 <b>Értékesítési csatorna</b><br/>Nagykereskedelem · Internet"]):::zold
+    DV(["📂 <b>Divízió</b><br/>Termék- és szolgáltatáscsoportok"]):::sarga
 
     CL --> CC --> PL --> SL
     CL --> SO --> DC --> DV
+
+    classDef kek    fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold   fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef lilaH  fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+    classDef sarga  fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 0,3 stroke:#7b1fa2,stroke-width:2px;
 ```
 
 **A Global Bike vállalati struktúra az SAP-ban:**  
@@ -109,24 +113,25 @@ Az SAP egyik legfontosabb jellemzője, hogy az egyes modulok nem egymás után, 
 **Példa: Gyártási rendelés teljes adatáramlása**
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFF', 'lineColor': '#455A64', 'edgeLabelBackground': '#FAFAFA'}}}%%
 flowchart LR
-    classDef sd fill:#FFF8E1,stroke:#F9A825,stroke-width:2px,color:#212121,font-weight:bold
-    classDef pp fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,color:#4A148C,font-weight:bold
-    classDef mm fill:#E0F2F1,stroke:#00695C,stroke-width:2px,color:#004D40,font-weight:bold
-    classDef co fill:#FCE4EC,stroke:#C62828,stroke-width:2px,color:#880E4F,font-weight:bold
-    classDef fi fill:#E8EAF6,stroke:#283593,stroke-width:2px,color:#1A237E,font-weight:bold
-
-    SD(["💼 SD — Értékesítés\nVevői rendelés\nlétrehozása"]):::sd
-    PP(["⚙️ PP — Termelésirányítás\nGyártási rendelés\nlétrehozása"]):::pp
-    MM(["📦 MM — Anyaggazdálkodás\nKészletcsökkentés\nGoods Issue"]):::mm
-    CO(["📊 CO — Controlling\nÖnköltség-elszámolás\nKöltséghely terhelés"]):::co
-    FI(["💰 FI — Pénzügyi számvitel\nAutomatikus főkönyvi\nkönyvelés"]):::fi
+    SD(["💼 <b>SD — Értékesítés</b><br/>Vevői rendelés<br/>létrehozása"]):::sarga
+    PP(["⚙️ <b>PP — Termelésirányítás</b><br/>Gyártási rendelés<br/>létrehozása"]):::lila
+    MM(["📦 <b>MM — Anyaggazdálkodás</b><br/>Készletcsökkentés<br/>Goods Issue"]):::turkiz
+    CO(["📊 <b>CO — Controlling</b><br/>Önköltség-elszámolás<br/>Költséghely terhelés"]):::rozsa
+    FI(["💰 <b>FI — Pénzügyi számvitel</b><br/>Automatikus főkönyvi<br/>könyvelés"]):::kek
 
     SD -->|"MRP igény"| PP
     PP -->|"Anyagkivét kérés"| MM
     PP -->|"Automatikus könyvelés"| CO
     MM -->|"Anyagköltség könyvelés"| FI
+
+    classDef kek    fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef rozsa  fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef lila   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+    classDef sarga  fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 **A Procure-to-Pay (P2P) folyamat – az MM és FI integráció klasszikus példája:**

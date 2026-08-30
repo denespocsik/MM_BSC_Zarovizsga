@@ -10,13 +10,22 @@ A stratégiai menedzsment a vállalat **hosszú távú versenyképességét** al
 
 ```mermaid
 flowchart TD
-    A["🔍 1. Stratégiai elemzés<br/><i>PESTEL, Porter 5 erő, értéklánc, SWOT</i>"]
-    B["💡 2. Stratégiai lehetőségek kidolgozása<br/><i>BCG-mátrix, Ansoff-mátrix, Porter alapstratégiák</i>"]
-    C["📣 3. Stratégia kiválasztása és kommunikálása<br/><i>Küldetés, jövőkép, elérendő pozíció</i>"]
-    D["🏗️ 4. Stratégia beágyazása a szervezetbe<br/><i>BSC, stratégiai térkép</i>"]
-    E["🔄 5. Stratégiai felülvizsgálat<br/><i>Eltéréselemzés, a ciklus újraindítása</i>"]
+    A["🔍 <b>1. Stratégiai elemzés</b><br/><i>PESTEL, Porter 5 erő, értéklánc, SWOT</i>"]:::kek
+    B["💡 <b>2. Stratégiai lehetőségek kidolgozása</b><br/><i>BCG-mátrix, Ansoff-mátrix, Porter alapstratégiák</i>"]:::turkiz
+    C["📣 <b>3. Stratégia kiválasztása és kommunikálása</b><br/><i>Küldetés, jövőkép, elérendő pozíció</i>"]:::zold
+    D["🏗️ <b>4. Stratégia beágyazása a szervezetbe</b><br/><i>BSC, stratégiai térkép</i>"]:::narancs
+    E["🔄 <b>5. Stratégiai felülvizsgálat</b><br/><i>Eltéréselemzés, a ciklus újraindítása</i>"]:::lila
 
     A --> B --> C --> D --> E -->|"új ciklus"| A
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 4 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 ### Stratégiai controlling
@@ -42,16 +51,27 @@ Az operatív controlling folyamata:
 
 ```mermaid
 flowchart TD
-    A["📅 Éves terv elkészítése<br/>(szept.–dec.)"]
-    B["📥 Havi tényadatok gyűjtése<br/>(vezetői számvitel)"]
-    C["⚖️ Terv–tény összehasonlítás<br/>(riport)"]
-    D["🔎 Eltérések elemzése<br/>(ok feltárása)"]
-    E["✅ Intézkedések meghozatala"]
-    F["📝 Terv felülvizsgálata<br/>(szükség esetén)"]
+    A["📅 <b>Éves terv elkészítése</b><br/>(szept.–dec.)"]:::kek
+    B["📥 <b>Havi tényadatok gyűjtése</b><br/>(vezetői számvitel)"]:::turkiz
+    C["⚖️ <b>Terv–tény összehasonlítás</b><br/>(riport)"]:::zold
+    D["🔎 <b>Eltérések elemzése</b><br/>(ok feltárása)"]:::sarga
+    E["✅ <b>Intézkedések meghozatala</b>"]:::narancs
+    F["📝 <b>Terv felülvizsgálata</b><br/>(szükség esetén)"]:::lila
 
     A --> B --> C --> D --> E
     E -->|"visszacsatolás"| B
     E -->|"jelentős eltérés"| F --> B
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+    classDef sarga   fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 4 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
+    linkStyle 5 stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 ### Stratégiai és operatív controlling összehasonlítása

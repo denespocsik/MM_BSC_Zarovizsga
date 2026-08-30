@@ -13,6 +13,7 @@ A szakirodalom következetesen különválasztja a *menedzsment* és a *leadersh
 Mintzberg (1973) a menedzseri munkát tíz szerepbe rendezte, három csoportban:
 
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#e3f2fd','primaryBorderColor':'#1565c0','primaryTextColor':'#0d47a1','lineColor':'#546e7a','fontFamily':'inherit'}}}%%
 mindmap
   root((🎯 Mintzberg
     Vezetői szerepek))

@@ -19,7 +19,7 @@ Az integráltság három alapelven nyugszik:
 ### 12.2. Az ERP fejlődéstörténete
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'cScale0': '#1565C0', 'cScale1': '#1976D2', 'cScale2': '#0288D1', 'cScale3': '#00897B', 'cScale4': '#2E7D32'}}}%%
+%%{init: {'theme':'base','themeVariables':{'cScale0':'#e3f2fd','cScaleLabel0':'#0d47a1','cScale1':'#e0f2f1','cScaleLabel1':'#004d40','cScale2':'#e8f5e9','cScaleLabel2':'#1b5e20','cScale3':'#fff3e0','cScaleLabel3':'#e65100','cScale4':'#f3e5f5','cScaleLabel4':'#4a148c','titleColor':'#263238','lineColor':'#546e7a'}}}%%
 timeline
     title Az üzleti informatika fejlődése
     section 1960–70-es évek
@@ -60,21 +60,22 @@ timeline
 Az ERP nem egyedüli réteg – a vállalati IT-architektúrában több szinttel együttműködik:
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart BT
-    classDef external  fill:#ECEFF1,stroke:#546E7A,stroke-width:2px,color:#263238,font-weight:bold
-    classDef operative fill:#E8F5E9,stroke:#2E7D32,stroke-width:3px,color:#1B5E20,font-weight:bold
-    classDef tactical  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
-    classDef strategic fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
-
-    K(["🌐 KÜLSŐ RENDSZEREK\nCRM · SCM · WMS · IoT · EDI"]):::external
-    O(["⚙️ OPERATÍV SZINT — Digitális mag\nERP: FI · CO · MM · SD · PP · HR"]):::operative
-    T(["📊 TAKTIKAI SZINT\nControlling · DSS"]):::tactical
-    S(["🎯 STRATÉGIAI SZINT\nBI · BSC · MIS"]):::strategic
+    K(["🌐 <b>KÜLSŐ RENDSZEREK</b><br/>CRM · SCM · WMS · IoT · EDI"]):::szurke
+    O(["⚙️ <b>OPERATÍV SZINT — Digitális mag</b><br/>ERP: FI · CO · MM · SD · PP · HR"]):::zoldH
+    T(["📊 <b>TAKTIKAI SZINT</b><br/>Controlling · DSS"]):::kek
+    S(["🎯 <b>STRATÉGIAI SZINT</b><br/>BI · BSC · MIS"]):::lila
 
     K -->|"Adatforrás"| O
     O -->|"Tranzakciós adatok"| T
     T -->|"Aggregált riportok"| S
+
+    classDef kek    fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zoldH  fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20,rx:10,ry:10;
+    classDef lila   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef szurke fill:#eceff1,stroke:#546e7a,stroke-width:2px,color:#263238,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 Az ERP az „operatív mag" (digital core): minden üzleti tranzakció itt keletkezik és kerül rögzítésre. A felsőbb szintek (BI, controlling) ebből az adatbázisból táplálkoznak. A VIR-en belül az ERP biztosítja az egységes törzsadatokat, a bizonylati elvet és a bizonylatfolyamot.

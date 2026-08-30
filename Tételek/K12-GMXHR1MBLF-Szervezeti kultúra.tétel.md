@@ -17,18 +17,7 @@ Buchowicz (1990) a munkavállalói perspektívát emeli ki: a kultúra az alkalm
 Handy (1986) négy alaptípust különböztet meg, amelyek különböző szervezeti formákhoz kapcsolódnak:
 
 ```mermaid
-%%{init: {
-  "quadrantChart": {"chartWidth": 420, "chartHeight": 420, "pointRadius": 7, "pointLabelFontSize": 14},
-  "themeVariables": {
-    "quadrant1Fill": "#dbeafe", "quadrant1TextFill": "#1e40af",
-    "quadrant2Fill": "#dcfce7", "quadrant2TextFill": "#166534",
-    "quadrant3Fill": "#fef9c3", "quadrant3TextFill": "#854d0e",
-    "quadrant4Fill": "#fce7f3", "quadrant4TextFill": "#831843",
-    "quadrantPointFill": "#6366f1", "quadrantPointTextFill": "#1e1b4b",
-    "quadrantXAxisTextFill": "#374151", "quadrantYAxisTextFill": "#374151",
-    "quadrantTitleFill": "#111827"
-  }
-}}%%
+%%{init: {'theme':'base','themeVariables':{'quadrant1Fill':'#e3f2fd','quadrant2Fill':'#e8f5e9','quadrant3Fill':'#fff3e0','quadrant4Fill':'#f3e5f5','quadrant1TextFill':'#0d47a1','quadrant2TextFill':'#1b5e20','quadrant3TextFill':'#e65100','quadrant4TextFill':'#4a148c','quadrantPointFill':'#546e7a','quadrantPointTextFill':'#263238','quadrantXAxisTextFill':'#546e7a','quadrantYAxisTextFill':'#546e7a','quadrantTitleFill':'#263238','quadrantInternalBorderStrokeFill':'#90a4ae','quadrantExternalBorderStrokeFill':'#546e7a'},'quadrantChart':{'chartWidth':420,'chartHeight':420,'pointRadius':7,'pointLabelFontSize':14}}}%%
 quadrantChart
     title "Handy kultúratipológia — Handy (1986)"
     x-axis "Alacsony szabályozottság" --> "Magas szabályozottság"
@@ -50,22 +39,24 @@ Daft (1992) jéghegy-modellje szemlélteti, hogy a szervezeti kultúrának csak 
 ```mermaid
 graph TB
     subgraph LATHATO["☀️ FELSZÍN FELETT — látható elemek"]
-        V1["🏢 Épület, berendezés, öltözet"]:::visible
-        V2["🎉 Ceremóniák, sztorik, rituálék"]:::visible
-        V3["📐 Iroda elrendezése, szimbólumok"]:::visible
+        V1["🏢 <b>Épület, berendezés, öltözet</b>"]:::kek
+        V2["🎉 <b>Ceremóniák, sztorik, rituálék</b>"]:::kek
+        V3["📐 <b>Iroda elrendezése, szimbólumok</b>"]:::kek
     end
     subgraph REJTETT["🌊 FELSZÍN ALATT — rejtett elemek"]
-        R1["💡 Értékek és normák"]:::hidden
-        R2["🧠 Hiedelmek, feltevések"]:::hidden
-        R3["❤️ Érzések a szervezet iránt"]:::hidden
+        R1["💡 <b>Értékek és normák</b>"]:::zold
+        R2["🧠 <b>Hiedelmek, feltevések</b>"]:::zold
+        R3["❤️ <b>Érzések a szervezet iránt</b>"]:::zold
     end
-    LATHATO -->|"⬇️ csak a felső réteg\nválik láthatóvá"| REJTETT
+    LATHATO -->|"⬇️ csak a felső réteg<br/>válik láthatóvá"| REJTETT
 
-    classDef visible fill:#bfdbfe,stroke:#2563eb,color:#1e3a5f,font-weight:bold
-    classDef hidden  fill:#a7f3d0,stroke:#059669,color:#064e3b,font-weight:bold
+    classDef kek  fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
 
-    style LATHATO fill:#dbeafe,stroke:#1d4ed8,color:#1e3a5f,font-weight:bold
-    style REJTETT fill:#d1fae5,stroke:#059669,color:#064e3b,font-weight:bold
+    style LATHATO fill:#f5f9ff,stroke:#90caf9,stroke-width:1.5px,color:#1565c0;
+    style REJTETT fill:#f4fbf5,stroke:#a5d6a7,stroke-width:1.5px,color:#2e7d32;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 ### Kultúra és leadership kapcsolata

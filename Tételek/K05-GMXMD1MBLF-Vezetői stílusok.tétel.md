@@ -45,20 +45,22 @@ Likert mérései szerint a 4-es rendszer adja a legjobb hosszú távú eredmény
 
 ```mermaid
 graph LR
-    A1["1\nVezető dönt\nés bejelenti"] --> A2["2\nVezető dönt\nés megmagyarázza"]
-    A2 --> A3["3\nVezető dönt,\nkérdések engedélyezve"]
-    A3 --> A4["4\nVezető javasol,\ncsoport módosíthat"]
-    A4 --> A5["5\nCsoport javasol,\nvezető dönt"]
-    A5 --> A6["6\nCsoport dönt,\nvezető határt szab"]
-    A6 --> A7["7\nCsoport dönt\nteljes autonómiával"]
+    A1["<b>1</b><br/>Vezető dönt<br/>és bejelenti"]:::rozsa --> A2["<b>2</b><br/>Vezető dönt<br/>és megmagyarázza"]:::narancs
+    A2 --> A3["<b>3</b><br/>Vezető dönt,<br/>kérdések engedélyezve"]:::sarga
+    A3 --> A4["<b>4</b><br/>Vezető javasol,<br/>csoport módosíthat"]:::zold
+    A4 --> A5["<b>5</b><br/>Csoport javasol,<br/>vezető dönt"]:::turkiz
+    A5 --> A6["<b>6</b><br/>Csoport dönt,<br/>vezető határt szab"]:::kek
+    A6 --> A7["<b>7</b><br/>Csoport dönt<br/>teljes autonómiával"]:::lila
 
-    style A1 fill:#c0392b,color:#fff
-    style A2 fill:#e74c3c,color:#fff
-    style A3 fill:#e67e22,color:#fff
-    style A4 fill:#f39c12,color:#fff
-    style A5 fill:#27ae60,color:#fff
-    style A6 fill:#2980b9,color:#fff
-    style A7 fill:#1a5276,color:#fff
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+    classDef sarga   fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 Ez az ábrázolás jól mutatja, hogy a „demokratikus" és „autokratikus" nem bináris — egy spektrumon helyezkednek el.

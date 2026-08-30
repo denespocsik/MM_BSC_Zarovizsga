@@ -10,22 +10,26 @@ A munkaerő-tervezés (HR planning / workforce planning) előrevetíti, hogy a s
 
 ```mermaid
 flowchart TD
-    A(["🏢 Szervezeti célok"]):::start --> B["📈 Munkaerő-kereslet\nelőrejelzése"]:::process
-    B --> C["🏠 Belső kínálat\nelemzése"]:::process
-    B --> D["🌍 Külső munkaerőpiac\nelemzése"]:::process
-    C --> E{"⚖️ Munkaerőhiány\nvs. felesleg?"}:::decision
+    A(["🏢 <b>Szervezeti célok</b>"]):::kekH --> B["📈 <b>Munkaerő-kereslet</b><br/>előrejelzése"]:::kek
+    B --> C["🏠 <b>Belső kínálat</b><br/>elemzése"]:::kek
+    B --> D["🌍 <b>Külső munkaerőpiac</b><br/>elemzése"]:::kek
+    C --> E{"⚖️ <b>Munkaerőhiány</b><br/>vs. felesleg?"}:::sarga
     D --> E
-    E -->|"🔴 Hiány"| F["📣 Toborzási terv"]:::shortage
-    E -->|"🟡 Felesleg"| G["📉 Leépítési /\nátcsoportosítási terv"]:::surplus
-    F --> H(["📄 Munkakörelemzés\nleírás + specifikáció"]):::end_node
+    E -->|"🔴 Hiány"| F["📣 <b>Toborzási terv</b>"]:::rozsa
+    E -->|"🟡 Felesleg"| G["📉 <b>Leépítési /</b><br/>átcsoportosítási terv"]:::narancs
+    F --> H(["📄 <b>Munkakörelemzés</b><br/>leírás + specifikáció"]):::zoldH
     G --> H
 
-    classDef start    fill:#dbeafe,stroke:#2563eb,color:#1e3a5f,font-weight:bold
-    classDef process  fill:#f0f9ff,stroke:#0ea5e9,color:#0c4a6e
-    classDef decision fill:#fef9c3,stroke:#ca8a04,color:#713f12,font-weight:bold
-    classDef shortage fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef surplus  fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef end_node fill:#dcfce7,stroke:#16a34a,color:#14532d,font-weight:bold
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef kekH    fill:#e3f2fd,stroke:#1565c0,stroke-width:3px,color:#0d47a1,rx:10,ry:10;
+    classDef zoldH   fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef sarga   fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 5 stroke:#c2185b,stroke-width:2px;
+    linkStyle 6 stroke:#ef6c00,stroke-width:2px;
 ```
 
 A tervezés alapja a **munkakörelemzés (job analysis)**: minden munkakör feladatainak, felelősségeinek, szükséges kompetenciáinak és munkafeltételeinek szisztematikus feltárása. Két fő kimenete a **munkaköri leírás** (*job description* — mit kell csinálni) és a **munkaköri specifikáció** (*job specification* — milyen ember kell hozzá), amely meghatározza az alkalmazottal szemben támasztott kompetencia-, képesítési és tapasztalati követelményeket (Milkovich & Glueck, 1995).

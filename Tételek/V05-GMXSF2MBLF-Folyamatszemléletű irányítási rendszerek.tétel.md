@@ -35,20 +35,21 @@ A folyamatleltár a szervezet folyamatainak rendszerezett felsorolása – az eg
 A teknős-elemzés a folyamatok átfogó szabályozási és elemzési eszköze. A diagram középen a vizsgált folyamatot tartalmazza, körülötte hat dimenzió helyezkedik el:
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart TB
-    classDef input   fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
-    classDef support fill:#ECEFF1,stroke:#546E7A,stroke-width:2px,color:#263238,font-weight:bold
-    classDef process fill:#E8F5E9,stroke:#2E7D32,stroke-width:3px,color:#1B5E20,font-weight:bold
-    classDef output  fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
+    BE["📥 <b>BEMENETEK</b><br/>(Mi indítja?)"]:::kek --> FO
+    KI["👥 <b>KIKKEL?</b><br/>(Szereplők, felelősök)"]:::szurke --> FO
+    MI["🔧 <b>MIVEL?</b><br/>(Erőforrások, rendszerek)"]:::szurke --> FO
+    HO["📋 <b>HOGYAN?</b><br/>(Módszerek, szabályzatok)"]:::szurke --> FO
+    ME["📊 <b>MÉRÉSEK</b><br/>(KPI-k)"]:::szurke --> FO
+    FO(["⚙️ <b>FOLYAMAT neve</b>"]):::zoldH
+    FO --> KIM["📤 <b>KIMENETEK</b><br/>(Mit hoz létre?)"]:::lila
 
-    BE["📥 BEMENETEK<br/>(Mi indítja?)"]:::input --> FO
-    KI["👥 KIKKEL?<br/>(Szereplők, felelősök)"]:::support --> FO
-    MI["🔧 MIVEL?<br/>(Erőforrások, rendszerek)"]:::support --> FO
-    HO["📋 HOGYAN?<br/>(Módszerek, szabályzatok)"]:::support --> FO
-    ME["📊 MÉRÉSEK<br/>(KPI-k)"]:::support --> FO
-    FO(["⚙️ FOLYAMAT neve"]):::process
-    FO --> KIM["📤 KIMENETEK<br/>(Mit hoz létre?)"]:::output
+    classDef kek    fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zoldH  fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20,rx:10,ry:10;
+    classDef lila   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef szurke fill:#eceff1,stroke:#546e7a,stroke-width:2px,color:#263238,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 **Panaszkezelési folyamat teknős-elemzése:**
@@ -70,17 +71,19 @@ A teknős-elemzés nem helyettesíti a BPMN-modellt, de kiváló kiegészítője
 A **PDCA (Plan–Do–Check–Act)** Deming ciklusa a folyamatos fejlesztés alapmodellje a MIR-ben:
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart LR
-    classDef plan  fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
-    classDef do    fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
-    classDef check fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
-    classDef act   fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
-
-    P["📋 PLAN<br/>Tervez"]:::plan --> D["▶️ DO<br/>Végrehajt"]:::do
-    D --> C["🔍 CHECK<br/>Ellenőriz"]:::check
-    C --> A["⚡ ACT<br/>Beavatkozik"]:::act
+    P["📋 <b>PLAN</b><br/>Tervez"]:::kek --> D["▶️ <b>DO</b><br/>Végrehajt"]:::zold
+    D --> C["🔍 <b>CHECK</b><br/>Ellenőriz"]:::lila
+    C --> A["⚡ <b>ACT</b><br/>Beavatkozik"]:::narancs
     A --> P
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 3 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 | PDCA szakasz | KPI-k szerepe |

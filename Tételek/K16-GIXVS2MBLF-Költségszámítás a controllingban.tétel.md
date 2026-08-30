@@ -21,18 +21,29 @@ Reagálási fok = 1 → proporcionális; < 1 → degresszív; > 1 → progressz�
 
 ```mermaid
 flowchart TD
-    K["💼 Összes költség"]
-    F["🔒 Fix költség<br/>nem függ a termelési volumentől<br/><i>Pl.: bérleti díj, amortizáció, havidíjas bérek</i>"]
-    V["📈 Változó költség<br/>a volumennel változik"]
-    P["➡️ Proporcionális (arányos)<br/><i>Pl.: anyagköltség</i>"]
-    D["↘️ Degresszív (lassabban nő)<br/><i>Pl.: energiaköltség</i>"]
-    G["↗️ Progresszív (gyorsabban nő)<br/><i>Pl.: túlórabér</i>"]
+    K["💼 <b>Összes költség</b>"]:::lilaH
+    F["🔒 <b>Fix költség</b><br/>nem függ a termelési volumentől<br/><i>Pl.: bérleti díj, amortizáció, havidíjas bérek</i>"]:::kek
+    V["📈 <b>Változó költség</b><br/>a volumennel változik"]:::zold
+    P["➡️ <b>Proporcionális (arányos)</b><br/><i>Pl.: anyagköltség</i>"]:::turkiz
+    D["↘️ <b>Degresszív (lassabban nő)</b><br/><i>Pl.: energiaköltség</i>"]:::sarga
+    G["↗️ <b>Progresszív (gyorsabban nő)</b><br/><i>Pl.: túlórabér</i>"]:::narancs
 
     K --> F
     K --> V
     V --> P
     V --> D
     V --> G
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lilaH   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+    classDef sarga   fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 0,1 stroke:#7b1fa2,stroke-width:2px;
+    linkStyle 2,3,4 stroke:#2e7d32,stroke-width:2px;
 ```
 
 **2. Elszámolhatóság szerint:**
@@ -61,12 +72,18 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A["📦 Költségnemszámítás<br/><b>Mit</b> költöttünk?"]
-    B["📍 Költséghelyszámítás<br/><b>Hol</b> merült fel?"]
-    C["🎯 Költségviselő-számítás<br/><b>Mire</b> fordítottuk?"]
+    A["📦 <b>Költségnemszámítás</b><br/><b>Mit</b> költöttünk?"]:::kek
+    B["📍 <b>Költséghelyszámítás</b><br/><b>Hol</b> merült fel?"]:::zold
+    C["🎯 <b>Költségviselő-számítás</b><br/><b>Mire</b> fordítottuk?"]:::narancs
 
     A -->|"erőforrás → felelősségi terület"| B
     B -->|"felelősségi terület → termék/szolgáltatás"| C
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 A **költséghelyszámítás** során a segédüzemi és kiszolgáló egységek teljesítményeit a végköltséghelyekre kell átterhelni. Ennek négy eljárása van:

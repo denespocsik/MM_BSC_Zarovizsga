@@ -10,23 +10,25 @@ A kiválasztás (selection) a toborzás során összegyűlt jelöltek közül a 
 
 ```mermaid
 flowchart TD
-    A(["📥 Álláspályázatok\nbeérkezése"]):::start
-    --> B["📄 CV-szűrés / előszűrés\n— formai megfelelés"]:::s1
-    --> C["📞 Előzetes interjú\n(telefonos / online)"]:::s2
-    --> D["🧪 Tesztelés\n(képesség · személyiség · Big Five)"]:::s3
-    --> E["🗣️ Mélyinterjú\n(strukturált / BEI)"]:::s4
-    --> F["🏢 Assessment Center\n(komplex értékelés · szerepjáték)"]:::s5
-    --> G["🔍 Referencia-\nellenőrzés"]:::s6
-    --> H(["✅ Döntés és\najánlattétel"]):::finish
+    A(["📥 <b>Álláspályázatok</b><br/>beérkezése"]):::kekH
+    --> B["📄 <b>CV-szűrés / előszűrés</b><br/>— formai megfelelés"]:::kek
+    --> C["📞 <b>Előzetes interjú</b><br/>(telefonos / online)"]:::turkiz
+    --> D["🧪 <b>Tesztelés</b><br/>(képesség · személyiség · Big Five)"]:::sarga
+    --> E["🗣️ <b>Mélyinterjú</b><br/>(strukturált / BEI)"]:::narancs
+    --> F["🏢 <b>Assessment Center</b><br/>(komplex értékelés · szerepjáték)"]:::rozsa
+    --> G["🔍 <b>Referencia-</b><br/>ellenőrzés"]:::lila
+    --> H(["✅ <b>Döntés és</b><br/>ajánlattétel"]):::zoldH
 
-    classDef start  fill:#dbeafe,stroke:#2563eb,color:#1e3a5f,font-weight:bold
-    classDef s1     fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    classDef s2     fill:#d1fae5,stroke:#059669,color:#064e3b
-    classDef s3     fill:#fef9c3,stroke:#ca8a04,color:#713f12
-    classDef s4     fill:#ffedd5,stroke:#ea580c,color:#7c2d12
-    classDef s5     fill:#fce7f3,stroke:#db2777,color:#831843,font-weight:bold
-    classDef s6     fill:#ede9fe,stroke:#7c3aed,color:#3b0764
-    classDef finish fill:#dcfce7,stroke:#16a34a,color:#14532d,font-weight:bold
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef kekH    fill:#e3f2fd,stroke:#1565c0,stroke-width:3px,color:#0d47a1,rx:10,ry:10;
+    classDef zoldH   fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+    classDef sarga   fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 ### Kiválasztási módszerek

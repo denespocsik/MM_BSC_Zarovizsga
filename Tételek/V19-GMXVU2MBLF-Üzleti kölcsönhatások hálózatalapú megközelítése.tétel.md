@@ -10,12 +10,18 @@ Az üzleti kapcsolatok és a piac elemzésére két domináns elméleti hagyomá
 
 ```mermaid
 flowchart TD
-    SA["1. STRUKTÚRA-ALAPÚ megközelítés\nneoklasszikus közgazdaságtan, Porter\nA piac statikus adott — a verseny a struktúrában"]
-    FA["2. FOLYAMAT-ALAPÚ megközelítés\nszervezetelméletek, folyamatmenedzsment\nA vállalat belső folyamataiban van az érték"]
-    IMP(["IMP KRITIKA: mindkettő hiányos\n→ Hálózatalapú megközelítés szükséges"])
+    SA["<b>1. STRUKTÚRA-ALAPÚ megközelítés</b><br/>neoklasszikus közgazdaságtan, Porter<br/>A piac statikus adott — a verseny a struktúrában"]:::kek
+    FA["<b>2. FOLYAMAT-ALAPÚ megközelítés</b><br/>szervezetelméletek, folyamatmenedzsment<br/>A vállalat belső folyamataiban van az érték"]:::zold
+    IMP(["<b>IMP KRITIKA: mindkettő hiányos</b><br/>→ Hálózatalapú megközelítés szükséges"]):::lilaH
 
     SA --> IMP
     FA --> IMP
+
+    classDef kek   fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold  fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef lilaH fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#4a148c,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 ---
@@ -33,11 +39,20 @@ A struktúra-alapú (structural) megközelítés – amelyet leginkább a neokla
 
 ```mermaid
 flowchart TD
-    NB["Új belépők\nfenyegetése"] --> V["VÁLLALAT"]
-    SZ["Szállítók\nalkuereje"] --> V
-    VEV["Vevők\nalkuereje"] --> V
-    HEL["Helyettesítők\nfenyegetése"] --> V
-    MEG["Meglévő versenyzők\nrivalizálása"] --> V
+    NB["<b>Új belépők</b><br/>fenyegetése"]:::kek --> V["<b>VÁLLALAT</b>"]:::lilaH
+    SZ["<b>Szállítók</b><br/>alkuereje"]:::zold --> V
+    VEV["<b>Vevők</b><br/>alkuereje"]:::narancs --> V
+    HEL["<b>Helyettesítők</b><br/>fenyegetése"]:::rozsa --> V
+    MEG["<b>Meglévő versenyzők</b><br/>rivalizálása"]:::turkiz --> V
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef lilaH   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#4a148c,rx:10,ry:10;
+    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 #### Az IMP kritika
@@ -65,11 +80,19 @@ A folyamat-alapú (process-based) megközelítés a szervezet belső folyamatait
 ```mermaid
 flowchart LR
     subgraph ELS["Elsődleges tevékenységek"]
-        BL["Belogisztika"] --> TER["Termelés"] --> KL["Kilogisztika"] --> MK["Marketing"] --> SZ["Szerviz"]
+        BL["<b>Belogisztika</b>"]:::kek --> TER["<b>Termelés</b>"]:::kek --> KL["<b>Kilogisztika</b>"]:::kek --> MK["<b>Marketing</b>"]:::kek --> SZ["<b>Szerviz</b>"]:::kek
     end
     subgraph TAM["Támogató tevékenységek"]
-        INF["Infrastruktúra"] ~~~ HR["HR"] ~~~ TECH["Technológia"] ~~~ BES["Beszerzés"]
+        INF["<b>Infrastruktúra</b>"]:::szurke ~~~ HR["<b>HR</b>"]:::szurke ~~~ TECH["<b>Technológia</b>"]:::szurke ~~~ BES["<b>Beszerzés</b>"]:::szurke
     end
+
+    classDef kek    fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef szurke fill:#eceff1,stroke:#546e7a,stroke-width:2px,color:#263238,rx:10,ry:10;
+
+    style ELS fill:#f5f9ff,stroke:#90caf9,stroke-width:1.5px,color:#1565c0;
+    style TAM fill:#f7f9fa,stroke:#b0bec5,stroke-width:1.5px,color:#546e7a;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 #### Az IMP kritika
@@ -93,19 +116,26 @@ Az IMP csoport az üzleti piacokat (B2B markets) nem homogén, anonim versenyté
 
 ```mermaid
 graph LR
-    SZ1["Szállító 1"] --- SZ2["Szállító 2"]
-    SZ1 --- V1["Vállalat 1"]
+    SZ1["<b>Szállító 1</b>"]:::zold --- SZ2["<b>Szállító 2</b>"]:::zold
+    SZ1 --- V1["<b>Vállalat 1</b>"]:::kek
     SZ2 --- V1
-    SZ2 --- V2["Vállalat 2"]
+    SZ2 --- V2["<b>Vállalat 2</b>"]:::kek
     V1 --- V2
-    V2 --- V3["Vállalat 3"]
-    V1 --- K1["Vevő 1"]
+    V2 --- V3["<b>Vállalat 3</b>"]:::kek
+    V1 --- K1["<b>Vevő 1</b>"]:::narancs
     V2 --- K1
-    V2 --- K2["Vevő 2"]
+    V2 --- K2["<b>Vevő 2</b>"]:::narancs
     V3 --- K2
 
-    NOTE(["Minden kapcsolat egyedi, tartós,\nés befolyásolja a többi kapcsolatot"])
+    NOTE(["Minden kapcsolat egyedi, tartós,<br/>és befolyásolja a többi kapcsolatot"]):::szurke
     K2 ~~~ NOTE
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef szurke  fill:#eceff1,stroke:#546e7a,stroke-width:2px,color:#263238,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 **A piac mint hálózat legfontosabb következményei:**
@@ -133,13 +163,21 @@ A hálózatalapú megközelítés operatív magja az IMP interakció-modell, ame
 
 ```mermaid
 flowchart LR
-    SZ["SZÁLLÍTÓ\nszervezet + egyén"]
-    INTER["INTERAKCIÓS FOLYAMAT\nepizódok · légkör"]
-    VEV["VEVŐ\nszervezet + egyén"]
-    KON["HÁLÓZATI KONTEXTUS\nmás kapcsolatok hatása"]
+    SZ["<b>SZÁLLÍTÓ</b><br/>szervezet + egyén"]:::zold
+    INTER["<b>INTERAKCIÓS FOLYAMAT</b><br/>epizódok · légkör"]:::lilaH
+    VEV["<b>VEVŐ</b><br/>szervezet + egyén"]:::narancs
+    KON["<b>HÁLÓZATI KONTEXTUS</b><br/>más kapcsolatok hatása"]:::kek
 
     SZ <--> INTER <--> VEV
     KON --> INTER
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lilaH   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#4a148c,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 2 stroke:#1565c0,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 ---

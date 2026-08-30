@@ -41,17 +41,19 @@ A **folyamatszimuláció** lehetővé teszi a folyamat előzetes modellezését 
 ### 3.4. Az optimalizálás lépései
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart LR
-    classDef asis    fill:#ECEFF1,stroke:#546E7A,stroke-width:2px,color:#263238,font-weight:bold
-    classDef problem fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
-    classDef tobe    fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
-    classDef measure fill:#EDE7F6,stroke:#4527A0,stroke-width:2px,color:#311B92,font-weight:bold
-
-    A["🔍 AS-IS elemzés<br/>jelenlegi állapot"]:::asis --> B["⚠️ Problémaelemzés<br/>gyökérokok — 5 Miért"]:::problem
-    B --> C["✅ TO-BE tervezés<br/>javított modell"]:::tobe
-    C --> D["📊 Visszamérés<br/>KPI-összehasonlítás"]:::measure
+    A["🔍 <b>AS-IS elemzés</b><br/>jelenlegi állapot"]:::szurke --> B["⚠️ <b>Problémaelemzés</b><br/>gyökérokok — 5 Miért"]:::narancs
+    B --> C["✅ <b>TO-BE tervezés</b><br/>javított modell"]:::zold
+    C --> D["📊 <b>Visszamérés</b><br/>KPI-összehasonlítás"]:::lila
     D --> A
+
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef lila    fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c,rx:10,ry:10;
+    classDef szurke  fill:#eceff1,stroke:#546e7a,stroke-width:2px,color:#263238,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 3 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 **1. AS-IS elemzés:** A jelenlegi folyamat feltárása: lépések, felelősök, döntési pontok, dokumentumok, időadatok, problémák. Fontos a munkatársak bevonása.

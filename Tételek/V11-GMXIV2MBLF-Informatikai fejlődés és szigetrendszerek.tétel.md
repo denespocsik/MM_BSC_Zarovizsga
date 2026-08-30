@@ -9,7 +9,7 @@
 Az üzleti informatika az 1960-as évektől napjainkig több markáns korszakon ment át. Mindegyik korszakot a hardver, az adatkezelés és a kommunikáció együttes változása jellemzett.
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'cScale0': '#1565C0', 'cScale1': '#1976D2', 'cScale2': '#0288D1', 'cScale3': '#00897B', 'cScale4': '#2E7D32'}}}%%
+%%{init: {'theme':'base','themeVariables':{'cScale0':'#e3f2fd','cScaleLabel0':'#0d47a1','cScale1':'#e0f2f1','cScaleLabel1':'#004d40','cScale2':'#e8f5e9','cScaleLabel2':'#1b5e20','cScale3':'#fff3e0','cScaleLabel3':'#e65100','cScale4':'#f3e5f5','cScaleLabel4':'#4a148c','titleColor':'#263238','lineColor':'#546e7a'}}}%%
 timeline
     title Az üzleti informatika fejlődése
     section 1960–70-es évek
@@ -55,26 +55,32 @@ Az 1970–80-as évek vállalataiban minden szervezeti egység a saját igényei
 **A szigetrendszerek jellemző problémái:**
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FFF8E1', 'primaryBorderColor': '#E65100', 'lineColor': '#78909C', 'edgeLabelBackground': '#FFFDE7'}}}%%
 flowchart LR
-    classDef proc fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#212121,font-weight:bold
-
     subgraph Ert["📦 Értékesítés — saját DB"]
-        SO(["Vevői rendelés\nrögzítve"]):::proc
+        SO(["<b>Vevői rendelés</b><br/>rögzítve"]):::narancs
     end
     subgraph Rak["🏭 Raktár — saját DB"]
-        GI(["Készlet\nfrissítve"]):::proc
+        GI(["<b>Készlet</b><br/>frissítve"]):::narancs
     end
     subgraph Pen["💰 Pénzügy — saját DB"]
-        INV(["Számla\nkiállítva"]):::proc
+        INV(["<b>Számla</b><br/>kiállítva"]):::narancs
     end
     subgraph HR_["👥 HR — saját DB"]
-        PAY(["Jutalék\nszámítva"]):::proc
+        PAY(["<b>Jutalék</b><br/>számítva"]):::narancs
     end
 
-    Ert -->|"📧 e-mail / Excel\n⚠ Késés · Újrarögzítési hiba"| Rak
-    Rak -->|"📊 Excel export\n⚠ Eltérő készletadat"| Pen
-    Pen -->|"🗒️ Papíros kimutatás\n⚠ Nincs valós idejű kép"| HR_
+    Ert -->|"📧 e-mail / Excel<br/>⚠ Késés · Újrarögzítési hiba"| Rak
+    Rak -->|"📊 Excel export<br/>⚠ Eltérő készletadat"| Pen
+    Pen -->|"🗒️ Papíros kimutatás<br/>⚠ Nincs valós idejű kép"| HR_
+
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+
+    style Ert fill:#fffaf3,stroke:#ffcc80,stroke-width:1.5px,color:#ef6c00;
+    style Rak fill:#fffaf3,stroke:#ffcc80,stroke-width:1.5px,color:#ef6c00;
+    style Pen fill:#fffaf3,stroke:#ffcc80,stroke-width:1.5px,color:#ef6c00;
+    style HR_ fill:#fffaf3,stroke:#ffcc80,stroke-width:1.5px,color:#ef6c00;
+
+    linkStyle default stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 | Probléma              | Következmény                                                |

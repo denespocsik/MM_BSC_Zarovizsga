@@ -40,16 +40,24 @@ Az **Ár–Költség–Fedezet–Nyereség** struktúra a controlling egyik legh
 
 ```mermaid
 flowchart TD
-    TR["💵 Árbevétel (TR)"]
-    VC["➖ Változó költségek (VC)"]
-    F["🟡 Fedezet (F)<br/><i>a fix ktg.-et fedezi + nyereséget termel</i>"]
-    FC["➖ Fix költségek (FC)"]
-    EBIT["🟢 Nyereség / EBIT"]
+    TR["💵 <b>Árbevétel (TR)</b>"]:::kek
+    VC["➖ <b>Változó költségek (VC)</b>"]:::narancs
+    F["🟡 <b>Fedezet (F)</b><br/><i>a fix ktg.-et fedezi + nyereséget termel</i>"]:::sarga
+    FC["➖ <b>Fix költségek (FC)</b>"]:::rozsa
+    EBIT["🟢 <b>Nyereség / EBIT</b>"]:::zoldH
 
     TR -->|"− VC"| VC
     VC --> F
     F -->|"− FC"| FC
     FC --> EBIT
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zoldH   fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef sarga   fill:#fffde7,stroke:#f9a825,stroke-width:2px,color:#f57f17,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 **Fedezet = az az összeg, amely a fix költségeket fedezi és nyereséget termel.**
@@ -81,6 +89,7 @@ Pl.: FC = 300 000 Ft, Ár = 500 Ft/db, VC/db = 300 Ft
 **Grafikusan:**
 
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'xyChart':{'backgroundColor':'#ffffff','titleColor':'#263238','xAxisLabelColor':'#546e7a','xAxisTitleColor':'#263238','xAxisTickColor':'#90a4ae','xAxisLineColor':'#546e7a','yAxisLabelColor':'#546e7a','yAxisTitleColor':'#263238','yAxisTickColor':'#90a4ae','yAxisLineColor':'#546e7a','plotColorPalette':'#1565c0,#c2185b'}}}}%%
 xychart-beta
     title "Break-even elemzés (FC=300 eFt, Ár=500 Ft/db, VC=300 Ft/db → Q_BEP=1500 db)"
     x-axis "Mennyiség (db)" [0, 500, 1000, 1500, 2000, 2500, 3000]

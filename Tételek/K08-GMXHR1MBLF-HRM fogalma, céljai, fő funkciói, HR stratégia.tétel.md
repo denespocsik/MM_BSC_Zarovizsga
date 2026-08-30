@@ -22,22 +22,21 @@ Armstrong és Taylor (2014) alapján a HRM négy célkör körül szerveződik: 
 flowchart LR
     subgraph B1["🔵 EMBERI ERŐFORRÁS BIZTOSÍTÁSA"]
         direction LR
-        A1["📋 Munkaerő-\ntervezés"] --> A2["🎯 Toborzás és\nkiválasztás"] --> A3["🎓 Képzés és\nfejlesztés"]
+        A1["📋 <b>Munkaerő-<br/>tervezés</b>"]:::kek --> A2["🎯 <b>Toborzás és<br/>kiválasztás</b>"]:::kek --> A3["🎓 <b>Képzés és<br/>fejlesztés</b>"]:::kek
     end
     subgraph B2["🟢 EMBERI ERŐFORRÁS MEGTARTÁSA"]
         direction LR
-        A4["💰 Kompenzáció-\nmenedzsment"] --- A5["📊 Teljesítmény-\nmenedzsment"] --- A6["🤝 Munkaügyi\nkapcsolatok"]
+        A4["💰 <b>Kompenzáció-<br/>menedzsment</b>"]:::zold --- A5["📊 <b>Teljesítmény-<br/>menedzsment</b>"]:::zold --- A6["🤝 <b>Munkaügyi<br/>kapcsolatok</b>"]:::zold
     end
     B1 --> B2
 
-    style A1 fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
-    style A2 fill:#bfdbfe,stroke:#3b82f6,color:#1e3a5f
-    style A3 fill:#93c5fd,stroke:#2563eb,color:#1e3a5f
-    style A4 fill:#bbf7d0,stroke:#16a34a,color:#14532d
-    style A5 fill:#86efac,stroke:#16a34a,color:#14532d
-    style A6 fill:#4ade80,stroke:#15803d,color:#14532d
-    style B1 fill:#eff6ff,stroke:#2563eb,color:#1e40af
-    style B2 fill:#f0fdf4,stroke:#16a34a,color:#166534
+    classDef kek  fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+
+    style B1 fill:#f5f9ff,stroke:#90caf9,stroke-width:1.5px,color:#1565c0;
+    style B2 fill:#f4fbf5,stroke:#a5d6a7,stroke-width:1.5px,color:#2e7d32;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 A funkciók két blokkra tagolódnak (Armstrong & Taylor, 2014). Az első blokk az emberek megszerzésével és fejlesztésével foglalkozik: munkaerő-tervezés, munkakörelemzés, toborzás-kiválasztás-előléptetés, képzés-fejlesztés, kompenzációmenedzsment. A második blokk az alkalmazottakkal való folyamatos foglalkozást fedi le: teljesítménymenedzsment, munkaegészség és -biztonság, kollektív alku, munkaügyi kapcsolatok.

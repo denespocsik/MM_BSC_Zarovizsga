@@ -19,20 +19,23 @@ Az FMEA (Failure Mode and Effects Analysis – hibamód- és hatáselemzés) szi
 ### 4.3. Az FMEA módszertani lépései
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E3F2FD', 'primaryBorderColor': '#1565C0', 'lineColor': '#546E7A', 'edgeLabelBackground': '#F5F5F5'}}}%%
 flowchart TD
-    classDef analysis fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold
-    classDef risk     fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C,font-weight:bold
-    classDef action   fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold
-
-    A["📋 Folyamat kijelölése"]:::analysis --> B["⚠️ Hibamódok azonosítása"]:::analysis
-    B --> C["💥 Hibahatások meghatározása"]:::risk
-    C --> D["🔎 Hibaokok azonosítása"]:::risk
-    D --> E["🛡️ Kontrollok feltárása"]:::analysis
-    E --> F["🔢 RPN számítás<br/>RPN = S × O × D"]:::risk
-    F --> G["🔧 Intézkedések kidolgozása"]:::action
-    G --> H["📊 Visszamérés<br/>új RPN kiszámítása"]:::action
+    A["📋 <b>Folyamat kijelölése</b>"]:::kek --> B["⚠️ <b>Hibamódok azonosítása</b>"]:::kek
+    B --> C["💥 <b>Hibahatások meghatározása</b>"]:::narancs
+    C --> D["🔎 <b>Hibaokok azonosítása</b>"]:::narancs
+    D --> E["🛡️ <b>Kontrollok feltárása</b>"]:::kek
+    E --> F["🔢 <b>RPN számítás</b><br/>RPN = S × O × D"]:::rozsa
+    F --> G["🔧 <b>Intézkedések kidolgozása</b>"]:::zold
+    G --> H["📊 <b>Visszamérés</b><br/>új RPN kiszámítása"]:::zold
     H -- "magas RPN esetén" --> B
+
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+
+    linkStyle default stroke:#546e7a,stroke-width:2px;
+    linkStyle 7 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 ### 4.4. A kockázati prioritási szám (RPN)

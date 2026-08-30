@@ -34,27 +34,22 @@ A menedzsment funkcióit klasszikusan négy csoportba szokás sorolni. Ezek egym
 
 ```mermaid
 graph LR
-    T("<b>Tervezés</b><br/>(planning)")
-    S("<b>Szervezés</b><br/>(organizing)")
-    V("<b>Vezetés</b><br/>(leading)")
-    E("<b>Ellenőrzés</b><br/>(controlling)")
+    T("<b>Tervezés</b><br/>(planning)"):::kek
+    S("<b>Szervezés</b><br/>(organizing)"):::zold
+    V("<b>Vezetés</b><br/>(leading)"):::narancs
+    E("<b>Ellenőrzés</b><br/>(controlling)"):::rozsa
 
     T --> S
     S --> V
     V --> E
     E -.->|visszacsatolás| T
 
-    classDef tNode fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
-    classDef sNode fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
-    classDef vNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
-    classDef eNode fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
+    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
+    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
+    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
+    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
 
-    class T tNode;
-    class S sNode;
-    class V vNode;
-    class E eNode;
-
-    linkStyle 0,1,2 stroke:#546e7a,stroke-width:2px;
+    linkStyle default stroke:#546e7a,stroke-width:2px;
     linkStyle 3 stroke:#c2185b,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
