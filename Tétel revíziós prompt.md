@@ -165,6 +165,7 @@ Ellenőrizd a 6. fejezet („Záró ellenőrzőlista”) pontjait, majd a chatbe
 
 ### 6. fázis — Szemantikus commit-üzenet javaslata (utolsó lépés)
 
+Ellenőrizd, hogy lokálisan van-e git lock, ha igen, töröld.
 A revízió **utolsó lépése** egy commit-üzenet megírása. **A commitot nem végzed el**: a `git add` és a `git commit` mindig a futtató feladata. Az üzenet csak azokat a fájlokat írja le, amelyeket ebben a revízióban ténylegesen módosítottál. Ha szükséges, a módosított fájlokat `git status` / `git diff` paranccsal ellenőrizheted, de a mappa más, korábbi módosításait (pl. sorvégjel-eltéréseket) ne vedd bele.
 
 Az üzenetet **két külön kódblokkban** add le, hogy egyenként másolható legyen:

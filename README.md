@@ -20,7 +20,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 | #   | Tétel rövid címe                               | Tantárgy                         | Neptun kód | Állapot | Revízió |
 | --- | ---------------------------------------------- | -------------------------------- | ---------- | ------- | ------- |
-| K01  | Menedzsment fogalma, funkciói                  | Menedzsment alapjai              | GMXMD1MBLF | ✅       | —       |
+| K01  | Menedzsment fogalma, funkciói                  | Menedzsment alapjai              | GMXMD1MBLF | ✅       | ✅ 2026-10-01 |
 | K02  | Menedzsment irányzatok (Taylor, Fayol, Ford)   | Menedzsment alapjai              | GMXMD1MBLF | ✅       | —       |
 | K03  | Tervezés (környezet, jövőkép, SWOT, PESTEL)    | Menedzsment alapjai              | GMXMD1MBLF | ✅       | —       |
 | K04  | Szervezetek, szervezeti formák                 | Menedzsment alapjai              | GMXMD1MBLF | ✅       | —       |
@@ -180,4 +180,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
 [Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
 
-*Utolsó frissítés: 2026. október 1. — Rögzítve, hogy a tételfájlok helye kizárólag a `Tételek/` mappa; a két tételsor-táblázat új **Revízió** oszlopot kapott (minden tétel: — = még nem revideált); létrejött a `Kontextus fájlok/Tétel revíziós prompt.md`, amely tételenkénti, forráshű (syllabus/tantárgynyilvántartó, jegyzet, előadás, kötelező és ajánlott irodalom alapú) revíziót ír elő; a prompt utolsó lépése egy szemantikus (Conventional Commits) commit-üzenet javaslata külön cím- és leírás-blokkban — a commitot a revizor soha nem végzi el, az a futtató feladata. A tétel-állapotok változatlanok (K01–K20, V01–V05, V11–V20 ✅; V06–V10 ⏳).*
+*Utolsó frissítés: 2026. október 1. — Elkészült a **K01** tétel (Menedzsment fogalma, funkciói) forráshű revíziója a `Kontextus fájlok/Tétel revíziós prompt.md` szerint: a tétel a tárgy előadásaira, az alapfogalmi jegyzetre és a gyakorlati anyagra épül (a külső forrásból származó tartalom — pl. Barnard 1938, Kotter 1990, a logisztika/controlling mint szakterület — kikerült); a négy funkció az 1. előadás szerinti (tervezés, szervezés, vezetés, irányítás); új szakaszok: Beszerzendő anyagok (Farkas, 2004), A menedzsment kulcskérdései, Összegzés, Várható vizsgáztatói kérdések, Irodalom (APA 7); a Mermaid-diagram a forrás szerinti funkciókra és a PDCA-visszacsatolásra frissült. A K01 Revízió oszlopa ✅ 2026-10-01; a többi tétel állapota változatlan (K01–K20, V01–V05, V11–V20 ✅; V06–V10 ⏳).*

@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-10-01 — Új **Revízió** oszlop mindkét tételsor-táblázatban (— = még nem revideált; 🔎 dátum = folyamatban; ✅ dátum = revideálva). A tételfájlok helye: `Tételek/`. A leképezés és a tétel-állapotok változatlanok (K1–K20, V1–V5, V11–V20 ✅; V6–V10 ⏳).
+**Utolsó frissítés:** 2026-10-01 — K1 tétel revideálva (✅ 2026-10-01): forráshű átdolgozás az 1. előadás, az alapfogalmi jegyzet és a gyakorlati anyag alapján; a leképezés és a tétel-állapotok változatlanok (K1–K20, V1–V5, V11–V20 ✅; V6–V10 ⏳).
 
 ---
 
@@ -9,7 +9,7 @@
 
 | # | Tétel rövid címe | Tantárgy | Neptun kód | Mappa | Revízió |
 |---|---|---|---|---| ------- |
-| K1 | Menedzsment fogalma, funkciói | Menedzsment alapjai | GMXMD1MBLF | ✅ | —       |
+| K1 | Menedzsment fogalma, funkciói | Menedzsment alapjai | GMXMD1MBLF | ✅ | ✅ 2026-10-01 |
 | K2 | Menedzsment irányzatok (Taylor, Fayol, Ford) | Menedzsment alapjai | GMXMD1MBLF | ✅ | —       |
 | K3 | Tervezés (környezet, jövőkép, SWOT, PESTEL) | Menedzsment alapjai | GMXMD1MBLF | ✅ | —       |
 | K4 | Szervezetek, szervezeti formák | Menedzsment alapjai | GMXMD1MBLF | ✅ | —       |
