@@ -51,7 +51,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | V04  | Kockázatkezelés és hibamód-elemzés (FMEA)                   | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       | —       |
 | V05  | Folyamatszemléletű irányítási rendszerek és dok.            | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       | —       |
 | V06  | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score)       | Menedzsment inf. rendszerek             | GMXIR1MBLF | ✅       | 🔎 2026-10-02 |
-| V07  | BSC + VIR/BI programcsomagok összehasonlítása               | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
+| V07  | BSC + VIR/BI programcsomagok összehasonlítása               | Menedzsment inf. rendszerek             | GMXIR1MBLF | ✅       | 🔎 2026-10-02 |
 | V08  | Business Intelligence (BI) és BICC                          | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
 | V09  | Dashboard, KPI-alapú jelentések, DAX, Power BI              | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
 | V10 | OLTP/OLAP, adattárház, adatbányászat, Big Data              | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
@@ -79,7 +79,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | HR menedzsment és vez. tech.            | GMXHR1MBLF | K8–K13 (6 tétel)  | ✅ Teljes   |
 | Vezetői számvitel és controlling        | GIXVS2MBLF | K14–K20 (7 tétel) | ✅ Teljes   |
 | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | V1–V5 (5 tétel)   | ✅ Teljes   |
-| Menedzsment információs rendszerek      | GMXIR1MBLF | V6–V10 (5 tétel)  | 📋 V6 kidolgozva (⚠️ hiányokkal), V7–V10 kidolgozásra vár |
+| Menedzsment információs rendszerek      | GMXIR1MBLF | V6–V10 (5 tétel)  | 📋 V6–V7 kidolgozva (⚠️ hiányokkal), V8–V10 kidolgozásra vár |
 | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | V11–V15 (5 tétel) | ✅ Teljes   |
 | Vállalati és üzleti hálózatmenedzsment  | GMXVU2MBLF | V16–V20 (5 tétel) | ✅ Teljes   |
 
@@ -139,6 +139,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
     ├── V04-GMXSF2MBLF-Kockázatkezelés és FMEA.tétel.md
     ├── V05-GMXSF2MBLF-Folyamatszemléletű irányítási rendszerek.tétel.md
     ├── V06-GMXIR1MBLF-VIR fogalma, típusai, pénzügyi mutatók.tétel.md
+    ├── V07-GMXIR1MBLF-BSC és VIR-BI programcsomagok.tétel.md
     ├── V11-GMXIV2MBLF-Informatikai fejlődés és szigetrendszerek.tétel.md
     ├── V12-GMXIV2MBLF-ERP fogalma és fejlődéstörténete.tétel.md
     ├── V13-GMXIV2MBLF-ERP bevezetése és BPR.tétel.md
@@ -149,7 +150,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
     ├── V18-GMXVU2MBLF-Hálózati működés és szempontjai.tétel.md
     ├── V19-GMXVU2MBLF-Üzleti kölcsönhatások hálózatalapú megközelítése.tétel.md
     ├── V20-GMXVU2MBLF-Hálózati üzleti stratégia.tétel.md
-    └── (V07–V10 tételek kidolgozás előtt — a GMXIR1MBLF tananyag feldolgozva, a kontextusfájl elkészült; a V06 kidolgozva, a ⚠️ Tartalmi hiány szakaszai a beszerzendő anyagok után bővíthetők)
+    └── (V08–V10 tételek kidolgozás előtt — a GMXIR1MBLF tananyag feldolgozva, a kontextusfájl elkészült; a V06 és a V07 kidolgozva, a ⚠️ Tartalmi hiány szakaszai a beszerzendő anyagok után bővíthetők)
 ```
 
 ---
@@ -167,7 +168,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 ### Kidolgozásra vár — a forrásanyag megérkezett (1/7):
 
-- 📋 **Menedzsment információs rendszerek** — 5 tétel (V6–V10); **V6 kidolgozva** (2026-10-02; ⚠️ Tartalmi hiány: pénzügyi mutatószámok, EVA/Z-score, programcsomag-ismeret mélysége), V7–V10 kidolgozásra vár; a GMXIR1MBLF tananyag feldolgozva (2026-10-02, `ANYAG`), a forrástérkép és a Döntési napló a `Kontextus fájlok/Váll.Irány II. - Menedzsment információs rendszerek (GMXIR1MBLF).kontextus.md` fájlban van; a tételek kidolgozása a `Kontextus fájlok/Tétel revíziós prompt - GMXIR1MBLF tananyag-feldolgozás.md` szerint történik
+- 📋 **Menedzsment információs rendszerek** — 5 tétel (V6–V10); **V6 kidolgozva** (2026-10-02; ⚠️ Tartalmi hiány: pénzügyi mutatószámok, EVA/Z-score, programcsomag-ismeret mélysége), **V7 kidolgozva** (2026-10-02; ⚠️ Tartalmi hiány: hazai VIR/BI programcsomagok és sorbaállítás, beépített BSC), V8–V10 kidolgozásra vár; a GMXIR1MBLF tananyag feldolgozva (2026-10-02, `ANYAG`), a forrástérkép és a Döntési napló a `Kontextus fájlok/Váll.Irány II. - Menedzsment információs rendszerek (GMXIR1MBLF).kontextus.md` fájlban van; a tételek kidolgozása a `Kontextus fájlok/Tétel revíziós prompt - GMXIR1MBLF tananyag-feldolgozás.md` szerint történik
 
 ---
 
@@ -176,7 +177,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 - A **K5 (Vezetői stílusok)** és **K11 (Vezetés fogalma és vezetői szerepek)** tételek között tematikai átfedés van; az előbbi a Menedzsment alapjai, az utóbbi a HR menedzsment tárgyban tanult.
 - A **K20 (BSC)** és **V7 (BSC + VIR/BI)** mindkét tételsorban szerepel, de eltérő mélységgel és kontextussal.
 - A **GMXVU2MBLF** tantárgy előadásanyaga angol nyelvű (*Organizational networks*), a kötelező irodalom Barabási Albert-László: *Behálózva* (Open Books, 2022).
-- A **V6–V10** tételek kidolgozása (Menedzsment inf. rendszerek) a feldolgozott forrásanyagra épül (`ANYAG` kész, 2026-10-02). A tananyag a tételsorhoz képest **tartalmilag hiányos**: nincs EVA/Z-score és mutatószámrendszer (V6), hazai VIR/BI programcsomag-összevetés és rendszer–BSC összerendelés (V7), VIR–BI különbség (V8), dashboard-típusok, DAX, megosztás és jogosultságkezelés (V9), a szakértői rendszer struktúrája csak vázlatos (V10). Jóváhagyott kezelés: **beszerzés** (a hiányzó anyagok a mappába kerülnek, a tétel újrafuttatáskor bővül); források: csak a kötelező `1_NN` HTML-ek, az opcionális könyvek nem használhatók. A hivatkozási forma a V06 kidolgozásakor jóváhagyva (2026-10-02; a kontextusfájl Döntési naplójába még nem került be). **V6 kidolgozva**: az R5 (pénzügyi mutatószámok), R6 (EVA, Z-score, mutatószámrendszerek) és R7b (programcsomag-ismeret mélysége) részkérdésekhez ⚠️ Tartalmi hiány szakasz és Beszerzendő anyagok tábla tartozik; a Revízió oszlop ezért 🔎. Részletek: a GMXIR1MBLF kontextusfájl.
+- A **V6–V10** tételek kidolgozása (Menedzsment inf. rendszerek) a feldolgozott forrásanyagra épül (`ANYAG` kész, 2026-10-02). A tananyag a tételsorhoz képest **tartalmilag hiányos**: nincs EVA/Z-score és mutatószámrendszer (V6), hazai VIR/BI programcsomag-összevetés és rendszer–BSC összerendelés (V7), VIR–BI különbség (V8), dashboard-típusok, DAX, megosztás és jogosultságkezelés (V9), a szakértői rendszer struktúrája csak vázlatos (V10). Jóváhagyott kezelés: **beszerzés** (a hiányzó anyagok a mappába kerülnek, a tétel újrafuttatáskor bővül); források: csak a kötelező `1_NN` HTML-ek, az opcionális könyvek nem használhatók. A hivatkozási forma a V06 kidolgozásakor jóváhagyva (2026-10-02; a kontextusfájl Döntési naplójába még nem került be). **V6 kidolgozva**: az R5 (pénzügyi mutatószámok), R6 (EVA, Z-score, mutatószámrendszerek) és R7b (programcsomag-ismeret mélysége) részkérdésekhez ⚠️ Tartalmi hiány szakasz és Beszerzendő anyagok tábla tartozik; a Revízió oszlop ezért 🔎. **V7 kidolgozva**: az R1–R3 (BSC filozófiája, négy nézőpont, stratégiai térkép) a kötelező 1_6 előadás 5. szakasza és annak BSC-ábrája alapján készült (a kontextusfájl „csak opcionális” besorolása ezekre pontosítandó); az R4–R5 (hazai VIR/BI programcsomagok, sorbaállítás) és az R6 (beépített BSC) ⚠️ Tartalmi hiány szakaszt és Beszerzendő anyagok sort kapott; az R7 (rendszerválasztás) jelölt, tananyag-alapú szintézis; a Revízió oszlop ezért 🔎. Részletek: a GMXIR1MBLF kontextusfájl.
 - A tételfájlok **Mermaid-diagramjai egységes vizuális stílust** követnek (a K01 tétel diagramja a referencia): közös 8 színes pasztell paletta (`kek`, `zold`, `narancs`, `rozsa`, `lila`, `turkiz`, `sarga`, `szurke`) `classDef`-ekkel, 2 px keret (kiemelt csomópontnál 3 px), `rx:10,ry:10` lekerekítés, félkövér címsor + `<br/>` sortörés a címkékben, palaszürke (`#546e7a`) élek és szaggatott, színes visszacsatoló nyilak. Új tétel írásakor ezt a konvenciót kell követni.
 
 ---
@@ -184,4 +185,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
 [Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
 
-*Utolsó frissítés: 2026. október 2. — Elkészült a **V06** tétel (`Tételek/V06-GMXIR1MBLF-VIR fogalma, típusai, pénzügyi mutatók.tétel.md`): 6.1–6.7 szakaszok, két Mermaid-diagram, ⚠️ Tartalmi hiány szakaszok (R5, R6, R7b) és Beszerzendő anyagok tábla (AVIR kézikönyv, Laudon & Laudon 2022). A tételek kidolgozottsága 36/40 (K01–K20, V01–V06, V11–V20 ✅); a V06 Revízió oszlopa 🔎 (a hiányok pótlásáig), a K08–K20 és V01–V05 még nem revideált.*
+*Utolsó frissítés: 2026. október 2. — Elkészült a **V07** tétel (`Tételek/V07-GMXIR1MBLF-BSC és VIR-BI programcsomagok.tétel.md`): 7.1–7.5 szakaszok (BSC filozófiája, négy nézőpont, stratégiai térkép egy Mermaid-diagrammal, rendszerválasztási szintézis), ⚠️ Tartalmi hiány szakaszok (R4–R5 hazai VIR/BI programcsomagok és sorbaállítás, R6 beépített BSC) és Beszerzendő anyagok tábla (AVIR kézikönyv, hazai programcsomag-összevető anyag). A tételek kidolgozottsága 37/40 (K01–K20, V01–V07, V11–V20 ✅); a V06 és a V07 Revízió oszlopa 🔎 (a hiányok pótlásáig), a K08–K20 és V01–V05 még nem revideált.*
