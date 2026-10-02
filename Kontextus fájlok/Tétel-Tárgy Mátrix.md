@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-10-02 — K4 tétel revideálva (✅ 2026-10-02): forráshű átdolgozás a 3. előadás (A csoport és a szervezetek), az 1. és 2. előadás és a gyakorlati anyag alapján; a leképezés és a tétel-állapotok változatlanok (K1–K20, V1–V5, V11–V20 ✅; V6–V10 ⏳).
+**Utolsó frissítés:** 2026-10-02 — K5 tétel revideálva (✅ 2026-10-02): forráshű átdolgozás a 4. előadás (A vezető), a 2. és 1. előadás, a 3. előadás és a gyakorlati anyag alapján; a tananyagban nem szereplő modellek (Blake–Mouton, Burns–Bass, Hersey–Blanchard) kivéve; a leképezés és a tétel-állapotok változatlanok (K1–K20, V1–V5, V11–V20 ✅; V6–V10 ⏳).
 
 ---
 
@@ -13,7 +13,7 @@
 | K2 | Menedzsment irányzatok (Taylor, Fayol, Ford) | Menedzsment alapjai | GMXMD1MBLF | ✅ | ✅ 2026-10-02 |
 | K3 | Tervezés (környezet, jövőkép, SWOT, PESTEL) | Menedzsment alapjai | GMXMD1MBLF | ✅ | ✅ 2026-10-02 |
 | K4 | Szervezetek, szervezeti formák | Menedzsment alapjai | GMXMD1MBLF | ✅ | ✅ 2026-10-02 |
-| K5 | Vezetői stílusok | Menedzsment alapjai | GMXMD1MBLF | ✅ | —       |
+| K5 | Vezetői stílusok | Menedzsment alapjai | GMXMD1MBLF | ✅ | ✅ 2026-10-02 |
 | K6 | Motivációs elméletek | Menedzsment alapjai | GMXMD1MBLF | ✅ | —       |
 | K7 | Döntés mint vezetői feladat, döntési modellek | Menedzsment alapjai | GMXMD1MBLF | ✅ | —       |
 | K8 | HRM fogalma, céljai, fő funkciói, HR stratégia | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | —       |
