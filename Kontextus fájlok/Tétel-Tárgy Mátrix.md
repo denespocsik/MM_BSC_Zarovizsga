@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-10-02 — elkészült a GMXIR1MBLF (Menedzsment információs rendszerek) tananyag-feldolgozása és kontextusfájlja (`Váll.Irány II. - Menedzsment információs rendszerek (GMXIR1MBLF).kontextus.md`); a V6–V10 sorok 📋 maradnak, a GMXIR1MBLF-sor „Anyag elérhető” oszlopa pontosítva; a kidolgozott tételek (K1–K20, V1–V5, V11–V20 ✅) állapota változatlan.  
+**Utolsó frissítés:** 2026-10-02 — elkészült a V6 tétel (`Tételek/V06-GMXIR1MBLF-VIR fogalma, típusai, pénzügyi mutatók.tétel.md`; ⚠️ Tartalmi hiány szakaszokkal, Revízió: 🔎); a GMXIR1MBLF-sor és az összesítő igazítva (36/40); a többi tétel állapota változatlan.  
 
 ---
 
@@ -41,7 +41,7 @@
 | V3 | Üzleti folyamatok mérése és optimalizálása (KPI) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | —       |
 | V4 | Kockázatkezelés és hibamód-elemzés (FMEA) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | —       |
 | V5 | Folyamatszemléletű irányítási rendszerek és dok. | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | —       |
-| V6 | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score) | Menedzsment inf. rendszerek | GMXIR1MBLF | 📋 | —       |
+| V6 | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score) | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-10-02 |
 | V7 | BSC + VIR/BI programcsomagok összehasonlítása | Menedzsment inf. rendszerek | GMXIR1MBLF | 📋 | —       |
 | V8 | Business Intelligence (BI) és BICC | Menedzsment inf. rendszerek | GMXIR1MBLF | 📋 | —       |
 | V9 | Dashboard, KPI-alapú jelentések, DAX, Power BI | Menedzsment inf. rendszerek | GMXIR1MBLF | 📋 | —       |
@@ -67,11 +67,11 @@
 | HR menedzsment és vez. tech. | GMXHR1MBLF | K8–K13 (6 db) | — | ✅ igen |
 | Vezetői számvitel és controlling | GIXVS2MBLF | K14–K20 (7 db) | — | ✅ igen |
 | Számítógépes folyamatmenedzsment | GMXSF2MBLF | — | V1–V5 (5 db) | ✅ Teljes |
-| Menedzsment információs rendszerek | GMXIR1MBLF | — | V6–V10 (5 db) | 📋 Elérhető (feldolgozva, kidolgozásra vár) |
+| Menedzsment információs rendszerek | GMXIR1MBLF | — | V6–V10 (5 db) | 📋 Elérhető (V6 kidolgozva ⚠️ hiányokkal, V7–V10 kidolgozásra vár) |
 | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | — | V11–V15 (5 db) | ✅ Teljes |
 | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | — | V16–V20 (5 db) | ✅ Teljes |
 
-**Összesen:** 40 tétel — **Kidolgozva: 35 tétel (87,5%)** — **Kidolgozásra vár (a forrásanyag elérhető): 5 tétel (V6–V10)**
+**Összesen:** 40 tétel — **Kidolgozva: 36 tétel (90%)** — **Kidolgozásra vár (a forrásanyag elérhető): 4 tétel (V7–V10)**
 
 ---
 
