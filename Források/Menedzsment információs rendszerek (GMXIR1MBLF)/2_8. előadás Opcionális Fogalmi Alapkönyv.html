@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+    <title>2_8. előadás Opcionális Fogalmi Alapkönyv</title>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+<a name="top"></a><h1>8. előadás Opcionális Fogalmi Alapkönyv</h1><p class="book_summary"></p><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Tartalomjegyzék</h2><ul><li><a title="1. 8. fejezet: Big Data — Opcionális Könyv (fogalmi felidézés)" class="font-weight-bold text-decoration-none" href="#ch16102">1. 8. fejezet: Big Data — Opcionális Könyv (fogalmi felidézés)</a></li><li><a title="2. Big Data alapfogalma és az 5V/7V-modell" class="font-weight-bold text-decoration-none" href="#ch16103">2. Big Data alapfogalma és az 5V/7V-modell</a></li><li><a title="3. Adattárolási architektúrák" class="font-weight-bold text-decoration-none" href="#ch16104">3. Adattárolási architektúrák</a></li><li><a title="4. Feldolgozási paradigmák" class="font-weight-bold text-decoration-none" href="#ch16105">4. Feldolgozási paradigmák</a></li><li><a title="5. Big Data technológiai ökoszisztéma" class="font-weight-bold text-decoration-none" href="#ch16106">5. Big Data technológiai ökoszisztéma</a></li><li><a title="6. Prediktív modellek értékelési mutatói" class="font-weight-bold text-decoration-none" href="#ch16107">6. Prediktív modellek értékelési mutatói</a></li><li><a title="7. Rendszerszemléletű modellezés" class="font-weight-bold text-decoration-none" href="#ch16108">7. Rendszerszemléletű modellezés</a></li></ul></div><div class="book_chapter"><a name="ch16102"></a><h2>1. 8. fejezet: Big Data — Opcionális Könyv (fogalmi felidézés)</h2></div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16103"></a><h2>2. Big Data alapfogalma és az 5V/7V-modell</h2>
+
+<h1>Big Data — fogalmi felidézés</h1>
+<h2 style="color:#c0392b; font-style:italic;">Big Data alapfogalma és az 5V/7V-modell</h2>
+
+<p>A Big Data fogalma olyan adathalmazokat jelöl, amelyek mérete, keletkezési sebessége vagy formátumbeli változatossága meghaladja a hagyományos adatbázis-kezelő rendszerek (DBMS) kapacitását. A jelenség jellemzésére leggyakrabban használt keret az <strong>5V-modell</strong>:</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:15px 0; border-radius:4px;">
+<p><strong>Volume (mennyiség)</strong> — az adatok mérete terabájtos, petabájtos vagy exabájtos nagyságrendben.</p>
+</div>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:15px 0; border-radius:4px;">
+<p><strong>Velocity (sebesség)</strong> — az adatok keletkezésének és feldolgozásának üteme, gyakran valós időben vagy ahhoz közeli sebességgel.</p>
+</div>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:15px 0; border-radius:4px;">
+<p><strong>Variety (változatosság)</strong> — strukturált, félig strukturált és strukturálatlan adatok együttes jelenléte (szöveg, kép, szenzoradat, tranzakciós adat).</p>
+</div>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:15px 0; border-radius:4px;">
+<p><strong>Veracity (megbízhatóság)</strong> — az adatok minősége és pontossága; a nagy mennyiség önmagában nem garantálja a jó minőséget.</p>
+</div>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:15px 0; border-radius:4px;">
+<p><strong>Value (érték)</strong> — az adatokból ténylegesen kinyerhető üzleti haszon; ez a dimenzió köti össze a fogalmat a Kötelező Könyv érték-realizálási problémájával.</p>
+</div>
+
+<p>Egyes szerzők további két dimenzióval egészítik ki a modellt (<strong>7V</strong>): a <strong>Variability</strong> (az adatok jelentésének kontextusfüggő változékonysága) és a <strong>Visualization</strong> (az eredmények érthető megjelenítésének képessége).</p>
+
+<p><em>Ha ezek a fogalmak nem ismerősek vagy felfrissítésre szorulnak, az Üzleti Informatikai Alkalmazások tárgy "Big Data és prediktív analitika" előadása részletes, ábrákkal illusztrált bevezetést ad az 5V/7V-modellbe.</em></p>
+
+<p style="font-size:0.85em; color:#888; margin-top:30px;"><em>Forrás: Laudon, K. C., &amp; Laudon, J. P. (2017). Management information systems (15th ed.). Pearson. Ch.6; Tick, A. Big data — saját előadásanyag.</em></p>
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16104"></a><h2>3. Adattárolási architektúrák</h2>
+
+<h1>Adattárház, adattó, adattó-ház</h1>
+<h2 style="color:#c0392b; font-style:italic;">Adattárolási architektúrák</h2>
+
+<p>A Big Data-korszak két alapvető adattárolási megközelítést hozott létre a hagyományos relációs adatbázis mellett.</p>
+
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+<tr style="background:#2980b9; color:white;">
+<th style="padding:8px; border:1px solid #ccc;">Architektúra</th>
+<th style="padding:8px; border:1px solid #ccc;">Séma-elv</th>
+<th style="padding:8px; border:1px solid #ccc;">Jellemző</th>
+</tr>
+<tr>
+<td style="padding:8px; border:1px solid #ccc;"><strong>Data Warehouse (adattárház)</strong></td>
+<td style="padding:8px; border:1px solid #ccc;">schema-on-write</td>
+<td style="padding:8px; border:1px solid #ccc;">előre definiált struktúra; jól illeszkedik ismételt, tervezett riportokhoz</td>
+</tr>
+<tr style="background:#f9f9f9;">
+<td style="padding:8px; border:1px solid #ccc;"><strong>Data Lake (adattó)</strong></td>
+<td style="padding:8px; border:1px solid #ccc;">schema-on-read</td>
+<td style="padding:8px; border:1px solid #ccc;">natív formátumú tárolás, rugalmas, de nagyobb governance-fegyelmet igényel</td>
+</tr>
+<tr>
+<td style="padding:8px; border:1px solid #ccc;"><strong>Data Lakehouse</strong></td>
+<td style="padding:8px; border:1px solid #ccc;">hibrid</td>
+<td style="padding:8px; border:1px solid #ccc;">a Data Lake rugalmassága + az adattárház strukturáltsága és teljesítménye</td>
+</tr>
+</table>
+
+<p><em>A három architektúra közötti technikai különbségek részletes bemutatása az Üzleti Informatikai Alkalmazások tárgy "Big Data és prediktív analitika" előadásában található.</em></p>
+
+<p style="font-size:0.85em; color:#888; margin-top:30px;"><em>Forrás: Tick, A. Big data — saját előadásanyag.</em></p>
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16105"></a><h2>4. Feldolgozási paradigmák</h2>
+
+<h1>Batch vagy stream?</h1>
+<h2 style="color:#c0392b; font-style:italic;">Feldolgozási paradigmák</h2>
+
+<p>A Big Data feldolgozása két alapvető paradigma szerint történhet:</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:15px 0; border-radius:4px;">
+<p><strong>Batch feldolgozás</strong> — az adatokat nagyobb kötegekben, meghatározott időközönként dolgozzák fel (pl. éjszakai futtatás). Jól skálázható, de nem ad azonnali választ.</p>
+</div>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:15px 0; border-radius:4px;">
+<p><strong>Stream processing (folyamfeldolgozás)</strong> — az adatokat érkezésükkor, valós időben dolgozzák fel; ez szükséges a Kötelező Könyv edge computing-alkalmazásaihoz (pl. azonnali anomáliadetektálás).</p>
+</div>
+
+<p>E két paradigma egységes rendszerbe foglalására két architekturális megoldás terjedt el:</p>
+
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+<tr style="background:#2980b9; color:white;">
+<th style="padding:8px; border:1px solid #ccc;">Architektúra</th>
+<th style="padding:8px; border:1px solid #ccc;">Lényeg</th>
+<th style="padding:8px; border:1px solid #ccc;">Hátránya / előnye</th>
+</tr>
+<tr>
+<td style="padding:8px; border:1px solid #ccc;"><strong>Lambda</strong></td>
+<td style="padding:8px; border:1px solid #ccc;">külön batch- és speed-réteg, egy serving-réteg egyesíti</td>
+<td style="padding:8px; border:1px solid #ccc;">az üzleti logikát kétszer kell implementálni</td>
+</tr>
+<tr style="background:#f9f9f9;">
+<td style="padding:8px; border:1px solid #ccc;"><strong>Kappa</strong></td>
+<td style="padding:8px; border:1px solid #ccc;">egyszerűsítés — minden feldolgozás streaming-alapon</td>
+<td style="padding:8px; border:1px solid #ccc;">egyszerűbb, de mindig streaming-infrastruktúrát igényel</td>
+</tr>
+</table>
+
+<p><em>A két architektúra részletes működése az Üzleti Informatikai Alkalmazások tárgy "Big Data és prediktív analitika" előadásában található.</em></p>
+
+<p style="font-size:0.85em; color:#888; margin-top:30px;"><em>Forrás: Tick, A. Big data — saját előadásanyag.</em></p>
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16106"></a><h2>5. Big Data technológiai ökoszisztéma</h2>
+
+<h1>Hadoop, NoSQL, Spark</h1>
+<h2 style="color:#c0392b; font-style:italic;">Big Data-technológiai ökoszisztéma — rövid áttekintés</h2>
+
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+<tr style="background:#2980b9; color:white;">
+<th style="padding:8px; border:1px solid #ccc;">Technológia</th>
+<th style="padding:8px; border:1px solid #ccc;">Szerepe</th>
+</tr>
+<tr>
+<td style="padding:8px; border:1px solid #ccc;"><strong>Hadoop (HDFS, MapReduce, YARN)</strong></td>
+<td style="padding:8px; border:1px solid #ccc;">Elosztott fájlrendszer és feldolgozási keretrendszer nagy adathalmazok tárolására és kötegelt elemzésére</td>
+</tr>
+<tr style="background:#f9f9f9;">
+<td style="padding:8px; border:1px solid #ccc;"><strong>NoSQL adatbázisok</strong></td>
+<td style="padding:8px; border:1px solid #ccc;">Dokumentum-orientált (pl. MongoDB), kulcs-érték (pl. Redis), oszlopcentrikus (pl. Cassandra) és gráf-adatbázisok (pl. Neo4j) — rugalmas séma, nagy skálázhatóság</td>
+</tr>
+<tr>
+<td style="padding:8px; border:1px solid #ccc;"><strong>Apache Spark</strong></td>
+<td style="padding:8px; border:1px solid #ccc;">Memóriaalapú feldolgozás, jelentősen gyorsabb a hagyományos MapReduce-nál, alkalmas gépi tanulási munkafolyamatokra is</td>
+</tr>
+</table>
+
+<p><em>A technológiák részletes működése, előnyei és korlátai az Üzleti Informatikai Alkalmazások tárgy "Big Data és prediktív analitika" előadásában olvashatók.</em></p>
+
+<p style="font-size:0.85em; color:#888; margin-top:30px;"><em>Forrás: Tick, A. Big data — saját előadásanyag.</em></p>
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16107"></a><h2>6. Prediktív modellek értékelési mutatói</h2>
+
+<h1>Mennyire jó egy előrejelzés?</h1>
+<h2 style="color:#c0392b; font-style:italic;">Prediktív modellek értékelési mutatói — fogalmi felidézés</h2>
+
+<p>A prediktív modellek teljesítményét leggyakrabban a következő hibametrikákkal mérik:</p>
+
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+<tr style="background:#2980b9; color:white;">
+<th style="padding:8px; border:1px solid #ccc;">Mutató</th>
+<th style="padding:8px; border:1px solid #ccc;">Mit fejez ki</th>
+</tr>
+<tr>
+<td style="padding:8px; border:1px solid #ccc;"><strong>MAE</strong> (Mean Absolute Error)</td>
+<td style="padding:8px; border:1px solid #ccc;">az előrejelzett és a valós értékek közötti abszolút eltérések átlaga — az eredeti adat egységében fejezi ki a hibát</td>
+</tr>
+<tr style="background:#f9f9f9;">
+<td style="padding:8px; border:1px solid #ccc;"><strong>MAPE</strong> (Mean Absolute Percentage Error)</td>
+<td style="padding:8px; border:1px solid #ccc;">a hibát százalékos formában fejezi ki, ami megkönnyíti eltérő nagyságrendű előrejelzések összehasonlítását</td>
+</tr>
+<tr>
+<td style="padding:8px; border:1px solid #ccc;"><strong>RMSE</strong> (Root Mean Squared Error)</td>
+<td style="padding:8px; border:1px solid #ccc;">nagyobb súlyt ad a nagy hibáknak, ezért hasznos, ha a kiugró tévedések különösen károsak</td>
+</tr>
+</table>
+
+<p>A modellezés két tipikus buktatója a <strong>túlillesztés</strong> (a modell "megjegyzi" a tréningadatot, de rosszul általánosít) és az <strong>alulillesztés</strong> (a modell túl egyszerű ahhoz, hogy megragadja az adatban rejlő mintázatokat). Ezek kockázatát a <strong>keresztvalidálás</strong> csökkenti.</p>
+
+<p><em>A metrikák pontos képletei és számítási példái az Üzleti Informatikai Alkalmazások tárgy "Big Data és prediktív analitika" előadásában megtalálhatók.</em></p>
+
+<p style="font-size:0.85em; color:#888; margin-top:30px;"><em>Forrás: Tick, A. Big data — saját előadásanyag.</em></p>
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16108"></a><h2>7. Rendszerszemléletű modellezés</h2>
+
+<h1>Amikor a lineáris előrejelzés félrevezet</h1>
+<h2 style="color:#c0392b; font-style:italic;">Rendszerszemléletű modellezés — rövid felidézés</h2>
+
+<p>A komplex üzleti rendszerek (pl. ellátási láncok) modellezésénél a lineáris előrejelzés gyakran félrevezető, mert nem veszi figyelembe a visszacsatolásokat.</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:15px 0; border-radius:4px;">
+<p><strong>Bullwhip-effektus (ostor-hatás)</strong></p>
+<p>Ennek klasszikus példája a bullwhip-effektus, amellyel már a 3. fejezetben (ERP/SCM) találkoztunk: egy kis kereslet-ingadozás az ellátási lánc mentén felfelé haladva egyre nagyobb készlet-ingadozássá erősödik.</p>
+</div>
+
+<p>A rendszerszemléletű modellezés (pl. szimulációs szoftverekkel) ezekre a visszacsatolásokra, késleltetésekre és nem-lineáris hatásokra is választ ad, szemben az egyszerű, egyváltozós előrejelzési modellekkel.</p>
+
+<p><em>A bullwhip-effektus és a rendszerszemléletű szimuláció részletes bemutatása (esettanulmánnyal illusztrálva) az Üzleti Informatikai Alkalmazások tárgy "Big Data és prediktív analitika" előadásában található.</em></p>
+
+<p style="font-size:0.85em; color:#888; margin-top:30px;"><em>Forrás: Tick, A. Big data — saját előadásanyag.</em></p>
+
+</div><a href="#toc">&uarr; fent</a>
+</body>
+</html>

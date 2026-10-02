@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <title>2_11. előadás - Opcionális Fogalmi Alapkönyv</title>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+<a name="top"></a><h1>11. előadás - Opcionális Fogalmi Alapkönyv</h1><p class="book_summary"></p><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Tartalomjegyzék</h2><ul><li><a title="1. MIR — 11. Fejezet: Etika, algoritmusok és felelős AI (Opcionális Könyv)" class="font-weight-bold text-decoration-none" href="#ch16153">1. MIR — 11. Fejezet: Etika, algoritmusok és felelős AI (Opcionális Könyv)</a></li><li><a title="2. Fogalmak, amikre a fejezet épül" class="font-weight-bold text-decoration-none" href="#ch16154">2. Fogalmak, amikre a fejezet épül</a></li><li><a title="3. Torzítás-csökkentési technikák alapszinten" class="font-weight-bold text-decoration-none" href="#ch16155">3. Torzítás-csökkentési technikák alapszinten</a></li><li><a title="4. XAI alapfogalmak" class="font-weight-bold text-decoration-none" href="#ch16156">4. XAI alapfogalmak</a></li><li><a title="5. GDPR 22. cikk és az automatizált döntéshozatal" class="font-weight-bold text-decoration-none" href="#ch16157">5. GDPR 22. cikk és az automatizált döntéshozatal</a></li></ul></div><div class="book_chapter"><a name="ch16153"></a><h2>1. MIR — 11. Fejezet: Etika, algoritmusok és felelős AI (Opcionális Könyv)</h2></div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16154"></a><h2>2. Fogalmak, amikre a fejezet épül</h2>
+
+
+<h1>Fogalmak, amikre a fejezet épít</h1>
+<h2 style="color:#c0392b; font-style:italic;">AI-etika alapfogalom-tár</h2>
+
+<p>Ez az oldal összegyűjti azokat az alapfogalmakat, amelyeket a Kötelező Könyv több helyen is használ — érdemes ide visszalapozni, ha egy kifejezés nem egyértelmű.</p>
+
+<table style="border-collapse:collapse; width:100%; margin:20px 0;">
+<tr style="background:#2980b9; color:#ffffff;"><th style="padding:8px; text-align:left; border:1px solid #ccc;">Fogalom</th><th style="padding:8px; text-align:left; border:1px solid #ccc;">Rövid meghatározás</th></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Fairness (méltányosság)</b></td><td style="padding:8px; border:1px solid #ccc;">Annak elve, hogy egy algoritmus döntései ne részesítsenek indokolatlanul előnyben vagy hátrányba egyes csoportokat védett tulajdonságaik (pl. nem, életkor, etnikai hovatartozás) alapján.</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Bias (torzítás)</b></td><td style="padding:8px; border:1px solid #ccc;">Egy rendszeres, nem véletlenszerű eltérés, amely miatt egy AI-rendszer kimenete következetesen kedvezőbb vagy kedvezőtlenebb egy adott csoport számára.</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Explainability (magyarázhatóság)</b></td><td style="padding:8px; border:1px solid #ccc;">Annak képessége, hogy egy AI-rendszer döntését emberi nyelven, érthetően meg lehessen indokolni.</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>AI-governance (AI-kormányzás)</b></td><td style="padding:8px; border:1px solid #ccc;">Azon szabályok, folyamatok és felelősségi körök összessége, amelyek egy szervezeten belül biztosítják az AI-rendszerek felelős fejlesztését és üzemeltetését.</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Responsibility (felelősség)</b></td><td style="padding:8px; border:1px solid #ccc;">Annak elfogadása, hogy valaki viseli döntéseinek költségeit és következményeit.</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Accountability (elszámoltathatóság)</b></td><td style="padding:8px; border:1px solid #ccc;">Olyan mechanizmusok megléte, amelyek lehetővé teszik annak megállapítását, ki tett valamit, és ki felelős érte.</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Liability (jogi felelősség)</b></td><td style="padding:8px; border:1px solid #ccc;">A felelősség jogi kiterjesztése — olyan keret, amely alapján kártérítés követelhető.</td></tr>
+</table>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: Laudon, K. C., &amp; Laudon, J. P. <i>Management Information Systems.</i> 15. kiadás, 4. fejezet. — ÜIA Adat és MI-etika lecke.</p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16155"></a><h2>3. Torzítás-csökkentési technikák alapszinten</h2>
+
+
+<h1>Mit jelent a gyakorlatban az "adatok kiegyensúlyozása"?</h1>
+<h2 style="color:#c0392b; font-style:italic;">Torzítás-csökkentési technikák alapszinten</h2>
+
+<p>A Kötelező Könyv 3. oldala bemutatta, hogy a gépi tanulásos torzítás forrása gyakran maga a tanító adathalmaz. Ezen az oldalon néhány alapszintű technikát mutatunk be, amivel ez a probléma csökkenthető.</p>
+
+<table style="border-collapse:collapse; width:100%; margin:20px 0;">
+<tr style="background:#2980b9; color:#ffffff;"><th style="padding:8px; text-align:left; border:1px solid #ccc;">Technika</th><th style="padding:8px; text-align:left; border:1px solid #ccc;">Mit jelent egyszerűen</th></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Adat-újrasúlyozás (reweighting)</b></td><td style="padding:8px; border:1px solid #ccc;">A tanítás során az alulreprezentált csoportokhoz tartozó adatpontok nagyobb súlyt kapnak, hogy a rendszer ne „tanulja meg alábecsülni” őket.</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Adat-kiegyensúlyozás (rebalancing)</b></td><td style="padding:8px; border:1px solid #ccc;">Ha egy adathalmazban egy csoport aránytalanul kevés, mesterségesen több példát vonnak be belőle (vagy csökkentik a túlreprezentált csoport arányát), hogy a végeredmény kiegyensúlyozottabb legyen.</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Utólagos küszöbérték-korrekció</b></td><td style="padding:8px; border:1px solid #ccc;">A rendszer már meghozta a döntést, de csoportonként eltérő elfogadási küszöböt alkalmaznak, hogy a végeredmény arányai kiegyenlítettebbek legyenek.</td></tr>
+</table>
+
+<p>Fontos tudni: ezek a technikák <b>csökkentik</b>, de nem szüntetik meg teljesen a torzítás kockázatát — ahogy a Kötelező Könyv 6. oldala bemutatja, bizonyos méltányossági kritériumok matematikailag nem teljesíthetők egyszerre.</p>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: ÜIA Adat és MI-etika lecke.</p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16156"></a><h2>4. XAI alapfogalmak</h2>
+
+
+<h1>Mi az a "magyarázható AI"?</h1>
+<h2 style="color:#c0392b; font-style:italic;">XAI alapfogalmak</h2>
+
+<p>A Kötelező Könyv 5. oldala említi, hogy léteznek technikai eszközök egy AI-rendszer döntésének megmagyarázására. Ez az oldal két elterjedt módszert mutat be, nagyon egyszerű szinten.</p>
+
+<table style="border-collapse:collapse; width:100%; margin:20px 0;">
+<tr style="background:#2980b9; color:#ffffff;"><th style="padding:8px; text-align:left; border:1px solid #ccc;">Módszer</th><th style="padding:8px; text-align:left; border:1px solid #ccc;">Mit csinál egyszerűen</th><th style="padding:8px; text-align:left; border:1px solid #ccc;">Fő korlátja</th></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>LIME</b> (Local Interpretable Model-agnostic Explanations)</td><td style="padding:8px; border:1px solid #ccc;">Egy adott egyedi döntés körül egy egyszerűbb, érthető modellt épít, hogy megmutassa, mely tényezők befolyásolták leginkább az eredményt.</td><td style="padding:8px; border:1px solid #ccc;">Csak az adott egyedi esetre ad magyarázatot, nem az egész rendszer működésére.</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>SHAP</b> (SHapley Additive exPlanations)</td><td style="padding:8px; border:1px solid #ccc;">Minden egyes bemeneti tényezőhöz (pl. életkor, végzettség) egy „hozzájárulási pontszámot” rendel, megmutatva, mennyit nyomott a latba a végső döntésben.</td><td style="padding:8px; border:1px solid #ccc;">Számításigényes, és a pontszámok értelmezése technikai háttértudást igényelhet.</td></tr>
+</table>
+
+<p>Ezek az eszközök nem oldják meg a „fekete doboz” problémát teljesen, de segítenek abban, hogy legalább utólag, esetenként belátható legyen, mi vezetett egy adott döntéshez.</p>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: ÜIA Adat és MI-etika lecke.</p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16157"></a><h2>5. GDPR 22. cikk és az automatizált döntéshozatal</h2>
+
+
+<h1>Mikor kell szólni, hogy "ezt egy gép döntötte el"?</h1>
+<h2 style="color:#c0392b; font-style:italic;">GDPR 22. cikk és az automatizált döntéshozatal alapfogalmai</h2>
+
+<p>A Kötelező Könyv 5. oldalán megismert Budapest Bank-ügy (NAIH-85-3/2022) jogi háttere a GDPR 22. cikkében gyökerezik.</p>
+
+<table style="border-collapse:collapse; width:100%; margin:20px 0;">
+<tr style="background:#2980b9; color:#ffffff;"><th style="padding:8px; text-align:left; border:1px solid #ccc;">Fogalom</th><th style="padding:8px; text-align:left; border:1px solid #ccc;">Rövid meghatározás</th></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Profilalkotás</b></td><td style="padding:8px; border:1px solid #ccc;">Személyes adatok automatizált elemzése abból a célból, hogy egy személy bizonyos jellemzőit (pl. viselkedését, preferenciáit) értékeljék vagy előre jelezzék.</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Kizárólag automatizált döntéshozatal</b></td><td style="padding:8px; border:1px solid #ccc;">Olyan döntés, amelynek meghozatalában nincs érdemi emberi részvétel — a GDPR 22. cikke alapján az érintettnek ilyenkor joga van emberi beavatkozást kérni.</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><b>Tájékoztatási kötelezettség</b></td><td style="padding:8px; border:1px solid #ccc;">Az adatkezelőnek tájékoztatnia kell az érintettet arról, hogy automatizált döntéshozatal történik, milyen logika alapján, és milyen várható következményekkel jár rá nézve.</td></tr>
+</table>
+
+<p>Ez pontosan az a jogi keret, amely alapján a NAIH megállapította: a „van emberi döntés a végén” önmagában nem elég — ha az emberi döntéshozó nem érti vagy nem tudja megmagyarázni a rendszer logikáját, a tájékoztatási kötelezettség akkor is sérülhet.</p>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: GDPR 22. cikk. — NAIH-85-3/2022 határozat. — ÜIA Adat és MI-etika lecke.</p>
+
+
+</div><a href="#toc">&uarr; fent</a>
+</body>
+</html>

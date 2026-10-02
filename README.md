@@ -50,11 +50,11 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | V03  | Üzleti folyamatok mérése és optimalizálása (KPI)            | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       | —       |
 | V04  | Kockázatkezelés és hibamód-elemzés (FMEA)                   | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       | —       |
 | V05  | Folyamatszemléletű irányítási rendszerek és dok.            | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       | —       |
-| V06  | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score)       | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       | —       |
-| V07  | BSC + VIR/BI programcsomagok összehasonlítása               | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       | —       |
-| V08  | Business Intelligence (BI) és BICC                          | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       | —       |
-| V09  | Dashboard, KPI-alapú jelentések, DAX, Power BI              | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       | —       |
-| V10 | OLTP/OLAP, adattárház, adatbányászat, Big Data              | Menedzsment inf. rendszerek             | GMXIR1MBLF | ⏳       | —       |
+| V06  | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score)       | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
+| V07  | BSC + VIR/BI programcsomagok összehasonlítása               | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
+| V08  | Business Intelligence (BI) és BICC                          | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
+| V09  | Dashboard, KPI-alapú jelentések, DAX, Power BI              | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
+| V10 | OLTP/OLAP, adattárház, adatbányászat, Big Data              | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
 | V11 | IT fejlődés (70-es évektől), szigetrendszerek vs. integrált | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅       | —       |
 | V12 | ERP fogalma, fejlődéstörténete (MRP→MRP II→ERP→cloud)       | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅       | —       |
 | V13 | ERP bevezetése: célok, előnyök, hátrányok, BPR              | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅       | —       |
@@ -79,7 +79,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | HR menedzsment és vez. tech.            | GMXHR1MBLF | K8–K13 (6 tétel)  | ✅ Teljes   |
 | Vezetői számvitel és controlling        | GIXVS2MBLF | K14–K20 (7 tétel) | ✅ Teljes   |
 | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | V1–V5 (5 tétel)   | ✅ Teljes   |
-| Menedzsment információs rendszerek      | GMXIR1MBLF | V6–V10 (5 tétel)  | ⏳ Hiányzik |
+| Menedzsment információs rendszerek      | GMXIR1MBLF | V6–V10 (5 tétel)  | 📋 Forrásanyag elérhető |
 | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | V11–V15 (5 tétel) | ✅ Teljes   |
 | Vállalati és üzleti hálózatmenedzsment  | GMXVU2MBLF | V16–V20 (5 tétel) | ✅ Teljes   |
 
@@ -94,6 +94,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 │   ├── HR menedzsment és vezetési technikák (GMXHR1MBLF)/
 │   ├── Integrált vállalatirányítási rendszerek (GMXIV2MBLF)/
 │   ├── Menedzsment alapjai (GMXMD1MBLF)/
+│   ├── Menedzsment információs rendszerek (GMXIR1MBLF)/
 │   ├── Számítógépes folyamatmenedzsment (GMXSF2MBLF)/
 │   ├── Vezetői számvitel és controlling (GIXVS2MBLF)/
 │   ├── MM-Komplex-Záróvizsgatételsor-F-tanterv_2026.pdf
@@ -102,10 +103,12 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 ├── Kontextus fájlok/                                   # Tantárgy-szintű kontextusanyagok + Tétel-Tárgy Mátrix
 │   ├── Tétel-Tárgy Mátrix.md
 │   ├── Tétel revíziós prompt.md                        # Tételenkénti revízió promptja (Claude Cowork)
+│   ├── Tétel revíziós prompt - GMXIR1MBLF tananyag-feldolgozás.md   # GMXIR1MBLF tananyag-feldolgozó és V06–V10 kidolgozó prompt (Claude Cowork)
 │   ├── Komplex I. - Menedzsment alapjai (GMXMD1MBLF).kontextus.md
 │   ├── Komplex II. - HR menedzsment és vezetési technikák (GMXHR1MBLF).kontextus.md
 │   ├── Komplex III. - Vezetői számvitel és controlling (GIXVS2MBLF).kontextus.md
 │   ├── Váll.Irány I. - Számítógépes folyamatmenedzsment (GMXSF2MBLF).kontextus.md
+│   ├── Váll.Irány II. - Menedzsment információs rendszerek (GMXIR1MBLF).kontextus.md   # GMXIR1MBLF forrástérkép, tartalmi hiányok, Döntési napló
 │   ├── Váll.Irány III. - Integrált vállalatirányítási rendszerek (GMXIV2MBLF).kontextus.md
 │   └── Váll.Irány IV. - Vállalati és üzleti hálózatmenedzsment (GMXVU2MBLF).kontextus.md
 │
@@ -145,12 +148,12 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
     ├── V18-GMXVU2MBLF-Hálózati működés és szempontjai.tétel.md
     ├── V19-GMXVU2MBLF-Üzleti kölcsönhatások hálózatalapú megközelítése.tétel.md
     ├── V20-GMXVU2MBLF-Hálózati üzleti stratégia.tétel.md
-    └── (V06–V10 tételek kidolgozás alatt — GMXIR1MBLF forrásanyag szükséges)
+    └── (V06–V10 tételek kidolgozás előtt — a GMXIR1MBLF tananyag feldolgozva, a kontextusfájl elkészült; a kidolgozás a nyitott K2 és a beszerzendő anyagok után indul)
 ```
 
 ---
 
-## Jelenlegi állapot (2026-05-10)
+## Jelenlegi állapot (2026-10-02)
 
 ### Befejezett tantárgyak (6/7):
 
@@ -161,9 +164,9 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 - ✅ **Integrált vállalatirányítási rendszerek** — 5 tétel teljes (V11–V15)
 - ✅ **Vállalati és üzleti hálózatmenedzsment** — 5 tétel teljes (V16–V20)
 
-### Forrásanyagra vár (1/7):
+### Kidolgozásra vár — a forrásanyag megérkezett (1/7):
 
-- ⏳ **Menedzsment információs rendszerek** — 5 tétel (V6–V10) GMXIR1MBLF anyag bekerüléséig szünetel
+- 📋 **Menedzsment információs rendszerek** — 5 tétel (V6–V10); a GMXIR1MBLF tananyag feldolgozva (2026-10-02, `ANYAG`), a forrástérkép és a Döntési napló a `Kontextus fájlok/Váll.Irány II. - Menedzsment információs rendszerek (GMXIR1MBLF).kontextus.md` fájlban van; a tételek kidolgozása a `Kontextus fájlok/Tétel revíziós prompt - GMXIR1MBLF tananyag-feldolgozás.md` szerint történik
 
 ---
 
@@ -172,7 +175,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 - A **K5 (Vezetői stílusok)** és **K11 (Vezetés fogalma és vezetői szerepek)** tételek között tematikai átfedés van; az előbbi a Menedzsment alapjai, az utóbbi a HR menedzsment tárgyban tanult.
 - A **K20 (BSC)** és **V7 (BSC + VIR/BI)** mindkét tételsorban szerepel, de eltérő mélységgel és kontextussal.
 - A **GMXVU2MBLF** tantárgy előadásanyaga angol nyelvű (*Organizational networks*), a kötelező irodalom Barabási Albert-László: *Behálózva* (Open Books, 2022).
-- A **V6–V10** tételek kidolgozása (Menedzsment inf. rendszerek) a GMXIR1MBLF forrásanyagok bekerüléséig szünetel.
+- A **V6–V10** tételek kidolgozása (Menedzsment inf. rendszerek) a feldolgozott forrásanyagra épül (`ANYAG` kész, 2026-10-02). A tananyag a tételsorhoz képest **tartalmilag hiányos**: nincs EVA/Z-score és mutatószámrendszer (V6), hazai VIR/BI programcsomag-összevetés és rendszer–BSC összerendelés (V7), VIR–BI különbség (V8), dashboard-típusok, DAX, megosztás és jogosultságkezelés (V9), a szakértői rendszer struktúrája csak vázlatos (V10). Jóváhagyott kezelés: **beszerzés** (a hiányzó anyagok a mappába kerülnek, a tétel újrafuttatáskor bővül); források: csak a kötelező `1_NN` HTML-ek, az opcionális könyvek nem használhatók. **Nyitott:** a hivatkozási forma jóváhagyása (K2). Részletek: a GMXIR1MBLF kontextusfájl.
 - A tételfájlok **Mermaid-diagramjai egységes vizuális stílust** követnek (a K01 tétel diagramja a referencia): közös 8 színes pasztell paletta (`kek`, `zold`, `narancs`, `rozsa`, `lila`, `turkiz`, `sarga`, `szurke`) `classDef`-ekkel, 2 px keret (kiemelt csomópontnál 3 px), `rx:10,ry:10` lekerekítés, félkövér címsor + `<br/>` sortörés a címkékben, palaszürke (`#546e7a`) élek és szaggatott, színes visszacsatoló nyilak. Új tétel írásakor ezt a konvenciót kell követni.
 
 ---
@@ -180,4 +183,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
 [Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
 
-*Utolsó frissítés: 2026. október 2. — Elkészült a **K07** tétel (Döntés mint vezetői feladat) forráshű revíziója a `Kontextus fájlok/Tétel revíziós prompt.md` szerint: a tétel a 8. (Döntési modellek) előadásra épül, kiegészítve az 1., 2., 3., 4., 11., 12. előadás döntéshez kapcsolódó diáival és Novák János gyakorlati anyagával; a hibás Kornai-idézet és a téves modellelem-lista az előadás szerint javítva; a tananyagban nem szereplő részek (Simon, Janis, Tversky–Kahneman, megerősítési és status quo torzítás, elsüllyedt költség, visszagörgetés, a 7 lépéses felsorolás, saját A/B/C példa) törölve; új szakaszok: a vezetői döntés szerepe, megalapozott döntés feltételei és lépései, modellcsoportok, a szezoncikk-feladat az összes kritériummal, döntési mátrix és fagráf (szoftver-példa), a hátráltató tényezők újraírása helyi forrásból, Összegzés, Várható vizsgáztatói kérdések, Irodalom (APA 7), Beszerzendő anyagok (Moodle e-learning, Zoltayné Paprika: Döntéselmélet), egy mermaid-diagram (döntési osztályok és kritériumok). A K07 Revízió oszlopa ✅ 2026-10-02; a többi tétel állapota változatlan (K01–K20, V01–V05, V11–V20 ✅; V06–V10 ⏳).*
+*Utolsó frissítés: 2026. október 2. — Elkészült a **Menedzsment információs rendszerek (GMXIR1MBLF)** tananyag-feldolgozása (`ANYAG`): új kontextusfájl `Kontextus fájlok/Váll.Irány II. - Menedzsment információs rendszerek (GMXIR1MBLF).kontextus.md` (forrásleltár, V6–V10 részkérdés-leképezés, tartalmi hiányok, beszerzendő anyagok, Döntési napló); a V06–V10 tételek állapota 📋 marad, a Megjegyzések pontosítva. A tételek kidolgozottsága változatlan (35/40; K01–K20, V01–V05, V11–V20 ✅), a K08–K20 és V01–V05 még nem revideált.*

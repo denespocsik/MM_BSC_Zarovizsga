@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+    <title>1_11. előadás Etika, algoritmusok és felelős AI - Kötelező tananyag</title>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+<a name="top"></a><h1>11. előadás Etika, algoritmusok és felelős AI - Kötelező tananyag</h1><p class="book_summary"></p><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Tartalomjegyzék</h2><ul><li><a title="1. MIR — 11. Fejezet: Etika, algoritmusok és felelős AI (Kötelező Könyv)" class="font-weight-bold text-decoration-none" href="#ch16141">1. MIR — 11. Fejezet: Etika, algoritmusok és felelős AI (Kötelező Könyv)</a></li><li><a title="2. Amikor a gép megtanulja a múlt hibáit" class="font-weight-bold text-decoration-none" href="#ch16142">2. Amikor a gép megtanulja a múlt hibáit</a></li><li><a title="3. Emlékszel még a szakértői rendszerre?" class="font-weight-bold text-decoration-none" href="#ch16143">3. Emlékszel még a szakértői rendszerre?</a></li><li><a title="4. Amikor a rendszer nem szabályt kap, hanem mintázatot tanul" class="font-weight-bold text-decoration-none" href="#ch16144">4. Amikor a rendszer nem szabályt kap, hanem mintázatot tanul</a></li><li><a title="5. Hat elv, egy valós gyártási döntés" class="font-weight-bold text-decoration-none" href="#ch16145">5. Hat elv, egy valós gyártási döntés</a></li><li><a title="6. Három fogalom, amit gyakran összekevernek" class="font-weight-bold text-decoration-none" href="#ch16146">6. Három fogalom, amit gyakran összekevernek</a></li><li><a title="7. A matematikai méltányossági paradoxon" class="font-weight-bold text-decoration-none" href="#ch16147">7. A matematikai méltányossági paradoxon</a></li><li><a title="8. A ProPublica COMPAS-kutatás" class="font-weight-bold text-decoration-none" href="#ch16148">8. A ProPublica COMPAS-kutatás</a></li><li><a title="9. Nem minden AI egyforma kockázatú" class="font-weight-bold text-decoration-none" href="#ch16149">9. Nem minden AI egyforma kockázatú</a></li><li><a title="10. Mennyibe kerül energetikailag egy AI-válasz?" class="font-weight-bold text-decoration-none" href="#ch16150">10. Mennyibe kerül energetikailag egy AI-válasz?</a></li><li><a title="11. Vissza a kiindulóponthoz" class="font-weight-bold text-decoration-none" href="#ch16151">11. Vissza a kiindulóponthoz</a></li><li><a title="12. Elmélyítő kiegésztő" class="font-weight-bold text-decoration-none" href="#ch16152">12. Elmélyítő kiegésztő</a></li></ul></div><div class="book_chapter"><a name="ch16141"></a><h2>1. MIR — 11. Fejezet: Etika, algoritmusok és felelős AI (Kötelező Könyv)</h2></div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16142"></a><h2>2. Amikor a gép megtanulja a múlt hibáit</h2>
+
+
+<h1>Amikor a gép megtanulja a múlt hibáit</h1>
+<h2 style="color:#c0392b; font-style:italic;">Etika, algoritmusok és felelős AI</h2>
+
+<div style="background:#fdf2e3; border:2px solid #e67e22; padding:14px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>💬 Nyitó dilemma</strong></p>
+
+<p>Egy nagy technológiai vállalat 2014-ben belefogott egy ambiciózus projektbe: automatizálni akarta a toborzási folyamatot. A cél egyszerű volt — egy AI-rendszer, amely száz beérkező önéletrajzból kiválasztja az öt legjobbat, és a HR-csapatnak már csak a döntést kell meghoznia. A rendszert az elmúlt tíz év jelentkezési anyagain tanították be, hiszen ki tudná jobban megmondani, milyen egy "jó jelölt", mint a vállalat saját, bevált felvételi gyakorlata?</p>
+<p>2015-re kiderült a probléma: a rendszer szisztematikusan hátrébb sorolta azokat az önéletrajzokat, amelyek a "women's" szót tartalmazták (pl. "women's chess club captain"), és előnyben részesítette a hagyományosan férfias kódolású igéket, mint az "executed" vagy "captured". A vállalat megpróbálta kijavítani ezeket a konkrét torzításokat, de végül nem tudta garantálni, hogy a rendszer más, rejtettebb módokon nem részesít-e továbbra is előnyben férfi jelölteket. A projektet leállították.</p>
+
+</div>
+
+<p>🤔 <em>Mit gondolsz: hibázott-e valaki ebben a történetben — és ha igen, ki? A fejlesztő, aki megírta a kódot? A HR-vezető, aki jóváhagyta a projektet? Vagy senki, mert a rendszer "csak" a valóságot tükrözte?</em></p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>💡 Tanulási eredmények</strong></p>
+
+<p>A fejezet elvégzése után Ön képes:</p>
+<ul>
+<li>megkülönböztetni a szabályalapú és a gépi tanulásos rendszerek torzítás-mechanizmusát</li>
+<li>elhatárolni egymástól a felelősség, elszámoltathatóság és jogi felelősség fogalmait</li>
+<li>klasszikus etikai elvek mentén értékelni egy AI-alapú üzleti döntést</li>
+<li>alkalmazni az EU AI Act kockázatalapú besorolási logikáját egy konkrét vállalati helyzetre</li>
+<li>kritikusan mérlegelni, mit garantálhat, és mit nem garantálhat egyetlen etikai, jogi vagy technikai védvonal sem</li>
+</ul>
+
+</div>
+
+<div style="background:#f9f9f9; border:1px solid #ccc; padding:20px; margin:20px 0; text-align:center;">
+<p style="color:#7a7a7a; font-style:italic; margin:0;">Ábra helye: két önéletrajz-köteg — az egyik papír, a másik adatfolyamként (bináris kód) áramlik egy fekete doboz-ikonba, amiből csak bizonyos önéletrajzok jönnek ki a másik oldalon</p>
+</div>
+
+<p><em>De hogyan is "tanul" egy ilyen rendszer — és miért másképp torzít, mint amit a 9. fejezetben megismert szabályalapú szakértői rendszerek? Erről szól a következő oldal.</em></p>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: Dastin, J. (2018). <i>Amazon Scraps Secret AI Recruiting Tool That Showed Bias Against Women.</i> Reuters.</p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16143"></a><h2>3. Emlékszel még a szakértői rendszerre?</h2>
+
+
+<h1>Emlékszel még a szakértői rendszerre?</h1>
+<h2 style="color:#c0392b; font-style:italic;">Retrieval — vissza a 9. fejezethez</h2>
+
+<p>A 9. fejezetben megismerted a szabályalapú szakértői rendszert (rule-based expert system): egy szakértő tudását explicit „HA... AKKOR...” szabályokba foglalják, és a rendszer ezek alapján hoz döntést — például eldönti, adjunk-e hitelt egy ügyfélnek, vagy diagnosztizáljunk egy gépi hibát.</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>💡 Műszaki analógia</strong></p>
+
+<p>Egy szabályalapú rendszer olyan, mint egy nagyon részletes, előre megírt folyamatábra — minden elágazás valakinek a tudatos döntése. Ha torzítás kerül bele, az azért van, mert <strong>valaki, valahol, egy konkrét szabályba</strong> beleírta (tudatosan vagy figyelmetlenségből).</p>
+
+</div>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Reflektív kérdés</strong></p>
+
+<p>Ha egy banki hitelbírálati szakértői rendszer szabályai közé valaki beírná, hogy „a 25 év alatti jelentkezők kockázati pontszámát emeljük meg 10 ponttal” — ki lenne felelős ezért? Hogyan deríthetnéd ki, hogy ez a szabály egyáltalán létezik?</p>
+
+</div>
+
+<p>Ez a kérdés a szabályalapú rendszereknél viszonylag könnyen megválaszolható: a szabálybázis <strong>átlátható és visszakereshető</strong> — pontosan meg lehet mutatni, melyik sor okozza a problémát. Ez az <strong>elszámoltathatóság</strong> egyik alapfeltétele, amivel az 5. oldalon részletesebben foglalkozunk.</p>
+
+<p>De mi történik akkor, ha a rendszer nem kész szabályokat kap, hanem <em>maga</em> alakítja ki a döntési logikáját — ahogyan az Amazon-féle toborzási AI is tette? Erről szól a következő oldal.</p>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: MIS_KMS.pdf, 3. modul — Tudásmenedzsment. Óbudai Egyetem, ÜTDI, Prof. Dr. Tick Andrea.</p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16144"></a><h2>4. Amikor a rendszer nem szabályt kap, hanem mintázatot tanul</h2>
+
+
+<h1>Amikor a rendszer nem szabályt kap, hanem mintázatot tanul</h1>
+<h2 style="color:#c0392b; font-style:italic;">A gépi tanulásos torzítás mechanizmusa</h2>
+
+<p>A gépi tanulásos rendszer alapvetően másképp működik, mint a szabályalapú elődje. Nem kap kész szabályokat — helyette egy nagy mennyiségű történeti adatból statisztikai mintázatokat von ki. Az Amazon-esetben a rendszer tíz év önéletrajzán tanult; mivel a technológiai szektor hagyományosan férfi-dominanciájú volt, ezek az önéletrajzok túlnyomórészt férfiaktól származtak. A rendszer ebből nem azt „tanulta meg”, hogy nőket kell hátrányosan kezelni — hanem azt, hogy bizonyos szavak és mintázatok (amelyek véletlenül gyakrabban fordultak elő a „sikeresnek” minősített, jellemzően férfi jelentkezők anyagaiban) magasabb pontszámmal járnak.</p>
+
+<p><strong>A lényegi különbség a szabályalapú torzításhoz képest:</strong></p>
+
+<table style="border-collapse:collapse; width:100%; margin:20px 0;">
+<tr style="background:#2980b9; color:#ffffff;"><th style="padding:8px; text-align:left; border:1px solid #ccc;">Szempont</th><th style="padding:8px; text-align:left; border:1px solid #ccc;">Szabályalapú rendszer</th><th style="padding:8px; text-align:left; border:1px solid #ccc;">Gépi tanulásos rendszer</th></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">A torzítás forrása</td><td style="padding:8px; border:1px solid #ccc;">Egy konkrét, valaki által megírt szabály</td><td style="padding:8px; border:1px solid #ccc;">Az adathalmaz statisztikai eloszlása</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Visszakereshetőség</td><td style="padding:8px; border:1px solid #ccc;">Könnyű — megmutatható a hibás szabály</td><td style="padding:8px; border:1px solid #ccc;">Nehéz — a döntés több ezer súly együttes hatása</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Szándékosság</td><td style="padding:8px; border:1px solid #ccc;">Általában tudatos (vagy hanyagságból eredő)</td><td style="padding:8px; border:1px solid #ccc;">Jellemzően nem szándékos, hanem „örökölt”</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Miért nevezik „fekete doboznak”?</td><td style="padding:8px; border:1px solid #ccc;">Nem releváns — a logika olvasható</td><td style="padding:8px; border:1px solid #ccc;">Mert a belső működés nem emberi léptékben értelmezhető</td></tr>
+</table>
+
+<p>A modern, különösen a mély tanulási (deep learning) rendszerek emiatt számítanak „fekete doboznak” (black box) — nehéz betekinteni a belsejükbe, ami komoly problémát jelent az átláthatóság és elszámoltathatóság szempontjából.</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>💡 Műszaki analógia</strong></p>
+
+<p>Képzeld el, hogy nem egy folyamatábrát kapsz, hanem több ezer, egymással összefonódó mérleget, amelyek együttesen billennek egyik vagy másik irányba — nincs egyetlen mérleg, amit „kicserélve” megoldanád a problémát.</p>
+
+</div>
+
+<div style="background:#fef9e7; border-left:4px solid #f39c12; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>⚠️ Kritikai figyelmeztetés</strong></p>
+
+<p>Fontos tudatosítani: a torzítás nem azért keletkezik, mert az algoritmus „rosszindulatú” volna. Az adattorzítás akkor jelenik meg, amikor a tanító adathalmazban bizonyos csoportok alul- vagy túlreprezentáltak; ettől függetlenül létezik algoritmikus torzítás is, amikor maga a modell felépítése vagy súlyozási módja okoz torzítást. A felelősség emberi marad — csak a hiba mechanizmusa más.</p>
+
+</div>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: Dastin, J. (2018). Reuters.</p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16145"></a><h2>5. Hat elv, egy valós gyártási döntés</h2>
+
+
+<h1>Hat elv, egy valós gyártási döntés</h1>
+<h2 style="color:#c0392b; font-style:italic;">Klasszikus etikai elvek egy műszaki döntési helyzetre alkalmazva</h2>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>📖 Fogalom</strong></p>
+<p>Laudon hat klasszikus etikai elvet azonosít, amelyek segítenek eligazodni morális dilemmákban.</p>
+</div>
+
+<p><strong>A helyzet:</strong> egy gyártó vállalat mérlegeli, hogy bevezet-e egy gépi tanulásos, gépi látáson alapuló minőségellenőrző rendszert, amely 97%-os pontossággal szűri ki a hibás termékeket — de a fennmaradó 3%-ot senki nem ellenőrzi emberi szemmel, mert ez lenne a teljes költségmegtakarítás lényege.</p>
+
+<table style="border-collapse:collapse; width:100%; margin:20px 0;">
+<tr style="background:#2980b9; color:#ffffff;"><th style="padding:8px; text-align:left; border:1px solid #ccc;">Etikai elv</th><th style="padding:8px; text-align:left; border:1px solid #ccc;">Rövid meghatározás</th><th style="padding:8px; text-align:left; border:1px solid #ccc;">Alkalmazás erre a helyzetre</th></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Aranyszabály</td><td style="padding:8px; border:1px solid #ccc;">Tedd másokkal azt, amit szeretnél, hogy veled tegyenek</td><td style="padding:8px; border:1px solid #ccc;">Elfogadnád-e, hogy a <i>te</i> biztonságodat érintő terméket egy 3%-os hibaarányú, felügyelet nélküli rendszer engedje át?</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Kant kategorikus imperatívusza</td><td style="padding:8px; border:1px solid #ccc;">Csak úgy cselekedj, hogy a cselekvésed elve egyetemes törvénnyé válhasson</td><td style="padding:8px; border:1px solid #ccc;">Ha minden gyártó feladná az emberi ellenőrzést a költségmegtakarítás kedvéért, elfogadható lenne-e ez társadalmi szinten?</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Lejtő-elv (slippery slope)</td><td style="padding:8px; border:1px solid #ccc;">Egy látszólag ártalmatlan lépés visszafordíthatatlan folyamatot indíthat el</td><td style="padding:8px; border:1px solid #ccc;">Ha ma elfogadjuk a 3%-os felügyelet nélküli hibaarányt, holnap elfogadjuk-e az 5%-ot is, ha az még olcsóbb?</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Utilitarista elv</td><td style="padding:8px; border:1px solid #ccc;">Azt a cselekvést válaszd, amely a legtöbb embernek a legtöbb hasznot hozza</td><td style="padding:8px; border:1px solid #ccc;">A megtakarított költség hány munkahelyet menthet meg — szemben a hibás termékek okozta esetleges károkkal?</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Kockázatkerülési elv</td><td style="padding:8px; border:1px solid #ccc;">A legnagyobb kárt okozó lehetőséget kerüld, még alacsony bekövetkezési valószínűség esetén is</td><td style="padding:8px; border:1px solid #ccc;">Mi történik, ha éppen a 3%-ba egy biztonságkritikus alkatrész-hiba esik?</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">„Nincs ingyen ebéd” elv</td><td style="padding:8px; border:1px solid #ccc;">Minden érték valakinek a tulajdona vagy munkája — ha felhasználod, kompenzációt kell adnod</td><td style="padding:8px; border:1px solid #ccc;">Ha a rendszer az eddigi minőségellenőrök tapasztalatán (történeti hibaadatokon) tanult, jár-e nekik valamilyen elismerés vagy átképzési lehetőség?</td></tr>
+</table>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Reflektív kérdés</strong></p>
+<p>Melyik elv alapján hoznál te döntést ebben a helyzetben — és mit tennél, ha kettő közülük ellentétes következtetésre vezetne?</p>
+</div>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: Laudon, K. C., &amp; Laudon, J. P. <i>Management Information Systems.</i> 15. kiadás, 4. fejezet.</p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16146"></a><h2>6. Három fogalom, amit gyakran összekevernek</h2>
+
+
+<h1>Három fogalom, amit gyakran összekevernek</h1>
+<h2 style="color:#c0392b; font-style:italic;">Felelősség, elszámoltathatóság, jogi felelősség</h2>
+
+<table style="width:100%; border-collapse:separate; border-spacing:0; margin:20px 0;"><tr><td style="width:33%; vertical-align:top; padding:0 8px 0 0; border-collapse:separate;">
+<div style="background:#eaf4fb; border:2px solid #2980b9; border-radius:10px; padding:14px 16px; height:100%; box-sizing:border-box;">
+<p style="margin:0 0 6px 0;"><strong>Felelősség (responsibility)</strong></p>
+<p style="margin:0;">Annak elfogadása, hogy valaki viseli döntéseinek költségeit, kötelezettségeit és következményeit.</p>
+</div>
+</td><td style="width:33%; vertical-align:top; padding:0 8px 0 0; border-collapse:separate;">
+<div style="background:#eaf4fb; border:2px solid #2980b9; border-radius:10px; padding:14px 16px; height:100%; box-sizing:border-box;">
+<p style="margin:0 0 6px 0;"><strong>Elszámoltathatóság (accountability)</strong></p>
+<p style="margin:0;">Rendszerek és intézmények jellemzője — olyan mechanizmusok megléte, amelyek lehetővé teszik annak megállapítását, ki tett valamit, és ki felelős érte.</p>
+</div>
+</td><td style="width:33%; vertical-align:top; padding:0 8px 0 0; border-collapse:separate;">
+<div style="background:#eaf4fb; border:2px solid #2980b9; border-radius:10px; padding:14px 16px; height:100%; box-sizing:border-box;">
+<p style="margin:0 0 6px 0;"><strong>Jogi felelősség (liability)</strong></p>
+<p style="margin:0;">A felelősség fogalmának kiterjesztése a jog területére — olyan jogi keret, amely lehetővé teszi, hogy az egyének kártérítést követeljenek másoktól elszenvedett károkért.</p>
+</div>
+</td></tr></table>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>💡 Műszaki analógia</strong></p>
+
+<p>Gondolj egy repülőgép-balesetre. A <strong>felelősség</strong> azé, aki hibázott. Az <strong>elszámoltathatóság</strong> az a rendszer (a fekete doboz, a karbantartási napló), ami lehetővé teszi, hogy <em>egyáltalán kiderítsük</em>, ki hibázott. A <strong>jogi felelősség</strong> az, ami alapján az áldozatok családja kártérítést kaphat.</p>
+
+</div>
+
+<h3>Hazai eset — amikor a „van emberi döntés a végén” sem elég</h3>
+<p>2022-ben a Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH) megállapította, hogy egy hazai bank közel négy éven keresztül olyan mesterséges intelligencia alapú hangelemző rendszert alkalmazott, amely automatikusan elemezte az ügyfélszolgálatra telefonáló ügyfelek hanghordozását és érzelmi állapotát. Bár a folyamat végén formálisan emberi döntés született, a NAIH megállapította, hogy az adatkezelés az érintettekre nézve joghatással bírhatott, és a bank nem tájékoztatta megfelelően az érintetteket az alkalmazott logikáról és annak következményeiről.</p>
+
+<div style="background:#fef9e7; border-left:4px solid #f39c12; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>⚠️</strong></p>
+
+<p>Ez a hazai eset pontosan azt mutatja, amiről ez az oldal szól: az, hogy „végül egy ember dönt”, önmagában nem old meg minden elszámoltathatósági problémát — ha az ember nem érti, vagy nem tudja megmagyarázni, milyen logika alapján kapta a rendszer javaslatát, az elszámoltathatóság akkor is sérülhet.</p>
+
+</div>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Reflektív kérdés</strong></p>
+<p>Ha egy vállalati AI-rendszer hibás döntést hoz, és a fejlesztő azt mondja „a rendszer magától tanulta ezt, nem én programoztam bele” — elfogadható-e ez válasznak?</p>
+</div>
+
+<p><em>A magyarázhatóság technikai eszközeiről — pl. Explainable AI (XAI) — bővebben az ÜIA Adat és MI-etika leckéjéből és az Opcionális Könyvből tudhatsz meg többet.</em></p>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: Laudon, K. C., &amp; Laudon, J. P. <i>Management Information Systems.</i> 15. kiadás, 4. fejezet. — NAIH-85-3/2022 határozat, Nemzeti Adatvédelmi és Információszabadság Hatóság.</p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16147"></a><h2>7. A matematikai méltányossági paradoxon</h2>
+
+
+<h1>Amikor a méltányosság nem technikai, hanem matematikai kérdés</h1>
+<h2 style="color:#c0392b; font-style:italic;">A matematikai méltányossági paradoxon</h2>
+
+<div style="background:#fef9e7; border-left:4px solid #f39c12; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>⚠️ Kritikai figyelmeztetés</strong></p>
+<p>Ez a fejezet legmélyebb, legfontosabb belátása: <strong>a méltányosság nem „megoldható” probléma — hanem tudatos kompromisszum.</strong></p>
+</div>
+
+<p>2016-ban Jon Kleinberg, Sendhil Mullainathan és Manish Raghavan matematikailag bebizonyították, hogy — ha a csoportok között eltérő az alap-előfordulási gyakoriság (base rate) — <strong>nem létezik olyan algoritmus, amely egyszerre tudná teljesíteni</strong> a következő két, önmagában ésszerűnek tűnő méltányossági kritériumot: hogy a kockázati pontszám ugyanazt jelentse minden csoportra nézve (kalibráció), és hogy a pozitív, illetve negatív besorolású egyének átlagos pontszáma megegyezzen csoportonként (osztályozási egyensúly) — kivéve, ha az algoritmus tökéletes előrejelzést érne el.</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>💡 Műszaki analógia</strong></p>
+<p>Ez olyan, mint amikor egy híd tervezésénél egyszerre szeretnéd maximalizálni a teherbírást, minimalizálni a költséget, és minimalizálni az építési időt — bizonyos kombinációk egyszerűen matematikailag kizárják egymást, nem azért, mert rosszul terveztél, hanem mert a matematika ezt diktálja.</p>
+</div>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Reflektív kérdés</strong></p>
+<p>Ha egyszerre nem lehet minden méltányossági kritériumnak megfelelni, ki dönti el, melyik számít fontosabbnak — a fejlesztő, a vállalat vezetése, a jogalkotó, vagy a bíróság?</p>
+</div>
+
+<p><em>Ez nem csak elméleti tétel — egy valós, nagy port kavaró kutatás pontosan ezt igazolta gyakorlatban is. Erről szól a következő oldal.</em></p>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: Kleinberg, J., Mullainathan, S., &amp; Raghavan, M. (2016). <i>Inherent Trade-Offs in the Fair Determination of Risk Scores.</i></p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16148"></a><h2>8. A ProPublica COMPAS-kutatás</h2><h1>Amikor két fél közül mindkettő igazat mond — és mégis vitáznak</h1>
+<h2 style="color:#c0392b; font-style:italic;">A ProPublica COMPAS-kutatás</h2>
+
+<p>A ProPublica (amerikai oknyomozó újságírói szervezet) 2016-ban megvizsgálta a COMPAS nevű szoftvert, amelyet amerikai bíróságokon használnak a vádlottak visszaesési kockázatának becslésére. A ProPublica azt találta, hogy azok közül, akik a következő két évben nem estek vissza bűnözésbe, az afroamerikai vádlottak 45%-át tévesen sorolta magas kockázatúnak a rendszer, míg a fehér vádlottaknál ez az arány csak 24% volt.</p>
+
+<p>A rendszer fejlesztője azzal válaszolt, hogy az eltérés a két csoport eltérő alap-visszaesési arányából adódik — és technikailag igaza volt: a rendszer kalibrált volt, csak nem volt egyben osztályozásilag kiegyensúlyozott is. <strong>Ez pontosan a Kleinberg–Mullainathan–Raghavan-tétel gyakorlati megnyilvánulása</strong> (6. oldal) — mindkét fél technikai szempontból igazat állított, mégis homlokegyenest ellenkező következtetésre jutottak.</p>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Reflektív kérdés</strong></p>
+<p>Ha te lennél a bíróság döntéshozója, és tudnád, hogy egy ilyen rendszer matematikailag <em>nem lehet</em> egyszerre mindenre nézve méltányos — használnád-e egyáltalán a döntésed támogatására?</p>
+</div>
+
+<p><em>Az Amazon-eset és a COMPAS-eset ugyanazt üzeni: a méltányosság technikai garantálása korlátozott — az emberi felügyelet és a tudatos értékválasztás nem kiváltható.</em></p>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: Angwin, J., Larson, J., Mattu, S., &amp; Kirchner, L. (2016). <i>Machine Bias.</i> ProPublica.</p></div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16149"></a><h2>9. Nem minden AI egyforma kockázatú</h2>
+
+
+<h1>Nem minden AI egyforma kockázatú</h1>
+<h2 style="color:#c0392b; font-style:italic;">Az EU AI Act kockázatalapú szabályozása egy gyártó cég szemszögéből</h2>
+
+<div style="background:#fef9e7; border-left:4px solid #f39c12; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>⚠️ Fontos: ez a szabályozási táj folyamatosan mozog</strong></p>
+
+<p>E tananyag elkészültekor (2026 nyara) az EU AI Act magas kockázatú kötelezettségei éppen módosuláson mennek át: az eredetileg 2026. augusztus 2-i határidőt egy 2026 májusában elért politikai megállapodás 2027. december 2-ra halasztja a toborzási/teljesítményértékelő rendszerek esetében. Ez jól mutatja: a szabályozás maga is élő, változó folyamat — mire ezt olvasod, érdemes ellenőrizned az aktuális állást.</p>
+
+</div>
+
+<p>Az EU AI Act (2024-ben elfogadott rendelet) a világ első átfogó, jogilag kötelező erejű AI-szabályozása, amely <strong>kockázatalapú megközelítést</strong> alkalmaz: minél nagyobb a kockázat, annál szigorúbb a szabályozás.</p>
+
+<h3>Gyakorlati példa — egy közepes méretű magyar gyártó cég AI-alkalmazásai</h3>
+
+<table style="border-collapse:collapse; width:100%; margin:20px 0;">
+<tr style="background:#2980b9; color:#ffffff;"><th style="padding:8px; text-align:left; border:1px solid #ccc;">Kockázati kategória</th><th style="padding:8px; text-align:left; border:1px solid #ccc;">Példa a gyártó cégnél</th><th style="padding:8px; text-align:left; border:1px solid #ccc;">Következmény</th></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Minimális kockázat</td><td style="padding:8px; border:1px solid #ccc;">Gépi látáson alapuló hibafelismerő rendszer a gyártósoron</td><td style="padding:8px; border:1px solid #ccc;">Nincs különös szabályozás</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Korlátozott kockázat</td><td style="padding:8px; border:1px solid #ccc;">Ügyfélszolgálati chatbot</td><td style="padding:8px; border:1px solid #ccc;">Átláthatósági kötelezettség: jelezni kell, hogy AI-val kommunikál a felhasználó</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Magas kockázat</td><td style="padding:8px; border:1px solid #ccc;">Automatizált toborzási/előszűrő rendszer (mint az Amazon-eset), vagy munkavállalói teljesítményértékelő AI</td><td style="padding:8px; border:1px solid #ccc;">Kockázatértékelés, dokumentáció, emberi felügyelet, átláthatóság kötelező</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;">Elfogadhatatlan kockázat</td><td style="padding:8px; border:1px solid #ccc;">Munkavállalók valós idejű biometrikus viselkedés-megfigyelése a gyártócsarnokban</td><td style="padding:8px; border:1px solid #ccc;">Tilos</td></tr>
+</table>
+
+<h3>Fontos megkülönböztetés — ki a „te” ebben a táblázatban?</h3>
+<p>A fenti táblázat a te vállalatod által <em>használt</em> AI-rendszerek kockázati besorolásáról szól. Magukat az AI-modelleket (pl. amit egy chatbot mögött használsz) <em>fejlesztő</em> cégekre (OpenAI, Anthropic, Google) <strong>külön, párhuzamos szabályozási réteg</strong> vonatkozik: az AI Act V. fejezete (51–56. cikk) már 2025 augusztusa óta kötelezi az általános célú AI-modellek (GPAI) fejlesztőit technikai dokumentáció, szerzői jogi megfelelési politika és nyilvános tanítóadat-összefoglaló közzétételére. Ezt a kötelezettséget <strong>nem érinti</strong> a fenti halasztás.</p>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Reflektív kérdés</strong></p>
+<p>Te, mint leendő műszaki menedzser: melyik kategóriába sorolnál egy olyan rendszert, amely a munkavállalók billentyűzet-aktivitását figyeli „termelékenységi” célból?</p>
+</div>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: EU AI Act Omnibus Agreement — Postponed High-Risk Deadlines and Other Key Changes, Gibson Dunn (2026). — Article 53: Obligations for Providers of General-Purpose AI Models, EU Artificial Intelligence Act.</p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16150"></a><h2>10. Mennyibe kerül energetikailag egy AI-válasz?</h2>
+
+
+<h1>Mennyibe kerül energetikailag egy AI-válasz?</h1>
+<h2 style="color:#c0392b; font-style:italic;">Rövid technikai kitekintés: az AI energiaköltsége</h2>
+
+<p>Ahogy az ÜIA Fenntartható IT leckéjéből már tudod, az adatközpontok energiafogyasztása jelentős. Amit érdemes hozzátenni: maga a mesterséges intelligencia <strong>feladattípusa</strong> is drámaian eltérő energiaköltséggel jár. Egy 2025-ös kutatás szerint egy rövid AI-lekérdezés megválaszolása kb. 0,4 Wh energiát igényelhet, míg egy hosszú, összetett következtetést igénylő feladat akár 33 Wh-t is elérhet — vagyis közel 80-szoros a különbség.</p>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Reflektív kérdés</strong></p>
+<p>Ha te vezetnél egy céget, amely AI-alapú döntéstámogató rendszert vezet be, figyelembe vennéd-e, hogy egy „egyszerű igen/nem döntés” vagy egy „részletes elemzés” kérése a rendszertől mekkora energiaköltséggel jár?</p>
+</div>
+
+<p><em>Ez ugyanaz a stratégiai szemlélet, amit a 10. fejezetben a felhő-döntéseknél is megtanultál: a technológiai döntés soha nem csak informatikai kérdés, hanem üzleti és fenntarthatósági döntés is.</em></p>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: Jegham, N. et al. (2025). <i>Benchmark study of 30 large language models.</i></p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16151"></a><h2>11. Vissza a kiindulóponthoz</h2>
+
+
+<h1>Vissza a kiindulóponthoz</h1>
+<h2 style="color:#c0392b; font-style:italic;">Szintézis, pozitív ellenpélda és kritikai záróértékelés</h2>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>✅ Pozitív ellenpélda, kontrasztként</strong></p>
+
+<p>Nem minden hasonló helyzet végződik kudarccal. Amikor a LinkedIn 2018 körül hasonló problémát észlelt saját Talent Search algoritmusában — a keresési találatok nem tükrözték arányosan a releváns, képzett jelöltek nemek szerinti eloszlását —, nem eltitkolta vagy csendben leállította a rendszert. Mérnökei egy <strong>méltányosság-tudatos újrarangsorolási algoritmust</strong> fejlesztettek, amely a végső találati listát úgy állítja össze, hogy arányosan tükrözze a releváns jelölti kör összetételét, és ezt szakmai, lektorált tudományos konferencián publikálták. Ugyanaz a probléma-típus, mint az Amazon-esetnél — csak átlátható, dokumentált, technikailag ellenőrizhető megoldással.</p>
+
+</div>
+
+<div style="background:#fdf2e3; border:2px solid #e67e22; padding:14px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🔁 Záró visszatérés a nyitó dilemmához</strong></p>
+
+<p>Emlékezz az 1. oldal Amazon-esetére. Most már tudod: <strong>miért</strong> torzult a rendszer (3. oldal), <strong>milyen elvek</strong> mentén értékelhetted volna (4. oldal), <strong>ki lett volna felelős</strong> (5. oldal), <strong>miért nem lehetett volna</strong> egyszerűen „kijavítani” a méltányosságot (6–7. oldal), <strong>milyen jogi kategóriába</strong> esne ma (8. oldal) — és hogy <strong>létezik jobb út is</strong> (LinkedIn-eset, fent).</p>
+
+</div>
+
+<h3>Kritikai záróértékelés: elég-e mindez együtt?</h3>
+<p>A fejezet három védvonalat mutatott be: etikai elvek, elszámoltathatósági mechanizmusok, szabályozás. Érdemes együtt is megnézni: <strong>elégséges-e ez a három védvonal?</strong></p>
+
+<table style="width:100%; border-collapse:separate; border-spacing:0; margin:20px 0;">
+<tr>
+<td style="width:50%; vertical-align:top; padding:0 8px 0 0;">
+<div style="background:#eafaf1; border:2px solid #27ae60; border-radius:10px; padding:14px 16px; height:100%; box-sizing:border-box;">
+<p style="margin:0 0 6px 0;"><strong>✅ Pro</strong></p>
+<ul style="margin:0; padding-left:18px;"><li>Az etikai elvek döntési keretet adnak, amikor a jog még nem szabályoz</li><li>Az elszámoltathatóság legalább visszakövethetővé teszi a hibát</li><li>A szabályozás jogilag kikényszeríthető keretet ad</li><li>Együttesen jelentősen csökkentik a kockázatot</li></ul>
+</div>
+</td>
+<td style="width:50%; vertical-align:top; padding:0 0 0 8px;">
+<div style="background:#fdecea; border:2px solid #c0392b; border-radius:10px; padding:14px 16px; height:100%; box-sizing:border-box;">
+<p style="margin:0 0 6px 0;"><strong>⚠️ Kontra</strong></p>
+<ul style="margin:0; padding-left:18px;"><li>Az elvek gyakran ellentmondanak egymásnak — nem adnak egyértelmű választ</li><li>A méltányossági paradoxon miatt az audit is csak azt mutatja meg, <i>melyik</i> kritérium sérül</li><li>A jogalkotás mindig lassabb, mint a technológia</li><li>Együttesen sem garantálják egy új, ismeretlen torzítási mintázat időbeni felismerését</li></ul>
+</div>
+</td>
+</tr>
+</table>
+
+<p><strong>Műszaki-menedzseri szemszög:</strong> a te felelősséged nem az, hogy magad írj AI-algoritmust — hanem hogy fel tudd tenni a helyes kérdéseket: milyen adaton tanult a rendszer? Ki tudja megmagyarázni a döntéseit? Milyen kockázati kategóriába esik? Milyen emberi felügyeletet igényel?</p>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Záró reflektív kérdés</strong></p>
+<p>Ha holnap a te vállalatod vezetése elé kerülne egy hasonló AI-projekt-javaslat, milyen három kérdést tennél fel először?</p>
+</div>
+
+<p><em>A következő fejezetben azt vizsgáljuk meg, hogyan segíthet egy jól megválasztott AI- és digitalizációs stratégia — beruházás-gazdaságossági szempontból is — abban, hogy egy vállalat valóban felkészült legyen a digitális jövőre.</em></p>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: Geyik, S. C., Ambler, S., &amp; Kenthapadi, K. (2019). <i>Fairness-Aware Ranking in Search &amp; Recommendation Systems with Application to LinkedIn Talent Search.</i> KDD '19.</p>
+
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16152"></a><h2>12. Elmélyítő kiegésztő</h2><p dir="ltr" style="text-align: left;"></p><ul><li><span style="font-size: 0.9375rem;">Fabris, A., Baranowska, N., Dennis, M. J., Graus, D., Hacker, P., Saldivar, J., Zuiderveen Borgesius, F., &amp; Biega, A. J. (2024). </span><em style="font-size: 0.9375rem;">Fairness and Bias in Algorithmic Hiring: A Multidisciplinary Survey.</em><span style="font-size: 0.9375rem;"> ACM Transactions on Intelligent Systems and Technology. </span><a href="https://doi.org/10.1145/3696457" style="font-size: 0.9375rem; background-color: rgb(255, 255, 255);">https://doi.org/10.1145/3696457</a></li><li><span style="font-size: 0.9375rem;">Kleinberg, Mullainathan &amp; Raghavan (2016/2017) — </span><em style="font-size: 0.9375rem;">Inherent Trade-Offs in the Fair Determination of Risk Scores</em><span style="font-size: 0.9375rem;"> (arXiv:1609.05807)&nbsp;<a href="https://doi.org/10.4230/LIPIcs.ITCS.2017.43" class="_blanktarget">https://doi.org/10.4230/LIPIcs.ITCS.2017.43</a></span></li><li><span style="font-size: 0.9375rem;">NAIH-85-3/2022 határozat + a WP251 (29. cikk szerinti Adatvédelmi Munkacsoport) iránymutatása az automatizált döntéshozatalról&nbsp;</span></li><li><a href="https://www.naih.hu/hatarozatok-vegzesek?download=517%3Amesterseges-intelligencia-alkalmazasanak-adatvedelmi-kerdesei" style="background-color: rgb(255, 255, 255); font-size: 0.9375rem;">https://www.naih.hu/hatarozatok-vegzesek?download=517%3Amesterseges-intelligencia-alkalmazasanak-adatvedelmi-kerdesei</a><span style="font-size: 0.9375rem;">;&nbsp;</span><span style="font-size: 0.9375rem;">kiegészítő iránymutatás: 29. cikk szerinti Adatvédelmi Munkacsoport, WP251&nbsp;</span><a href="https://www.naih.hu/files/wp251rev01_hu.pdf" style="font-size: 0.9375rem; background-color: rgb(255, 255, 255);">https://www.naih.hu/files/wp251rev01_hu.pdf</a></li><li><span style="font-size: 0.9375rem;">Csatlós Erzsébet: </span><em style="font-size: 0.9375rem;">Az ügyfél és a hatósági döntéshozatal a digitalizáció korában</em><span style="font-size: 0.9375rem;"> (Pro Futuro, 2023/1.)&nbsp;DOI: <a href="https://doi.org/10.26521/profuturo/2023/1/13356">https://doi.org/10.26521/profuturo/2023/1/13356</a></span></li></ul><p></p></div><a href="#toc">&uarr; fent</a>
+</body>
+</html>

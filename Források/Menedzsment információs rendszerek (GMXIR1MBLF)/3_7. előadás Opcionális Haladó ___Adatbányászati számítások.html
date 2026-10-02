@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+    <title>3_7. előadás Opcionális Haladó Könyv - Adatbányászati számítások</title>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+<a name="top"></a><h1>7. előadás Opcionális Haladó Könyv - Adatbányászati számítások</h1><p class="book_summary"></p><div class="book_toc_numbered"><a name="toc"></a><h2 class="text-center pb-5">Tartalomjegyzék</h2><ul><li><a title="1. 6-7. előadás: Haladó Könyv — feltételes valószínűség és klasszifikáció" class="font-weight-bold text-decoration-none" href="#ch16083">1. 6-7. előadás: Haladó Könyv — feltételes valószínűség és klasszifikáció</a></li><li><a title="2. Bayes-tétel és a feltételes valószínűség" class="font-weight-bold text-decoration-none" href="#ch16084">2. Bayes-tétel és a feltételes valószínűség</a></li><li><a title="3. Asszociációs mutatók pontosan" class="font-weight-bold text-decoration-none" href="#ch16085">3. Asszociációs mutatók pontosan</a></li><li><a title="4. Döntési fák: Gini, Entrópia, Chi-négyzet és Lift" class="font-weight-bold text-decoration-none" href="#ch16086">4. Döntési fák: Gini, Entrópia, Chi-négyzet és Lift</a></li><li><a title="5. A konfúziós mátrix és az alapmutatók" class="font-weight-bold text-decoration-none" href="#ch16087">5. A konfúziós mátrix és az alapmutatók</a></li><li><a title="6. Az F1-score" class="font-weight-bold text-decoration-none" href="#ch16088">6. Az F1-score</a></li><li><a title="7. ROC-görbe és AUC" class="font-weight-bold text-decoration-none" href="#ch16089">7. ROC-görbe és AUC</a></li><li><a title="8. Források" class="font-weight-bold text-decoration-none" href="#ch16090">8. Források</a></li></ul></div><div class="book_chapter"><a name="ch16083"></a><h2>1. 6-7. előadás: Haladó Könyv — feltételes valószínűség és klasszifikáció</h2></div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16084"></a><h2>2. Bayes-tétel és a feltételes valószínűség</h2><h1>Bayes-tétel és a feltételes valószínűség</h1>
+<h2 style="color:#16a085; font-style:italic;">Haladó Könyv — amikor a KPI mögé nézünk</h2>
+
+<p>Az Opcionális Könyv (4. oldal) bevezette a feltételes valószínűség gondolatát az esernyő-példával: "mennyi az esélye X-nek, <em>ha már tudjuk</em> Y-t." Itt ezt pontos matematikai formába öntjük.</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>📖 Fogalmi alap — Bayes-tétel</strong></p>
+<p>A feltételes valószínűség definíciója: <strong>P(B|A) = P(A∩B)/P(A)</strong> — vagyis annak a valószínűsége, hogy B bekövetkezik, <em>feltéve</em>, hogy A már bekövetkezett, az A és B együttes valószínűségének és A valószínűségének hányadosa.</p>
+<p>Ebből következik <strong>Bayes tétele</strong>: <strong>P(A|B) = [P(B|A) · P(A)] / P(B)</strong></p>
+<p><strong>A függetlenség matematikai definíciója:</strong> A és B <em>pontosan akkor</em> független, ha P(B|A) = P(B) — vagyis A bekövetkezése <em>semennyire</em> nem változtatja meg B valószínűségét. Ez az a pont, ahol a következő oldalon tárgyalt Lift-mutató gyökerezik.</p>
+</div>
+
+<div style="background:#eef2f3; border-left:4px solid #34495e; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>💡 Műszaki analógia</strong></p>
+<p>Gondolj egy érzékelőre, amely két, egymástól független paramétert mér (pl. hőmérséklet és egy másik gyártósoron mért nyomás). Ha a hőmérséklet ismerete <em>semmit</em> nem segít a nyomás előrejelzésében, a két mérés független — pontosan úgy, ahogy P(nyomás|hőmérséklet) = P(nyomás).</p>
+</div>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Reflektív kérdés</strong></p>
+<p>Ha tudod, hogy egy gépen most magas a rezgésszint, ez <em>megváltoztatja</em>-e annak esélyét, hogy hamarosan meghibásodik? Ha igen, a két esemény nem független — hogyan használnád ki ezt egy karbantartási stratégiában?</p></div></div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16085"></a><h2>3. Asszociációs mutatók pontosan</h2>
+
+<h1>Asszociációs mutatók pontosan: Support, Confidence, Elvárt konfidencia, Lift</h1>
+<h2 style="color:#16a085; font-style:italic;">Haladó Könyv — amikor a KPI mögé nézünk</h2>
+
+<p>A Kötelező Könyv 4. oldalán (7. előadás) a bank-példát számoltuk ki — itt egy másik, klasszikus kiskereskedelmi forgatókönyvön nézzük meg ugyanezt az öt mutatót, hogy lásd: az összefüggés iránya (pozitív vagy negatív) is kiolvasható belőlük.</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>📖 Fogalmi alap — öt mutató, egymásra épülve</strong></p>
+<p><strong>Adatok:</strong> egy szupermarket 10 000 bevásárlókosarat elemez. Kávé (A) 3000 kosárban szerepel, cukor (B) 2500 kosárban, és a kettő <strong>együtt</strong> 1500 kosárban fordul elő.</p>
+</div>
+
+<table style="border-collapse:collapse; width:100%; margin:20px 0;">
+<tr style="background:#2980b9; color:#ffffff;">
+<th style="padding:8px; text-align:left; border:1px solid #ccc;">Mutató</th>
+<th style="padding:8px; text-align:left; border:1px solid #ccc;">Képlet</th>
+<th style="padding:8px; text-align:left; border:1px solid #ccc;">Számpélda (Kávé→Cukor)</th>
+</tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Support(A)</strong></td><td style="padding:8px; border:1px solid #ccc;">count(A)/N</td><td style="padding:8px; border:1px solid #ccc;">Support(Kávé) = 3000/10 000 = 30%</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Support(A∪B)</strong></td><td style="padding:8px; border:1px solid #ccc;">count(A∩B)/N</td><td style="padding:8px; border:1px solid #ccc;">Support(Kávé∪Cukor) = 1500/10 000 = 15%</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Confidence(A→B)</strong></td><td style="padding:8px; border:1px solid #ccc;">Support(A∪B)/Support(A) = P(B|A)</td><td style="padding:8px; border:1px solid #ccc;">Confidence(Kávé→Cukor) = 1500/3000 = 50%</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Elvárt konfidencia</strong></td><td style="padding:8px; border:1px solid #ccc;">Support(B) = P(B)</td><td style="padding:8px; border:1px solid #ccc;">Support(Cukor) = 2500/10 000 = 25%</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Lift(A→B)</strong></td><td style="padding:8px; border:1px solid #ccc;">Confidence/Elvárt konfidencia = P(B|A)/P(B)</td><td style="padding:8px; border:1px solid #ccc;">0,50/0,25 = <strong>2,0</strong></td></tr>
+</table>
+
+<p><strong>Az értelmezés — most fordítva, mint a bank-példánál:</strong> a Lift = 2,0 azt jelenti, hogy aki kávét vesz, <strong>kétszer akkora eséllyel</strong> vesz cukrot is, mint amit a véletlen egybeesés önmagában indokolna. Ez egy <strong>erős, pozitív</strong> összefüggés — pontosan az a fajta mintázat, amit egy áruházi keresztértékesítési stratégia (pl. a kávé mellé polcra tett cukor) ki tudna használni.</p>
+
+<p><strong>A Bayes-kapcsolat explicit módon:</strong> ha a kávé- és cukorvásárlás független lenne, P(Cukor|Kávé) = P(Cukor) teljesülne, azaz Confidence = Elvárt konfidencia, és Lift = 1 lenne. Itt a Confidence (50%) <em>duplája</em> az Elvárt konfidenciának (25%) — ez a Lift = 2 forrása.</p>
+
+<p><strong>Összevetve a bank-példával</strong> (Kötelező Könyv, 4. oldal, Lift = 0,98): ott a két termék enyhén <em>ritkábban</em> fordult elő együtt, mint véletlenül várnánk (gyenge negatív összefüggés) — itt a kávé és cukor jóval <em>gyakrabban</em>, mint véletlenül várnánk (erős pozitív összefüggés). A Lift mindkét irányban ugyanazt méri: mennyire tér el a megfigyelt együttjárás a függetlenségtől.</p>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Menedzseri kérdés</strong></p>
+<p>Ha egy webshopban két termék Confidence-e 90%, de a Lift mindössze 1,01 — mennyire lenne indokolt egy drága keresztértékesítési kampányt indítani erre az összefüggésre, a kávé/cukor-példa (Lift=2) fényében?</p>
+</div>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: illusztratív kiskereskedelmi példa, klasszikus piackosár-elemzési forgatókönyv; Agrawal-féle asszociációs szabály definíciók.</p>
+
+</div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16086"></a><h2>4. Döntési fák: Gini, Entrópia, Chi-négyzet és Lift</h2><h1>Döntési fák: Gini, Entrópia, Chi-négyzet — és a döntési fa Lift-je</h1>
+<h2 style="color:#16a085; font-style:italic;">Haladó Könyv — amikor a KPI mögé nézünk</h2>
+
+<p>A churn-előrejelző döntési fa (Kötelező Könyv, 4. oldal, 98%-os pontosság) nem véletlenül választja szét az ügyfeleket egy adott ponton — matematikai kritérium alapján dönt, melyik változó mentén érdemes osztani.</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>📖 Fogalmi alap — három elágazási kritérium</strong></p>
+</div>
+
+<table style="border-collapse:collapse; width:100%; margin:20px 0;">
+<tbody><tr style="background:#2980b9; color:#ffffff;">
+<th style="padding:8px; text-align:left; border:1px solid #ccc;">Kritérium</th>
+<th style="padding:8px; text-align:left; border:1px solid #ccc;">Képlet</th>
+<th style="padding:8px; text-align:left; border:1px solid #ccc;">Melyik algoritmus használja</th>
+</tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Gini-index</strong></td><td style="padding:8px; border:1px solid #ccc;">Gini = 1 − Σ(pᵢ)²</td><td style="padding:8px; border:1px solid #ccc;">CART</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Entrópia</strong></td><td style="padding:8px; border:1px solid #ccc;">H(S) = −Σ pᵢ·log₂(pᵢ)</td><td style="padding:8px; border:1px solid #ccc;">ID3, C4.5</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Információnyereség</strong></td><td style="padding:8px; border:1px solid #ccc;">IG = H(S) − Σ(|Sᵥ|/|S|)·H(Sᵥ)</td><td style="padding:8px; border:1px solid #ccc;">ID3, C4.5</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Chi-négyzet (χ²)</strong></td><td style="padding:8px; border:1px solid #ccc;">χ² = Σ&nbsp;Σ (Megfigyelt − Elvárt)²/Elvárt</td><td style="padding:8px; border:1px solid #ccc;">CHAID</td></tr>
+</tbody></table>
+
+<p><strong>A Chi-négyzet és a Lift közötti rokonság:</strong> a Chi-négyzet "Elvárt" értéke pontosan ugyanazt a logikát követi, mint az Elvárt konfidencia az előző oldalon — azt kérdezi, mi lenne a gyakoriság, <em>ha a felosztó változó és a célváltozó függetlenek lennének egymástól</em>. Minél nagyobb az eltérés a Megfigyelt és az Elvárt között, annál erősebb a statisztikai bizonyíték arra, hogy a változók <em>nem</em> függetlenek — tehát érdemes ott elágaztatni a fát.</p>
+
+<p><strong>A döntési fa Lift-je (Lift Chart) — más jellegű, de rokon mutató:</strong> ez nem két termék együttes előfordulását méri, hanem azt, mennyivel jobb a modell, mint a véletlenszerű célzás. <strong>Lift = a modell által kiválasztott szegmens találati aránya ÷ a teljes populáció átlagos találati aránya.</strong></p>
+
+<p><strong>Konkrét példa:</strong> ha a teljes ügyfélkörben az átlagos churn-arány 10%, de a döntési fa "magas kockázatú" szegmensében ez 30%, akkor Lift = 30%/10% = <strong>3</strong> — a modell háromszor jobb, mint a véletlenszerű kiválasztás.</p>
+
+<div style="background:#eef2f3; border-left:4px solid #34495e; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>💡 Műszaki analógia</strong></p>
+<p>A Lift Chart olyan, mint amikor egy minőségellenőrzési szűrő nem véletlenszerűen vesz mintát a gyártósorról, hanem célzottan azokat a darabokat vizsgálja, amelyeket egy előrejelző modell "kockázatosnak" jelölt — ha a szűrő tízszer annyi hibás darabot talál, mint a véletlenszerű mintavétel, a Lift = 10.</p>
+</div>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Reflektív kérdés</strong></p>
+<p>Ha egy karbantartási előrejelző modell Lift-je csak 1,2 (alig jobb a véletlennél), érdemes-e egyáltalán bevezetni, figyelembe véve a bevezetés költségét?</p>
+</div>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: Gini/Entrópia/Chi-négyzet — széles körben elfogadott gépi tanulási referenciák (CART: Breiman et al., 1984; ID3/C4.5: Quinlan); Lift Chart — Microsoft Learn (Analysis Services, Data Mining); Lift (data mining), Wikipedia.</p></div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16087"></a><h2>5. A konfúziós mátrix és az alapmutatók</h2><h1>A konfúziós mátrix és az alapmutatók</h1>
+<h2 style="color:#16a085; font-style:italic;">Haladó Könyv — amikor a KPI mögé nézünk</h2>
+
+<p>A churn-modell "98%-os pontossága" (Kötelező Könyv, 4. oldal) mögött egy <strong>konfúziós mátrix</strong> áll — négy szám, amelyekből minden további mutató levezethető.</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>📖 Fogalmi alap</strong></p>
+</div>
+
+<table style="border-collapse:collapse; width:100%; margin:20px 0;">
+<tbody><tr style="background:#2980b9; color:#ffffff;">
+<th style="padding:8px; text-align:left; border:1px solid #ccc;"></th>
+<th style="padding:8px; text-align:left; border:1px solid #ccc;">Valóban lemorzsolódik</th>
+<th style="padding:8px; text-align:left; border:1px solid #ccc;">Valóban nem morzsolódik le</th>
+</tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Modell: lemorzsolódik</strong></td><td style="padding:8px; border:1px solid #ccc;">TP (Igaz pozitív)</td><td style="padding:8px; border:1px solid #ccc;">FP (Hamis pozitív)</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Modell: nem morzsolódik le</strong></td><td style="padding:8px; border:1px solid #ccc;">FN (Hamis negatív)</td><td style="padding:8px; border:1px solid #ccc;">TN (Igaz negatív)</td></tr>
+</tbody></table>
+
+<table style="border-collapse:collapse; width:100%; margin:20px 0;">
+<tbody><tr style="background:#2980b9; color:#ffffff;">
+<th style="padding:8px; text-align:left; border:1px solid #ccc;">Mutató</th>
+<th style="padding:8px; text-align:left; border:1px solid #ccc;">Képlet</th>
+</tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Accuracy</strong></td><td style="padding:8px; border:1px solid #ccc;">(TP+TN)/(TP+TN+FP+FN)</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Precision</strong></td><td style="padding:8px; border:1px solid #ccc;">TP/(TP+FP)</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Recall (Sensitivity)</strong></td><td style="padding:8px; border:1px solid #ccc;">TP/(TP+FN)</td></tr>
+<tr><td style="padding:8px; border:1px solid #ccc;"><strong>Specificity</strong></td><td style="padding:8px; border:1px solid #ccc;">TN/(TN+FP)</td></tr>
+</tbody></table>
+
+<p><strong>Konkrét számpélda</strong> (visszavezetve az Opcionális Könyv 5. oldalán látott gyártósoros gondolatkísérletre, 1000 termék, 10 valóban hibás): ha egy modell mind az 1000 terméket "jónak" minősíti, akkor TP=0, FN=10, TN=990, FP=0 → Accuracy = 990/1000 = <strong>99%</strong>, de Recall = 0/10 = <strong>0%</strong> — a modell egyetlen hibás terméket sem talált meg, miközben "99%-ban pontos."</p>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Menedzseri kérdés</strong></p>
+<p>Egy csalásdetektáló rendszernél melyik hiba drágább — a hamis pozitív (jogos tranzakciót gyanúsnak jelöl) vagy a hamis negatív (valódi csalást enged át)? Melyik mutatót (Precision vagy Recall) növelnéd ennek megfelelően?</p>
+</div>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;"><br></p></div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16088"></a><h2>6. Az F1-score</h2><h1>Az F1-score: miért kell egyetlen mutató, ha van kettő?</h1>
+<h2 style="color:#16a085; font-style:italic;">Haladó Könyv — amikor a KPI mögé nézünk</h2>
+
+<p>A Precision és a Recall gyakran ellentétes irányba mozdulnak: ha egy modellt "óvatosabbá" teszünk (csak nagyon biztos esetekben jelez pozitívot), a Precision nő, de a Recall csökken — és fordítva.</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>📖 Fogalmi alap</strong></p>
+<p style="text-align:center; font-size:1.1em;"><strong>F1-score = 2 · (Precision · Recall)/(Precision + Recall) = 2TP/(2TP + FP + FN)</strong></p>
+<p>Ez a Precision és Recall <strong>harmonikus közepe</strong> — nem egyszerű átlaga. A harmonikus közép azért fontos, mert <em>büntetve</em> alacsony marad, ha az egyik komponens nagyon alacsony, még ha a másik magas is.</p>
+</div>
+
+<p>Például Precision=100% és Recall=1% esetén a számtani átlag 50,5% lenne (megtévesztően jónak tűnne), de az F1-score mindössze <strong>~2%</strong> — helyesen jelezve, hogy a modell gyakorlatilag használhatatlan.</p>
+
+<div style="background:#eef2f3; border-left:4px solid #34495e; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>💡 Műszaki analógia</strong></p>
+<p>Ez olyan, mint amikor egy gép két komponensből álló hatékonysági mutatóját (pl. sebesség és pontosság) nem egyszerű átlaggal, hanem úgy kombináljuk, hogy ha bármelyik komponens nagyon rossz, az összesített szám is drasztikusan romoljon — nem lehet az egyik gyengeségét "elrejteni" a másik erősségével.</p>
+</div>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Reflektív kérdés</strong></p>
+<p>Számold ki fejben: ha egy modell Precision = 80% és Recall = 60%, becslésed szerint 70% fölött vagy alatt lesz az F1-score? (Válasz: a harmonikus közép mindig közelebb van a kisebb értékhez, tehát 70% alatt.)</p>
+</div>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;"><br></p></div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16089"></a><h2>7. ROC-görbe és AUC</h2><h1>ROC-görbe és AUC</h1>
+<h2 style="color:#16a085; font-style:italic;">Haladó Könyv — amikor a KPI mögé nézünk</h2>
+
+<p>Az eddigi mutatók (Precision, Recall, F1) mind egyetlen, rögzített küszöbértékhez (threshold) tartoznak — de mi történik, ha ezt a küszöböt változtatjuk?</p>
+
+<div style="background:#eaf4fb; border-left:4px solid #2980b9; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>📖 Fogalmi alap</strong></p>
+<p>A <strong>ROC-görbe</strong> (Receiver Operating Characteristic) az <strong>Igaz pozitív arányt (TPR = Recall)</strong> ábrázolja a <strong>Hamis pozitív arány (FPR = 1 − Specificity)</strong> függvényében, ahogy a döntési küszöböt végigcsúsztatjuk. Az <strong>AUC (Area Under the Curve)</strong> ennek a görbének a területe:</p>
+<ul>
+<li><strong>AUC = 0,5</strong> → a modell nem jobb, mint a véletlen érmefeldobás</li>
+<li><strong>AUC = 1,0</strong> → tökéletes modell</li>
+<li><strong>AUC</strong> interpretálható úgy is, mint annak valószínűsége, hogy egy véletlenszerűen kiválasztott pozitív eset magasabb pontszámot kap a modelltől, mint egy véletlenszerűen kiválasztott negatív eset</li>
+</ul>
+</div>
+
+<p><strong>Miért jobb ez, mint egyetlen Accuracy-szám?</strong> Mert nem egyetlen küszöbértékhez köti magát — megmutatja a modell teljes viselkedését minden lehetséges döntési ponton, függetlenül attól, hogy a végleges alkalmazásban milyen küszöböt választanak.</p><p><img src="data/ROC%20g%C3%B6rbe.png" alt="" role="presentation" class="img-fluid"><br></p>
+
+<p><em>Ábra: ROC görbe</em></p>
+
+<div style="background:#eef2f3; border-left:4px solid #34495e; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>💡 Műszaki analógia</strong></p>
+<p>Ez olyan, mint amikor egy riasztórendszer érzékenységét állítjuk: minél érzékenyebbre állítjuk (alacsonyabb küszöb), annál több valódi riasztást fogunk el, de annál több hamis riasztást is kapunk. A ROC-görbe ezt a teljes trade-off-ot mutatja meg egyetlen képen, az AUC pedig egyetlen számban foglalja össze.</p>
+</div>
+
+<div style="background:#eafaf1; border-left:4px solid #27ae60; padding:12px 20px; margin:20px 0; border-radius:4px;">
+<p><strong>🤔 Záró menedzseri kérdés</strong></p>
+<p>Ha két churn-előrejelző modell közül választhatsz — az egyiknek 95%-os Accuracy-ja, de 0,60 AUC-ja van, a másiknak 85%-os Accuracy-ja, de 0,90 AUC-ja — melyiket választanád, és miért?</p>
+</div>
+
+<p style="color:#888; font-size:0.85em; font-style:italic;">Forrás: Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861–874.</p></div><a href="#toc">&uarr; fent</a><div class="book_chapter"><a name="ch16090"></a><h2>8. Források</h2><p dir="ltr" style="text-align: left;"></p><ul><li>Molnár Bálint. <em>Adatbányászati megoldások fejlesztési iránya — OLAP technológiájú megoldások bevezethetőségének elemzése.</em> Kutatási tanulmány. Elérhető: <a href="https://www.researchgate.net/publication/277775747">https://www.researchgate.net/publication/277775747</a></li>
+<li>Abonyi János (2006). <em>Adatbányászat: a hatékonyság eszköze.</em> Budapest: Computer Books. ISBN 963 618 342 2. Elérhető: <a href="https://www.researchgate.net/publication/264441999">https://www.researchgate.net/publication/264441999</a></li>
+<li>Bodon Ferenc (2005). <em>Adatbányászati algoritmusok.</em> GNU licenc, szabadon letölthető egyetemi jegyzet. Elérhető: <a href="http://www.cs.bme.hu/~bodon/magyar/adatbanyaszat/tanulmany/index.html">http://www.cs.bme.hu/~bodon/magyar/adatbanyaszat/tanulmany/index.html</a></li><li>Fawcett, T. (2006). An introduction to ROC analysis. <em>Pattern Recognition Letters</em>, 27(8), 861–874. DOI: <a href="https://doi.org/10.1016/j.patrec.2005.10.010">https://doi.org/10.1016/j.patrec.2005.10.010</a><br></li></ul><p></p></div><a href="#toc">&uarr; fent</a>
+</body>
+</html>
