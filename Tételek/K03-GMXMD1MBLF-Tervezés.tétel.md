@@ -171,10 +171,10 @@ quadrantChart
     title BCG mátrix
     x-axis "Alacsony relatív részesedés" --> "Magas relatív részesedés"
     y-axis "Lassan növő piac" --> "Gyorsan növő piac"
-    quadrant-1 "Sztár <br/>(szinten tartás/növekedés)"
-    quadrant-2 "Kérdőjel <br/>(sztárrá válhat)"
-    quadrant-3 "Kutya <br/>(kivonás)"
-    quadrant-4 "Fejőstehén <br/>(eladás/visszavonulás)"
+    quadrant-1 "Sztár <br/> (szinten tartás/növekedés)"
+    quadrant-2 "Kérdőjel <br/> (sztárrá válhat)"
+    quadrant-3 "Kutya <br/> (kivonás)"
+    quadrant-4 "Fejőstehén <br/> (eladás/visszavonulás)"
 ```
 
 - **Sztár:** magas részesedés, gyors növekedés; a legjobb pozíció, gyakran a vállalati profil magja. A vállalat a szinten tartást vagy a további növekedést választhatja.
