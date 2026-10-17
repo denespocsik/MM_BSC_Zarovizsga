@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-10-02 — elkészült a V7 tétel (`Tételek/V07-GMXIR1MBLF-BSC és VIR-BI programcsomagok.tétel.md`; ⚠️ Tartalmi hiány szakaszokkal az R4–R6 részkérdésekre, Revízió: 🔎); a GMXIR1MBLF-sor és az összesítő igazítva (37/40); a többi tétel állapota változatlan.  
+**Utolsó frissítés:** 2026-10-17 — a V3 tétel revíziója elkészült a megengedett források (Novák 2026 jegyzet 3. fej., 33–50. o.; 7. és 9. HTML-lecke) alapján: törzsszöveg ~1970 szóra bővítve (mérés alapjai, KPI-fogalom és hét jellemző, négy mérési dimenzió, KPI-k szerepe a folyamatkövetésben, bottleneck monitorozási adatokból és szimulációval, az optimalizálás hét szakasza, példa), a 4 lépéses optimalizálási modell 7 szakaszra javítva, 6 Várható kérdés, `## Irodalom` APA 7, diagram 7 csomópontos ciklusra átírva emoji nélkül és renderelve; Beszerzendő anyagok nincs; Revízió: ✅. A többi sor változatlan.  
 
 ---
 
@@ -16,19 +16,19 @@
 | K5 | Vezetői stílusok | Menedzsment alapjai | GMXMD1MBLF | ✅ | ✅ 2026-10-02 |
 | K6 | Motivációs elméletek | Menedzsment alapjai | GMXMD1MBLF | ✅ | ✅ 2026-10-02 |
 | K7 | Döntés mint vezetői feladat, döntési modellek | Menedzsment alapjai | GMXMD1MBLF | ✅ | ✅ 2026-10-02 |
-| K8 | HRM fogalma, céljai, fő funkciói, HR stratégia | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | —       |
-| K9 | Munkaerő tervezés és toborzás | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | —       |
+| K8 | HRM fogalma, céljai, fő funkciói, HR stratégia | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | 🔎 2026-10-17 |
+| K9 | Munkaerő tervezés és toborzás | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | 🔎 2026-10-17       |
 | K10 | Kiválasztási folyamat és módszerek | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | —       |
-| K11 | Vezetés fogalma és vezetői szerepek | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | —       |
-| K12 | Szervezeti kultúra | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | —       |
-| K13 | Teljesítmény menedzsment és értékelés | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | —       |
-| K14 | Controlling szemléletmód és rendszer szerepe | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | —       |
-| K15 | Controlling információs rendszere, VIM | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | —       |
-| K16 | Költségszámítás szerepe a controllingban | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | —       |
-| K17 | Kalkulációs módszerek és fedezetszámítás | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | —       |
-| K18 | Stratégiai és operatív controlling | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | —       |
-| K19 | Beruházási és befektetési döntések (NPV, DCF) | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | —       |
-| K20 | Balanced Scorecard (BSC) | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | —       |
+| K11 | Vezetés fogalma és vezetői szerepek | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | ✅ 2026-10-17 |
+| K12 | Szervezeti kultúra | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | ✅ 2026-10-17 |
+| K13 | Teljesítmény menedzsment és értékelés | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ | 🔎 2026-10-17 |
+| K14 | Controlling szemléletmód és rendszer szerepe | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | ✅ 2026-10-17 |
+| K15 | Controlling információs rendszere, VIM | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | ✅ 2026-10-17 |
+| K16 | Költségszámítás szerepe a controllingban | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | ✅ 2026-10-17 |
+| K17 | Kalkulációs módszerek és fedezetszámítás | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | ✅ 2026-10-17 |
+| K18 | Stratégiai és operatív controlling | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | ✅ 2026-10-17 |
+| K19 | Beruházási és befektetési döntések (NPV, DCF) | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | ✅ 2026-10-17 |
+| K20 | Balanced Scorecard (BSC) | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ | ✅ 2026-10-17 |
 
 ---
 
@@ -36,9 +36,9 @@
 
 | # | Tétel rövid címe | Tantárgy | Neptun kód | Mappa | Revízió |
 |---|---|---|---|---| ------- |
-| V1 | BPM életciklusa és BPMS rendszerek felépítése | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | —       |
-| V2 | Üzleti folyamatok modellezése BPMN 2.0 szerint | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | —       |
-| V3 | Üzleti folyamatok mérése és optimalizálása (KPI) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | —       |
+| V1 | BPM életciklusa és BPMS rendszerek felépítése | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
+| V2 | Üzleti folyamatok modellezése BPMN 2.0 szerint | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
+| V3 | Üzleti folyamatok mérése és optimalizálása (KPI) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
 | V4 | Kockázatkezelés és hibamód-elemzés (FMEA) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | —       |
 | V5 | Folyamatszemléletű irányítási rendszerek és dok. | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | —       |
 | V6 | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score) | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-10-02 |
