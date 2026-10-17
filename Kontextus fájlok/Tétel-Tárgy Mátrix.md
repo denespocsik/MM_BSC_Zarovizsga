@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-10-17 — a V5 tétel revíziója elkészült a megengedett források (Novák 2026 jegyzet 6. fej., 86–106. o.; 2., 3., 4., 6., 7. HTML-lecke) alapján: törzsszöveg ~290-ről ~1900 szóra bővítve (MIR-definíció, folyamatközpontú megközelítés, a MIR négy folyamatcsoportja, folyamatleltár elemei, új Folyamatleírások szakasz folyamatgazdával és RACI-val, teknős-elemzés előnyei és kockázat-sor, jó KPI jellemzői, KPI–folyamatcél tábla, PDCA–KPI kapcsolat példával, dokumentáció két rétege, hibái és jó gyakorlatai, integrált rendeléskezelési példa); forrás nélküli (ISO 9001:2015, Deming) és tiltott (Dumas, OMG) hivatkozások kivéve; 6 Várható kérdés, `## Irodalom` APA 7, két diagram emoji nélkül renderelve; Beszerzendő anyagok nincs; Revízió: ✅. A többi sor változatlan.  
+**Utolsó frissítés:** 2026-10-17 — a V4 tétel revíziója elkészült a megengedett források (Novák 2026 jegyzet 4. fej., 51–69. o.; 8., 12. és 13. HTML-lecke) alapján: törzsszöveg ~2000 szóra bővítve (kockázatelemzés módszertana, FMEA célja és alkalmazási területei, módszertani lépések, teljes S/O/D skálák, RPN-példák, intézkedések és rangsorolás, újraértékelés, beépítés a folyamatszabályozásba és a BPM-életciklusba, előnyök és korlátok), az FMEA-tábla forrás nélküli sora Novák táblájára cserélve, 6 Várható kérdés, `## Irodalom` APA 7, diagram 9 csomópontos lépéssorra átírva emoji nélkül és renderelve; Beszerzendő anyagok nincs; Revízió: ✅. A többi sor változatlan.  
 
 ---
 
@@ -39,7 +39,7 @@
 | V1 | BPM életciklusa és BPMS rendszerek felépítése | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
 | V2 | Üzleti folyamatok modellezése BPMN 2.0 szerint | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
 | V3 | Üzleti folyamatok mérése és optimalizálása (KPI) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
-| V4 | Kockázatkezelés és hibamód-elemzés (FMEA) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | —       |
+| V4 | Kockázatkezelés és hibamód-elemzés (FMEA) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
 | V5 | Folyamatszemléletű irányítási rendszerek és dok. | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
 | V6 | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score) | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-10-02 |
 | V7 | BSC + VIR/BI programcsomagok összehasonlítása | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-10-02 |
