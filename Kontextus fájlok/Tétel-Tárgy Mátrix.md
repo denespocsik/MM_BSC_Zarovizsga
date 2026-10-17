@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-10-17 — a V3 tétel revíziója elkészült a megengedett források (Novák 2026 jegyzet 3. fej., 33–50. o.; 7. és 9. HTML-lecke) alapján: törzsszöveg ~1970 szóra bővítve (mérés alapjai, KPI-fogalom és hét jellemző, négy mérési dimenzió, KPI-k szerepe a folyamatkövetésben, bottleneck monitorozási adatokból és szimulációval, az optimalizálás hét szakasza, példa), a 4 lépéses optimalizálási modell 7 szakaszra javítva, 6 Várható kérdés, `## Irodalom` APA 7, diagram 7 csomópontos ciklusra átírva emoji nélkül és renderelve; Beszerzendő anyagok nincs; Revízió: ✅. A többi sor változatlan.  
+**Utolsó frissítés:** 2026-10-17 — a V5 tétel revíziója elkészült a megengedett források (Novák 2026 jegyzet 6. fej., 86–106. o.; 2., 3., 4., 6., 7. HTML-lecke) alapján: törzsszöveg ~290-ről ~1900 szóra bővítve (MIR-definíció, folyamatközpontú megközelítés, a MIR négy folyamatcsoportja, folyamatleltár elemei, új Folyamatleírások szakasz folyamatgazdával és RACI-val, teknős-elemzés előnyei és kockázat-sor, jó KPI jellemzői, KPI–folyamatcél tábla, PDCA–KPI kapcsolat példával, dokumentáció két rétege, hibái és jó gyakorlatai, integrált rendeléskezelési példa); forrás nélküli (ISO 9001:2015, Deming) és tiltott (Dumas, OMG) hivatkozások kivéve; 6 Várható kérdés, `## Irodalom` APA 7, két diagram emoji nélkül renderelve; Beszerzendő anyagok nincs; Revízió: ✅. A többi sor változatlan.  
 
 ---
 
@@ -40,7 +40,7 @@
 | V2 | Üzleti folyamatok modellezése BPMN 2.0 szerint | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
 | V3 | Üzleti folyamatok mérése és optimalizálása (KPI) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
 | V4 | Kockázatkezelés és hibamód-elemzés (FMEA) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | —       |
-| V5 | Folyamatszemléletű irányítási rendszerek és dok. | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | —       |
+| V5 | Folyamatszemléletű irányítási rendszerek és dok. | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
 | V6 | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score) | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-10-02 |
 | V7 | BSC + VIR/BI programcsomagok összehasonlítása | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-10-02 |
 | V8 | Business Intelligence (BI) és BICC | Menedzsment inf. rendszerek | GMXIR1MBLF | 📋 | —       |
