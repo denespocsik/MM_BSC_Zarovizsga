@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-10-17 — a V11 tétel revíziója elkészült a megengedett források (Oktatási segédanyag 1. tétel, 1–3. o.; „Fogalma és alapjai", „Vállalatirányítási rendszerek", „Szerepe a vállalatok életében" HTML-lecke; Global Bike Intro diák) alapján: törzsszöveg ~270-ről ~1770 szóra bővítve (négy pillér prózában, szigetrendszerek 3 oka/3 jellemzője, 3 integrációs igény + integráció evolúciója, integráltság 3 elve, 5+2 soros összehasonlító tábla, batch/real-time és API/middleware/SOA összekapcsolás); forrás nélküli elemek (EDI, ESB, iPaaS, EAI, RAID, 5G, adattárház, Mini-PC) törölve; Tasi (2011) és Molnár (2014) nem ellenőrizhető hivatkozás kivéve és a Beszerzendő anyagok táblázatba (Tasi, Molnár, SZE-jegyzet) áthelyezve; 6 Várható kérdés, `## Irodalom` APA 7; timeline és kétpaneles sziget vs. integrált diagram emoji nélkül renderelve; Revízió: ✅. A többi sor változatlan.  
+**Utolsó frissítés:** 2026-10-17 — a V12 tétel revíziója elkészült a megengedett források (Novák 2026 segédanyag 4–6. o.; 8 HTML-lecke; SAP UCC Magdeburg 2025 intro-diasor) alapján: törzsszöveg ~2000 szóra bővítve (ERP-definíció és jellemzők, hat generáció kifejtve, SAP-történet, TPS/DSS/EIS és digitális mag, bizonylati elv, beágyazott analitika, szervezet és kultúra, új üzleti modellek és folyamatkoncepciók, felhő/AI/Leonardo/iparági ERP), hibás SAP-párosítás és forrás nélküli elemek törölve, Monk & Wagner / Davenport / Tasi kivéve, Beszerzendő anyagok (Tasi 2011, Molnár 2014, SZE jegyzet), 6 Várható kérdés, `## Irodalom` APA 7, két diagram újraírva emoji nélkül és renderelve; Revízió: ✅. A többi sor változatlan.  
 
 ---
 
@@ -47,7 +47,7 @@
 | V9 | Dashboard, KPI-alapú jelentések, DAX, Power BI | Menedzsment inf. rendszerek | GMXIR1MBLF | 📋 | —       |
 | V10 | OLTP/OLAP, adattárház, adatbányászat, Big Data | Menedzsment inf. rendszerek | GMXIR1MBLF | 📋 | —       |
 | V11 | IT fejlődés (70-es évektől), szigetrendszerek vs. integrált | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | ✅ 2026-10-17 |
-| V12 | ERP fogalma, fejlődéstörténete (MRP→MRP II→ERP→cloud) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | —       |
+| V12 | ERP fogalma, fejlődéstörténete (MRP→MRP II→ERP→cloud) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | ✅ 2026-10-17 |
 | V13 | ERP bevezetése: célok, előnyök, hátrányok, BPR | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | —       |
 | V14 | SAP rendszer struktúrája, S/4HANA, modulok (FI,CO,MM…) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | —       |
 | V15 | ERP és projektmenedzsment, BSP, ITIL | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | —       |
