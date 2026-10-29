@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-10-29 — a V16 tétel revíziója elkészült kizárólag a Szilágyi (2026) előadás (23–24., 30–39., 87–94., 100–114. dia) és a syllabus alapján: törzsszöveg ~480-ról ~1550 szóra bővítve hét szakaszban (komplex rendszer vs. gép; Kivelä-terminológia; nyolc réteg alváltozatokkal; Moreno szociometriája; Mastenbroek négy hálózata + három függőségi tényező; új szakasz: öt feltérképező kérdés → Mastenbroek-besorolás → topológia; rétegtopológia és információterjedés); két tárgyi hiba javítva (multilayer/multiplex definíció; „egy a háromhoz” iránya); forrás nélküli oszlopok és kérdés törölve; Barabási (2022), Håkansson (2010), Mastenbroek (1988) kivéve az irodalomból; 6 Várható kérdés, `## Irodalom` APA 7; három diagram renderelve; Revízió: ✅. A többi sor változatlan.  
+**Utolsó frissítés:** 2026-10-29 — a V17 tétel revíziója forráshiány miatt félbemaradt (🔎): Håkansson (2010) *Határtalan hálózatok* a syllabus szerint ajánlott (nem kötelező) irodalom és nincs a mappában; az `Előadás_ppt1.pdf` a syllabus 2–3. hetét (üzleti kölcsönhatás, 5 tényező, 3 szempont) nem fedi — V18–V20-at is érinti. Elvégezve: Beszerzendő anyagok táblázat; Tétel-sor javítva; nem ellenőrizhető tartalom jelölve; Håkansson & Snehota (1995) és a Szilágyi-előadás hivatkozás kivéve; forrás nélküli kapcsolatfejlődési diagram, függőségi táblázat, „strukturális lyukak” és angol terminusok törölve; két példa „saját szemléltető példa” jelöléssel; `## Irodalom` APA 7; diagram-élszínek palettára igazítva, három diagram renderelve. Hiányzik: Várható vizsgáztatói kérdések. A többi sor változatlan.  
 
 ---
 
@@ -52,7 +52,7 @@
 | V14 | SAP rendszer struktúrája, S/4HANA, modulok (FI,CO,MM…) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | ✅ 2026-10-29 |
 | V15 | ERP és projektmenedzsment, BSP, ITIL | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | ✅ 2026-10-29 |
 | V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | ✅ 2026-10-29 |
-| V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
+| V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | 🔎 2026-10-29 |
 | V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
 | V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
 | V20 | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
