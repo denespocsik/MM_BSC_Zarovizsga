@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-10-29 — a V15 tétel revíziója elkészült a megengedett források (Novák 2026 segédanyag 17–21. o.; „Projektmenedzsment az ERP rendszerben”, „BI az ERP rendszerben” és „ERP fogalma és alapjai” lecke; SAP UCC Magdeburg 2025 Intro és PS diasor; PS esettanulmány) alapján: törzsszöveg ~580-ról ~1900 szóra bővítve (a négy PM-funkciócsoport, PS törzsadatok és életciklus, új szakasz az információs rendszerek szervezési módszereiről, BSP a forrás hat lépésével, a működtetés öt alapelve és az ITIL öt fázisa, három vezetési szint, Embedded Analytics, Fiori app-típusok); forrás nélküli elemek (MS Project, projekttípus-példák, DEV/QAS/PRD, backup, RBAC, BSC, profit-center, ER-modell, Activate) törölve; PMBOK, Axelos, IBM 1984, Rockart kivéve; Beszerzendő anyagok (SZE jegyzet, Molnár, Tasi), 6 Várható kérdés, `## Irodalom` APA 7; négy diagram emoji nélkül, forráshű tartalommal renderelve; Revízió: ✅. A többi sor változatlan.  
+**Utolsó frissítés:** 2026-10-29 — a V16 tétel revíziója elkészült kizárólag a Szilágyi (2026) előadás (23–24., 30–39., 87–94., 100–114. dia) és a syllabus alapján: törzsszöveg ~480-ról ~1550 szóra bővítve hét szakaszban (komplex rendszer vs. gép; Kivelä-terminológia; nyolc réteg alváltozatokkal; Moreno szociometriája; Mastenbroek négy hálózata + három függőségi tényező; új szakasz: öt feltérképező kérdés → Mastenbroek-besorolás → topológia; rétegtopológia és információterjedés); két tárgyi hiba javítva (multilayer/multiplex definíció; „egy a háromhoz” iránya); forrás nélküli oszlopok és kérdés törölve; Barabási (2022), Håkansson (2010), Mastenbroek (1988) kivéve az irodalomból; 6 Várható kérdés, `## Irodalom` APA 7; három diagram renderelve; Revízió: ✅. A többi sor változatlan.  
 
 ---
 
@@ -51,7 +51,7 @@
 | V13 | ERP bevezetése: célok, előnyök, hátrányok, BPR | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | ✅ 2026-10-17 |
 | V14 | SAP rendszer struktúrája, S/4HANA, modulok (FI,CO,MM…) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | ✅ 2026-10-29 |
 | V15 | ERP és projektmenedzsment, BSP, ITIL | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | ✅ 2026-10-29 |
-| V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
+| V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | ✅ 2026-10-29 |
 | V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
 | V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
 | V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
