@@ -1,0 +1,140 @@
+[GMXIR1MBLF] Menedzsment Információs Rendszerek
+
+                           Üzleti Tudományok és Digitális Ismeretek Intézet (1084
+                Intézet:                                                             Kreditérték: 4
+                           Budapest, Tavaszmező u. 17.)
+               Tagozat: levelező                                             Nyelv: magyar             Félév: 2026/27/1
+
+
+
+
+                Szakok: Műszaki menedzser
+
+
+
+
+ Tantárgyfelelős oktató: Prof. Dr. Tick Andrea
+Heti/Féléves óraszámok: F            Előadás: 5            Tantermi gyakorlat: 0       Labor: 10 Konzultáció:
+
+
+
+
+      Félévzárás módja Évközi jegy
+        (követelmény):
+
+
+                         A menedzsment legfontosabb feladatai: a szervezetek irányítása, a tervezés és horizontjai. Ezért
+                         szükséges megismerkedni az információs rendszerek tervezésével és üzemeltetésének különféle
+                         vonatkozásaival. A kurzus során a döntéstámogatás folyamatában kulcsszerepet játszó menedzsment
+                         információs rendszerek alrendszereivel, funkcióival, bevezetésének gazdasági hatásával ismerkednek
+                         meg a hallgatók. A hallgatók betekintést kapnak a menedzser szerepébe a vállalati információs
+                         rendszerek tervezésében, fejlesztésében és használatában. Ezenkívül a hallgatók egyfajta MIS
+                         szoftvert is használhatnak, gyakorlatot szereznek üzleti jelentések, teljesítménymutatók (KPI) és
+           Oktatási cél: dashboardok elkészítésében.
+                         A kurzus végén a hallgatók képesek lesznek
+                         • meghatározni, mi az a Vezetői Információs Rendszer,
+                         • jellemezni az információs rendszereket,
+                         • elmagyarázni a vezetői információs rendszer szerepét, funkcióit és felépítését,
+                         • különféle vezetői információs rendszerek felsorolása,
+                         • döntéshozatali eszközök kiépítése a középvezetés számára irányítópultok és üzleti intelligencia
+                         alkalmazásával.
+                Félévközi Egy beadandó feladat, félévzáró elméleti teszt és 1 zh
+        követelmények
+  (feladat, zh. dolgozat,
+              esszé, stb):
+
+
+     Oktatási hét
+                                                                         Témakör
+     (konzultáció)
+                           Előadás: A MIS valódi szerepe — miért nem elég a jó technológia?
+          1.
+                           Gyakorlat: Excel kimutatáskezelő és adatelőkészítés
+                           Előadás: Versenyképesség és IT-stratégia: Porter, értéklánc, platform
+          2.
+                           Gyakorlat: értéklánc, Interaktív Excel dashboard I. — KPI-alapok
+                           Előadás: Az integrált vállalat: ERP, CRM, SCM — döntési logika
+          3.
+                           Gyakorlat: Interaktív Excel dashboard II. — Komplex megoldások
+                        Előadás: Mit ér az adat és ki felelős érte?
+         4.
+                        Gyakorlat: Power BI bevezetés: adatbetöltés és első vizualizációk
+                        Előadás: Üzleti intelligencia: kultúra, nem eszköz
+         5.
+                        Gyakorlat: Power BI adatmodellezés és DAX alapok
+                        Előadás: OLAP és adatbányászat: mit kérdezünk az adatoktól?
+         6.
+                        Gyakorlat: Power BI haladó vizualizáció és interaktivitás
+         7.             -
+                        Előadás: Tudásmenedzsment és intelligens szervezet
+         8.
+                        Gyakorlat: Power BI: előrejelzés és statisztikai elemzés
+                        Előadás: Big Data: hogyan nyerjünk belőle valódi értéket?
+         9.
+                        Gyakorlat: Power BI: előrejelzés és statisztikai elemzés
+                        Előadás: Felhő és IT-infrastruktúra: stratégiai döntés
+        10.
+                        Gyakorlat: Power BI Service: publikálás, megosztás, biztonság
+                        Előadás: E-kereskedelem és platform-gazdaság
+        11.
+                        Gyakorlat: Adatelemzés etikája és a felelős dashboard
+                        Előadás: Etika, algoritmusok és felelős AI
+        12.
+                        Gyakorlat: Alternatív BI-eszközök: Looker Studio, Tableau, Fabric
+                        Előadás: Kiberbiztonság, digitális transzformáció és MIS-jövő
+        13.
+                        Gyakorlat: Projektmunka: önálló üzleti elemzés és ZH-előkészítés
+        14.             ZH
+
+
+                        A ZH feladat megoldásának értékelése pontozással történik, részmegoldások is értékelendők. A feladat
+                        elméleti és gyakorlati jellegűek.
+                        A ZH dolgozatban maximálisan 50 pont érhető el (25 pont elmélet, 25 pont gyakorlat), melyből
+                        részenként min. 20% az aláírás feltétele.
+                        Érvényes zh megírása: nem minősül érvényes zh-nak a nem megírt, az üresen beadott, illetve csak
+                        aláírással ellátott zh. A 0 pontos érvényes zh aláíráspótló vizsga keretében javítható. A beadandó
+                        feladat 25 pont.
+                            Feladat            Pontozás
+                            ELMÉLET            25
+                            ZH                 25
+                            Beadandó feladat   25
+       Az értékelés, a
+         lebonyolítás, Az elégtelen teljesítés aláíráspótló vizsga keretében egyszer javítható.
+      a pótlás módja, A zárthelyi és a sikeres félévközi jegy értékelése következőképpen alakul:
+ a jegy kialakításának 0 – 50 %: elégtelen (1);
+         szempontjai: 51-62 %: elégséges (2);
+                        63 – 74 %: közepes (3);
+                        75 – 86 %: jó (4);
+                        87 - 100 %: jeles (5).
+                        Szóbeli beszámolóra nincs lehetőség. Igazolt hiányzás esetén egyszer lehet pótolni.
+                        •     A zárthelyik megírása során a gyakorlati részhez egy kézzel írt A4-es lap segédeszközként
+                              használható. Fénymásolat, füzet nem használható.
+                        •     A zárthelyi termébe okostelefon, bármilyen fényképezésre alkalmas eszköz bevitele TILOS!
+                        •     A zh-k során az MI és a GenMI használata TILOS.
+                        •     Amennyiben a hallgató bármilyen meg nem engedett segédeszközt használ, a félévet letiltással
+                              zárja, függetlenül az addig elért eredményétől.
+    A félévzárás módja írásbeli
+(írásbeli, szóbeli, teszt,
+                    stb.):
+
+
+                            •     Laudon, K. C., & Laudon, J. P. (2022). Management information systems: Managing the
+   Kötelező irodalom:
+                                  digital firm (17th ed.). Pearson.
+                     •   Turban, E., Pollard, C., & Wood, G. (2018). Information technology for management: On-
+                         demand strategies for performance, growth and sustainability (11th ed.). John Wiley & Sons.
+                     •   Microsoft. (2025). Power BI documentation. Microsoft Learn.
+                         https://docs.microsoft.com/power-bi/
+
+                     •   Bángi-Magyar, A., Farkas, K., Vilmányi, M., Bálint, J., Halász, G., & Gábor, A. (é. n.). AVIR
+                         kézikönyv: Stratégiaalkotás, VIR, stratégiai mutató, adattár, felsőoktatási menedzsment.
+                         Educatio Társadalmi Szolgáltató Nonprofit Kft. Digitális Tankönyvtár.
+                         https://regi.tankonyvtar.hu/hu/tartalom/tkt/avir-kezikonyv-avir/pr01.html
+                     •   Bencsik, A. (2015). A tudásmenedzsment elméletben és gyakorlatban. Akadémiai Kiadó.
+Ajánlott irodalom:
+                         https://mersz.hu/bencsik-a-tudasmenedzsment-elmeletben-es-gyakorlatban
+                     •   Bencsik, A. (2024). Tudásmenedzsment elméletben és gyakorlatban: Az üzleti stratégiától a
+                         mesterséges intelligenciáig (bővített kiadás). Akadémiai Kiadó. https://mersz.hu/bencsik-
+                         tudasmenedzsment-elmeletben-es-gyakorlatban
+                     •   Chikán, A. (2008). Vállalatgazdaságtan (4., átdolgozott, bővített kiadás). Aula Kiadó.
+
