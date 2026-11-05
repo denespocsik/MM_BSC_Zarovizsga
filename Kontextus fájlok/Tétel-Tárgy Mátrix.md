@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-11-05 — a V18 tétel revíziója a V17-tel azonos forráshiány miatt nyitott kérdéssel zárult (🔎): a 3 szempont és az ARA-modell csak Håkansson (2010) *Határtalan hálózatok*-ra épül (ajánlott irodalom, nincs a mappában); az `Előadás_ppt1.pdf` a 2–3. és 6. hetet nem fedi. Elvégezve: Beszerzendő anyagok táblázat; fejléc és Tétel-sor javítva; nem ellenőrizhető tartalom jelölve; Granovetter-rész forrásolva és bővítve (ea. 27. dia; Buchanan 2002, *Nexus* 2. fej.); 18.2/18.4 táblázat összevonva, forrás nélküli sorok és a BPR-példa törölve; ea. 13. dia beépítve; Barabási (2022) kivéve; kaszkád-diagram „saját szemléltető példa” jelöléssel; ARA-diagram élfelirata javítva; 4 várható vizsgáztatói kérdés; `## Irodalom` APA 7; négy diagram renderelve. Törzs 810 szó. A többi sor változatlan.  
+**Utolsó frissítés:** 2026-11-05 — a V19 tétel revíziója a V17–V18-cal azonos forráshiány miatt nyitott kérdéssel zárult (🔎): a két megközelítés kritikája és a piac hálózatalapú értelmezése csak Håkansson (2010) *Határtalan hálózatok*-ra épül (ajánlott irodalom, nincs a mappában); az `Előadás_ppt1.pdf` a 2. hetet nem fedi. Elvégezve: Beszerzendő anyagok táblázat; Tétel-sor javítva; nem ellenőrizhető tartalom jelölve (19.5 kiegészítésként megtartva); Håkansson & Snehota (1995), Porter (1980), a Szilágyi-előadás és „Håkansson 1987, 1989” hivatkozás kivéve; Porter öt erő és értéklánc diagram törölve; `## Irodalom` APA 7; három diagram renderelve. Törzs 561 szó. Hiányzik: Várható vizsgáztatói kérdések, bővítés. A többi sor változatlan.  
 
 ---
 
@@ -54,7 +54,7 @@
 | V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | ✅ 2026-10-29 |
 | V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | 🔎 2026-10-29 |
 | V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | 🔎 2026-11-05 |
-| V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
+| V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | 🔎 2026-11-05 |
 | V20 | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
 
 ---

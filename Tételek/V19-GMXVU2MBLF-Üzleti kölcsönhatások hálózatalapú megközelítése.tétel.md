@@ -1,8 +1,17 @@
 ## V19 – Az üzleti kölcsönhatások hálózat alapú megközelítése
 
-**Tétel:** Üzleti kölcsönhatások hálózatalapú megközelítése: Az üzleti kölcsönhatások hálózat alapú megközelítése. Ismertesse a struktúra-alapú és a folyamat-alapú megközelítés kritikáját! Mutassa be a piac hálózatalapú értelmezését!
+### Beszerzendő anyagok
+
+| Szerző | Mű | Jelleg | Indoklás / érintett rész |
+|---|---|---|---|
+| Håkansson, H. | *Határtalan hálózatok.* Alinea Kiadó, 2010. | ajánlott irodalom | A tantárgynyilvántartó (Óbudai Egyetem, 2026) ajánlott irodalomként nevezi meg; a tétel teljes tartalma (a két megközelítés kritikája és a piac hálózatalapú értelmezése) erre épül, a forrásmappában nem ellenőrizhető. |
+| Szilágyi, G. A. | A 2. oktatási hét előadásanyaga (az üzleti kölcsönhatás elmélete; a strukturális és a folyamatalapú megközelítés kritikája) | előadás-prezentáció | Az `Előadás_ppt1.pdf` nem tartalmazza; a syllabus 2. hete a tétel témája. |
+
+**Tétel:** Az üzleti kölcsönhatások hálózat alapú megközelítése. Ismertesse a struktúra-alapú és a folyamat-alapú megközelítés kritikáját! Mutassa be a piac hálózatalapú értelmezését!
 
 ---
+
+*A 19.1–19.5 szakasz tartalma Håkansson (2010) alapján készült; a mű a forrásmappában nem elérhető, ezért a tartalom a revízió során nem volt ellenőrizhető. A 19.5 szakasz (IMP interakció-modell) a tételkérdésen túlmutató kiegészítés.*
 
 ### 19.1. A két klasszikus megközelítés
 
@@ -37,24 +46,6 @@ A struktúra-alapú (structural) megközelítés – amelyet leginkább a neokla
 - A kapcsolatok távolságtartók, tranzakció-orientáltak.
 - A versenyhelyzet az iparági struktúra (5 erő) által meghatározott.
 
-```mermaid
-flowchart TD
-    NB["<b>Új belépők</b><br/>fenyegetése"]:::kek --> V["<b>VÁLLALAT</b>"]:::lilaH
-    SZ["<b>Szállítók</b><br/>alkuereje"]:::zold --> V
-    VEV["<b>Vevők</b><br/>alkuereje"]:::narancs --> V
-    HEL["<b>Helyettesítők</b><br/>fenyegetése"]:::rozsa --> V
-    MEG["<b>Meglévő versenyzők</b><br/>rivalizálása"]:::turkiz --> V
-
-    classDef kek     fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
-    classDef zold    fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20,rx:10,ry:10;
-    classDef narancs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100,rx:10,ry:10;
-    classDef rozsa   fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#880e4f,rx:10,ry:10;
-    classDef lilaH   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#4a148c,rx:10,ry:10;
-    classDef turkiz  fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#004d40,rx:10,ry:10;
-
-    linkStyle default stroke:#546e7a,stroke-width:2px;
-```
-
 #### Az IMP kritika
 
 - **Statikus kép:** A struktúraelemzés pillanatfelvételt ad, de nem magyarázza, hogyan változnak a kapcsolatok időben.
@@ -77,29 +68,11 @@ flowchart TD
 
 A folyamat-alapú (process-based) megközelítés a szervezet belső folyamatait helyezi a középpontba. Az értékteremtés a vállalat belső értéklánca mentén zajlik (Porter értéklánc-modellje), a menedzsment feladata az optimális belső folyamatok kialakítása.
 
-```mermaid
-flowchart LR
-    subgraph ELS["Elsődleges tevékenységek"]
-        BL["<b>Belogisztika</b>"]:::kek --> TER["<b>Termelés</b>"]:::kek --> KL["<b>Kilogisztika</b>"]:::kek --> MK["<b>Marketing</b>"]:::kek --> SZ["<b>Szerviz</b>"]:::kek
-    end
-    subgraph TAM["Támogató tevékenységek"]
-        INF["<b>Infrastruktúra</b>"]:::szurke ~~~ HR["<b>HR</b>"]:::szurke ~~~ TECH["<b>Technológia</b>"]:::szurke ~~~ BES["<b>Beszerzés</b>"]:::szurke
-    end
-
-    classDef kek    fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1,rx:10,ry:10;
-    classDef szurke fill:#eceff1,stroke:#546e7a,stroke-width:2px,color:#263238,rx:10,ry:10;
-
-    style ELS fill:#f5f9ff,stroke:#90caf9,stroke-width:1.5px,color:#1565c0;
-    style TAM fill:#f7f9fa,stroke:#b0bec5,stroke-width:1.5px,color:#546e7a;
-
-    linkStyle default stroke:#546e7a,stroke-width:2px;
-```
-
 #### Az IMP kritika
 
 - **Bezárt szemlélet:** Az értékteremtést kizárólag a vállalaton belül helyezi el – holott az érték egyre inkább a **vállalatok közötti interakciókban** keletkezik.
 - **Elváló be- és kimenet:** A belső folyamat-optimalizáció nem veszi figyelembe, hogy a bemenetek (pl. alapanyag, tudás) a kapcsolatok minőségétől függnek.
-- **Nem tükrözi a valóságot:** A modern ellátási láncokban, platformgazdaságokban és innovációs ökoszisztémákban a értékteremtés hálózati folyamat, nem belső.
+- **Nem tükrözi a valóságot:** A modern ellátási láncokban, platformgazdaságokban és innovációs ökoszisztémákban az értékteremtés hálózati folyamat, nem belső.
 
 | Aspektus | Folyamat-alapú | IMP kritika |
 |---|---|---|
@@ -146,7 +119,7 @@ graph LR
 
 3. **A piaci pozíció = hálózati pozíció** – nem az iparági struktúrában elfoglalt hely, hanem a konkrét kapcsolatok minősége és száma határozza meg a piaci erőt.
 
-4. **Az innováció hálózati folyamat** – az IMP empirikus kutatásai (Håkansson, 1987, 1989) azt mutatták, hogy az ipari innovációk döntő hányada vevő–szállító kapcsolatokban keletkezik, nem zárt laboratóriumokban.
+4. **Az innováció hálózati folyamat** – az IMP empirikus kutatásai azt mutatták, hogy az ipari innovációk döntő hányada vevő–szállító kapcsolatokban keletkezik, nem zárt laboratóriumokban.
 
 ---
 
@@ -177,7 +150,6 @@ flowchart LR
     classDef lilaH   fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#4a148c,rx:10,ry:10;
 
     linkStyle default stroke:#546e7a,stroke-width:2px;
-    linkStyle 2 stroke:#1565c0,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
 ---
@@ -186,4 +158,7 @@ flowchart LR
 
 ---
 
-*Forrás: Håkansson, H. (2010): Határtalan hálózatok. Alinea Kiadó; Dr. Szilágyi Győző Attila, GMXVU2MBLF előadásanyag (2025/26); Håkansson, H. – Snehota, I. (1995): Developing Relationships in Business Networks; Porter, M.E. (1980): Competitive Strategy (mint kritika alapja)*
+## Irodalom
+
+* Håkansson, H. (2010). *Határtalan hálózatok.* Alinea Kiadó.
+* Óbudai Egyetem, Keleti Károly Gazdasági Kar. (2026). *Vállalati és üzleti hálózatmenedzsment (GMXVU2MBLF) — Tantárgynyilvántartó adatlap* [Syllabus].
