@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-10-29 — a V17 tétel revíziója forráshiány miatt félbemaradt (🔎): Håkansson (2010) *Határtalan hálózatok* a syllabus szerint ajánlott (nem kötelező) irodalom és nincs a mappában; az `Előadás_ppt1.pdf` a syllabus 2–3. hetét (üzleti kölcsönhatás, 5 tényező, 3 szempont) nem fedi — V18–V20-at is érinti. Elvégezve: Beszerzendő anyagok táblázat; Tétel-sor javítva; nem ellenőrizhető tartalom jelölve; Håkansson & Snehota (1995) és a Szilágyi-előadás hivatkozás kivéve; forrás nélküli kapcsolatfejlődési diagram, függőségi táblázat, „strukturális lyukak” és angol terminusok törölve; két példa „saját szemléltető példa” jelöléssel; `## Irodalom` APA 7; diagram-élszínek palettára igazítva, három diagram renderelve. Hiányzik: Várható vizsgáztatói kérdések. A többi sor változatlan.  
+**Utolsó frissítés:** 2026-11-05 — a V18 tétel revíziója a V17-tel azonos forráshiány miatt nyitott kérdéssel zárult (🔎): a 3 szempont és az ARA-modell csak Håkansson (2010) *Határtalan hálózatok*-ra épül (ajánlott irodalom, nincs a mappában); az `Előadás_ppt1.pdf` a 2–3. és 6. hetet nem fedi. Elvégezve: Beszerzendő anyagok táblázat; fejléc és Tétel-sor javítva; nem ellenőrizhető tartalom jelölve; Granovetter-rész forrásolva és bővítve (ea. 27. dia; Buchanan 2002, *Nexus* 2. fej.); 18.2/18.4 táblázat összevonva, forrás nélküli sorok és a BPR-példa törölve; ea. 13. dia beépítve; Barabási (2022) kivéve; kaszkád-diagram „saját szemléltető példa” jelöléssel; ARA-diagram élfelirata javítva; 4 várható vizsgáztatói kérdés; `## Irodalom` APA 7; négy diagram renderelve. Törzs 810 szó. A többi sor változatlan.  
 
 ---
 
@@ -53,7 +53,7 @@
 | V15 | ERP és projektmenedzsment, BSP, ITIL | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ | ✅ 2026-10-29 |
 | V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | ✅ 2026-10-29 |
 | V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | 🔎 2026-10-29 |
-| V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
+| V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | 🔎 2026-11-05 |
 | V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
 | V20 | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ | —       |
 
