@@ -52,9 +52,9 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | V05  | Folyamatszemléletű irányítási rendszerek és dok.            | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | ✅       | ✅ 2026-10-17 |
 | V06  | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score)       | Menedzsment inf. rendszerek             | GMXIR1MBLF | ✅       | 🔎 2026-10-02 |
 | V07  | BSC + VIR/BI programcsomagok összehasonlítása               | Menedzsment inf. rendszerek             | GMXIR1MBLF | ✅       | 🔎 2026-10-02 |
-| V08  | Business Intelligence (BI) és BICC                          | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
-| V09  | Dashboard, KPI-alapú jelentések, DAX, Power BI              | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
-| V10 | OLTP/OLAP, adattárház, adatbányászat, Big Data              | Menedzsment inf. rendszerek             | GMXIR1MBLF | 📋       | —       |
+| V08  | Business Intelligence (BI) és BICC                          | Menedzsment inf. rendszerek             | GMXIR1MBLF | ✅       | 🔎 2026-11-06 |
+| V09  | Dashboard, KPI-alapú jelentések, DAX, Power BI              | Menedzsment inf. rendszerek             | GMXIR1MBLF | ✅       | 🔎 2026-11-06 |
+| V10 | OLTP/OLAP, adattárház, adatbányászat, Big Data              | Menedzsment inf. rendszerek             | GMXIR1MBLF | ✅       | 🔎 2026-11-06 |
 | V11 | IT fejlődés (70-es évektől), szigetrendszerek vs. integrált | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅       | ✅ 2026-10-17 |
 | V12 | ERP fogalma, fejlődéstörténete (MRP→MRP II→ERP→cloud)       | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅       | ✅ 2026-10-17 |
 | V13 | ERP bevezetése: célok, előnyök, hátrányok, BPR              | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅       | ✅ 2026-10-17 |
@@ -79,7 +79,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | HR menedzsment és vez. tech.            | GMXHR1MBLF | K8–K13 (6 tétel)  | ✅ Teljes   |
 | Vezetői számvitel és controlling        | GIXVS2MBLF | K14–K20 (7 tétel) | ✅ Teljes   |
 | Számítógépes folyamatmenedzsment        | GMXSF2MBLF | V1–V5 (5 tétel)   | ✅ Teljes   |
-| Menedzsment információs rendszerek      | GMXIR1MBLF | V6–V10 (5 tétel)  | 📋 V6–V7 kidolgozva (⚠️ hiányokkal), V8–V10 kidolgozásra vár |
+| Menedzsment információs rendszerek      | GMXIR1MBLF | V6–V10 (5 tétel)  | ✅ Teljes (V6–V10 kidolgozva, ⚠️ tartalmi hiányokkal) |
 | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | V11–V15 (5 tétel) | ✅ Teljes   |
 | Vállalati és üzleti hálózatmenedzsment  | GMXVU2MBLF | V16–V20 (5 tétel) | ✅ Teljes   |
 
@@ -104,6 +104,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 │   ├── Tétel-Tárgy Mátrix.md
 │   ├── Tétel revíziós prompt.md                        # Tételenkénti revízió promptja (Claude Cowork)
 │   ├── Tétel revíziós prompt - GMXIR1MBLF tananyag-feldolgozás.md   # GMXIR1MBLF tananyag-feldolgozó és V06–V10 kidolgozó prompt (Claude Cowork)
+│   ├── Tétel kidolgozó sub-agent prompt - GMXIR1MBLF V08-V10.md       # Felügyelet nélküli (sub-agent) tételkidolgozó prompt: közös törzs + V08/V09/V10 paraméterek
 │   ├── Komplex I. - Menedzsment alapjai (GMXMD1MBLF).kontextus.md
 │   ├── Komplex II. - HR menedzsment és vezetési technikák (GMXHR1MBLF).kontextus.md
 │   ├── Komplex III. - Vezetői számvitel és controlling (GIXVS2MBLF).kontextus.md
@@ -140,6 +141,9 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
     ├── V05-GMXSF2MBLF-Folyamatszemléletű irányítási rendszerek.tétel.md
     ├── V06-GMXIR1MBLF-VIR fogalma, típusai, pénzügyi mutatók.tétel.md
     ├── V07-GMXIR1MBLF-BSC és VIR-BI programcsomagok.tétel.md
+    ├── V08-GMXIR1MBLF-Üzleti intelligencia és BICC.tétel.md
+    ├── V09-GMXIR1MBLF-Dashboard, KPI és Power BI jelentések.tétel.md
+    ├── V10-GMXIR1MBLF-OLTP-OLAP, adattárház, adatbányászat, Big Data.tétel.md
     ├── V11-GMXIV2MBLF-Informatikai fejlődés és szigetrendszerek.tétel.md
     ├── V12-GMXIV2MBLF-ERP fogalma és fejlődéstörténete.tétel.md
     ├── V13-GMXIV2MBLF-ERP bevezetése és BPR.tétel.md
@@ -149,26 +153,24 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
     ├── V17-GMXVU2MBLF-Üzleti hálózatok kölcsönhatásait befolyásoló tényezők.tétel.md
     ├── V18-GMXVU2MBLF-Hálózati működés és szempontjai.tétel.md
     ├── V19-GMXVU2MBLF-Üzleti kölcsönhatások hálózatalapú megközelítése.tétel.md
-    ├── V20-GMXVU2MBLF-Hálózati üzleti stratégia.tétel.md
-    └── (V08–V10 tételek kidolgozás előtt — a GMXIR1MBLF tananyag feldolgozva, a kontextusfájl elkészült; a V06 és a V07 kidolgozva, a ⚠️ Tartalmi hiány szakaszai a beszerzendő anyagok után bővíthetők)
+    └── V20-GMXVU2MBLF-Hálózati üzleti stratégia.tétel.md
 ```
 
 ---
 
-## Jelenlegi állapot (2026-10-02)
+## Jelenlegi állapot (2026-11-06)
 
-### Befejezett tantárgyak (6/7):
+### Befejezett tantárgyak (7/7):
 
 - ✅ **Menedzsment alapjai** — 7 tétel teljes (K1–K7)
 - ✅ **HR menedzsment és vezetési technikák** — 6 tétel teljes (K8–K13)
 - ✅ **Vezetői számvitel és controlling** — 7 tétel teljes (K14–K20)
 - ✅ **Számítógépes folyamatmenedzsment** — 5 tétel teljes (V1–V5)
+- ✅ **Menedzsment információs rendszerek** — 5 tétel teljes (V6–V10); **V8–V10 kidolgozva 2026-11-06** a `Kontextus fájlok/Tétel kidolgozó sub-agent prompt - GMXIR1MBLF V08-V10.md` szerint (három párhuzamos sub-agent, felügyelet nélkül, a Döntési napló alapján). Mindhárom tételben maradt ⚠️ Tartalmi hiány szakasz (V8: VIR–BI kapcsolat; V9: dashboard-típusok, DAX, vizualizáció/megosztás/jogosultság; V10: a szakértői rendszer architektúra-részletei és VIR-kapcsolat) és Beszerzendő anyagok táblázat; a Revízió oszlop ezért 🔎. A sub-agentek záró jelentései (lefedettségi mátrix, D-döntések, nyitott kérdések) a `state/tmp_v08-v10/` mappában vannak.
 - ✅ **Integrált vállalatirányítási rendszerek** — 5 tétel teljes (V11–V15)
 - ✅ **Vállalati és üzleti hálózatmenedzsment** — 5 tétel teljes (V16–V20)
 
-### Kidolgozásra vár — a forrásanyag megérkezett (1/7):
-
-- 📋 **Menedzsment információs rendszerek** — 5 tétel (V6–V10); **V6 kidolgozva** (2026-10-02; ⚠️ Tartalmi hiány: pénzügyi mutatószámok, EVA/Z-score, programcsomag-ismeret mélysége), **V7 kidolgozva** (2026-10-02; ⚠️ Tartalmi hiány: hazai VIR/BI programcsomagok és sorbaállítás, beépített BSC), V8–V10 kidolgozásra vár; a GMXIR1MBLF tananyag feldolgozva (2026-10-02, `ANYAG`), a forrástérkép és a Döntési napló a `Kontextus fájlok/Váll.Irány II. - Menedzsment információs rendszerek (GMXIR1MBLF).kontextus.md` fájlban van; a tételek kidolgozása a `Kontextus fájlok/Tétel revíziós prompt - GMXIR1MBLF tananyag-feldolgozás.md` szerint történik
+### Kidolgozásra vár: nincs (40/40 tétel kidolgozva)
 
 ---
 
@@ -177,7 +179,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 - A **K5 (Vezetői stílusok)** és **K11 (Vezetés fogalma és vezetői szerepek)** tételek között tematikai átfedés van; az előbbi a Menedzsment alapjai, az utóbbi a HR menedzsment tárgyban tanult.
 - A **K20 (BSC)** és **V7 (BSC + VIR/BI)** mindkét tételsorban szerepel, de eltérő mélységgel és kontextussal.
 - A **GMXVU2MBLF** tantárgy előadásanyaga angol nyelvű (*Organizational networks*), a kötelező irodalom Barabási Albert-László: *Behálózva* (Open Books, 2022).
-- A **V6–V10** tételek kidolgozása (Menedzsment inf. rendszerek) a feldolgozott forrásanyagra épül (`ANYAG` kész, 2026-10-02). A tananyag a tételsorhoz képest **tartalmilag hiányos**: nincs EVA/Z-score és mutatószámrendszer (V6), hazai VIR/BI programcsomag-összevetés és rendszer–BSC összerendelés (V7), VIR–BI különbség (V8), dashboard-típusok, DAX, megosztás és jogosultságkezelés (V9), a szakértői rendszer struktúrája csak vázlatos (V10). Jóváhagyott kezelés: **beszerzés** (a hiányzó anyagok a mappába kerülnek, a tétel újrafuttatáskor bővül); források: csak a kötelező `1_NN` HTML-ek, az opcionális könyvek nem használhatók. A hivatkozási forma a V06 kidolgozásakor jóváhagyva (2026-10-02; a kontextusfájl Döntési naplójába még nem került be). **V6 kidolgozva**: az R5 (pénzügyi mutatószámok), R6 (EVA, Z-score, mutatószámrendszerek) és R7b (programcsomag-ismeret mélysége) részkérdésekhez ⚠️ Tartalmi hiány szakasz és Beszerzendő anyagok tábla tartozik; a Revízió oszlop ezért 🔎. **V7 kidolgozva**: az R1–R3 (BSC filozófiája, négy nézőpont, stratégiai térkép) a kötelező 1_6 előadás 5. szakasza és annak BSC-ábrája alapján készült (a kontextusfájl „csak opcionális” besorolása ezekre pontosítandó); az R4–R5 (hazai VIR/BI programcsomagok, sorbaállítás) és az R6 (beépített BSC) ⚠️ Tartalmi hiány szakaszt és Beszerzendő anyagok sort kapott; az R7 (rendszerválasztás) jelölt, tananyag-alapú szintézis; a Revízió oszlop ezért 🔎. Részletek: a GMXIR1MBLF kontextusfájl.
+- A **V6–V10** tételek kidolgozása (Menedzsment inf. rendszerek) a kötelező tananyagra épül. A forrásmappa 2026-11-05-i állapota: `Források/Menedzsment információs rendszerek (GMXIR1MBLF)/extracted/eloadas_01…12.md` (a 12 Moodle-előadás kivonata; **csak a Kötelező Könyv rész használható**, az újrainduló számozás utáni Opcionális/Haladó Könyv részek nem — Döntési napló K1=A), `extracted/targyi_adatlap.txt` (syllabus), `site prints/` (az eredeti HTML-oldalak). A `MIR_jegyzet.md`, `MIR_study_guide.md/.docx` és `MIR_checklist.md` **hallgatói jegyzet, nem tananyag** — a tételekben nem hivatkozható (a HR Cheat sheet analógiájára). A tananyag a tételsorhoz képest **tartalmilag hiányos**: nincs EVA/Z-score és mutatószámrendszer (V6), hazai VIR/BI programcsomag-összevetés és rendszer–BSC összerendelés (V7), VIR–BI összehasonlítás (V8), dashboard-típusok, szűrők, DAX, egyéni/vállalati vizualizáció, megosztás és jogosultságkezelés (V9), a szakértői rendszer struktúrája csak ábra-helyőrzőként, VIR-kapcsolat nélkül (V10). Jóváhagyott kezelés: **beszerzés** (Beszerzendő anyagok táblázat + ⚠️ Tartalmi hiány szakasz; a tétel az anyagok pótlása után bővíthető). Hivatkozási forma: `(ÓE KGK ÜTDI, 2026x, N. szakasz)`, az Irodalomban `[Kötelező tananyag, N. ea.]`; a másodlagosan idézett külső művek `(Szerző, év, idézi: …)` alakban, az Irodalomban nem szerepelnek. **V8–V10 kidolgozva** (2026-11-06): a kontextusfájl G7–G11 hiányai megerősítve; a sub-agentek a kontextusfájlban több pontosítandó eltérést jeleztek (a K9/2 OEE-dashboard ábra a 7. ea. 2. szakaszában van, nem a 6.-ban; a 3V három dimenziója a 8. ea. kötelező szövegében is szerepel; az 1. ea. opcionális része az 1.10–1.13 számozatlan oldal) — a kontextusfájl nem módosult. Részletek: a GMXIR1MBLF kontextusfájl és a `state/tmp_v08-v10/` jelentések.
 - A tételfájlok **Mermaid-diagramjai egységes vizuális stílust** követnek (a K01 tétel diagramja a referencia): közös 8 színes pasztell paletta (`kek`, `zold`, `narancs`, `rozsa`, `lila`, `turkiz`, `sarga`, `szurke`) `classDef`-ekkel, 2 px keret (kiemelt csomópontnál 3 px), `rx:10,ry:10` lekerekítés, félkövér címsor + `<br/>` sortörés a címkékben, palaszürke (`#546e7a`) élek és szaggatott, színes visszacsatoló nyilak. Új tétel írásakor ezt a konvenciót kell követni.
 
 ---
@@ -185,4 +187,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
 [Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
 
-*Utolsó frissítés: 2026. november 6. — A **V20** tétel revíziója (`Tételek/V20-GMXVU2MBLF-Hálózati üzleti stratégia.tétel.md`) nyitott kérdéssel zárult (🔎): a hivatalos tételszöveg „szervezeti határok” részkérdéséhez a forrásmappában nincs közvetlen tananyag (az `Előadás_ppt1.pdf` a syllabus 11. hetét nem tartalmazza; Håkansson (2010) ajánlott és Barabási *Behálózva* (2022) kötelező irodalom nincs a mappában). Elvégezve: a tétel teljes, forráshű újraszerkesztése öt szakaszra (hálózati szemlélet; hálózati pozíció és hubok; szervezeti határok; eredményesség és a valódi hálózat feltárása; eredményesség és robosztusság); a **Tétel:** sor a tételsor szerinti alakra javítva; „Beszerzendő anyagok” táblázat (Behálózva; Håkansson 2010; a 10–12. heti előadásanyag); törölve a forrás nélküli Porter/RBV-bevezető, a „hálózati stratégia három szintje”, a határkoncepció-táblázat és -diagram, az efficiency/effectiveness és relational capital rész, a closeness-centralitás; kivett források: Burt (1992) (tiltott), Håkansson (2010) és *Behálózva* (nem ellenőrizhető), *A hálózatok tudománya* (2024) helyett a mappában lévő *Network Science* (2012) előzetes kiadás; bővítés a Barabási-tankönyv 1., 5., 6., 8. fejezetéből (növekedés + preferenciális kapcsolódás, first-mover és fitness-korlát, Maven 7 esettanulmány, Achilles-sarok, kaszkádhiba, robosztusság költsége) és Buchanan *Nexus* 7–8. fejezetéből; diagramok: a 20.1 és a mindmap tartalma átírva, a bróker-diagram a Maven 7-esetre cserélve, a xychart „sematikus” címmel, mind a négy mermaid-cli-vel renderelve; új „Várható vizsgáztatói kérdések” (6) és `## Irodalom` APA 7. A többi sor változatlan.*
+*Utolsó frissítés: 2026. november 6. — A **V8, V9 és V10** tételek kidolgozása (`Tételek/V08-GMXIR1MBLF-Üzleti intelligencia és BICC.tétel.md`, `Tételek/V09-GMXIR1MBLF-Dashboard, KPI és Power BI jelentések.tétel.md`, `Tételek/V10-GMXIR1MBLF-OLTP-OLAP, adattárház, adatbányászat, Big Data.tétel.md`) három párhuzamos sub-agenttel, kizárólag a GMXIR1MBLF kötelező tananyagából (a 12 előadás Kötelező Könyv része + tantárgynyilvántartó adatlap), a Döntési napló (K1=A, K3=A, K5=B, K6=A, K7, K8, K9/2) szerint. Mindhárom tétel a sablon szerint készült (Beszerzendő anyagok, szó szerinti Tétel-sor, számozott szakaszok, 6 Várható vizsgáztatói kérdés, `## Irodalom` APA 7), 2–3 mermaid-diagrammal (mind mermaid-cli-vel renderelve, a projektpaletta szerint), törzsszöveg kb. 1550–1750 szó. ⚠️ Tartalmi hiány: V8 R2 (VIR–BI kapcsolat); V9 R2 (dashboard-típusok), R8 (DAX), R9–R11 (vizualizáció, megosztás, jogosultság); V10 R6+R8 (szakértői rendszer architektúra-részletek, VIR-kapcsolat) — a Revízió oszlop ezért 🔎. Új fájl: `Kontextus fájlok/Tétel kidolgozó sub-agent prompt - GMXIR1MBLF V08-V10.md` (a felügyelet nélküli kidolgozó prompt, közös törzs + tételparaméterek); a sub-agentek jelentései a `state/tmp_v08-v10/` mappában. Nyitott kérdések (a jelentések D-listái): V9 D6 (az R9 „egyéni/vállalati vizualizáció” szűk, Power BI-szintű értelmezése) és D14 (a 6. ea. §4 belső feszültsége: 75% „világszínvonalú” vs. world class ~85% — a minősítés kihagyva); V10 D11–D12 (terjedelem a felső határ közelében, a táblázatok szóban válogatást kívánnak). Minden tétel kidolgozva: 40/40. A többi sor változatlan.*
