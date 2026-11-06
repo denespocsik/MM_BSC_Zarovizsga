@@ -1,7 +1,7 @@
 # Záróvizsga — Tétel-Tárgy Mátrix
 
 **Képzés:** Műszaki menedzser BSc — F tanterv, levelező, V3 Vállalatirányítás szakirány  
-**Utolsó frissítés:** 2026-11-06 — a V8, V9 és V10 tétel kidolgozva (három párhuzamos sub-agent, kizárólag a GMXIR1MBLF kötelező tananyagából, a Döntési napló szerint); mindhárom tételben ⚠️ Tartalmi hiány szakasz és Beszerzendő anyagok táblázat maradt (V8 R2; V9 R2, R8, R9–R11; V10 R6+R8), ezért a Revízió oszlop 🔎. Minden tétel kidolgozva (40/40). Új fájl: `Tétel kidolgozó sub-agent prompt - GMXIR1MBLF V08-V10.md`.  
+**Utolsó frissítés:** 2026-11-06 — a V6 tétel revíziója a 2026-11-06-i forrásmappa-állapoton: minden hivatkozás az új kivonatokon ellenőrizve; a 6.1 munkadefiníció javítva (a VIR mindhárom vezetői szintet szolgálja; a „vezetői IS” címke kettős használata kimondva), új 6.6 szakasz az OEE-ről és a BSC-ről mint a tananyag összetett mutatóiról (6. ea. 4–5. szakasz), az R7b a syllabus oktatási céljával alátámasztva, két kisebb bővítés (5. ea. 4., 3. ea. 2. szakasz), új 6. várható kérdés, Irodalom + syllabus; törzsszöveg 1905 szó. Az R5–R6 (klasszikus pénzügyi mutatók, EVA, Z-score) és a programcsomag-áttekintés továbbra is tartalmi hiány, ezért a Revízió oszlop 🔎. Ezt megelőzően ugyanezen a napon: a V7 tétel revíziója a 2026-11-05-i forrásmappa-állapoton: a BSC definíciója és a nézőpontok alapkérdései a 6. ea. opcionális könyvéből (a K1=A alóli, V7-re jóváhagyott kivétel), a 7.1 és 7.4 szakasz bővítése kötelező forrásból (3. ea. 2., 1. ea. 6., 5. ea. 2. és 8. szakasz), másodlagos hivatkozások pontosítása, a Beszerzendő anyagok 2. sora a syllabus 12. heti gyakorlatára cserélve. Az R4–R6 (hazai programcsomagok, sorbaállítás, beépített BSC) továbbra is tartalmi hiány, ezért a Revízió oszlop 🔎. Ezt megelőzően ugyanezen a napon: a V8, V9 és V10 tétel kidolgozva (három párhuzamos sub-agent, kizárólag a GMXIR1MBLF kötelező tananyagából, a Döntési napló szerint); mindhárom tételben ⚠️ Tartalmi hiány szakasz és Beszerzendő anyagok táblázat maradt (V8 R2; V9 R2, R8, R9–R11; V10 R6+R8), ezért a Revízió oszlop 🔎. Minden tétel kidolgozva (40/40). Új fájl: `Tétel kidolgozó sub-agent prompt - GMXIR1MBLF V08-V10.md`.  
 
 ---
 
@@ -41,8 +41,8 @@
 | V3 | Üzleti folyamatok mérése és optimalizálása (KPI) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
 | V4 | Kockázatkezelés és hibamód-elemzés (FMEA) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
 | V5 | Folyamatszemléletű irányítási rendszerek és dok. | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ | ✅ 2026-10-17 |
-| V6 | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score) | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-10-02 |
-| V7 | BSC + VIR/BI programcsomagok összehasonlítása | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-10-02 |
+| V6 | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score) | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-11-06 |
+| V7 | BSC + VIR/BI programcsomagok összehasonlítása | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-11-06 |
 | V8 | Business Intelligence (BI) és BICC | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-11-06 |
 | V9 | Dashboard, KPI-alapú jelentések, DAX, Power BI | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-11-06 |
 | V10 | OLTP/OLAP, adattárház, adatbányászat, Big Data | Menedzsment inf. rendszerek | GMXIR1MBLF | ✅ | 🔎 2026-11-06 |
