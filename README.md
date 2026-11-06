@@ -166,7 +166,7 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 - ✅ **HR menedzsment és vezetési technikák** — 6 tétel teljes (K8–K13)
 - ✅ **Vezetői számvitel és controlling** — 7 tétel teljes (K14–K20)
 - ✅ **Számítógépes folyamatmenedzsment** — 5 tétel teljes (V1–V5)
-- ✅ **Menedzsment információs rendszerek** — 5 tétel teljes (V6–V10); **V8–V10 kidolgozva 2026-11-06** a `Kontextus fájlok/Tétel kidolgozó sub-agent prompt - GMXIR1MBLF V08-V10.md` szerint (három párhuzamos sub-agent, felügyelet nélkül, a Döntési napló alapján). Mindhárom tételben maradt ⚠️ Tartalmi hiány szakasz (V8: VIR–BI kapcsolat; V9: dashboard-típusok, DAX, vizualizáció/megosztás/jogosultság; V10: a szakértői rendszer architektúra-részletei és VIR-kapcsolat) és Beszerzendő anyagok táblázat; a Revízió oszlop ezért 🔎. A sub-agentek záró jelentései (lefedettségi mátrix, D-döntések, nyitott kérdések) a `state/tmp_v08-v10/` mappában vannak.
+- ✅ **Menedzsment információs rendszerek** — 5 tétel teljes (V6–V10)
 - ✅ **Integrált vállalatirányítási rendszerek** — 5 tétel teljes (V11–V15)
 - ✅ **Vállalati és üzleti hálózatmenedzsment** — 5 tétel teljes (V16–V20)
 
