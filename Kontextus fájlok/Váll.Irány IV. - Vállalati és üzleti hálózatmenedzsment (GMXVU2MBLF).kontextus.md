@@ -22,7 +22,8 @@
 - Félévzárás módja: **vizsga** (írásbeli zárthelyi dolgozat). Aláírás feltétele: a ZH legalább elégséges (2) szintű teljesítése
 - Félévközi követelmény: nincs
 - Tematikus felépítés: 12 tartalmi hét + 13. ZH + 14. pót ZH
-- Kötelező irodalom: Barabási Albert-László (2022): *Behálózva*. Open Books
+- Kötelező irodalom: Barabási Albert-László (2022): *Behálózva*. Open Books — a mappában 2026-11-06-tól az angol eredeti van meg (*Linked*, Basic Books, 2014-es kiadás, a 2002-es első kiadás + „Afterlink” utószó); a fejezetszámozás a „link”-ek szerint megy (First Link … Last Link), lásd a **16A. fejezetet**.
+- Ajánlott irodalom (IMP-vonal): Håkansson (2010): *Határtalan hálózatok* — a mappában **nem** ez van meg, hanem Håkansson & Snehota (szerk., 2017): *No Business Is an Island* (Emerald), az IMP-kutatás 40 évét összegző kötet. A kettő viszonyát és a használati szabályt lásd a 15.6 és a „Feldolgozott forrásanyagok” szakaszban.
 - Az előadásanyag (Előadás_ppt1.pdf) angol nyelvű (*Organizational networks*), bár a tantárgy hivatalosan magyar nyelvű.
 
 ## Oktatási cél
@@ -50,7 +51,7 @@ A Syllabus 12 tartalmi hetet ad meg. A heti tématérkép és a referencia temat
 
 ## A referencia felépítése és a V-tételek leképezése
 
-A törzset az **A–E tematikus blokkok** rendezik 26, 1-től arab számmal jelölt fejezetbe. A V16–V20 záróvizsgatételek ezekre a fejezetekre képződnek le (a fejezetek elején `» Kapcsolódó tétel` jelzés is megerősíti):
+A törzset az **A–E tematikus blokkok** rendezik 26, 1-től arab számmal jelölt fejezetbe (+ a 2026-11-06-án beillesztett **16A** és **17A** kiegészítő fejezet, hogy a meglévő számozás és a tételek fejezethivatkozásai ne változzanak). A V16–V20 záróvizsgatételek ezekre a fejezetekre képződnek le (a fejezetek elején `» Kapcsolódó tétel` jelzés is megerősíti):
 
 | Fejezet | Témakör | Blokk | Kapcsolódó tétel |
 |---|---|---|---|
@@ -70,7 +71,9 @@ A törzset az **A–E tematikus blokkok** rendezik 26, 1-től arab számmal jel�
 | 14. | A tükrözési hipotézis (Conway; MacCormack et al.) | C | **V16** |
 | 15. | Az IMP csoport és a piac mint hálózat | C | **V19** |
 | 16. | Az üzleti kölcsönhatás öt tényezője | C | **V17** |
+| 16A. | Barabási *Linked* (Behálózva): fejezettérkép és a „hálózati gazdaság” fejezet | A, E | **V16, V19, V20** |
 | 17. | A hálózati működés három szempontja | C | **V18** |
+| 17A. | Menedzsment az interaktív üzleti világban (Ford, Mattsson & Snehota, 2017) | C | **V18, V20** |
 | 18. | Az ARA modell | C | **V18** |
 | 19. | Burt: strukturális lyukak és brokerage | C | **V20** |
 | 20. | Információ- és tudásterjedés a szervezeti hálózatban | D | **V16, V18** |
@@ -334,6 +337,8 @@ A négy mérték eltérő szereplőt emelhet ki ugyanabban a hálózatban: egy a
 A valós hálózatok jellemzően **közösségekre** (sűrűn összekötött csoportokra) bomlanak, amelyek között ritkábbak a kapcsolatok. A közösségek azonosítása (*community detection*) feltárja a hálózat moduláris szerkezetét — szervezeti kontextusban az informális csoportokat, klikkeket, „silókat".
 
 A **Girvan–Newman algoritmus** (2002) az **él-betweenness** alapján működik: iteratívan eltávolítja a legmagasabb betweenness-ű éleket (amelyek hidat képeznek a közösségek között), így a hálózat fokozatosan közösségekre esik szét. A felbontás jóságát a **modularitás** `Q` méri: mennyivel sűrűbbek a közösségen belüli élek a véletlenszerűen várhatónál. Magas `Q` = jól elkülönülő közösségek. A módszer kapcsolódik a multiplex szemlélethez (12. fejezet): különböző rétegeken más-más közösségszerkezet rajzolódhat ki ugyanazon szereplők között. **Korlát:** a modularitás-maximalizálásnak van felbontási határa (kis közösségeket „összevonhat"), ezért több algoritmust (pl. Louvain) érdemes összevetni.
+
+**Hierarchikus modularitás (Barabási, 2014, Afterlink).** A *Linked* 2014-es kiadásának utószava oldja fel a hubok és a modulok látszólagos ellentmondását: a skálafüggetlen modell és a véletlen modell egyike sem modulos, a valós hálózatok mégis egyszerre skálafüggetlenek *és* modulosak. A Ravasz–Barabási-féle **hierarchikus hálózatmodell** („másolj és kapcsolj": 4 → 16 → 64 csomópontos, egymásba ágyazott modulok) mindkét tulajdonságot adja; mérhető jele, hogy a **klaszterezési együttható a fokszámmal csökken** (`C(k) ~ k^{-1}`) — a kis fokszámú csomópontok sűrű kis modulokban ülnek, a hubok pedig a modulok *között* közvetítenek. Barabási vállalati párhuzama: a részlegek (modulok) viszonylag zárt csoportok, a nagy hubok pedig „a nagyvállalat vezérigazgatójaként" a legtöbb részlegre rálátnak és a modulokat hidalják át. A tárgy számára ez a V16 réteghálózat-topológiáinak (fa-szerű hatalmi réteg + klaszteres pletykaréteg ugyanazon dolgozók között) hálózattudományi háttere.
 
 ---
 
@@ -660,6 +665,36 @@ flowchart LR
     class INTER,KON b;
 ```
 
+## 15.6 Az IMP empirikus képe: az üzleti világ három jellemzője (Håkansson & Snehota, 2017)
+
+> **Forrásmegjegyzés.** A mappában 2026-11-06-tól elérhető *No Business Is an Island: Making Sense of the Interactive Business World* (Håkansson & Snehota szerk., Emerald, 2017) **nem azonos** a syllabus ajánlott irodalmával (Håkansson, 2010: *Határtalan hálózatok* = *Business in Networks*, 2009). A 2017-es kötet az IMP-kutatás 40 évét összegzi 15 fejezetben (25 szerző), és az ARA-modellt, a kapcsoltságot, a kölcsönös függőséget, a hálózati pozíciót és a szervezeti határokat *elsődleges forrásként* tárgyalja. Az alábbi 15.6, 16.1, 17A, 18.5, 19.5 és 26.2 szakaszok erre épülnek; ahol a 2010-es mű konkrét fogalmi keretét (pl. „az öt tényező", „a három szempont") *szó szerint* idézné a tétel, azt továbbra is csak a 2010-es mű beszerzése után lehet ellenőrizni. A 2017-es kötet fejezetei önálló szerzőkkel hivatkozandók (pl. Ford, Mattsson & Snehota, 2017; Freytag, Gadde & Harrison, 2017).
+
+Az IMP-kutatás 1976-ban indult (öt európai ország, ~800 vevő–szállító kapcsolat, >1000 interjú; Håkansson szerk., 1982), és négy évtized alatt >200 PhD-disszertációt és ~3000 konferenciatanulmányt eredményezett. A kutatás **jelenségvezérelt** (phenomenon-driven): a „termékek és szolgáltatások mögötti" üzleti világot írja le (autó, IKEA Lack asztal, TAVI szívbillentyű-beültetés, logisztikai szolgáltatás, norvég halászat), és azt találja, hogy a tankönyvi kép — *független vállalatok, homogén termékpiacokon, ármechanizmussal koordinálva* — nem írja le ezt a világot. Három **megfigyelt jellemző** rajzolódik ki (Håkansson & Snehota, 2017):
+
+| Jellemző | Tartalom | Menedzsment-következmény |
+|---|---|---|
+| **1. Az üzleti kapcsolatok folytonossága** (continuity) | A vállalatok nem „ad hoc vásárolnak": néhány vevő és néhány szállító adja a forgalom nagy részét; a kapcsolat **múlttal és beágyazódással** (lock-in) bír; a kapcsolat három rétegű: **tevékenységek** összekapcsolása, **erőforrások** összekötése, **szereplők** közötti kötések (= ARA, 18. fejezet) | A kulcskapcsolat a vállalat **legfontosabb erőforrása**; felépítése jelentős (részben vissza nem térülő) beruházás |
+| **2. Hálózati struktúra** (interdependent network structures) | A kapcsolatok között **kölcsönös függőségek** húzódnak: ami az egyik kapcsolatban történik, hat a többire; minden vállalat egy **határtalan, teljességében megismerhetetlen** hálózat csomópontja | Három vezetői tulajdonság: minden vállalat **egyedi csomópont**; a beágyazottság egyszerre **eszköz és teher** (asset & liability); a vállalat **korlátozottan irányít** (limited control), sosem teljesen autonóm |
+| **3. Az interakció mindenütt-jelenvalósága** (ubiquity of interaction) | Az interakció akció–reakció láncok sorozata, amellyel a felek a kölcsönös függőséget *kezelik és újraalkotják*; közös megoldások születnek benne; költséges, de az innováció és a hatékonyság fő hajtóereje | A hálózat nem kezelhető „pont-beavatkozással": a beavatkozásnak is folyamatosnak kell lennie |
+
+Az összegző fogalom az **interaktivitás** (*interactivity*): a hálózat azon kollektív tulajdonsága, hogy a szereplők hajlandók és képesek az interakciót a fejlesztés fő eszközeként használni. Három feltétele: (1) *két aktív fél* kell (a kapcsolat nem hozható létre egyoldalúan), (2) a kapcsolat **függőségeket teremt**, ami az autonómia egy részének feladását jelenti — szemben a mainstream „függetlenség" ajánlásával, (3) **a költség megelőzi a bevételt**: az interakció előbb kerül, mint amennyit hoz, a haszon bizonytalan. A paradoxon: az interakció értéke attól függ, mennyien interaktálnak már a hálózatban — minél többen, annál fontosabb részt venni benne. A szerzők külön kiemelik, hogy a közbeszerzés („nyílt pályáztatás") és például a norvég halaukció rendszere *jogilag* a tökéletes piac feltevésére épül, és ezért akadályozza az interaktivitás kihasználását (Håkansson & Snehota, 2017, 1. és 15. fej.).
+
+```mermaid
+flowchart LR
+    F1["<b>FOLYTONOSSÁG</b><br/>tartós kapcsolatok,<br/>3 réteg: A–R–A"]
+    F2["<b>HÁLÓZATI STRUKTÚRA</b><br/>kölcsönös függőségek,<br/>egyedi csomópont"]
+    F3["<b>INTERAKCIÓ</b><br/>akció–reakció láncok,<br/>közös megoldások"]
+    IA(["<b>INTERAKTIVITÁS</b><br/>kollektív hajlandóság<br/>az interakcióra"])
+    F1 --> F2 --> F3 --> IA
+    IA -. "önerősítő" .-> F3
+    classDef a fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
+    classDef b fill:#fff3e0,stroke:#e65100,color:#bf360c;
+    class F1,F2,F3 a;
+    class IA b;
+```
+
+**Kritika / korlát (a kötet önreflexiója):** az IMP „kép-alapú" (image-based), esettanulmányos módszertana a jelenségek leírásában erős, de a szerzők maguk is hiányolják az elemző fogalmi eszközöket; az „egyediség általánosítása" módszertani kihívás; a hálózat a résztvevők számára sem átlátható, a kívülálló (kutató, szabályozó) számára még kevésbé.
+
 ---
 
 # 16. Az üzleti kölcsönhatás öt tényezője
@@ -701,6 +736,62 @@ flowchart TB
 
 Az öt tényező együtt magyarázza, miért **nem egyszerűsíthető** az üzleti hálózat sem puszta erőforrás-tranzakciókra (neoklasszikus közgazdaságtan), sem tisztán strukturális viszonyokra (szociológiai hálózatelemzés): a vállalatközi kölcsönhatás **dinamikus, szubjektíven értelmezett, hálózatba ágyazott folyamat**.
 
+## 16.1 Az öt tényező alátámasztása az IMP 2017-es összegző kötetében
+
+Az „öt tényező" mint *lista* a 2010-es műből származik (a mappában nem ellenőrizhető), de mindegyik tényező tartalma **szó szerint visszakereshető** a 2017-es kötetben — ez teszi a V17 tételt forráshűvé:
+
+| Tényező | Mit mond a 2017-es kötet | Hely |
+|---|---|---|
+| **Időbeliség** | „Az interakciónak mindig van története": a kapcsolatnak nincs jól azonosítható kezdete és vége; a jelen interakció a korábbi interakciók, a mások felé irányuló jelenlegi interakciók és a jövőre vonatkozó várakozások eredője. A kapcsolatok „a történelem termékei", beruházásokat és lock-in-t hordoznak; a szereplői kötések *útfüggőséget* (path dependency) teremtenek. | Ford, Mattsson & Snehota (2017); Håkansson & Snehota (2017); Freytag, Gadde & Harrison (2017) |
+| **Szubjektív értelmezés** | A vezetői feladat magja a **sense-making**; a felek **hálózatképe** (*network picture*) egyéni, részleges, horizont- és időperspektíva-függő, normatív elemekkel terhelt, „inkább szubjektív és érzelmi, mint kognitív és tényszerű"; „minden nézet hiányos" — ezért a vezető a partnerek szélesebb hálózatképéből is tanul. Az interakció kimenetét a résztvevők értelmezései határozzák meg, nem az eredeti szándékok. | Ford, Mattsson & Snehota (2017) |
+| **Kapcsoltság** | Ami egy kapcsolat tevékenységeivel, erőforrásaival, szereplőivel történik, hat a vállalat *többi* kapcsolatára; az egyes kapcsolat „nem hermetikusan zárt"; a hálózat határtalan. Mastenbroek-analógiával: a kapcsoltság a hálózatot *egészként* kezelhetetlenné, de *lokálisan* alakíthatóvá teszi. | Håkansson & Snehota (2017); Freytag, Gadde & Harrison (2017) |
+| **Kölcsönös függőség** | Az IMP a *többes számú, specifikus* **függőségeket** vizsgálja (nem a cégszintű, általános „függést"): a három hálózati rétegben — tevékenység-integráció, erőforrás-interfészek, szereplői interakció („a három I") — jönnek létre. **Janus-arcúak**: a hatékonyság és az innováció előfeltételei, ugyanakkor korlátozzák a mozgásteret (DAN-Technology–TT Electronics eset). Thompson (1967) nyomán *szekvenciális, pooled és reciprok* függőség; Pfeffer & Salancik (1978): a bizonytalanság csökkentésére a szervezetek *növelik* függőségüket. | Freytag, Gadde & Harrison (2017) |
+| **Viszonylagosság** | „Minden vállalat egyedi csomópont" egy *meghatározott* kapcsolati halmaz metszéspontjában; az erőforrás értéke „nem rögzített", hanem attól függ, milyen *kombinációban* és mely partnerrel használják; a vállalat identitása **kapcsolatról kapcsolatra változik** (La Rocca, 2013, idézi Munksgaard, Olsen & Prenkert, 2017); a partnerválasztás „kettős választás" (choosing and being chosen). | Håkansson & Snehota (2017); Ford, Mattsson & Snehota (2017); Munksgaard, Olsen & Prenkert (2017) |
+
+**Vizsgán hasznos pontosítás:** a 2017-es kötet nem „öt tényezőről", hanem *három jellemzőről* (folytonosság, hálózati struktúra, interakció; 15.6) és *három I-ről* (integráció, interfészek, interakció) beszél. Az öt tényező ezekkel így feleltethető meg: időbeliség ↔ folytonosság; kapcsoltság + kölcsönös függőség ↔ hálózati struktúra és a három I; szubjektív értelmezés ↔ sense-making/hálózatkép; viszonylagosság ↔ egyedi csomópont + kontextusfüggő erőforrásérték. Ha a vizsgáztató a 2010-es könyv listáját várja, a listát kell mondani; a 2017-es fogalmak a *kifejtésben* használhatók.
+
+---
+
+# 16A. Barabási *Linked* (Behálózva): fejezettérkép és a „hálózati gazdaság"
+> » Kapcsolódó tétel: **V16, V19, V20** — a kötelező irodalom tételekhez rendelve
+
+## 16A.1 Fejezettérkép (Barabási, 2014; magyarul: Behálózva, 2022)
+
+A kötelező irodalom nem fejezetszámokat, hanem „link"-eket használ. A tételekhez rendelés (a magyar kiadás fejezetcímei a 2022-es Open Books-kiadásban hasonló sorrendben szerepelnek; a vizsgán az angol/magyar címet és a tartalmat kell tudni, nem a számot):
+
+| Link | Cím | Tartalom | Kontextus-fejezet | Tétel |
+|---|---|---|---|---|
+| First | Introduction | Hálózati szemlélet; MafiaBoy; Apostol Pál mint „hálózatépítő" | 1. | alapozó |
+| Second | The Random Universe | Erdős–Rényi; a kritikus „1 kapcsolat/csomópont" küszöb, óriáskomponens | 8. | alapozó |
+| Third | Six Degrees of Separation | Karinthy, Milgram, a web 19 lépése | 3. | alapozó |
+| Fourth | Small Worlds | Granovetter gyenge kötései; klaszterezési együttható; Watts–Strogatz | 4., 6., 9. | **V18** |
+| Fifth | Hubs and Connectors | Gladwell „connectorai" = hubok; a web hub-dominált | 10. | **V20** |
+| Sixth | The 80/20 Rule | Pareto; hatványfüggvény; skálafüggetlenség | 10. | **V20** |
+| Seventh | Rich Get Richer | Növekedés + preferenciális kapcsolódás; az „A modell" kudarca (csak növekedés nem elég) | 10. | **V20** |
+| Eighth | Einstein's Legacy | Fitness (rátermettség), Bose–Einstein-kondenzáció, „a győztes mindent visz" (Microsoft) | 10.3 | **V20** |
+| Ninth | Achilles' Heel | Hibatűrés vs. célzott támadás; inverz fázisátalakulás; a küszöb eltűnése `γ ≤ 3`-nál; kaszkádhiba (1996-os áramszünet) | 22., 23. | **V20** |
+| Tenth | Viruses and Fads | Terjedési küszöb; a skálafüggetlen hálózaton a küszöb eltűnik (Pastor-Satorras & Vespignani) | 20.3 | **V16, V18** |
+| Eleventh–Thirteenth | The Awakening Internet; The Fragmented Web; The Map of Life | Internet-topológia; a web „galaxisai"; sejthálózatok | 1.3 | alapozó |
+| **Fourteenth** | **Network Economy** | *A tárgy üzleti fejezete* — lásd 16A.2 | 25., 26. | **V16, V19, V20** |
+| Last | Web Without a Spider | Önszerveződés, „pók nélküli háló" (al-Káida-sejt térképe, Krebs); a dinamika felé | 26. | **V20** |
+| Afterlink | Hierarchies and Communities | Hierarchikus modularitás, `C(k) ~ k^{-1}` | 7. | **V16** |
+
+## 16A.2 A „Fourteenth Link": a hálózati gazdaság (Barabási, 2014, 14. fej.)
+
+Ez a fejezet köti össze a hálózattudományt a tárgy üzleti felével; tartalma pontról pontra:
+
+1. **Fúziók és a hubok növekedése.** Az AOL–Time Warner, Daimler–Chrysler, Exxon–Mobil fúziók „elkerülhetetlenek, ha a gazdaságot komplex hálózatnak tekintjük": a hálózat növekedésével a **huboknak nagyobbra kell nőniük**, és az üzleti háló csomópontjai ezt — más hálózatoktól eltérően — a kisebb csomópontok *bekebelezésével* érik el.
+2. **A vállalati fától a hálóig.** A 20. századi vállalat szerkezete **fa** (a vezérigazgató a gyökér, lefelé egyre specializáltabb, nem átfedő feladatok). Két baj van vele: az információt felfelé szűrni kell, a csúcson mégis túlterhelés keletkezik; és az integráció **merevséget** okoz (a Ford futószalagjai annyira optimalizáltak voltak, hogy egy kis tervmódosítás hetekre leállította a gyárat — „bizánci monolit"). Az információs gazdaságban a vállalat **fából hálóvá** alakul: lapos, sok keresztkapcsolattal; vertikális → virtuális integráció; top-down → bottom-up stratégia; projektcsapatok, szövetségek, kiszervezés. → *V16: a formális (fa) és a valódi (háló) struktúra; V20: szervezeti határok.*
+3. **Az igazgatótanácsok kis világa.** A Fortune 1000 igazgatóinak hálózata (Davis, Yoo & Baker): 7682 igazgató, 10 100 tisztség; a 21%, aki több testületben ül, **kis világgá** köti a rendszert (átlagosan 4,6 kézfogás); Vernon Jordan 10 testülettel a legcentrálisabb. Tanulság: a kinevezések, a vállalati gyakorlatok terjedése és a gazdasági-politikai befolyás a hálózat **átfedő** csomópontjain múlik („old boy network"); a Szilícium-völgy munkaerő-áramlása ugyanilyen sűrű cégközi szociális hálót ad, és a hálón át felvett dolgozók ritkábban mondanak fel.
+4. **A biotech szövetségi hálózat skálafüggetlen.** Powell, White & Koput dinamikus gráfja (1988–1999): már 79 szervezet / 31 kapcsolat mellett is két nagy komponens jött létre (a véletlen modell szerint szét kellett volna esnie) — a korai belépők (Genzyme, Chiron, Genentech…) hubok. Riccaboni, Pammolli & Caldarelli (a könyvben „Cardarelli"): 3973 K+F-megállapodás 1709 cég között **hatványfüggvény**-fokszámeloszlást ad. → A stratégiai szövetségek hálózata skálafüggetlen; *V20: korai pozicionálás.*
+5. **A piac mint irányított, súlyozott hálózat.** A közgazdaságtan „standard formális modellje" a vállalatot „a piaccal" — egy mitikus közvetítővel — interaktáló, anonim egységnek tekinti. Valójában **a piac irányított hálózat**: csomópontok a cégek, intézmények, kormányok; a kapcsolatok vétel–eladás, közös K+F, marketing; a **súly** a tranzakció értéke, az **irány** a szolgáltatótól a fogadó felé. Powell idézete: a piacon a legkeményebb azonnali alku a stratégia, a hálózatban „az eladósodás és egymásrautaltság kiépítése hosszú távon" — ezért a vevő és a szállító **partner, nem versenytárs**, és a kapcsolat tartós. → *V19: a piac mint hálózat — a Barabási-féle és az IMP-féle érvelés itt találkozik.*
+6. **Kaszkádhiba a makrogazdaságban.** Az 1997-es ázsiai válság: egy thai ingatlancég 3,1 millió dolláros kamatfizetési mulasztása → Malajzia, Korea (Sammi Steel), a baht feladása → a Dow 554 pontos esése. „Nem magyarázható olyan keretben, ahol minden szervezet csak egy mitikus piaccal interaktál": a kaszkádhiba **a hálózati gazdaság közvetlen következménye**; a hálózati gondolkodás segít azonosítani és megerősíteni a terjedést megállító csomópontokat („tűzfalak"). → *V20: robosztusság.*
+7. **Kiszervezés és a „me" attitűd.** A Cisco „nem gyártott semmit, amit eladott", hanem gyártók sűrű hálóját kötötte magához; a Compaq Pocket PC-je a beszállítói kapacitor- és flash-hiány miatt 600–700 ezer kielégítetlen rendelésnél ragadt; a Cisco nem állította le az ellátási láncot, nyersanyagkészlete 300%-kal nőtt. A 12 kiszervező nagyvállalat piaci értékvesztése 2000–2001-ben >1,2 billió dollár. Diagnózis: *nem a hálózati gazdaság hibája*, hanem a **hierarchikus gondolkodás** átvitele hálózati üzleti modellre; a hálózati gazdaságban „minden csomópontnak profitábilisnak kell lennie", a veszteség nem terhelhető át a hierarchia más részére. → *V20: szervezeti határok és eredményesség.*
+8. **Vírusmarketing: Hotmail.** 1996. július 4-i indulás, év végére 1 millió, bő egy év múlva közel 10 millió felhasználó, reklám nélkül, a „Get your free email" lábléccel: a hír a skálafüggetlen e-mail-hálózaton terjed, ahol **nincs terjedési küszöb** (10. link), és a huboknál adaptálódik. Az ingyenesség, a 2 perces regisztráció és a beépített továbbadás *csökkenti az adopciós küszöböt*. Ellenpélda: az EpidemicMarketing.com (2,1 millió dolláros Super Bowl-reklám, 2000) — a lánc tagjának nem volt érdeke továbbadni, ezért a modell nem működött. → *V16/V18: információterjedés.*
+9. **A hálózat nem csodaszer.** A SixDegrees.com 3 millió taggal is bezárt; a dot.com-buborék egydimenziós gondolkodás volt. „A hálózat igazi szerepe, hogy a meglévő szervezetek alkalmazkodását segíti a gyorsan változó piachoz"; a hálózattípusok sokfélék (politikai, tulajdonosi, együttműködési, szervezeti), de ugyanazok az univerzális törvények érvényesek rájuk.
+
+**Kritika / korlát.** A fejezet 2002-es példákkal dolgozik (AOL, Hotmail, Cisco); az állítások egy része azóta árnyalódott (a Cisco-eset tankönyvi példa maradt, az AOL–Time Warner fúzió viszont kudarc lett — ami épp a „hubnak nőnie kell" tézis korlátja). A Powell-idézet és a „piac mint hálózat" gondolat az IMP-vel egybevág, de Barabási *topológiai*, az IMP *kapcsolat-tartalmi* oldalról érvel — a vizsgán ezt a kettősséget érdemes kimondani.
+
 ---
 
 # 17. A hálózati működés három szempontja
@@ -727,6 +818,48 @@ flowchart LR
     classDef s fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
     class H h;
     class C,K,V s;
+```
+
+**A három szempont a 2017-es kötetben.** A lista a 2010-es műből való, de tartalma visszakereshető: (1) *irányíthatóság* ↔ „limited control": a vállalat „sosem teljesen autonóm", és ha egy cégnek sikerülne teljesen uralnia egy kapcsolatot vagy hálózatot, épp az interakció legjobb hatásairól mondana le — „a hálózat szigorú értelemben meghal, ha hierarchiává válik" (Håkansson & Snehota, 2017); a vezetői kontroll a vállalaton *belül* is korlátos, a hálózati menedzsment „hierarchikus tekintély nélküli koordináció" (Ford, Mattsson & Snehota, 2017). (2) *tudás* ↔ „minden nézet hiányos": a hálózatkép részleges, a partnerek hálózatképéből kell tanulni; az innováció az interakcióban születik (Ford, Mattsson & Snehota, 2017); a tudás „az összekapcsolt erőforrások interfészeiben" keletkezik (Håkansson & Snehota, 2017, 15. fej.). (3) *változás* ↔ „a hálózatok és a bennük lévő vállalatok folyamatos mozgásban vannak"; a stabilitás és a változás egyszerre menedzselendő *dualitás* (Ford, Mattsson & Snehota, 2017).
+
+---
+
+# 17A. Menedzsment az interaktív üzleti világban (Ford, Mattsson & Snehota, 2017)
+> » Kapcsolódó tétel: **V18** (a hálózati működés vezetői következményei), **V20** (eredményesség, hálózati pozíció)
+
+## 17A.1 A vezető helye: kontemplatív tervező helyett „több függőségben" dolgozó szereplő
+
+A klasszikus menedzsmentirodalom (Fayol, Taylor, Barnard) elemző-tervező vezetőt feltételez; a megfigyeléses kutatások (Carlson, 1951; Mintzberg, 1973) szerint a vezető **korlátozott autonómiájú** szereplő, belső és külső kapcsolatok hálójában, részleges kontrollal. Az erőforrás-alapú nézet (Wernerfelt, 1984) belső erőforrásokból vezeti le az értéket; az IMP szerint az érték **„mások felhasználásával"** (working with and through others) keletkezik: a vezető *saját cégén kívüli*, mások által kontrollált erőforrásokért és tevékenységekért is elszámoltatható. A kapcsolatok fejlesztése a *középvezetők* (beszerzési, értékesítési, műszaki vezetők) munkája, nem a csúcsvezetésé; a kapcsolat nem építhető egyoldalúan.
+
+## 17A.2 A vezetői feladat három összetevője
+
+| Összetevő | Tartalom | Kulcsfogalom |
+|---|---|---|
+| **Sense-making** | a megismerés összekötése a cselekvéssel; minden epizód egy folyamatos történet része; a felek értelmezései határozzák meg a kimenetet | **hálózatkép** (*network picture*; Ford et al., 2004): egyéni, részleges, normatív, „szubjektívebb, mint kognitív"; a vezetőnek *saját* feltevéseit és a partnerek hálózatképét is kérdőre kell vonnia; időkényszer miatt **heurisztikák** |
+| **Interakció** | folyamatos, kezdet és vég nélküli; három terület: (a) rutin, rövid távú interakció a meglévő kapcsolatokban; (b) **strukturális változást** célzó interakció (új típusú kapcsolatok — költséges, ezért a cégek a meglévőre koncentrálnak); (c) a **készségek és szakértelem** kiaknázását célzó interakció (az innováció az interakcióban születik) | „listening is as important as talking; reactions are as important as actions" |
+| **Megoldásfejlesztés** | integratív funkció: az érték együttes (joint) megoldásokban keletkezik, tekintély nélkül koordinálva, mások motiválásával | három szint, lásd 17A.3 |
+
+## 17A.3 Értékteremtés három szinten: epizód → kapcsolat → hálózati pozíció
+
+- **Epizód:** a legtöbb epizód (szállítás, fizetés, kommunikáció) önmagában jelentéktelen, de mindegyik *szűkíti és tágítja* a jövőbeli lehetőségeket; a vezető hajlamos a rövid távú költség–haszon túlsúlyozására.
+- **Kapcsolat:** az érték az epizódok *láncából* és a jövőbeli potenciálból fakad; a kulcskapcsolatok jelentős, **a mérlegben meg nem jelenő, kapcsolat-specifikus eszközöket** hordoznak, amelyek más kapcsolatban keveset érnek.
+- **Hálózati pozíció** (Johanson & Mattsson, 1992): a vállalat *összes* kapcsolata adja; erőforrás-, beruházás- és időfüggő; jogok és kötelezettségek halmaza a jövőbeli interakcióra. Az interakció „hierarchikus": az epizód a kapcsolat irányát, a kapcsolat a pozíciót alakítja — ezért minden epizódot *a kapcsolat*, minden kapcsolatot *a pozíció* fejlődésére tekintettel kell kezelni. → **A V20 „eredményesség" részkérdésének IMP-oldali alapja.**
+
+## 17A.4 Dualitások — „act when we cannot foresee; plan when we cannot know; organize when we cannot control"
+
+A vezető egyszerre reagál a kontextusra *és* alakítja azt; stabilitást *és* változást kell menedzselnie; a kooperáció egy kapcsolatban árthat egy másiknak (co-opetition, yin–yang: Mattsson & Tidström, 2015). Egy kapcsolaton belül három dualitás (Håkansson et al., 2009): **conform ↔ confront** (alkalmazkodás vs. szembesítés), **consolidate ↔ create** (a meglévő kapcsolatszerkezet megszilárdítása vs. új építése), **concede ↔ coerce** (engedés a partner szakértelmének vs. a partner kényszerítése). Minden kapcsolat egyszerre **eszköz és teher**. A szükséges készségek: értelmezés és narratívaépítés, heurisztikus interakció, tekintély nélküli koordináció — *szervezeti* szinten is (a cég interakciós képessége nem az egyéni készségek összege; a menedzsment-kontrollrendszerek többsége a függetlenséget feltételező piaci szemléletre épül, ezért átalakítandó).
+
+```mermaid
+flowchart TB
+    E["EPIZÓD<br/>szállítás, ajánlat, tárgyalás"] --> R["KAPCSOLAT<br/>epizódok lánca, kapcsolat-specifikus eszközök"]
+    R --> P["HÁLÓZATI POZÍCIÓ<br/>az összes kapcsolat; jogok + kötelezettségek"]
+    P -. "visszahat" .-> E
+    D["DUALITÁSOK<br/>conform/confront · consolidate/create · concede/coerce"]
+    D --- R
+    classDef a fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
+    classDef d fill:#f3e5f5,stroke:#6a1b9a,color:#4a148c;
+    class E,R,P a;
+    class D d;
 ```
 
 ---
@@ -775,6 +908,22 @@ Granovetter elméletét az IMP keretbe illesztve a vállalat optimális stratég
 | Stratégiai érték | stabilitás, megbízhatóság | innováció, diverzifikáció |
 
 Erős kapcsolatok a kulcstevékenységekhez és a megbízható ellátáshoz; gyenge kapcsolatok az innovációhoz és a piaci szondázáshoz.
+
+## 18.5 Az ARA-rétegek operacionalizálása a 2017-es kötetben: a „három I", a bevonódás szintje és a szállítói interfészek
+
+A 2017-es kötet a kapcsolat „három szubsztancia-rétegét" (Håkansson & Snehota, 2017) és a függőségek rétegenkénti formáját („három I": **integráció** a tevékenységek között, **interfészek** az erőforrások között, **interakció** a szereplők között; Freytag, Gadde & Harrison, 2017) adja az ARA-modellhez. Ezzel az ARA statikus-leíró jellegére vonatkozó kritika (18.3) részben kezelhető: a rétegek mérhetővé válnak.
+
+- **Magas vs. alacsony bevonódású kapcsolat** (Gadde & Snehota, 2000, idézi Gadde & Wynstra, 2017): magas bevonódás = a három réteg legalább egyikében jelentős összekapcsolás. Egy vevő csak *kevés* magas bevonódású kapcsolatot bír el, mert ezek kezelési költsége nagy. Egy korai IMP-eset: a vevőnél 600, a szállítónál 200 ember állt rendszeres kapcsolatban egymással.
+- **Négy szállítói interfész** (Araujo, Dubois & Gadde, 1999, idézi Gadde & Wynstra, 2017):
+
+| Interfész | Ki határozza meg a csere tárgyát? | Interakció | Tipikus hozam | Fejlesztési (tanulási) hatás |
+|---|---|---|---|---|
+| **Standardizált** | a szállító polcáról választ a vevő | minimális (arm's length) | alacsony kezelési költség, versenyeztetés | nincs |
+| **Specifikált** | a vevő részletesen előírja (klasszikus alvállalkozás) | kevés | a szállító több vevőre pool-ozhat (skálahozadék) | minimális — a vevő *szándékosan* zárja ki a szállító inputját |
+| **Fordítási** (translation) | a vevő a *funkciót* írja elő, a szállító „lefordítja" a kivitelre | közepes, a szállító erőforrásainak ismeretét kívánja | nagyobb skálahozadék; a szállító más kapcsolatokban szerzett tudását újrahasznosítja | közvetett tanulás |
+| **Interaktív** | *közösen*, a két fél erőforrásainak kölcsönös ismeretében | intenzív, keresztfunkciós, cégközi csapatok | együttes értékteremtés | közvetlen tanulás, kollaboratív innováció — de belső képességet is fenn kell tartani |
+
+A beszerzés három stratégiai szerepe (racionalizálás, fejlesztés, **strukturálás** — a szállítói hálózat alakítása) az interfész-választáson múlik: az interaktív interfész kevés szállítóra koncentrál (single sourcing → a többi szállító pozíciója romlik, a hálózat gyengülhet), a standardizált sok szállító között osztja a vásárlást (stabilizáló hatás). Az IMP normatív üzenete: „ha a vevő többet akar a szállítótól, mint egy standard terméket adott áron, **fel kell adnia autonómiája egy részét**, és el kell fogadnia a szállítót fejlesztési partnerként" (Håkansson & Snehota, 2017). → *V18 (tevékenységek és erőforrások hálózati értelmezése), V17 (kölcsönös függőség), V20 (kapcsolatportfólió).*
 
 ---
 
@@ -926,7 +1075,7 @@ A kritikus infrastruktúrák (internet, áramhálózat, ellátási lánc) skála
 
 A **kaszkád meghibásodás** (*cascading failure*) a robosztusság dinamikus változata: egyetlen csomópont kiesése **átterhelést** okoz a szomszédain, amelyek emiatt szintén kiesnek, láncreakciót indítva. Míg a perkoláció statikus (csomópontok eltávolítása), a kaszkád a terhelés **újraelosztásának** dinamikájáról szól.
 
-**Valós példák:** a 2003-as észak-amerikai **áramszünet** (egy túlterhelt vezeték kiesése sorra terhelte túl a többit, 50 millió embert érintve); a 2008-as **pénzügyi válság** (egy intézmény bukása a kitettségi hálózaton át továbbgyűrűzött); ellátásilánc-szakadások (egy beszállító kiesése leállítja a downstream gyártást).
+**Valós példák:** a 2003-as észak-amerikai **áramszünet** (egy túlterhelt vezeték kiesése sorra terhelte túl a többit, 50 millió embert érintve); a 2008-as **pénzügyi válság** (egy intézmény bukása a kitettségi hálózaton át továbbgyűrűzött); ellátásilánc-szakadások (egy beszállító kiesése leállítja a downstream gyártást). A kötelező irodalom két saját példája: az **1997-es ázsiai pénzügyi válság** (egy thai ingatlancég kamatfizetési mulasztásától a Dow 554 pontos eséséig — „a hálózati gazdaság közvetlen következménye") és a **Compaq/Cisco kiszervezési eset** (2000–2001: beszállítói komponenshiány, 600–700 ezer kielégítetlen rendelés, 300%-kal felduzzadt készlet; Barabási, 2014, 14. fej.; részletesen 16A.2). Barabási tanulsága: a hálózati gondolkodással azonosíthatók és megerősíthetők azok a csomópontok, amelyek a „makrogazdasági tűz" terjedését megállítják (tűzfalak).
 
 **Menedzsment-implikáció:** a reziliens rendszertervezés a kaszkád megelőzésére törekszik: **kapacitástartalék** (a csomópontok bírják a hirtelen többletterhelést), **moduláris leválaszthatóság** (a hibás rész izolálható, hogy ne terjedjen), és a **kritikus függőségek** feltérképezése. A hálózati szemlélet itt közvetlenül találkozik a kockázatmenedzsmenttel és az üzletmenet-folytonossági tervezéssel.
 
@@ -1031,6 +1180,26 @@ A hagyományos vállalatelmélet a határt jogi/tulajdonosi alapon húzza meg. A
 
 A kiszervezés, a stratégiai szövetség, a joint venture és a platform-ökoszisztéma mind a hálózati szemlélet terméke (kapcsolat: tükrözési hipotézis, 14. fejezet — a határ a kommunikációs struktúrában is megjelenik).
 
+### 26.2.1 A határ az IMP-ben: mozgatható, vitatott, többdimenziós (Munksgaard, Olsen & Prenkert, 2017)
+
+A határkérdés „az IMP genomjának része": a kutatás abból indult, hogy a *két cég közötti kapcsolatot* legalább olyan fontosnak tekinti, mint a cégeket magukat, és a határt előbb két cégre, majd a hálózatra tolta ki. A mainstream elmélet a határt a **tulajdoni egység** határaként látja (jogilag, számvitelileg, intézményileg megerősítve); ha az interakciót és a függőségeket helyezzük fókuszba, „ez a kép elpárolog", és a határ **többdimenziós, mozgatható és vitatható** lesz. Ugyanakkor a cselekvőképességhez *kell valamilyen* rögzített határérzet — ezért a határok **mozgatása és rögzítése maga válik másodrendű stratégiai feladattá**, amelyet a többi szereplő ellenlépései is alakítanak („egyetlen szereplő sincs teljes kontrollban a határ fölött").
+
+**Gadde (2014) két archetípusa** (a kötet 1. táblázata):
+
+| Jellemző | Integrált hierarchia (pl. a korai Ford, GE) | Kapcsolt vállalat (connected company; kiszervezés) |
+|---|---|---|
+| Alapstratégia | **pufferelés** (buffering) — védekezés a külső ingadozás ellen | **hídépítés** (bridging) — kapcsolódás a változó tényezőkhöz |
+| Határmozgatás | **szélesítés** (a korábban külső tevékenységek bevonása) | **szűkítés** (a cég „zsugorodik", interakciói nőnek) |
+| Függőségek | erős belső, gyenge külső | jelentős függőségek a tulajdoni határon át |
+| Interfészek | kevés, egyoldalú adaptáció | kölcsönös adaptáció, közös interfészek |
+| Interakció | a pufferelés korlátozza | intenzív, gyakori, hosszú távú kapcsolatokban |
+| Befolyási határ | az internalizálás megoldja a mások befolyásolásának gondját | az interakció *lehetőséget* ad mások befolyásolására |
+| Tudatossági határ | korlátozott rálátás a hierarchián kívülre | a partnerekkel megosztott tudás tágítja |
+
+A két archetípus a gyakorlatban egy cégen belül, időszakonként váltakozva van jelen. Két elemzési szempont: a határ **helye** (nemcsak a tulajdon, hanem a tevékenység-, erőforrás- és szereplői réteg szerint is más) és **áteresztőképessége** (permeability: puffer = alacsony, híd = magas). A határ három dimenziója: **tudatossági** (awareness — mit tud a cég mások tevékenységeiről; „kiterjesztett határ", Dubois, 1998; a branding és a konferenciarészvétel ezt tágítja), **befolyási** (influence) és **kontroll-** (control) határ. A szerzők kiegészítése: a másik fél szemszögéből a határ **csatorna** (channel) vagy **korlátozó** (restrictor) is lehet, és a „hatékony hálózati szereplő" nem feltétlenül a jogi cég, hanem egy közös szándékú **meta-szereplő** (üzleti egységek koalíciója) is.
+
+**Barabási oldaláról ugyanez:** a 20. századi vállalat **fa**, az információs gazdaságé **háló** — vertikális helyett virtuális integráció, kiszervezés, szövetségek; de a hálóvá alakított cég a partnerek zavarait is örökli (Cisco/Compaq), és a hálózati gazdaságban „minden csomópontnak profitábilisnak kell lennie" (Barabási, 2014, 14. fej.; 16A.2). A két forrás együtt adja a V20 „szervezeti határok" részkérdésének teljes válaszát: *a határ nem a tulajdon, hanem a kapcsolatok; a stratégia a határ tudatos szélesítése/szűkítése és áteresztőképességének beállítása; a hálózat előnye és kockázata (függőség, kaszkád) együtt jár.*
+
 ## 26.3 A vállalat komplex hálózati modellje — szintézis
 
 A tárgy záró szintézise: a vállalat egyszerre **multiplex hálózat** (12–13. fejezet: egymásra rakódott rétegek), **ARA-rendszer** (18. fejezet: szereplők, erőforrások, tevékenységek a vállalatközi térben) és **hatalmi struktúra** (24. fejezet: Mastenbroek négy hálózata). A három nézőpont ugyanazt a valóságot világítja meg eltérő oldalról:
@@ -1056,26 +1225,28 @@ flowchart TB
 
 A hálózati megközelítés az **eredményességet** (effectiveness) hálózati kontextusban méri: nemcsak a saját folyamatok optimálisak, hanem a kapcsolatokon át elérhető értékteremtés is. Mérőszámai: a hálózati pozíció mutatói (betweenness-, closeness-, fokszám-centralitás), a kapcsolati portfólió minősége (kulcskapcsolatok stabilitása, erős/gyenge kötések aránya, hidak száma) és a hálózati robosztusság (perkolációs küszöb, hub-függőség kezelése). A preferenciális kapcsolódás logikájából a legfontosabb stratégiai tanulság: a **korai és tudatos pozicionálás** a legnagyobb hozamú hálózati lépés.
 
+Az IMP-oldali kiegészítés (17A.3; Ford, Mattsson & Snehota, 2017): az eredményesség **három szinten** keletkezik — epizód, kapcsolat, hálózati pozíció —, és a kapcsolatok „a vállalat elsődleges eszközei, amelyek nélkül nem tud kereskedni, mások erőforrásaihoz hozzáférni, saját beruházásait kiaknázni". Két mérési nehézség: a kapcsolat-specifikus eszközök **nem jelennek meg a mérlegben**, és a közösen teremtett érték **mérése és felosztása** (value measuring / appropriation) a függőségek miatt mindig részben önkényes (Baraldi & Lind, 2017). A „költség megelőzi a bevételt" elv (15.6) miatt az eredményesség hálózati mutatóit hosszabb időtávon kell nézni, mint a hagyományos pénzügyi mutatókat.
+
 ---
 
 # A. függelék — Vizsgaösszefoglaló (V16–V20 cheat-sheet)
 
 > Tömör, vizsgára hangolt összefoglaló. A részletes kifejtést a fenti fejezetek tartalmazzák; itt a V-tételek szerinti gyors átismétlés következik.
 
-### V16 — A vállalat komplex hálózati modellje » 12–14., 24., 26. fejezet
-A vállalat **multiplex hálózat**: ugyanazon csomópontok (dolgozók) között több réteg (hierarchia, szakmai rendelés, tudásmegosztás, helyettesítési, folyamat, térbeli, preferencia, pletyka). A **valódi struktúra** (szociogram — Moreno, 1933) eltér a **formálistól** (organigram). **Mastenbroek** (1987/1988) négy hálózata: instrumentális, szocio-emocionális, **hatalmi/függőségi** (a legmeghatározóbb, „egy a háromhoz"), tárgyalási. A hatalom három tényezője: bizonytalanság, helyettesíthetőség, centralitás. **Tükrözési hipotézis** (Conway, 1968; MacCormack et al., 2012): a termékarchitektúra a szervezet kommunikációs struktúráját tükrözi.
+### V16 — A vállalat komplex hálózati modellje » 12–14., 24., 26. fejezet (+7., 16A.2)
+A vállalat **multiplex hálózat**: ugyanazon csomópontok (dolgozók) között több réteg (hierarchia, szakmai rendelés, tudásmegosztás, helyettesítési, folyamat, térbeli, preferencia, pletyka). A **valódi struktúra** (szociogram — Moreno, 1933) eltér a **formálistól** (organigram). **Mastenbroek** (1987/1988) négy hálózata: instrumentális, szocio-emocionális, **hatalmi/függőségi** (a legmeghatározóbb, „egy a háromhoz"), tárgyalási. A hatalom három tényezője: bizonytalanság, helyettesíthetőség, centralitás. **Tükrözési hipotézis** (Conway, 1968; MacCormack et al., 2012): a termékarchitektúra a szervezet kommunikációs struktúráját tükrözi. **Barabási (2014, 14. fej.):** a 20. századi vállalat *fa*, az információs gazdaságé *háló*; a hierarchikus modularitás (Afterlink) magyarázza, hogy ugyanazon dolgozók között miért fa-szerű az egyik és klaszteres a másik réteg. **IMP:** a vállalat kifelé is csomópont — a kapcsolat három rétege (tevékenység, erőforrás, szereplő) a határon átnyúlik (Håkansson & Snehota, 2017).
 
-### V17 — Az üzleti kölcsönhatások tényezői » 16. fejezet
-Håkansson (2010) **öt tényezője**: (1) **időbeliség** (a kapcsolat fejlődik, múltja van, kapcsolatspecifikus adaptáció), (2) **szubjektív értelmezés** (a felek eltérően látják), (3) **kapcsoltság** (nincs önálló kapcsolat, csak hálózati kontextus), (4) **kölcsönös függőség** (erőforrás-, rutin-, reputáció-függőség), (5) **viszonylagosság** (csak más kapcsolatokhoz mérten értékelhető). Együtt: dinamikus, szubjektíven értelmezett, hálózatba ágyazott folyamat.
+### V17 — Az üzleti kölcsönhatások tényezői » 16. fejezet (+15.6, 17A)
+Håkansson (2010) **öt tényezője**: (1) **időbeliség** (a kapcsolat fejlődik, múltja van, kapcsolatspecifikus adaptáció — „az interakciónak mindig van története"), (2) **szubjektív értelmezés** (a felek eltérően látják — *hálózatkép*, sense-making), (3) **kapcsoltság** (nincs önálló kapcsolat, csak hálózati kontextus), (4) **kölcsönös függőség** (erőforrás-, rutin-, reputáció-függőség; a 2017-es kötetben: „három I", Janus-arcú függőségek, Thompson-típusok), (5) **viszonylagosság** (csak más kapcsolatokhoz mérten értékelhető — egyedi csomópont, kontextusfüggő erőforrásérték, kettős választás). Együtt: dinamikus, szubjektíven értelmezett, hálózatba ágyazott folyamat. Megfeleltetés a 2017-es „három jellemzőnek" (folytonosság, hálózati struktúra, interakció): 16.1.
 
-### V18 — Hálózati működés és szempontjai » 17–18. fejezet (+4.)
-**Három szempont** (Håkansson, 2010): (1) **irányíthatóság** (senki sem uralja az egészet → pozicionálás), (2) **tudás** (elosztott, kapcsolatokon át áramlik — Granovetter gyenge kötései: a hidak hozzák az új tudást), (3) **változás** (folyamatos, kaszkádszerű, nem teljesen tervezett). **ARA modell** (Håkansson & Snehota, 1995): Actors (actor bonds) – Resources (resource ties) – Activities (activity links). Vegyes kapcsolatportfólió: erős kötések a stabilitáshoz, gyenge kötések az innovációhoz.
+### V18 — Hálózati működés és szempontjai » 17–18. fejezet (+4., 17A, 18.5)
+**Három szempont** (Håkansson, 2010): (1) **irányíthatóság** (senki sem uralja az egészet → pozicionálás; 2017: „limited control", a hálózat meghal, ha hierarchiává válik), (2) **tudás** (elosztott, kapcsolatokon át áramlik — Granovetter gyenge kötései: a hidak hozzák az új tudást; 2017: „minden nézet hiányos", az innováció az interakcióban születik), (3) **változás** (folyamatos, kaszkádszerű, nem teljesen tervezett; 2017: stabilitás–változás dualitás). **ARA modell** (Håkansson & Snehota, 1995): Actors (actor bonds) – Resources (resource ties) – Activities (activity links); operacionalizálva: három I, bevonódási szint, négy szállítói interfész (standardizált–specifikált–fordítási–interaktív). A vezetői feladat három összetevője: sense-making, interakció, megoldásfejlesztés; értékteremtés epizód → kapcsolat → pozíció szinten. Vegyes kapcsolatportfólió: erős kötések a stabilitáshoz, gyenge kötések az innovációhoz.
 
-### V19 — Üzleti kölcsönhatások hálózatalapú megközelítése » 15. fejezet
-Az **IMP csoport** kritikája a **struktúra-alapú** (Porter, neoklasszikus: statikus, anonim, tranzakcionális, tudás-vak) és a **folyamat-alapú** (belső értéklánc: bezárt, az érték a kapcsolatokban keletkezik) megközelítésre. **Megoldás: a piac mint hálózat** — egyedi, tartós kapcsolatok; nincs tökéletes verseny; az ár csak egy koordináló mechanizmus; piaci pozíció = hálózati pozíció; az innováció hálózati folyamat. **IMP interakció-modell**: epizódok, légkör, szervezet+egyén, környezet.
+### V19 — Üzleti kölcsönhatások hálózatalapú megközelítése » 15. fejezet (+15.6, 16A.2)
+Az **IMP csoport** kritikája a **struktúra-alapú** (Porter, neoklasszikus: statikus, anonim, tranzakcionális, tudás-vak; 2017: „független vállalatok homogén termékpiacokon, ármechanizmussal koordinálva" — ez nem írja le a megfigyelt világot) és a **folyamat-alapú** (belső értéklánc; az erőforrás-alapú nézet [Wernerfelt, 1984] belső erőforrásokból vezeti le az értéket — az IMP szerint az érték *mások felhasználásával*, a határon át keletkezik) megközelítésre. **Megoldás: a piac mint hálózat** — egyedi, tartós kapcsolatok; nincs tökéletes verseny; az ár csak egy koordináló mechanizmus; piaci pozíció = hálózati pozíció; az innováció hálózati folyamat. Barabási ugyanezt topológiai oldalról: a piac **irányított, súlyozott hálózat**, nem „mitikus közvetítő"; Powell: a hálózatban nem a kemény alku, hanem a tartós egymásrautaltság a stratégia — a vevő és a szállító partner (Barabási, 2014, 14. fej.). **IMP interakció-modell**: epizódok, légkör, szervezet+egyén, környezet. Empirikus alap: 1976-tól ~800 kapcsolat, >1000 interjú, öt ország.
 
-### V20 — Hálózati üzleti stratégia » 6., 10–11., 19., 22., 25–26. fejezet
-A stratégia a **hálózati pozícióból** is fakad, nem csak belülről. **Power-law** fokszámeloszlás + **preferenciális kapcsolódás** → korai pozicionálás önerősítő előny. **Hub-stratégia** (centralitás, magas betweenness) és **híd-/bróker-stratégia** (Burt, 1992: strukturális lyukak áthidalása). **Szervezeti határok** elmosódnak (jogi → kompetencia → kapcsolati). **Robosztusság:** skálafüggetlen hálózat robusztus a véletlen hibára, **sérülékeny** a célzott hub-támadásra → B-terv. **Fázisátalakulás**: a létszám növekedésével tipping point, struktúraváltás kényszere.
+### V20 — Hálózati üzleti stratégia » 6., 10–11., 19., 22., 25–26. fejezet (+16A.2, 17A.3, 26.2.1)
+A stratégia a **hálózati pozícióból** is fakad, nem csak belülről. **Power-law** fokszámeloszlás + **preferenciális kapcsolódás** → korai pozicionálás önerősítő előny (de: fitness). **Hub-stratégia** (centralitás, magas betweenness) és **híd-/bróker-stratégia** (Burt, 1992: strukturális lyukak áthidalása). **Szervezeti határok:** nem a tulajdon, hanem a kapcsolatok; Gadde (2014) két archetípusa — *integrált hierarchia* (pufferelés, szélesítés) vs. *kapcsolt vállalat* (hídépítés, szűkítés); a határ helye és áteresztőképessége; tudatossági–befolyási–kontrollhatár; Barabási: fa → háló, kiszervezés (Cisco/Compaq: a hierarchikus gondolkodás hálózati modellre vitele buktatta el őket, „minden csomópontnak profitábilisnak kell lennie"). **Eredményesség:** hálózati pozíció mutatói + a valódi hálózat feltárása + robosztusság; IMP-oldalról epizód → kapcsolat → pozíció, a kapcsolatok mint mérlegen kívüli eszközök, költség előbb, mint bevétel. **Robosztusság:** skálafüggetlen hálózat robusztus a véletlen hibára, **sérülékeny** a célzott hub-támadásra → B-terv; kaszkád (ázsiai válság 1997). **Fázisátalakulás**: a létszám növekedésével tipping point, struktúraváltás kényszere.
 
 ---
 
@@ -1116,6 +1287,15 @@ A stratégia a **hálózati pozícióból** is fakad, nem csak belülről. **Pow
 | Mirroring hypothesis | Tükrözési hipotézis | A termékarchitektúra a szervezet kommunikációs struktúráját tükrözi (Conway, 1968; MacCormack et al., 2012) |
 | Mastenbroek 4 networks | Mastenbroek 4 hálózata | Instrumentális, szocio-emocionális, hatalmi/függőségi, tárgyalási reláció |
 | Sociometry | Szociometria | Moreno (1933): a csoport személyes preferenciáinak feltérképezése; szociogram ≠ organigram |
+| Interactivity | Interaktivitás | A hálózat kollektív hajlandósága az interakcióra mint fejlesztési eszközre; két aktív fél, függőség elfogadása, költség a bevétel előtt (Håkansson & Snehota, 2017) |
+| Network picture | Hálózatkép | A vezető egyéni, részleges, normatív képe a hálózatról; a sense-making alapja (Ford et al., 2004; Ford, Mattsson & Snehota, 2017) |
+| Network position | Hálózati pozíció | A vállalat összes kapcsolatának együttese; jogok és kötelezettségek a jövőbeli interakcióra (Johanson & Mattsson, 1992) |
+| Three I's | Három I | Integráció (tevékenységek), interfészek (erőforrások), interakció (szereplők) — a függőségek rétegenkénti formája (Freytag, Gadde & Harrison, 2017) |
+| Supplier interfaces | Szállítói interfészek | Standardizált, specifikált, fordítási, interaktív (Araujo, Dubois & Gadde, 1999) |
+| Integrated hierarchy / connected company | Integrált hierarchia / kapcsolt vállalat | Gadde (2014) két határ-archetípusa: pufferelés–szélesítés vs. hídépítés–szűkítés |
+| Awareness / influence / control boundary | Tudatossági / befolyási / kontrollhatár | A szervezeti határ három dimenziója (Dubois, 1998; Munksgaard, Olsen & Prenkert, 2017) |
+| Hierarchical modularity | Hierarchikus modularitás | Egymásba ágyazott modulok + hubok; `C(k) ~ k^{-1}` (Ravasz & Barabási; Barabási, 2014, Afterlink) |
+| Tree vs. web organization | Fa- vs. hálószervezet | A 20. századi vállalati hierarchia (fa) és az információs gazdaság lapos, keresztkapcsolatos hálószervezete (Barabási, 2014, 14. fej.) |
 
 ---
 
@@ -1123,9 +1303,9 @@ A stratégia a **hálózati pozícióból** is fakad, nem csak belülről. **Pow
 
 A Syllabus kötelező és ajánlott irodalma:
 
-- **Barabási Albert-László** (2022): *Behálózva.* Open Books. — **kötelező irodalom** (eredeti: *Linked*, 2002).
+- **Barabási Albert-László** (2022): *Behálózva.* Open Books. — **kötelező irodalom** (eredeti: *Linked*, 2002; a mappában a 2014-es Basic Books-kiadás .azw3 formátumban, lásd 16A).
 - **Barabási Albert-László** (2024): *A hálózatok tudománya.* Open Books. — a *Network Science* tankönyv magyar kiadása; teljes tudományos apparátus.
-- **Håkansson, Håkan** (2010): *Határtalan hálózatok.* Alinea Kiadó. (Eredeti: *Business in Networks*, Wiley, 2009.) — az IMP üzleti hálózatelmélet.
+- **Håkansson, Håkan** (2010): *Határtalan hálózatok.* Alinea Kiadó. (Eredeti: *Business in Networks*, Wiley, 2009.) — az IMP üzleti hálózatelmélet. **A mappában nincs meg**; helyette a 2017-es összegző IMP-kötet van (Håkansson & Snehota szerk.), amely nem a syllabus tétele, de ugyanazon iskola elsődleges forrása — lásd 15.6.
 - **Csermely Péter** (2010): *Hálózatok bűvöletében.* Kairosz Kiadó.
 - **Csermely Péter** (2005): *A rejtett hálózatok ereje.* Vince Kiadó.
 - **Christakis, Nicholas A. – Fowler, James H.** (2010): *Kapcsolatok hálójában.* Typotex.
@@ -1141,8 +1321,12 @@ A Syllabus kötelező és ajánlott irodalma:
 | MacCormack, Baldwin & Rusnak (2012).pdf | lektorált cikk | tükrözési hipotézis, Conway-törvény empirikus tesztje | 14. |
 | Mark Buchanan - Nexus.pdf | ajánlott mű | kis világ, hat fokos szeparáció, hálózati törvények | 3., 9. |
 | GMXVU2MBLF - Syllabus.pdf | syllabus | tantárgyadatok, heti tématérkép, irodalom | Tantárgy adatok, Témakörök |
+| Linked … Barabasi (.azw3) | **kötelező irodalom** (angol eredeti, Basic Books, 2014; = *Behálózva*) | 15 „link" + Afterlink: véletlen hálózat, kis világ, hubok, 80/20, rich-get-richer, fitness, Achilles-sarok, vírusok, hálózati gazdaság, hierarchikus modularitás | 3–4., 7–10., 20., 22–23., **16A**, 26. |
+| No Business Is an Island … Håkansson (.epub) | IMP összegző kötet (Håkansson & Snehota szerk., Emerald, 2017; 15 fejezet) — **nem azonos** a syllabus *Határtalan hálózatok* tételével | az üzleti világ három jellemzője, interaktivitás; menedzsment az interaktív világban; értékmérés; beszerzés és szállítói interfészek; új vállalkozás belépése; innovációs/regionális/lokalizációs politika; tulajdonosi kapcsolatok; közbeszerzés; módszertan; határok; függőségek | **15.6, 16.1, 17A, 18.5, 26.2.1**, 26.4 |
 
 > A *Hálózatelmélet a Startup Piackutatásban.docx* kontextualizáló segédanyag: szemléltető üzleti példákhoz hivatkozható, de önálló akadémiai forrásként nem — minden állítást az eredeti primér forrással (Granovetter, 1973; Burt, 1992 stb.) támasztunk alá.
+>
+> **A két e-könyv használati szabálya (2026-11-06).** A *Linked* a kötelező irodalom eredetije: a tételekben *Barabási (2014, N. fej.)* alakban hivatkozható, az Irodalomban a magyar kiadás megjelölésével. A *No Business Is an Island* a mappában lévő tananyagnak számít (Dénes a V16–V20-hoz szerezte be), de a syllabus nem nevezi meg; ezért (a) a tételekben a 2010-es műre már meglévő, nem ellenőrizhető hivatkozások mellé a 2017-es kötet *fejezetszerzős* hivatkozása kerül, (b) a 2010-es mű továbbra is a „Beszerzendő anyagok" táblázatban marad, amíg a listák (öt tényező, három szempont) szó szerinti ellenőrzése meg nem történik, (c) a 2017-es kötetből csak a tételkérdéshez tartozó részeket vesszük át, a politikai és módszertani fejezeteket nem.
 
 ---
 
@@ -1150,11 +1334,17 @@ A Syllabus kötelező és ajánlott irodalma:
 
 Albert, R., Jeong, H., & Barabási, A.-L. (2000). Error and attack tolerance of complex networks. *Nature, 406*(6794), 378–382.
 
+Araujo, L., Dubois, A., & Gadde, L.-E. (1999). Managing interfaces with suppliers. *Industrial Marketing Management, 28*(5), 497–506. (Idézi: Gadde & Wynstra, 2017.)
+
+Barabási, A.-L. (2014). *Linked: The new science of networks* (2. kiad., Afterlink-kel). Basic Books. (Első kiadás: Perseus, 2002; magyarul: *Behálózva*, Open Books, 2022.)
+
 Barabási, A.-L. (2016). *Network science.* Cambridge University Press.
 
 Barabási, A.-L. (2022). *Behálózva* (Linked). Open Books.
 
 Barabási, A.-L., & Albert, R. (1999). Emergence of scaling in random networks. *Science, 286*(5439), 509–512.
+
+Baraldi, E., & Lind, J. (2017). Value measuring and value appropriation in business networks. In H. Håkansson & I. Snehota (szerk.), *No business is an island: Making sense of the interactive business world* (3. fej.). Emerald.
 
 Broido, A. D., & Clauset, A. (2019). Scale-free networks are rare. *Nature Communications, 10*, 1017.
 
@@ -1172,6 +1362,14 @@ Csermely, P. (2010). *Hálózatok bűvöletében.* Kairosz Kiadó.
 
 Erdős, P., & Rényi, A. (1959). On random graphs I. *Publicationes Mathematicae, 6*, 290–297.
 
+Ford, D., Mattsson, L.-G., & Snehota, I. (2017). Management in the interactive business world. In H. Håkansson & I. Snehota (szerk.), *No business is an island: Making sense of the interactive business world* (2. fej.). Emerald.
+
+Freytag, P. V., Gadde, L.-E., & Harrison, D. (2017). Interdependencies – blessings and curses. In H. Håkansson & I. Snehota (szerk.), *No business is an island: Making sense of the interactive business world* (13. fej.). Emerald.
+
+Gadde, L.-E. (2014). Strategizing at the boundaries of firms. *IMP Journal, 8*(2), 51–63. (Idézi: Munksgaard, Olsen & Prenkert, 2017.)
+
+Gadde, L.-E., & Wynstra, F. (2017). Purchasing and supply management: On strategic roles and supplier interfaces. In H. Håkansson & I. Snehota (szerk.), *No business is an island: Making sense of the interactive business world* (4. fej.). Emerald.
+
 Girvan, M., & Newman, M. E. J. (2002). Community structure in social and biological networks. *Proceedings of the National Academy of Sciences, 99*(12), 7821–7826.
 
 Granovetter, M. S. (1973). The strength of weak ties. *American Journal of Sociology, 78*(6), 1360–1380.
@@ -1179,6 +1377,12 @@ Granovetter, M. S. (1973). The strength of weak ties. *American Journal of Socio
 Håkansson, H. (2010). *Határtalan hálózatok* (Business in networks). Alinea Kiadó.
 
 Håkansson, H., & Snehota, I. (1995). *Developing relationships in business networks.* Routledge.
+
+Håkansson, H., & Snehota, I. (szerk.). (2017). *No business is an island: Making sense of the interactive business world.* Emerald Publishing. ISBN 978-1-78714-550-4.
+
+Håkansson, H., & Snehota, I. (2017). The significance of business relationships (1. fej.); Interactivity – a key dimension (15. fej.). In H. Håkansson & I. Snehota (szerk.), *No business is an island: Making sense of the interactive business world.* Emerald.
+
+Johanson, J., & Mattsson, L.-G. (1992). Network positions and strategic action: An analytical framework. In B. Axelsson & G. Easton (szerk.), *Industrial networks: A new view of reality* (205–217. o.). Routledge. (Idézi: Ford, Mattsson & Snehota, 2017.)
 
 Karinthy, F. (1929). Láncszemek. In *Minden másképpen van.* Athenaeum.
 
@@ -1192,11 +1396,17 @@ Milgram, S. (1967). The small-world problem. *Psychology Today, 1*(1), 61–67.
 
 Moreno, J. L. (1934). *Who shall survive? A new approach to the problem of human interrelations.* Nervous and Mental Disease Publishing. (A szociometria módszerét 1933-ban mutatta be.)
 
+Munksgaard, K. B., Olsen, P. I., & Prenkert, F. (2017). Boundaries of business actors and networks – theoretical and methodological reflections. In H. Håkansson & I. Snehota (szerk.), *No business is an island: Making sense of the interactive business world* (12. fej.). Emerald.
+
 Newman, M. E. J. (2010). *Networks: An introduction.* Oxford University Press.
+
+Pfeffer, J., & Salancik, G. R. (1978). *The external control of organizations: A resource dependence perspective.* Harper & Row. (Idézi: Freytag, Gadde & Harrison, 2017.)
 
 Porter, M. E. (1985). *Competitive advantage: Creating and sustaining superior performance.* Free Press.
 
 Rajkumar, K., Saint-Jacques, G., Bojinov, I., Brynjolfsson, E., & Aral, S. (2022). A causal test of the strength of weak ties. *Science, 377*(6612), 1304–1310.
+
+Thompson, J. D. (1967). *Organizations in action.* McGraw-Hill. (Idézi: Freytag, Gadde & Harrison, 2017; Munksgaard, Olsen & Prenkert, 2017.)
 
 Wasserman, S., & Faust, K. (1994). *Social network analysis: Methods and applications.* Cambridge University Press.
 
@@ -1204,7 +1414,9 @@ Watts, D. J. (2003). *Six degrees: The science of a connected age.* Norton.
 
 Watts, D. J., & Strogatz, S. H. (1998). Collective dynamics of "small-world" networks. *Nature, 393*(6684), 440–442.
 
+Wernerfelt, B. (1984). A resource-based view of the firm. *Strategic Management Journal, 5*(2), 171–180. (Idézi: Ford, Mattsson & Snehota, 2017.)
+
 ---
 
-*Forrás: GMXVU2MBLF Syllabus (2025/26-2); Előadás_ppt1.pdf (Dr. Szilágyi Győző Attila); Barabási (2016, 2022); Håkansson (2010); Håkansson & Snehota (1995); a fent felsorolt lektorált szakirodalom. Hivatkozási stílus: APA 7.*
+*Forrás: GMXVU2MBLF Syllabus (2025/26-2); Előadás_ppt1.pdf (Dr. Szilágyi Győző Attila); Barabási (2014, 2016, 2022); Håkansson (2010); Håkansson & Snehota (1995, 2017 szerk.); a fent felsorolt lektorált szakirodalom. Hivatkozási stílus: APA 7. Utolsó bővítés: 2026-11-06 (Linked + No Business Is an Island feldolgozása: 7., 15.6, 16.1, 16A, 17A, 18.5, 23., 26.2.1, 26.4, cheat-sheet, kulcsfogalmak).*
 

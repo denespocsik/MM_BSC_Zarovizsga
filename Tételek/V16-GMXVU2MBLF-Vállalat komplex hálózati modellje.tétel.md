@@ -211,7 +211,19 @@ A szervezet komplex emberi hálózat, amelyben sok hálózati réteg van. Vannak
 
 ---
 
-**Összegzés:** A szervezet nem gép, hanem komplex rendszer, ezért hálózatként írható le – mégpedig **multiplex hálózatként**, amelyben ugyanazon dolgozók között több, eltérő logikájú réteg működik: személyes hatalom, szakmai rendelés, tudásmegosztás, helyettesítés, folyamatok, térbeli hálózat, személyes preferenciák, pletyka. A valódi struktúra (szociogram) Moreno óta tudottan eltér a formálistól (organigram). A rétegek egy-egy célzott kérdéssel térképezhetők fel, és Mastenbroek négy hálózatába sorolhatók: instrumentális, szocio-emocionális, hatalmi és függőségi, tárgyalási – ezek közül a hatalmi és függőségi a legmeghatározóbb, a másik három ebből vezethető le, mértékét pedig a bizonytalanság, a helyettesíthetőség és a centralitás határozza meg. A rétegek topológiája eltérő (fa-szerű, töredezett, sűrű, klaszteres), és mivel az információterjedés a topológiától függ, a vezetőnek az egyes rétegeket külön-külön kell ismernie és kezelnie.
+### 16.8. Miért fa az egyik réteg és klaszteres a másik? – A kötelező irodalom háttere
+
+A 16.6. táblázat látszólagos ellentmondását – ugyanazon dolgozók között a hatalmi réteg fa-szerű és hub-domináns, a pletykaréteg viszont zárt klaszterekből áll – a kötelező irodalom két gondolata oldja fel.
+
+**A vállalati fa és a háló.** Barabási szerint a 20. századi vállalat szerkezete iparágtól függetlenül **fa** (tree): a gyökér a vezérigazgató, az elágazó ágak az egyre specializáltabb, egymást nem átfedő feladatok, és a felelősség lefelé csökken. A fa két baja, hogy az információt felfelé szűrni kell, a csúcson mégis túlterhelés keletkezik, és hogy az integráció merevséget okoz (a Ford futószalagjai annyira optimalizáltak voltak, hogy egy kis tervmódosítás hetekre leállította a gyárat). Az információs gazdaságban ezért a vállalat **fából hálóvá** alakul: lapos, sok keresztkapcsolattal, projektcsapatokkal, belső és külső szövetségekkel, kiszervezéssel (Barabási, 2014, 14. fej.). A tétel nyelvén: az organigram a fa, a tudásmegosztási és szocio-emocionális rétegek a háló; Barabási szerint aki a fából hálóvá alakulásnak ellenáll, „könnyen a perifériára szorulhat” (Barabási, 2014, 14. fej.).
+
+**Hierarchikus modularitás.** A *Linked* utószava szerint a valós hálózatok egyszerre **skálafüggetlenek** (néhány hub tartja össze őket) és **modulárisak** (sűrűn kapcsolt, viszonylag zárt csoportokból állnak) – a két tulajdonságot a hierarchikus hálózatmodell egyesíti: kis, sűrű modulok nagyobb, lazább modulokba ágyazódnak, a hubok pedig a modulok *között* közvetítenek. Barabási vállalati párhuzama szerint a részlegekre tagolás (departmentalization) viszonylag zárt munkacsoportokat hoz létre, a nagy hubok pedig „egy nagyvállalat vezérigazgatójaként” a legtöbb részlegre rálátnak és összekötik az eltérő méretű és kultúrájú közösségeket (Barabási, 2014, Afterlink). A multiplex vállalati hálózat rétegei tehát ugyanannak a hierarchikusan moduláris rendszernek más-más metszetei: a hatalmi réteg a hubokat, a szocio-emocionális réteg a modulokat rajzolja ki.
+
+**A vállalat kifelé is csomópont.** Az IMP-iskola szerint egyetlen vállalat sem önellátó: minden vállalat egy határtalan üzleti hálózat **egyedi csomópontja**, és a vállalatközi kapcsolat ugyanúgy három rétegű, mint a belső hálózat – a tevékenységek összekapcsolódnak, az erőforrások összekötődnek, a szereplők között kötések jönnek létre (Håkansson & Snehota, 2017). A vállalat komplex hálózati modellje tehát nem áll meg a jogi határnál: a belső réteghálózatok a partnerek réteghálózataiba futnak tovább (ezt a V18–V20 tétel bontja ki).
+
+---
+
+**Összegzés:** A szervezet nem gép, hanem komplex rendszer, ezért hálózatként írható le – mégpedig **multiplex hálózatként**, amelyben ugyanazon dolgozók között több, eltérő logikájú réteg működik: személyes hatalom, szakmai rendelés, tudásmegosztás, helyettesítés, folyamatok, térbeli hálózat, személyes preferenciák, pletyka. A valódi struktúra (szociogram) Moreno óta tudottan eltér a formálistól (organigram). A rétegek egy-egy célzott kérdéssel térképezhetők fel, és Mastenbroek négy hálózatába sorolhatók: instrumentális, szocio-emocionális, hatalmi és függőségi, tárgyalási – ezek közül a hatalmi és függőségi a legmeghatározóbb, a másik három ebből vezethető le, mértékét pedig a bizonytalanság, a helyettesíthetőség és a centralitás határozza meg. A rétegek topológiája eltérő (fa-szerű, töredezett, sűrű, klaszteres), és mivel az információterjedés a topológiától függ, a vezetőnek az egyes rétegeket külön-külön kell ismernie és kezelnie. A kötelező irodalom szerint a formális fa és az informális háló együttélése a valós hálózatok hierarchikus modularitásából következik, és a vállalat kifelé maga is egy üzleti hálózat csomópontja (Barabási, 2014; Håkansson & Snehota, 2017).
 
 ---
 
@@ -229,9 +241,13 @@ A szervezet komplex emberi hálózat, amelyben sok hálózati réteg van. Vannak
 
 6. **Mi a kapcsolat a helyettesítési réteg és a hatalom között?** — A helyettesítési réteg a „Ki szokta Önt helyettesíteni?” kérdéssel térképezhető fel, és a hatalmi-függőségi hálózat függőségi oldalát mutatja. A dián sok apró, elkülönülő komponensből áll. Mastenbroek szerint akit nehéz vagy lehetetlen helyettesíteni, nélkülözhetetlensége révén hatalomhoz jut – ezért törekszenek a szereplők a nélkülözhetetlenségre (Szilágyi, 2026, 108., 111. dia).
 
+7. **Hogyan lehet ugyanaz a szervezet egyszerre hub-domináns és klaszteres?** — A valós hálózatok hierarchikusan modulárisak: kis, sűrű modulok (részlegek, baráti körök) nagyobb, lazább modulokba ágyazódnak, a hubok pedig a modulok között közvetítenek – „egy nagyvállalat vezérigazgatójaként” rálátnak a legtöbb részlegre (Barabási, 2014, Afterlink). A hatalmi réteg a hubokat, a szocio-emocionális réteg a modulokat rajzolja ki; a 20. századi vállalat formális szerkezete fa, az informális és az információs gazdaságbeli szerkezete háló (Barabási, 2014, 14. fej.).
+
 ---
 
 ## Irodalom
 
+* Barabási, A.-L. (2014). *Linked: The new science of networks.* Basic Books. (Magyar kiadás: *Behálózva.* Open Books, 2022 — a syllabus kötelező irodalma.)
+* Håkansson, H., & Snehota, I. (2017). The significance of business relationships. In H. Håkansson & I. Snehota (szerk.), *No business is an island: Making sense of the interactive business world* (1. fej.). Emerald.
 * Óbudai Egyetem, Keleti Károly Gazdasági Kar. (2026). *Vállalati és üzleti hálózatmenedzsment (GMXVU2MBLF) — Syllabus* [Syllabus].
 * Szilágyi, G. A. (2026). *Organizational networks* [Előadás-prezentáció]. Óbudai Egyetem, Keleti Károly Gazdasági Kar.
