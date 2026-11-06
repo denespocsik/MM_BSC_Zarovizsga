@@ -20,51 +20,51 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 
 | # | Tétel rövid címe | Tantárgy | Neptun kód | Állapot |
 | --- | ---------------------------------------------- | -------------------------------- | ---------- | --- |
-| K01 | Menedzsment fogalma, funkciói | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-01 |
-| K02 | Menedzsment irányzatok (Taylor, Fayol, Ford) | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
-| K03 | Tervezés (környezet, jövőkép, SWOT, PESTEL) | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
-| K04 | Szervezetek, szervezeti formák | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
-| K05 | Vezetői stílusok | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
-| K06 | Motivációs elméletek | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
-| K07 | Döntés mint vezetői feladat, döntési modellek | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
-| K08 | HRM fogalma, céljai, fő funkciói, HR stratégia | HR menedzsment és vez. tech. | GMXHR1MBLF | 🔎 2026-10-17 |
-| K09 | Munkaerő tervezés és toborzás | HR menedzsment és vez. tech. | GMXHR1MBLF | 🔎 2026-10-17 |
-| K10 | Kiválasztási folyamat és módszerek | HR menedzsment és vez. tech. | GMXHR1MBLF | ⏳ 2026-11-06 |
-| K11 | Vezetés fogalma és vezetői szerepek | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ 2026-10-17 |
-| K12 | Szervezeti kultúra | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ 2026-10-17 |
-| K13 | Teljesítmény menedzsment és értékelés | HR menedzsment és vez. tech. | GMXHR1MBLF | 🔎 2026-10-17 |
-| K14 | Controlling szemléletmód és rendszer szerepe | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
-| K15 | Controlling információs rendszere, VIM | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
-| K16 | Költségszámítás szerepe a controllingban | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
-| K17 | Kalkulációs módszerek és fedezetszámítás | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
-| K18 | Stratégiai és operatív controlling | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
-| K19 | Beruházási és befektetési döntések (NPV, DCF) | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
-| K20 | Balanced Scorecard (BSC) | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
+| [K01](Tételek/K01-GMXMD1MBLF-Menedzsment%20fogalma,%20funkci%C3%B3i.t%C3%A9tel.md) | Menedzsment fogalma, funkciói | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-01 |
+| [K02](Tételek/K02-GMXMD1MBLF-Menedzsment%20ir%C3%A1nyzatok.t%C3%A9tel.md) | Menedzsment irányzatok (Taylor, Fayol, Ford) | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
+| [K03](Tételek/K03-GMXMD1MBLF-Tervez%C3%A9s.t%C3%A9tel.md) | Tervezés (környezet, jövőkép, SWOT, PESTEL) | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
+| [K04](Tételek/K04-GMXMD1MBLF-Szervezetek,%20szervezeti%20form%C3%A1k.t%C3%A9tel.md) | Szervezetek, szervezeti formák | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
+| [K05](Tételek/K05-GMXMD1MBLF-Vezet%C5%91i%20st%C3%ADlusok.t%C3%A9tel.md) | Vezetői stílusok | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
+| [K06](Tételek/K06-GMXMD1MBLF-Motiv%C3%A1ci%C3%B3s%20elm%C3%A9letek.t%C3%A9tel.md) | Motivációs elméletek | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
+| [K07](Tételek/K07-GMXMD1MBLF-D%C3%B6nt%C3%A9s%20mint%20vezet%C5%91i%20feladat.t%C3%A9tel.md) | Döntés mint vezetői feladat, döntési modellek | Menedzsment alapjai | GMXMD1MBLF | ✅ 2026-10-02 |
+| [K08](Tételek/K08-GMXHR1MBLF-HRM%20fogalma,%20c%C3%A9ljai,%20f%C5%91%20funkci%C3%B3i,%20HR%20strat%C3%A9gia.t%C3%A9tel.md) | HRM fogalma, céljai, fő funkciói, HR stratégia | HR menedzsment és vez. tech. | GMXHR1MBLF | 🔎 2026-10-17 |
+| [K09](Tételek/K09-GMXHR1MBLF-Munkaer%C5%91-tervez%C3%A9s%20%C3%A9s%20toborz%C3%A1s.t%C3%A9tel.md) | Munkaerő tervezés és toborzás | HR menedzsment és vez. tech. | GMXHR1MBLF | 🔎 2026-10-17 |
+| [K10](Tételek/K10-GMXHR1MBLF-Kiv%C3%A1laszt%C3%A1si%20folyamat%20%C3%A9s%20m%C3%B3dszerek.t%C3%A9tel.md) | Kiválasztási folyamat és módszerek | HR menedzsment és vez. tech. | GMXHR1MBLF | ⏳ 2026-11-06 |
+| [K11](Tételek/K11-GMXHR1MBLF-Vezet%C3%A9s%20fogalma%20%C3%A9s%20vezet%C5%91i%20szerepek.t%C3%A9tel.md) | Vezetés fogalma és vezetői szerepek | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ 2026-10-17 |
+| [K12](Tételek/K12-GMXHR1MBLF-Szervezeti%20kult%C3%BAra.t%C3%A9tel.md) | Szervezeti kultúra | HR menedzsment és vez. tech. | GMXHR1MBLF | ✅ 2026-10-17 |
+| [K13](Tételek/K13-GMXHR1MBLF-Teljes%C3%ADtm%C3%A9nymenedzsment%20%C3%A9s%20%C3%A9rt%C3%A9kel%C3%A9s.t%C3%A9tel.md) | Teljesítmény menedzsment és értékelés | HR menedzsment és vez. tech. | GMXHR1MBLF | 🔎 2026-10-17 |
+| [K14](Tételek/K14-GIXVS2MBLF-Controlling%20szeml%C3%A9letm%C3%B3d%20%C3%A9s%20rendszer.t%C3%A9tel.md) | Controlling szemléletmód és rendszer szerepe | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
+| [K15](Tételek/K15-GIXVS2MBLF-Controlling%20inform%C3%A1ci%C3%B3s%20rendszere.t%C3%A9tel.md) | Controlling információs rendszere, VIM | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
+| [K16](Tételek/K16-GIXVS2MBLF-K%C3%B6lts%C3%A9gsz%C3%A1m%C3%ADt%C3%A1s%20a%20controllingban.t%C3%A9tel.md) | Költségszámítás szerepe a controllingban | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
+| [K17](Tételek/K17-GIXVS2MBLF-Kalkul%C3%A1ci%C3%B3s%20m%C3%B3dszerek%20%C3%A9s%20fedezetsz%C3%A1m%C3%ADt%C3%A1s.t%C3%A9tel.md) | Kalkulációs módszerek és fedezetszámítás | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
+| [K18](Tételek/K18-GIXVS2MBLF-Strat%C3%A9giai%20%C3%A9s%20operat%C3%ADv%20controlling.t%C3%A9tel.md) | Stratégiai és operatív controlling | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
+| [K19](Tételek/K19-GIXVS2MBLF-Beruh%C3%A1z%C3%A1si%20d%C3%B6nt%C3%A9sek%20controlling%20szeml%C3%A9letben.t%C3%A9tel.md) | Beruházási és befektetési döntések (NPV, DCF) | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
+| [K20](Tételek/K20-GIXVS2MBLF-Balanced%20Scorecard.t%C3%A9tel.md) | Balanced Scorecard (BSC) | Vezetői számvitel és controlling | GIXVS2MBLF | ✅ 2026-10-17 |
 
 ### B) Vállalatirányítási szakirány tételsor (20 tétel)
 
 | # | Tétel rövid címe | Tantárgy | Neptun kód | Állapot |
 | --- | ----------------------------------------------------------- | --------------------------------------- | ---------- | --- |
-| V01 | BPM életciklusa és BPMS rendszerek felépítése | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ 2026-10-17 |
-| V02 | Üzleti folyamatok modellezése BPMN 2.0 szerint | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ 2026-10-17 |
-| V03 | Üzleti folyamatok mérése és optimalizálása (KPI) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ 2026-10-17 |
-| V04 | Kockázatkezelés és hibamód-elemzés (FMEA) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ 2026-10-17 |
-| V05 | Folyamatszemléletű irányítási rendszerek és dok. | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ 2026-10-17 |
-| V06 | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score) | Menedzsment inf. rendszerek | GMXIR1MBLF | 🔎 2026-11-06 |
-| V07 | BSC + VIR/BI programcsomagok összehasonlítása | Menedzsment inf. rendszerek | GMXIR1MBLF | 🔎 2026-11-06 |
-| V08 | Business Intelligence (BI) és BICC | Menedzsment inf. rendszerek | GMXIR1MBLF | 🔎 2026-11-06 |
-| V09 | Dashboard, KPI-alapú jelentések, DAX, Power BI | Menedzsment inf. rendszerek | GMXIR1MBLF | 🔎 2026-11-06 |
-| V10 | OLTP/OLAP, adattárház, adatbányászat, Big Data | Menedzsment inf. rendszerek | GMXIR1MBLF | 🔎 2026-11-06 |
-| V11 | IT fejlődés (70-es évektől), szigetrendszerek vs. integrált | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ 2026-10-17 |
-| V12 | ERP fogalma, fejlődéstörténete (MRP→MRP II→ERP→cloud) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ 2026-10-17 |
-| V13 | ERP bevezetése: célok, előnyök, hátrányok, BPR | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ 2026-10-17 |
-| V14 | SAP rendszer struktúrája, S/4HANA, modulok (FI,CO,MM…) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ 2026-10-29 |
-| V15 | ERP és projektmenedzsment, BSP, ITIL | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ 2026-10-29 |
-| V16 | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ 2026-11-06 |
-| V17 | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 🔎 2026-11-06 |
-| V18 | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 🔎 2026-11-06 |
-| V19 | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 🔎 2026-11-06 |
-| V20 | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 🔎 2026-11-06 |
+| [V01](Tételek/V01-GMXSF2MBLF-BPM%20%C3%A9letciklusa%20%C3%A9s%20BPMS%20rendszerek.t%C3%A9tel.md) | BPM életciklusa és BPMS rendszerek felépítése | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ 2026-10-17 |
+| [V02](Tételek/V02-GMXSF2MBLF-%C3%9Czleti%20folyamatok%20modellez%C3%A9se%20BPMN%202.0.t%C3%A9tel.md) | Üzleti folyamatok modellezése BPMN 2.0 szerint | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ 2026-10-17 |
+| [V03](Tételek/V03-GMXSF2MBLF-%C3%9Czleti%20folyamatok%20m%C3%A9r%C3%A9se%20%C3%A9s%20optimaliz%C3%A1l%C3%A1sa.t%C3%A9tel.md) | Üzleti folyamatok mérése és optimalizálása (KPI) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ 2026-10-17 |
+| [V04](Tételek/V04-GMXSF2MBLF-Kock%C3%A1zatkezel%C3%A9s%20%C3%A9s%20FMEA.t%C3%A9tel.md) | Kockázatkezelés és hibamód-elemzés (FMEA) | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ 2026-10-17 |
+| [V05](Tételek/V05-GMXSF2MBLF-Folyamatszeml%C3%A9let%C5%B1%20ir%C3%A1ny%C3%ADt%C3%A1si%20rendszerek.t%C3%A9tel.md) | Folyamatszemléletű irányítási rendszerek és dok. | Számítógépes folyamatmenedzsment | GMXSF2MBLF | ✅ 2026-10-17 |
+| [V06](Tételek/V06-GMXIR1MBLF-VIR%20fogalma,%20t%C3%ADpusai,%20p%C3%A9nz%C3%BCgyi%20mutat%C3%B3k.t%C3%A9tel.md) | VIR fogalma, típusai, pénzügyi mutatók (EVA, Z-score) | Menedzsment inf. rendszerek | GMXIR1MBLF | 🔎 2026-11-06 |
+| [V07](Tételek/V07-GMXIR1MBLF-BSC%20%C3%A9s%20VIR-BI%20programcsomagok.t%C3%A9tel.md) | BSC + VIR/BI programcsomagok összehasonlítása | Menedzsment inf. rendszerek | GMXIR1MBLF | 🔎 2026-11-06 |
+| [V08](Tételek/V08-GMXIR1MBLF-%C3%9Czleti%20intelligencia%20%C3%A9s%20BICC.t%C3%A9tel.md) | Business Intelligence (BI) és BICC | Menedzsment inf. rendszerek | GMXIR1MBLF | 🔎 2026-11-06 |
+| [V09](Tételek/V09-GMXIR1MBLF-Dashboard,%20KPI%20%C3%A9s%20Power%20BI%20jelent%C3%A9sek.t%C3%A9tel.md) | Dashboard, KPI-alapú jelentések, DAX, Power BI | Menedzsment inf. rendszerek | GMXIR1MBLF | 🔎 2026-11-06 |
+| [V10](Tételek/V10-GMXIR1MBLF-OLTP-OLAP,%20adatt%C3%A1rh%C3%A1z,%20adatb%C3%A1ny%C3%A1szat,%20Big%20Data.t%C3%A9tel.md) | OLTP/OLAP, adattárház, adatbányászat, Big Data | Menedzsment inf. rendszerek | GMXIR1MBLF | 🔎 2026-11-06 |
+| [V11](Tételek/V11-GMXIV2MBLF-Informatikai%20fejl%C5%91d%C3%A9s%20%C3%A9s%20szigetrendszerek.t%C3%A9tel.md) | IT fejlődés (70-es évektől), szigetrendszerek vs. integrált | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ 2026-10-17 |
+| [V12](Tételek/V12-GMXIV2MBLF-ERP%20fogalma%20%C3%A9s%20fejl%C5%91d%C3%A9st%C3%B6rt%C3%A9nete.t%C3%A9tel.md) | ERP fogalma, fejlődéstörténete (MRP→MRP II→ERP→cloud) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ 2026-10-17 |
+| [V13](Tételek/V13-GMXIV2MBLF-ERP%20bevezet%C3%A9se%20%C3%A9s%20BPR.t%C3%A9tel.md) | ERP bevezetése: célok, előnyök, hátrányok, BPR | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ 2026-10-17 |
+| [V14](Tételek/V14-GMXIV2MBLF-SAP%20S4HANA%20strukt%C3%BAra%20%C3%A9s%20modulok.t%C3%A9tel.md) | SAP rendszer struktúrája, S/4HANA, modulok (FI,CO,MM…) | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ 2026-10-29 |
+| [V15](Tételek/V15-GMXIV2MBLF-ERP%20projektmenedzsment%20%C3%A9s%20%C3%BCzemeltet%C3%A9s.t%C3%A9tel.md) | ERP és projektmenedzsment, BSP, ITIL | Integrált vállalatirányítási rendszerek | GMXIV2MBLF | ✅ 2026-10-29 |
+| [V16](Tételek/V16-GMXVU2MBLF-V%C3%A1llalat%20komplex%20h%C3%A1l%C3%B3zati%20modellje.t%C3%A9tel.md) | Vállalat komplex hálózati modellje | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | ✅ 2026-11-06 |
+| [V17](Tételek/V17-GMXVU2MBLF-%C3%9Czleti%20h%C3%A1l%C3%B3zatok%20k%C3%B6lcs%C3%B6nhat%C3%A1sait%20befoly%C3%A1sol%C3%B3%20t%C3%A9nyez%C5%91k.t%C3%A9tel.md) | Üzleti hálózatok kölcsönhatásait befolyásoló tényezők | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 🔎 2026-11-06 |
+| [V18](Tételek/V18-GMXVU2MBLF-H%C3%A1l%C3%B3zati%20m%C5%B1k%C3%B6d%C3%A9s%20%C3%A9s%20szempontjai.t%C3%A9tel.md) | Hálózati működés és szempontjai | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 🔎 2026-11-06 |
+| [V19](Tételek/V19-GMXVU2MBLF-%C3%9Czleti%20k%C3%B6lcs%C3%B6nhat%C3%A1sok%20h%C3%A1l%C3%B3zatalap%C3%BA%20megk%C3%B6zel%C3%ADt%C3%A9se.t%C3%A9tel.md) | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 🔎 2026-11-06 |
+| [V20](Tételek/V20-GMXVU2MBLF-H%C3%A1l%C3%B3zati%20%C3%BCzleti%20strat%C3%A9gia.t%C3%A9tel.md) | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 🔎 2026-11-06 |
 
 *Jelmagyarázat (Állapot): mind a 40 tétel kidolgozva; az oszlop a tétel legutóbbi revíziós állapotát mutatja. ✅ ÉÉÉÉ-HH-NN = revideálva (a `Kontextus fájlok/Tétel revíziós prompt.md` szerint) | 🔎 ÉÉÉÉ-HH-NN = revízió folyamatban / jóváhagyásra vár (tartalmi hiányokkal) | ⏳ ÉÉÉÉ-HH-NN = revízió forrásanyag hiánya miatt nem végezhető el, a tétel változatlan**Revízió oszlop: — = még nem revideált | 🔎 ÉÉÉÉ-HH-NN = revízió folyamatban / jóváhagyásra vár | ✅ ÉÉÉÉ-HH-NN = revideálva (a `Kontextus fájlok/Tétel revíziós prompt.md` szerint)*
 
@@ -186,4 +186,4 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 Az `.md` fájlok PDF-be rendereléséhez az alábbi web toolt ajánlom:
 [Markdown to PDF Converter](https://www.innateblogger.com/p/markdown-to-pdf.html)
 
-*Utolsó frissítés: 2026. november 6. — A „Tételsorok” táblázatokban az Állapot és a Revízió oszlop egyesítve (egy Állapot oszlop a legutóbbi revíziós állapottal); K10: a ma futtatott revízió forrás hiányában (LEV_3, Borgulya 2006, Milkovich–Glueck 1995, Armstrong–Taylor 2016) nem módosított semmit, a tétel állapota ⏳. Ezt megelőzően: A V16–V20 tételek és a GMXVU2MBLF kontextusfájl bővítése a két új e-könyv (Barabási: *Linked*, 2014; Håkansson & Snehota szerk.: *No Business Is an Island*, 2017) alapján; V16 ✅, V17–V20 🔎. A korábbi változások részletei az egyes commitoknál találhatók.*
+*Utolsó frissítés: 2026. november 6. — A „Tételsorok” táblázatok # oszlopa a tételfájlra mutató relatív hivatkozás (40 sor). Ezt megelőzően: A „Tételsorok” táblázatokban az Állapot és a Revízió oszlop egyesítve (egy Állapot oszlop a legutóbbi revíziós állapottal); K10: a ma futtatott revízió forrás hiányában (LEV_3, Borgulya 2006, Milkovich–Glueck 1995, Armstrong–Taylor 2016) nem módosított semmit, a tétel állapota ⏳. Ezt megelőzően: A V16–V20 tételek és a GMXVU2MBLF kontextusfájl bővítése a két új e-könyv (Barabási: *Linked*, 2014; Håkansson & Snehota szerk.: *No Business Is an Island*, 2017) alapján; V16 ✅, V17–V20 🔎. A korábbi változások részletei az egyes commitoknál találhatók.*
