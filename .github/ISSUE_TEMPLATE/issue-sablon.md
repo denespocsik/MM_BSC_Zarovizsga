@@ -9,5 +9,7 @@ type: Task
 ---
 
 **Tétel száma**: 
+ > Ide írd a tetel számát!
 
 **Hiba vagy javaslat leírása**:
+> Ide írd a változtatási javaslatod, vagy észleltvproblémát a tétellel!
