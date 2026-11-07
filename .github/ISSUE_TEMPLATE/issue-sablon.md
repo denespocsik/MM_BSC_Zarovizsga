@@ -1,5 +1,5 @@
 ---
-name: Issue template
+name: Issue sablon
 about: Describe this issue template's purpose here.
 title: ''
 labels: ''
