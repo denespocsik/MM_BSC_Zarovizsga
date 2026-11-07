@@ -66,7 +66,17 @@ Ez a repó a 2026/27-es tanév őszi záróvizsgájára készülő tételkidolgo
 | [V19](Tételek/V19-GMXVU2MBLF-%C3%9Czleti%20k%C3%B6lcs%C3%B6nhat%C3%A1sok%20h%C3%A1l%C3%B3zatalap%C3%BA%20megk%C3%B6zel%C3%ADt%C3%A9se.t%C3%A9tel.md) | Üzleti kölcsönhatások hálózat alapú megközelítése | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 🔎 2026-11-06 |
 | [V20](Tételek/V20-GMXVU2MBLF-H%C3%A1l%C3%B3zati%20%C3%BCzleti%20strat%C3%A9gia.t%C3%A9tel.md) | Hálózati üzleti stratégia | Vállalati és üzleti hálózatmenedzsment | GMXVU2MBLF | 🔎 2026-11-06 |
 
-*Jelmagyarázat (Állapot): mind a 40 tétel kidolgozva; az oszlop a tétel legutóbbi revíziós állapotát mutatja. ✅ ÉÉÉÉ-HH-NN = revideálva (a `Kontextus fájlok/Tétel revíziós prompt.md` szerint) | 🔎 ÉÉÉÉ-HH-NN = revízió folyamatban / jóváhagyásra vár (tartalmi hiányokkal) | ⏳ ÉÉÉÉ-HH-NN = revízió forrásanyag hiánya miatt nem végezhető el, a tétel változatlan**Revízió oszlop: — = még nem revideált | 🔎 ÉÉÉÉ-HH-NN = revízió folyamatban / jóváhagyásra vár | ✅ ÉÉÉÉ-HH-NN = revideálva (a `Kontextus fájlok/Tétel revíziós prompt.md` szerint)*
+>**Jelmagyarázat (Állapot):**
+>
+>Mind a 40 tétel kidolgozva; az oszlop a tétel legutóbbi revíziós állapotát mutatja.
+>
+>✅ ÉÉÉÉ-HH-NN = kidolgozva
+>
+>🔎 ÉÉÉÉ-HH-NN = Részben kidolgozva, revízió folyamatban / jóváhagyásra vár (tartalmi hiányokkal)
+>
+>⏳ ÉÉÉÉ-HH-NN = Részben kidolgozva, revízió forrásanyag hiánya miatt nem végezhető el, a tétel változatlan**Revízió oszlop: — = még nem revideált
+
+
 
 ---
 
