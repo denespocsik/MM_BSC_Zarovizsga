@@ -4,7 +4,7 @@
 **Intézmény:** Óbudai Egyetem — Keleti Károly Gazdasági Kar  
 **Szakirány:** V3 Vállalatirányítás (Budapest)  
 **Tanterv:** F-tanterv, 2023-as specifikáció  
-**Záróvizsga:** 2026/27 tanév ősz
+**Záróvizsga:** 2026/27 tanév őszi félév végén, 2027 január 25 körül
 
 ---
 
